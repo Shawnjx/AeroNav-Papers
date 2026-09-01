@@ -29,6 +29,8 @@ jobs:
       - name: Fetch and summarize papers
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: python scripts/update_papers.py
       - name: Commit updated data

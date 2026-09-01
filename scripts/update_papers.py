@@ -60,11 +60,15 @@ def fallback_review(p):
 
 def llm_review(p):
     if not os.getenv("OPENAI_API_KEY"):return fallback_review(p)
+    for k in ("OPENAI_BASE_URL","OPENAI_MODEL"):
+        if not os.getenv(k,"").strip():os.environ.pop(k,None)
     try:
         from openai import OpenAI
         client=OpenAI(); prompt=f'''你是具身导航论文分析助手。只依据下列题目和摘要，用中文输出JSON，不得补造事实。字段：summary_zh（60-90字，一句话简介），change_zh（60-100字，相比常见路线真正改变了什么；信息不足就明说），why_it_matters（60-100字，针对UAV主动目标搜索、ObjectNav、UAV-ON或多机器人探索的价值）。\n题目：{p['title']}\n摘要：{p['abstract']}'''
         r=client.chat.completions.create(model=os.getenv("OPENAI_MODEL","gpt-4.1-mini"),messages=[{"role":"user","content":prompt}],response_format={"type":"json_object"},temperature=.1)
-        return json.loads(r.choices[0].message.content)
+        txt=re.sub(r"^```(?:json)?\s*|\s*```$","",r.choices[0].message.content.strip())
+        m=re.search(r"\{.*\}",txt,re.S)
+        return json.loads(m.group(0) if m else txt)
     except Exception as e:
         print("LLM fallback:",type(e).__name__);return fallback_review(p)
 

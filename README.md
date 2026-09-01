@@ -17,6 +17,7 @@
 3. 在 `Settings → Secrets and variables → Actions` 添加：
    - `OPENAI_API_KEY`：可选但推荐，用于生成中文研判。
    - `S2_API_KEY`：可选，可提高 Semantic Scholar API 限额。
+   - 使用智谱 GLM 等兼容 OpenAI 的服务时：`OPENAI_API_KEY` 填服务方的 key，并额外添加 `OPENAI_BASE_URL`（智谱为 `https://open.bigmodel.cn/api/paas/v4/`）和 `OPENAI_MODEL`（如免费的 `glm-4-flash`，或 `glm-4.5-flash`）。
 4. 打开 `Actions`，手动运行一次 **Update papers and deploy**。
 
 工作流默认每天北京时间 07:30 更新。GitHub Actions 的 cron 使用 UTC，因此配置为 `23:30 UTC`。
@@ -36,7 +37,14 @@ python -m pip install -r requirements.txt
 python scripts/update_papers.py
 ```
 
-如果不提供 `OPENAI_API_KEY`，脚本仍会更新论文信息，但中文简介使用基于标题与摘要的保守模板，不会生成未经来源支持的判断。
+如果不提供 `OPENAI_API_KEY`，脚本仍会更新论文信息，但中文简介使用基于标题与摘要的保守模板，不会生成未经来源支持的判断。换用其他 OpenAI 兼容服务时，设置环境变量 `OPENAI_BASE_URL` 与 `OPENAI_MODEL` 即可，例如智谱 GLM：
+
+```bash
+export OPENAI_API_KEY=你的GLM密钥
+export OPENAI_BASE_URL=https://open.bigmodel.cn/api/paas/v4/
+export OPENAI_MODEL=glm-4-flash
+python scripts/update_papers.py
+```
 
 ## 调整关注范围
 
