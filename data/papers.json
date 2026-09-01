@@ -1,5 +1,62 @@
 {
-  "updated_at": "2026-09-01T12:38:14.257239+00:00",
+  "updated_at": "2026-09-01T13:24:57.401409+00:00",
+  "catalog": [
+    {
+      "id": "uav-target-search",
+      "name": "UAV 目标搜索",
+      "group": "空域自主"
+    },
+    {
+      "id": "aerial-vln",
+      "name": "空域 VLN",
+      "group": "空域自主"
+    },
+    {
+      "id": "objectnav",
+      "name": "ObjectNav 目标搜索",
+      "group": "地面导航"
+    },
+    {
+      "id": "ground-vln",
+      "name": "地面 VLN",
+      "group": "地面导航"
+    },
+    {
+      "id": "spatial-intelligence",
+      "name": "空间智能",
+      "group": "基础能力"
+    },
+    {
+      "id": "world-model",
+      "name": "世界模型",
+      "group": "基础能力"
+    },
+    {
+      "id": "embodied-mllm",
+      "name": "具身多模态大模型",
+      "group": "基础能力"
+    },
+    {
+      "id": "planning-agent",
+      "name": "规划智能体",
+      "group": "基础能力"
+    },
+    {
+      "id": "embodied-benchmark",
+      "name": "具身基准与评测",
+      "group": "基础能力"
+    },
+    {
+      "id": "sim2real",
+      "name": "真机与 Sim2Real",
+      "group": "基础能力"
+    },
+    {
+      "id": "active-perception",
+      "name": "主动感知与重建",
+      "group": "基础能力"
+    }
+  ],
   "papers": [
     {
       "id": "2608.30935",
@@ -38,562 +95,1022 @@
         "cs.AI"
       ],
       "topics": [
-        "VLM感知与规划",
-        "ObjectNav"
+        "具身多模态大模型"
       ],
-      "relevance_score": 4,
+      "relevance_score": 10,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划、ObjectNav，主要研究问题可概括为：LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Embodied navigation requires agents to translate heterogeneous goals and visual observations into actions across tasks, environments, and robot embodiments.",
-      "why_it_matters": "与VLM感知与规划、ObjectNav直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "LightNav-0以双通道pointing为统一token接口，结合残差向量量化动作分词，将VLM空间智能对齐到具身导航，单模型支持指令跟随与开放词汇目标导航，仿真真机均达SOTA。",
+      "change_zh": "常见路线按任务定制专用模块与预测头。LightNav-0去掉任务专用头，以双通道pointing表达与任务、场景、本体无关的空间意图，经残差VQ动作分词映射为本体轨迹，把多任务统一进一个VLM。",
+      "why_it_matters": "直接覆盖ObjectNav开放词汇目标导航与地面VLN，其pointing空间意图与视觉跟踪能力可迁移到UAV主动目标发现与接近；真机零样本跨本体为sim2real提供参考，对空域导航亦有借鉴。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
       "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "instruction following",
         "object navigation",
-        "vision-language",
+        "spatial intelligence",
+        "spatial reasoning",
         "vlm"
       ]
     },
     {
-      "id": "2608.30836",
-      "arxiv_id": "2608.30836",
-      "title": "Channel Gains to Captions: Task-Unified Multi-Level RF Sensing with Vision-Language Models",
+      "id": "2608.01802",
+      "arxiv_id": "2608.01802",
+      "title": "CoNav-UAV: Cooperative Dual-Altitude Aerial Navigation via Stackelberg Learning",
       "authors": [
-        "Tianyu Hu",
-        "Zhiren Gong",
-        "Haowei Cui",
-        "Shuai Wang",
-        "Samson Lasaulce",
-        "Lingxiang Li",
-        "Wassim Hamidouche",
-        "Zhi Chen",
-        "Merouane Debbah"
+        "Junru Song",
+        "Wenhao Zhang",
+        "Yang Yang",
+        "Xuekai Qiu",
+        "Feifei Wang",
+        "Weien Zhou",
+        "Tingsong Jiang",
+        "Ying Wen",
+        "Yang Li",
+        "Wen Yao"
       ],
-      "published": "2026-08-31",
+      "published": "2026-08-03",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30836",
-      "pdf_url": "https://arxiv.org/pdf/2608.30836",
+      "url": "https://arxiv.org/abs/2608.01802",
+      "pdf_url": "https://arxiv.org/pdf/2608.01802",
       "code_url": "",
       "categories": [
-        "eess.SP"
+        "cs.AI",
+        "cs.RO"
       ],
       "topics": [
-        "VLM感知与规划"
+        "空域 VLN"
       ],
-      "relevance_score": 4,
+      "relevance_score": 11,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Channel Gains to Captions: Task-Unified Multi-Level RF Sensing with Vision-Language Models。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：This letter investigates a task-unified multi-level radio-frequency (RF) sensing framework driven by vision-language models (VLMs).",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "该文将双高度无人机VLN建模为Stackelberg博弈，高空领导者用记忆式上下文学习改进推理，低空跟随者用DAgger蒸馏精化控制，交替逼近均衡，在AerialVLN三场景大幅超越单双机基线。",
+      "change_zh": "常见做法把地面VLN范式搬到单架低空无人机并依赖外部辅助或特权信息，双机方案也各自独立训练；本文改为Stackelberg博弈显式建模高低空分工，用迭代学习让两机相互适应，仅凭机载输入，跨场景适配数据减至约三分之一。",
+      "why_it_matters": "对UAV主动目标搜索直接相关：高空广域探索与低空精确抵近的分工正是搜救侦察中'广域搜索-精确抵近'的核心矛盾，免特权信息的博弈式联合训练给出双机协同新范式；其高层推理与低层控制解耦亦可迁移至ObjectNav的目标定位与执行设计。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
       "keywords": [
-        "multimodal",
-        "vision-language",
+        "aerial",
+        "benchmark",
+        "exploration",
+        "uav",
         "vlm"
       ]
     },
     {
-      "id": "2608.30705",
-      "arxiv_id": "2608.30705",
-      "title": "VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs",
+      "id": "2608.00970",
+      "arxiv_id": "2608.00970",
+      "title": "FreqNav: Stage-Wise Frequency Routing for Object-Oriented Aerial Vision-Language Navigation",
       "authors": [
-        "Jingyi He",
-        "Sanghwan Kim",
-        "Zeynep Akata"
+        "Yin Tang",
+        "Jiawei Ma",
+        "Jiahao Li",
+        "Hao Zhang",
+        "Zhemin Sun",
+        "Jianqiao Sun",
+        "Deyu Zhang"
       ],
-      "published": "2026-08-31",
+      "published": "2026-08-02",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30705",
-      "pdf_url": "https://arxiv.org/pdf/2608.30705",
+      "url": "https://arxiv.org/abs/2608.00970",
+      "pdf_url": "https://arxiv.org/pdf/2608.00970",
       "code_url": "",
       "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FreqNav将长程目标导向无人机导航建模为从低频空间布局到高频目标细节的频率偏好偏移，通过频率令牌路由器按阶段动态分配视觉token，结合阶段接地监督与扩散Transformer轨迹预测，性能超基线且推理约快3倍，并完成真机部署。",
+      "change_zh": "常见 aerial VLN 方法全程用同质视觉token处理，FreqNav 真正改变的是在固定算力预算下按导航阶段在频率域重分配token：探索期偏重低频空间结构、接近期偏重高频目标细节，并以显式阶段监督完成接地，而非静态感知。",
+      "why_it_matters": "该工作直接命中UAV目标搜索与ObjectNav核心场景：感知优先级随导航阶段漂移是搜救-接近-着陆闭环的普适难题，其轻量频率路由提供了可控的动态感知方案，约3倍推理加速与真机验证对长程无人机自主目标搜索有直接工程与算法价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "exploration",
+        "instruction"
+      ]
+    },
+    {
+      "id": "2608.12835",
+      "arxiv_id": "2608.12835",
+      "title": "AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN",
+      "authors": [
+        "Yutong Liu",
+        "Xiaojie Li",
+        "Mingzhu Xu",
+        "Jianlong Wu"
+      ],
+      "published": "2026-08-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.12835",
+      "pdf_url": "https://arxiv.org/pdf/2608.12835",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 9,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/c747a194f1ff6b71c207340dc188f2a71dcd45d6",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AirForesight面向无人机视觉语言导航，从多视角观测学习结构化当前地图表征，经结构化因果注意力推演未来地图，以跨空间规划一致性损失约束，聚合当前与未来表征预测下一3D航点。",
+      "change_zh": "相比常见的视觉语言输入直接映射到动作的端到端路线，该方法显式构建当前地图并向未来想象，用未来轨迹预测反过来监督当前地图学习，再以地图空间轨迹与专家动作方向的跨空间一致性损失，让空间想象真正服务于导航决策。",
+      "why_it_matters": "直接命中空域VLN核心问题；其当前-未来地图想象与规划一致性思路可迁移至UAV主动目标搜索中的前瞻航点选择与探索规划，也为ObjectNav的前瞻地图构建与运动意图编码提供参考，是空间智能服务导航决策的代表工作。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "instruction",
+        "spatial reasoning",
+        "uav",
+        "waypoint"
+      ]
+    },
+    {
+      "id": "2608.04825",
+      "arxiv_id": "2608.04825",
+      "title": "Deliberate Before You Fly: Vision-Guided Spatial Deliberation for UAV See-and-Reach Navigation",
+      "authors": [
+        "Fanfu Xue",
+        "En Yu",
+        "Bohang Liu",
+        "Hongjun Wang",
+        "Yang Yang",
+        "Xindi Wang",
+        "Jiande Sun"
+      ],
+      "published": "2026-08-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.04825",
+      "pdf_url": "https://arxiv.org/pdf/2608.04825",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对无人机语言目标接近与停靠任务，DBFly在航点生成前引入显式空间深思，用方向锚定、空间诊断与机动决策链指导航点，辅以隐式飞行走廊与终端收敛停止策略，较SOTA提升25.07个百分点。",
+      "change_zh": "常见方法把视觉语言表征直接映射为动作，DBFly改为先做显式空间决策链（方向锚定、空间诊断、机动决策），以机动意图引导航点，并将目标方向先验转为隐式飞行走廊作几何参考，再用接近度与短程运动收敛的停止策略提升可靠性。",
+      "why_it_matters": "直接服务UAV目标发现与接近：显式空间深思与隐式走廊缓解语义-控制失配，终端收敛停止策略解决接近后可靠停靠的关键痛点；其先推理空间决策再生成航点的范式与停靠准则，对ObjectNav的目标接近与终止判断也有借鉴价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "uav",
+        "waypoint"
+      ]
+    },
+    {
+      "id": "2608.07557",
+      "arxiv_id": "2608.07557",
+      "title": "AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity Perception and Automated Preference Optimization",
+      "authors": [
+        "Peng Xu",
+        "Chengcheng Wang",
+        "Shaohua Wan"
+      ],
+      "published": "2026-08-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.07557",
+      "pdf_url": "https://arxiv.org/pdf/2608.07557",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
         "cs.CV"
       ],
       "topics": [
-        "VLM感知与规划"
+        "空域 VLN"
       ],
-      "relevance_score": 3,
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Multimodal large language models (MLLMs) struggle with fine-grained Visual Search, the task of locating small or rare objects in high-resolution images.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AeroDPO面向无人机视觉语言导航，发现高保真感知比海量语言参数更关键，2B模型配高质量视觉输入即可比肩7B基线；再以仿真状态回滚自动构造偏好数据做DPO，抑制OOD碰撞并刷新未映射场景成功率。",
+      "change_zh": "相比堆大参数与人工偏好标注的主流路线，本文论证感知保真度才是UAV-VLN的瓶颈，并利用确定性物理仿真回滚自动提取因果错误作拒绝动作、以特权干预合成避撞偏好机动，构建零标注成本的自动化数据飞轮。",
+      "why_it_matters": "直接提升空域VLN在机载边缘设备上的部署可行性；其仿真回滚自动生成偏好对与抑制OOD碰撞的机制，可迁移至UAV主动目标搜索的避撞与目标接近策略学习，也适用于ObjectNav等目标条件导航的轻量化与鲁棒化。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
       "keywords": [
-        "large language model",
-        "multimodal"
+        "aerial",
+        "deployment",
+        "evaluation",
+        "uav"
       ]
     },
     {
-      "id": "2608.30428",
-      "arxiv_id": "2608.30428",
-      "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
+      "id": "2607.21400",
+      "arxiv_id": "2607.21400",
+      "title": "VoLN: Vision-Only Long-Horizon Navigation---Paradigm, Benchmark, and Method",
       "authors": [
-        "Jaewoo Ahn",
-        "Junseo Kim",
-        "Hyunseo Kim",
-        "Heeseung Yun",
-        "Jaehyeon Son",
-        "Zsolt Kira",
-        "Gunhee Kim"
+        "Jiabin Lou",
+        "Haopeng Wang",
+        "Yuanshuai Wang",
+        "Xinyu Liu",
+        "Xuxin Lv",
+        "Yuxin Guo",
+        "Lei Huang",
+        "Rongye Shi",
+        "Wenjun Wu"
       ],
-      "published": "2026-08-31",
+      "published": "2026-07-23",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30428",
-      "pdf_url": "https://arxiv.org/pdf/2608.30428",
+      "url": "https://arxiv.org/abs/2607.21400",
+      "pdf_url": "https://arxiv.org/pdf/2607.21400",
       "code_url": "",
       "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CV",
-        "cs.LG"
-      ],
-      "topics": [
-        "VLM感知与规划"
-      ],
-      "relevance_score": 3,
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "multimodal",
-        "vlm"
-      ]
-    },
-    {
-      "id": "2608.30726",
-      "arxiv_id": "2608.30726",
-      "title": "Multimodal Adaptive Expert Selection with Text Routing and Ordinal Prototype Optimization for Sentiment Analysis",
-      "authors": [
-        "Xiaode Chen",
-        "Jiakang Yu",
-        "Hongtao Deng",
-        "Huina Qu",
-        "Xun Zhu",
-        "Yinxia Lou"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30726",
-      "pdf_url": "https://arxiv.org/pdf/2608.30726",
-      "code_url": "",
-      "categories": [
+        "cs.RO",
         "cs.AI"
       ],
       "topics": [
-        "VLM感知与规划"
+        "空域 VLN"
       ],
-      "relevance_score": 2,
+      "relevance_score": 11,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Multimodal Adaptive Expert Selection with Text Routing and Ordinal Prototype Optimization for Sentiment Analysis。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Multimodal Sentiment Analysis (MSA) is a fundamental component of affective computing that aims to decipher complex emotional states by integrating verbal content with non-verbal cues including vocal intonation and facia",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "提出仅视觉长时域导航范式VoLN，把路线信息从外部语言指令与全局引导转为场景内局部线索，并构建7210条episode的无人机飞行基准VoLN-UAV，附带MLLM参考基线，未见环境成功率7.4%至1.8%。",
+      "change_zh": "常规aerial VLN靠语言指令注入方位、距离、布局等空间先验，该工作将其剥离：目标以目标视图指定，路线信息只能来自局部场景线索并需在线检测、解释与选择，且配套连续3D运动的无人机长时域新基准与初始基线。",
+      "why_it_matters": "直接服务空域自主板块：仅视觉、目标视图引导的长时域飞行贴近GPS拒止环境下UAV目标搜索与接近任务；极低成功率揭示长时域证据整合、跨视角目标匹配与闭环稳定性是UAV主动搜索与ObjectNav的共同瓶颈。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
       "keywords": [
-        "multimodal"
+        "aerial",
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "instruction",
+        "mllm",
+        "uav",
+        "waypoint"
       ]
     },
     {
-      "id": "2608.30760",
-      "arxiv_id": "2608.30760",
-      "title": "PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents",
+      "id": "2608.28270",
+      "arxiv_id": "2608.28270",
+      "title": "Spatial-Semantic Reasoning using Large Language Models for Efficient UAV Search Operations",
       "authors": [
-        "Ziyi Bai",
-        "Siqi Li",
-        "Tinglei Huang",
-        "Börje F. Karlsson"
+        "Marin Maletic",
+        "Marijana Peti",
+        "Tamara Petrovic",
+        "Stjepan Bogdan"
       ],
-      "published": "2026-08-31",
+      "published": "2026-08-28",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30760",
-      "pdf_url": "https://arxiv.org/pdf/2608.30760",
+      "url": "https://arxiv.org/abs/2608.28270",
+      "pdf_url": "https://arxiv.org/pdf/2608.28270",
       "code_url": "",
       "categories": [
-        "cs.LG"
+        "cs.RO",
+        "cs.AI"
       ],
       "topics": [
-        "VLM感知与规划"
+        "UAV 目标搜索"
       ],
-      "relevance_score": 2,
+      "relevance_score": 10,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Recent studies have shown that multimodal large language models (MLLMs) can serve as embodied agents, translating language instructions and visual observations into executable plans.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "提出UAV ObjectNav实时语义导航框架：LLM解读自然语言指令并对检测物体与空间上下文做语义推理以优先搜索高概率区域，融合实时检测、3D建图与多项式样条轨迹规划，仿真与真机实验显示任务时长缩短且保持精度。",
+      "change_zh": "相比依赖离线推理或受仿真器离散动作空间限制的常见路线，该框架让LLM基于新观测在线滚动更新语义相关性并重排搜索区域，且用多项式样条生成平滑可行的连续UAV轨迹，实现真机实时闭环的ObjectNav。",
+      "why_it_matters": "直接命中UAV主动目标搜索与ObjectNav核心问题：用LLM空间-语义先验指导搜索区域优先级可缩短任务时长，其在线更新机制与仿真加真机验证，为空域目标搜索的实时性与sim2real落地提供可借鉴方案。",
+      "relevance_rating": 10,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 26,
       "keywords": [
-        "large language model",
-        "multimodal"
+        "aerial",
+        "instruction",
+        "object goal navigation",
+        "objectnav",
+        "semantic navigation",
+        "uav"
       ]
     },
     {
-      "id": "2608.30396",
-      "arxiv_id": "2608.30396",
-      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "id": "2607.22014",
+      "arxiv_id": "2607.22014",
+      "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
       "authors": [
-        "Zixing Lei",
-        "Gengze Zhou",
-        "Xiong-Hui Chen",
-        "Jiazhao Zhang",
-        "Yiyang Huang",
-        "Hang Yin",
-        "Haoqi Yuan",
-        "Qi Wu",
-        "Weixin Li",
-        "Siheng Chen"
+        "Suman Navaratnarajah",
+        "Taehyoung Kim",
+        "Jona Ruthardt",
+        "Ishaan Bhimwal",
+        "Ryousuke Yamada",
+        "Yannik Blei",
+        "Wolfram Burgard",
+        "Yuki M Asano"
       ],
-      "published": "2026-08-31",
+      "published": "2026-07-24",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30396",
-      "pdf_url": "https://arxiv.org/pdf/2608.30396",
+      "url": "https://arxiv.org/abs/2607.22014",
+      "pdf_url": "https://arxiv.org/pdf/2607.22014",
       "code_url": "",
       "categories": [
         "cs.AI",
+        "cs.CL",
+        "cs.CV",
         "cs.RO"
       ],
       "topics": [
-        "VLM感知与规划"
+        "具身基准与评测"
       ],
-      "relevance_score": 2,
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Long-horizon physical-world agents must reason over distant goals while grounding decisions in reliable closed-loop behavior.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "vision-language",
-        "vlm"
-      ]
-    },
-    {
-      "id": "2608.30289",
-      "arxiv_id": "2608.30289",
-      "title": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
-      "authors": [
-        "Hanwen Wan",
-        "Dafeng Chi",
-        "Linbo Zhai",
-        "Tianao Shen",
-        "Yuzheng Zhuang",
-        "Tianle Zhang",
-        "Peidong Liu",
-        "Liang Lin",
-        "Xiaoqiang Ji"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30289",
-      "pdf_url": "https://arxiv.org/pdf/2608.30289",
-      "code_url": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "topics": [
-        "VLM感知与规划"
-      ],
-      "relevance_score": 2,
+      "relevance_score": 11,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Vision-language-action (VLA) models remain brittle in manipulation tasks that require physical commonsense.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "提出MissionBench，在5个仿真3D空域环境、4类任务族共120个任务上，零样本评测22个开源与闭源MLLM智能体的长程规划、导航与结果汇报能力，最强模型成功率不足35%，远低于人类84.4%。",
+      "change_zh": "相比以单条指令跟随或感知问答为主的评测，该工作把评测粒度提升到任务级：仅凭自我中心观测与动作历史，要求模型自主完成规划、导航与汇报的全闭环，并以人类基线与规模分析揭示通用模型的长程具身短板。",
+      "why_it_matters": "UAV搜救侦察本质是'规划-搜索-汇报'的长程闭环，该基准量化了通用MLLM零样本完成此类空域任务的真实短板与规模效应，对空域目标搜索、长程ObjectNav的模型选型与闭环评测设计均有直接参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
       "keywords": [
-        "vision-language",
-        "vlm"
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "mllm",
+        "multimodal large language model"
       ]
     },
     {
-      "id": "2608.30142",
-      "arxiv_id": "2608.30142",
-      "title": "LandmarkLens: Predicting and Presenting Effective Landmarks for Mixed-Reality Urban Exploration",
+      "id": "2607.20785",
+      "arxiv_id": "2607.20785",
+      "title": "Robostral Navigate",
       "authors": [
-        "Chu Li",
-        "Yotam Sechayk",
-        "Jared Hwang",
-        "Jon E. Froehlich",
-        "Takeo Igarashi"
+        "Abdelaziz Bounhar",
+        "Abhijeet Somani",
+        "Aditi Kabra",
+        "Adrian Valente",
+        "Adrien Petralia",
+        "Adrien Sade",
+        "Alan Jeffares",
+        "Albert Jiang",
+        "Aleksandr Timashov",
+        "Alexandre Cahill",
+        "Alexandre Gavaudan",
+        "Alexandre Laval",
+        "Alexandre Sablayrolles",
+        "Amelie Heliou",
+        "Amos You",
+        "Andre Jonasson",
+        "Andrew Bai",
+        "Andrew Ehrenberg",
+        "Andrew Zhao",
+        "Angele Lenglemetz",
+        "Anmol Agarwal",
+        "Antonia Calvi",
+        "Arata Suzuki",
+        "Arjun Majumdar",
+        "Arthur Fournier",
+        "Artjom Joosen",
+        "Avinash Sooriyarachchi",
+        "Aylin Guliz Akkus",
+        "Aysenur Karaduman",
+        "Baptiste Bout",
+        "Baptiste Roziere",
+        "Baudouin De Monicault",
+        "Benjamin Holzschuh",
+        "Benjamin Lefaudeux",
+        "Benjamin Tibi",
+        "Bernhard Stadlbauer",
+        "Blazej Osinski",
+        "Camille Le Scao",
+        "Chaoran Yu",
+        "Charlotte Cronjager",
+        "Chen-Yo Sun",
+        "Chris Bamford",
+        "Christian Wallenwein",
+        "Christophe Renaudin",
+        "Clemence Lanfranchi",
+        "Corentin Barreau",
+        "Corentin Sautier",
+        "Cristiana-Diana Diaconu",
+        "Cyprien Courtot",
+        "Daniel Marczak",
+        "Darius Dabert",
+        "Diego de Las Casas",
+        "Dominik Nuss",
+        "Dylan Rubini",
+        "Dzmitry Soupel",
+        "Elizaveta Demyanenko",
+        "Elliot Chane-Sane",
+        "Emilien Fugier",
+        "Emmanuel Gottlob",
+        "Erik Aas",
+        "Etienne Goffinet",
+        "Etienne Millon",
+        "Eujeong Choi",
+        "Fabian Paischer",
+        "Fabian Schlager",
+        "Faruk Ahmed",
+        "Federico Baldassarre",
+        "Filip Szatkowski",
+        "Florian Wiesner",
+        "Gabrielle Berrada",
+        "Gaetan Ecrepont",
+        "Gaetan Lepage",
+        "Gaspard Blanchet",
+        "Gaspard Donada-Vidal",
+        "Gauthier Delerce",
+        "Gauthier Guinet",
+        "Genevieve Hayes",
+        "Georgii Novikov",
+        "Giada Pistilli",
+        "Gianluca Galletti",
+        "Guillaume Breton",
+        "Guillaume Kunsch",
+        "Guillaume Lample",
+        "Guillaume Martin",
+        "Guillaume Raille",
+        "Gunjan Dhanuka",
+        "Gunshi Gupta",
+        "Han Zhou",
+        "Harshil Shah",
+        "Hasan Furkan Vural",
+        "Hedi Hadiji",
+        "Hope McGovern",
+        "Hugo Cisneros",
+        "Hugo Thimonier",
+        "Indraneel Mukherjee",
+        "Ivan Cuevas Salazar",
+        "Jacques Sun",
+        "Jan Ludziejewski",
+        "Jason Rute",
+        "Jean Quentin",
+        "Jean-Hadrien Chabran",
+        "Jean-Malo Delignon",
+        "Jie Zhang",
+        "Joachim Studnia",
+        "Joep Barmentlo",
+        "Johannes Brandstetter",
+        "John Harvill",
+        "Jonas Amar",
+        "Jonas Schweizer",
+        "Josephine Delas",
+        "Josselin Somerville",
+        "Julien Denize",
+        "Julien Tauran",
+        "Kartik Khandelwal",
+        "Khyathi Raghavi Chandu",
+        "Kilian Tep",
+        "Kush Jain",
+        "Larissa Laich",
+        "Laura Calem",
+        "Laurence Aitchison",
+        "Laurent Callot",
+        "Laurent Fainsin",
+        "Leo Cotteleer",
+        "Leonard Blier",
+        "Lingxiao Zhao",
+        "Louis Martin",
+        "Louis Serrano",
+        "Lucile Saulnier",
+        "Ludovic Ho Fuh",
+        "Luis Montero",
+        "Maarten Buyl",
+        "Manon Chossegros",
+        "Marcin Mozejko",
+        "Margaret Jennings",
+        "Markus Hennerbichler",
+        "Martin Alexandre",
+        "Mathieu Poiree",
+        "Mathieu Schmitt",
+        "Mathilde Guillaumin",
+        "Matthieu Andre",
+        "Matthieu Dinot",
+        "Matthieu Futeral",
+        "Maurits Bleeker",
+        "Mauro Comi",
+        "Max Mynter",
+        "Maxim Berman",
+        "Maxime Darrin",
+        "Maxime Louis",
+        "Maximilian Augustin",
+        "Maximilian Muller",
+        "Melina Jingting Laimon",
+        "Mert Unsal",
+        "Mia Chiquier",
+        "Michael Pilcer",
+        "Michal Pietruszka",
+        "Michal Zajac",
+        "Mikhail Biriuchinskii",
+        "Minh-Quang Pham",
+        "Minwoo Kang",
+        "Morgane Riviere",
+        "Namit Katariya",
+        "Nathan Grinsztajn",
+        "Nathan Simpson",
+        "Neeraj Aggarwal",
+        "Neha Gupta",
+        "Ola Mysiak",
+        "Oliver Leicht",
+        "Olivier Bousquet",
+        "Olivier Duchenne",
+        "Parag Jain",
+        "Patricia Wang",
+        "Patrick Blies",
+        "Patrick von Platen",
+        "Paul Jacob",
+        "Paul Wambergue",
+        "Paula Kurylowicz",
+        "Pavan Kumar Reddy",
+        "Pavel Kuksa",
+        "Philippe Pinel",
+        "Philomene Chagniot",
+        "Pierre Stock",
+        "Pierre-Andre Savalle",
+        "Piotr Milos",
+        "Prateek Gupta",
+        "Pravesh Agrawal",
+        "Quentin Desreumaux",
+        "Quentin Torroba",
+        "Quercus Hernandez",
+        "Ram Ramrakhya",
+        "Randall Isenhour",
+        "Ranjit Parva",
+        "Raul Perez Pelaez",
+        "Reinhard Sonnleitner",
+        "Remi Delacourt",
+        "Richard Kurle",
+        "Rishi Shah",
+        "Rob Romijnders",
+        "Rohin Arora",
+        "Romain Sauvestre",
+        "Roman Soletskyi",
+        "Rosalie Millner",
+        "Rupert Menneer",
+        "Sagar Vaze",
+        "Samuel Barry",
+        "Samuel Belkadi",
+        "Samuel Humeau",
+        "Sanchit Gandhi",
+        "Sandeep Subramanian",
+        "Sarthak Mittal",
+        "Saskia Adaime",
+        "Sean Cha",
+        "Sebastian Kaltenbach",
+        "Shashwat Dalal",
+        "Shashwat Verma",
+        "Sherif Waly",
+        "Shrimai Prabhumoye",
+        "Siddhant Waghjale",
+        "Siddharth Gandhi",
+        "Simon Lepage",
+        "Simon Sorg",
+        "Soham Ghosh",
+        "Sophie Marbach",
+        "Srijan Mishra",
+        "Stanislas Lange",
+        "Steve Hong",
+        "Sumukh Aithal",
+        "Szymon Antoniak",
+        "Tarun Kumar Vangani",
+        "Teven Le Scao",
+        "Theo Cachet",
+        "Thibaut Lavril",
+        "Thomas Chabal",
+        "Thomas Coste",
+        "Thomas Defard",
+        "Thomas Foubert",
+        "Thomas Robert",
+        "Thomas Wang",
+        "Tianyu Zhang",
+        "Tim Lawson",
+        "Timothee Lacroix",
+        "Tobias Kronlachner",
+        "Tom Bewley",
+        "Tom Edwards",
+        "Tomas Hodan",
+        "Tuhin Das",
+        "Tyler Wang",
+        "Ulrick BLE",
+        "Umar Jamil",
+        "Umberto Tomasini",
+        "Valentin Mace",
+        "Van Phung",
+        "Vedant Nanda",
+        "Victor Jouault",
+        "Victor Letzelter",
+        "Victor Paltz",
+        "Victor Poucheret",
+        "Vincent Maladiere",
+        "Vincent Pfister",
+        "Virgile Richard",
+        "Vladislav Bataev",
+        "Wassim Bouaziz",
+        "Wen Ding Li",
+        "William Havard",
+        "William Marshall",
+        "Xinghui Li",
+        "Xingran Guo",
+        "Xinyu Yang",
+        "Yann Dreze",
+        "Yassine El Ouahidi",
+        "Yassir Bendou",
+        "Yihan Wang",
+        "Yimu Pan",
+        "Yves Martin des Taillades",
+        "Zaccharie Ramzi",
+        "Zhenlin Xu",
+        "Zsofia Csakany"
       ],
-      "published": "2026-08-31",
+      "published": "2026-07-22",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30142",
-      "pdf_url": "https://arxiv.org/pdf/2608.30142",
+      "url": "https://arxiv.org/abs/2607.20785",
+      "pdf_url": "https://arxiv.org/pdf/2607.20785",
       "code_url": "",
       "categories": [
-        "cs.HC"
+        "cs.RO",
+        "cs.AI"
       ],
       "topics": [
-        "VLM感知与规划"
+        "地面 VLN"
       ],
-      "relevance_score": 2,
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：LandmarkLens: Predicting and Presenting Effective Landmarks for Mixed-Reality Urban Exploration。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：People with a poor sense of direction (SOD) struggle to build cognitive maps for effective spatial navigation, and existing navigation tools prioritize efficiency over spatial learning.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "vision-language",
-        "vlm"
-      ]
-    },
-    {
-      "id": "2608.30997",
-      "arxiv_id": "2608.30997",
-      "title": "Multi-View Reflective Surface Inspection via Semantic-Saliency Cross-Verification",
-      "authors": [
-        "Van-Giang Nguyen",
-        "Thanh-Tuan Tran",
-        "Xuan-Hieu Phan",
-        "Xiem HoangVan"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30997",
-      "pdf_url": "https://arxiv.org/pdf/2608.30997",
-      "code_url": "",
-      "categories": [
-        "cs.CV"
-      ],
-      "topics": [
-        "VLM感知与规划"
-      ],
-      "relevance_score": 2,
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Multi-View Reflective Surface Inspection via Semantic-Saliency Cross-Verification。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Reflective smartphone cover glass is challenging to inspect from a single fixed viewpoint because defect visibility varies with viewing geometry and specular reflections.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "vision-language",
-        "vlm"
-      ]
-    },
-    {
-      "id": "2608.30938",
-      "arxiv_id": "2608.30938",
-      "title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
-      "authors": [
-        "Qi Peng",
-        "Yi Cai",
-        "Jialin Cui",
-        "Tong Zhu",
-        "Yujuan Ding",
-        "Qingbao Huang",
-        "Tao Wang",
-        "Jiayuan Xie",
-        "Changmeng Zheng",
-        "Qing Li"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30938",
-      "pdf_url": "https://arxiv.org/pdf/2608.30938",
-      "code_url": "",
-      "categories": [
-        "cs.MA"
-      ],
-      "topics": [
-        "VLM感知与规划"
-      ],
-      "relevance_score": 2,
+      "relevance_score": 7,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Medical referral (directing patients to the appropriate hospital department) is a complex decision-making process requiring the synthesis of multimodal data, including patient narratives, laboratory indicators, and radio",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "提出仅依赖单目RGB的8B视觉语言导航模型，通过在当前画面中指出下一目标位置来预测路标点，结合大规模仿真轨迹与高效训练配方，在R2R-CE和RxR-CE上刷新SOTA。",
+      "change_zh": "放弃深度、多相机与预建地图，仅用单目RGB在图像空间指路标而非机器人坐标动作；配合大规模仿真轨迹、前缀缓存打包训练省22倍token、树状注意力防真值泄漏与RL探索，单模型可跨轮式、足式与空中平台。",
+      "why_it_matters": "单目RGB即达SOTA并宣称支持空中平台，对载荷受限的UAV搜索与接近很具吸引力；图像空间指路标与跨机体泛化思路可迁移至ObjectNav及无人机指令跟随，高效训练配方亦利好具身多模态模型规模化。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
       "keywords": [
-        "large language model",
-        "multimodal"
+        "aerial",
+        "benchmark",
+        "deployment",
+        "exploration",
+        "r2r",
+        "waypoint"
       ]
     },
     {
-      "id": "2608.30657",
-      "arxiv_id": "2608.30657",
-      "title": "InfraOcc: An Infrastructure Occupancy Benchmark with Static-to-Dynamic Reasoning",
+      "id": "2607.19288",
+      "arxiv_id": "2607.19288",
+      "title": "No Training, Better Flights: Test-Time Scaled VLMs for UAV Navigation",
       "authors": [
-        "Lei Yang",
-        "Xiaokai Bai",
-        "Boqi Li",
-        "Chunmian Lin",
-        "Li Wang",
-        "Ziying Song",
-        "Jiahuan Zhang",
-        "Enhui Ma",
-        "Haibao Yu",
-        "Jiaqi Ma",
-        "Kaicheng Yu"
+        "Feinan Cheng",
+        "Dongliang Xu",
+        "Wenli Nong",
+        "Zhiheng Zhang",
+        "Ang Liu",
+        "Tianyu Wang",
+        "Yue Yao"
       ],
-      "published": "2026-08-31",
+      "published": "2026-07-21",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.30657",
-      "pdf_url": "https://arxiv.org/pdf/2608.30657",
-      "code_url": "",
-      "categories": [
-        "cs.CV"
-      ],
-      "topics": [
-        "信念与语义地图"
-      ],
-      "relevance_score": 2,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦信念与语义地图，主要研究问题可概括为：InfraOcc: An Infrastructure Occupancy Benchmark with Static-to-Dynamic Reasoning。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Fixed-viewpoint infrastructure sensors repeatedly observe the same traffic space, making roadside 3D occupancy structurally different from ego-vehicle perception: a near-persistent static scaffold is overlaid with sparse",
-      "why_it_matters": "与信念与语义地图直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "occupancy"
-      ]
-    },
-    {
-      "id": "2608.29828",
-      "arxiv_id": "2608.29828",
-      "title": "SymVD: Symmetric Vision Language Action Distillation for Robot Manipulation",
-      "authors": [
-        "Hyewon Choi",
-        "Donggyu Kim",
-        "Soojean Han"
-      ],
-      "published": "2026-08-30",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.29828",
-      "pdf_url": "https://arxiv.org/pdf/2608.29828",
-      "code_url": "",
-      "categories": [
-        "eess.SY"
-      ],
-      "topics": [
-        "VLM感知与规划"
-      ],
-      "relevance_score": 3,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：SymVD: Symmetric Vision Language Action Distillation for Robot Manipulation。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：While pretrained Vision-Language-Action (VLA) models offer broad generalization capabilities in robotic manipulation tasks, adapting them to real-world environments or handling task shifts often requires substantial addi",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "vision language",
-        "vision-language"
-      ]
-    },
-    {
-      "id": "2608.29852",
-      "arxiv_id": "2608.29852",
-      "title": "MariSat: A Maritime Dataset for Instance Segmentation of Objects in Satellite and Aerial Images",
-      "authors": [
-        "Amir Abbes",
-        "Ines Harrabi",
-        "Lucas Justin Yirepoa Kinda",
-        "Rim Trabelsi",
-        "Adnane Cabani",
-        "Fatma Abdelkefi"
-      ],
-      "published": "2026-08-30",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.29852",
-      "pdf_url": "https://arxiv.org/pdf/2608.29852",
-      "code_url": "",
-      "categories": [
-        "cs.CV"
-      ],
-      "topics": [
-        "UAV主动搜索"
-      ],
-      "relevance_score": 2,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦UAV主动搜索，主要研究问题可概括为：MariSat: A Maritime Dataset for Instance Segmentation of Objects in Satellite and Aerial Images。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Automated maritime surveillance from satellite and aerial imagery requires large, precisely annotated datasets, which remain scarce for the instance-segmentation task, particularly for small vessels in cluttered port env",
-      "why_it_matters": "与UAV主动搜索直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "aerial"
-      ]
-    },
-    {
-      "id": "2608.29749",
-      "arxiv_id": "2608.29749",
-      "title": "DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting",
-      "authors": [
-        "Yuxuan Gao",
-        "Shiqi Zhang",
-        "Yedong Shen",
-        "Yifan Duan",
-        "Wenhao Yu",
-        "Xin Zhang",
-        "Siyuan Cao",
-        "Jiajun Deng",
-        "Yanyong Zhang"
-      ],
-      "published": "2026-08-30",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.29749",
-      "pdf_url": "https://arxiv.org/pdf/2608.29749",
-      "code_url": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "topics": [
-        "VLM感知与规划"
-      ],
-      "relevance_score": 2,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Conventional flow-based vision-language-action (VLA) models support expressive continuous action generation but rely on multi-step refinement to produce each action chunk, increasing latency in online robot control.",
-      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [
-        "vision-language"
-      ]
-    },
-    {
-      "id": "2608.29510",
-      "arxiv_id": "2608.29510",
-      "title": "ARMOR: Manifold-Oriented Training for Adversarially Robust Aerial Object Detection under Data Scarcity",
-      "authors": [
-        "Haoran Wang",
-        "Matthew Lau",
-        "Alec Helbling",
-        "Matthew Hull",
-        "ShengYun Peng",
-        "Mansi Phute",
-        "Martin Andreoni",
-        "Willian T. Lunardi",
-        "Duen Horng Chau",
-        "Wenke Lee"
-      ],
-      "published": "2026-08-30",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.29510",
-      "pdf_url": "https://arxiv.org/pdf/2608.29510",
+      "url": "https://arxiv.org/abs/2607.19288",
+      "pdf_url": "https://arxiv.org/pdf/2607.19288",
       "code_url": "",
       "categories": [
         "cs.CV",
-        "cs.CR",
-        "cs.LG"
+        "cs.RO"
       ],
       "topics": [
-        "UAV主动搜索"
+        "空域 VLN"
       ],
-      "relevance_score": 2,
+      "relevance_score": 8,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/4c4eb9ba1a3e821f967a0a8a93e5e55a004c36c6",
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文提出免训练的测试时扩展方法用于无人机视觉语言导航：并行生成多条候选飞行规划并自我修正，再以安全、目标对齐与前进度多准则打分选优，冻结原模型权重即取得SOTA性能。",
+      "change_zh": "常见UAV VLN多依赖微调模型或单次前向推理；本文改为纯测试时扩展：并行生成候选规划、自评修正并按安全/对齐/前进度打分选优，不改模型权重即提升规划质量；但打分函数实现与实验细节摘要未述。",
+      "why_it_matters": "直接命中空域VLN技术线，示范了零训练成本下提升无人机指令跟随安全性与成功率的新路径；其候选生成-自评-多准则打分框架可迁移到UAV主动目标搜索的航迹决策，也可为ObjectNav中VLM推理增强提供借鉴。",
+      "relevance_rating": 10,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "uav",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.29315",
+      "arxiv_id": "2608.29315",
+      "title": "SGE: Semantically-Guided Exploration for Unstructured Environments via Image-Space Waypoint Sampling",
+      "authors": [
+        "Christopher Tatsch",
+        "Yu Gu"
+      ],
+      "published": "2026-08-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29315",
+      "pdf_url": "https://arxiv.org/pdf/2608.29315",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 5,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦UAV主动搜索，主要研究问题可概括为：ARMOR: Manifold-Oriented Training for Adversarially Robust Aerial Object Detection under Data Scarcity。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Aerial object detection is increasingly deployed in real-world applications, but models remain vulnerable to physical, universal adversarial patches that cause them to miss objects.",
-      "why_it_matters": "与UAV主动搜索直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "summary_zh": "SGE将像素级语义分割融入地面机器人探索的图像空间航点采样与效用评估，结合实时TSP滚动时域路线优化，并用禁忌区域与图回溯机制应对导航失败，在标准仿真基准与校园、矿井多平台真机实验中验证有效。",
+      "change_zh": "与常见的几何/边界探索在3D空间采样不同，SGE直接在图像空间用语义感知效用函数评估候选航点，把可通行性、障碍距离、兴趣目标与深度收益统一纳入采样，使探索可被语义任务偏置，并新增禁忌区与图回溯提升鲁棒性。",
+      "why_it_matters": "主动探索是UAV目标搜索与ObjectNav的基础能力，SGE的图像空间语义效用采样与目标偏置思路可迁移到目标导向的飞行探索与开放词汇目标导航；其跨平台、跨场景（含矿井）的真机验证也为探索方法的sim2real落地提供参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
       "keywords": [
-        "aerial"
+        "benchmark",
+        "exploration",
+        "waypoint"
+      ]
+    },
+    {
+      "id": "2608.15175",
+      "arxiv_id": "2608.15175",
+      "title": "LAPF: LLM-Agent-Based Path Finder Using the UAVScenes Dataset",
+      "authors": [
+        "Yousef Emami",
+        "Mohammadhossein Homaei",
+        "Hao Zhou",
+        "Miguel Gutiérrez Gaitán",
+        "Atefeh Hajijamali Arani",
+        "Rui Zhang"
+      ],
+      "published": "2026-08-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.15175",
+      "pdf_url": "https://arxiv.org/pdf/2608.15175",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 7,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出面向城镇尺度室外无人机自主导航的LLM智能体路径规划框架LAPF，将感知、记忆、规划与行动整合为闭环认知架构，借助经验记忆与CoT推理为每个检测危险生成有界修正动作并动态修正航点。",
+      "change_zh": "相比依赖预定义模型的优化与ML/RL路线及功能有限的LLM辅助导航，LAPF把记忆、规划与工具交互纳入闭环智能体架构，复用先前导航经验，用CoT推理把每个检测危险约束为有界、度量中性的修正动作，据环境反馈在线修正航点。",
+      "why_it_matters": "为UAV主动目标搜索与接近提供免任务特定训练的LLM智能体规划思路，其经验记忆与危险-动作耦合机制可迁移到搜救侦察的航点决策；闭环认知架构与有界修正动作设计对ObjectNav等地面目标导航亦有借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "uav",
+        "waypoint"
+      ]
+    },
+    {
+      "id": "2608.29881",
+      "arxiv_id": "2608.29881",
+      "title": "OptiGeo: Efficient Monocular Geometry for Embodied Perception in Optically Challenging Scenes",
+      "authors": [
+        "Muxin Liu",
+        "Tianbo Liu",
+        "Jing Xia",
+        "Xiaoyang Lyu",
+        "Xiaoshan Wu",
+        "Bo Wang",
+        "Peng Dai",
+        "Zhongrui Wang",
+        "Shaoshuai Shi",
+        "Xiaojuan Qi"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29881",
+      "pdf_url": "https://arxiv.org/pdf/2608.29881",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出偏差感知训练框架OptiGeo，将透明与反射场景的深度失效归因于真实深度监督中的传感器偏差，用清洁几何教师与残差修剪对齐修复监督，辅以少量透明物体定向渲染，30M参数即在透明场景基准上超越更大模型，并经真实导航验证。",
+      "change_zh": "相比常见的场景预处理、辅助模块或事后微调，该文将透明/反射失败重定位为基础模型训练内的局部监督偏差问题，用清洁教师与残差修剪直接修复监督而非叠加模块，并把定向渲染压缩为少量清洁几何来源而非大规模微调集。",
+      "why_it_matters": "透明与镜面场景是ObjectNav与UAV搜索部署中深度失效的高发点，玻璃门窗、镜面会破坏建图与避障；轻量零样本泛化的鲁棒单目几何可为导航感知栈提供可靠底座，提升无人机在玻璃幕墙等环境的探索与目标接近安全性。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "geometry"
+      ]
+    },
+    {
+      "id": "2608.27371",
+      "arxiv_id": "2608.27371",
+      "title": "Embodied Scene Rearrangement Planning",
+      "authors": [
+        "Canzhi Chen",
+        "Zan Wang",
+        "Siqi Zhu",
+        "Qi Wu",
+        "Yixuan Li",
+        "Wei Liang"
+      ],
+      "published": "2026-08-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.27371",
+      "pdf_url": "https://arxiv.org/pdf/2608.27371",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出具身场景重排任务ESRP：智能体仅凭第一人称观测与俯视目标布局在3D场景重摆家具，基于OmniGibson构建含5400余场景对、8200物体的基准，含三级指标和四种基线，现有方法均难以高效完成。",
+      "change_zh": "与常见假设全局状态可获取的重排任务不同，ESRP禁止全局状态访问并引入物体互相遮挡，迫使智能体用部分自我中心观测对齐全局目标布局，更贴近真实部署约束，并把该问题固化为大规模基准加多类基线评测。",
+      "why_it_matters": "其部分可观测下局部观测与全局目标布局对齐、长程规划的挑战，与ObjectNav/UAV目标搜索中由局部观测推断全局目标的问题同构；其分级指标与TAMP/VLM/IL/RL四类基线范式，可为具身导航与规划智能体评测提供方法参照。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "deployment",
+        "task planning"
+      ]
+    },
+    {
+      "id": "2608.16640",
+      "arxiv_id": "2608.16640",
+      "title": "DPNet: Efficient Dead-End Prediction and Avoidance for Vision-Based UAV Navigation",
+      "authors": [
+        "Ruibin Zhang",
+        "Lun Pan",
+        "Zelong Xia",
+        "Jialiang Hou",
+        "Fei Gao"
+      ],
+      "published": "2026-08-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.16640",
+      "pdf_url": "https://arxiv.org/pdf/2608.16640",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DPNet用轻量网络从RGB-D输入预测视场内死胡同的相对距离与方位，据此在线剪枝预设紧凑轨迹库实现主动避让，支持机载50Hz重规划，仿真与真机实验均验证有效性。",
+      "change_zh": "不同于依赖稠密建图或陷入死胡同后再反应式脱困的常见路线，该工作直接从当前RGB-D视野预测潜在死胡同的方位与距离，用预测结果在线剪枝紧凑轨迹库，实现预测式主动避让，且无需真机标注与微调即可跨场景迁移。",
+      "why_it_matters": "死胡同是复杂环境中机载视觉导航失败的重要诱因，轻量预测加50Hz机载重规划让算力受限的无人机能提前绕开死胡同，对搜救侦察等主动目标搜索的成功率与飞行效率有直接帮助，零微调跨场景迁移也降低真机部署成本。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "uav"
+      ]
+    },
+    {
+      "id": "2608.18632",
+      "arxiv_id": "2608.18632",
+      "title": "Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage",
+      "authors": [
+        "Gašper Spagnolo",
+        "Matej Dobrevski",
+        "Danijel Skočaj"
+      ],
+      "published": "2026-08-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.18632",
+      "pdf_url": "https://arxiv.org/pdf/2608.18632",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "在真实与合成长航程航拍序列上，无IMU/GNSS辅助地系统评测五种单目SLAM：MASt3R-SLAM短程水平误差最低，但长程轨迹与垂直定位仍严重失真，纯视觉空中导航尚不可靠。",
+      "change_zh": "相比常见地面或带IMU融合的SLAM评测，该工作聚焦高空正下视这一弱几何约束、强感知歧义的特殊场景，剥离惯性/GNSS辅助以隔离纯视觉能力，并揭示现有系统在长航程与垂直通道上的系统性失效。",
+      "why_it_matters": "对GNSS拒止下无人机搜救侦察等主动目标搜索，可靠的视觉状态估计是前提；该评测表明现有单目SLAM在高空长航线上不可靠，为UAV导航传感器选型与依赖视觉里程计的策略设计提供了明确的负面证据与能力边界。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "uav"
+      ]
+    },
+    {
+      "id": "2608.04121",
+      "arxiv_id": "2608.04121",
+      "title": "Interpretable Fuzzy Inference for UAV Target Tracking Using Bounding-Box Geometry",
+      "authors": [
+        "Reza Ahmari",
+        "Ahmad Mohammadi",
+        "Vahid Hemmati",
+        "Nicholas Edmond",
+        "Hossein Z. Saghazadeh",
+        "Olusola Odeyomi",
+        "Parham Kebria",
+        "Abdollah Homaifar"
+      ],
+      "published": "2026-08-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.04121",
+      "pdf_url": "https://arxiv.org/pdf/2608.04121",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出可解释模糊推理框架，仅用YOLO检测框的质心、面积与长宽比等低维几何特征回归无人机跟踪地面目标的连续偏航指令，无需显式几何建模，在VICON动捕的6169个样本上MAE约0.14°。",
+      "change_zh": "常见路线是黑箱深度回归或需标定与外部定位的几何重建；本文改用由训练集分位数自动导出的紧凑27条Takagi-Sugeno模糊规则，仅凭检测框几何透明地输出偏航角，数据与算力需求极低，但仅做离线回归验证、未见实机飞行。",
+      "why_it_matters": "对无人机主动目标搜索的'发现后接近'环节有直接参考价值：轻量可解释的机载偏航估计可在算力受限平台实时闭合视觉伺服回路，降低Sim2Real部署门槛；但仅覆盖偏航单自由度，不涉及搜索决策与ObjectNav级导航。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "evaluation",
+        "geometry",
+        "uav"
       ]
     }
   ]

@@ -1,0 +1,98 @@
+{
+  "2608.09515": {
+    "title": "Tether-Inertial Localization for Planetary Drones",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心贡献是系绳无人机的定位与状态估计（解析悬链线建模+高斯过程残差补偿），不属于UAV目标搜索、aerial VLN或所列具身基础能力技术线，仅与UAV术语擦边。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.09515"
+  },
+  "2608.26011": {
+    "title": "Phantom Navigator: Stealthy and Precise Unmanned Aerial Vehicle Redirection with Real-Time Tracking and GPS Spoofing",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "该文属于无人机安全对抗方向的GPS欺骗重定向攻击研究，核心问题不在UAV自主导航、目标搜索或具身导航等收录技术线内，仅外围涉及对无人机的检测跟踪。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.26011"
+  },
+  "2608.09547": {
+    "title": "Model-Based Systems Engineering Framework for SysML-Driven Design of Autonomous UAVs",
+    "relevance": 2,
+    "rigor": 2,
+    "reason": "属MBSE/SysML系统工程方法学论文，仅以无人机任务为设计层示例，无导航算法创新、无实验或仿真验证，不落在收录的具身导航技术线上。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.09547"
+  },
+  "2608.15259": {
+    "title": "UAV Video Deblurring via Motion-Aware Diffusion: A Path to Robust Target Detection",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "该文属于视频去模糊的低层视觉复原工作，仅以UAV目标检测作下游验证，不含导航、搜索决策或主动感知成分，超出收录范围。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.15259"
+  },
+  "2607.18604": {
+    "title": "Intelligent Multi-UAV Navigation in ITNTNs: A Hierarchical LLM Approach",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "核心问题是ITNTN网络中的多无人机负载均衡与切换感知轨迹控制，评价指标为吞吐量与碰撞率，属通信网络导向任务，非UAV目标搜索或指令跟随导航，仅分层LLM规划与具身导航边缘相关。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2607.18604"
+  },
+  "2607.18936": {
+    "title": "NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "核心是GPS拒止下的视觉定位与多速率传感器融合状态估计，不涉及目标搜索、VLN或导航决策，仅以在线建图重建与真机部署与范围擦边。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2607.18936"
+  },
+  "2608.16658": {
+    "title": "X$^2$Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属于跨视角地理定位的图像/视频检索任务，无具身智能体、导航决策或主动视角控制成分，仅与空间智能及机器人全局定位间接相关，属边缘相关而非核心技术线。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.16658"
+  },
+  "2608.30125": {
+    "title": "VIBE: Video Instruction-aligned Background music gEneration",
+    "relevance": 1,
+    "rigor": 6,
+    "reason": "该论文属于视频配乐（文生音乐）生成工作，与具身导航、UAV搜索等收录技术线无实质关联，仅在'多模态模型'术语上擦边。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.30125"
+  },
+  "2608.30506": {
+    "title": "Anomaly Detection on Small Industrial Components via Vision-Based Tactile Sensing",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作为机械臂搭载触觉传感器的工业质检异常检测评测，不含导航决策、目标搜索或主动感知规划成分，属于收录范围外的操作与检测类研究。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.30506"
+  },
+  "2608.30820": {
+    "title": "RealOOB: A Definition-Consistent Real-World Oriented Occlusion Boundary Benchmark",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "纯像素级遮挡边界/边缘检测类图像基准，属明确排除的低层视觉数据集范畴，无导航、机器人或具身成分，仅以'场景理解、深度排序'等术语擦边。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.30820"
+  },
+  "2608.28300": {
+    "title": "MaCoPlanner: LLM-Assisted Manual-Compiled Task Planning with Proactive Safety Verification for Robotic Industrial Panel Operation",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "应用对象为工业控制面板的按钮/开关类操作，属操纵型控制任务且不含导航决策成分，仅规划方法学与规划智能体技术线擦边，按范围应拒收。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.28300"
+  },
+  "2608.21879": {
+    "title": "Vision-Guided Morphing Quadcopter for Multi-Geometry Payload Transport through Narrow Passages",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "核心贡献为单驱动变形机构与空中抓取/载荷运输的平台设计，接近被排除的机械操作类工作，不含目标搜索或导航决策成分，仅UAV术语与空域自主擦边。",
+    "rejected_at": "2026-09-01",
+    "url": "https://arxiv.org/abs/2608.21879"
+  }
+}

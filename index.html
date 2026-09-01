@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="UAV 主动目标搜索与 ObjectNav 每日论文情报站" />
-  <title>AeroNav Papers · 低空具身导航论文站</title>
+  <meta name="description" content="具身导航每日论文情报站：UAV 目标搜索、VLN、空间智能、世界模型、具身多模态大模型等十一条技术线" />
+  <title>AeroNav Papers · 具身导航论文情报站</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
       <div>
         <div class="eyebrow"><span class="pulse"></span> DAILY RESEARCH INTELLIGENCE</div>
         <h1>让真正重要的<br><em>具身导航进展</em>浮现出来</h1>
-        <p>聚焦 UAV 主动目标搜索与 ObjectNav。每天筛选论文，给出中文精炼研判、证据质量和与你研究的直接关系。</p>
+        <p>覆盖空域与地面具身导航、空间智能、世界模型、具身多模态大模型等十一条技术线。每天筛选论文，给出中文精炼研判、质量评分和与你研究的直接关系。</p>
       </div>
       <div class="radar-card" aria-hidden="true">
         <div class="radar"><i></i><i></i><i></i><span class="sweep"></span><b class="dot d1"></b><b class="dot d2"></b><b class="dot d3"></b></div>
@@ -42,6 +42,7 @@
         <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索标题、作者或关键词…" /></label>
         <select id="topicFilter"><option value="">全部主题</option></select>
         <select id="evidenceFilter"><option value="">全部证据等级</option><option>强</option><option>中</option><option>初步</option><option>待核验</option></select>
+        <select id="qualityFilter"><option value="">全部质量档</option><option value="featured">精选（相关≥8）</option><option value="standard">常规（相关6-7）</option></select>
       </div>
       <div id="topicChips" class="chips"></div>
       <div id="paperList" class="paper-list"><div class="loading">正在读取论文数据…</div></div>
@@ -49,14 +50,29 @@
     </section>
 
     <section id="scope" class="scope-section">
-      <div><span class="kicker">RESEARCH SCOPE</span><h2>持续跟踪六条技术线</h2></div>
-      <div class="scope-grid">
-        <article><b>01</b><h3>UAV 主动搜索</h3><p>低空大尺度环境中的目标发现、观测与接近。</p></article>
-        <article><b>02</b><h3>ObjectNav</h3><p>目标条件导航、开放词汇目标与实例确认。</p></article>
-        <article><b>03</b><h3>信念与语义地图</h3><p>不确定语义证据的空间累积、遗忘与更新。</p></article>
-        <article><b>04</b><h3>主动搜索规划</h3><p>信息增益、NBV、POMDP 与探索决策。</p></article>
-        <article><b>05</b><h3>VLM 感知规划</h3><p>视觉语言模型的目标理解、推理与长程规划。</p></article>
-        <article><b>06</b><h3>多机器人探索</h3><p>协同分区、信息共享、去中心化规划与通信约束。</p></article>
+      <div><span class="kicker">RESEARCH SCOPE</span><h2>持续跟踪十一条技术线</h2></div>
+      <div class="scope-group"><span class="scope-group-label">空域自主</span>
+        <div class="scope-grid">
+          <article><b>01</b><h3>UAV 目标搜索</h3><p>低空大尺度环境中的目标发现、观测与接近，搜救与侦察。</p></article>
+          <article><b>02</b><h3>空域 VLN</h3><p>无人机遵循自然语言指令的导航与任务执行。</p></article>
+        </div>
+      </div>
+      <div class="scope-group"><span class="scope-group-label">地面导航</span>
+        <div class="scope-grid">
+          <article><b>03</b><h3>ObjectNav 目标搜索</h3><p>目标条件导航、开放词汇目标与实例确认。</p></article>
+          <article><b>04</b><h3>地面 VLN</h3><p>视觉语言导航、指令跟随与路径推理。</p></article>
+        </div>
+      </div>
+      <div class="scope-group"><span class="scope-group-label">基础能力</span>
+        <div class="scope-grid">
+          <article><b>05</b><h3>空间智能</h3><p>空间推理、3D 场景理解与空间记忆。</p></article>
+          <article><b>06</b><h3>世界模型</h3><p>用于导航与规划的具身世界模型与预测表征。</p></article>
+          <article><b>07</b><h3>具身多模态大模型</h3><p>MLLM/VLM 用于机器人感知、导航与决策。</p></article>
+          <article><b>08</b><h3>规划智能体</h3><p>LLM 驱动的任务规划与 agentic planning。</p></article>
+          <article><b>09</b><h3>具身基准与评测</h3><p>embodied benchmark 与系统性评测。</p></article>
+          <article><b>10</b><h3>真机与 Sim2Real</h3><p>实物部署、domain transfer 与 sim2real。</p></article>
+          <article><b>11</b><h3>主动感知与重建</h3><p>active perception、NBV 与在线建图。</p></article>
+        </div>
       </div>
     </section>
   </main>

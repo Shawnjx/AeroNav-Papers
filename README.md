@@ -1,13 +1,14 @@
 # AeroNav Papers
 
-面向 UAV 主动目标搜索与 ObjectNav 的每日论文情报站。项目使用 GitHub Actions 定时抓取公开论文元数据，生成静态 JSON，并由 GitHub Pages 展示。
+面向具身导航研究者的每日论文情报站。项目使用 GitHub Actions 定时抓取公开论文元数据，生成静态 JSON，并由 GitHub Pages 展示。
 
 ## 功能
 
-- 聚焦 UAV active target search、ObjectNav、belief/semantic mapping、active search planning、VLM planning、multi-robot exploration
+- 覆盖三条板块十一条技术线：空域自主（UAV 目标搜索、空域 VLN）、地面导航（ObjectNav、地面 VLN）、基础能力（空间智能、世界模型、具身多模态大模型、规划智能体、具身基准与评测、真机与 Sim2Real、主动感知与重建）
+- 三层质量漏斗：规则粗筛（主题词+动作词根）→ LLM 评审门（相关度/严谨度 0-10 打分，不达标不入库）→ 元数据加分（顶会白名单核验、开源代码）
 - arXiv 与 Semantic Scholar 元数据聚合、按 DOI/arXiv ID/标题去重
 - 中文精炼研判：核心变化、证据质量、与你研究的关系
-- 主题、来源、证据等级、关键词筛选
+- 主题、来源、证据等级、质量档、关键词筛选
 - 每日自动更新，并保留最近 180 天的数据
 
 ## 部署到 GitHub Pages
@@ -51,10 +52,22 @@ python scripts/update_papers.py
 编辑 `config/topics.json`：
 
 - `queries`：检索式
-- `keywords`：相关性评分词
+- `topics_catalog`：技术线目录（板块分组），GLM 归类与前端筛选都以此为准
+- `scope_note`：收录范围定义（正负面清单），是 GLM 评审门的判据
+- `keywords`：相关性评分词（粗筛与无 API 时的兜底分类）
 - `venue_allowlist`：重点会议与期刊
 - `max_new_per_run`：每日最多新增数量
 
 ## 数据说明
 
 `data/papers.json` 是网站的唯一数据源。自动研判仅基于公开元数据与摘要，不等同于阅读全文；证据等级会区分预印本、已发表论文、是否有代码，以及实验描述是否充分。
+
+### 质量筛选机制
+
+新论文经过三层漏斗才会入库：
+
+1. **规则粗筛**（零成本）：关键词相关分需达到 `min_relevance_score`，且标题或摘要必须命中 `action_stems` 中的动作词根（navigat/search/explor 等），排除仅靠术语擦边的论文。
+2. **LLM 评审门**：GLM 对照 `scope_note` 定义的研究范围输出 `relevance`（相关度 0-10）与 `rigor`（严谨度 0-10），低于 `gate.min_relevance`/`gate.min_rigor` 的论文**不入库**，连同拒绝理由存档到 `data/rejected.json`，误杀可人工复查（删除对应条目后下次运行会重新评审）。
+3. **元数据加分**：发表来源命中 `venue_allowlist` 加 2 分，摘要含开源代码信号加 1 分；综合分 = relevance×2 + rigor + 加分，决定列表排序与"精选（相关≥8）/常规"分档。
+
+未配置 `OPENAI_API_KEY` 时评审门自动跳过，仅保留规则粗筛。调整松紧改 `config/topics.json` 中的 `gate` 与 `min_relevance_score`。
