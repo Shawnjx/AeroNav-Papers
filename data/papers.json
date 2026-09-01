@@ -1,24 +1,600 @@
 {
-  "updated_at": "2026-09-01T00:00:00Z",
+  "updated_at": "2026-09-01T12:27:58.105074+00:00",
   "papers": [
     {
-      "id": "demo-belief-map",
-      "title": "示例：面向开放词汇目标导航的在线信念地图",
-      "authors": ["Demo Author"],
+      "id": "2608.30935",
+      "arxiv_id": "2608.30935",
+      "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
+      "authors": [
+        "Shaoan Wang",
+        "Aocheng Luo",
+        "Fei Huang",
+        "Jingyi Xu",
+        "Xiaoyang Wang",
+        "Yueyu Wang",
+        "Qianli Ma",
+        "Fan Yang",
+        "Ran Mei",
+        "Jia Wei",
+        "Jiangpeng Hu",
+        "Xuhao Liu",
+        "Hongming Chen",
+        "Yuanbin Shao",
+        "Yiyang Lin",
+        "Ziliang Li",
+        "Liang Pan",
+        "Xinhang Liu",
+        "Yuntao Ma",
+        "Tingxiang Fan"
+      ],
       "published": "2026-08-31",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/",
-      "pdf_url": "https://arxiv.org/",
+      "url": "https://arxiv.org/abs/2608.30935",
+      "pdf_url": "https://arxiv.org/pdf/2608.30935",
       "code_url": "",
-      "topics": ["ObjectNav", "信念与语义地图"],
-      "summary_zh": "这是用于展示页面结构的示例记录。首次运行更新脚本后，真实论文将替换或追加到数据集中。",
-      "change_zh": "展示如何把目标语义证据累积为空间信念，并用于后续搜索决策。",
-      "evidence": "待核验",
-      "evidence_note": "示例数据，不代表真实论文结论。",
-      "why_it_matters": "对应 UAV 主动目标搜索中的语义证据积累与区域优先级更新。",
-      "keywords": ["belief map", "ObjectNav"],
-      "is_demo": true
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "VLM感知与规划",
+        "ObjectNav"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划、ObjectNav，主要研究问题可概括为：LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Embodied navigation requires agents to translate heterogeneous goals and visual observations into actions across tasks, environments, and robot embodiments.",
+      "why_it_matters": "与VLM感知与规划、ObjectNav直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "object navigation",
+        "vision-language",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30836",
+      "arxiv_id": "2608.30836",
+      "title": "Channel Gains to Captions: Task-Unified Multi-Level RF Sensing with Vision-Language Models",
+      "authors": [
+        "Tianyu Hu",
+        "Zhiren Gong",
+        "Haowei Cui",
+        "Shuai Wang",
+        "Samson Lasaulce",
+        "Lingxiang Li",
+        "Wassim Hamidouche",
+        "Zhi Chen",
+        "Merouane Debbah"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30836",
+      "pdf_url": "https://arxiv.org/pdf/2608.30836",
+      "code_url": "",
+      "categories": [
+        "eess.SP"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Channel Gains to Captions: Task-Unified Multi-Level RF Sensing with Vision-Language Models。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：This letter investigates a task-unified multi-level radio-frequency (RF) sensing framework driven by vision-language models (VLMs).",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "multimodal",
+        "vision-language",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30705",
+      "arxiv_id": "2608.30705",
+      "title": "VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs",
+      "authors": [
+        "Jingyi He",
+        "Sanghwan Kim",
+        "Zeynep Akata"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30705",
+      "pdf_url": "https://arxiv.org/pdf/2608.30705",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Multimodal large language models (MLLMs) struggle with fine-grained Visual Search, the task of locating small or rare objects in high-resolution images.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "large language model",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "2608.30428",
+      "arxiv_id": "2608.30428",
+      "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
+      "authors": [
+        "Jaewoo Ahn",
+        "Junseo Kim",
+        "Hyunseo Kim",
+        "Heeseung Yun",
+        "Jaehyeon Son",
+        "Zsolt Kira",
+        "Gunhee Kim"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30428",
+      "pdf_url": "https://arxiv.org/pdf/2608.30428",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "multimodal",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30726",
+      "arxiv_id": "2608.30726",
+      "title": "Multimodal Adaptive Expert Selection with Text Routing and Ordinal Prototype Optimization for Sentiment Analysis",
+      "authors": [
+        "Xiaode Chen",
+        "Jiakang Yu",
+        "Hongtao Deng",
+        "Huina Qu",
+        "Xun Zhu",
+        "Yinxia Lou"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30726",
+      "pdf_url": "https://arxiv.org/pdf/2608.30726",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Multimodal Adaptive Expert Selection with Text Routing and Ordinal Prototype Optimization for Sentiment Analysis。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Multimodal Sentiment Analysis (MSA) is a fundamental component of affective computing that aims to decipher complex emotional states by integrating verbal content with non-verbal cues including vocal intonation and facia",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "multimodal"
+      ]
+    },
+    {
+      "id": "2608.30760",
+      "arxiv_id": "2608.30760",
+      "title": "PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents",
+      "authors": [
+        "Ziyi Bai",
+        "Siqi Li",
+        "Tinglei Huang",
+        "Börje F. Karlsson"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30760",
+      "pdf_url": "https://arxiv.org/pdf/2608.30760",
+      "code_url": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Recent studies have shown that multimodal large language models (MLLMs) can serve as embodied agents, translating language instructions and visual observations into executable plans.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "large language model",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "2608.30396",
+      "arxiv_id": "2608.30396",
+      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "authors": [
+        "Zixing Lei",
+        "Gengze Zhou",
+        "Xiong-Hui Chen",
+        "Jiazhao Zhang",
+        "Yiyang Huang",
+        "Hang Yin",
+        "Haoqi Yuan",
+        "Qi Wu",
+        "Weixin Li",
+        "Siheng Chen"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30396",
+      "pdf_url": "https://arxiv.org/pdf/2608.30396",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Long-horizon physical-world agents must reason over distant goals while grounding decisions in reliable closed-loop behavior.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "vision-language",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30289",
+      "arxiv_id": "2608.30289",
+      "title": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
+      "authors": [
+        "Hanwen Wan",
+        "Dafeng Chi",
+        "Linbo Zhai",
+        "Tianao Shen",
+        "Yuzheng Zhuang",
+        "Tianle Zhang",
+        "Peidong Liu",
+        "Liang Lin",
+        "Xiaoqiang Ji"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30289",
+      "pdf_url": "https://arxiv.org/pdf/2608.30289",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Vision-language-action (VLA) models remain brittle in manipulation tasks that require physical commonsense.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "vision-language",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30142",
+      "arxiv_id": "2608.30142",
+      "title": "LandmarkLens: Predicting and Presenting Effective Landmarks for Mixed-Reality Urban Exploration",
+      "authors": [
+        "Chu Li",
+        "Yotam Sechayk",
+        "Jared Hwang",
+        "Jon E. Froehlich",
+        "Takeo Igarashi"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30142",
+      "pdf_url": "https://arxiv.org/pdf/2608.30142",
+      "code_url": "",
+      "categories": [
+        "cs.HC"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：LandmarkLens: Predicting and Presenting Effective Landmarks for Mixed-Reality Urban Exploration。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：People with a poor sense of direction (SOD) struggle to build cognitive maps for effective spatial navigation, and existing navigation tools prioritize efficiency over spatial learning.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "vision-language",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30997",
+      "arxiv_id": "2608.30997",
+      "title": "Multi-View Reflective Surface Inspection via Semantic-Saliency Cross-Verification",
+      "authors": [
+        "Van-Giang Nguyen",
+        "Thanh-Tuan Tran",
+        "Xuan-Hieu Phan",
+        "Xiem HoangVan"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30997",
+      "pdf_url": "https://arxiv.org/pdf/2608.30997",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Multi-View Reflective Surface Inspection via Semantic-Saliency Cross-Verification。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Reflective smartphone cover glass is challenging to inspect from a single fixed viewpoint because defect visibility varies with viewing geometry and specular reflections.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "vision-language",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30938",
+      "arxiv_id": "2608.30938",
+      "title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+      "authors": [
+        "Qi Peng",
+        "Yi Cai",
+        "Jialin Cui",
+        "Tong Zhu",
+        "Yujuan Ding",
+        "Qingbao Huang",
+        "Tao Wang",
+        "Jiayuan Xie",
+        "Changmeng Zheng",
+        "Qing Li"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30938",
+      "pdf_url": "https://arxiv.org/pdf/2608.30938",
+      "code_url": "",
+      "categories": [
+        "cs.MA"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Medical referral (directing patients to the appropriate hospital department) is a complex decision-making process requiring the synthesis of multimodal data, including patient narratives, laboratory indicators, and radio",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "large language model",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "2608.30657",
+      "arxiv_id": "2608.30657",
+      "title": "InfraOcc: An Infrastructure Occupancy Benchmark with Static-to-Dynamic Reasoning",
+      "authors": [
+        "Lei Yang",
+        "Xiaokai Bai",
+        "Boqi Li",
+        "Chunmian Lin",
+        "Li Wang",
+        "Ziying Song",
+        "Jiahuan Zhang",
+        "Enhui Ma",
+        "Haibao Yu",
+        "Jiaqi Ma",
+        "Kaicheng Yu"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30657",
+      "pdf_url": "https://arxiv.org/pdf/2608.30657",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "信念与语义地图"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦信念与语义地图，主要研究问题可概括为：InfraOcc: An Infrastructure Occupancy Benchmark with Static-to-Dynamic Reasoning。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Fixed-viewpoint infrastructure sensors repeatedly observe the same traffic space, making roadside 3D occupancy structurally different from ego-vehicle perception: a near-persistent static scaffold is overlaid with sparse",
+      "why_it_matters": "与信念与语义地图直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "occupancy"
+      ]
+    },
+    {
+      "id": "2608.29828",
+      "arxiv_id": "2608.29828",
+      "title": "SymVD: Symmetric Vision Language Action Distillation for Robot Manipulation",
+      "authors": [
+        "Hyewon Choi",
+        "Donggyu Kim",
+        "Soojean Han"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29828",
+      "pdf_url": "https://arxiv.org/pdf/2608.29828",
+      "code_url": "",
+      "categories": [
+        "eess.SY"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：SymVD: Symmetric Vision Language Action Distillation for Robot Manipulation。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：While pretrained Vision-Language-Action (VLA) models offer broad generalization capabilities in robotic manipulation tasks, adapting them to real-world environments or handling task shifts often requires substantial addi",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "vision language",
+        "vision-language"
+      ]
+    },
+    {
+      "id": "2608.29852",
+      "arxiv_id": "2608.29852",
+      "title": "MariSat: A Maritime Dataset for Instance Segmentation of Objects in Satellite and Aerial Images",
+      "authors": [
+        "Amir Abbes",
+        "Ines Harrabi",
+        "Lucas Justin Yirepoa Kinda",
+        "Rim Trabelsi",
+        "Adnane Cabani",
+        "Fatma Abdelkefi"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29852",
+      "pdf_url": "https://arxiv.org/pdf/2608.29852",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "UAV主动搜索"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦UAV主动搜索，主要研究问题可概括为：MariSat: A Maritime Dataset for Instance Segmentation of Objects in Satellite and Aerial Images。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Automated maritime surveillance from satellite and aerial imagery requires large, precisely annotated datasets, which remain scarce for the instance-segmentation task, particularly for small vessels in cluttered port env",
+      "why_it_matters": "与UAV主动搜索直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "aerial"
+      ]
+    },
+    {
+      "id": "2608.29749",
+      "arxiv_id": "2608.29749",
+      "title": "DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting",
+      "authors": [
+        "Yuxuan Gao",
+        "Shiqi Zhang",
+        "Yedong Shen",
+        "Yifan Duan",
+        "Wenhao Yu",
+        "Xin Zhang",
+        "Siyuan Cao",
+        "Jiajun Deng",
+        "Yanyong Zhang"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29749",
+      "pdf_url": "https://arxiv.org/pdf/2608.29749",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "VLM感知与规划"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦VLM感知与规划，主要研究问题可概括为：DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Conventional flow-based vision-language-action (VLA) models support expressive continuous action generation but rely on multi-step refinement to produce each action chunk, increasing latency in online robot control.",
+      "why_it_matters": "与VLM感知与规划直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "vision-language"
+      ]
+    },
+    {
+      "id": "2608.29510",
+      "arxiv_id": "2608.29510",
+      "title": "ARMOR: Manifold-Oriented Training for Adversarially Robust Aerial Object Detection under Data Scarcity",
+      "authors": [
+        "Haoran Wang",
+        "Matthew Lau",
+        "Alec Helbling",
+        "Matthew Hull",
+        "ShengYun Peng",
+        "Mansi Phute",
+        "Martin Andreoni",
+        "Willian T. Lunardi",
+        "Duen Horng Chau",
+        "Wenke Lee"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29510",
+      "pdf_url": "https://arxiv.org/pdf/2608.29510",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "topics": [
+        "UAV主动搜索"
+      ],
+      "relevance_score": 2,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦UAV主动搜索，主要研究问题可概括为：ARMOR: Manifold-Oriented Training for Adversarially Robust Aerial Object Detection under Data Scarcity。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Aerial object detection is increasingly deployed in real-world applications, but models remain vulnerable to physical, universal adversarial patches that cause them to miss objects.",
+      "why_it_matters": "与UAV主动搜索直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "aerial"
+      ]
     }
   ]
 }
