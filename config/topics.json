@@ -1,0 +1,23 @@
+{
+  "max_new_per_run": 18,
+  "retention_days": 180,
+  "queries": [
+    "all:(UAV OR aerial robot) AND all:(object navigation OR target search OR active search)",
+    "all:(ObjectNav OR object goal navigation) AND all:(belief map OR semantic map OR active exploration)",
+    "all:(vision language model OR VLM) AND all:(embodied navigation OR robot navigation)",
+    "all:(multi robot OR multi-agent) AND all:(exploration OR semantic mapping)"
+  ],
+  "keywords": {
+    "UAV主动搜索": ["uav", "aerial", "drone", "target search", "active search"],
+    "ObjectNav": ["objectnav", "object navigation", "object goal navigation", "semantic navigation"],
+    "信念与语义地图": ["belief map", "belief space", "semantic map", "semantic mapping", "occupancy"],
+    "主动搜索规划": ["active search", "information gain", "next best view", "pomdp", "frontier exploration"],
+    "VLM感知与规划": ["vision-language", "vision language", "vlm", "large language model", "multimodal"],
+    "多机器人探索": ["multi-robot", "multi robot", "multi-agent exploration", "collaborative exploration", "decentralized exploration"]
+  },
+  "venue_allowlist": [
+    "CVPR", "ICCV", "ECCV", "NeurIPS", "ICLR", "AAAI", "IJCAI",
+    "ACM Multimedia", "T-PAMI", "IJCV", "T-RO", "RA-L", "TGRS",
+    "ICRA", "IROS", "RSS", "CoRL"
+  ]
+}

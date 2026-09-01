@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UAV 主动目标搜索与 ObjectNav 每日论文情报站" />
+  <title>AeroNav Papers · 低空具身导航论文站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav shell">
+      <a class="brand" href="#"><span class="brand-mark">A</span><span>AeroNav Papers</span></a>
+      <div class="nav-links"><a href="#papers">论文</a><a href="#scope">关注范围</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </nav>
+    <div class="hero-content shell">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> DAILY RESEARCH INTELLIGENCE</div>
+        <h1>让真正重要的<br><em>具身导航进展</em>浮现出来</h1>
+        <p>聚焦 UAV 主动目标搜索与 ObjectNav。每天筛选论文，给出中文精炼研判、证据质量和与你研究的直接关系。</p>
+      </div>
+      <div class="radar-card" aria-hidden="true">
+        <div class="radar"><i></i><i></i><i></i><span class="sweep"></span><b class="dot d1"></b><b class="dot d2"></b><b class="dot d3"></b></div>
+        <div class="radar-meta"><span>TRACKING</span><strong id="paperCount">—</strong><small>篇近期论文</small></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="status-row">
+      <div><span class="label">最近更新</span><strong id="updatedAt">加载中…</strong></div>
+      <div><span class="label">更新频率</span><strong>每日 07:30</strong></div>
+      <div><span class="label">研判语言</span><strong>中文精炼</strong></div>
+    </section>
+
+    <section id="papers" class="papers-section">
+      <div class="section-head"><div><span class="kicker">LATEST SIGNALS</span><h2>今日论文</h2></div><p>不是简单罗列，而是按研究相关性与证据质量排序。</p></div>
+      <div class="toolbar">
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索标题、作者或关键词…" /></label>
+        <select id="topicFilter"><option value="">全部主题</option></select>
+        <select id="evidenceFilter"><option value="">全部证据等级</option><option>强</option><option>中</option><option>初步</option><option>待核验</option></select>
+      </div>
+      <div id="topicChips" class="chips"></div>
+      <div id="paperList" class="paper-list"><div class="loading">正在读取论文数据…</div></div>
+      <button id="loadMore" class="load-more" hidden>加载更多</button>
+    </section>
+
+    <section id="scope" class="scope-section">
+      <div><span class="kicker">RESEARCH SCOPE</span><h2>持续跟踪六条技术线</h2></div>
+      <div class="scope-grid">
+        <article><b>01</b><h3>UAV 主动搜索</h3><p>低空大尺度环境中的目标发现、观测与接近。</p></article>
+        <article><b>02</b><h3>ObjectNav</h3><p>目标条件导航、开放词汇目标与实例确认。</p></article>
+        <article><b>03</b><h3>信念与语义地图</h3><p>不确定语义证据的空间累积、遗忘与更新。</p></article>
+        <article><b>04</b><h3>主动搜索规划</h3><p>信息增益、NBV、POMDP 与探索决策。</p></article>
+        <article><b>05</b><h3>VLM 感知规划</h3><p>视觉语言模型的目标理解、推理与长程规划。</p></article>
+        <article><b>06</b><h3>多机器人探索</h3><p>协同分区、信息共享、去中心化规划与通信约束。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell"><span>AeroNav Papers</span><span>摘要研判基于公开元数据，重要结论请以原文为准。</span></div></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

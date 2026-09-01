@@ -1,0 +1,24 @@
+{
+  "updated_at": "2026-09-01T00:00:00Z",
+  "papers": [
+    {
+      "id": "demo-belief-map",
+      "title": "示例：面向开放词汇目标导航的在线信念地图",
+      "authors": ["Demo Author"],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/",
+      "pdf_url": "https://arxiv.org/",
+      "code_url": "",
+      "topics": ["ObjectNav", "信念与语义地图"],
+      "summary_zh": "这是用于展示页面结构的示例记录。首次运行更新脚本后，真实论文将替换或追加到数据集中。",
+      "change_zh": "展示如何把目标语义证据累积为空间信念，并用于后续搜索决策。",
+      "evidence": "待核验",
+      "evidence_note": "示例数据，不代表真实论文结论。",
+      "why_it_matters": "对应 UAV 主动目标搜索中的语义证据积累与区域优先级更新。",
+      "keywords": ["belief map", "ObjectNav"],
+      "is_demo": true
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+#!/usr/bin/env python3
+import hashlib, html, json, os, re, time
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from urllib.parse import urlencode
+
+import feedparser
+import requests
+
+ROOT=Path(__file__).resolve().parents[1]
+CFG=json.loads((ROOT/"config/topics.json").read_text(encoding="utf-8"))
+DATA=ROOT/"data/papers.json"
+UA={"User-Agent":"AeroNavPapers/1.0 research literature monitor"}
+
+def clean(s): return re.sub(r"\s+"," ",html.unescape(s or "")).strip()
+def norm_title(s): return re.sub(r"[^a-z0-9]","",s.lower())
+def paper_id(title,arxiv_id="",doi=""):
+    return doi.lower() or arxiv_id or hashlib.sha1(norm_title(title).encode()).hexdigest()[:16]
+
+def fetch_arxiv():
+    out=[]
+    for query in CFG["queries"]:
+        url="https://export.arxiv.org/api/query?"+urlencode({"search_query":query,"start":0,"max_results":30,"sortBy":"submittedDate","sortOrder":"descending"})
+        feed=feedparser.parse(requests.get(url,headers=UA,timeout=35).content)
+        for e in feed.entries:
+            aid=e.id.rsplit("/",1)[-1].split("v")[0]
+            cats=[x.term for x in getattr(e,"tags",[])]
+            out.append({"id":paper_id(e.title,aid),"arxiv_id":aid,"title":clean(e.title),"authors":[a.name for a in e.authors],"abstract":clean(e.summary),"published":e.published[:10],"source":"arXiv","venue":"预印本","url":f"https://arxiv.org/abs/{aid}","pdf_url":f"https://arxiv.org/pdf/{aid}","code_url":"","categories":cats})
+        time.sleep(3)
+    return out
+
+def enrich_s2(p):
+    key=os.getenv("S2_API_KEY",""); headers={**UA,**({"x-api-key":key} if key else {})}
+    try:
+        r=requests.get(f"https://api.semanticscholar.org/graph/v1/paper/ARXIV:{p['arxiv_id']}",params={"fields":"title,venue,year,externalIds,openAccessPdf,url,authors,citationCount"},headers=headers,timeout=20)
+        if r.status_code!=200:return p
+        d=r.json(); venue=clean(d.get("venue"))
+        if venue:p["venue"]=venue
+        p["citation_count"]=d.get("citationCount",0)
+        p["semantic_scholar_url"]=d.get("url","")
+        return p
+    except requests.RequestException:return p
+
+def classify(p):
+    text=(p["title"]+" "+p["abstract"]).lower(); scores={k:sum(2 if w in p["title"].lower() else 1 for w in ws if w in text) for k,ws in CFG["keywords"].items()}
+    topics=[k for k,v in sorted(scores.items(),key=lambda x:-x[1]) if v>0][:3]
+    return topics or ["具身导航"],sum(scores.values())
+
+def evidence(p):
+    venue=p.get("venue",""); published=venue and venue not in ("预印本","arXiv")
+    text=p["abstract"].lower(); experimental=any(x in text for x in ["experiment","benchmark","dataset","real-world","simulation"])
+    if published and experimental:return "强",f"已标注发表来源（{venue}），摘要包含实验或基准证据；仍建议阅读全文核对设置。"
+    if experimental:return "中","预印本或发表状态尚未确认，但摘要报告了实验/基准验证。"
+    return "初步","主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。"
+
+def fallback_review(p):
+    topic="、".join(p["topics"][:2]); abstract=p["abstract"]
+    first=re.split(r"(?<=[.!?])\s+",abstract)[0][:220]
+    return {"summary_zh":f"该工作聚焦{topic}，主要研究问题可概括为：{p['title']}。当前自动研判未启用，建议结合英文摘要阅读。","change_zh":f"摘要首句：{first}" if first else "尚无足够摘要信息。","why_it_matters":f"与{topic}直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。"}
+
+def llm_review(p):
+    if not os.getenv("OPENAI_API_KEY"):return fallback_review(p)
+    try:
+        from openai import OpenAI
+        client=OpenAI(); prompt=f'''你是具身导航论文分析助手。只依据下列题目和摘要，用中文输出JSON，不得补造事实。字段：summary_zh（60-90字，一句话简介），change_zh（60-100字，相比常见路线真正改变了什么；信息不足就明说），why_it_matters（60-100字，针对UAV主动目标搜索、ObjectNav、UAV-ON或多机器人探索的价值）。\n题目：{p['title']}\n摘要：{p['abstract']}'''
+        r=client.chat.completions.create(model=os.getenv("OPENAI_MODEL","gpt-4.1-mini"),messages=[{"role":"user","content":prompt}],response_format={"type":"json_object"},temperature=.1)
+        return json.loads(r.choices[0].message.content)
+    except Exception as e:
+        print("LLM fallback:",type(e).__name__);return fallback_review(p)
+
+def main():
+    old=json.loads(DATA.read_text(encoding="utf-8")) if DATA.exists() else {"papers":[]}
+    existing={p["id"]:p for p in old.get("papers",[]) if not p.get("is_demo")}
+    candidates={}
+    for p in fetch_arxiv():
+        p["topics"],p["relevance_score"]=classify(p)
+        if p["relevance_score"]>=2:candidates[p["id"]]=p
+    fresh=[p for k,p in candidates.items() if k not in existing]
+    fresh=sorted(fresh,key=lambda p:(p["relevance_score"],p["published"]),reverse=True)[:CFG["max_new_per_run"]]
+    for i,p in enumerate(fresh):
+        p=enrich_s2(p);p["evidence"],p["evidence_note"]=evidence(p);p.update(llm_review(p));p["keywords"]=sorted({w for ws in CFG["keywords"].values() for w in ws if w in (p["title"]+" "+p["abstract"]).lower()})[:8];p.pop("abstract",None);existing[p["id"]]=p
+        time.sleep(1 if os.getenv("S2_API_KEY") else 3)
+    cutoff=(datetime.now(timezone.utc)-timedelta(days=CFG["retention_days"])).date().isoformat()
+    papers=sorted([p for p in existing.values() if p.get("published","9999")>=cutoff],key=lambda p:(p.get("published",""),p.get("relevance_score",0)),reverse=True)
+    DATA.write_text(json.dumps({"updated_at":datetime.now(timezone.utc).isoformat(),"papers":papers},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(f"Added {len(fresh)}; total {len(papers)}")
+if __name__=="__main__":main()
