@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T13:24:57.401409+00:00",
+  "updated_at": "2026-09-01T13:35:05.114676+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -906,6 +906,43 @@
       ]
     },
     {
+      "id": "2608.30692",
+      "arxiv_id": "2608.30692",
+      "title": "Can Video World Models Track Unobserved World States?",
+      "authors": [
+        "Joonghyuk Shin",
+        "Yicong Hong",
+        "Jaesik Park",
+        "Xun Huang"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30692",
+      "pdf_url": "https://arxiv.org/pdf/2608.30692",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "以动作条件化Shell Game（S5状态跟踪的视觉类比）为测试床，检验视频世界模型能否维护未观测隐藏状态：主流架构在更长交换链上退化至随机，唯跨块携带并就地修订状态的机制可外推。",
+      "change_zh": "与追求像素保真或规模扩张的常见世界模型路线不同，本文将视觉渲染与隐藏状态合成解耦，把评测焦点从画面质量转向架构级状态维护，证明扩散像素目标从不监督隐状态，并识别出可外推的跨块状态更新机制。",
+      "why_it_matters": "为导航与规划用世界模型提供基础诊断：若模型无法维护遮挡目标等未观测状态，作为UAV目标搜索与ObjectNav的模拟器将丢失空间记忆；结论指出状态须驻留架构而非token，指导具身世界模型选型。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "world model"
+      ]
+    },
+    {
       "id": "2608.29881",
       "arxiv_id": "2608.29881",
       "title": "OptiGeo: Efficient Monocular Geometry for Embodied Perception in Optically Challenging Scenes",
@@ -1027,6 +1064,99 @@
         "aerial",
         "benchmark",
         "uav"
+      ]
+    },
+    {
+      "id": "2608.29896",
+      "arxiv_id": "2608.29896",
+      "title": "EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy",
+      "authors": [
+        "Zhirui Fang",
+        "Qingchi Yu",
+        "Ziyang Chen",
+        "Longfei Li",
+        "Haoran Ma",
+        "Keru Zhou",
+        "Xinrun Xu",
+        "Samith Va",
+        "Yuxuan Hu",
+        "Peixuan Song",
+        "Qiang Du",
+        "Bin Qian",
+        "Yongkang Deng",
+        "Xin Li",
+        "Yezhen Wang",
+        "Zhe Li",
+        "Hao Luo",
+        "Shuyan Li",
+        "Ziwei Wang",
+        "Weijian Deng",
+        "Xiu Li"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29896",
+      "pdf_url": "https://arxiv.org/pdf/2608.29896",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EMERGE-Policy提出图结构多智能体机器人框架：主智能体维护任务级状态，子智能体在隔离上下文中负责感知、执行监控、验证与记忆整合，并以技能接口组合异构模型后端，无需微调形成闭环的系统级策略。",
+      "change_zh": "相比训练单一端到端策略或单体LLM规划，它把'策略'重新定义为多智能体编排过程：角色化上下文隔离控制信息负载，验证、文本化失败诊断与分支栈恢复实现局部纠错，模型被当作可调用技能而非被微调对象。",
+      "why_it_matters": "对规划智能体与具身大模型技术线提供了编排、记忆与失败恢复的可复用设计，其验证-回退闭环和真机实验对UAV主动目标搜索长程任务与ObjectNav的鲁棒执行有借鉴意义；但摘要未说明是否覆盖导航类基准，具体价值待确认。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "real robot"
+      ]
+    },
+    {
+      "id": "2608.29772",
+      "arxiv_id": "2608.29772",
+      "title": "Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving",
+      "authors": [
+        "Dong Hu",
+        "Chao Huang",
+        "Carman K. M. Lee",
+        "Dimitrios Kanoulas"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29772",
+      "pdf_url": "https://arxiv.org/pdf/2608.29772",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出自感知主动学习框架SAGE：预测世界模型在线生成恐惧与好奇信号，恐惧超阈值即移交专家并从接管轨迹聚焦模仿学习，恐惧同时作为安全约束进入策略优化，并在仿真与真机导航中验证。",
+      "change_zh": "与依赖被动经验或固定阈值干预的常规路线不同，SAGE用世界模型的内在信号自我估计胜任力，好奇度自适应校准恐惧干预阈值，并将专家接管轨迹转为聚焦模仿数据，恐惧同时作为约束防止适应期性能回退。",
+      "why_it_matters": "对UAV主动搜索与ObjectNav的价值在方法迁移：用世界模型不确定性在线判定胜任力、按需请求接管并把稀缺高价值失败经验转为针对性训练，可用于长尾场景下导航智能体的持续改进与安全自适应部署。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "evaluation",
+        "exploration",
+        "world model"
       ]
     },
     {
