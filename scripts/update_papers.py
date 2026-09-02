@@ -93,7 +93,7 @@ def main():
         p["topics"],p["relevance_score"]=classify(p)
         hay=(p["title"]+" "+p["abstract"]).lower()
         if p["relevance_score"]<CFG.get("min_relevance_score",2):continue
-        if stems and not any(s in hay for s in stems):continue
+        if stems and not any(s in hay for s in stems) and p["relevance_score"]<CFG.get("bypass_stems_score",99):continue
         candidates[p["id"]]=p
     fresh=[p for k,p in candidates.items() if k not in existing and k not in rej]
     fresh=sorted(fresh,key=lambda p:(p["relevance_score"],p["published"]),reverse=True)[:CFG["max_new_per_run"]]

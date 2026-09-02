@@ -3,12 +3,13 @@
   "retention_days": 180,
   "min_relevance_score": 3,
   "action_stems": ["navigat", "search", "explor", "patrol", "coverage", "localiz", "wayfind", "target acquisition", "traversal", "waypoint", "recon"],
+  "bypass_stems_score": 7,
   "gate": {
     "min_relevance": 6,
     "min_rigor": 5,
     "featured_relevance": 8
   },
-  "scope_note": "研究范围（按三条板块十一条技术线收录）：一、空域自主：UAV/无人机主动目标搜索（搜救、侦察、目标发现与接近）、空域视觉语言导航（aerial VLN、无人机指令跟随）。二、地面具身导航：ObjectNav/目标条件导航（开放词汇目标、实例导航）、地面视觉语言导航（R2R/REVERIE等指令跟随）。三、基础能力：空间智能（spatial reasoning、3D场景理解、空间记忆）、用于导航与规划的世界模型、具身多模态大模型（MLLM/VLM用于机器人感知、导航与决策）、规划智能体（LLM/foundation model的任务与运动规划、agentic planning）、具身基准与评测（embodied benchmark、系统性评测）、真机与sim2real（实物部署、domain transfer）、主动感知与重建（active perception、next-best-view、在线建图）。不属于范围（拒绝）：机械臂操作与VLA控制（除非含导航决策成分）、与机器人/具身无关的纯多模态大模型工作（纯对话、纯图文理解、欺骗检测、RF感知）、纯图像分割/检测数据集、纯通信与信号处理、纯LLM理论与训练技巧、文生图/文生视频。",
+  "scope_note": "研究范围（按三条板块十一条技术线收录）：一、空域自主：UAV/无人机主动目标搜索（搜救、侦察、目标发现与接近）、空域视觉语言导航（aerial VLN、无人机指令跟随）。二、地面具身导航：ObjectNav/目标条件导航（开放词汇目标、实例导航）、地面视觉语言导航（R2R/REVERIE等指令跟随）。三、基础能力：空间智能（spatial reasoning、3D场景理解、空间记忆）、用于导航与规划的世界模型、多模态大模型与智能体（通用MLLM/VLM大模型与LLM/多模态智能体的重要进展：新模型、agentic系统、推理/记忆/工具使用能力，以及它们在机器人感知、导航与决策中的应用）、规划智能体（LLM/foundation model的任务与运动规划、agentic planning）、具身基准与评测（embodied benchmark、系统性评测）、真机与sim2real（实物部署、domain transfer）、主动感知与重建（active perception、next-best-view、在线建图）。不属于范围（拒绝）：机械臂操作与VLA控制（除非含导航决策成分）、把大模型/智能体当工具套用到具体垂直领域且与空间、导航、机器人无关的应用（情感分析、医疗分诊、欺骗检测、RF感知、金融法律、纯图文问答应用等）、纯图像分割/检测数据集、纯通信与信号处理、纯LLM理论与训练技巧、文生图/文生视频。",
   "topics_catalog": [
     {"id": "uav-target-search", "name": "UAV 目标搜索", "group": "空域自主"},
     {"id": "aerial-vln", "name": "空域 VLN", "group": "空域自主"},
@@ -16,7 +17,7 @@
     {"id": "ground-vln", "name": "地面 VLN", "group": "地面导航"},
     {"id": "spatial-intelligence", "name": "空间智能", "group": "基础能力"},
     {"id": "world-model", "name": "世界模型", "group": "基础能力"},
-    {"id": "embodied-mllm", "name": "具身多模态大模型", "group": "基础能力"},
+    {"id": "mllm-agent", "name": "多模态大模型与智能体", "group": "基础能力"},
     {"id": "planning-agent", "name": "规划智能体", "group": "基础能力"},
     {"id": "embodied-benchmark", "name": "具身基准与评测", "group": "基础能力"},
     {"id": "sim2real", "name": "真机与 Sim2Real", "group": "基础能力"},
@@ -33,7 +34,8 @@
     "(cat:cs.AI OR cat:cs.RO) AND all:(large language model OR LLM OR foundation model) AND all:(planning agent OR task planning OR agent planning)",
     "(cat:cs.RO OR cat:cs.CV) AND all:(embodied benchmark OR navigation benchmark OR robotic benchmark)",
     "(cat:cs.RO OR cat:cs.CV) AND all:(sim to real OR sim2real OR real world robot)",
-    "(cat:cs.RO OR cat:cs.CV) AND all:(active perception OR next best view OR active reconstruction OR online mapping)"
+    "(cat:cs.RO OR cat:cs.CV) AND all:(active perception OR next best view OR active reconstruction OR online mapping)",
+    "(cat:cs.CV OR cat:cs.AI OR cat:cs.CL) AND all:(multimodal large language model OR MLLM OR LLM agent OR agentic)"
   ],
   "keywords": {
     "UAV 目标搜索": ["uav", "aerial", "drone", "target search", "active search", "search and rescue"],
@@ -42,7 +44,7 @@
     "地面 VLN": ["vision language navigation", "instruction following", "r2r", "reverie", "waypoint"],
     "空间智能": ["spatial intelligence", "spatial reasoning", "spatial understanding", "3d scene", "spatial memory", "geometry"],
     "世界模型": ["world model", "mental map", "scene dynamics", "predictive model"],
-    "具身多模态大模型": ["multimodal large language model", "mllm", "vision language model", "vlm", "embodied foundation"],
+    "多模态大模型与智能体": ["multimodal large language model", "mllm", "vision language model", "vlm", "multimodal agent", "llm agent", "agentic"],
     "规划智能体": ["task planning", "agent planning", "llm planner", "foundation model planning", "language agent"],
     "具身基准与评测": ["benchmark", "evaluation", "systematic comparison", "leaderboard"],
     "真机与 Sim2Real": ["sim to real", "sim2real", "real world", "real robot", "deployment", "domain transfer"],

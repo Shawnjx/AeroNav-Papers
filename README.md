@@ -4,7 +4,7 @@
 
 ## 功能
 
-- 覆盖三条板块十一条技术线：空域自主（UAV 目标搜索、空域 VLN）、地面导航（ObjectNav、地面 VLN）、基础能力（空间智能、世界模型、具身多模态大模型、规划智能体、具身基准与评测、真机与 Sim2Real、主动感知与重建）
+- 覆盖三条板块十一条技术线：空域自主（UAV 目标搜索、空域 VLN）、地面导航（ObjectNav、地面 VLN）、基础能力（空间智能、世界模型、多模态大模型与智能体、规划智能体、具身基准与评测、真机与 Sim2Real、主动感知与重建）
 - 三层质量漏斗：规则粗筛（主题词+动作词根）→ LLM 评审门（相关度/严谨度 0-10 打分，不达标不入库）→ 元数据加分（顶会白名单核验、开源代码）
 - arXiv 与 Semantic Scholar 元数据聚合、按 DOI/arXiv ID/标题去重
 - 中文精炼研判：核心变化、证据质量、与你研究的关系
@@ -18,7 +18,7 @@
 3. 在 `Settings → Secrets and variables → Actions` 添加：
    - `OPENAI_API_KEY`：可选但推荐，用于生成中文研判。
    - `S2_API_KEY`：可选，可提高 Semantic Scholar API 限额。
-   - 使用智谱 GLM 等兼容 OpenAI 的服务时：`OPENAI_API_KEY` 填服务方的 key，并额外添加 `OPENAI_BASE_URL`（智谱为 `https://open.bigmodel.cn/api/paas/v4/`）和 `OPENAI_MODEL`（如免费的 `glm-4-flash`，或 `glm-4.5-flash`）。
+   - 使用智谱 GLM 等兼容 OpenAI 的服务时：`OPENAI_API_KEY` 填服务方的 key，并额外添加 `OPENAI_BASE_URL` 和 `OPENAI_MODEL`（如 `glm-5.2`）。注意：智谱 **Coding Plan 订阅 key** 只在专属端点 `https://open.bigmodel.cn/api/coding/paas/v4/` 可用，通用端点 `api/paas/v4` 会报"余额不足"；按量付费 key 则用通用端点。
 4. 打开 `Actions`，手动运行一次 **Update papers and deploy**。
 
 工作流默认每天北京时间 07:30 更新。GitHub Actions 的 cron 使用 UTC，因此配置为 `23:30 UTC`。
@@ -42,8 +42,9 @@ python scripts/update_papers.py
 
 ```bash
 export OPENAI_API_KEY=你的GLM密钥
-export OPENAI_BASE_URL=https://open.bigmodel.cn/api/paas/v4/
-export OPENAI_MODEL=glm-4-flash
+# Coding Plan 订阅 key 用下面这个端点；按量付费 key 改为 https://open.bigmodel.cn/api/paas/v4/
+export OPENAI_BASE_URL=https://open.bigmodel.cn/api/coding/paas/v4/
+export OPENAI_MODEL=glm-5.2
 python scripts/update_papers.py
 ```
 
@@ -66,7 +67,7 @@ python scripts/update_papers.py
 
 新论文经过三层漏斗才会入库：
 
-1. **规则粗筛**（零成本）：关键词相关分需达到 `min_relevance_score`，且标题或摘要必须命中 `action_stems` 中的动作词根（navigat/search/explor 等），排除仅靠术语擦边的论文。
+1. **规则粗筛**（零成本）：关键词相关分需达到 `min_relevance_score`，且标题或摘要必须命中 `action_stems` 中的动作词根（navigat/search/explor 等），排除仅靠术语擦边的论文；关键词相关分达到 `bypass_stems_score` 的强信号论文（如多模态大模型/智能体旗舰工作）可免此限制。
 2. **LLM 评审门**：GLM 对照 `scope_note` 定义的研究范围输出 `relevance`（相关度 0-10）与 `rigor`（严谨度 0-10），低于 `gate.min_relevance`/`gate.min_rigor` 的论文**不入库**，连同拒绝理由存档到 `data/rejected.json`，误杀可人工复查（删除对应条目后下次运行会重新评审）。
 3. **元数据加分**：发表来源命中 `venue_allowlist` 加 2 分，摘要含开源代码信号加 1 分；综合分 = relevance×2 + rigor + 加分，决定列表排序与"精选（相关≥8）/常规"分档。
 

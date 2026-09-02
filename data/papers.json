@@ -32,8 +32,8 @@
       "group": "基础能力"
     },
     {
-      "id": "embodied-mllm",
-      "name": "具身多模态大模型",
+      "id": "mllm-agent",
+      "name": "多模态大模型与智能体",
       "group": "基础能力"
     },
     {
@@ -95,7 +95,7 @@
         "cs.AI"
       ],
       "topics": [
-        "具身多模态大模型"
+        "多模态大模型与智能体"
       ],
       "relevance_score": 10,
       "evidence": "中",
