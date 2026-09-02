@@ -1,12 +1,9 @@
-name: Update papers and deploy
+name: Update classic papers
 
 on:
   schedule:
-    - cron: "0 17 * * *"
-    - cron: "0 19 * * *"
+    - cron: "0 20 * * 2"
   workflow_dispatch:
-  push:
-    branches: ["main"]
 
 permissions:
   contents: write
@@ -27,19 +24,19 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Fetch and summarize papers
+      - name: Curate classic papers
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
-        run: python scripts/update_papers.py
-      - name: Commit updated data
+        run: python scripts/update_classics.py
+      - name: Commit updated classics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/papers.json data/rejected.json
-          git diff --cached --quiet || git commit -m "chore: update daily papers"
+          git add data/classics.json
+          git diff --cached --quiet || git commit -m "chore: update classic papers"
           git pull --rebase origin main
           git push
       - uses: actions/configure-pages@v5

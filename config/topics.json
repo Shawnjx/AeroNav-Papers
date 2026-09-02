@@ -54,5 +54,23 @@
     "CVPR", "ICCV", "ECCV", "NeurIPS", "ICLR", "AAAI", "IJCAI",
     "ACM Multimedia", "T-PAMI", "IJCV", "T-RO", "RA-L", "TGRS",
     "ICRA", "IROS", "RSS", "CoRL"
-  ]
+  ],
+  "classic": {
+    "max_age": 5,
+    "base_citations": 40,
+    "max_new_per_run": 8,
+    "queries": [
+      "vision language navigation",
+      "object goal navigation embodied agent",
+      "UAV search and rescue autonomy",
+      "aerial navigation drone language instruction",
+      "spatial intelligence embodied reasoning",
+      "world model navigation planning",
+      "multimodal large language model",
+      "large language model agent planning",
+      "embodied AI benchmark",
+      "sim to real transfer robotics",
+      "active perception next best view"
+    ]
+  }
 }

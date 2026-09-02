@@ -7,3 +7,8 @@
 /* scope groups */
 .scope-group{margin-top:36px}
 .scope-group-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;color:#52615b;background:#eceae3;border-radius:99px;padding:4px 12px}
+
+/* view tabs & citation badge */
+.view-tabs{display:flex;gap:8px;margin-bottom:18px}
+.view-tabs .chip{font:inherit}
+.cite-badge{display:inline-flex;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:700;background:#f6e7cf;color:#8a5a2b;margin-top:6px}
