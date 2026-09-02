@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T13:35:05.114676+00:00",
+  "updated_at": "2026-09-02T01:29:13.072232+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -828,6 +828,47 @@
       ]
     },
     {
+      "id": "2609.00950",
+      "arxiv_id": "2609.00950",
+      "title": "HitMem: Hierarchical Temporal 3D Memory with Multi-Modal Context-Aware Retrieval for Dynamic Environments",
+      "authors": [
+        "Ruijie Tang",
+        "Chenye Zou",
+        "Guoquan Wu",
+        "Jun Wei",
+        "Wei Chen",
+        "Jiaxin Zhu"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.00950",
+      "pdf_url": "https://arxiv.org/pdf/2609.00950",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出分层时序3D记忆框架HitMem，以轻量拓扑图统一语义与空间信息，用时间衰减抑制过期记忆，并通过多模态上下文感知检索定位被移动物体，在自建Dyna-THOR动态基准上验证。",
+      "change_zh": "常见3D记忆假设世界静态，物体被移动后只能几何重算或全局重探。该工作用时间衰减调节记忆新旧、检测物体位移，并以外部轨迹空间约束加类别亲和常识的两阶段检索推测新位置，把重探代价转为候选区域筛选。",
+      "why_it_matters": "对ObjectNav价值突出：动态场景中目标常被移动，静态记忆易失效，其位移检测与候选区域推断可降低重探成本；对UAV目标搜索，时间衰减与轨迹约束的候选推断也能缓解目标迁移造成的重复覆盖。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "evaluation",
+        "exploration"
+      ]
+    },
+    {
       "id": "2608.29315",
       "arxiv_id": "2608.29315",
       "title": "SGE: Semantically-Guided Exploration for Unstructured Environments via Image-Space Waypoint Sampling",
@@ -903,6 +944,47 @@
         "aerial",
         "uav",
         "waypoint"
+      ]
+    },
+    {
+      "id": "2609.00923",
+      "arxiv_id": "2609.00923",
+      "title": "On-the-Fly3R: Towards Robust Online 3D Reconstruction with Feed-Forward 3R Models for Large-Scale UAV Scenarios",
+      "authors": [
+        "Zhe Shen",
+        "Liyuan Lou",
+        "Yifei Yu",
+        "Guanbo Wang",
+        "Quanjian Ji",
+        "Xin Wang",
+        "Zongqian Zhan"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.00923",
+      "pdf_url": "https://arxiv.org/pdf/2609.00923",
+      "code_url": "https://github.com/Sh1nZzz/On_the_Fly3R",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免训练的渐进式在线三维重建框架On-the-Fly3R，通过检索引导的动态子集构建、验证-拒绝-重试机制与回环位姿图优化，将前馈3R模型扩展到平方公里级、五千余张图像的无人机场景。",
+      "change_zh": "常见流式3R方法假设输入时序与空间连续，难以应对跨航带无人机的弱序或无序图像流；本文改为检索引导的无序子集选择，并引入类似VSLAM的回环位姿图优化与一致性校验-拒绝-重试机制，使免训练地将3R骨干扩展到大规模场景成为可能。",
+      "why_it_matters": "在线大尺度建图是UAV主动目标搜索、侦察与接近任务的基础能力，该工作让前馈3R模型在平方公里级无人机场景稳定在线重建，可为无人机目标发现、航迹规划及ObjectNav式探索提供及时的增量式地图与位姿支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "uav"
       ]
     },
     {
@@ -1025,6 +1107,44 @@
         "benchmark",
         "deployment",
         "task planning"
+      ]
+    },
+    {
+      "id": "2608.28665",
+      "arxiv_id": "2608.28665",
+      "title": "Understanding Temporal Semantic Stability in Open-Vocabulary UAV Perception through Metric 3D Fusion",
+      "authors": [
+        "Saurbh Singh Jamwal"
+      ],
+      "published": "2026-08-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.28665",
+      "pdf_url": "https://arxiv.org/pdf/2608.28665",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 7,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/1ea7f08f820362153bc8e7f93a9574c16447866f",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文通过度量级三维融合将开放词汇分割的逐帧预测关联到持久世界空间体素，提出体素级评测框架，量化语义信念漂移、观测持续性与不确定性，揭示无人机感知中的时序语义不稳定现象。",
+      "change_zh": "常见开放词汇分割评测只关注单帧或聚合精度，本文把评测搬到世界空间体素层并显式建模时序稳定性，以观测持续性为分层条件，证明高聚合一致性可能掩盖重复观测不足下的语义闪烁。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav有价值：长航时开放词汇语义是世界记忆与目标锚定的基础，其揭示的信念漂移与观测持续性条件可指导更可靠的语义建图与评测，避免导航决策建立在不稳定语义之上。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "uav"
       ]
     },
     {
