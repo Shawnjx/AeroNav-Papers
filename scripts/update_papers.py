@@ -21,11 +21,19 @@ def norm_title(s): return re.sub(r"[^a-z0-9]","",s.lower())
 def paper_id(title,arxiv_id="",doi=""):
     return doi.lower() or arxiv_id or hashlib.sha1(norm_title(title).encode()).hexdigest()[:16]
 
+def fetch(url,tries=3):
+    for i in range(tries):
+        try:return requests.get(url,headers=UA,timeout=35)
+        except requests.RequestException:
+            if i==tries-1:raise
+            time.sleep(6*(i+1))
+
 def fetch_arxiv():
     out=[]
     for query in CFG["queries"]:
         url="https://export.arxiv.org/api/query?"+urlencode({"search_query":query,"start":0,"max_results":30,"sortBy":"submittedDate","sortOrder":"descending"})
-        feed=feedparser.parse(requests.get(url,headers=UA,timeout=35).content)
+        try:feed=feedparser.parse(fetch(url).content)
+        except requests.RequestException as e:print("arXiv query failed:",type(e).__name__);time.sleep(3);continue
         for e in feed.entries:
             aid=e.id.rsplit("/",1)[-1].split("v")[0]
             cats=[x.term for x in getattr(e,"tags",[])]
