@@ -214,5 +214,141 @@
     "reason": "该文属水田农业机器人的垂直应用，EKF多传感器循行导航与稻-草杂草检测不落在收录的十一条技术线上，且实验仅限仿真、无基线对比，故拒绝收录。",
     "rejected_at": "2026-09-02",
     "url": "https://arxiv.org/abs/2608.19004"
+  },
+  "2609.00106": {
+    "title": "Deploying and Evaluating a Smart-Agriculture Agentic Engine for Full-Season Soybean Farm Operations",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属智慧农业垂直应用的智能体引擎：无人机与农机仅作数据源与执行端，核心是农艺管理决策，与收录的空域/地面导航、空间智能及通用智能体能力主线无实质技术关联。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00106"
+  },
+  "2608.10542": {
+    "title": "Nonlinear Model Predictive Control via Sequential Convex Programming for Drone-to-Drone Docking",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "属状态估计与控制线的常规增量：将标准SCP/NMPC应用于无人机空中对接，仅MuJoCo仿真验证且摘要未见基线对比或消融，未达该技术线按落地影响力收录的门槛。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.10542"
+  },
+  "2609.01420": {
+    "title": "Vision-Based Leader-Follower Formation Control for Cooperative UAVs in GPS-Degraded Environments",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "属状态估计与控制线的常规增量集成：现成YOLO检测+针孔模型深度融合+经典领从控制器，仅XTDrone仿真验证，无真机部署、基线对比或消融，按收录标准应拒。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01420"
+  },
+  "2608.25142": {
+    "title": "SkyDrive: Learning to Drive in a New City from Aerial Traffic Monitoring",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "论文核心是自动驾驶轨迹规划的跨城市域适应，无人机仅作为被动航拍交通监控的数据采集平台，不涉及UAV自主导航、目标搜索或具身导航决策，属收录范围外。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.25142"
+  },
+  "2609.01390": {
+    "title": "Multimodal RGB-Infrared Combination for UAV-Based Wildfire Segmentation: A Comparative Study on FLAME3",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作为RGB-红外多模态图像分割的对比研究，UAV仅作为数据采集平台，不含目标搜索、导航、主动感知或任何空间决策成分，属范围外的纯分割应用。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01390"
+  },
+  "2609.01383": {
+    "title": "InSight: A Benchmark for Agentic Claim Verification in Interactive Visualizations",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该基准面向交互式数据可视化中的声明验证，本质属图表/数据分析问答与GUI智能体评测，与空间智能、具身导航或机器人自主无实质关联，仅在术语上使用了agentic与navigate。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01383"
+  },
+  "2609.01409": {
+    "title": "EdiTikZ: Scientific Figure Editing from Revision Trajectories",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "属于科学图表（TikZ）编辑这一垂直图文生成应用，虽含新数据集与RL训练方法，但与空间、导航、机器人均无关，落入范围外应用类别。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01409"
+  },
+  "2609.01603": {
+    "title": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "面向软件工程（SWE）智能体的基准评测加速方法，与具身导航、空间智能、机器人自主及通用智能体能力本身的进展均无关，属范围外垂直应用。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01603"
+  },
+  "2608.17819": {
+    "title": "Effector-Centric NMPC of Tiltable-Multirotors for Offset-Free Omnidirectional Aerial Manipulation",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "核心是可倾转无人机的接触式空中操作控制（推板、拧阀），属机械操作任务且无导航决策成分，仅与飞行控制技术线边缘相关。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.17819"
+  },
+  "2609.01344": {
+    "title": "ExBind: A Controlled Diagnostic Benchmark for Visual-to-Executable Correspondence",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "该工作是多模态编程/编辑（DOM、SVG、图、树、表格等数字文档）领域的垂直诊断基准，虽测评VLM的指代绑定能力，但与空间智能、导航、机器人无关，也不构成模型与智能体社区层面的显著进展。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01344"
+  },
+  "2609.01306": {
+    "title": "MeshSplatBench: A Unified Benchmark for Triangle-Based Neural Rendering",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属神经渲染与图形管线方向的基准评测，聚焦渲染保真度与游戏引擎部署就绪度，与具身导航、机器人自主各收录技术线仅存在3D重建术语上的擦边，无实质关联。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01306"
+  },
+  "2608.25319": {
+    "title": "SonicNudge: Controlled Displacement of Hovering UAVs via Estimator-Controller Coupling",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "该文属UAV安全攻击研究：利用超声共振扰动陀螺仪并借助估计器-控制器耦合造成悬停位移，核心贡献是攻击原语而非状态估计、飞行控制或导航决策能力本身的进展，超出收录技术线。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.25319"
+  },
+  "2608.15741": {
+    "title": "Some Modifications to Our End-to-End UAV Planner",
+    "relevance": 5,
+    "rigor": 4,
+    "reason": "自述为对自家YOPO规划器的修改报告，属常规增量改进，且摘要未给出实验设置、基线对比、消融等可验证证据。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.15741"
+  },
+  "2609.01511": {
+    "title": "Benchmarking Spatial, Spectral, and Self-Supervised Cues for Face Forgery Detection under Realistic Degradation",
+    "relevance": 1,
+    "rigor": 7,
+    "reason": "人脸伪造/欺骗检测属于与空间、导航、机器人无关的垂直视觉应用，仅在『基准评测』术语上擦边，明确落入拒绝范围。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01511"
+  },
+  "2609.00854": {
+    "title": "Does Fault Localization Beat a Fresh Attempt? A Placebo-Controlled Study of Test-Guided Code Repair",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "属软件工程领域的缺陷定位与代码修复评测，将冻结代码模型套用于与空间、导航、机器人无关的垂直任务，按范围规定应拒绝。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00854"
+  },
+  "2608.31002": {
+    "title": "DARP: A Calibrated Dual-Arm RGB-D-IR Dataset for Multi-View Robotic Perception",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "本质是双臂桌面物体采集的数据集工作，虽声称服务多视角重建与主动感知，但无导航或空间自主决策成分，仅10个物体且评估限于采集几何一致性，属范围边缘。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.31002"
+  },
+  "2608.16281": {
+    "title": "Marker-Constrained Pose-Graph Correction for Cross-Platform Georeferencing in GNSS-Denied Environments",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属状态估计/定位建图线的小规模概念验证：仅两次手持采集、单标记六位置测试，组合现成里程计与RTAB-Map，落地影响力未达该技术线收录门槛。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.16281"
   }
 }

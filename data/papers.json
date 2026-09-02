@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T02:38:45.740928+00:00",
+  "updated_at": "2026-09-02T03:44:09.080247+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -54,6 +54,11 @@
     {
       "id": "active-perception",
       "name": "主动感知与重建",
+      "group": "基础能力"
+    },
+    {
+      "id": "estimation-control",
+      "name": "状态估计与控制",
       "group": "基础能力"
     }
   ],
@@ -462,6 +467,56 @@
         "mllm",
         "uav",
         "waypoint"
+      ]
+    },
+    {
+      "id": "2609.01404",
+      "arxiv_id": "2609.01404",
+      "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
+      "authors": [
+        "Jaewoo Park",
+        "Minyoung Lee",
+        "Sukmin Seo",
+        "Moonbin Yim",
+        "Hyunwook Yoon",
+        "Dohoon Ryu",
+        "Daehee Kim",
+        "Myungseo Song",
+        "Jihyuk Byun",
+        "Seunggyu Chang",
+        "Taeho Kil",
+        "Jiseob Kim",
+        "Bado Lee",
+        "Geewook Kim"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01404",
+      "pdf_url": "https://arxiv.org/pdf/2609.01404",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出DroneCATS基准与可换模型的DroneCATS-Agent，系统评测多模态大模型作为无人机视觉-语言-行动智能体在接近、跟踪、搜索与多机指挥四项能力上的表现，发现小模型能飞入成功半径却常败于到达声明。",
+      "change_zh": "常见路线用微调、函数调用模板或子模块拆解来收窄MLLM决策权；本文反向将偏航、搜索、犹豫与自行宣告到达全部交还模型，动作空间仅在提示中声明，免微调与函数调用，并以模型为基准自变量，向下覆盖到2B小模型。",
+      "why_it_matters": "对UAV主动目标搜索价值直接：接近目标与出视野搜索正是其核心环节，基准揭示的『会飞却不会宣告结束』指明机载小模型落地的真实瓶颈；其终止动作纪律问题也与ObjectNav的停止决策相通，为MLLM导航智能体评测提供新维度。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "drone",
+        "mllm",
+        "multimodal large language model"
       ]
     },
     {
@@ -913,6 +968,48 @@
       ]
     },
     {
+      "id": "2609.01245",
+      "arxiv_id": "2609.01245",
+      "title": "Explore More, Drift Less: Outcome-Only Reinforcement Learning Can Suffice for Long-Horizon Interactive Agents",
+      "authors": [
+        "Liming Pu",
+        "Xiaoxia Li",
+        "Yifu Liu",
+        "Teng Cao",
+        "Bin Yang"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01245",
+      "pdf_url": "https://arxiv.org/pdf/2609.01245",
+      "code_url": "https://github.com/AlibabaResearch/SignalCoverageRL",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CANOPY是仅结果奖励的极简RL协议：扩大同任务探索使困难任务梯度重现，KL锚定同策略更新抑制漂移，让Qwen3-14B登顶AppWorld，SWE-bench提升16.6分。",
+      "change_zh": "常见路线在纯结果RL外围补偿：密集奖励、SFT先验、技能库、记忆或多智能体编排。本文反其道诊断出信号饥饿与策略漂移两大根因，仅靠扩探索与严格同策略更新修复，证明无需辅助信号小模型也能内化长程能力。",
+      "why_it_matters": "UAV主动目标搜索与ObjectNav同样只有稀疏终端奖励，其梯度仅在成败混合组出现的洞察可直接迁移：扩大同任务探索、KL锚定更新与小模型能力内化，为训练空间智能体的结果奖励RL提供可复用配方。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "exploration",
+        "leaderboard",
+        "llm agent"
+      ]
+    },
+    {
       "id": "2609.00950",
       "arxiv_id": "2609.00950",
       "title": "HitMem: Hierarchical Temporal 3D Memory with Multi-Modal Context-Aware Retrieval for Dynamic Environments",
@@ -991,6 +1088,137 @@
       ]
     },
     {
+      "id": "2608.22657",
+      "arxiv_id": "2608.22657",
+      "title": "Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs",
+      "authors": [
+        "Xinyuan Liu",
+        "Eren Sadikoglu",
+        "Riana Chatterjee",
+        "Ransalu Senanayake"
+      ],
+      "published": "2026-08-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.22657",
+      "pdf_url": "https://arxiv.org/pdf/2608.22657",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出物理智能体AI机器人集群编排架构：LLM规划器将任务分解为阶段并分配机器人-技能对，确定性编排器在执行前逐技能校验能力与状态约束，经Gazebo无人机-UGV搜索派遣与真机搬运任务验证。",
+      "change_zh": "常见做法靠给LLM更多具身信息提升规划合理性，本文改为在语义规划与执行间设显式接口：确定性编排器逐技能验证能力、状态与工作流约束后才授权，并用保持计划的消融证明安全增益来自执行门控而非计划质量变化。",
+      "why_it_matters": "为无人机-UGV搜索等多机任务提供LLM编排安全层：检索加执行门控将误派发降至0%，该架构可迁移到UAV目标搜索的任务分配与ObjectNav智能体技能调用校验，并有真机试验支撑，降低具身智能体部署风险。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "agentic",
+        "drone"
+      ]
+    },
+    {
+      "id": "2608.14135",
+      "arxiv_id": "2608.14135",
+      "title": "AgilePE: Autonomous UAV Pursuit-Evasion via Self-Play Reinforcement Learning",
+      "authors": [
+        "Wenhao Tang",
+        "Tianyang Chen",
+        "Zhejun Cui",
+        "Boyuan An",
+        "Jiayu Chen",
+        "Ruize Zhang",
+        "Huidong Liu",
+        "Tianyue Wu",
+        "Qingmin Liao",
+        "Fei Gao",
+        "Yu Wang",
+        "Chao Yu"
+      ],
+      "published": "2026-08-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.14135",
+      "pdf_url": "https://arxiv.org/pdf/2608.14135",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/15ff589ad44864e40de2dbc52e1b6888213eaa63",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AgilePE提出自博弈强化学习的无人机追逃系统：策略直接把机载状态映射为推力与角速率指令实现敏捷机动，用PFSP与多样化对手池稳定训练，经硬件对齐仿真零样本迁移到真机。",
+      "change_zh": "相比依赖规则或微分对策、以及轨迹规划加航点控制器的常见路线，该工作用自博弈强化学习端到端输出低层控制指令，绕过中间规划器；并以硬件对齐仿真与域随机化实现零样本迁移，在真机复现闪避与包抄战术。",
+      "why_it_matters": "该系统的端到端敏捷控制与零样本迁移方案可为无人机目标发现与接近任务提供低层机动能力与sim2real范式；其自博弈训练和硬件对齐仿真经验对空域自主及真机部署技术线均有直接借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "uav",
+        "waypoint"
+      ]
+    },
+    {
+      "id": "2609.01567",
+      "arxiv_id": "2609.01567",
+      "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+      "authors": [
+        "Matteo Merler",
+        "Giovanni Bonetta",
+        "Davide Zago",
+        "Rossella Cancelliere",
+        "Bernardo Magnini"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01567",
+      "pdf_url": "https://arxiv.org/pdf/2609.01567",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "SAGE仅在智能体不确定时查询VLM教师，以环境优势加权蒸馏其建议，训练出部署时无需VLM的轻量RL策略，在稀疏奖励视觉推理与导航任务上优于无引导RL，有时超越教师。",
+      "change_zh": "常见路线要么每步调用VLM当策略，昂贵且脆弱；要么将VLM示范等权蒸馏。SAGE按学习者不确定性选择求助，用环境优势加权教师建议再蒸馏进RL策略，使VLM成为可被交互检验的临时指导而非固定策略。",
+      "why_it_matters": "直击导航痛点：ObjectNav与UAV目标搜索多为稀疏奖励长时程任务，直接部署VLM昂贵且慢。SAGE将VLM先验内化为轻量自主策略，训练有引导、部署零调用，可迁移到目标搜索类任务降低成本。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "deployment",
+        "evaluation",
+        "exploration",
+        "vlm"
+      ]
+    },
+    {
       "id": "2608.15175",
       "arxiv_id": "2608.15175",
       "title": "LAPF: LLM-Agent-Based Path Finder Using the UAVScenes Dataset",
@@ -1029,6 +1257,45 @@
         "aerial",
         "uav",
         "waypoint"
+      ]
+    },
+    {
+      "id": "2608.14082",
+      "arxiv_id": "2608.14082",
+      "title": "PILOT: Privileged Imitation Learning for End-to-End Motion Planning of Autonomous UAVs under Partial Observability",
+      "authors": [
+        "Qingrui Zhang",
+        "Feng Xue",
+        "Xiang Zhou",
+        "Chenghao Yu"
+      ],
+      "published": "2026-08-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.14082",
+      "pdf_url": "https://arxiv.org/pdf/2608.14082",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PILOT用特权模仿学习把最优控制专家蒸馏为视觉端到端无人机运动规划策略，以TCN融合历史深度与里程计缓解部分可观测，室内外零样本部署验证了接近专家的性能与跨域泛化。",
+      "change_zh": "相比在线优化或依赖持久地图记忆的常见路线，PILOT用TCN隐式推断历史时空上下文替代显式地图记忆以应对部分可观测，并将昂贵最优控制专家蒸馏为带动力学一致性软约束的结构化轨迹输出，大幅降低在线计算。",
+      "why_it_matters": "对空域自主技术线有直接价值：轻量策略降低机载计算负担，历史观测融合缓解有限视野与部分可观测，是UAV主动目标搜索接近目标与避障规划的低算力底座；零样本跨域部署也为sim2real提供范例。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "deployment",
+        "motion planning",
+        "odometry",
+        "uav"
       ]
     },
     {
@@ -1144,6 +1411,45 @@
       "keywords": [
         "exploration",
         "world model"
+      ]
+    },
+    {
+      "id": "2608.29720",
+      "arxiv_id": "2608.29720",
+      "title": "VeloBins: Learning Velocity and Its Uncertainty via Bins and Error-Conditioned Gaussian Labels for Aerial Inertial Odometry",
+      "authors": [
+        "Maulana Bisyir Azhari",
+        "Seungwook Lee",
+        "Donghun Han",
+        "Sung Jun Park",
+        "David Hyunchul Shim"
+      ],
+      "published": "2026-08-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.29720",
+      "pdf_url": "https://arxiv.org/pdf/2608.29720",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VeloBins将无人机惯性里程计的速度回归重构为离散区间分类，从区间分布的期望与方差同时解码速度与不确定性，并以误差条件高斯标签监督不确定性，在四个飞行数据集上误差全面下降。",
+      "change_zh": "常见学习式IO用回归头估速度、另设解码器以NLL损失学不确定性，训练复杂且易过自信；VeloBins改用离散区间分类，速度与不确定性同源于区间分布期望与方差，并用误差条件高斯标签显式监督，不优化NLL却更一致。",
+      "why_it_matters": "高机动与弱光下的可靠惯性里程计是无人机自主的底座，支撑搜救侦察等目标搜索任务在GPS失效时的状态估计与滤波控制；校准不确定性利于风险感知规划，其区间分类与误差标签思路对学习式状态估计亦有借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "drone",
+        "odometry"
       ]
     },
     {
@@ -1402,6 +1708,45 @@
       ]
     },
     {
+      "id": "2608.20655",
+      "arxiv_id": "2608.20655",
+      "title": "Nonlinear Model Predictive Control for Trajectory Tracking of Differentially Flat Fixed-Wing Aerial Systems",
+      "authors": [
+        "Nishanth Bobbili",
+        "Pratyaksh Rao",
+        "Luca Morando",
+        "Luca Masci",
+        "Giuseppe Loianno"
+      ],
+      "published": "2026-08-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.20655",
+      "pdf_url": "https://arxiv.org/pdf/2608.20655",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文针对固定翼无人机提出将微分平坦性轨迹生成与非线性模型预测控制统一的框架，并嵌入风感知采样策略以主动应对风扰，仿真与真机飞行实验表明跟踪精度与鲁棒性提升，强风下尤为显著。",
+      "change_zh": "相比常见『微分平坦+无模型控制器』路线，该文把平坦性生成嵌入NMPC预测闭环，并在框架内引入风感知采样，使参考轨迹能主动预偿风扰、严格满足气动与输入约束，兼顾生成效率与预测鲁棒性。",
+      "why_it_matters": "固定翼平台常用于长航时搜救侦察等UAV目标搜索任务，其上层搜索与航路决策最终依赖底层跟踪控制的精度与鲁棒性；该框架在强风下仍能严格满足气动约束地跟踪复杂轨迹，可作为空域目标搜索与aerial VLN系统的可靠执行层，提升真机可部署性。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "model predictive control",
+        "uav"
+      ]
+    },
+    {
       "id": "2608.16640",
       "arxiv_id": "2608.16640",
       "title": "DPNet: Efficient Dead-End Prediction and Avoidance for Vision-Based UAV Navigation",
@@ -1496,6 +1841,46 @@
       ]
     },
     {
+      "id": "2608.06885",
+      "arxiv_id": "2608.06885",
+      "title": "Rigid-Covert GNSS Spoofing of UAV Swarms: A Structural Blind Spot, Its Detection Limit, and Absolute-Anchor Defenses",
+      "authors": [
+        "Minseok Park",
+        "Joon Soo Yoo"
+      ],
+      "published": "2026-08-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.06885",
+      "pdf_url": "https://arxiv.org/pdf/2608.06885",
+      "code_url": "",
+      "categories": [
+        "cs.CR",
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/ef670b5791fe12d2c65e067b449a4ee8176330fe",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "指出无人机集群以相对几何交叉验证GNSS存在结构盲区：整体缓慢刚性平移不改变机间距离，对任何纯相对检测不可观测；推导锚点残差检测下界，并提出拜占庭鲁棒的绝对位置恢复管线，全部在仿真中验证。",
+      "change_zh": "相比常见仅靠机间几何交叉校验或单机惯性监控的路线，本文以规范自由度论证证明整体刚性平移对纯相对检测器根本不可观测，量化绝对锚点下的检测漂移下界，并把防御从仅能告警推进到恢复全群绝对位置。",
+      "why_it_matters": "绝对定位完整性是户外无人机自主飞行与搜救任务的前提；其锚定重建与拜占庭鲁棒拟合属多机鲁棒状态估计，可增强空域自主的抗欺骗定位能力，但对UAV主动目标搜索与ObjectNav的决策感知层无直接关联，属定位安全层面的边缘支撑。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "drone",
+        "evaluation",
+        "geometry",
+        "uav"
+      ]
+    },
+    {
       "id": "2608.29772",
       "arxiv_id": "2608.29772",
       "title": "Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving",
@@ -1534,6 +1919,47 @@
       ]
     },
     {
+      "id": "2608.25459",
+      "arxiv_id": "2608.25459",
+      "title": "Towards safe and optimal flight: Viability Kernel MPC for Fully Actuated Multirotor",
+      "authors": [
+        "Massimiliano Bertoni",
+        "Alberto Piccina",
+        "Gianni Lunardi",
+        "Elias Fontanari",
+        "Andrea Del Prete",
+        "Angelo Cenedese",
+        "Giulia Michieletto"
+      ],
+      "published": "2026-08-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.25459",
+      "pdf_url": "https://arxiv.org/pdf/2608.25459",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文面向全驱动多旋翼提出结合生存性理论与数据驱动的MPC安全轨迹生成框架，用动态计算的轴对齐包围盒实现避障的形式化安全保证，无需离线穷举可达性分析，并在倾斜六旋翼数值仿真中验证杂乱环境实时导航。",
+      "change_zh": "常见安全飞行路线需离线穷举可达性分析求安全集，或依赖无形式保证的MPC；本文把生存核思想嵌入在线MPC，以动态计算的安全包围盒生成避障约束，免离线分析并面向全驱动构型；摘要未细述生存核在线求解与数据驱动部分的具体机制。",
+      "why_it_matters": "对UAV主动目标搜索、侦察与目标接近等任务，杂乱环境下带形式化安全保证的实时轨迹生成是底层核心能力，可支撑无人机在搜救等场景安全机动；但仅数值仿真验证，无真机与基线对比，距Sim2Real落地仍有距离。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "model predictive control"
+      ]
+    },
+    {
       "id": "2608.18632",
       "arxiv_id": "2608.18632",
       "title": "Evaluation of Monocular SLAM Systems on High-Altitude Nadir UAV Footage",
@@ -1569,6 +1995,44 @@
         "benchmark",
         "evaluation",
         "uav"
+      ]
+    },
+    {
+      "id": "2608.17703",
+      "arxiv_id": "2608.17703",
+      "title": "Dijkstra as an Oracle for Online Stochastic Shortest Path Navigation with Provable Guarantees",
+      "authors": [
+        "Mansur M. Arief",
+        "Ali Akarma",
+        "Ahmad Alfan Alfian Irfan"
+      ],
+      "published": "2026-08-18",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.17703",
+      "pdf_url": "https://arxiv.org/pdf/2608.17703",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "math.OC"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "在弱于因果性的约简代价非负条件下，Dijkstra可精确求解随机最短路径导航，据此提出在线算法DORA：固定调用最短路径oracle、不估计转移核，并以对数生存权重约束接触概率。",
+      "change_zh": "常见路线或用值迭代精确求解但计算量随地图规模增长，或确定性化重规划却缺安全保证；本文改以最短路径oracle为精确引擎，在线学习无需估计转移核，并把接触预算转为对数生存权重，获得可证明的安全导航。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav等需反复规划的任务，它提供远比值迭代省且有保证的规划后端：代价未知、执行不确定时少量Dijkstra调用即可安全在线导航，接触预算机制对动态障碍下的安全接近有参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "drone"
       ]
     },
     {
