@@ -58,19 +58,21 @@
   "classic": {
     "max_age": 5,
     "base_citations": 40,
-    "max_new_per_run": 8,
+    "max_new_per_run": 30,
     "queries": [
       "vision language navigation",
-      "object goal navigation embodied agent",
-      "UAV search and rescue autonomy",
-      "aerial navigation drone language instruction",
-      "spatial intelligence embodied reasoning",
-      "world model navigation planning",
+      "object goal navigation",
+      "UAV search and rescue",
+      "aerial navigation",
+      "spatial reasoning embodied",
+      "spatial intelligence",
+      "world model navigation",
       "multimodal large language model",
-      "large language model agent planning",
-      "embodied AI benchmark",
-      "sim to real transfer robotics",
-      "active perception next best view"
+      "large language model agent",
+      "embodied benchmark",
+      "sim to real transfer",
+      "active perception",
+      "next best view"
     ]
   }
 }

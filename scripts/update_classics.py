@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Curate classic papers: last-5-years works above a citation threshold.
-Selection is citation-count-only (Semantic Scholar, zero LLM cost); GLM is used
-once per paper to write the Chinese digest, and never again."""
+Discovery uses OpenAlex (no API key, generous limits) with citation-count-only
+filtering — zero LLM cost. GLM writes the Chinese digest once per paper, never again."""
 import json, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -16,37 +16,49 @@ CC=CFG.get("classic",{})
 NOW=datetime.now(timezone.utc);YEAR=NOW.year
 MAXAGE=CC.get("max_age",5)
 
-def s2_get(url,params,tries=4):
-    key=os.getenv("S2_API_KEY","");headers={**UA,**({"x-api-key":key} if key else {})}
+def oa_get(fltr,tries=3):
     for i in range(tries):
         try:
-            r=requests.get(url,params=params,headers=headers,timeout=30)
-            if r.status_code==200:return r.json()
-            if r.status_code==429:time.sleep(8*(i+1));continue
-            return None
-        except requests.RequestException:
-            if i==tries-1:return None
+            r=requests.get("https://api.openalex.org/works",params={"filter":fltr,"sort":"cited_by_count:desc","per-page":50,"select":"display_name,publication_year,cited_by_count,ids,authorships,primary_location,best_oa_location,abstract_inverted_index","mailto":"23427669+Shawnjx@users.noreply.github.com"},headers=UA,timeout=30)
+            if r.status_code==200:return r.json().get("results") or []
+            if r.status_code==429:time.sleep(6*(i+1));continue
+            print(f"OpenAlex status {r.status_code}");return []
+        except requests.RequestException as e:
+            if i==tries-1:print("OpenAlex failed:",type(e).__name__);return []
             time.sleep(6*(i+1))
-    return None
+    return []
+
+def abstract_from_inv(inv):
+    pos={i:w for w,idxs in (inv or {}).items() for i in idxs}
+    return clean(" ".join(pos[i] for i in sorted(pos)))
 
 def threshold(year):return CC.get("base_citations",40)*max(1,YEAR-year)
 
 def search():
     out={}
     for q in CC.get("queries",[]):
-        d=s2_get("https://api.semanticscholar.org/graph/v1/paper/search",{"query":q,"year":f"{YEAR-MAXAGE}-{YEAR}","limit":100,"fields":"paperId,title,year,venue,citationCount,externalIds,abstract,authors,url,openAccessPdf"})
-        hits=(d or {}).get("data") or []
-        over=sum(1 for p in hits if p.get("year") and (p.get("citationCount") or 0)>=threshold(p["year"]))
-        print(f"S2 '{q}': {len(hits)} results, {over} over threshold")
-        for p in hits:
-            y=p.get("year")
-            if not y or y<YEAR-MAXAGE or not p.get("title") or not p.get("abstract"):continue
-            if (p.get("citationCount") or 0)<threshold(y):continue
-            aid=(p.get("externalIds") or {}).get("ArXiv","")
-            pid=aid or f"s2:{p.get('paperId','')}"
-            rec=out.setdefault(pid,{"id":pid,"arxiv_id":aid,"title":clean(p["title"]),"authors":[a.get("name","") for a in (p.get("authors") or [])[:12]],"abstract":clean(p["abstract"]),"published":str(y),"source":"Semantic Scholar","venue":clean(p.get("venue")) or "预印本","citation_count":0,"url":f"https://arxiv.org/abs/{aid}" if aid else (p.get("url") or ""),"pdf_url":(p.get("openAccessPdf") or {}).get("url") or (f"https://arxiv.org/pdf/{aid}" if aid else ""),"code_url":""})
-            rec["citation_count"]=max(rec["citation_count"],p.get("citationCount") or 0)
-        time.sleep(2 if os.getenv("S2_API_KEY") else 4)
+        hits=oa_get(f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}")
+        over=0
+        for w in hits:
+            y=w.get("publication_year") or 0
+            if y<YEAR-MAXAGE or not w.get("display_name"):continue
+            cites=w.get("cited_by_count") or 0
+            if cites<threshold(y):continue
+            abstract=abstract_from_inv(w.get("abstract_inverted_index"))
+            if not abstract:continue
+            over+=1
+            urls=" ".join(filter(None,[((w.get("best_oa_location") or {}).get("landing_page_url") or ""),((w.get("best_oa_location") or {}).get("pdf_url") or ""),(((w.get("primary_location") or {}) or {}).get("landing_page_url") or "")]))
+            m=re.search(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})",urls)
+            aid=m.group(1) if m else ""
+            pid=aid or (w.get("ids") or {}).get("openalex","")
+            if not pid:continue
+            venue=clean(((w.get("primary_location") or {}).get("source") or {}).get("display_name")) or "预印本"
+            pdf=(w.get("best_oa_location") or {}).get("pdf_url") or (f"https://arxiv.org/pdf/{aid}" if aid else "")
+            rec=out.setdefault(pid,{"id":pid,"arxiv_id":aid,"title":clean(w["display_name"]),"authors":[clean(a.get("author",{}).get("display_name") or "") for a in (w.get("authorships") or [])[:12]],"abstract":abstract,"published":str(y),"source":"OpenAlex","venue":venue,"citation_count":0,"url":f"https://arxiv.org/abs/{aid}" if aid else ((w.get("ids") or {}).get("doi") or (w.get("ids") or {}).get("openalex") or ""),"pdf_url":pdf,"code_url":""})
+            rec["citation_count"]=max(rec["citation_count"],cites)
+        print(f"OA '{q}': {len(hits)} results, {over} over threshold")
+        time.sleep(1)
+    if not out:print("WARNING: no candidates found at all; check OpenAlex connectivity")
     return out
 
 def main():
