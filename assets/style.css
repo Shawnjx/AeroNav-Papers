@@ -12,3 +12,9 @@
 .view-tabs{display:flex;gap:8px;margin-bottom:18px}
 .view-tabs .chip{font:inherit}
 .cite-badge{display:inline-flex;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:700;background:#f6e7cf;color:#8a5a2b;margin-top:6px}
+
+/* briefing banner */
+.briefing{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:4px solid var(--lime);padding:17px 20px;margin-bottom:22px}
+.briefing[hidden]{display:none}
+.briefing-tag{flex:none;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--green);background:#e9f0c9;border-radius:99px;padding:5px 10px;margin-top:3px}
+.briefing p{margin:0;font-size:13.5px;line-height:1.85;color:#33413c}

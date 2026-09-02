@@ -12,6 +12,7 @@
 - 每日自动更新，并保留最近 180 天的数据
 - 经典必读库：近五年高被引论文（门槛 = 40 × max(1, 距今年数)，随年份自动滚动），按引用数排序、单独 Tab 展示、中文研判一次写成永久复用
 - 隐形访问统计（不蒜子）：访客计数不展示在前台，访问量在 `/stats.html` 查看（站内无链接、noindex）
+- 简报推送：每次有新论文入库时，GLM 额外生成一段「今日速览」写入 `data/*.json` 并展示在页面顶部，同时经 Server酱 推送到微信（Secret `SERVERCHAN_SENDKEY`，未配置则静默跳过；空跑不推送，免费额度 5 条/天足够）
 
 ## 部署到 GitHub Pages
 
@@ -20,6 +21,7 @@
 3. 在 `Settings → Secrets and variables → Actions` 添加：
    - `OPENAI_API_KEY`：可选但推荐，用于生成中文研判。
    - `S2_API_KEY`：可选，可提高 Semantic Scholar API 限额。
+   - `SERVERCHAN_SENDKEY`：可选，[Server酱](https://sct.ftqq.com) 微信扫码获取，用于把每次更新的一段式中文简报推送到微信。
    - 使用智谱 GLM 等兼容 OpenAI 的服务时：`OPENAI_API_KEY` 填服务方的 key，并额外添加 `OPENAI_BASE_URL` 和 `OPENAI_MODEL`（如 `glm-5.2`）。注意：智谱 **Coding Plan 订阅 key** 只在专属端点 `https://open.bigmodel.cn/api/coding/paas/v4/` 可用，通用端点 `api/paas/v4` 会报"余额不足"；按量付费 key 则用通用端点。
 4. 打开 `Actions`，手动运行一次 **Update papers and deploy**。
 

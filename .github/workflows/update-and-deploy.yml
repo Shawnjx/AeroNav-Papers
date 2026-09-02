@@ -42,6 +42,10 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: update daily papers"
           git pull --rebase origin main
           git push
+      - name: Push briefing via ServerChan
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+        run: python scripts/notify_serverchan.py daily
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
