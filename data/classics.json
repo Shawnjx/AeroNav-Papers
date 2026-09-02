@@ -1,0 +1,247 @@
+{
+  "updated_at": "2026-09-02T02:18:10.703533+00:00",
+  "catalog": [
+    {
+      "id": "uav-target-search",
+      "name": "UAV 目标搜索",
+      "group": "空域自主"
+    },
+    {
+      "id": "aerial-vln",
+      "name": "空域 VLN",
+      "group": "空域自主"
+    },
+    {
+      "id": "objectnav",
+      "name": "ObjectNav 目标搜索",
+      "group": "地面导航"
+    },
+    {
+      "id": "ground-vln",
+      "name": "地面 VLN",
+      "group": "地面导航"
+    },
+    {
+      "id": "spatial-intelligence",
+      "name": "空间智能",
+      "group": "基础能力"
+    },
+    {
+      "id": "world-model",
+      "name": "世界模型",
+      "group": "基础能力"
+    },
+    {
+      "id": "mllm-agent",
+      "name": "多模态大模型与智能体",
+      "group": "基础能力"
+    },
+    {
+      "id": "planning-agent",
+      "name": "规划智能体",
+      "group": "基础能力"
+    },
+    {
+      "id": "embodied-benchmark",
+      "name": "具身基准与评测",
+      "group": "基础能力"
+    },
+    {
+      "id": "sim2real",
+      "name": "真机与 Sim2Real",
+      "group": "基础能力"
+    },
+    {
+      "id": "active-perception",
+      "name": "主动感知与重建",
+      "group": "基础能力"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2307.06082",
+      "arxiv_id": "2307.06082",
+      "title": "VELMA: Verbalization Embodiment of LLM Agents for Vision and Language Navigation in Street View",
+      "authors": [
+        "Raphael Schumann",
+        "Wanrong Zhu",
+        "Weixi Feng",
+        "Tsu-Jui Fu",
+        "S. Riezler",
+        "William Yang Wang"
+      ],
+      "published": "2023",
+      "source": "Semantic Scholar",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "citation_count": 140,
+      "url": "https://arxiv.org/abs/2307.06082",
+      "pdf_url": "https://arxiv.org/pdf/2307.06082",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（AAAI Conference on Artificial Intelligence），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "VELMA将街景VLN的轨迹与全景观测语言化为文本提示，供LLM逐步预测动作，CLIP判断指令路标可见性；两个示例即可跟随指令，微调后两个数据集任务完成率较先前最优相对提升约25%。",
+      "change_zh": "常见VLN需定制视觉编码与序列到序列训练；VELMA改用纯语言接口，把观测、轨迹与空间记忆转写为LLM可读文本，仅以CLIP锚定路标可见性，无需视觉特征工程与大规模具身训练即可少样本跟随指令。",
+      "why_it_matters": "语言化接口范式可迁移至UAV主动目标搜索与ObjectNav：将航拍观测、空间记忆、目标描述统一为LLM可读文本，CLIP路标可见性判定对应目标发现与确认，为LLM低成本接入具身导航提供可复用路径。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 28,
+      "keywords": [
+        "instruction",
+        "llm agent"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "s2:22cb569525194d67e964f61fa102506429cf85f4",
+      "arxiv_id": "",
+      "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
+      "authors": [
+        "Chun-Hsiao Yeh",
+        "Chenyu Wang",
+        "Shengbang Tong",
+        "Ta-Ying Cheng",
+        "Rouyu Wang",
+        "Tianzhe Chu",
+        "Yuexiang Zhai",
+        "Yubei Chen",
+        "Shenghua Gao",
+        "Yi Ma"
+      ],
+      "published": "2026",
+      "source": "Semantic Scholar",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "citation_count": 63,
+      "url": "https://www.semanticscholar.org/paper/22cb569525194d67e964f61fa102506429cf85f4",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38188/42150",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（AAAI Conference on Artificial Intelligence），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "本文提出All-Angles Bench基准，用90个真实场景的2100余条问答对评估38个通用及3D空间推理MLLM的多视角理解能力，发现与人类差距显著，并揭示跨视角物体错配与空间错位两大失败模式。",
+      "change_zh": "常见MLLM评测多聚焦单图图文问答，本文系统评测多视角几何一致性与跨视角对应，定位出物体匹配与相机位姿推断两类失败根源，并指出提示调优不足以弥补、需架构层创新。",
+      "why_it_matters": "跨视角对应与相机位姿推断是UAV主动目标搜索、空域VLN与ObjectNav的底层能力，该基准量化了当前MLLM多视角意识短板，为具身导航模型与空间智能模型的诊断和迭代提供评测依据。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "evaluation",
+        "mllm",
+        "spatial reasoning"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "2601.14352",
+      "arxiv_id": "2601.14352",
+      "title": "RoboBrain 2.5: Depth in Sight, Time in Mind",
+      "authors": [
+        "Huajie Tan",
+        "Enshen Zhou",
+        "Zhiyu Li",
+        "Yijie Xu",
+        "Yuheng Ji",
+        "Xiansheng Chen",
+        "Cheng Chi",
+        "Pengwei Wang",
+        "Huizhu Jia",
+        "Yulong Ao",
+        "Mingyu Cao",
+        "Sixiang Chen"
+      ],
+      "published": "2026",
+      "source": "Semantic Scholar",
+      "venue": "arXiv.org",
+      "citation_count": 41,
+      "url": "https://arxiv.org/abs/2601.14352",
+      "pdf_url": "https://arxiv.org/pdf/2601.14352",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "RoboBrain 2.5是新一代具身AI基础模型，引入深度感知的3D空间推理与稠密时序价值估计两大升级：前者在物理约束下生成3D关键点操作轨迹，后者提供跨视角步骤级执行进度反馈，代码与权重已开源。",
+      "change_zh": "相比常见以2D像素grounding与稀疏成败信号为主的具身多模态模型，它将空间输出升级为深度感知的绝对度量3D坐标与关键点序列，将反馈升级为跨视角稠密的步骤级进度估计；导航层面的改变摘要未提及。",
+      "why_it_matters": "其度量级3D空间推理可迁移到无人机目标搜索与ObjectNav所需的深度与空间理解，稠密步骤级价值估计可为长程导航的进度监控、奖励塑形与失败检测提供反馈，属空间智能与具身MLLM的通用基础能力。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "spatial reasoning"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "2509.18905",
+      "arxiv_id": "2509.18905",
+      "title": "How Far are VLMs from Visual Spatial Intelligence? A Benchmark-Driven Perspective",
+      "authors": [
+        "Songsong Yu",
+        "Yuxin Chen",
+        "Hao Ju",
+        "Lian-Jie Jia",
+        "Fu-Xi Zhang",
+        "Shaofei Huang",
+        "Yu-Han Wu",
+        "R. Cui",
+        "Bing-Hao Ran",
+        "Zaibin Zhang",
+        "Zhedong Zheng",
+        "Zhipeng Zhang"
+      ],
+      "published": "2025",
+      "source": "Semantic Scholar",
+      "venue": "arXiv.org",
+      "citation_count": 40,
+      "url": "https://arxiv.org/abs/2509.18905",
+      "pdf_url": "https://arxiv.org/pdf/2509.18905",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文系统调研VLM视觉空间推理方法，将空间智能分为基础感知、空间理解、空间规划三级，整合近20个开源数据集、23种任务设置构建SIBench基准，发现SOTA VLM感知尚可但理解与规划显著不足。",
+      "change_zh": "相比零散的单任务空间评测，该文以能力分级（感知—理解—规划）为纲，将近20个数据集、23种任务设置整合进SIBench统一评测框架，并对SOTA VLM进行系统横评，揭示出从感知到推理再到规划的系统性能力断层，而非仅报告单一任务的分数。",
+      "why_it_matters": "空间理解与空间规划正是UAV主动目标搜索与ObjectNav依赖的核心能力：数值/距离估计、多视角推理、时序动态与空间想象直接决定目标发现、接近与路径决策质量。SIBench可作为导航与搜救系统中选用或改进VLM时的诊断式评测依据，指出需重点补齐的短板。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "spatial intelligence",
+        "spatial reasoning",
+        "spatial understanding",
+        "vlm"
+      ],
+      "is_classic": true
+    }
+  ],
+  "excluded": {
+    "2503.20384": {
+      "title": "MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "该文属机械臂操作与VLA控制的高效化研究，不含导航决策成分，命中收录范围中明确排除条款。",
+      "excluded_at": "2026-09-02"
+    },
+    "2505.21906": {
+      "title": "ChatVLA-2: Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge",
+      "relevance": 3,
+      "rigor": 7,
+      "reason": "属于VLA/机械臂操作控制工作，方向指令仅用于桌面抓取的空间指示，不含导航决策成分，且空间智能仅为能力演示而非方法主线，超出收录范围。",
+      "excluded_at": "2026-09-02"
+    }
+  }
+}
