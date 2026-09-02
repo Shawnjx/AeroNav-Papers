@@ -698,13 +698,6 @@
       "reason": "该文为欧洲心脏病学会心衰临床诊疗指南的聚焦更新，属医疗领域文献，与具身导航、空间智能、大模型与智能体等全部收录技术线完全无关，属明确范围外内容。",
       "excluded_at": "2026-09-02"
     },
-    "https://openalex.org/W4210423514": {
-      "title": "FAST-LIO2: Fast Direct LiDAR-Inertial Odometry",
-      "relevance": 3,
-      "rigor": 10,
-      "reason": "经典激光-惯性里程计/SLAM工作，核心贡献是状态估计滤波与地图数据结构，仅将UAV作为部署平台提及，未涉及目标搜索、VLN、空间推理或智能体等任何收录技术线的核心问题。",
-      "excluded_at": "2026-09-02"
-    },
     "2107.03374": {
       "title": "Evaluating Large Language Models Trained on Code",
       "relevance": 2,
