@@ -94,5 +94,125 @@
     "reason": "核心贡献为单驱动变形机构与空中抓取/载荷运输的平台设计，接近被排除的机械操作类工作，不含目标搜索或导航决策成分，仅UAV术语与空域自主擦边。",
     "rejected_at": "2026-09-01",
     "url": "https://arxiv.org/abs/2608.21879"
+  },
+  "2609.00641": {
+    "title": "AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "论文核心是无人机搭载机械臂的空中操纵策略学习基准（本体构型、低层控制、扰动与策略接口的系统级评测），不含任何导航决策成分，落入排除范围中的机械臂操作/VLA控制。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00641"
+  },
+  "2608.07554": {
+    "title": "Impact of Dataset Composition on Embedded Real-Time UAV Wildfire Detection Using Compact YOLO Models",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该文是嵌入式UAV野火目标检测的数据构成研究，无主动搜索、导航或感知决策成分，属范围外的纯检测类工作。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.07554"
+  },
+  "2609.01060": {
+    "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该文是RGB引导高光谱图像超分辨的跨模态配准与融合工作，属底层视觉成像任务，不涉及导航决策、主动感知或智能体能力，超出收录范围。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01060"
+  },
+  "2609.01027": {
+    "title": "Fi-ImageNet-1k: An OOD Benchmark From the Inside of the ImageNet-1k Validation Set",
+    "relevance": 1,
+    "rigor": 7,
+    "reason": "属于2D图像分类的OOD检测基准，仅将MLLM/VLM用作标注辅助工具，与具身导航、空间智能、机器人及智能体能力均无关，属范围外。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01027"
+  },
+  "2609.00948": {
+    "title": "From Terminology to Diagrams: Visual-Instruction Generation for Scientific Diagram Understanding",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "面向科学图表问答的垂直领域指令数据生成与VLM微调，属图文问答类应用，与空间智能、导航、机器人及通用智能体能力本身无实质关联。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00948"
+  },
+  "2609.00845": {
+    "title": "Towards Generalizable Visually Grounded Exploration of Household Devices",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "该基准以陌生家电的功能操作与可供性交互为核心，摘要未见导航决策、目标搜索或空间推理成分，属操作类交互评测，仅与主动感知、具身基准术语擦边。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00845"
+  },
+  "2609.00906": {
+    "title": "Peg-in-Bench: A Modular Benchmark for High-Precision Robotic Insertion",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "属机械臂高精度插装（peg-in-hole）操作基准，不含导航决策成分，命中范围中明确排除的机械臂操作类别，仅与'具身基准'术语擦边。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00906"
+  },
+  "2609.01036": {
+    "title": "MultiGait: A Multi-Sensor Multi-Perspective Multi-Session Biometric Inference Benchmark and its Dataset",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "该论文属于步态生物特征识别与隐私风险评估的数据集/基准工作，虽使用深度相机与激光雷达等传感器，但与目标搜索、视觉语言导航、空间智能等收录技术线无实质关联。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01036"
+  },
+  "2609.01113": {
+    "title": "EDRAC: Benchmarking Arabic Dialect Reading Comprehension",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "纯文本方言阿拉伯语阅读理解基准，与空间智能、导航、机器人或智能体能力无关，属范围外垂直NLP应用。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.01113"
+  },
+  "2609.00924": {
+    "title": "Beyond the Image Plane: World-Grounded Queries for Multi-Object Tracking",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该工作本质是多目标跟踪（被动视频感知）任务，虽借用3D场景几何接地查询与长时记忆等术语，但不涉及导航决策、主动感知或具身空间推理，超出收录范围。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00924"
+  },
+  "2609.00242": {
+    "title": "CoLT-Drive: Counterfactual Long-Tail Benchmarking and Knowledge-Preserving Adaptation for Driving Affordance Prediction",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向自动驾驶决策的可供性预测与VLM域适配属驾驶垂直应用，不落在具身导航（UAV目标搜索/ObjectNav/VLN）与空间智能等收录技术线上，KPA亦为结构化提示、SLERP、LoRA-MoE等已有组件的领域化组合而非模型社区级新进展。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00242"
+  },
+  "2609.00384": {
+    "title": "RestoreBench: Can AI Agents Restore Power Flow Convergence?",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属于电力系统垂直领域的LLM智能体应用与基准，与空间智能、导航、机器人均无关联，按收录范围属于把智能体套用到无关垂直领域，应拒绝。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2609.00384"
+  },
+  "2608.30955": {
+    "title": "Learning Action Models with Conditional and Quantified Effects via Uncertainty-Guided Exploration",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属经典符号规划的动作模型主动学习，不含LLM/基础模型成分，也不涉及导航、空间智能或UAV/ObjectNav任务，仅与'用于规划的世界模型'技术线概念擦边。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.30955"
+  },
+  "2608.28437": {
+    "title": "LUCID: An Agentic AI Framework on Digital-Twin in the Loop for QoS-Guaranteeing Robotic Control",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "核心贡献是云机器人上行QoS保障与无线资源管理的问题编排，导航与空间智能仅为约束成分，属通信网络主导的交叉应用，仅边缘擦及具身导航与智能体规划主线。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.28437"
+  },
+  "2608.19004": {
+    "title": "Autonomous Agricultural Tractor: Integrated Weed Detection and LiDAR Navigation for Precision Paddy Farming",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "该文属水田农业机器人的垂直应用，EKF多传感器循行导航与稻-草杂草检测不落在收录的十一条技术线上，且实验仅限仿真、无基线对比，故拒绝收录。",
+    "rejected_at": "2026-09-02",
+    "url": "https://arxiv.org/abs/2608.19004"
   }
 }

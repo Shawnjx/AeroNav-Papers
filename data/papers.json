@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T01:29:13.072232+00:00",
+  "updated_at": "2026-09-02T02:14:46.512293+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -59,6 +59,46 @@
   ],
   "papers": [
     {
+      "id": "2609.00920",
+      "arxiv_id": "2609.00920",
+      "title": "VerNav: Verifier-First Low-Latency Vision-and-Language Navigation",
+      "authors": [
+        "Zhixin Wang",
+        "Chengzheyi Yao",
+        "Leyuan Liu",
+        "Xiaosong Zhang",
+        "Yongzhao Zhang"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.00920",
+      "pdf_url": "https://arxiv.org/pdf/2609.00920",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VerNav提出验证器优先的低延迟LLM视觉语言导航框架，用批量动作验证替代逐步自回归生成，仅高熵不确定时调用自适应生成器，配合VPO与步级强化微调，在R2R上性能具竞争力且逐步决策延迟降低超10倍。",
+      "change_zh": "常见LLM导航体每步自回归生成推理文本造成延迟累积，VerNav将决策范式从'生成'改为'并行验证'：批量校验候选动作，仅不确定时回退生成器，并以两阶段对齐训练验证器，兼顾低延迟与导航精度。",
+      "why_it_matters": "验证优先决策把LLM单步延迟降一个量级，对需高频实时决策的UAV搜救目标搜索与ObjectNav动作选择有直接迁移价值：候选动作并行打分天然适配离散导航图，熵门控生成可平衡快慢思考，缓解机载算力与实时性矛盾。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "r2r"
+      ]
+    },
+    {
       "id": "2608.30935",
       "arxiv_id": "2608.30935",
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
@@ -115,6 +155,51 @@
         "object navigation",
         "spatial intelligence",
         "spatial reasoning",
+        "vlm"
+      ]
+    },
+    {
+      "id": "2608.30396",
+      "arxiv_id": "2608.30396",
+      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "authors": [
+        "Zixing Lei",
+        "Gengze Zhou",
+        "Xiong-Hui Chen",
+        "Jiazhao Zhang",
+        "Yiyang Huang",
+        "Hang Yin",
+        "Haoqi Yuan",
+        "Qi Wu",
+        "Weixin Li",
+        "Siheng Chen"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2608.30396",
+      "pdf_url": "https://arxiv.org/pdf/2608.30396",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "NavMCP以意图、观测、记忆三通道耦合VLM推理智能体与导航基础模型执行器，把孤立导航回合变成持续的长时程具身交互，免重训即在多个EQA基准和Go2真机上领先。",
+      "change_zh": "常见路线要么端到端训练长时程策略，要么让VLM直接反复执行底层导航而低效脆弱；本文不重训任何模型，用意图、观测、记忆三通道让VLM做高层决策、导航基础模型做闭环执行，把回合式导航变成带证据记忆的持续交互。",
+      "why_it_matters": "对UAV主动目标搜索有直接启发：VLM决定找什么证据、去哪搜、何时停，并积累负证据，正对应搜救侦察的核心决策环；对ObjectNav则给出长时程多目标探索的免训练扩展范式，真机Go2结果还验证了可部署性。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "agentic",
+        "exploration",
         "vlm"
       ]
     },
@@ -988,6 +1073,43 @@
       ]
     },
     {
+      "id": "2609.00804",
+      "arxiv_id": "2609.00804",
+      "title": "Connectivity-Aware Graph Extension for Decentralized Multi-Robot Exploration",
+      "authors": [
+        "Béatrice Garcia Cegarra",
+        "Elena Vanneaux",
+        "Quentin Picard",
+        "David Filliat"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.00804",
+      "pdf_url": "https://arxiv.org/pdf/2609.00804",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出基于边界连通性的分布式探索图扩展策略，在间歇通信下保持多无人机区域划分稳定，仿真表明低通信率下探索效率优于已有图扩展方法。",
+      "change_zh": "常见多机探索多假设通信可靠或依赖集中协调；该工作将边界连通性纳入图扩展决策，使区域划分在断连与空间布局变化下保持稳定，并可叠加于两种现成分区方法；摘要未披露具体算法细节与消融。",
+      "why_it_matters": "间歇通信下的去中心化多机探索是搜救、侦察等无人机主动搜索任务实际部署的核心瓶颈，该策略直接提升断连场景下的搜索覆盖效率；对主动感知与在线建图中的多机协调亦有借鉴；与ObjectNav关联较弱。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "uav"
+      ]
+    },
+    {
       "id": "2608.30692",
       "arxiv_id": "2608.30692",
       "title": "Can Video World Models Track Unobserved World States?",
@@ -1022,6 +1144,138 @@
       "keywords": [
         "exploration",
         "world model"
+      ]
+    },
+    {
+      "id": "2609.01004",
+      "arxiv_id": "2609.01004",
+      "title": "SinkPruner: Sink-Free Visual Token Pruning for Multimodal Large Language Models",
+      "authors": [
+        "Shiyu Li",
+        "Zi-Yuan Hu",
+        "Shijia Huang",
+        "Yanyang Li",
+        "Yiwu Zhong",
+        "Liwei Wang"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01004",
+      "pdf_url": "https://arxiv.org/pdf/2609.01004",
+      "code_url": "https://github.com/LaVi-Lab/SinkPruner",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免训练视觉token剪枝框架SinkPruner：先滤除高范数冗余token以缓解注意力汇聚与分散，再按文本语义保留关键token，在16个图文/视频基准上89%压缩率下保留96.5%性能。",
+      "change_zh": "常见视觉中心或文本引导剪枝把高范数离群token误当重要线索保留；本文发现其在特征与空间维度高度冗余、应先剔除，以\"净化sink+文本引导\"的粗到细流程改变重要性判定假设，且免训练并增强现有剪枝方法。",
+      "why_it_matters": "价值主要在多模态大模型线：长视觉序列的推理开销是MLLM智能体瓶颈，该免训练剪枝可显著降低视觉token计算成本，利于具身智能体实时处理视频流；但未涉及UAV搜索或ObjectNav，导航价值为间接。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ]
+    },
+    {
+      "id": "2609.01058",
+      "arxiv_id": "2609.01058",
+      "title": "ARISE-RL: Agentic Rubric-Grounded Iterative Self-Evolution with Reinforcement Learning",
+      "authors": [
+        "Fanrui Zhang",
+        "Ruixue Ding",
+        "Qiang Zhang",
+        "Xi Chen",
+        "Boli Chen",
+        "Shihang Wang",
+        "Qiuchen Wang",
+        "Hongmin Zhan",
+        "Jinxin Bian",
+        "Li xingchao",
+        "Peijin Zheng",
+        "Hao cheng",
+        "Pengjun Xie",
+        "Kaipeng Zhang",
+        "Jiawei Liu",
+        "Zheng-Jun Zha"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01058",
+      "pdf_url": "https://arxiv.org/pdf/2609.01058",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ARISE-RL 提出全周期自进化强化学习框架，让任务/评分标准生成器与推理求解器通过评分介导共进化，并用奖励门控的记忆自蒸馏稳定训练，配合专家校准的 ECR-Bench 基准，提升智能体多步推理与工具使用能力。",
+      "change_zh": "相比依赖固定题库与可验证奖励的常见智能体 RL 路线，该工作让任务与评分标准生成器随求解器能力边界动态共进化，以评分满足度提供细粒度奖励信号，并用经验奖励验证后再进行的自蒸馏缓解分布失配与噪声模仿。",
+      "why_it_matters": "其奖励构造范式可迁移至具身导航：ObjectNav、VLN 与 UAV 主动目标搜索同样缺乏可验证奖励与开放式评分，评分介导共进化与奖励门控自蒸馏为长时程导航智能体的自监督强化训练提供参考；论文本身无空间或真机实验。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "2609.01045",
+      "arxiv_id": "2609.01045",
+      "title": "AgentFactory: Towards Automated Agentic System Design and Optimization",
+      "authors": [
+        "Enci Zhang",
+        "Haofeng Wang",
+        "Yuesheng Zhu",
+        "Xiaole Cui",
+        "Guibo Luo"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01045",
+      "pdf_url": "https://arxiv.org/pdf/2609.01045",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AgentFactory提出智能体系统自动设计框架，联合优化基础模型微调与工作流结构，兼顾性能、成本与效率，经三阶段优化在八个跨域基准上平均提升9.1%，优于人工设计与现有自动化方法。",
+      "change_zh": "常见自动智能体设计路线多只优化工作流或提示词、且只看单一性能指标；该工作的真正改变是把模型能力（微调）与工作流结构纳入同一三阶段搜索空间联合优化，并显式权衡性能、成本与效率多目标，适配真实部署约束。",
+      "why_it_matters": "对具身导航无直接实验，但方法论可迁移：UAV搜救与ObjectNav中的多模块LLM智能体管线目前多靠人工搭建，其联合优化模型与工作流、兼顾成本效率的自动设计思路可降低导航智能体的构建成本，并适配机载算力等部署约束。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment"
       ]
     },
     {
