@@ -22,7 +22,7 @@
    - 使用智谱 GLM 等兼容 OpenAI 的服务时：`OPENAI_API_KEY` 填服务方的 key，并额外添加 `OPENAI_BASE_URL` 和 `OPENAI_MODEL`（如 `glm-5.2`）。注意：智谱 **Coding Plan 订阅 key** 只在专属端点 `https://open.bigmodel.cn/api/coding/paas/v4/` 可用，通用端点 `api/paas/v4` 会报"余额不足"；按量付费 key 则用通用端点。
 4. 打开 `Actions`，手动运行一次 **Update papers and deploy**。
 
-工作流默认每天北京时间 07:30 更新。GitHub Actions 的 cron 使用 UTC，因此配置为 `23:30 UTC`。
+工作流默认每天北京时间凌晨 01:00 更新，03:00 补跑一次兜底（增量幂等，主跑成功则补跑空转）。GitHub Actions 的 cron 使用 UTC，因此配置为 `17:00` 与 `19:00 UTC`。
 
 ## 本地预览
 

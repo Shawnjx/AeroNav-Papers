@@ -2,8 +2,8 @@ name: Update papers and deploy
 
 on:
   schedule:
-    - cron: "30 23 * * *"
-    - cron: "55 1 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 19 * * *"
   workflow_dispatch:
   push:
     branches: ["main"]
