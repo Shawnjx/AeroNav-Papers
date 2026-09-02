@@ -78,7 +78,7 @@ def main():
         if twin and twin.get("summary_zh"):
             p={**twin,"citation_count":c["citation_count"],"is_classic":True}
             keep[p["id"]]=p;reused+=1;print(f"REUSE (0 token) {p['title'][:60]}");time.sleep(1)
-            new_batch.append({"title":p["title"],"summary_zh":p.get("summary_zh",""),"relevance_rating":p.get("relevance_rating"),"citation_count":c["citation_count"]});continue
+            new_batch.append({"t":p["title"],"u":p["url"],"r":p.get("relevance_rating"),"g":p.get("rigor_rating"),"s":p.get("summary_zh",""),"c":p.get("code_url",""),"cit":c["citation_count"]});continue
         c["topics"],_=classify(c);c["evidence"],c["evidence_note"]=evidence(c);rev=llm_review(c)
         if "relevance" in rev and (rev["relevance"]<CFG.get("gate",{}).get("min_relevance",6) or rev["rigor"]<CFG.get("gate",{}).get("min_rigor",5)):
             excl[c["id"]]={"title":c["title"],"relevance":rev["relevance"],"rigor":rev["rigor"],"reason":rev.get("reject_reason",""),"excluded_at":NOW.date().isoformat()}
@@ -95,12 +95,12 @@ def main():
             if m and not c.get("code_url"):c["code_url"]=m.group(0).rstrip(".")
             c["keywords"]=sorted({w for ws in CFG["keywords"].values() for w in ws if w in (c["title"]+" "+c["abstract"]).lower()})[:8]
             c.pop("abstract",None);c["is_classic"]=True;keep[c["id"]]=c;added+=1
-            new_batch.append({"title":c["title"],"summary_zh":c.get("summary_zh",""),"relevance_rating":c.get("relevance_rating"),"citation_count":c["citation_count"]})
+            new_batch.append({"t":c["title"],"u":c["url"],"r":c.get("relevance_rating"),"g":c.get("rigor_rating"),"s":c.get("summary_zh",""),"c":c.get("code_url",""),"cit":c["citation_count"]})
         time.sleep(1 if os.getenv("S2_API_KEY") else 3)
     if len(excl)>500:excl=dict(sorted(excl.items(),key=lambda kv:kv[1].get("excluded_at",""))[-500:])
     papers=sorted(keep.values(),key=lambda p:-p.get("citation_count",0))
     payload={"updated_at":NOW.isoformat(),"catalog":CFG.get("topics_catalog"),"papers":papers,"excluded":excl}
-    if added+reused:payload["briefing"]={"text":write_briefing("classic",new_batch),"added":added+reused,"at":NOW.isoformat()}
+    if added+reused:payload["briefing"]={"text":write_briefing("classic",new_batch),"added":added+reused,"at":NOW.isoformat(),"new":new_batch}
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     CLASSICS.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Classics: added {added} (+{reused} reused, 0 token); excluded {excluded}; total {len(papers)}; pool over threshold {len(cands)}")

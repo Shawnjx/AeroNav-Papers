@@ -125,13 +125,13 @@ def main():
             if m and not p.get("code_url"):p["code_url"]=m.group(0).rstrip(".")
             p["keywords"]=sorted({w for ws in CFG["keywords"].values() for w in ws if w in (p["title"]+" "+p["abstract"]).lower()})[:8]
             p.pop("abstract",None);existing[p["id"]]=p;added+=1
-            new_batch.append({"title":p["title"],"summary_zh":p.get("summary_zh",""),"relevance_rating":p.get("relevance_rating")})
+            new_batch.append({"t":p["title"],"u":p["url"],"r":p.get("relevance_rating"),"g":p.get("rigor_rating"),"s":p.get("summary_zh",""),"c":p.get("code_url","")})
         time.sleep(1 if os.getenv("S2_API_KEY") else 3)
     if len(rej)>300:rej=dict(sorted(rej.items(),key=lambda kv:kv[1].get("rejected_at",""))[-300:])
     cutoff=(datetime.now(timezone.utc)-timedelta(days=CFG["retention_days"])).date().isoformat()
     papers=sorted([p for p in existing.values() if p.get("published","9999")>=cutoff],key=lambda p:(p.get("score",0),p.get("published","")),reverse=True)
     payload={"updated_at":datetime.now(timezone.utc).isoformat(),"catalog":CFG.get("topics_catalog"),"papers":papers}
-    if added:payload["briefing"]={"text":write_briefing("daily",new_batch),"added":added,"at":datetime.now(timezone.utc).isoformat()}
+    if added:payload["briefing"]={"text":write_briefing("daily",new_batch),"added":added,"at":datetime.now(timezone.utc).isoformat(),"new":new_batch}
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     REJECTED.write_text(json.dumps(rej,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
