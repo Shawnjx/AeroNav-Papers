@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T02:18:10.703533+00:00",
+  "updated_at": "2026-09-02T02:39:09.469368+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -58,6 +58,440 @@
     }
   ],
   "papers": [
+    {
+      "id": "https://openalex.org/W4387835442",
+      "arxiv_id": "",
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "authors": [
+        "Joon Sung Park",
+        "Joseph O’Brien",
+        "Carrie J. Cai",
+        "Meredith Ringel Morris",
+        "Percy Liang",
+        "Michael S. Bernstein"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 1766,
+      "url": "https://doi.org/10.1145/3586183.3606763",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3586183.3606763",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "将大语言模型扩展为具备完整记忆流、动态检索、高层反思与行为规划的生成式智能体，在类Sims沙盒小镇中让25个智能体产生可信个体与涌现社会行为，消融验证观察、规划、反思组件均关键。",
+      "change_zh": "相比把LLM当一次性问答或脚本化NPC，本文把记忆流、反思、检索与规划整合成可持续运转的智能体闭环：以自然语言记录全部经历、周期性合成高层反思、动态检索支撑行为规划，使长期个体与群体行为可信，成为后续智能体记忆架构的范式起点。",
+      "why_it_matters": "其记忆-反思-规划架构是智能体长期自主性的通用底座：UAV搜救的长时任务记忆与策略复盘、ObjectNav的语义记忆与目标推理、多智能体协同侦察等，均可借鉴其经验存储与反思机制来支撑长时程决策与策略改进。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4362515116",
+      "arxiv_id": "",
+      "title": "A Survey of Large Language Models",
+      "authors": [
+        "Wayne Xin Zhao",
+        "Kun Zhou",
+        "Junyi Li",
+        "Tianyi Tang",
+        "Zican Dong",
+        "Yupeng Hou",
+        "Beichen Zhang",
+        "Yingqian Min",
+        "Junjie Zhang",
+        "Peiyu Liu",
+        "Xiaolei Wang",
+        "Yifan Du"
+      ],
+      "published": "2026",
+      "source": "OpenAlex",
+      "venue": "Frontiers of Computer Science",
+      "citation_count": 1511,
+      "url": "https://doi.org/10.1007/s11704-026-60308-3",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11704-026-60308-3.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该综述从预训练、后训练（SFT与RL对齐）、利用策略（上下文学习、提示工程、智能体推理）与评测四大维度系统梳理LLM进展，并指出理论、高效扩展、对齐与智能体能力等开放挑战。",
+      "change_zh": "相比聚焦单点技术的工作，它把LLM研究统一为预训练—后训练—利用—评测的系统框架，将上下文学习、提示工程与agentic reasoning纳入部署与交互视角；摘要未提供具身或导航特定内容。",
+      "why_it_matters": "其梳理的LLM推理、上下文学习与agentic能力，正是UAV主动目标搜索与ObjectNav中任务规划、指令解析和开放词汇目标理解的能力底座；评测维度综述亦有助于具身基准设计，属模型与智能体技术线高影响力的基础性工作。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4393065402",
+      "arxiv_id": "",
+      "title": "A survey on large language model based autonomous agents",
+      "authors": [
+        "Lei Wang",
+        "Chen Ma",
+        "Xueyang Feng",
+        "Zeyu Zhang",
+        "Hao Yang",
+        "Jingsen Zhang",
+        "Zhiyuan Chen",
+        "Jiakai Tang",
+        "Xu Chen",
+        "Yankai Lin",
+        "Wayne Xin Zhao",
+        "Zhewei Wei"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Frontiers of Computer Science",
+      "citation_count": 1495,
+      "url": "https://doi.org/10.1007/s11704-024-40231-1",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11704-024-40231-1.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文对基于大语言模型的自主智能体研究进行系统综述，提出能涵盖多数已有工作的统一构建框架，梳理其在社会科学、自然科学与工程领域的多样应用，并总结常用评测方法与未来挑战。",
+      "change_zh": "相比以往在孤立环境中训练、知识受限的专用智能体路线，本文聚焦依托海量网络知识的LLM通用智能体，以统一框架整合分散的构建方法，并系统盘点应用与评测，属综述性整合而非提出新方法或实验验证。",
+      "why_it_matters": "该综述梳理的LLM自主智能体构建、推理与工具使用等能力，是UAV主动目标搜索与ObjectNav中语言驱动任务规划智能体的基础支撑；其评测策略总结对具身智能体评测亦有借鉴，属范围内基础能力线的核心参考文献。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4402727764",
+      "arxiv_id": "",
+      "title": "Improved Baselines with Visual Instruction Tuning",
+      "authors": [
+        "Haotian Liu",
+        "Chunyuan Li",
+        "Yuheng Li",
+        "Yong Jae Lee"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 1378,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.02484",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文在LLaVA框架下对多模态模型设计选择做受控系统研究，采用CLIP-ViT-L-336px、MLP投影并加入学术VQA数据，仅用1.2M公开数据在11个基准上刷新SOTA，训练成本极低。",
+      "change_zh": "相比堆砌复杂结构与海量数据的路线，该文证明简单的全连接加MLP投影即可高效对齐视觉与语言，配合高分辨率CLIP编码器与少量高质量VQA数据就能大幅提升性能，以数据高效的强基线降低MLLM研究门槛并开源复现。",
+      "why_it_matters": "作为影响力极高的通用MLLM进展，可充当ObjectNav开放词汇目标识别与UAV主动搜索中视觉理解、目标判别与指令解析的感知推理底座；但其本身无空间记忆与导航决策模块，需与导航框架结合方能在具身任务落地。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "instruction"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "2204.14198",
+      "arxiv_id": "2204.14198",
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "authors": [
+        "Alayrac, Jean-Baptiste",
+        "Jeff Donahue",
+        "Pauline Luc",
+        "Antoine Miech",
+        "Iain Barr",
+        "Yana Hasson",
+        "Karel Lenc",
+        "Arthur Mensch",
+        "Katie Millican",
+        "Malcolm Reynolds",
+        "Roman Ring",
+        "Eliza Rutherford"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 1251,
+      "url": "https://arxiv.org/abs/2204.14198",
+      "pdf_url": "https://arxiv.org/pdf/2204.14198",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Flamingo通过桥接预训练视觉与语言模型、处理任意交错的图文视频序列等架构创新，在大规模多模态网络语料上训练出支持上下文少样本学习的视觉语言模型，在多种图像与视频任务基准上以少样本提示刷新纪录。",
+      "change_zh": "常见路线针对每个视觉任务做专门微调，Flamingo证明用门控交叉注意力连接冻结的视觉与语言骨干、在交错图文语料上训练，即可让单一模型具备视觉上下文少样本学习能力，无需任务微调即超越用数千倍任务数据微调的模型。",
+      "why_it_matters": "Flamingo奠定的大模型多模态上下文少样本学习范式，为UAV主动目标搜索与ObjectNav中利用VLM进行开放词汇目标识别、指令理解与样本高效适配提供基础能力，是具身导航视觉语言感知与后续MLLM发展的重要底座。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "vlm"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "2107.07651",
+      "arxiv_id": "2107.07651",
+      "title": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation",
+      "authors": [
+        "Junnan Li",
+        "Ramprasaath R. Selvaraju",
+        "Akhilesh Deepak Gotmare",
+        "Shafiq Joty",
+        "Caiming Xiong",
+        "Steven C. H. Hoi"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 823,
+      "url": "https://arxiv.org/abs/2107.07651",
+      "pdf_url": "https://arxiv.org/pdf/2107.07651",
+      "code_url": "https://github.com/salesforce/ALBEF/",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ALBEF提出先对齐后融合的视觉语言预训练范式：先用对比损失对齐图像与文本表示，再经跨模态注意力融合，配合动量蒸馏应对网络噪声数据，无需边界框标注即取得图像检索、VQA等多项下游任务领先。",
+      "change_zh": "与依赖目标检测框特征的单流融合路线不同，ALBEF先用双塔对比学习对齐图文表示，再以跨模态注意力融合，摆脱边界框与高分辨率依赖；动量蒸馏以伪目标自训练抑制网络噪声，为后续BLIP等VLM奠基。",
+      "why_it_matters": "作为VLM预训练基石，其图文对齐与融合机制为VLN指令-观测匹配和开放词汇目标理解提供底层表征；动量蒸馏利用噪声数据的思路也可迁移到导航模型训练，支撑UAV目标搜索与ObjectNav的语义感知。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [],
+      "is_classic": true
+    },
+    {
+      "id": "2304.08485",
+      "arxiv_id": "2304.08485",
+      "title": "Visual Instruction Tuning",
+      "authors": [
+        "Haotian Liu",
+        "Chunyuan Li",
+        "Qingyang Wu",
+        "Yong Jae Lee"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 695,
+      "url": "https://arxiv.org/abs/2304.08485",
+      "pdf_url": "https://arxiv.org/pdf/2304.08485",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出LLaVA：用纯文本GPT-4生成图文指令跟随数据，端到端微调连接视觉编码器与LLM的多模态大模型，在合成指令集上达到GPT-4约85%的相对得分，并在ScienceQA刷新纪录。",
+      "change_zh": "相比以图文描述、VQA对训练多模态模型的主流路线，本文开创性地用纯文本GPT-4离线生成多模态指令微调数据，把指令微调范式引入视觉-语言领域，以极简线性投影结构实现开放多模态对话，并开源数据与代码催生后续生态。",
+      "why_it_matters": "是多模态大模型与智能体技术线的奠基性工作，为具身智能体提供通用视觉-语言理解底座，支撑UAV目标搜索、aerial VLN与ObjectNav中的指令理解、目标语义识别与视觉推理，也常作为规划智能体与具身评测的基座模型。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "instruction"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4404356490",
+      "arxiv_id": "",
+      "title": "A survey on multimodal large language models",
+      "authors": [
+        "Shukang Yin",
+        "Chaoyou Fu",
+        "Sirui Zhao",
+        "Ke Li",
+        "Xing Sun",
+        "Tong Xu",
+        "Enhong Chen"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "National Science Review",
+      "citation_count": 693,
+      "url": "https://doi.org/10.1093/nsr/nwae403",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本综述系统梳理以GPT-4V为代表的多模态大模型进展，涵盖基本范式、架构、训练策略、数据与评测，并讨论多粒度、多模态、多语言与多场景扩展，以及多模态幻觉、上下文学习、思维链与LLM辅助视觉推理等议题。",
+      "change_zh": "相比传统面向单一任务的多模态方法，该综述把MLLM定位为以LLM为脑的通用范式，系统统一其架构、训练与评测视角，归纳涌现能力、扩展方向与幻觉、CoT等前沿议题，为社区提供了整体研究地图。",
+      "why_it_matters": "MLLM是具身导航与UAV主动目标搜索的重要基座能力：其指令理解、视觉推理与思维链等能力可直接支撑无人机指令跟随与开放词汇目标导航，该综述为导航领域选用和改进MLLM基座提供了系统参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4386075660",
+      "arxiv_id": "",
+      "title": "Objaverse: A Universe of Annotated 3D Objects",
+      "authors": [
+        "Matt Deitke",
+        "Dustin Schwenk",
+        "Jordi Salvador",
+        "Luca Weihs",
+        "Oscar Michel",
+        "Eli VanderBilt",
+        "Ludwig Schmidt",
+        "Kiana Ehsanit",
+        "Aniruddha Kembhavi",
+        "Ali Farhadi"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 652,
+      "url": "https://doi.org/10.1109/cvpr52729.2023.01263",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Objaverse发布80万+带描述、标签与动画的3D物体数据集，规模与多样性远超现有3D库，并通过生成式3D建模、LVIS长尾分割、开放词汇目标导航与鲁棒性评测验证价值。",
+      "change_zh": "以往3D数据集如ShapeNet规模中等、类别有限；本文改以众包方式汇集开放许可的80万+3D资产并附描述、标签与动画，把互联网级数据扩展范式从图文引入3D，支撑开放词汇导航与生成式3D训练。",
+      "why_it_matters": "为ObjectNav提供海量多样3D资产以构建训练场景，支撑开放词汇目标导航模型训练与长尾类别识别；同样可用于生成UAV目标搜索仿真中的多样目标与环境，并为具身评测与鲁棒性分析提供素材，是具身AI数据基础设施。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4383097638",
+      "arxiv_id": "",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "authors": [
+        "Jacky Liang",
+        "Wenlong Huang",
+        "Fei Xia",
+        "Peng Xu",
+        "Karol Hausman",
+        "Brian Ichter",
+        "Pete Florence",
+        "Andy Zeng"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 651,
+      "url": "https://doi.org/10.1109/icra48891.2023.10160591",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "规划智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出Code as Policies，用代码补全LLM经少样本提示把自然语言指令合成为机器人策略代码，可表示反应式与航点式策略并在多真机平台演示；层级代码生成还将HumanEval提升至39.8%。",
+      "change_zh": "不同于SayCan等在离散技能表中挑动作，该文让LLM直接写出可执行策略代码：以循环结构与NumPy/Shapely做空间几何运算，用递归式层级代码生成分解未定义函数，从而把模糊指令转成带精确数值的闭环控制。",
+      "why_it_matters": "为LLM驱动具身规划奠定范式：把语言指令编译为处理感知输出的策略代码，可迁移到UAV目标搜索与ObjectNav中组合检测器与控制API、按语境调节参数；其层级代码生成也是代码智能体与规划智能体技术线的基石工作。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "real robot",
+        "waypoint"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4229007520",
+      "arxiv_id": "",
+      "title": "Swarm of micro flying robots in the wild",
+      "authors": [
+        "Xin Zhou",
+        "Xiangyong Wen",
+        "Zhepei Wang",
+        "Yuman Gao",
+        "Haojia Li",
+        "Qianhao Wang",
+        "Tiankai Yang",
+        "Haojian Lu",
+        "Yanjun Cao",
+        "Chao Xu",
+        "Fei Gao"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "Science Robotics",
+      "citation_count": 594,
+      "url": "https://doi.org/10.1126/scirobotics.abm5954",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "研发手掌大小、机载感知定位控制一体化的微型无人机集群，提出时空联合优化的毫秒级可扩展轨迹规划器，兼顾避障、动力学可行与机间协同，在密林等野外场景实现无外部设施的全自主集群飞行。",
+      "change_zh": "相比依赖外部定位与地图的常规做法，该工作把感知、定位、规划、控制全部压缩到掌上机载算力，用时空联合优化在毫秒级同时形变轨迹并分配时间，将避障、机间避碰与集群协同纳入统一可扩展规划器，实现野外无基础设施集群自主。",
+      "why_it_matters": "为UAV野外搜救与主动目标搜索提供了底层自主飞行与机载实时建图规划能力，使高层搜索策略可真正部署于杂乱真实环境；集群协同天然支持多机覆盖式目标发现；其对机载算力约束下感知—规划闭环的设计对具身导航落地亦有借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "drone"
+      ],
+      "is_classic": true
+    },
     {
       "id": "2307.06082",
       "arxiv_id": "2307.06082",
@@ -241,6 +675,139 @@
       "relevance": 3,
       "rigor": 7,
       "reason": "属于VLA/机械臂操作控制工作，方向指令仅用于桌面抓取的空间指示，不含导航决策成分，且空间智能仅为能力演示而非方法主线，超出收录范围。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W1489032534": {
+      "title": "The Perception of the Environment: Essays on Livelihood, Dwelling and Skill",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "该书为人类学/生态心理学理论专著，讨论人类感知与技能的文化-生物生成，无机器人、导航或智能体技术内容，仅'环境感知'一词与收录范围术语擦边，属范围外。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4391136507": {
+      "title": "A Survey on Evaluation of Large Language Models",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "通用LLM评测综述，主体覆盖NLP、推理、医疗、伦理、教育等非具身领域，与空间智能、导航、机器人仅评测方法论层面边缘相关。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4386151215": {
+      "title": "2023 Focused Update of the 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该文为欧洲心脏病学会心衰临床诊疗指南的聚焦更新，属医疗领域文献，与具身导航、空间智能、大模型与智能体等全部收录技术线完全无关，属明确范围外内容。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4210423514": {
+      "title": "FAST-LIO2: Fast Direct LiDAR-Inertial Odometry",
+      "relevance": 3,
+      "rigor": 10,
+      "reason": "经典激光-惯性里程计/SLAM工作，核心贡献是状态估计滤波与地图数据结构，仅将UAV作为部署平台提及，未涉及目标搜索、VLN、空间推理或智能体等任何收录技术线的核心问题。",
+      "excluded_at": "2026-09-02"
+    },
+    "2107.03374": {
+      "title": "Evaluating Large Language Models Trained on Code",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "属于LLM代码生成/编译工具链的垂直应用，与空间、导航、机器人无关，也未构成模型或智能体能力本身的显著进展；摘要仅为概念演示与系统描述，无实验设置、基线与消融，且题目与摘要内容明显不符。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4283077289": {
+      "title": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "本文属地理统计与可解释机器学习交叉的方法学，用SHAP事后解释XGBoost提取地理空间效应，不涉及具身导航、3D场景理解或智能体能力进展，仅与'空间'一词术语擦边，属范围外工作。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4210258765": {
+      "title": "ECCO Guidelines on Therapeutics in Ulcerative Colitis: Medical Treatment",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "本文为溃疡性结肠炎药物治疗的医学临床指南，与空间智能、具身导航、机器人或大模型智能体等所有收录技术线均无关联，属医疗垂直领域范围外内容。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4282970004": {
+      "title": "Towards the Unmanned Aerial Vehicles (UAVs): A Comprehensive Review",
+      "relevance": 3,
+      "rigor": 4,
+      "reason": "该文是面向无人机系统整体的宽泛综述（分类、集群、充电、标准化、安全等），不涉及UAV主动目标搜索或自主导航的方法与实验，仅因提及搜救应用而术语擦边。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W3174128215": {
+      "title": "Nanozymes Inspired by Natural Enzymes",
+      "relevance": 0,
+      "rigor": 5,
+      "reason": "该文属于纳米材料与人工酶催化化学领域，与具身导航、空间智能、大模型智能体等全部收录技术线均无关联，纯属范围外。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4396723768": {
+      "title": "Augmenting large language models with chemistry tools",
+      "relevance": 3,
+      "rigor": 6,
+      "reason": "该工作将GPT-4套用到化学垂直领域（有机合成、药物发现、材料设计），与空间、导航、机器人无关，属范围中明确排除的'大模型套用垂直应用'类，仅'LLM智能体/工具使用'术语擦边。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W3156526939": {
+      "title": "Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "该文为护理学继续专业发展的定性文献元综合，'终身学习'指人类护士而非机器持续学习，与具身导航、空间智能、大模型智能体等全部收录技术线均无关，属范围外论文。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4411403346": {
+      "title": "A Comprehensive Overview of Large Language Models",
+      "relevance": 5,
+      "rigor": 3,
+      "reason": "属LLM通识综述而非模型或智能体能力的显著进展，主体偏纯LLM理论与训练技巧且无任何实验，仅泛涉多模态与机器人，不足以支撑收录。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4226400653": {
+      "title": "Active Inference",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "这是关于自由能原理与主动推理的神经科学/认知科学理论专著，面向脑与行为解释，不涉及具身导航、UAV目标搜索或大模型智能体等收录技术线，也无相关系统实验。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4308386695": {
+      "title": "Job demands-resources theory in times of crises: New propositions",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文为组织心理学的纯理论论文（扩展JD-R工作要求-资源理论以解释疫情等危机下的员工健康与动机），与具身导航、UAV目标搜索、空间智能、世界模型及大模型智能体等全部收录技术线完全无关，属范围外且无实验验证。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4293718192": {
+      "title": "Abstract Functional Language Logic: A Competitive Mixture of Experts Architecture for Paradox-Free Reasoning and Adaptive Intelligence",
+      "relevance": 5,
+      "rigor": 2,
+      "reason": "该文属纯概念性的神经符号LLM推理架构构想，摘要未报告任何实验、基线、数据集或结果，严谨度不足，且与空间、导航、具身任务无实质关联，仅与LLM推理技术线边缘相关。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W3116229068": {
+      "title": "Students’ perception of online learning during the COVID-19 pandemic",
+      "relevance": 0,
+      "rigor": 5,
+      "reason": "医学生对在线学习感知的问卷调查，属医学教育实证研究，与具身导航、空间智能、大模型智能体等全部收录技术线完全无关，范围外。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4280598306": {
+      "title": "Deep Visual Proteomics defines single-cell identity and heterogeneity",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该文属单细胞空间蛋白质组学的生物医学工作，仅在'空间'与AI图像分析术语上擦边，与具身导航、空间智能、智能体等所有收录技术线均无实质关联。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W3188264307": {
+      "title": "An overview of biodegradable packaging in food industry",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文是食品包装材料领域综述，涉及生物聚合物性能与市场，与具身导航、空间智能、大模型智能体等全部收录技术线无任何关联，属范围外论文。",
+      "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4389934892": {
+      "title": "Systematic review and meta-analysis of AI-based conversational agents for promoting mental health and well-being",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "将AI对话智能体套用于心理健康医疗垂直领域，与空间、导航、机器人均无关，属研究范围明确列出的拒收类别。",
       "excluded_at": "2026-09-02"
     }
   }
