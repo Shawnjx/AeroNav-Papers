@@ -350,5 +350,61 @@
     "reason": "属状态估计/定位建图线的小规模概念验证：仅两次手持采集、单标记六位置测试，组合现成里程计与RTAB-Map，落地影响力未达该技术线收录门槛。",
     "rejected_at": "2026-09-02",
     "url": "https://arxiv.org/abs/2608.16281"
+  },
+  "2609.02502": {
+    "title": "Blending Concepts: Benchmarking Visual Metaphor Generation in Text-to-Image Models",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "本文是文生图模型视觉隐喻生成能力的评测基准，属于研究范围明确排除的文生图方向，与空间智能、具身导航、机器人自主及大模型智能体核心能力进展均无实质关联，仅术语上涉及MLLM评审。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02502"
+  },
+  "2609.02252": {
+    "title": "DiffuSearch: How Hybrid Trajectory Planning Benefits from Aligned Objectives in Diffusion and Action Space",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "该文属自动驾驶轨迹规划，仅在nuPlan/interPlan等驾驶基准上评测，与具身导航、UAV主动目标搜索、ObjectNav/VLN及基础模型智能体各技术线均无实质关联，且并非机器人自主领域公认的高影响力系统工作。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02252"
+  },
+  "2609.02512": {
+    "title": "Beauty is in the AI of the beholder: MLLMs systematically overrate facial attractiveness",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作是对现成商用MLLM在人脸吸引力评分这一社会感知垂直任务上的行为审计，不涉及模型能力本身的显著进展，也与空间智能、导航、机器人无关，属范围外应用评测。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02512"
+  },
+  "2609.02471": {
+    "title": "Learning to Track from Privileged Target Appearances",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "纯2D视频目标跟踪的感知方法，无UAV搜索、导航决策或机器人自主成分，仅术语与'目标'擦边，属范围外工作。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02471"
+  },
+  "2609.02413": {
+    "title": "WildFab: Multi-Axis 3D Printing from Models in the Wild",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "属于增材制造/几何处理领域的多轴打印刀具路径与无碰撞运动规划，无导航决策成分，与具身导航收录范围各技术线均不相关。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02413"
+  },
+  "2609.02277": {
+    "title": "Auditory Illusion Benchmark for Large Audio Language Models",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作是对大型音频语言模型听觉错觉感知的认知评测，与空间智能、导航、机器人自主及具身评测均无实质关联，仅在大模型基准术语上擦边，属收录范围外。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02277"
+  },
+  "2609.02255": {
+    "title": "T2LSC-Bench: Benchmarking Localized Semantic Control in Text-to-Image Generation",
+    "relevance": 1,
+    "rigor": 7,
+    "reason": "该工作属于文生图（T2I）生成的诊断评测基准，落入研究范围明确排除的'文生图/文生视频'类目，与UAV目标搜索、VLN、ObjectNav及智能体基础能力均无实质关联。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02255"
   }
 }

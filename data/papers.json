@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T01:26:14.479639+00:00",
+  "updated_at": "2026-09-03T01:54:20.689613+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -63,6 +63,53 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.02350",
+      "arxiv_id": "2609.02350",
+      "title": "LookStep: Efficient Vision-Language Navigation with Linguistic Foresight and Event Driven Memory",
+      "authors": [
+        "Kun-Yang Yu",
+        "Yingzhe Li",
+        "Hongyu Xu",
+        "Shi-Yu Tian",
+        "Zhi Zhou",
+        "Yang Chen",
+        "Ming Yang",
+        "Sheng Wang",
+        "Qing Yu",
+        "Lan-Zhe Guo",
+        "Yu-Feng Li"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02350",
+      "pdf_url": "https://arxiv.org/pdf/2609.02350",
+      "code_url": "https://github.com/kunyang-YU/LookStep",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "LookStep结合语言中心未来状态建模与事件驱动滚动记忆，用语言标签生成粗粒度导航进度和候选动作未来状态，自主决定观测写入有限记忆，R2R-CE Val-Unseen成功率49.7%，更省数据和内存。",
+      "change_zh": "相比只监督下一步专家动作、依赖认知地图或堆积历史帧的常见路线，它改为在语言空间为每个候选动作建模粗粒度未来状态与导航进度，提供前瞻性监督信号；并用事件驱动的有界滚动记忆按语义角色选择性写入，替代全量历史堆叠。",
+      "why_it_matters": "对地面VLN直接提供省数据省内存的高效路线；语言空间前瞻与事件驱动有界记忆可迁移到资源受限的UAV目标搜索和ObjectNav：机载算力有限时，用语言粗粒度评估候选动作收益并选择性记忆关键观测，具实用价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 29,
+      "keywords": [
+        "instruction",
+        "mllm",
+        "multimodal large language model",
+        "r2r"
+      ]
+    },
     {
       "id": "2609.00920",
       "arxiv_id": "2609.00920",
@@ -968,6 +1015,49 @@
       ]
     },
     {
+      "id": "2609.02074",
+      "arxiv_id": "2609.02074",
+      "title": "CHIME: Credit-Aware Hierarchical Memory Evolution for Long-Horizon Agentic Planning",
+      "authors": [
+        "Yongshi Ye",
+        "Tian Lan",
+        "Feihu Jiang",
+        "Muyang Ye",
+        "Bin Zhu",
+        "Qianghuai Jia",
+        "Longyue Wang",
+        "Zhao Xu",
+        "Weihua Luo",
+        "Xiaodong Shi"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02074",
+      "pdf_url": "https://arxiv.org/pdf/2609.02074",
+      "code_url": "https://github.com/ATH-MaaS/Marco-DeepResearch",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CHIME针对自进化记忆中的信用分配问题，将任务结果先归因于规划或执行，再分别更新规划库与执行库，在四个长时程智能体基准上持续超越最强训练与记忆基线。",
+      "change_zh": "常见自进化记忆直接以最终成败更新单一记忆库，易把执行误差与环境噪声混入规划经验；CHIME改为先做结果归因（归因于规划、执行、两者或皆非），只更新对应分层记忆库，用更少条目积累更有效且可跨骨干迁移的记忆。",
+      "why_it_matters": "对规划智能体与LLM智能体线是核心进展；对UAV主动目标搜索与ObjectNav的长时程任务，其“归因后再记忆”思路可区分导航决策与底层执行/感知误差，提升经验复用与跨模型迁移可靠性，值得导航智能体借鉴。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark"
+      ]
+    },
+    {
       "id": "2609.01245",
       "arxiv_id": "2609.01245",
       "title": "Explore More, Drift Less: Outcome-Only Reinforcement Learning Can Suffice for Long-Horizon Interactive Agents",
@@ -1177,6 +1267,45 @@
       ]
     },
     {
+      "id": "2609.02319",
+      "arxiv_id": "2609.02319",
+      "title": "From Multi-Fisheye Sensing to Panoramic Perception: A Parallax-Aware Onboard Platform for Ultra-Low-Altitude UAVs",
+      "authors": [
+        "Dun Dai",
+        "Ze Lu",
+        "Cheng He",
+        "Yaowen Wang",
+        "Quan Quan"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02319",
+      "pdf_url": "https://arxiv.org/pdf/2609.02319",
+      "code_url": "https://github.com/DUNDAI1998/parallax-aware-uav-panorama",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 7,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "面向超低空无人机，将四路鱼眼实时拼接为全景ERP的机载平台：按重叠区视差选择投影深度并控制拼接缝，在Jetson Orin NX上约20Hz、13.3W运行，并验证下游视觉位置识别。",
+      "change_zh": "相比固定投影深度或离线重融合的常见全景方案，本文按重叠区视差自适应选择投影深度，辅以受控拼接缝、校验门控残差网格与逐缝增量更新，在自研机载整机上实现传感器帧率实时运行并开放ERP接口。",
+      "why_it_matters": "全景环视是低空无人机避障与目标搜索的感知基础，360°视野减少目标漏检并可支撑VLM导航指令接口；ERP格式便于直接对接视觉模型，实测帧率功耗为机载部署提供参考，开源促进复用。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "uav"
+      ]
+    },
+    {
       "id": "2609.01567",
       "arxiv_id": "2609.01567",
       "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
@@ -1377,6 +1506,52 @@
       ]
     },
     {
+      "id": "2609.01899",
+      "arxiv_id": "2609.01899",
+      "title": "TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views",
+      "authors": [
+        "Skanda Koppula",
+        "Frano Rajic",
+        "Abdullah Faiz Ur Rahman",
+        "Yi Yang",
+        "Ignacio Rocco",
+        "Jeet Thakwani",
+        "Rishabh Kabra",
+        "Andrew Zisserman",
+        "Joao Carreira",
+        "Siyu Tang",
+        "Carl Doersch",
+        "Gabriel Brostow"
+      ],
+      "published": "2026-09-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.01899",
+      "pdf_url": "https://arxiv.org/pdf/2609.01899",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出首个跨多个同步视角的长期3D点跟踪基准TAPVid-MV：含284个序列、1142路已标定相机流与近11万条人工核验轨迹，覆盖七类室内外场景，评测30余个基线，发现几何恢复是3D点跟踪的主要瓶颈。",
+      "change_zh": "现有基准局限于单视频或静态相机阵，本文首次评测相机运动下多同步视角的长期3D点跟踪；真值借助深度、LiDAR、SLAM/SfM、网格与仿真等辅助模态获取并人工核验；并将重建与点跟踪在同一数据上联合评测，把几何误差与对应误差解耦，定位出几何恢复这一瓶颈。",
+      "why_it_matters": "无人机主动目标搜索与ObjectNav依赖运动相机下持久稳定的3D目标定位与场景几何，本基准为遮挡下跨视角点级对应与几何恢复提供了严格评测，可衡量导航前端感知、在线建图与空间记忆的可靠性，为空间智能相关模块的选型与迭代提供标准化依据。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "slam"
+      ]
+    },
+    {
       "id": "2608.30692",
       "arxiv_id": "2608.30692",
       "title": "Can Video World Models Track Unobserved World States?",
@@ -1450,6 +1625,88 @@
         "aerial",
         "drone",
         "odometry"
+      ]
+    },
+    {
+      "id": "2609.02573",
+      "arxiv_id": "2609.02573",
+      "title": "Deeply Interleaved Text-Image Contexts for Multimodal LLMs Assessment",
+      "authors": [
+        "Zihao Wang",
+        "Xi Xiang",
+        "Yuwen Sun",
+        "Yingyu Li",
+        "Yabo Zhang",
+        "Yihan Zeng",
+        "Fan Li",
+        "Wangmeng Zuo"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02573",
+      "pdf_url": "https://arxiv.org/pdf/2609.02573",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出TIC-Bench基准，评估多模态大模型在深度图文交错语境下整合线索还原能力，覆盖逻辑、时间、空间关联三类八种题型共2280题，评测10个先进模型发现与人类专家差距显著。",
+      "change_zh": "常见多模态评测将文本仅作为任务指令，图文语义互动浅；该工作转向深度交错的图文语境，把线索分散在文本与图像序列中，要求模型跨模态整合证据还原事实，并按逻辑、时间、空间关联系统刻画这种能力。",
+      "why_it_matters": "为多模态大模型线提供诊断工具，揭示模型整合分散图文证据的短板；空间关联子域触及空间推理。指令与观测交错整合正是VLN grounding核心，对该线有间接参考价值，但论文未涉及导航或UAV实验。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "mllm"
+      ]
+    },
+    {
+      "id": "2609.02359",
+      "arxiv_id": "2609.02359",
+      "title": "TempoGround: State-Aware Streaming Visual Grounding with Vision-Language Models",
+      "authors": [
+        "Leqian Ding",
+        "Junning Qiu",
+        "Manwen Yang",
+        "Yu Guo",
+        "Fei Wang"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02359",
+      "pdf_url": "https://arxiv.org/pdf/2609.02359",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TempoGround是面向流式输入的VLM视觉定位框架，通过状态感知的跨帧对应与课程预测，依次完成实例关联、物体进出状态判断、2D框解码与相机系3D提升，并以可验证强化学习奖励优化定位一致性与身份保持。",
+      "change_zh": "常见视觉定位多为单帧或离线视频范式，本文转向流式在线定位，显式建模物体进出视野状态，用课程机制串联跨帧关联、状态预测、2D解码与3D提升，并以可验证强化奖励替代纯token级监督，直接优化几何与时序一致性。",
+      "why_it_matters": "流式开放词汇定位是UAV主动目标搜索与ObjectNav实例导航的核心感知前端，其跨帧身份保持与相机系3D输出可直接支撑搜救/侦察中持久目标锁定与接近决策；可验证奖励强化也为具身VLM的空间监督提供了可迁移训练范式。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "localization",
+        "vlm"
       ]
     },
     {
@@ -2081,5 +2338,60 @@
         "uav"
       ]
     }
-  ]
+  ],
+  "briefing": {
+    "text": "本批工作横跨感知与决策两条主线：前端有多鱼眼全景拼接、跨视角3D点跟踪与流式定位，后端是语言前瞻导航、分层记忆演进与图文交错评测。首推LookStep：以语言标签建模未来状态、用事件驱动记忆筛选拟存观测，R2R-CE Val-Unseen成功率49.7%，且更省数据与内存；TAPVid-MV用284个序列、近11万条人工核验轨迹建成首个跨视角3D点跟踪基准，指出几何恢复是主要瓶颈；CHIME把任务成败先归因于规划或执行、再分别更新两类记忆库，在四个长时程基准上持续领先。整体看，具身导航正从感知精度竞赛转向记忆管理与信用分配驱动的闭环决策。",
+    "added": 6,
+    "at": "2026-09-03T01:55:39.607070+00:00",
+    "new": [
+      {
+        "t": "From Multi-Fisheye Sensing to Panoramic Perception: A Parallax-Aware Onboard Platform for Ultra-Low-Altitude UAVs",
+        "u": "https://arxiv.org/abs/2609.02319",
+        "r": 7,
+        "g": 8,
+        "s": "面向超低空无人机，将四路鱼眼实时拼接为全景ERP的机载平台：按重叠区视差选择投影深度并控制拼接缝，在Jetson Orin NX上约20Hz、13.3W运行，并验证下游视觉位置识别。",
+        "c": "https://github.com/DUNDAI1998/parallax-aware-uav-panorama"
+      },
+      {
+        "t": "LookStep: Efficient Vision-Language Navigation with Linguistic Foresight and Event Driven Memory",
+        "u": "https://arxiv.org/abs/2609.02350",
+        "r": 10,
+        "g": 8,
+        "s": "LookStep结合语言中心未来状态建模与事件驱动滚动记忆，用语言标签生成粗粒度导航进度和候选动作未来状态，自主决定观测写入有限记忆，R2R-CE Val-Unseen成功率49.7%，更省数据和内存。",
+        "c": "https://github.com/kunyang-YU/LookStep"
+      },
+      {
+        "t": "Deeply Interleaved Text-Image Contexts for Multimodal LLMs Assessment",
+        "u": "https://arxiv.org/abs/2609.02573",
+        "r": 7,
+        "g": 7,
+        "s": "提出TIC-Bench基准，评估多模态大模型在深度图文交错语境下整合线索还原能力，覆盖逻辑、时间、空间关联三类八种题型共2280题，评测10个先进模型发现与人类专家差距显著。",
+        "c": ""
+      },
+      {
+        "t": "TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views",
+        "u": "https://arxiv.org/abs/2609.01899",
+        "r": 7,
+        "g": 8,
+        "s": "提出首个跨多个同步视角的长期3D点跟踪基准TAPVid-MV：含284个序列、1142路已标定相机流与近11万条人工核验轨迹，覆盖七类室内外场景，评测30余个基线，发现几何恢复是3D点跟踪的主要瓶颈。",
+        "c": ""
+      },
+      {
+        "t": "CHIME: Credit-Aware Hierarchical Memory Evolution for Long-Horizon Agentic Planning",
+        "u": "https://arxiv.org/abs/2609.02074",
+        "r": 8,
+        "g": 8,
+        "s": "CHIME针对自进化记忆中的信用分配问题，将任务结果先归因于规划或执行，再分别更新规划库与执行库，在四个长时程智能体基准上持续超越最强训练与记忆基线。",
+        "c": "https://github.com/ATH-MaaS/Marco-DeepResearch"
+      },
+      {
+        "t": "TempoGround: State-Aware Streaming Visual Grounding with Vision-Language Models",
+        "u": "https://arxiv.org/abs/2609.02359",
+        "r": 7,
+        "g": 7,
+        "s": "TempoGround是面向流式输入的VLM视觉定位框架，通过状态感知的跨帧对应与课程预测，依次完成实例关联、物体进出状态判断、2D框解码与相机系3D提升，并以可验证强化学习奖励优化定位一致性与身份保持。",
+        "c": ""
+      }
+    ]
+  }
 }
