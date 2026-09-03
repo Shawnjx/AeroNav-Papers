@@ -130,7 +130,8 @@ def main():
     if len(rej)>300:rej=dict(sorted(rej.items(),key=lambda kv:kv[1].get("rejected_at",""))[-300:])
     cutoff=(datetime.now(timezone.utc)-timedelta(days=CFG["retention_days"])).date().isoformat()
     papers=sorted([p for p in existing.values() if p.get("published","9999")>=cutoff],key=lambda p:(p.get("score",0),p.get("published","")),reverse=True)
-    payload={"updated_at":datetime.now(timezone.utc).isoformat(),"catalog":CFG.get("topics_catalog"),"papers":papers}
+    changed=added or len(old.get("papers",[]))!=len(papers)
+    payload={"updated_at":datetime.now(timezone.utc).isoformat() if changed else old.get("updated_at"),"catalog":CFG.get("topics_catalog"),"papers":papers}
     if added:payload["briefing"]={"text":write_briefing("daily",new_batch),"added":added,"at":datetime.now(timezone.utc).isoformat(),"new":new_batch}
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

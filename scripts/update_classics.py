@@ -99,7 +99,8 @@ def main():
         time.sleep(1 if os.getenv("S2_API_KEY") else 3)
     if len(excl)>500:excl=dict(sorted(excl.items(),key=lambda kv:kv[1].get("excluded_at",""))[-500:])
     papers=sorted(keep.values(),key=lambda p:-p.get("citation_count",0))
-    payload={"updated_at":NOW.isoformat(),"catalog":CFG.get("topics_catalog"),"papers":papers,"excluded":excl}
+    changed=(added+reused)>0 or len(old.get("papers",[]))!=len(papers)
+    payload={"updated_at":NOW.isoformat() if changed else old.get("updated_at"),"catalog":CFG.get("topics_catalog"),"papers":papers,"excluded":excl}
     if added+reused:payload["briefing"]={"text":write_briefing("classic",new_batch),"added":added+reused,"at":NOW.isoformat(),"new":new_batch}
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     CLASSICS.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
