@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T06:29:40.007014+00:00",
+  "updated_at": "2026-09-03T19:40:15.685137+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2001,6 +2001,413 @@
       "is_classic": true
     },
     {
+      "id": "2303.17580",
+      "arxiv_id": "2303.17580",
+      "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+      "authors": [
+        "Yongliang Shen",
+        "Kaitao Song",
+        "Xu Tan",
+        "Dongsheng Li",
+        "Weiming Lü",
+        "Yueting Zhuang"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 265,
+      "url": "https://arxiv.org/abs/2303.17580",
+      "pdf_url": "https://arxiv.org/pdf/2303.17580",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "HuggingGPT以ChatGPT为控制器，通过任务规划、模型选择、执行与响应总结四个阶段，调度Hugging Face上各类AI模型，解决跨语言、视觉、语音等领域的复杂任务。",
+      "change_zh": "相比单一大模型端到端或人工编排流水线，该工作让LLM以自然语言为通用接口充当控制器，自动拆解任务、按功能描述检索并调用社区专家模型，开创了「LLM规划+专家模型执行」的工具使用与模型编排智能体范式。",
+      "why_it_matters": "作为LLM工具使用与模型编排的奠基性agentic框架，对多模态大模型与智能体技术线影响深远；其任务规划与调度思想可迁移到具身系统，为UAV目标搜索与ObjectNav中感知、建图、导航等多模块协同提供编排范式。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "task planning"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "2202.03052",
+      "arxiv_id": "2202.03052",
+      "title": "OFA: Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework",
+      "authors": [
+        "Peng Wang",
+        "Yang An",
+        "Rui Men",
+        "Junyang Lin",
+        "Shuai Bai",
+        "Zhikang Li",
+        "Jianxin Ma",
+        "Chang Zhou",
+        "Jingren Zhou",
+        "Hongxia Yang"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 258,
+      "url": "https://arxiv.org/abs/2202.03052",
+      "pdf_url": "https://arxiv.org/pdf/2202.03052",
+      "code_url": "https://github.com/OFA-Sys/OFA",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OFA提出任务与模态无关的统一序列到序列预训练框架，用指令学习统一图像生成、视觉定位、图像描述、分类与语言建模，仅用两千万公开图文对即在多项任务达SOTA并能迁移至未见任务与域。",
+      "change_zh": "相比依赖任务专用结构与海量图文数据预训练的常见路线，OFA以统一指令式seq2seq框架去除任务专属层，仅用两千万公开图文对完成预训练，即取得跨模态SOTA并验证向未见任务与域的迁移能力。",
+      "why_it_matters": "作为统一指令式多模态基座，OFA的视觉定位、指令理解与未见域迁移能力可充当ObjectNav开放词汇目标定位与VLN指令跟随的感知骨干，其任务无关设计也为UAV目标搜索轻量适配多任务感知提供可选基座。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "instruction"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4386066696",
+      "arxiv_id": "",
+      "title": "Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM",
+      "authors": [
+        "Hengyi Wang",
+        "Jingwen Wang",
+        "Lourdes Agapito"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 258,
+      "url": "https://doi.org/10.1109/cvpr52729.2023.01277",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Co-SLAM是神经RGB-D SLAM系统，以多分辨率哈希网格联合one-blob参数编码表示场景，兼得快速收敛与未观测区域表面补全，支持全关键帧全局束调整，10-17Hz实时运行。",
+      "change_zh": "相比NICE-SLAM等分层特征网格或纯坐标编码路线，Co-SLAM将哈希网格与one-blob参数编码联合，同时获得高频细节、快收敛与空洞填补；并凭高效光线采样免去关键帧挑选，可直接在全部关键帧上做全局BA。",
+      "why_it_matters": "作为社区高影响力的实时神经SLAM系统，为具身导航提供稠密建图与位姿估计底座：紧凑的哈希网格地图可支撑UAV主动目标搜索与ObjectNav的场景理解及空间记忆，全局BA提升跟踪鲁棒性，实时性能满足机器人部署需求。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "slam"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "2309.07864",
+      "arxiv_id": "2309.07864",
+      "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+      "authors": [
+        "Zhiheng Xi",
+        "Wen-Xiang Chen",
+        "Xin Guo",
+        "Wei He",
+        "Yiwen Ding",
+        "Boyang Hong",
+        "Ming Zhang",
+        "Junzhe Wang",
+        "Senjie Jin",
+        "Enyu Zhou",
+        "Rui Zheng",
+        "Xiaoran Fan"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 256,
+      "url": "https://arxiv.org/abs/2309.07864",
+      "pdf_url": "https://arxiv.org/pdf/2309.07864",
+      "code_url": "https://github.com/WooooDyy/LLM-Agent-Paper-List",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该综述系统梳理基于大语言模型的智能体研究：追溯智能体概念源流，论证LLM为何适合作智能体基座，提出\"大脑-感知-行动\"三部件通用框架，覆盖单智能体、多智能体与人机协作应用，并探讨智能体社会的行为与开放问题。",
+      "change_zh": "相比以往聚焦单任务算法与训练策略的智能体研究，本文以LLM为通用基座，用大脑-感知-行动框架统一刻画智能体设计，并将视野从个体能力扩展到多智能体协同、人机协作乃至智能体社会的涌现现象，塑造了该领域的通用话语体系。",
+      "why_it_matters": "为UAV目标搜索与ObjectNav等具身任务提供以LLM为基座的智能体设计范式：大脑-感知-行动框架可指导无人机任务规划与多机协同，其对记忆、推理与工具使用的梳理为语言驱动的目标导航智能体提供路线图。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4319160361",
+      "arxiv_id": "",
+      "title": "Multi-sensor integrated navigation/positioning systems using data fusion: From analytics-based to learning-based approaches",
+      "authors": [
+        "Yuan Zhuang",
+        "Xiao Sun",
+        "You Li",
+        "Jianzhu Huai",
+        "Luchi Hua",
+        "Xiansheng Yang",
+        "Xiaoxiang Cao",
+        "Peng Zhang",
+        "Yue Cao",
+        "Longning Qi",
+        "Jun Yang",
+        "Nashwa El-Bendary"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "Information Fusion",
+      "citation_count": 253,
+      "url": "https://doi.org/10.1016/j.inffus.2023.01.025",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "近十年多传感器融合导航定位综述：从信息源、算法、场景三方面梳理，分基于解析（卡尔曼滤波及变体、图优化）与基于学习（监督/无监督/强化/深度学习）两类融合，并讨论设计考量与未来方向。",
+      "change_zh": "相比单讲滤波或单讲深度学习的综述，本文将解析类（KF系、图优化）与学习类（监督/无监督/强化/深度学习）纳入统一框架，从信息源、算法架构、场景三维度组织近十年工作；综述贡献在系统化分类而非新方法。",
+      "why_it_matters": "多传感器融合定位是机器人与无人机自主的底层能力，直接支撑状态估计与控制线；学习类融合梳理对真机与Sim2Real有参考，也为UAV在GNSS拒止环境执行搜救侦察提供位姿估计基础，对上层搜索决策无直接方法贡献。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "aerial",
+        "uav"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4404782209",
+      "arxiv_id": "",
+      "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+      "authors": [
+        "Liang Tian",
+        "Zhiwei He",
+        "Wenxiang Jiao",
+        "Xing Wang",
+        "Yan Wang",
+        "Rui Wang",
+        "Yujiu Yang",
+        "Shuming Shi",
+        "Zhaopeng Tu"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 251,
+      "url": "https://doi.org/10.18653/v1/2024.emnlp-main.992",
+      "pdf_url": "https://aclanthology.org/2024.emnlp-main.992.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文发现LLM自反思存在思维退化问题，即一旦自信便难以产生新想法，提出多智能体辩论框架，多个智能体针锋相对辩论并由裁判管理，激发发散思维，在常识机器翻译与反直觉算术推理上验证有效。",
+      "change_zh": "相比单智能体自我反思的迭代精炼路线，该工作引入多智能体针锋相对辩论与裁判机制，用外部对抗性视角打破单模型思维退化；并提出辩论自适应终止与裁判公平性分析，将发散思维显式注入LLM推理。",
+      "why_it_matters": "多智能体辩论是LLM协同纠错的经典框架，充实多模态大模型与智能体、规划智能体两条线；以外部对抗视角缓解思维退化的思路，可启发UAV目标搜索与ObjectNav中的多假设探索与决策校验，惟未做具身验证。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W3197225143",
+      "arxiv_id": "",
+      "title": "A Comparative Study of Nonlinear MPC and Differential-Flatness-Based Control for Quadrotor Agile Flight",
+      "authors": [
+        "Sihao Sun",
+        "Ángel Romero",
+        "Philipp Foehn",
+        "Elia Kaufmann",
+        "Davide Scaramuzza"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 249,
+      "url": "https://doi.org/10.1109/tro.2022.3177279",
+      "pdf_url": "https://www.zora.uzh.ch/id/eprint/257374/1/TRO22_Sun.pdf",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文在仿真与真实环境（超大型动捕系统）中系统对比NMPC与微分平坦控制器在高达20m/s敏捷轨迹跟踪下的精度、鲁棒性与计算效率，并消融内环INDI与气动阻力模型的影响，两者真机误差均降低超78%。",
+      "change_zh": "相比常见『提出单一控制器并自证有效』的路线，该文以正面对照实验系统比较NMPC与DFBC两大主流敏捷飞控方案，并量化内环INDI与阻力模型的增益及NMPC的收敛风险，为控制器选型提供可复现实证依据。",
+      "why_it_matters": "对UAV主动目标搜索、目标接近与高速穿越等空域自主任务而言，敏捷轨迹跟踪控制是执行层的关键瓶颈；该研究的实证结论可直接指导高速飞行平台的控制器选型与内环/阻力建模设计，支撑具身导航系统真机落地。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W4297510490",
+      "arxiv_id": "",
+      "title": "Convex Optimization for Trajectory Generation: A Tutorial on Generating Dynamically Feasible Trajectories Reliably and Efficiently",
+      "authors": [
+        "Danylo Malyuta",
+        "Taylor P. Reynolds",
+        "Michael Szmuk",
+        "Thomas Lew",
+        "Riccardo Bonalli",
+        "Marco Pavone",
+        "Behçet Açıkmeşe"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Control Systems",
+      "citation_count": 249,
+      "url": "https://doi.org/10.1109/mcs.2022.3187542",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文系统讲解三种基于凸优化的轨迹生成方法：无损凸化LCvx及序列凸规划SCvx、GuSTO，涵盖收敛理论、数值示例与开源SCP工具箱，广泛应用于火箭着陆与飞行器规划。",
+      "change_zh": "相比采样式规划或直接求解非凸问题的常见路线，其核心思路是通过问题重构与逐次凸化把非凸轨迹生成转为凸优化子问题，换取收敛保证与机载实时性；但作为教程综述，本身未提出全新算法。",
+      "why_it_matters": "LCvx与SCvx已是四旋翼/固定翼机载实时轨迹规划的主流手段，是UAV主动目标搜索中动态避障与快速接近目标的底层引擎，其开源SCP工具箱可直接嵌入无人机与地面机器人导航系统。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "motion planning"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W3168086592",
+      "arxiv_id": "",
+      "title": "LCDNet: Deep Loop Closure Detection and Point Cloud Registration for LiDAR SLAM",
+      "authors": [
+        "Daniele Cattaneo",
+        "Matteo Vaghi",
+        "Abhinav Valada"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 247,
+      "url": "https://doi.org/10.1109/tro.2022.3150683",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LCDNet提出共享编码器加地点识别与相对位姿双头网络，以不平衡最优传输实现可微相对位姿估计，在LiDAR点云中同时完成回环检测与配准，多数据集上大幅超越现有方法并集成进SLAM系统。",
+      "change_zh": "以往深度回环检测多为检索与配准分离的流程且性能不及手工方法；本文将地点识别与6自由度位姿估计统一到单网络端到端训练，并用不平衡最优传输构建可微配准头，显著改善反向回环等难例，并展示跨传感器跨城市泛化。",
+      "why_it_matters": "回环检测是SLAM消除累积漂移的关键，也是长航时UAV搜索与地面目标导航真机部署所依赖的定位基础；LCDNet的端到端检测配准与在未见城市、不同传感器配置下的泛化验证，可为大范围无人机目标搜索与ObjectNav实机系统提供更可靠的位姿图修正能力。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "slam"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W3185165122",
+      "arxiv_id": "",
+      "title": "Time-optimal planning for quadrotor waypoint flight",
+      "authors": [
+        "Philipp Foehn",
+        "Ángel Romero",
+        "Davide Scaramuzza"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "Science Robotics",
+      "citation_count": 245,
+      "url": "https://doi.org/10.1126/scirobotics.abh1221",
+      "pdf_url": "https://www.zora.uzh.ch/id/eprint/207837/1/ScienceRobotics21_Foehn.pdf",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对四旋翼穿越多航点的时间最优轨迹规划难题，提出以沿轨迹进度的表述实现时间分配与轨迹本身的联合优化，充分发挥旋翼推力极限，并在大型动捕真机竞速实验中超越人类专业飞手。",
+      "change_zh": "常见路线要么用平滑多项式轨迹、无法用尽执行器潜力，要么数值优化但需先验给定各航点时刻分配，导致结果并非真正时间最优；本文将轨迹进度编入优化问题，使时间分配与轨迹联合求解，从根源上消除先验时间分配这一瓶颈。",
+      "why_it_matters": "对状态估计与控制技术线（运动/轨迹规划与飞行控制）是标杆性高影响力工作；其极速航点穿越能力可直接支撑UAV搜救、侦察与巡检中的快速巡航和目标接近，提升全自主无人机的机动上限与任务时效性。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "drone",
+        "search and rescue",
+        "waypoint"
+      ],
+      "is_classic": true
+    },
+    {
+      "id": "https://openalex.org/W3172675210",
+      "arxiv_id": "",
+      "title": "VLN↻BERT: A Recurrent Vision-and-Language BERT for Navigation",
+      "authors": [
+        "Yicong Hong",
+        "Qi Wu",
+        "Yuankai Qi",
+        "Cristian Rodríguez-Opazo",
+        "Stephen Jay Gould"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 240,
+      "url": "https://doi.org/10.1109/cvpr46437.2021.00169",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作为BERT引入循环函数以维护智能体跨模态时序状态，使其适配VLN部分可观测决策过程，在R2R与REVERIE上以更简架构取得SOTA，并支持预训练与向其他Transformer架构泛化。",
+      "change_zh": "常见路线依赖外置LSTM历史编码器或编码器-解码器结构建模导航历史，该工作把循环状态记忆直接内化到BERT自注意力中，使单一模型同时完成指令编码、状态跟踪与动作预测，简化架构并打通视觉语言预训练向导航的迁移路径。",
+      "why_it_matters": "这是地面VLN技术线的代表性架构工作，其循环跨模态状态与预训练范式为指令跟随提供了强而简洁的基线；同样的时序状态建模思想可借鉴至aerial VLN与ObjectNav目标条件导航，推动高效紧凑的导航基座模型发展。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "r2r",
+        "reverie"
+      ],
+      "is_classic": true
+    },
+    {
       "id": "2307.06082",
       "arxiv_id": "2307.06082",
       "title": "VELMA: Verbalization Embodiment of LLM Agents for Vision and Language Navigation in Street View",
@@ -2863,11 +3270,245 @@
       "rigor": 3,
       "reason": "这是AI在公共卫生领域的垂直应用叙事综述，属于医疗健康类应用，与空间智能、导航、机器人等全部收录技术线无关，且无任何实验方法与结果。",
       "excluded_at": "2026-09-02"
+    },
+    "https://openalex.org/W4379390652": {
+      "title": "Liquid Crystal Assembly for Ultra-dissymmetric Circularly Polarized Luminescence and Beyond",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "本文是材料化学领域的圆偏振发光（CPL）展望文章，研究手性液晶组装放大分子手性，与具身导航、空间智能、机器人自主等全部收录技术线均无关联，仅因提及三维显示等词汇与范围擦边。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4390872423": {
+      "title": "VAD: Vectorized Scene Representation for Efficient Autonomous Driving",
+      "relevance": 5,
+      "rigor": 8,
+      "reason": "属自动驾驶端到端规划与驾驶场景表示工作，与具身导航各技术线（UAV搜索、VLN、ObjectNav等）及机器人自主核心能力仅轨迹规划术语擦边，不在收录范围。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W3096834012": {
+      "title": "A 6-year-long (2013–2018) high-resolution air quality reanalysis dataset in China based on the assimilation of surface observations from CNEMC",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "属大气环境科学的数据同化再分析数据集，与具身导航、无人机/机器人自主或大模型智能体等收录技术线无实质关联，仅为集合卡尔曼滤波术语擦边。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4280489560": {
+      "title": "Navigating financial toxicity in patients with cancer: A multidisciplinary management approach",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文为肿瘤临床经济负担（financial toxicity）管理综述，文中'navigating/financial navigation'指医疗财务导航服务而非空间导航或指令跟随，与全部收录技术线无关，属仅术语擦边的范围外论文。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W3132105662": {
+      "title": "Simultaneous Navigation and Radio Mapping for Cellular-Connected UAV With Deep Reinforcement Learning",
+      "relevance": 4,
+      "rigor": 6,
+      "reason": "核心问题是蜂窝联网无人机的通信覆盖与中断优化，导航只是改善通信指标的手段，不构成UAV目标搜索或空域VLN，且偏向被明确排除的通信方向。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4372055459": {
+      "title": "Accelerating Innovation With Generative AI: AI-Augmented Digital Prototyping and Innovation Methods",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "属于将GPT等大模型套用到创新管理等垂直领域且与空间、导航、机器人无关的应用，且全文为六个月实践经验分享，无实验设置、基线或可复现信息。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4312179373": {
+      "title": "ISPAD Clinical Practice Consensus Guidelines 2022: Glycemic targets and glucose monitoring for children, adolescents, and young people with diabetes",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该文为儿科糖尿病血糖目标与葡萄糖监测的临床共识指南，与具身导航、空间智能、机器人自主等全部收录技术线完全无关，属范围外医疗文献。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W3175663678": {
+      "title": "Privacy-Preserved Federated Learning for Autonomous Driving",
+      "relevance": 2,
+      "rigor": 4,
+      "reason": "论文属于车联网联邦学习的隐私保护与安全机制研究（同态加密、区块链信誉、零知识证明），不含导航决策、空间推理或机器人自主成分，属收录范围外，且实验与基线描述简略。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4402192457": {
+      "title": "Graph Attention Networks: A Comprehensive Review of Methods and Applications",
+      "relevance": 2,
+      "rigor": 4,
+      "reason": "通用图注意力网络方法与应用综述，应用涉及情感分析、推荐系统、医疗等，与具身导航、空间智能和机器人自主无关，属范围外的一般图学习综述。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4206103951": {
+      "title": "Human Activity Recognition via Hybrid Deep Learning Based Model",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "属传感器人体活动识别分类应用，与具身导航、UAV搜索、空间智能、大模型智能体等收录技术线无实质关联，仅术语上提及空间/时序特征。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4402901320": {
+      "title": "Large language models empowered agent-based modeling and simulation: a survey and perspectives",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "综述对象为LLM赋能的多智能体建模仿真（ABMS），核心是社会、经济等复杂系统垂直仿真应用，与空间智能、导航、机器人各主线无实质关联，仅在LLM智能体术语层面擦边。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W3204369957": {
+      "title": "Edge AI‐Based Automated Detection and Classification of Road Anomalies in VANET Using Deep Learning",
+      "relevance": 2,
+      "rigor": 4,
+      "reason": "该文是路面病害图像分类叠加VANET信息共享的垂直应用，所用模型为现成ResNet-18/VGG-11，与具身导航、空间智能、状态估计等收录技术线无实质关联，且实验仅基于网络公开数据集、描述简略。",
+      "excluded_at": "2026-09-03"
+    },
+    "2101.07907": {
+      "title": "IntentNet: Learning to Predict Intention from Raw Sensor Data",
+      "relevance": 4,
+      "rigor": 6,
+      "reason": "面向自动驾驶的他车意图与轨迹预测（检测+预测）属感知预测类工作，与收录的UAV/地面具身导航、世界模型、状态估计等技术线仅术语擦边，无实质关联。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4283322638": {
+      "title": "UAV Computing-Assisted Search and Rescue Mission Framework for Disaster and Harsh Environment Mitigation",
+      "relevance": 2,
+      "rigor": 4,
+      "reason": "本文实质是无人机应急通信网络与边缘计算的性能评估（时延、吞吐、路损等），不涉及目标搜索、导航或具身决策，属纯通信与信号处理范围外，仅借SAR场景擦边。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4387425757": {
+      "title": "A comprehensive survey of ChatGPT: Advancements, applications, prospects, and challenges",
+      "relevance": 3,
+      "rigor": 3,
+      "reason": "纯文本对话LLM的综述，未涉及空间、导航、机器人或agentic能力新进展，属纯LLM范畴，范围外。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4390820213": {
+      "title": "Reinforcing green business strategies with Industry 4.0 and governance towards sustainability: Natural‐resource‐based view and dynamic capability",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文为管理学实证研究（绿色商业战略、生产计划投资决策与公司治理），与具身导航、无人机、空间智能、机器人自主等全部收录技术线无关，仅'规划/Industry 4.0'属术语擦边。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4387805855": {
+      "title": "Vision-Motion Codesign for Low-Level Trajectory Generation in Visual Servoing Systems",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "面向SCARA机械臂工业视觉伺服的底层轨迹插值与视觉-运动控制器工程集成，属机械臂操作与纯运动控制范畴，不含任何导航决策成分，与收录范围不相关。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4281289204": {
+      "title": "A survey of cyber security threats and solutions for UAV communications and flying ad-hoc networks",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "本文是无人机通信与飞行自组网（FANET/IoD）的网络信息安全综述，属纯通信与网络安全范畴，与导航、感知、空间智能、状态估计控制等收录技术线无实质关联，仅为UAV术语擦边。",
+      "excluded_at": "2026-09-03"
+    },
+    "https://openalex.org/W4388182168": {
+      "title": "Large language models for human–robot interaction: A review",
+      "relevance": 5,
+      "rigor": 3,
+      "reason": "综述聚焦人机交互（HRI）这一垂直领域而非导航、空间智能或智能体能力本身的核心进展，且作为综述无实验设置、基线与可复现信息，属范围边缘。",
+      "excluded_at": "2026-09-03"
     }
   },
   "briefing": {
-    "text": "本批高被引以机器人状态估计与SLAM为主线，覆盖LiDAR、视觉、惯性的紧耦合融合、数据集评测、神经隐式重建与分布式多机建图，并有大模型与语言智能体两篇作为对照。首推 A Review of Multi-Sensor Fusion SLAM Systems Based on 3D LIDAR，附UrbanNav上的开源算法实测，可作融合方案选型地图；M2DGR 的传感器配置与真值在同类数据集中少见地齐全，适合作为统一评测基准；NeRF-SLAM 则给出用SLAM位姿与深度不确定度实时驱动NeRF的稠密重建范式。趋势上，SLAM正从几何估计转向神经表征与多机协同，并与具身智能的感知—决策闭环加速融合。",
-    "added": 10,
-    "at": "2026-09-02T06:29:40.007014+00:00"
+    "text": "本批经典覆盖具身导航全栈：LLM智能体调度、神经SLAM与多传感器融合、敏捷轨迹规划。首推VLN↻BERT，它以循环结构维护跨模态时序状态，直击语言导航的部分可观测决策，更简架构即达SOTA；Co-SLAM用哈希网格联合稀疏编码，兼顾实时性与未观测区域补全，是神经SLAM的代表作；HuggingGPT以规划、选模、执行、总结四阶段调度外部模型，示范了LLM充当控制器的路径。可以看到，从定位、决策到运动控制，基础模型正贯通具身智能全链条。",
+    "added": 11,
+    "at": "2026-09-03T19:40:15.685137+00:00",
+    "new": [
+      {
+        "t": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+        "u": "https://arxiv.org/abs/2303.17580",
+        "r": 8,
+        "g": 6,
+        "s": "HuggingGPT以ChatGPT为控制器，通过任务规划、模型选择、执行与响应总结四个阶段，调度Hugging Face上各类AI模型，解决跨语言、视觉、语音等领域的复杂任务。",
+        "c": "",
+        "cit": 265
+      },
+      {
+        "t": "OFA: Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework",
+        "u": "https://arxiv.org/abs/2202.03052",
+        "r": 7,
+        "g": 8,
+        "s": "OFA提出任务与模态无关的统一序列到序列预训练框架，用指令学习统一图像生成、视觉定位、图像描述、分类与语言建模，仅用两千万公开图文对即在多项任务达SOTA并能迁移至未见任务与域。",
+        "c": "https://github.com/OFA-Sys/OFA",
+        "cit": 258
+      },
+      {
+        "t": "Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM",
+        "u": "https://doi.org/10.1109/cvpr52729.2023.01277",
+        "r": 8,
+        "g": 8,
+        "s": "Co-SLAM是神经RGB-D SLAM系统，以多分辨率哈希网格联合one-blob参数编码表示场景，兼得快速收敛与未观测区域表面补全，支持全关键帧全局束调整，10-17Hz实时运行。",
+        "c": "",
+        "cit": 258
+      },
+      {
+        "t": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+        "u": "https://arxiv.org/abs/2309.07864",
+        "r": 8,
+        "g": 6,
+        "s": "该综述系统梳理基于大语言模型的智能体研究：追溯智能体概念源流，论证LLM为何适合作智能体基座，提出\"大脑-感知-行动\"三部件通用框架，覆盖单智能体、多智能体与人机协作应用，并探讨智能体社会的行为与开放问题。",
+        "c": "https://github.com/WooooDyy/LLM-Agent-Paper-List",
+        "cit": 256
+      },
+      {
+        "t": "Multi-sensor integrated navigation/positioning systems using data fusion: From analytics-based to learning-based approaches",
+        "u": "https://doi.org/10.1016/j.inffus.2023.01.025",
+        "r": 6,
+        "g": 6,
+        "s": "近十年多传感器融合导航定位综述：从信息源、算法、场景三方面梳理，分基于解析（卡尔曼滤波及变体、图优化）与基于学习（监督/无监督/强化/深度学习）两类融合，并讨论设计考量与未来方向。",
+        "c": "",
+        "cit": 253
+      },
+      {
+        "t": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+        "u": "https://doi.org/10.18653/v1/2024.emnlp-main.992",
+        "r": 8,
+        "g": 7,
+        "s": "本文发现LLM自反思存在思维退化问题，即一旦自信便难以产生新想法，提出多智能体辩论框架，多个智能体针锋相对辩论并由裁判管理，激发发散思维，在常识机器翻译与反直觉算术推理上验证有效。",
+        "c": "",
+        "cit": 251
+      },
+      {
+        "t": "A Comparative Study of Nonlinear MPC and Differential-Flatness-Based Control for Quadrotor Agile Flight",
+        "u": "https://doi.org/10.1109/tro.2022.3177279",
+        "r": 7,
+        "g": 8,
+        "s": "该文在仿真与真实环境（超大型动捕系统）中系统对比NMPC与微分平坦控制器在高达20m/s敏捷轨迹跟踪下的精度、鲁棒性与计算效率，并消融内环INDI与气动阻力模型的影响，两者真机误差均降低超78%。",
+        "c": "",
+        "cit": 249
+      },
+      {
+        "t": "Convex Optimization for Trajectory Generation: A Tutorial on Generating Dynamically Feasible Trajectories Reliably and Efficiently",
+        "u": "https://doi.org/10.1109/mcs.2022.3187542",
+        "r": 7,
+        "g": 8,
+        "s": "本文系统讲解三种基于凸优化的轨迹生成方法：无损凸化LCvx及序列凸规划SCvx、GuSTO，涵盖收敛理论、数值示例与开源SCP工具箱，广泛应用于火箭着陆与飞行器规划。",
+        "c": "",
+        "cit": 249
+      },
+      {
+        "t": "LCDNet: Deep Loop Closure Detection and Point Cloud Registration for LiDAR SLAM",
+        "u": "https://doi.org/10.1109/tro.2022.3150683",
+        "r": 6,
+        "g": 8,
+        "s": "LCDNet提出共享编码器加地点识别与相对位姿双头网络，以不平衡最优传输实现可微相对位姿估计，在LiDAR点云中同时完成回环检测与配准，多数据集上大幅超越现有方法并集成进SLAM系统。",
+        "c": "",
+        "cit": 247
+      },
+      {
+        "t": "Time-optimal planning for quadrotor waypoint flight",
+        "u": "https://doi.org/10.1126/scirobotics.abh1221",
+        "r": 8,
+        "g": 9,
+        "s": "针对四旋翼穿越多航点的时间最优轨迹规划难题，提出以沿轨迹进度的表述实现时间分配与轨迹本身的联合优化，充分发挥旋翼推力极限，并在大型动捕真机竞速实验中超越人类专业飞手。",
+        "c": "",
+        "cit": 245
+      },
+      {
+        "t": "VLN↻BERT: A Recurrent Vision-and-Language BERT for Navigation",
+        "u": "https://doi.org/10.1109/cvpr46437.2021.00169",
+        "r": 10,
+        "g": 8,
+        "s": "该工作为BERT引入循环函数以维护智能体跨模态时序状态，使其适配VLN部分可观测决策过程，在R2R与REVERIE上以更简架构取得SOTA，并支持预训练与向其他Transformer架构泛化。",
+        "c": "",
+        "cit": 240
+      }
+    ]
   }
 }
