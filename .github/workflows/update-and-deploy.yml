@@ -12,6 +12,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: pages
@@ -45,7 +46,20 @@ jobs:
       - name: Push briefing via ServerChan
         env:
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: python scripts/notify_serverchan.py daily
+      - name: Top up classics on a thin day
+        if: github.event_name == 'schedule' && github.event.schedule == '0 17 * * *'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f data/.run_classics_topup ]; then
+            gh workflow run update-classics.yml --repo "$GITHUB_REPOSITORY"
+            echo "thin day: classics top-up dispatched"
+          else
+            echo "enough new papers today; no top-up"
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

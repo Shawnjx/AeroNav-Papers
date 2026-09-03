@@ -3,6 +3,7 @@
 No-op when SERVERCHAN_SENDKEY is unset or the data file has no new briefing,
 so empty catch-up runs and keyless setups stay silent."""
 import json, os, sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -39,8 +40,14 @@ def main():
     path=ROOT/("data/classics.json" if kind=="classic" else "data/papers.json")
     data=json.loads(path.read_text(encoding="utf-8"))
     b=data.get("briefing") or {}
-    if not b.get("text"):print("no new briefing; skip");return
-    label="经典入库" if kind=="classic" else "日报"
-    send(f"AeroNav {label} {b.get('at','')[:10]} · 新增{b.get('added',0)}篇",f"{build_desp(b)}\n\n---\n[打开 AeroNav Papers]({SITE})")
+    try:age=(datetime.now(timezone.utc)-datetime.fromisoformat(b.get("at") or "")).total_seconds()
+    except ValueError:age=-1
+    if b.get("text") and 0<=age<3*3600:
+        label="经典入库" if kind=="classic" else "日报"
+        send(f"AeroNav {label} {b.get('at','')[:10]} · 新增{b.get('added',0)}篇",f"{build_desp(b)}\n\n---\n[打开 AeroNav Papers]({SITE})");return
+    if kind=="daily" and os.getenv("EVENT_NAME")=="schedule" and " 17 " in f' {os.getenv("EVENT_SCHEDULE","")} ':
+        topup="\n\n今日新增较少，已自动加跑一轮经典库更新，稍后会再推一条入库简报。" if (ROOT/"data/.run_classics_topup").exists() else ""
+        send(f"AeroNav 日报 {datetime.now(timezone.utc).date()} · 今日无新增",f"今日检索线没有新论文通过质量漏斗，系统运行正常。可以翻看经典必读库或近期精选。{topup}\n\n---\n[打开 AeroNav Papers]({SITE})");return
+    print("no fresh briefing; skip (catch-up or manual run)")
 
 if __name__=="__main__":main()

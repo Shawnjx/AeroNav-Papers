@@ -1,5 +1,6 @@
 {
   "max_new_per_run": 30,
+  "auto_classics_below": 5,
   "retention_days": 180,
   "min_relevance_score": 3,
   "action_stems": ["navigat", "search", "explor", "patrol", "coverage", "localiz", "wayfind", "target acquisition", "traversal", "waypoint", "recon"],
