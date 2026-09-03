@@ -406,5 +406,29 @@
     "reason": "该工作属于文生图（T2I）生成的诊断评测基准，落入研究范围明确排除的'文生图/文生视频'类目，与UAV目标搜索、VLN、ObjectNav及智能体基础能力均无实质关联。",
     "rejected_at": "2026-09-03",
     "url": "https://arxiv.org/abs/2609.02255"
+  },
+  "2609.02864": {
+    "title": "Thinking in Pictures: A Systematic Benchmark for Reasoning-driven Image Generation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属文生图/文生视频模型的评测范畴，虽强调视觉推理但与导航、空间智能、机器人自主均无实质关联，超出收录范围。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02864"
+  },
+  "2609.02717": {
+    "title": "MV-dVRK: A Multi-Viewpoint Benchmark for Spatial Surgical Perception",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "该工作为手术内窥镜多视角重建基准，属医疗手术垂直领域，与收录的导航、UAV目标搜索、通用空间智能及具身评测等技术线无实质关联，仅3D重建术语擦边。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02717"
+  },
+  "2609.02640": {
+    "title": "From Detection to Localization: A Unified Forensics Framework for Fully Synthetic and Tampered Images",
+    "relevance": 1,
+    "rigor": 5,
+    "reason": "图像取证与篡改检测定位属多媒体安全应用，与空域/地面具身导航、空间智能及智能体基础能力均无关，属范围外应用。",
+    "rejected_at": "2026-09-03",
+    "url": "https://arxiv.org/abs/2609.02640"
   }
 }

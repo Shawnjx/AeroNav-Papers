@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T01:54:20.689613+00:00",
+  "updated_at": "2026-09-03T19:39:24.847219+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1710,6 +1710,57 @@
       ]
     },
     {
+      "id": "2609.02886",
+      "arxiv_id": "2609.02886",
+      "title": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
+      "authors": [
+        "Junchao Huang",
+        "Guian Fang",
+        "Shengju Qian",
+        "Xianghao Kong",
+        "Zhuoran Zhao",
+        "Wei Huang",
+        "Yihua Du",
+        "Zixin Zhang",
+        "Justin Cui",
+        "Yuchao Gu",
+        "Yukang Chen",
+        "Xinting Hu",
+        "Tianyu He",
+        "Shaoshuai Shi",
+        "Zhuotao Tian",
+        "Xin Wang",
+        "Mike Zheng Shou",
+        "Li Jiang"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02886",
+      "pdf_url": "https://arxiv.org/pdf/2609.02886",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SolarWM构建全开源交互式视频世界模型基座：数据引擎将10个数据集的143万段视频统一为含相机几何与标注的帧对齐契约，在Wan2.2、LTX-2.5等三类骨干上原生适配训练5B-33B因果模型，经三阶段训练后可实现分钟到小时级的实时长时程推演。",
+      "change_zh": "常见路线多为单一骨干、私有数据混训，长时程能力受限且难复现。SolarWM把数据整理与混合构造解耦，用骨干原生适配让异构视频生成器共享统一相机条件与训练接口，仅用5秒片段训练即获得分钟至小时级实时推演，并全量开源数据、流程与权重。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav，带相机条件的交互式世界模型有望充当可扩展仿真器，低成本生成长时程、带动作反馈的训练数据并支撑基于模型的规划；其开放权重与统一数据流程也降低了具身导航利用视频先验的门槛。不过摘要未在导航任务上直接验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "geometry",
+        "world model"
+      ]
+    },
+    {
       "id": "2609.01004",
       "arxiv_id": "2609.01004",
       "title": "SinkPruner: Sink-Free Visual Token Pruning for Multimodal Large Language Models",
@@ -2293,6 +2344,94 @@
       ]
     },
     {
+      "id": "2609.02798",
+      "arxiv_id": "2609.02798",
+      "title": "AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels",
+      "authors": [
+        "Javier Tirado-Garín",
+        "Alan Savio Paul",
+        "Shuai Chen",
+        "Axel Barroso-Laguna",
+        "Tommaso Cavallari",
+        "Daniyar Turmukhambetov",
+        "Victor Adrian Prisacariu",
+        "Eric Brachmann"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02798",
+      "pdf_url": "https://arxiv.org/pdf/2609.02798",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AutoCompass用带噪声GPS弱标签训练神经地图匹配器，使模型自动学出精确朝向，并以GPS容忍区域和SLAM/SfM相对位姿增强监督，在驾驶与第一人称基准上优于强标签方案。",
+      "change_zh": "常规路线直接用带噪声的绝对位姿强标签监督地图匹配网络；本文反其道：只以原始GPS作弱标签，模型自动从地图对齐中学出精确朝向，点监督放宽为容忍区域，并借SLAM/SfM相对位姿补充几何一致信号。",
+      "why_it_matters": "对状态估计与控制线有直接价值：降低对高精度位姿标注的依赖，让大规模地理参考图像可直接用于训练地图级视觉定位，服务户外机器人与无人机的低成本定位。对UAV搜索与ObjectNav仅为间接支撑。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "benchmark",
+        "localization",
+        "slam"
+      ]
+    },
+    {
+      "id": "2609.02786",
+      "arxiv_id": "2609.02786",
+      "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+      "authors": [
+        "Qinghua Mao",
+        "Wanying Qu",
+        "Dadi Guo",
+        "Leitao Yuan",
+        "Qingyu Liu",
+        "Yu Li",
+        "Guanxu Chen",
+        "Yanwei Fu",
+        "Xi Lin",
+        "Xia Hu",
+        "Dongrui Liu"
+      ],
+      "published": "2026-09-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.02786",
+      "pdf_url": "https://arxiv.org/pdf/2609.02786",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SafeEvolve提出智能体安全自进化对齐框架，以轨迹安全经验同时更新安全提示与分层技能套件并做两阶段SFT-RL优化，协同进化后AgentDojo攻击成功率降3倍且效用微升。",
+      "change_zh": "常见路线要么只改外部套件（安全提示、护栏）要么只做策略优化，二者割裂；本文把运行时轨迹安全经验闭环转化为可审计可回滚的组件级套件更新与SFT-RL策略增强，使套件演化与策略内化安全互相促进。",
+      "why_it_matters": "对多模态大模型与智能体线，它给出把多步执行风险转化为可复用安全资产并内化到策略的系统方法；对UAV目标搜索、ObjectNav等具身智能体，其安全执行与轨迹经验沉淀机制有借鉴意义，但摘要未显示与导航具身的直接实验关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "exploration"
+      ]
+    },
+    {
       "id": "2608.04121",
       "arxiv_id": "2608.04121",
       "title": "Interpretable Fuzzy Inference for UAV Target Tracking Using Bounding-Box Geometry",
@@ -2340,56 +2479,32 @@
     }
   ],
   "briefing": {
-    "text": "本批工作横跨感知与决策两条主线：前端有多鱼眼全景拼接、跨视角3D点跟踪与流式定位，后端是语言前瞻导航、分层记忆演进与图文交错评测。首推LookStep：以语言标签建模未来状态、用事件驱动记忆筛选拟存观测，R2R-CE Val-Unseen成功率49.7%，且更省数据与内存；TAPVid-MV用284个序列、近11万条人工核验轨迹建成首个跨视角3D点跟踪基准，指出几何恢复是主要瓶颈；CHIME把任务成败先归因于规划或执行、再分别更新两类记忆库，在四个长时程基准上持续领先。整体看，具身导航正从感知精度竞赛转向记忆管理与信用分配驱动的闭环决策。",
-    "added": 6,
-    "at": "2026-09-03T01:55:39.607070+00:00",
+    "text": "本批三篇工作的主线是绕开昂贵监督、转向可扩展的数据与自进化范式。SolarWM最值得关注：它以143万段视频的统一数据引擎在三类骨干上训出5B-33B开源长时程视频世界模型，是导航世界模型研究的现成基座。AutoCompass仅凭带噪声GPS弱标签学出地图上的精确朝向，精度反超强标签方案，视觉定位方向必读。SafeEvolve让安全提示与技能套件随轨迹经验协同进化，AgentDojo攻击成功率降三倍，为Agent安全对齐提供了可复用配方。弱标签、开放数据与经验自进化正在合流，或成具身智能规模化的默认路径。",
+    "added": 3,
+    "at": "2026-09-03T19:39:47.755862+00:00",
     "new": [
       {
-        "t": "From Multi-Fisheye Sensing to Panoramic Perception: A Parallax-Aware Onboard Platform for Ultra-Low-Altitude UAVs",
-        "u": "https://arxiv.org/abs/2609.02319",
-        "r": 7,
-        "g": 8,
-        "s": "面向超低空无人机，将四路鱼眼实时拼接为全景ERP的机载平台：按重叠区视差选择投影深度并控制拼接缝，在Jetson Orin NX上约20Hz、13.3W运行，并验证下游视觉位置识别。",
-        "c": "https://github.com/DUNDAI1998/parallax-aware-uav-panorama"
-      },
-      {
-        "t": "LookStep: Efficient Vision-Language Navigation with Linguistic Foresight and Event Driven Memory",
-        "u": "https://arxiv.org/abs/2609.02350",
-        "r": 10,
-        "g": 8,
-        "s": "LookStep结合语言中心未来状态建模与事件驱动滚动记忆，用语言标签生成粗粒度导航进度和候选动作未来状态，自主决定观测写入有限记忆，R2R-CE Val-Unseen成功率49.7%，更省数据和内存。",
-        "c": "https://github.com/kunyang-YU/LookStep"
-      },
-      {
-        "t": "Deeply Interleaved Text-Image Contexts for Multimodal LLMs Assessment",
-        "u": "https://arxiv.org/abs/2609.02573",
-        "r": 7,
-        "g": 7,
-        "s": "提出TIC-Bench基准，评估多模态大模型在深度图文交错语境下整合线索还原能力，覆盖逻辑、时间、空间关联三类八种题型共2280题，评测10个先进模型发现与人类专家差距显著。",
+        "t": "AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels",
+        "u": "https://arxiv.org/abs/2609.02798",
+        "r": 6,
+        "g": 6,
+        "s": "AutoCompass用带噪声GPS弱标签训练神经地图匹配器，使模型自动学出精确朝向，并以GPS容忍区域和SLAM/SfM相对位姿增强监督，在驾驶与第一人称基准上优于强标签方案。",
         "c": ""
       },
       {
-        "t": "TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views",
-        "u": "https://arxiv.org/abs/2609.01899",
+        "t": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
+        "u": "https://arxiv.org/abs/2609.02886",
         "r": 7,
-        "g": 8,
-        "s": "提出首个跨多个同步视角的长期3D点跟踪基准TAPVid-MV：含284个序列、1142路已标定相机流与近11万条人工核验轨迹，覆盖七类室内外场景，评测30余个基线，发现几何恢复是3D点跟踪的主要瓶颈。",
+        "g": 7,
+        "s": "SolarWM构建全开源交互式视频世界模型基座：数据引擎将10个数据集的143万段视频统一为含相机几何与标注的帧对齐契约，在Wan2.2、LTX-2.5等三类骨干上原生适配训练5B-33B因果模型，经三阶段训练后可实现分钟到小时级的实时长时程推演。",
         "c": ""
       },
       {
-        "t": "CHIME: Credit-Aware Hierarchical Memory Evolution for Long-Horizon Agentic Planning",
-        "u": "https://arxiv.org/abs/2609.02074",
-        "r": 8,
-        "g": 8,
-        "s": "CHIME针对自进化记忆中的信用分配问题，将任务结果先归因于规划或执行，再分别更新规划库与执行库，在四个长时程智能体基准上持续超越最强训练与记忆基线。",
-        "c": "https://github.com/ATH-MaaS/Marco-DeepResearch"
-      },
-      {
-        "t": "TempoGround: State-Aware Streaming Visual Grounding with Vision-Language Models",
-        "u": "https://arxiv.org/abs/2609.02359",
-        "r": 7,
-        "g": 7,
-        "s": "TempoGround是面向流式输入的VLM视觉定位框架，通过状态感知的跨帧对应与课程预测，依次完成实例关联、物体进出状态判断、2D框解码与相机系3D提升，并以可验证强化学习奖励优化定位一致性与身份保持。",
+        "t": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+        "u": "https://arxiv.org/abs/2609.02786",
+        "r": 6,
+        "g": 6,
+        "s": "SafeEvolve提出智能体安全自进化对齐框架，以轨迹安全经验同时更新安全提示与分层技能套件并做两阶段SFT-RL优化，协同进化后AgentDojo攻击成功率降3倍且效用微升。",
         "c": ""
       }
     ]
