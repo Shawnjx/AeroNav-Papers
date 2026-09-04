@@ -54,7 +54,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -f data/.run_classics_topup ]; then
+          ADDED=$(cat data/.run_added 2>/dev/null || echo 99)
+          THRESHOLD=$(python -c "import json;print(json.load(open('config/topics.json'))['auto_classics_below'])")
+          echo "added=$ADDED threshold=$THRESHOLD"
+          if [ "$ADDED" -lt "$THRESHOLD" ]; then
             gh workflow run update-classics.yml --repo "$GITHUB_REPOSITORY"
             echo "thin day: classics top-up dispatched"
           else

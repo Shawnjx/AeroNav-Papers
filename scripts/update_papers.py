@@ -137,5 +137,6 @@ def main():
     DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     REJECTED.write_text(json.dumps(rej,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Added {added}; rejected {len(fresh)-added}; total {len(papers)}")
-    if added<CFG.get("auto_classics_below",5):(ROOT/"data/.run_classics_topup").write_text("1",encoding="utf-8");print(f"thin day ({added}<{CFG.get('auto_classics_below',5)}): classics top-up queued")
+    (ROOT/"data/.run_added").write_text(str(added),encoding="utf-8")
+    if added<CFG.get("auto_classics_below",5):print(f"thin day ({added}<{CFG.get('auto_classics_below',5)}): classics top-up eligible")
 if __name__=="__main__":main()

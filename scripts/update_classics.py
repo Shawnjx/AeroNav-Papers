@@ -105,4 +105,5 @@ def main():
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     CLASSICS.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Classics: added {added} (+{reused} reused, 0 token); excluded {excluded}; total {len(papers)}; pool over threshold {len(cands)}")
+    (ROOT/"data/.run_added").write_text(str(added+reused),encoding="utf-8")
 if __name__=="__main__":main()
