@@ -430,5 +430,53 @@
     "reason": "图像取证与篡改检测定位属多媒体安全应用，与空域/地面具身导航、空间智能及智能体基础能力均无关，属范围外应用。",
     "rejected_at": "2026-09-03",
     "url": "https://arxiv.org/abs/2609.02640"
+  },
+  "2609.03630": {
+    "title": "Local Path Planning and Obstacle Avoidance for an Omnicopter Platform",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "将经典DWA扩展到六维属状态估计与控制线的常规增量改进：仅仿真验证、无真机部署与主流基线对比，中心障碍场景成功率仅41.4%，落地影响力不足。",
+    "rejected_at": "2026-09-04",
+    "url": "https://arxiv.org/abs/2609.03630"
+  },
+  "2609.03153": {
+    "title": "VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属生成视频物理性审计的智能体垂直应用，服务于文生视频质量评测场景，与导航/规划用世界模型、UAV目标搜索及ObjectNav等核心收录线仅术语擦边、无实质关联。",
+    "rejected_at": "2026-09-04",
+    "url": "https://arxiv.org/abs/2609.03153"
+  },
+  "2609.03891": {
+    "title": "A hybrid pipeline for dynamic ontology-based semantic mapping",
+    "relevance": 6,
+    "rigor": 4,
+    "reason": "摘要仅为系统流程描述，未给出实验设置、基线对比、消融或量化评估信息，方法可信度证据不足。",
+    "rejected_at": "2026-09-04",
+    "url": "https://arxiv.org/abs/2609.03891"
+  },
+  "2609.04193": {
+    "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该论文属于机械臂操作与VLA控制，不含任何导航决策成分，其世界-动作模型仅服务于操作动作预测，属明确排除范围。",
+    "rejected_at": "2026-09-04",
+    "url": "https://arxiv.org/abs/2609.04193"
+  },
+  "2609.04183": {
+    "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "弱监督密集视频描述属于视频时序理解与定位的垂直应用，仅将现成VLM作辅助工具，与空间智能、导航、机器人自主等收录技术线无关。",
+    "rejected_at": "2026-09-04",
+    "url": "https://arxiv.org/abs/2609.04183"
+  },
+  "2609.03681": {
+    "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "属机械臂操作的VLA策略后训练，世界模型仅服务于操作精调，无导航决策成分，落入明确拒绝的VLA操作范围。",
+    "rejected_at": "2026-09-04",
+    "url": "https://arxiv.org/abs/2609.03681"
   }
 }

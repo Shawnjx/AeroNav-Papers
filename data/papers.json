@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T19:39:24.847219+00:00",
+  "updated_at": "2026-09-04T05:31:40.155184+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -108,6 +108,48 @@
         "mllm",
         "multimodal large language model",
         "r2r"
+      ]
+    },
+    {
+      "id": "2609.03483",
+      "arxiv_id": "2609.03483",
+      "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
+      "authors": [
+        "Shuning Zhang",
+        "Liang Li",
+        "Yunheng Wang",
+        "Tao Wang",
+        "Yihang Kang",
+        "Renjing Xu"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03483",
+      "pdf_url": "https://arxiv.org/pdf/2609.03483",
+      "code_url": "https://github.com/ZSN2024/AGC-VLN",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出首个免训练空地协同VLN基线AGC-VLN：无人机在俯视图上渲染地面车位姿与目标标记生成共享鸟瞰图，地面车据此用冻结VLM规划执行，无人机用3D-SPF搜索目标，CARLA-Air上联合成功率77.0%。",
+      "change_zh": "该文跳出单智能体或端到端训练通信的常见路线，利用免训练方法'语义推理+几何执行'的天然分解暴露协作接口，以俯视图上CAR/GOAL标记与距离的低带宽共享鸟瞰图为协作媒介，零训练实现空地互补导航。",
+      "why_it_matters": "全局俯视+地面执行的互补直接呼应UAV目标搜索：3D-SPF给出俯视目标定位与接近策略，共享鸟瞰图缓解地面视角遮挡；共享地图思路亦可迁移到ObjectNav的全局上下文增强与多智能体协作。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "uav",
+        "vlm"
       ]
     },
     {
@@ -1015,6 +1057,94 @@
       ]
     },
     {
+      "id": "2609.03892",
+      "arxiv_id": "2609.03892",
+      "title": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
+      "authors": [
+        "Junqing Du",
+        "Fernando Ropero",
+        "Erkin Turkoz",
+        "Yanfeng Zhang",
+        "Lu Liu"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03892",
+      "pdf_url": "https://arxiv.org/pdf/2609.03892",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GraFT是免训练框架，用紧凑3D场景图为冻结MLLM补足3D结构：符号几何工具、BEV布局渲染与自我中心帧锚定，在ScanQA与VSI-Bench上超越同骨干基线及微调空间模型。",
+      "change_zh": "常见做法需大规模微调或外挂专用3D编码器，绑定昂贵监督与特定骨干；GraFT改走免训练路线，用可插拔3D场景图把精确度量交给符号工具、布局与属性分别以BEV和自我中心帧注入，骨干无关且易维护。",
+      "why_it_matters": "免训练注入3D结构可直接服务UAV目标搜索与ObjectNav：场景图充当空间记忆，符号几何与BEV布局支撑目标定位、自我/非自我视角转换及开放词汇目标推理，让导航智能体不微调即获得可靠三维空间理解。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "3d scene",
+        "geometry",
+        "mllm",
+        "multimodal large language model",
+        "spatial reasoning"
+      ]
+    },
+    {
+      "id": "2609.03906",
+      "arxiv_id": "2609.03906",
+      "title": "Revisiting Topological Graphs for Macro Action based Closed-loop Reinforcement Learning of Vision Language Navigation in Continuous Environment",
+      "authors": [
+        "Shuhao Ye",
+        "Sitong Mao",
+        "Yuxiang Cui",
+        "Yufei Wei",
+        "Xuan Yu",
+        "Shichao Zhai",
+        "Wen Chen",
+        "Shunbo Zhou",
+        "Rong Xiong",
+        "Yue Wang"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03906",
+      "pdf_url": "https://arxiv.org/pdf/2609.03906",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该论文将VLN-CE重构为分层MDP，以拓扑图前沿节点为宏动作空间，低层用免训练控制器充当状态转移，并以动作感知价值头驱动图PPO实现闭环强化学习，在R2R-CE与RxR-CE上取得SOTA。",
+      "change_zh": "常见VLN-CE路线依赖行为克隆/DAgger，在闭环偏移下存在分布偏移与专家动作歧义；本文改走闭环RL，用拓扑图把微动作长程决策压缩为前沿节点宏选择，大幅缩短决策时域，使稀疏奖励下原本难行的RL变得可行。",
+      "why_it_matters": "直接推动地面VLN技术线的SOTA进展；其宏动作分层与拓扑图压缩决策时域的思路可迁移到UAV主动目标搜索（前沿节点选择近似next-best-view式探索）与ObjectNav高层策略学习，为连续环境下的闭环RL提供可复用范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "r2r",
+        "vision language navigation"
+      ]
+    },
+    {
       "id": "2609.02074",
       "arxiv_id": "2609.02074",
       "title": "CHIME: Credit-Aware Hierarchical Memory Evolution for Long-Horizon Agentic Planning",
@@ -1264,6 +1394,89 @@
         "deployment",
         "uav",
         "waypoint"
+      ]
+    },
+    {
+      "id": "2609.03565",
+      "arxiv_id": "2609.03565",
+      "title": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
+      "authors": [
+        "Muyuan Liu",
+        "Yue Huang",
+        "Zheng Liang",
+        "Xiang Gao"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03565",
+      "pdf_url": "https://arxiv.org/pdf/2609.03565",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出端到端JEPA世界模型，在潜空间预测基础上加入逆动力学与状态对齐，使潜表征保留控制相关信息，在四个规划基准上取得领先成功率。",
+      "change_zh": "常见JEPA世界模型仅靠潜空间预测或逆动力学正则，本文新增状态对齐损失，将相邻潜表征锚定到物理构型与运动，缓解潜塌缩并提升有效转移维度，从而改进目标条件规划成功率。",
+      "why_it_matters": "世界模型是目标条件规划与导航的基础能力，其防潜塌缩、保控制信息的表征学习可迁移到ObjectNav与无人机目标搜索的想象式规划；但实验限于低维仿真基准，距真实导航场景尚有距离。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "world model"
+      ]
+    },
+    {
+      "id": "2609.04196",
+      "arxiv_id": "2609.04196",
+      "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+      "authors": [
+        "Kang Liao",
+        "Yihang Luo",
+        "Xiao-Ming Wu",
+        "Linyi Jin",
+        "Size Wu",
+        "Chunyu Lin",
+        "Yao Zhao",
+        "Fei Wang",
+        "Wei Li",
+        "Chen Change Loy"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.04196",
+      "pdf_url": "https://arxiv.org/pdf/2609.04196",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Puffin-World提出统一多模态架构，原生联合建模物理（重力场）、几何（深度）与外观三种3D世界状态，采用统一Omni-Camera表示，在单一生成过程中同步合成未来视角并重建几何，支持闭环探索应用，并构建1600万级数据集且开源代码与模型。",
+      "change_zh": "相比常见把重建、深度估计、视频生成作为外挂离线模块分开处理的世界模型路线，该工作将物理、几何、外观作为模型内生的原生状态统一联合建模，外观与几何在同一生成过程中耦合产出，并以真实世界相机绝对属性锚定物理一致性，从而支持跨任务交错的闭环应用。",
+      "why_it_matters": "为世界模型与空间智能技术线提供物理一致、几何可靠的3D世界生成与重建能力，可作为UAV主动目标搜索与ObjectNav的低成本仿真环境与数据引擎；其自校准世界探索与闭环交互也和主动感知相通。但摘要未验证导航下游任务，近期价值偏环境与数据侧。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "exploration",
+        "geometry",
+        "real world"
       ]
     },
     {
@@ -2094,6 +2307,43 @@
       ]
     },
     {
+      "id": "2609.03611",
+      "arxiv_id": "2609.03611",
+      "title": "FailBench: How Reliable are VLMs at Judging Robot Task Success?",
+      "authors": [
+        "Zaruhi Navasardyan",
+        "Tatul Danielyan",
+        "Hrant Davtyan"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03611",
+      "pdf_url": "https://arxiv.org/pdf/2609.03611",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FailBench汇集14个数据源的2197次机器人操作尝试，系统评测13个VLM失败检测器，最优仅0.77平衡准确率，微调模型反逊于通用VLM，且在模糊证据下系统性偏向判成功。",
+      "change_zh": "相比常用于脚本化失败与单领域数据的失败检测基准，本作以75%自然失败、跨14来源考跨域泛化，并发现微调模型反劣于通用VLM；还证明裁剪结果相关区域的输入级干预优于加大推理量。",
+      "why_it_matters": "VLM常被用作导航任务的自动评测者与成功验证器，其模糊证据下偏向判成功的发现对ObjectNav/VLN自动评测与智能体子目标校验是重要警示；输入级裁剪干预也可迁移到导航成功判定。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "vlm"
+      ]
+    },
+    {
       "id": "2608.29896",
       "arxiv_id": "2608.29896",
       "title": "EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy",
@@ -2186,6 +2436,57 @@
         "evaluation",
         "geometry",
         "uav"
+      ]
+    },
+    {
+      "id": "2609.03602",
+      "arxiv_id": "2609.03602",
+      "title": "SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving",
+      "authors": [
+        "Jinyang Wang",
+        "Shiwei Li",
+        "Junjian Wang",
+        "Zhiqiang Deng",
+        "Jianbin Gao",
+        "Yihang Zhao",
+        "Liu Liu",
+        "Yongjia Zhao",
+        "Jinlong Chen",
+        "Huirui Xu",
+        "Yifeng Pan",
+        "Kangwei Liu",
+        "Fan Ren",
+        "Ji Tao",
+        "Minghao Yang"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03602",
+      "pdf_url": "https://arxiv.org/pdf/2609.03602",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SV-WAM提出环绕视角世界-动作模型，将未来视频预测作为训练期稠密监督而非推理输出，用动作中心因果掩码使部署时丢弃视频分支，实现高效低延迟的端到端自动驾驶规划。",
+      "change_zh": "常见驾驶世界模型为省算力只用前视单目；该工作保留六路环视输入，并将视频生成从推理输出降级为仅训练期监督，通过动作中心因果掩码切断动作对视频token的依赖，部署时丢弃视频分支，兼顾覆盖与低延迟。",
+      "why_it_matters": "其“生成监督只用于训练、推理时纯动作”的范式对导航用世界模型有直接参考价值：UAV目标搜索与ObjectNav可借未来预测获得稠密监督且免生成式推理开销；可微可行驶区域正则也示范了把几何约束融入端到端策略训练。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "scene dynamics",
+        "world model"
       ]
     },
     {
@@ -2344,6 +2645,44 @@
       ]
     },
     {
+      "id": "2609.03941",
+      "arxiv_id": "2609.03941",
+      "title": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
+      "authors": [
+        "Hyun Bin Park",
+        "Du-Seong Chang"
+      ],
+      "published": "2026-09-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.03941",
+      "pdf_url": "https://arxiv.org/pdf/2609.03941",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对RL后训练中rollout生成成本高的瓶颈，提出GRPO组级重放控制原语：Headroom按剩余学习价值排序、Drift按与当前策略兼容性门控，不改在线流即可超越朴素重放，并在Agentic Search上以更低耗时取得相当质量。",
+      "change_zh": "相比把重放嵌入探索、经验重构或混合策略优化的复杂管线，本文将重放选择独立为唯一干预变量：Headroom只按剩余学习价值排序，Drift只按与当前策略的兼容性门控，不添加辅助生成或训练机制，从而干净隔离重放本身的贡献。",
+      "why_it_matters": "UAV主动目标搜索与ObjectNav的智能体RL训练同样受环境交互rollout成本制约，按学习价值与策略兼容性复用轨迹的原语有望迁移用于降低此类训练的墙钟开销；但本文实验限于数学/多模态推理与LLM搜索智能体，与具身导航的关联仍属间接。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "exploration"
+      ]
+    },
+    {
       "id": "2609.02798",
       "arxiv_id": "2609.02798",
       "title": "AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels",
@@ -2479,32 +2818,72 @@
     }
   ],
   "briefing": {
-    "text": "本批三篇工作的主线是绕开昂贵监督、转向可扩展的数据与自进化范式。SolarWM最值得关注：它以143万段视频的统一数据引擎在三类骨干上训出5B-33B开源长时程视频世界模型，是导航世界模型研究的现成基座。AutoCompass仅凭带噪声GPS弱标签学出地图上的精确朝向，精度反超强标签方案，视觉定位方向必读。SafeEvolve让安全提示与技能套件随轨迹经验协同进化，AgentDojo攻击成功率降三倍，为Agent安全对齐提供了可复用配方。弱标签、开放数据与经验自进化正在合流，或成具身智能规模化的默认路径。",
-    "added": 3,
-    "at": "2026-09-03T19:39:47.755862+00:00",
+    "text": "本批工作有两条主线：一是免训练路线，用3D场景图、共享鸟瞰图等显式结构武装冻结的MLLM/VLM；二是闭环路线，靠世界模型与宏动作强化学习解决长时程控制。首推Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps：首个免训练空地协同VLN基线，共享鸟瞰图让无人机与地面车完成感知-规划分工；GraFT以紧凑3D场景图为冻结MLLM补足几何结构，在VSI-Bench上超过微调空间模型；Revisiting Topological Graphs把VLN-CE重构为拓扑图上的宏动作MDP，以图PPO闭环刷新R2R-CE/RxR-CE。趋势观察：结构化3D先验叠加冻结大模型，正成为具身导航绕开大规模微调的默认配方。",
+    "added": 8,
+    "at": "2026-09-04T05:32:23.762131+00:00",
     "new": [
       {
-        "t": "AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels",
-        "u": "https://arxiv.org/abs/2609.02798",
-        "r": 6,
-        "g": 6,
-        "s": "AutoCompass用带噪声GPS弱标签训练神经地图匹配器，使模型自动学出精确朝向，并以GPS容忍区域和SLAM/SfM相对位姿增强监督，在驾驶与第一人称基准上优于强标签方案。",
-        "c": ""
-      },
-      {
-        "t": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
-        "u": "https://arxiv.org/abs/2609.02886",
-        "r": 7,
+        "t": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
+        "u": "https://arxiv.org/abs/2609.03892",
+        "r": 9,
         "g": 7,
-        "s": "SolarWM构建全开源交互式视频世界模型基座：数据引擎将10个数据集的143万段视频统一为含相机几何与标注的帧对齐契约，在Wan2.2、LTX-2.5等三类骨干上原生适配训练5B-33B因果模型，经三阶段训练后可实现分钟到小时级的实时长时程推演。",
+        "s": "GraFT是免训练框架，用紧凑3D场景图为冻结MLLM补足3D结构：符号几何工具、BEV布局渲染与自我中心帧锚定，在ScanQA与VSI-Bench上超越同骨干基线及微调空间模型。",
         "c": ""
       },
       {
-        "t": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
-        "u": "https://arxiv.org/abs/2609.02786",
+        "t": "Revisiting Topological Graphs for Macro Action based Closed-loop Reinforcement Learning of Vision Language Navigation in Continuous Environment",
+        "u": "https://arxiv.org/abs/2609.03906",
+        "r": 9,
+        "g": 7,
+        "s": "该论文将VLN-CE重构为分层MDP，以拓扑图前沿节点为宏动作空间，低层用免训练控制器充当状态转移，并以动作感知价值头驱动图PPO实现闭环强化学习，在R2R-CE与RxR-CE上取得SOTA。",
+        "c": ""
+      },
+      {
+        "t": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
+        "u": "https://arxiv.org/abs/2609.03483",
+        "r": 10,
+        "g": 7,
+        "s": "提出首个免训练空地协同VLN基线AGC-VLN：无人机在俯视图上渲染地面车位姿与目标标记生成共享鸟瞰图，地面车据此用冻结VLM规划执行，无人机用3D-SPF搜索目标，CARLA-Air上联合成功率77.0%。",
+        "c": "https://github.com/ZSN2024/AGC-VLN"
+      },
+      {
+        "t": "SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving",
+        "u": "https://arxiv.org/abs/2609.03602",
+        "r": 6,
+        "g": 7,
+        "s": "SV-WAM提出环绕视角世界-动作模型，将未来视频预测作为训练期稠密监督而非推理输出，用动作中心因果掩码使部署时丢弃视频分支，实现高效低延迟的端到端自动驾驶规划。",
+        "c": ""
+      },
+      {
+        "t": "FailBench: How Reliable are VLMs at Judging Robot Task Success?",
+        "u": "https://arxiv.org/abs/2609.03611",
+        "r": 6,
+        "g": 8,
+        "s": "FailBench汇集14个数据源的2197次机器人操作尝试，系统评测13个VLM失败检测器，最优仅0.77平衡准确率，微调模型反逊于通用VLM，且在模糊证据下系统性偏向判成功。",
+        "c": ""
+      },
+      {
+        "t": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
+        "u": "https://arxiv.org/abs/2609.03565",
+        "r": 8,
+        "g": 7,
+        "s": "本文提出端到端JEPA世界模型，在潜空间预测基础上加入逆动力学与状态对齐，使潜表征保留控制相关信息，在四个规划基准上取得领先成功率。",
+        "c": ""
+      },
+      {
+        "t": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+        "u": "https://arxiv.org/abs/2609.04196",
+        "r": 8,
+        "g": 7,
+        "s": "Puffin-World提出统一多模态架构，原生联合建模物理（重力场）、几何（深度）与外观三种3D世界状态，采用统一Omni-Camera表示，在单一生成过程中同步合成未来视角并重建几何，支持闭环探索应用，并构建1600万级数据集且开源代码与模型。",
+        "c": ""
+      },
+      {
+        "t": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
+        "u": "https://arxiv.org/abs/2609.03941",
         "r": 6,
         "g": 6,
-        "s": "SafeEvolve提出智能体安全自进化对齐框架，以轨迹安全经验同时更新安全提示与分层技能套件并做两阶段SFT-RL优化，协同进化后AgentDojo攻击成功率降3倍且效用微升。",
+        "s": "针对RL后训练中rollout生成成本高的瓶颈，提出GRPO组级重放控制原语：Headroom按剩余学习价值排序、Drift按与当前策略兼容性门控，不改在线流即可超越朴素重放，并在Agentic Search上以更低耗时取得相当质量。",
         "c": ""
       }
     ]
