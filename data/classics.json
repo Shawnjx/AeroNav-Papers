@@ -98,7 +98,8 @@
         "odometry",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4387835442",
@@ -134,7 +135,8 @@
       "keywords": [
         "evaluation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4210423514",
@@ -172,7 +174,8 @@
         "odometry",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4362515116",
@@ -217,7 +220,8 @@
         "deployment",
         "evaluation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4393065402",
@@ -259,7 +263,8 @@
       "keywords": [
         "evaluation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4402727764",
@@ -295,7 +300,8 @@
         "exploration",
         "instruction"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "2204.14198",
@@ -339,7 +345,8 @@
         "evaluation",
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W3133648073",
@@ -371,7 +378,8 @@
       "keywords": [
         "odometry"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "2107.07651",
@@ -405,7 +413,8 @@
       "venue_verified": false,
       "score": 25,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4312878643",
@@ -444,7 +453,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "2304.08485",
@@ -478,7 +488,8 @@
       "keywords": [
         "instruction"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4404356490",
@@ -517,7 +528,8 @@
         "mllm",
         "multimodal large language model"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W3203597819",
@@ -553,7 +565,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4386075660",
@@ -593,7 +606,8 @@
       "keywords": [
         "benchmark"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4383097638",
@@ -634,7 +648,8 @@
         "real robot",
         "waypoint"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W4229007520",
@@ -677,7 +692,8 @@
         "benchmark",
         "drone"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "https://openalex.org/W3206845495",
@@ -712,7 +728,8 @@
         "odometry",
         "state estimation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "2205.01917",
@@ -748,7 +765,8 @@
       "keywords": [
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4394828156",
@@ -784,7 +802,8 @@
         "evaluation",
         "instruction"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4389523832",
@@ -822,7 +841,8 @@
         "instruction",
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4402727865",
@@ -857,7 +877,8 @@
         "3d scene",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W3135798748",
@@ -893,7 +914,8 @@
         "evaluation",
         "trajectory planning"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "2305.06500",
@@ -932,7 +954,8 @@
       "keywords": [
         "instruction"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T04:03:14Z"
     },
     {
       "id": "https://openalex.org/W4402698355",
@@ -970,7 +993,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "https://openalex.org/W4382135822",
@@ -1008,7 +1032,8 @@
         "search and rescue",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "https://openalex.org/W4390874280",
@@ -1044,7 +1069,8 @@
       "keywords": [
         "instruction"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "https://openalex.org/W3138764046",
@@ -1078,7 +1104,8 @@
         "odometry",
         "state estimation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "https://openalex.org/W4292544413",
@@ -1114,7 +1141,8 @@
       "keywords": [
         "odometry"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "https://openalex.org/W3199184510",
@@ -1147,7 +1175,8 @@
         "odometry",
         "state estimation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "2303.03378",
@@ -1191,7 +1220,8 @@
         "real world",
         "state estimation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "2110.05113",
@@ -1225,7 +1255,8 @@
       "venue_verified": false,
       "score": 27,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:05:40Z"
     },
     {
       "id": "2108.10904",
@@ -1262,7 +1293,8 @@
         "benchmark",
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4403203873",
@@ -1295,7 +1327,8 @@
       "venue_verified": false,
       "score": 20,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4402698358",
@@ -1334,7 +1367,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4383108296",
@@ -1370,7 +1404,8 @@
         "instruction",
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W3125164440",
@@ -1407,7 +1442,8 @@
         "exploration",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W3120564201",
@@ -1440,7 +1476,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4402754134",
@@ -1480,7 +1517,8 @@
         "instruction",
         "multimodal large language model"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4327662982",
@@ -1519,7 +1557,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W3153187775",
@@ -1563,7 +1602,8 @@
         "drone",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W3136926086",
@@ -1599,7 +1639,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4318499073",
@@ -1635,7 +1676,8 @@
         "localization",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:28:08Z"
     },
     {
       "id": "https://openalex.org/W4282830511",
@@ -1674,7 +1716,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "https://openalex.org/W3159537771",
@@ -1708,7 +1751,8 @@
       "keywords": [
         "benchmark"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "2403.05530",
@@ -1750,7 +1794,8 @@
       "keywords": [
         "benchmark"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "https://openalex.org/W4285512293",
@@ -1785,7 +1830,8 @@
       "keywords": [
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "2010.13150",
@@ -1818,7 +1864,8 @@
       "keywords": [
         "odometry"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "2303.11366",
@@ -1855,7 +1902,8 @@
         "benchmark",
         "language agent"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "https://openalex.org/W3181051035",
@@ -1890,7 +1938,8 @@
         "odometry",
         "state estimation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "https://openalex.org/W4389665446",
@@ -1923,7 +1972,8 @@
       "keywords": [
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "2109.12979",
@@ -1960,7 +2010,8 @@
         "odometry",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "https://openalex.org/W4226481925",
@@ -1998,7 +2049,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T06:48:10Z"
     },
     {
       "id": "2303.17580",
@@ -2034,7 +2086,8 @@
       "keywords": [
         "task planning"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "2202.03052",
@@ -2074,7 +2127,8 @@
       "keywords": [
         "instruction"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W4386066696",
@@ -2108,7 +2162,8 @@
         "benchmark",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "2309.07864",
@@ -2148,7 +2203,8 @@
       "venue_verified": false,
       "score": 23,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W4319160361",
@@ -2191,7 +2247,8 @@
         "aerial",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W4404782209",
@@ -2228,7 +2285,8 @@
       "venue_verified": false,
       "score": 24,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W3197225143",
@@ -2261,7 +2319,8 @@
       "venue_verified": false,
       "score": 22,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W4297510490",
@@ -2299,7 +2358,8 @@
         "aerial",
         "motion planning"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W3168086592",
@@ -2334,7 +2394,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W3185165122",
@@ -2369,7 +2430,8 @@
         "search and rescue",
         "waypoint"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W3172675210",
@@ -2405,7 +2467,8 @@
         "r2r",
         "reverie"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
     },
     {
       "id": "https://openalex.org/W4319302559",
@@ -2441,7 +2504,8 @@
         "real world",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W4385482704",
@@ -2475,7 +2539,8 @@
         "exploration",
         "geometry"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "2108.10869",
@@ -2507,7 +2572,8 @@
       "keywords": [
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W3207826836",
@@ -2543,7 +2609,8 @@
         "benchmark",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W4386066489",
@@ -2577,7 +2644,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W4402670135",
@@ -2615,7 +2683,8 @@
         "benchmark",
         "multimodal large language model"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W4312265650",
@@ -2653,7 +2722,8 @@
         "odometry",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W3136363056",
@@ -2686,7 +2756,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W4285147600",
@@ -2723,7 +2794,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W3133767727",
@@ -2755,7 +2827,8 @@
       "keywords": [
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W4386718967",
@@ -2790,7 +2863,8 @@
       "keywords": [
         "drone"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W4402776460",
@@ -2829,7 +2903,8 @@
         "instruction following",
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W4399557965",
@@ -2865,7 +2940,8 @@
         "instruction",
         "llm agent"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "2404.15506",
@@ -2906,7 +2982,8 @@
         "benchmark",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W3206620955",
@@ -2941,7 +3018,8 @@
       "venue_verified": false,
       "score": 22,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W4390873648",
@@ -2976,7 +3054,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "2207.05608",
@@ -3019,7 +3098,8 @@
         "instruction",
         "real world"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W3207644545",
@@ -3054,7 +3134,8 @@
       "keywords": [
         "localization"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W4385431115",
@@ -3097,7 +3178,8 @@
         "slam",
         "spatial reasoning"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "2305.16291",
@@ -3135,7 +3217,8 @@
       "keywords": [
         "exploration"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W4387682177",
@@ -3181,7 +3264,8 @@
         "search and rescue",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W4390871919",
@@ -3222,7 +3306,8 @@
         "geometry",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "2209.06794",
@@ -3262,7 +3347,8 @@
       "venue_verified": false,
       "score": 22,
       "keywords": [],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W4402716305",
@@ -3297,7 +3383,8 @@
         "localization",
         "slam"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W4220849261",
@@ -3336,7 +3423,8 @@
         "search and rescue",
         "uav"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "2304.03442",
@@ -3372,7 +3460,8 @@
       "keywords": [
         "evaluation"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "2307.06082",
@@ -3409,7 +3498,8 @@
         "instruction",
         "llm agent"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:36:58Z"
     },
     {
       "id": "s2:22cb569525194d67e964f61fa102506429cf85f4",
@@ -3453,7 +3543,8 @@
         "mllm",
         "spatial reasoning"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:36:58Z"
     },
     {
       "id": "2601.14352",
@@ -3495,7 +3586,8 @@
       "keywords": [
         "spatial reasoning"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:36:58Z"
     },
     {
       "id": "2509.18905",
@@ -3541,7 +3633,8 @@
         "spatial understanding",
         "vlm"
       ],
-      "is_classic": true
+      "is_classic": true,
+      "added_at": "2026-09-02T02:36:58Z"
     }
   ],
   "excluded": {
