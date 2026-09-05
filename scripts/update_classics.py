@@ -76,7 +76,7 @@ def main():
     for c in fresh[:CC.get("max_new_per_run",8)]:
         twin=by_aid.get(c["arxiv_id"]) or by_title.get(norm_title(c["title"]))
         if twin and twin.get("summary_zh"):
-            p={**twin,"citation_count":c["citation_count"],"is_classic":True}
+            p={**twin,"citation_count":c["citation_count"],"is_classic":True,"added_at":NOW.isoformat()}
             keep[p["id"]]=p;reused+=1;print(f"REUSE (0 token) {p['title'][:60]}");time.sleep(1)
             new_batch.append({"t":p["title"],"u":p["url"],"r":p.get("relevance_rating"),"g":p.get("rigor_rating"),"s":p.get("summary_zh",""),"c":p.get("code_url",""),"cit":c["citation_count"]});continue
         c["topics"],_=classify(c);c["evidence"],c["evidence_note"]=evidence(c);rev=llm_review(c)
@@ -94,7 +94,7 @@ def main():
             m=re.search(r"https?://github\.com/[\w./-]+",c["abstract"])
             if m and not c.get("code_url"):c["code_url"]=m.group(0).rstrip(".")
             c["keywords"]=sorted({w for ws in CFG["keywords"].values() for w in ws if w in (c["title"]+" "+c["abstract"]).lower()})[:8]
-            c.pop("abstract",None);c["is_classic"]=True;keep[c["id"]]=c;added+=1
+            c.pop("abstract",None);c["is_classic"]=True;c["added_at"]=NOW.isoformat();keep[c["id"]]=c;added+=1
             new_batch.append({"t":c["title"],"u":c["url"],"r":c.get("relevance_rating"),"g":c.get("rigor_rating"),"s":c.get("summary_zh",""),"c":c.get("code_url",""),"cit":c["citation_count"]})
         time.sleep(1 if os.getenv("S2_API_KEY") else 3)
     if len(excl)>500:excl=dict(sorted(excl.items(),key=lambda kv:kv[1].get("excluded_at",""))[-500:])
