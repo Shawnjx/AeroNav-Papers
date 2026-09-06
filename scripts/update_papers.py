@@ -64,9 +64,9 @@ def fetch_arxiv():
             out.append({"id":paper_id(e.title,aid),"arxiv_id":aid,"title":clean(e.title),"authors":[a.name for a in e.authors],"abstract":clean(e.summary),"published":e.published[:10],"source":"arXiv","venue":"预印本","url":f"https://arxiv.org/abs/{aid}","pdf_url":f"https://arxiv.org/pdf/{aid}","code_url":"","categories":cats})
         time.sleep(3)
     print(f"arXiv: {total} entries from {len(CFG['queries'])} queries, {errs} errors")
-    if total==0:
-        print("WARNING: arXiv returned zero entries overall — falling back to OpenAlex discovery")
-        return fetch_openalex_recent()
+    if errs>=len(CFG["queries"])//2:
+        print(f"WARNING: {errs}/{len(CFG['queries'])} arXiv queries failed (rate-limited runner IP) — merging OpenAlex fallback discovery")
+        out+=fetch_openalex_recent()
     return out
 
 def fetch_openalex_recent():
