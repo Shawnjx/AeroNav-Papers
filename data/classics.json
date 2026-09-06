@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T08:54:19.521116+00:00",
+  "updated_at": "2026-09-06T09:25:45.515854+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -3351,6 +3351,42 @@
       "added_at": "2026-09-05T06:35:42Z"
     },
     {
+      "id": "https://openalex.org/W4285163488",
+      "arxiv_id": "",
+      "title": "Model Predictive Contouring Control for Time-Optimal Quadrotor Flight",
+      "authors": [
+        "Ángel Romero",
+        "Sihao Sun",
+        "Philipp Foehn",
+        "Davide Scaramuzza"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 195,
+      "url": "https://doi.org/10.1109/tro.2022.3173711",
+      "pdf_url": "https://www.zora.uzh.ch/id/eprint/257383/1/TRO22_MPCC_Romero.pdf",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "针对四旋翼穿多点航迹的时间最优飞行问题，提出模型预测轮廓控制（MPCC），在运行时同时求解时间分配与控制，实时生成接近真实时间最优的轨迹，真机圈速超越现有方法与顶级人类飞手。",
+      "change_zh": "主流路线先离线求解计算量极大的全局时间最优轨迹再跟踪，扰动下重规划代价高昂；本文改为用MPCC在运行时并行完成时间分配与控制，沿简化参考路径最大化进度并最小化偏差，从而实时逼近真实时间最优轨迹。",
+      "why_it_matters": "该工作是四旋翼敏捷飞行控制的标志性成果，真机达60km/h并超越人类飞手，属状态估计与控制线的高影响力核心收录；其运行时时间最优与实时重规划能力，可作为UAV主动目标搜索中快速接近目标、抗扰重规划的运动控制底座。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "real world",
+        "waypoint"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T09:25:45.515854+00:00"
+    },
+    {
       "id": "https://openalex.org/W4402716305",
       "arxiv_id": "",
       "title": "Photo-SLAM: Real-Time Simultaneous Localization and Photorealistic Mapping for Monocular, Stereo, and RGB-D Cameras",
@@ -3652,6 +3688,87 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "https://openalex.org/W4389520756",
+      "arxiv_id": "",
+      "title": "Automatic Prompt Optimization with “Gradient Descent” and Beam Search",
+      "authors": [
+        "Reid Pryzant",
+        "Dan Iter",
+        "Jerry Li",
+        "Yin Lee",
+        "Chenguang Zhu",
+        "Michael Zeng"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 174,
+      "url": "https://doi.org/10.18653/v1/2023.emnlp-main.494",
+      "pdf_url": "https://aclanthology.org/2023.emnlp-main.494.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ProTeGi用文本“梯度”自动优化提示：以小批量数据生成自然语言批评作为梯度，按语义反方向编辑提示，并以束搜索和bandit选择提效，在三个NLP任务与越狱检测上最多提升31%。",
+      "change_zh": "相比人工试错式提示工程和一次性生成或局部改写类自动方法，它把提示改进变成数据驱动的迭代优化：从错误样本提取自然语言“梯度”作为下降方向逐步重写提示，并用束搜索与bandit选择提升搜索效率。",
+      "why_it_matters": "属LLM智能体能力线的方法进展：自动提示优化可迁移到UAV搜索、ObjectNav与VLN中LLM规划器的提示与指令模板调优，降低人工试错、提升指令跟随稳定性；论文仅做NLP实验，对导航价值偏间接。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T09:25:45.515854+00:00"
+    },
+    {
+      "id": "2204.00598",
+      "arxiv_id": "2204.00598",
+      "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+      "authors": [
+        "Andy Zeng",
+        "Attarian, Maria",
+        "Ichter, Brian",
+        "Krzysztof Choromański",
+        "Adrian Wong",
+        "Stefan Welker",
+        "Federico Tombari",
+        "Aveek Purohit",
+        "Michael S. Ryoo",
+        "Vikas Sindhwani",
+        "Johnny Lee",
+        "Vincent Vanhoucke"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 173,
+      "url": "https://arxiv.org/abs/2204.00598",
+      "pdf_url": "https://arxiv.org/pdf/2204.00598",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出苏格拉底模型框架，让VLM、LLM等异构预训练基础模型通过多模态提示的语言交换零样本组合，无需微调即可获得新多模态能力，并在图像描述、视频检索、第一视角问答、辅助对话与机器人感知规划上验证。",
+      "change_zh": "相比端到端训练统一多模态大模型或微调适配的常见路线，该工作改以语言为通用中介，将已有VLM、LLM等各存不同常识知识的基础模型以提示方式互相交换信息、零样本组合，不训练不加参数即涌现新多模态推理能力，开创模块化模型协作范式。",
+      "why_it_matters": "语言中介的零样本模型组合是多模态智能体框架的奠基性思路，深刻影响具身系统中LLM/VLM协同与工具使用范式；其机器人感知与规划演示也为UAV主动目标搜索和ObjectNav中组合视觉语言目标识别与LLM任务规划提供了直接可借鉴的方法路径。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T09:25:45.515854+00:00"
+    },
+    {
       "id": "2202.11742",
       "arxiv_id": "2202.11742",
       "title": "Think Global, Act Local: Dual-scale Graph Transformer for Vision-and-Language Navigation",
@@ -3690,6 +3807,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
+      "id": "2309.17421",
+      "arxiv_id": "2309.17421",
+      "title": "The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision)",
+      "authors": [
+        "Zhengyuan Yang",
+        "Linjie Li",
+        "Kevin Lin",
+        "Jianfeng Wang",
+        "Chung-Ching Lin",
+        "Zicheng Liu",
+        "Lijuan Wang"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 172,
+      "url": "https://arxiv.org/abs/2309.17421",
+      "pdf_url": "https://arxiv.org/pdf/2309.17421",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "微软团队对GPT-4V的系统性定性探索报告，通过跨领域精心设计的样本考察其处理任意交织多模态输入、视觉指代提示等能力与工作模式，论证其作为多模态通用系统的潜力，并展望应用场景与研究方向。",
+      "change_zh": "相比以往面向单一任务的视觉语言模型评测路线，该工作转向考察统一通用多模态模型的能力边界与提示方式，提出在图像上绘制视觉标记的『视觉指代提示』新交互范式，推动多模态任务形态与人机交互方式的重构。",
+      "why_it_matters": "作为MLLM领域的标志性能力摸底报告，其揭示的开放词汇理解、交织多模态输入处理与视觉指代能力，正是UAV目标搜索、ObjectNav与VLN等具身导航任务的底层感知与指令跟随支撑，为基于多模态大模型的具身智能体设计与提示工程提供了直接参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "exploration"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T09:25:45.515854+00:00"
     },
     {
       "id": "https://openalex.org/W4393154152",
@@ -6359,147 +6514,230 @@
       "rigor": 4,
       "reason": "泛化的DRL移动机器人导航文献综述，未聚焦收录的ObjectNav/VLN/UAV搜救等具体技术线，且无新方法与实验验证，仅属边缘相关。",
       "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4220706376": {
+      "title": "Improving biodiversity protection through artificial intelligence",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "属于将强化学习套用于生物多样性保护这一垂直领域的应用工作，解决地理空间保护区资源配置问题，与导航、空间智能、具身智能及机器人自主技术线均无实质关联。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W3121118088": {
+      "title": "High precision and efficiency robotic milling of complex parts: Challenges, approaches and trends",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "该文聚焦机械臂铣削加工的工艺规划、振动与变形控制，属制造与操作领域，不含导航决策或具身导航成分，超出收录范围，且为无实验的综述。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W3198919602": {
+      "title": "Optimization-Based Trajectory Planning for Autonomous Parking With Irregularly Placed Obstacles: A Lightweight Iterative Framework",
+      "relevance": 5,
+      "rigor": 7,
+      "reason": "属自动泊车垂直场景优化式轨迹规划的常规增量改进，非公认高影响力系统工作，与UAV搜索、VLN、ObjectNav等核心收录线无直接关联。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4213181638": {
+      "title": "Practice and theoretical and technical progress in exploration and development of Shunbei ultra-deep carbonate oil and gas field, Tarim Basin, NW China",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为石油地质与油气勘探开发工程综述，核心内容是成藏理论、地震勘探与钻完井技术，与具身导航、UAV目标搜索、机器人自主及大模型智能体等收录技术线无实质关联，仅'勘探''轨迹优化'等术语擦边。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4377965201": {
+      "title": "Highlighting the role of agriculture and geospatial technology in food security and sustainable development goals",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "农业与粮食安全的政策性综述，仅将卫星、无人机遥感作为农情监测工具提及，不涉及导航决策、自主系统或具身智能方法，属范围外垂直应用。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4225814850": {
+      "title": "Multiphase Overtaking Maneuver Planning for Autonomous Ground Vehicles Via a Desensitized Trajectory Optimization Approach",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "属自动驾驶超车机动的专用轨迹优化方法，非社区公认高影响力系统工作，且仅数值仿真验证，与收录各技术线仅弱相关。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4285038156": {
+      "title": "Machine learning for spatial analyses in urban areas: a scoping review",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "仅术语擦边：这是面向城市地理空间数据分析（城市规划、可持续发展）的机器学习综述，不涉及具身导航、UAV搜索、空间智能体或机器人自主，属ML套用于垂直领域且与收录技术线无关。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4229379176": {
+      "title": "The application of life cycle assessment in buildings: challenges, and directions for future research",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "本文是建筑生命周期评估（LCA）与环境可持续性领域的综述，与具身导航、UAV目标搜索、空间智能、机器人自主等全部收录技术线均无实质关联，属范围外工作。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4285151170": {
+      "title": "UAV Trajectory Optimization for Time-Constrained Data Collection in UAV-Enabled Environmental Monitoring Systems",
+      "relevance": 4,
+      "rigor": 6,
+      "reason": "该文属通信导向的AoI数据采集轨迹凸优化：监测点位置已知，无目标搜索、感知或导航决策成分，采用常规SCA与遗传算法且仅仿真验证，按轨迹规划线属常规增量工作。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4400613682": {
+      "title": "Deep learning for urban land use category classification: A review and experimental assessment",
+      "relevance": 3,
+      "rigor": 6,
+      "reason": "属遥感影像城市用地分类的地理信息垂直应用综述，与导航、具身智能、机器人自主等收录技术线无实质关联，仅为'空间'术语擦边。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4388099970": {
+      "title": "Advancement of Remote Sensing for Soil Measurements and Applications: A Comprehensive Review",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "农业/地学领域的土壤属性遥感测量综述，仅与遥感术语擦边，不涉及UAV自主导航、目标搜索或具身智能各收录技术线。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4294710511": {
+      "title": "Advances in mass spectrometry imaging for spatial cancer metabolomics",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "生物医学质谱成像综述，'spatial'仅指代谢物在生物组织中的分布，与具身导航、机器人空间智能及全部收录技术线无实质关联，且无导航相关实验。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4386590944": {
+      "title": "Machine Learning-Aided Operations and Communications of Unmanned Aerial Vehicles: A Contemporary Survey",
+      "relevance": 4,
+      "rigor": 4,
+      "reason": "以UAV通信与网络应用为主线的宽泛ML综述，仅部分章节擦边轨迹规划与飞行控制，未聚焦目标搜索或导航决策，且无实验验证，属边缘相关。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4322502493": {
+      "title": "Urban Remote Sensing with Spatial Big Data: A Review and Renewed Perspective of Urban Studies in Recent Decades",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "城市遥感与空间大数据综述，面向城市规划与可持续发展研究，不涉及具身导航、UAV主动搜索或智能体空间推理，属范围外。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4391305431": {
+      "title": "AI and 6G Into the Metaverse: Fundamentals, Challenges and Future Research Trends",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "本文是AI与6G通信赋能元宇宙的综述，虽提及AR/VR/MR与spatial computing但仅作背景介绍，不涉及具身导航、机器人自主或空间智能的方法贡献，属范围外的通信网络研究。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4312605942": {
+      "title": "VisualGPT: Data-efficient Adaptation of Pretrained Language Models for Image Captioning",
+      "relevance": 3,
+      "rigor": 7,
+      "reason": "该工作是图像描述与医疗报告生成任务，将预训练语言模型适配到与空间、导航、机器人无关的垂直多模态应用，超出收录范围。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4399736177": {
+      "title": "ChatGPT: The End of Online Exam Integrity?",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "将现成GPT-4视觉模型套用于在线考试测评这一垂直应用，与空间、导航、机器人均无关，属范围外工作。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4387583347": {
+      "title": "The Impact of Multimodal Large Language Models on Health Care’s Future",
+      "relevance": 2,
+      "rigor": 1,
+      "reason": "将现成多模态大模型套用于医疗垂直领域且与空间、导航、机器人无关，属研究范围明确排除项；且全文仅为前瞻性情景设想，无方法与实验支撑。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4407028552": {
+      "title": "Convergence of evolving artificial intelligence and machine learning techniques in precision oncology",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "这是AI/ML在精准肿瘤学中的应用综述，属明确排除的医疗垂直领域应用，与具身导航、空间智能、机器人自主均无关，仅术语上出现spatial pathology与范围擦边。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4313535466": {
+      "title": "AoI-Sensitive Data Collection in Multi-UAV-Assisted Wireless Sensor Networks",
+      "relevance": 4,
+      "rigor": 5,
+      "reason": "核心是多无人机辅助无线传感网的信息新鲜度(AoI)优化与数据卸载调度，属通信组网类问题，仅UAV轨迹优化术语擦边，不涉及目标搜索、导航决策或具身能力。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4382138521": {
+      "title": "Urban visual intelligence: Uncovering hidden city profiles with street view images",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "属于将现成计算机视觉套用于城市社会经济画像分析的社会科学应用，与具身导航、智能体空间推理、机器人自主等收录技术线无实质关联。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4324311092": {
+      "title": "Potential and Pitfalls of ChatGPT and Natural-Language Artificial Intelligence Models for Diabetes Education",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "将现成ChatGPT套用于糖尿病教育这一医疗垂直领域的观点评述，与空间、导航、机器人无关，且摘要未报告任何实验、基线或可复现信息。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4210607981": {
+      "title": "Autonomous Driving on Curvy Roads Without Reliance on Frenet Frame: A Cartesian-Based Trajectory Planning Method",
+      "relevance": 5,
+      "rigor": 7,
+      "reason": "面向结构化道路自动驾驶弯道轨迹规划的优化式常规改进，未达高影响力系统工作标准，与UAV主动目标搜索/ObjectNav/VLN等核心收录方向仅边缘关联。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4214816907": {
+      "title": "Vectorized rooftop area data for 90 cities in China",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该文属遥感影像建筑屋顶提取与城市数据集构建，服务于城市规划，不涉及具身导航、UAV搜索、主动感知或智能体能力，接近纯图像分割/检测数据类工作，属收录范围外。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4401414574": {
+      "title": "Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving",
+      "relevance": 5,
+      "rigor": 7,
+      "reason": "属自动驾驶领域的LLM驾驶决策与问答应用，不属空域/地面具身导航（VLN、ObjectNav、UAV目标搜索）核心问题，仅目标级向量模态融合思路可间接参考。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4399074444": {
+      "title": "Canadian Occupational Performance Measure (COPM)",
+      "relevance": 0,
+      "rigor": 2,
+      "reason": "该文为职业治疗领域的临床评估量表（COPM）介绍性内容，与具身导航、UAV搜索、机器人自主、大模型智能体等全部收录技术线均无关联。",
+      "excluded_at": "2026-09-06"
     }
   },
   "briefing": {
-    "text": "本批经典横跨具身导航全栈：从LiDAR里程计与紧耦合SLAM等定位底座，到无人机协同搜索与四足快速运动，再到目标导航、视觉语言导航及LLM智能体安全。首推三篇：VLFM用视觉语言模型生成价值图引导边界探索，以零样本取得Gibson、HM3D、MP3D的ObjectNav SOTA；Navigating to objects in the real world在六个真实家庭对比经典、模块化与端到端方法，量化端到端成功率从仿真77%跌至真实23%，直指模拟器评测缺陷；NoMaD以目标掩码扩散策略统一目标导航与无目标探索，真机表现优于五种基线。趋势上，社区重心正从仿真刷榜转向真机验证与基础模型驱动的零样本泛化。",
-    "added": 15,
-    "at": "2026-09-06T08:54:19.521116+00:00",
+    "text": "本批工作勾勒出一条主线：从模型预测控制逼近机动极限，转向用预训练基础模型零样本组合多模态感知与规划。最值得先读Model Predictive Contouring Control for Time-Optimal Quadrotor Flight，它在运行时同时求解时间分配与控制，真机圈速超过顶级人类飞手，是实时优化与敏捷飞行的代表作；Socratic Models证明VLM与LLM仅靠语言交换、无需微调即可组合出机器人感知规划等新能力，为具身系统提供模块化路线；The Dawn of LMMs则以跨领域样本刻画GPT-4V的能力与工作模式，可作多模态通用系统的评估参照。趋势上，具身智能正从专用控制器走向基础模型驱动的组合式架构。",
+    "added": 4,
+    "at": "2026-09-06T09:25:45.515854+00:00",
     "new": [
       {
-        "t": "VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation",
-        "u": "https://doi.org/10.1109/icra57147.2024.10610712",
-        "r": 10,
-        "g": 8,
-        "s": "VLFM是零样本目标导航方法：用深度观测构建占用图识别边界，结合预训练视觉语言模型对RGB生成语言对齐的价值图，据此选择最有望发现目标物体的边界探索，在Gibson、HM3D、MP3D的ObjectNav任务上取得SOTA SPL，并部署于Spot真机。",
-        "c": "",
-        "cit": 125
-      },
-      {
-        "t": "LiDAR odometry survey: recent advancements and remaining challenges",
-        "u": "https://doi.org/10.1007/s11370-024-00515-8",
-        "r": 7,
-        "g": 6,
-        "s": "本文为首个LiDAR里程计系统性综述，按纯LiDAR、LiDAR-IMU融合、多LiDAR及多传感器融合四类集成方式梳理现有方法，并分析公开数据集、评测方法、现存挑战与未来方向。",
-        "c": "",
-        "cit": 123
-      },
-      {
-        "t": "Rapid locomotion via reinforcement learning",
-        "u": "https://doi.org/10.1177/02783649231224053",
-        "r": 7,
-        "g": 7,
-        "s": "本文提出端到端强化学习控制器，使MIT Mini Cheetah以最高3.9米/秒在草地、冰面、碎石等自然地形快速奔跑转向，借助速度自适应课程与在线系统辨识实现仿真到真实迁移。",
-        "c": "",
-        "cit": 122
-      },
-      {
-        "t": "Distributed Stochastic Algorithm Based on Enhanced Genetic Algorithm for Path Planning of Multi-UAV Cooperative Area Search",
-        "u": "https://doi.org/10.1109/tits.2023.3258482",
+        "t": "Model Predictive Contouring Control for Time-Optimal Quadrotor Flight",
+        "u": "https://doi.org/10.1109/tro.2022.3173711",
         "r": 8,
-        "g": 7,
-        "s": "本文针对多无人机协同区域搜索协作不足的问题，基于DMPC框架建立分布式约束优化模型，兼顾重复搜索、连通性与避撞，并用增强遗传算法的分布式随机算法求解，仿真验证效率与可扩展性提升。",
-        "c": "",
-        "cit": 121
-      },
-      {
-        "t": "Navigating to objects in the real world",
-        "u": "https://doi.org/10.1126/scirobotics.adf6991",
-        "r": 10,
         "g": 9,
-        "s": "在六个真实家庭中系统对比经典、模块化与端到端三类目标导航方法的真机表现：模块化达约90%成功率，端到端因图像域差从仿真77%跌至真实23%，并指出模拟器作为评估基准的关键缺陷。",
+        "s": "针对四旋翼穿多点航迹的时间最优飞行问题，提出模型预测轮廓控制（MPCC），在运行时同时求解时间分配与控制，实时生成接近真实时间最优的轨迹，真机圈速超越现有方法与顶级人类飞手。",
         "c": "",
-        "cit": 120
+        "cit": 195
       },
       {
-        "t": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
-        "u": "https://doi.org/10.1109/icra57147.2024.10610665",
-        "r": 8,
-        "g": 8,
-        "s": "NoMaD 用单一目标掩码扩散策略统一处理目标条件导航与无目标探索：基于多台地面机器人数据训练大规模 Transformer 策略加扩散解码器，真机移动机器人实验显示在陌生环境中优于五种基线，成功率更高且碰撞率更低。",
-        "c": "",
-        "cit": 116
-      },
-      {
-        "t": "Strategies for Optimized UAV Surveillance in Various Tasks and Scenarios: A Review",
-        "u": "https://doi.org/10.3390/drones8050193",
+        "t": "Automatic Prompt Optimization with “Gradient Descent” and Beam Search",
+        "u": "https://doi.org/10.18653/v1/2023.emnlp-main.494",
         "r": 7,
+        "g": 7,
+        "s": "ProTeGi用文本“梯度”自动优化提示：以小批量数据生成自然语言批评作为梯度，按语义反方向编辑提示，并以束搜索和bandit选择提效，在三个NLP任务与越狱检测上最多提升31%。",
+        "c": "",
+        "cit": 174
+      },
+      {
+        "t": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+        "u": "https://arxiv.org/abs/2204.00598",
+        "r": 8,
+        "g": 7,
+        "s": "提出苏格拉底模型框架，让VLM、LLM等异构预训练基础模型通过多模态提示的语言交换零样本组合，无需微调即可获得新多模态能力，并在图像描述、视频检索、第一视角问答、辅助对话与机器人感知规划上验证。",
+        "c": "",
+        "cit": 173
+      },
+      {
+        "t": "The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision)",
+        "u": "https://arxiv.org/abs/2309.17421",
+        "r": 8,
         "g": 5,
-        "s": "该综述系统梳理了无人机在监视类任务中的优化策略，覆盖路径规划、基础设施巡检、安防、搜救与环境监测等场景，并展望协同监视网络等未来趋势。",
+        "s": "微软团队对GPT-4V的系统性定性探索报告，通过跨领域精心设计的样本考察其处理任意交织多模态输入、视觉指代提示等能力与工作模式，论证其作为多模态通用系统的潜力，并展望应用场景与研究方向。",
         "c": "",
-        "cit": 109
-      },
-      {
-        "t": "iG-LIO: An Incremental GICP-Based Tightly-Coupled LiDAR-Inertial Odometry",
-        "u": "https://doi.org/10.1109/lra.2024.3349915",
-        "r": 7,
-        "g": 8,
-        "s": "提出增量GICP紧耦合激光惯性里程计iG-LIO，统一GICP与惯性约束，用体素协方差估计和增量体素地图降低耗时，多数据集上效率超Faster-LIO且精度相当。",
-        "c": "https://github.com/zijiechenrobotics/ig_lio",
-        "cit": 90
-      },
-      {
-        "t": "Fully neuromorphic vision and control for autonomous drone flight",
-        "u": "https://doi.org/10.1126/scirobotics.adi0591",
-        "r": 8,
-        "g": 9,
-        "s": "提出全神经形态视觉到控制管线：脉冲网络直接消费事件相机原始数据输出无人机低层控制；视觉层用自监督学习做自运动估计，控制层经进化算法训练，成功sim2real并在真机Loihi上以200Hz低功耗运行。",
-        "c": "",
-        "cit": 89
-      },
-      {
-        "t": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
-        "u": "https://doi.org/10.18653/v1/2024.findings-acl.624",
-        "r": 6,
-        "g": 7,
-        "s": "InjecAgent基准评测工具集成LLM智能体面对间接提示注入攻击的脆弱性，含1054个用例、17种用户工具与62种攻击工具，30个智能体中ReAct版GPT-4攻击成功率约24%，强化攻击提示后近翻倍。",
-        "c": "",
-        "cit": 87
-      },
-      {
-        "t": "ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments",
-        "u": "https://doi.org/10.1109/tpami.2024.3386695",
-        "r": 10,
-        "g": 8,
-        "s": "ETPNav针对连续环境视觉语言导航（VLN-CE），在线自组织路标构建拓扑地图，将导航解耦为transformer跨模态高层规划与试错启发式避障控制，在R2R-CE和RxR-CE上分别提升超10%和20%。",
-        "c": "",
-        "cit": 84
-      },
-      {
-        "t": "preciseSLAM: Robust, Real-Time, LiDAR–Inertial–Ultrasonic Tightly-Coupled SLAM With Ultraprecise Positioning for Plant Factories",
-        "u": "https://doi.org/10.1109/tii.2024.3361092",
-        "r": 7,
-        "g": 6,
-        "s": "提出LiDAR-IMU-超声波紧耦合SLAM框架preciseSLAM，用因子图融合激光里程计、IMU、回环与超声波全局定位四种因子，并以置信区域优化抑制长期漂移，在植物工厂室内环境实现5.4cm定位精度。",
-        "c": "",
-        "cit": 82
-      },
-      {
-        "t": "A General Optimisation‐Based Framework for Global Pose Estimation With Multiple Sensors",
-        "u": "https://doi.org/10.1049/csy2.70023",
-        "r": 6,
-        "g": 6,
-        "s": "提出基于位姿图优化的通用多传感器融合框架，将VO/VIO局部估计与GPS等全局传感器统一融合，消除累计漂移，实现局部精确、全局无漂移的位姿估计，并在公开数据集与真实实验中验证。",
-        "c": "",
-        "cit": 53
-      },
-      {
-        "t": "NavRL: Learning Safe Flight in Dynamic Environments",
-        "u": "https://doi.org/10.1109/lra.2025.3546069",
-        "r": 7,
-        "g": 7,
-        "s": "NavRL提出基于PPO深度强化学习的无人机安全导航框架，通过精心设计的状态与动作表征在含静态和动态障碍的动态环境中实现安全飞行，辅以速度障碍启发的安全防护罩，并实现零样本sim2real迁移。",
-        "c": "",
-        "cit": 52
-      },
-      {
-        "t": "NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning",
-        "u": "https://doi.org/10.1109/tpami.2025.3554559",
-        "r": 9,
-        "g": 7,
-        "s": "NavCoT通过参数高效领域内微调让LLM以思维链方式解耦导航推理：先想象下一观测、再匹配候选、最后决策动作，在R2R、RxR、R4R上超越直接动作预测变体，较GPT-4方法相对提升约7%。",
-        "c": "",
-        "cit": 45
+        "cit": 172
       }
     ]
   }
