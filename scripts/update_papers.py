@@ -46,6 +46,13 @@ def abstract_from_inv(inv):
     pos={i:w for w,idxs in (inv or {}).items() for i in idxs}
     return clean(" ".join(pos[i] for i in sorted(pos)))
 
+def arxiv_id_of(w):
+    """Freshly ingested arXiv works expose only their DataCite DOI
+    (10.48550/arxiv.XXXX.XXXXX), not an arxiv.org URL — check both."""
+    urls=" ".join(filter(None,[((w.get("best_oa_location") or {}).get("landing_page_url") or ""),((w.get("best_oa_location") or {}).get("pdf_url") or ""),(((w.get("primary_location") or {}) or {}).get("landing_page_url") or "")]))
+    m=re.search(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})",urls) or re.search(r"10\.48550/arxiv\.([0-9]{4}\.[0-9]{4,5})(?:v\d+)?",((w.get("ids") or {}).get("doi") or ""),re.I)
+    return m.group(1) if m else ""
+
 def fetch_arxiv():
     out=[];total=0;errs=0
     for query in CFG["queries"]:
@@ -79,9 +86,7 @@ def fetch_openalex_recent():
         hits=oa_get(f"from_publication_date:{since},title_and_abstract.search:{q}",sort="publication_date:desc")
         kept=0
         for w in hits:
-            urls=" ".join(filter(None,[((w.get("best_oa_location") or {}).get("landing_page_url") or ""),((w.get("best_oa_location") or {}).get("pdf_url") or ""),(((w.get("primary_location") or {}) or {}).get("landing_page_url") or "")]))
-            m=re.search(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})",urls)
-            aid=m.group(1) if m else ""
+            aid=arxiv_id_of(w)
             if not aid:continue
             abstract=abstract_from_inv(w.get("abstract_inverted_index"))
             if not abstract:continue
@@ -89,7 +94,8 @@ def fetch_openalex_recent():
             kept+=1
         print(f"OA-fallback '{q}': {len(hits)} hits, {kept} arXiv preprints kept")
         time.sleep(1)
-    print(f"OpenAlex fallback: {len(out)} unique candidates since {since}")
+    newest=max((p["published"] for p in out.values()),default="-")
+    print(f"OpenAlex fallback: {len(out)} unique candidates since {since} (newest {newest})")
     return list(out.values())
 
 def enrich_s2(p):

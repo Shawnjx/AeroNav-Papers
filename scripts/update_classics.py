@@ -6,7 +6,7 @@ import json, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from update_papers import CFG, DATA, UA, clean, classify, code_signal, evidence, llm_review, norm_title, venue_verified, oa_get, abstract_from_inv
+from update_papers import CFG, DATA, UA, clean, classify, code_signal, evidence, llm_review, norm_title, venue_verified, oa_get, abstract_from_inv, arxiv_id_of
 from briefing import write_briefing
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -30,9 +30,7 @@ def search():
             abstract=abstract_from_inv(w.get("abstract_inverted_index"))
             if not abstract:continue
             over+=1
-            urls=" ".join(filter(None,[((w.get("best_oa_location") or {}).get("landing_page_url") or ""),((w.get("best_oa_location") or {}).get("pdf_url") or ""),(((w.get("primary_location") or {}) or {}).get("landing_page_url") or "")]))
-            m=re.search(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})",urls)
-            aid=m.group(1) if m else ""
+            aid=arxiv_id_of(w)
             pid=aid or (w.get("ids") or {}).get("openalex","")
             if not pid:continue
             venue=clean(((w.get("primary_location") or {}).get("source") or {}).get("display_name")) or "预印本"

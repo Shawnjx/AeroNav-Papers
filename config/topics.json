@@ -55,7 +55,7 @@
     "active perception exploration",
     "UAV SLAM odometry"
   ],
-  "fallback_lookback_days": 4,
+  "fallback_lookback_days": 7,
   "keywords": {
     "UAV 目标搜索": ["uav", "aerial", "drone", "target search", "active search", "search and rescue"],
     "空域 VLN": ["aerial", "drone", "uav", "instruction", "vision language navigation"],
