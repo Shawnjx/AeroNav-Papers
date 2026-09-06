@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T09:25:45.515854+00:00",
+  "updated_at": "2026-09-06T18:49:29.317136+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -4032,6 +4032,50 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2304.14178",
+      "arxiv_id": "2304.14178",
+      "title": "mPLUG-Owl: Modularization Empowers Large Language Models with Multimodality",
+      "authors": [
+        "Qinghao Ye",
+        "Haiyang Xu",
+        "Guohai Xu",
+        "Jiabo Ye",
+        "Ming Yan",
+        "Yiyang Zhou",
+        "Junyang Wang",
+        "Anwen Hu",
+        "Pengcheng Shi",
+        "Yaya Shi",
+        "Chenliang Li",
+        "Yuanhong Xu"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 168,
+      "url": "https://arxiv.org/abs/2304.14178",
+      "pdf_url": "https://arxiv.org/pdf/2304.14178",
+      "code_url": "https://github.com/X-PLUG/mPLUG-Owl",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "mPLUG-Owl提出模块化训练范式，用视觉知识模块与视觉抽象器对冻结LLM做两阶段图文对齐，再以LoRA联合微调，赋予LLM多模态理解、多轮对话与推理能力，并构建OwlEval评测集。",
+      "change_zh": "相比Flamingo/BLIP-2等全程冻结LLM、仅靠对齐模块的常见路线，它模块化解耦并仅以LoRA轻量更新LLM，用纯语言与多模态数据联合微调，在获得多模态能力的同时保持甚至提升原语言生成能力，还涌现多图关联等新能力。",
+      "why_it_matters": "作为有影响力的开源MLLM，为具身智能体提供感知推理底座：开放词汇理解可支撑ObjectNav目标定位，多图关联契合UAV搜救的多视角线索整合，指令跟随与多轮对话利于人机协同，属多模态智能体线核心进展。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "evaluation",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
       "id": "https://openalex.org/W4362698359",
       "arxiv_id": "",
       "title": "Point‐LIO: Robust High‐Bandwidth Light Detection and Ranging Inertial Odometry",
@@ -4148,6 +4192,44 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "https://openalex.org/W4399399400",
+      "arxiv_id": "",
+      "title": "EarthGPT: A Universal Multimodal Large Language Model for Multisensor Image Comprehension in Remote Sensing Domain",
+      "authors": [
+        "Wei Zhang",
+        "Miaoxin Cai",
+        "Tong Zhang",
+        "Yin Zhuang",
+        "Xuerui Mao"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "citation_count": 165,
+      "url": "https://doi.org/10.1109/tgrs.2024.3409624",
+      "pdf_url": "",
+      "code_url": "https://github.com/wivizhang/EarthGPT",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Transactions on Geoscience and Remote Sensing），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "EarthGPT是遥感领域通用多模态大模型，以视觉增强感知与跨模态互理解机制，用百万级指令数据集MMRS-1M对光学、SAR、红外多传感器做多任务统一指令微调，覆盖分类、描述、VQA、定位与检测。",
+      "change_zh": "常见路线是通用自然图像MLLM直接迁移或单任务遥感专用模型；该文首次将光学、SAR、红外多传感器与多类遥感解译任务统一到单一MLLM的指令微调框架，并构建首个百万级遥感多模态指令数据集MMRS-1M，缓解遥感专业知识缺失。",
+      "why_it_matters": "对UAV主动目标搜索与aerial VLN有间接价值：俯视视角多传感器（光学/红外/SAR）图像统一理解与指令微调方法可充当无人机感知底座，MMRS-1M可支持航空视角预训练；但其任务为被动遥感解译，与导航决策无直接耦合，价值偏间接。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "instruction",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
       "id": "https://openalex.org/W4390719155",
       "arxiv_id": "",
       "title": "State Estimation for Robotics",
@@ -4215,6 +4297,87 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2302.14045",
+      "arxiv_id": "2302.14045",
+      "title": "Language Is Not All You Need: Aligning Perception with Language Models",
+      "authors": [
+        "Shaohan Huang",
+        "Dong Li",
+        "Wenhui Wang",
+        "Yaru Hao",
+        "Saksham Singhal",
+        "Shuming Ma",
+        "Tengchao Lv",
+        "Lei Cui",
+        "Owais Khan Mohammed",
+        "Patra, Barun",
+        "Qiang Liu",
+        "Kriti Aggarwal"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 164,
+      "url": "https://arxiv.org/abs/2302.14045",
+      "pdf_url": "https://arxiv.org/pdf/2302.14045",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Kosmos-1多模态大语言模型，从零在网络规模图文交错语料上训练，支持上下文学习与零样本指令跟随，在语言理解、多模态对话、VQA、指令式识别等任务表现优异，并用Raven智商测试诊断非语言推理。",
+      "change_zh": "相比冻结LLM外接视觉编码器的常见做法，Kosmos-1让Transformer从零在图文交错语料上统一学习感知与语言，验证双向跨模态迁移，并用Raven智商测试量化MLLM非语言推理，推动从零训练的统一多模态模型范式。",
+      "why_it_matters": "作为里程碑式MLLM，其图文对齐、零样本指令跟随与跨模态迁移可为空域VLN、ObjectNav开放词汇目标识别及LLM规划智能体提供感知底座，Raven非语言推理测试也为空间智能评测提供新思路，间接支撑UAV目标搜索。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "instruction",
+        "mllm",
+        "multimodal large language model",
+        "world model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4388692454",
+      "arxiv_id": "",
+      "title": "Motion planning around obstacles with convex optimization",
+      "authors": [
+        "Tobia Marcucci",
+        "M. L. Petersen",
+        "David von Wrangel",
+        "Russ Tedrake"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "Science Robotics",
+      "citation_count": 164,
+      "url": "https://doi.org/10.1126/scirobotics.adf7843",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出基于凸集图的避障运动规划框架GCS，将含形状、时长与速度约束的无碰撞轨迹规划松弛为凸优化问题，松弛通常极紧，简单后处理即可得近全局最优轨迹。",
+      "change_zh": "常见路线要么用非凸局部优化（易陷局部极小、难避障），要么退回采样规划（高维扩展差）。本文用凸集图将避障规划整体凸松弛，凸优化即可得近全局最优解并验证松弛紧致性，改变了优化式轨迹规划的求解范式。",
+      "why_it_matters": "轨迹规划是机器人自主落地的核心能力，GCS是社区高度采用的高影响力规划工作；对UAV主动目标搜索的接近与避障段、以及ObjectNav的底层无碰撞执行，可提供快速且近全局最优的轨迹后端，衔接上层决策与控制。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "motion planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
       "id": "https://openalex.org/W4387166575",
       "arxiv_id": "",
       "title": "A review of UAV autonomous navigation in GPS-denied environments",
@@ -4252,6 +4415,165 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
+      "id": "2201.07207",
+      "arxiv_id": "2201.07207",
+      "title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+      "authors": [
+        "Wenlong Huang",
+        "Pieter Abbeel",
+        "Deepak Pathak",
+        "Igor Mordatch"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 161,
+      "url": "https://arxiv.org/abs/2201.07207",
+      "pdf_url": "https://arxiv.org/pdf/2201.07207",
+      "code_url": "",
+      "topics": [
+        "规划智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文探索用预训练大语言模型零样本地将高层自然语言任务分解为可执行的中层计划，并提出在已有示范条件下将计划语义翻译为环境可接受动作的方法，在VirtualHome中显著提升可执行率。",
+      "change_zh": "相比依赖逐步示范学习的常见路线，该文证明足够大的预训练语言模型经适当提示即可零样本完成高层任务到中层计划的分解；真正改变在于不做任何训练，而是通过基于已有示范的语义翻译，把LLM输出对齐到环境可接受动作。",
+      "why_it_matters": "该文是LLM零样本规划的奠基性工作，为ObjectNav/VLN中用LLM分解指令与子目标、以及UAV搜救等高层任务规划提供了范式；其将计划语义翻译到可行动作的思路，对具身任务的指令落地与可执行性评估有直接借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4402753874",
+      "arxiv_id": "",
+      "title": "CogAgent: A Visual Language Model for GUI Agents",
+      "authors": [
+        "Wenyi Hong",
+        "Weihan Wang",
+        "Qingsong Lv",
+        "Jiazheng Xu",
+        "Wenmeng Yu",
+        "Junhui Ji",
+        "Yan Wang",
+        "Zihan Wang",
+        "Yuxiao Dong",
+        "Ming Ding",
+        "Jie Tang"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 160,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.01354",
+      "pdf_url": "",
+      "code_url": "https://github.com/THUDM/CogVLM",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CogAgent是180亿参数的视觉语言模型，采用低、高分辨率双图像编码器支持1120×1120输入，专长GUI理解与导航，在9个文本富集及通用VQA基准和Mind2Web、AITW等GUI导航任务上达到SOTA。",
+      "change_zh": "常见GUI智能体依赖LLM消费抽取的HTML/DOM文本，CogAgent改为仅以截图为输入，用双分辨率编码支持1120×1120高分辨率，让模型直接识别小图标与页面小字，摆脱了对页面结构化文本抽取的依赖，并开源模型与代码。",
+      "why_it_matters": "作为多模态大模型线的重要新模型，其高分辨率视觉输入与纯视觉智能体范式推动了MLLM与智能体能力本身的发展；但作用对象是屏幕GUI而非物理空间，对UAV主动目标搜索与ObjectNav仅有间接参考价值，如细粒度高分辨率感知的设计经验。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4377008028",
+      "arxiv_id": "",
+      "title": "A Review on Viewpoints and Path Planning for UAV-Based 3-D Reconstruction",
+      "authors": [
+        "Mehdi Maboudi",
+        "MohammadReza Homaei",
+        "Soohwan Song",
+        "Shirin Malihi",
+        "M. Saadatseresht",
+        "M. Gerke"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+      "citation_count": 159,
+      "url": "https://doi.org/10.1109/jstars.2023.3276427",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/4609443/9973430/10124957.pdf",
+      "code_url": "",
+      "topics": [
+        "主动感知与重建"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文是一篇综述，系统梳理单无人机室外大尺度三维重建中的视角选择与路径规划方法，覆盖免模型与基于模型两大类算法，基于200余篇文献分析各方法创新、局限与评估策略，并总结挑战与未来方向。",
+      "change_zh": "作为综述，其贡献在系统性梳理而非方法创新：将免模型与基于模型的视角/路径规划算法纳入统一分类框架，比较评估策略并批判性指出各路线局限，为该分散领域提供了统一的分析视角与文献入口。",
+      "why_it_matters": "直接命中主动感知与重建（next-best-view、在线建图）核心线；其视角选择与轨迹规划思想与UAV主动目标搜索共享观测点决策机制，可为搜救侦察中的观测位姿选择与接近策略提供方法参考，也关联状态估计与控制线的运动规划。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4402727018",
+      "arxiv_id": "",
+      "title": "GLaMM: Pixel Grounding Large Multimodal Model",
+      "authors": [
+        "Hanoona Rasheed",
+        "Muhammad Maaz",
+        "Sahal Shaji",
+        "Abdelrahman Shaker",
+        "Salman Khan",
+        "Hisham Cholakkal",
+        "Rao Muhammad Anwer",
+        "Eric P. Xing",
+        "Ming–Hsuan Yang",
+        "Fahad Shahbaz Khan"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 157,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.01236",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GLaMM是首个将自然语言回答与像素级分割掩码交织生成的大多模态模型，支持文本与感兴趣区域视觉提示，并提出GCG新任务、评测协议及含810M掩码区域的GranD大规模接地数据集。",
+      "change_zh": "相比此前只能整体描述、需用户框选区域或无法密集像素定位的区域级LMM，GLaMM在对话生成中直接嵌入像素掩码，统一文本与区域提示的多粒度交互，并以自动化标注流水线解决了密集接地的数据瓶颈。",
+      "why_it_matters": "像素级视觉接地是MLLM核心能力，为开放词汇ObjectNav与UAV目标搜索提供语言指代目标的细粒度定位基础，其接地对话范式与大规模数据管线对空间智能和具身智能体的感知能力构建有直接支撑价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T18:49:29.317136+00:00"
     },
     {
       "id": "2307.06082",
@@ -6696,48 +7018,238 @@
       "rigor": 2,
       "reason": "该文为职业治疗领域的临床评估量表（COPM）介绍性内容，与具身导航、UAV搜索、机器人自主、大模型智能体等全部收录技术线均无关联。",
       "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4220692751": {
+      "title": "Acute COVID-19 severity and mental health morbidity trajectories in patient populations of six nations: an observational study",
+      "relevance": 0,
+      "rigor": 7,
+      "reason": "纯医学流行病学观察研究，考察COVID-19急性期严重程度与六国人群长期心理健康轨迹的关系，与具身导航、空间智能、机器人自主等全部收录技术线毫无关联。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4404415530": {
+      "title": "Stuck: How Vaccine Rumors Start—and Why They Don't Go Away",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文是关于疫苗谣言与公共卫生信任的人类学书评，与具身导航、无人机搜索、VLN、空间智能等全部收录技术线完全无关，且无任何实验方法。",
+      "excluded_at": "2026-09-06"
+    },
+    "2111.04461": {
+      "title": "Virtual Reality for Emotion Elicitation – A Review",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "范围外：VR情绪诱发与情绪感知接口综述属情感计算/情绪分析垂直领域，与空间、导航、机器人、智能体等全部收录技术线无关，仅VR术语与仿真环境擦边。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4403853345": {
+      "title": "Review of Convolutional Neural Network",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "通用CNN综述，仅覆盖深度学习基础与图像/语音等通用应用，不涉及导航、空间智能、智能体、状态估计等任何收录技术线，属范围外。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W3214340375": {
+      "title": "A review of location encoding for GeoAI: methods and applications",
+      "relevance": 4,
+      "rigor": 4,
+      "reason": "该文是面向GeoAI/地理信息科学的位置编码综述，与具身导航、UAV目标搜索、机器人自主等收录技术线仅在'空间数据'术语上擦边，未涉及场景理解、导航决策或真机环节，且为无实验的综述工作。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4405114800": {
+      "title": "A Survey of AI-Generated Content (AIGC)",
+      "relevance": 3,
+      "rigor": 3,
+      "reason": "综述聚焦文本/图像/音乐等AI内容生成（含文生图、文生视频类技术），仅涉大模型术语，不涉及空间、导航、机器人或智能体能力进展，属范围外。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4400362569": {
+      "title": "Pre-trained multimodal large language model enhances dermatological diagnosis using SkinGPT-4",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "将现成视觉-语言大模型套用于皮肤病医疗诊断垂直应用，与空间、导航、机器人无关，属研究范围明确排除的医疗分诊类工作。",
+      "excluded_at": "2026-09-06"
+    },
+    "2304.03271": {
+      "title": "Making AI Less \"Thirsty\": Uncovering and Addressing the Secret Water Footprint of AI Models",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "论文研究AI模型的水足迹估算与可持续性分析，属数据中心资源消耗核算工作，与具身导航、空间智能、模型/智能体能力进展、状态估计与控制等全部收录技术线均无实质关联，纯属范围外。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4406412004": {
+      "title": "A Review of CNN Applications in Smart Agriculture Using Multimodal Data",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "智慧农业垂直领域的CNN应用综述，UAV仅作遥感数据采集平台用于作物监测，与UAV主动目标搜索、导航决策、空间智能及具身智能体各技术线均无关，属范围外应用。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4409263216": {
+      "title": "HyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model",
+      "relevance": 2,
+      "rigor": 8,
+      "reason": "高光谱遥感解译基础模型属垂直领域视觉模型，虽借鉴基础模型预训练范式，但与空间推理、导航、机器人自主均无实质关联，仅属垂直应用，不属收录范围。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4225934279": {
+      "title": "Short and Long Range Relation Based Spatio-Temporal Transformer for Micro-Expression Recognition",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "论文属情感计算领域的微表情识别应用，与具身导航、UAV目标搜索、空间智能及机器人自主等收录技术线均无关联，属明确排除范围。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4284969253": {
+      "title": "Trends and exemplary practices of STEM teacher professional development programs in K-12 contexts: A systematic review of empirical studies",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文为K-12教育领域STEM教师专业发展项目的系统综述，与具身导航、空间智能、智能体等十一条收录技术线均无关联，属范围外论文。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4283314472": {
+      "title": "Current views of community and hospital pharmacists on pharmaceutical care services in the United Arab Emirates: A mixed methodological study",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "该论文是关于阿联酋药师药学服务认知与实践障碍的混合方法医疗调研，与具身导航、UAV搜索、空间智能、机器人自主等全部收录技术线毫无关联，属典型的医疗健康领域应用研究。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4292198479": {
+      "title": "A review of spatially-explicit GeoAI applications in Urban Geography",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该综述聚焦城市地理学的GeoAI应用（城市动态、社会分异、社会感知），属地理信息科学与城市分析领域，与具身导航、机器人自主及智能体技术线无实质关联，仅'空间'一词术语擦边。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4322707256": {
+      "title": "RSVG: Exploring Data and Models for Visual Grounding on Remote Sensing Data",
+      "relevance": 5,
+      "rigor": 7,
+      "reason": "该文是视觉指代定位向遥感领域的垂直移植，属离线图像-文本定位的基准与模型工作，无UAV平台、主动搜索或具身导航成分，仅凭遥感俯视属性与空域板块术语擦边。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4205903114": {
+      "title": "Genetic Algorithm-Based Trajectory Optimization for Digital Twin Robots",
+      "relevance": 5,
+      "rigor": 3,
+      "reason": "摘要未描述任何实验设置、基线对比或量化结果，方法为经典遗传算法路径规划加数字孪生虚实闭环，可信度信息不足，且面向工业物料搬运轨迹精度，仅与收录范围边缘相关。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4411302254": {
+      "title": "Advances in molecular pathology and therapy of non-small cell lung cancer",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "属医学肿瘤学综述，内容为非小细胞肺癌的分子病理与药物治疗进展，仅将AI作为药物与联合策略设计的辅助工具，与具身导航、空间智能、机器人自主等收录技术线完全无关。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4317930160": {
+      "title": "Trends in EEG signal feature extraction applications",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为生物医学EEG信号特征提取综述，与空域/地面具身导航及所列基础能力技术线均无关联，属范围外。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4406421570": {
+      "title": "Improving large language model applications in biomedicine with retrieval-augmented generation: a systematic review, meta-analysis, and clinical development guidelines",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "医疗垂直领域的LLM/RAG应用系统综述与Meta分析，与空间智能、具身导航、机器人自主等收录技术线无关，属把大模型套用到无关垂直场景的范围外工作。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4390422049": {
+      "title": "An Efficient and Accurate A-Star Algorithm for Autonomous Vehicle Path Planning",
+      "relevance": 5,
+      "rigor": 4,
+      "reason": "仅与原始A*对比的仿真验证，无消融与真机信息，属运动轨迹规划中的常规增量改进，按收录标准不予收录。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4399863227": {
+      "title": "Challenges and opportunities in cancer immunotherapy: a Society for Immunotherapy of Cancer (SITC) strategic vision",
+      "relevance": 1,
+      "rigor": 1,
+      "reason": "属癌症免疫治疗医学战略共识综述，与具身导航、机器人自主、大模型与智能体研究均无关，仅在结尾把AI作为加速医学进展的泛泛工具提及，属范围外应用领域。",
+      "excluded_at": "2026-09-06"
+    },
+    "https://openalex.org/W4402727495": {
+      "title": "LMDrive: Closed-Loop End-to-End Driving with Large Language Models",
+      "relevance": 5,
+      "rigor": 8,
+      "reason": "该文属自动驾驶领域的语言条件闭环端到端驾驶，虽含自然语言指令跟随与LLM成分，但研究对象是道路行车控制而非收录范围内的UAV目标搜索、ObjectNav、地面VLN等具身导航技术线，仅范式相邻，判为边缘相关不收录。",
+      "excluded_at": "2026-09-06"
     }
   },
   "briefing": {
-    "text": "本批工作勾勒出一条主线：从模型预测控制逼近机动极限，转向用预训练基础模型零样本组合多模态感知与规划。最值得先读Model Predictive Contouring Control for Time-Optimal Quadrotor Flight，它在运行时同时求解时间分配与控制，真机圈速超过顶级人类飞手，是实时优化与敏捷飞行的代表作；Socratic Models证明VLM与LLM仅靠语言交换、无需微调即可组合出机器人感知规划等新能力，为具身系统提供模块化路线；The Dawn of LMMs则以跨领域样本刻画GPT-4V的能力与工作模式，可作多模态通用系统的评估参照。趋势上，具身智能正从专用控制器走向基础模型驱动的组合式架构。",
-    "added": 4,
-    "at": "2026-09-06T09:25:45.515854+00:00",
+    "text": "本批入库以多模态大模型为主轴，从模块化对齐的mPLUG-Owl到像素接地的GLaMM，兼有LLM任务规划与凸优化运动规划，恰好补齐具身系统感知、决策、执行各环节。优先读Language Models as Zero-Shot Planners：它首次验证LLM可零样本把自然语言任务拆为可执行动作序列，是具身“大脑”的起点；Motion planning around obstacles with convex optimization将避障规划松弛为凸优化，后处理即得近全局最优轨迹，做底层控制绕不开；CogAgent以双分辨率编码器支持1120×1120输入，在Mind2Web、AITW等GUI导航基准达SOTA，给出VLM落地智能体的样板。趋势上，顶层语言推理与底层可求解控制正加速合流，值得持续跟踪。",
+    "added": 8,
+    "at": "2026-09-06T18:49:29.317136+00:00",
     "new": [
       {
-        "t": "Model Predictive Contouring Control for Time-Optimal Quadrotor Flight",
-        "u": "https://doi.org/10.1109/tro.2022.3173711",
+        "t": "mPLUG-Owl: Modularization Empowers Large Language Models with Multimodality",
+        "u": "https://arxiv.org/abs/2304.14178",
+        "r": 8,
+        "g": 7,
+        "s": "mPLUG-Owl提出模块化训练范式，用视觉知识模块与视觉抽象器对冻结LLM做两阶段图文对齐，再以LoRA联合微调，赋予LLM多模态理解、多轮对话与推理能力，并构建OwlEval评测集。",
+        "c": "https://github.com/X-PLUG/mPLUG-Owl",
+        "cit": 168
+      },
+      {
+        "t": "EarthGPT: A Universal Multimodal Large Language Model for Multisensor Image Comprehension in Remote Sensing Domain",
+        "u": "https://doi.org/10.1109/tgrs.2024.3409624",
+        "r": 6,
+        "g": 8,
+        "s": "EarthGPT是遥感领域通用多模态大模型，以视觉增强感知与跨模态互理解机制，用百万级指令数据集MMRS-1M对光学、SAR、红外多传感器做多任务统一指令微调，覆盖分类、描述、VQA、定位与检测。",
+        "c": "https://github.com/wivizhang/EarthGPT",
+        "cit": 165
+      },
+      {
+        "t": "Language Is Not All You Need: Aligning Perception with Language Models",
+        "u": "https://arxiv.org/abs/2302.14045",
+        "r": 8,
+        "g": 8,
+        "s": "提出Kosmos-1多模态大语言模型，从零在网络规模图文交错语料上训练，支持上下文学习与零样本指令跟随，在语言理解、多模态对话、VQA、指令式识别等任务表现优异，并用Raven智商测试诊断非语言推理。",
+        "c": "",
+        "cit": 164
+      },
+      {
+        "t": "Motion planning around obstacles with convex optimization",
+        "u": "https://doi.org/10.1126/scirobotics.adf7843",
         "r": 8,
         "g": 9,
-        "s": "针对四旋翼穿多点航迹的时间最优飞行问题，提出模型预测轮廓控制（MPCC），在运行时同时求解时间分配与控制，实时生成接近真实时间最优的轨迹，真机圈速超越现有方法与顶级人类飞手。",
+        "s": "本文提出基于凸集图的避障运动规划框架GCS，将含形状、时长与速度约束的无碰撞轨迹规划松弛为凸优化问题，松弛通常极紧，简单后处理即可得近全局最优轨迹。",
         "c": "",
-        "cit": 195
+        "cit": 164
       },
       {
-        "t": "Automatic Prompt Optimization with “Gradient Descent” and Beam Search",
-        "u": "https://doi.org/10.18653/v1/2023.emnlp-main.494",
+        "t": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+        "u": "https://arxiv.org/abs/2201.07207",
+        "r": 8,
+        "g": 7,
+        "s": "该文探索用预训练大语言模型零样本地将高层自然语言任务分解为可执行的中层计划，并提出在已有示范条件下将计划语义翻译为环境可接受动作的方法，在VirtualHome中显著提升可执行率。",
+        "c": "",
+        "cit": 161
+      },
+      {
+        "t": "CogAgent: A Visual Language Model for GUI Agents",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.01354",
         "r": 7,
-        "g": 7,
-        "s": "ProTeGi用文本“梯度”自动优化提示：以小批量数据生成自然语言批评作为梯度，按语义反方向编辑提示，并以束搜索和bandit选择提效，在三个NLP任务与越狱检测上最多提升31%。",
-        "c": "",
-        "cit": 174
+        "g": 8,
+        "s": "CogAgent是180亿参数的视觉语言模型，采用低、高分辨率双图像编码器支持1120×1120输入，专长GUI理解与导航，在9个文本富集及通用VQA基准和Mind2Web、AITW等GUI导航任务上达到SOTA。",
+        "c": "https://github.com/THUDM/CogVLM",
+        "cit": 160
       },
       {
-        "t": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
-        "u": "https://arxiv.org/abs/2204.00598",
-        "r": 8,
+        "t": "A Review on Viewpoints and Path Planning for UAV-Based 3-D Reconstruction",
+        "u": "https://doi.org/10.1109/jstars.2023.3276427",
+        "r": 9,
         "g": 7,
-        "s": "提出苏格拉底模型框架，让VLM、LLM等异构预训练基础模型通过多模态提示的语言交换零样本组合，无需微调即可获得新多模态能力，并在图像描述、视频检索、第一视角问答、辅助对话与机器人感知规划上验证。",
+        "s": "本文是一篇综述，系统梳理单无人机室外大尺度三维重建中的视角选择与路径规划方法，覆盖免模型与基于模型两大类算法，基于200余篇文献分析各方法创新、局限与评估策略，并总结挑战与未来方向。",
         "c": "",
-        "cit": 173
+        "cit": 159
       },
       {
-        "t": "The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision)",
-        "u": "https://arxiv.org/abs/2309.17421",
-        "r": 8,
-        "g": 5,
-        "s": "微软团队对GPT-4V的系统性定性探索报告，通过跨领域精心设计的样本考察其处理任意交织多模态输入、视觉指代提示等能力与工作模式，论证其作为多模态通用系统的潜力，并展望应用场景与研究方向。",
+        "t": "GLaMM: Pixel Grounding Large Multimodal Model",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.01236",
+        "r": 7,
+        "g": 8,
+        "s": "GLaMM是首个将自然语言回答与像素级分割掩码交织生成的大多模态模型，支持文本与感兴趣区域视觉提示，并提出GCG新任务、评测协议及含810M掩码区域的GranD大规模接地数据集。",
         "c": "",
-        "cit": 172
+        "cit": 157
       }
     ]
   }
