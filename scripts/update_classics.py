@@ -20,7 +20,7 @@ def threshold(year):return CC.get("base_citations",40)*max(1,YEAR-year)
 def search():
     out={}
     for q in CC.get("queries",[]):
-        hits=oa_get(f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}")
+        hits=oa_get(f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}",per_page=100)
         over=0
         for w in hits:
             y=w.get("publication_year") or 0
