@@ -31,16 +31,24 @@ def fetch(url,tries=3):
             time.sleep(6*(i+1))
 
 def fetch_arxiv():
-    out=[]
+    out=[];total=0;errs=0
     for query in CFG["queries"]:
         url="https://export.arxiv.org/api/query?"+urlencode({"search_query":query,"start":0,"max_results":30,"sortBy":"submittedDate","sortOrder":"descending"})
-        try:feed=feedparser.parse(fetch(url).content)
-        except requests.RequestException as e:print("arXiv query failed:",type(e).__name__);time.sleep(3);continue
+        try:
+            r=fetch(url)
+            if r.status_code!=200:
+                print(f"arXiv HTTP {r.status_code} on: {query[:70]}");errs+=1;time.sleep(3);continue
+            feed=feedparser.parse(r.content)
+        except requests.RequestException as e:
+            print("arXiv query failed:",type(e).__name__);errs+=1;time.sleep(3);continue
+        total+=len(feed.entries)
         for e in feed.entries:
             aid=e.id.rsplit("/",1)[-1].split("v")[0]
             cats=[x.term for x in getattr(e,"tags",[])]
             out.append({"id":paper_id(e.title,aid),"arxiv_id":aid,"title":clean(e.title),"authors":[a.name for a in e.authors],"abstract":clean(e.summary),"published":e.published[:10],"source":"arXiv","venue":"预印本","url":f"https://arxiv.org/abs/{aid}","pdf_url":f"https://arxiv.org/pdf/{aid}","code_url":"","categories":cats})
         time.sleep(3)
+    print(f"arXiv: {total} entries from {len(CFG['queries'])} queries, {errs} errors")
+    if total==0:print("WARNING: arXiv returned zero entries overall — endpoint blocked or down?")
     return out
 
 def enrich_s2(p):
