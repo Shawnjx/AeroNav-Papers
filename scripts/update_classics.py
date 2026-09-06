@@ -6,9 +6,7 @@ import json, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
-
-from update_papers import CFG, DATA, UA, clean, classify, code_signal, evidence, llm_review, norm_title, venue_verified
+from update_papers import CFG, DATA, UA, clean, classify, code_signal, evidence, llm_review, norm_title, venue_verified, oa_get, abstract_from_inv
 from briefing import write_briefing
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,22 +14,6 @@ CLASSICS=ROOT/"data/classics.json"
 CC=CFG.get("classic",{})
 NOW=datetime.now(timezone.utc);YEAR=NOW.year
 MAXAGE=CC.get("max_age",5)
-
-def oa_get(fltr,tries=3):
-    for i in range(tries):
-        try:
-            r=requests.get("https://api.openalex.org/works",params={"filter":fltr,"sort":"cited_by_count:desc","per-page":50,"select":"display_name,publication_year,cited_by_count,ids,authorships,primary_location,best_oa_location,abstract_inverted_index","mailto":"23427669+Shawnjx@users.noreply.github.com"},headers=UA,timeout=30)
-            if r.status_code==200:return r.json().get("results") or []
-            if r.status_code==429:time.sleep(6*(i+1));continue
-            print(f"OpenAlex status {r.status_code}");return []
-        except requests.RequestException as e:
-            if i==tries-1:print("OpenAlex failed:",type(e).__name__);return []
-            time.sleep(6*(i+1))
-    return []
-
-def abstract_from_inv(inv):
-    pos={i:w for w,idxs in (inv or {}).items() for i in idxs}
-    return clean(" ".join(pos[i] for i in sorted(pos)))
 
 def threshold(year):return CC.get("base_citations",40)*max(1,YEAR-year)
 

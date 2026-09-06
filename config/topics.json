@@ -41,6 +41,21 @@
     "cat:cs.RO AND all:(SLAM OR odometry OR state estimation) AND all:(UAV OR aerial OR drone)",
     "cat:cs.RO AND all:(trajectory planning OR motion planning) AND all:(UAV OR aerial OR drone)"
   ],
+  "fallback_queries": [
+    "UAV target search",
+    "aerial vision language navigation",
+    "object goal navigation",
+    "vision-language navigation",
+    "spatial reasoning embodied",
+    "world model navigation",
+    "multimodal large language model embodied",
+    "LLM task planning agent",
+    "embodied benchmark",
+    "sim to real robot",
+    "active perception exploration",
+    "UAV SLAM odometry"
+  ],
+  "fallback_lookback_days": 4,
   "keywords": {
     "UAV 目标搜索": ["uav", "aerial", "drone", "target search", "active search", "search and rescue"],
     "空域 VLN": ["aerial", "drone", "uav", "instruction", "vision language navigation"],

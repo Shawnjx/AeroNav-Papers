@@ -30,6 +30,22 @@ def fetch(url,tries=3):
             if i==tries-1:raise
             time.sleep(6*(i+1))
 
+def oa_get(fltr,sort="cited_by_count:desc",per_page=50,tries=3):
+    for i in range(tries):
+        try:
+            r=requests.get("https://api.openalex.org/works",params={"filter":fltr,"sort":sort,"per-page":per_page,"select":"display_name,publication_date,publication_year,cited_by_count,ids,authorships,primary_location,best_oa_location,abstract_inverted_index","mailto":CFG.get("oa_email","23427669+Shawnjx@users.noreply.github.com")},headers=UA,timeout=30)
+            if r.status_code==200:return r.json().get("results") or []
+            if r.status_code==429:time.sleep(6*(i+1));continue
+            print(f"OpenAlex status {r.status_code}");return []
+        except requests.RequestException as e:
+            if i==tries-1:print("OpenAlex failed:",type(e).__name__);return []
+            time.sleep(6*(i+1))
+    return []
+
+def abstract_from_inv(inv):
+    pos={i:w for w,idxs in (inv or {}).items() for i in idxs}
+    return clean(" ".join(pos[i] for i in sorted(pos)))
+
 def fetch_arxiv():
     out=[];total=0;errs=0
     for query in CFG["queries"]:
@@ -48,8 +64,33 @@ def fetch_arxiv():
             out.append({"id":paper_id(e.title,aid),"arxiv_id":aid,"title":clean(e.title),"authors":[a.name for a in e.authors],"abstract":clean(e.summary),"published":e.published[:10],"source":"arXiv","venue":"预印本","url":f"https://arxiv.org/abs/{aid}","pdf_url":f"https://arxiv.org/pdf/{aid}","code_url":"","categories":cats})
         time.sleep(3)
     print(f"arXiv: {total} entries from {len(CFG['queries'])} queries, {errs} errors")
-    if total==0:print("WARNING: arXiv returned zero entries overall — endpoint blocked or down?")
+    if total==0:
+        print("WARNING: arXiv returned zero entries overall — falling back to OpenAlex discovery")
+        return fetch_openalex_recent()
     return out
+
+def fetch_openalex_recent():
+    """Fallback when the arXiv API blocks the runner IP (HTTP 429): OpenAlex
+    mirrors arXiv metadata (~1 day lag) and does not block Actions runners."""
+    since=(datetime.now(timezone.utc)-timedelta(days=CFG.get("fallback_lookback_days",4))).date().isoformat()
+    today=datetime.now(timezone.utc).date().isoformat()
+    out={}
+    for q in CFG.get("fallback_queries",[]):
+        hits=oa_get(f"from_publication_date:{since},title_and_abstract.search:{q}",sort="publication_date:desc")
+        kept=0
+        for w in hits:
+            urls=" ".join(filter(None,[((w.get("best_oa_location") or {}).get("landing_page_url") or ""),((w.get("best_oa_location") or {}).get("pdf_url") or ""),(((w.get("primary_location") or {}) or {}).get("landing_page_url") or "")]))
+            m=re.search(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})",urls)
+            aid=m.group(1) if m else ""
+            if not aid:continue
+            abstract=abstract_from_inv(w.get("abstract_inverted_index"))
+            if not abstract:continue
+            out[f"https://arxiv.org/abs/{aid}"]={"id":paper_id(w.get("display_name") or "",aid),"arxiv_id":aid,"title":clean(w["display_name"]),"authors":[clean(a.get("author",{}).get("display_name") or "") for a in (w.get("authorships") or [])[:12]],"abstract":abstract,"published":(w.get("publication_date") or today)[:10],"source":"arXiv","venue":"预印本","url":f"https://arxiv.org/abs/{aid}","pdf_url":f"https://arxiv.org/pdf/{aid}","code_url":"","categories":[]}
+            kept+=1
+        print(f"OA-fallback '{q}': {len(hits)} hits, {kept} arXiv preprints kept")
+        time.sleep(1)
+    print(f"OpenAlex fallback: {len(out)} unique candidates since {since}")
+    return list(out.values())
 
 def enrich_s2(p):
     key=os.getenv("S2_API_KEY",""); headers={**UA,**({"x-api-key":key} if key else {})}
