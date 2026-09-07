@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T05:31:40.155184+00:00",
+  "updated_at": "2026-09-07T20:29:49.884349+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -108,6 +108,46 @@
         "mllm",
         "multimodal large language model",
         "r2r"
+      ]
+    },
+    {
+      "id": "2609.04602",
+      "arxiv_id": "2609.04602",
+      "title": "NavArena: Automated Construction of Goal-Oriented Navigation Benchmarks from 3D Gaussian Splatting Reconstructions",
+      "authors": [
+        "Junhui Wang",
+        "Wei Yang",
+        "Xinyao Li",
+        "Ningjing Fan",
+        "Yuehao Yin",
+        "Xuecheng Chen",
+        "Chao Gao"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.04602",
+      "pdf_url": "https://arxiv.org/pdf/2609.04602",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "NavArena将固定3DGS重建自动转为目标导向导航基准：冻结3DGS渲染RGB-D，由高斯密度与高度统计生成占据代价图，从开放词汇掩码提取语义目标，在2000余场景产出2220万条专家轨迹并支持闭环评测。",
+      "change_zh": "常见ObjectNav基准依赖固定扫描网格和人工目标标注；NavArena直接从原始3DGS导出可通行性与语义目标，把海量现成重建资产自动变成千万级专家轨迹的闭环导航评测，无需网格重建或人工标注。",
+      "why_it_matters": "对ObjectNav线是直接的基础设施价值：2220万条专家轨迹可支撑模仿与强化学习训练，开放词汇目标与闭环协议便于系统诊断；把真实3DGS重建接入导航评测，也为大场景UAV目标搜索基准提供范式。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "benchmark",
+        "evaluation"
       ]
     },
     {
@@ -1397,6 +1437,90 @@
       ]
     },
     {
+      "id": "2609.04802",
+      "arxiv_id": "2609.04802",
+      "title": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+      "authors": [
+        "Tianyidan Xie",
+        "Shenyi Wang",
+        "Qiang Tang",
+        "Mingjie Wang",
+        "Zhicheng Qiu",
+        "Xuanfu Li",
+        "Zhan Xu",
+        "Jian Yang",
+        "Lanjun Wang",
+        "Zili Yi"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.04802",
+      "pdf_url": "https://arxiv.org/pdf/2609.04802",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出语言轨迹编码LTE，把动态物体运动历史压缩为语言描述加稀疏空间与视觉锚点的混合表示，支持长时程自然语言查询，并构建基于EgoLife的SMB基准，检索性能显著超越VLM与结构化记忆基线。",
+      "change_zh": "常见路线要么用视频-语言嵌入丢失细粒度运动，要么用SLAM存原始坐标，或围绕即时任务组织工作记忆；本文改为给每个物体建立语言可查询的状态转移时间线，按运动复杂度自适应压缩，兼顾语义检索与几何精度。",
+      "why_it_matters": "长时程空间记忆是UAV搜救与ObjectNav目标重访、动态目标跟踪的基础能力。LTE的语言可查询物体时间线支持自然语言检索历史目标状态，其8.7-26.1倍压缩与亚秒查询延迟使多小时视频记忆有望用于机载资源受限的长时任务。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "slam",
+        "spatial memory",
+        "vlm",
+        "waypoint"
+      ]
+    },
+    {
+      "id": "2609.04607",
+      "arxiv_id": "2609.04607",
+      "title": "Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study",
+      "authors": [
+        "Chad R. Samuelson",
+        "Gabriel R. Slade",
+        "Joshua G. Mangelson"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.04607",
+      "pdf_url": "https://arxiv.org/pdf/2609.04607",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文以Terra 3DSG为案例，在五个户外机器人数据集上系统评测开放集3D场景图的语义点嵌入、基于图的对象检索导航、区域理解与内存占用，发现约70%检索成功率、嵌入多模离群与区域理解仍是瓶颈。",
+      "change_zh": "多数3DSG研究聚焦提出新表示并在室内或受限场景验证，本文转为真实户外部署的系统诊断：跨五数据集剖析各组件，并新提出重复穿越下语义与结构一致性的量化指标，把研究重点从构建表示转向失效模式分析。",
+      "why_it_matters": "3D场景图是UAV目标搜索与ObjectNav可共用的分层空间记忆，本文实证其户外对象检索可行（约70%成功）但受通行性缺失与路径次优拖累，为空中搜索的图导航、开放词汇目标检索与可通行性建模指明了改进方向。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "3d scene",
+        "deployment",
+        "vlm"
+      ]
+    },
+    {
       "id": "2609.03565",
       "arxiv_id": "2609.03565",
       "title": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
@@ -1641,6 +1765,89 @@
       ]
     },
     {
+      "id": "2609.04911",
+      "arxiv_id": "2609.04911",
+      "title": "TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image",
+      "authors": [
+        "Xin Zhang",
+        "Yabo Chen",
+        "Zixuan Duan",
+        "Haibin Huang",
+        "Chi Zhang",
+        "Feng Xu",
+        "Xuelong Li"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.04911",
+      "pdf_url": "https://arxiv.org/pdf/2609.04911",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TourPhysics从单幅图像与物理配置出发，融合确定性物理仿真与视频生成，分工管理仿真状态、几何与外观记忆，实现持久探索与操作，在相机漫游与物体操作上优于基线并缓解长时漂移。",
+      "change_zh": "常见视频世界模型依赖外观先验、长时程易漂移；该工作改为先由仿真器计算有限物理与相机轨迹再生成观测，把仿真几何、生成器条件与外观记忆解耦，并用参考锚定记忆经几何跨视角对应做有界残差注入，无有效对应时回退原生路径。",
+      "why_it_matters": "为探索与导航提供带持久物理状态的生成式环境：单图初始化即可生成几何一致、可回访不漂移的漫游序列，有望作为UAV主动目标搜索与ObjectNav的可交互模拟器和策略训练评测底座，弥补纯外观先验世界模型空间一致性不足。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "geometry",
+        "world model"
+      ]
+    },
+    {
+      "id": "2609.05224",
+      "arxiv_id": "2609.05224",
+      "title": "First Things First: Teaching LLM-Based Agents to Prioritize Must-Haves before Nice-to-Haves",
+      "authors": [
+        "Tianjie Ju",
+        "Xinyue Xu",
+        "Wanxuan Sun",
+        "Lingxiao Diao",
+        "Gongshen Liu",
+        "Zhuosheng Zhang",
+        "Cheng Yang"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.05224",
+      "pdf_url": "https://arxiv.org/pdf/2609.05224",
+      "code_url": "https://github.com/claire62/FTF-RL",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对用户复杂结构化需求，本文构建3649道必选/可选优先级题目，发现MLLM智能体常误解并违反必选约束，提出FTF-RL强化学习优化多优先级需求推理，显著提升成功率并泛化至逻辑数学基准。",
+      "change_zh": "常见路线多靠提示工程或仅对最终答案做RL，把任务当普通图文问答；本文显式建模需求优先级结构（必选唯一解、偏好排序、无解拒答三场景），并用强化学习直接优化多优先级需求遵循，附开源数据与代码。",
+      "why_it_matters": "作为MLLM智能体新训练方法，FTF-RL提升含硬约束与软偏好指令的遵循及无解拒答能力；这种需求感知推理是UAV搜索与ObjectNav中'必须命中目标、尽量满足偏好'式指令执行的基础，其RL范式对具身智能体训练有借鉴价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "evaluation",
+        "llm agent",
+        "mllm",
+        "multimodal large language model"
+      ]
+    },
+    {
       "id": "2609.00923",
       "arxiv_id": "2609.00923",
       "title": "On-the-Fly3R: Towards Robust Online 3D Reconstruction with Feed-Forward 3R Models for Large-Scale UAV Scenarios",
@@ -1838,6 +2045,137 @@
         "aerial",
         "drone",
         "odometry"
+      ]
+    },
+    {
+      "id": "2609.05325",
+      "arxiv_id": "2609.05325",
+      "title": "FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement",
+      "authors": [
+        "Kun Hu",
+        "Menggang Li",
+        "Kaidi Wu",
+        "Zhiwen Jin",
+        "Yingjie Zhao",
+        "Chaoquan Tang",
+        "Eryi Hu",
+        "Gongbo Zhou"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.05325",
+      "pdf_url": "https://arxiv.org/pdf/2609.05325",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出FIRE-LIVWO，基于IESKF紧耦合融合4D毫米波雷达、LiDAR、视觉与轮式里程计，通过在线可观测性分析检测退化并自适应切换融合模式，在烟雾与几何退化场景实现鲁棒定位。",
+      "change_zh": "相比常规LIO/VIO的多传感器堆叠，本文以几何与视觉可观测性在线量化为核心，显式检测模态失效边界并动态切换融合权重；烟雾中靠毫米波雷达穿透与逐点多普勒约束保可观性，退化走廊用轮速NHC抑制漂移。",
+      "why_it_matters": "状态估计是UAV与地面机器人自主的底座。在烟雾、粉尘、长廊退化等极端环境保持里程计可观与稳定，对矿井/隧道搜救类UAV目标搜索及退化场景下ObjectNav的可靠运行有直接支撑，且开源利于社区复用。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "localization",
+        "odometry",
+        "slam"
+      ]
+    },
+    {
+      "id": "2609.05416",
+      "arxiv_id": "2609.05416",
+      "title": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+      "authors": [
+        "Muyao Niu",
+        "Jixuan He",
+        "Ruihan Yu",
+        "Lian Fu",
+        "Yonghao Yu",
+        "Zheng-Hui Huang",
+        "Yifan Zhan",
+        "Fengbo Lan",
+        "Yongtao Ge",
+        "Yinqiang Zheng",
+        "Kaipeng Zhang",
+        "Zhixiang Wang"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.05416",
+      "pdf_url": "https://arxiv.org/pdf/2609.05416",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "WorldSculpt提出从多视角对齐视频生成组合式3D场景：将单物体生成先验Pixal3D扩展多视角条件通路，仅在规范空间用单物体数据微调，即可泛化到数百物体、重度遮挡场景，并发布带真值网格的UE-MeshyScene基准。",
+      "change_zh": "常见几何重建把场景当作单一表示，遮挡区域几何残缺；已有组合式生成方法仅适用简单场景。本文改为把强单物体3D生成先验经多视角条件适配到整体观测，无需场景级训练即可组合式分解数百个物体，还能把3DGS世界转为网格场景。",
+      "why_it_matters": "为空间智能线提供物体级组合式场景表示的可扩展生成范式：逐物体网格与真值场景可用于构建仿真环境，服务UAV目标搜索与ObjectNav的训练评测；以物体为中心的分解也利于开放词汇目标理解与场景记忆，但与导航决策本身尚无直接耦合。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry"
+      ]
+    },
+    {
+      "id": "2609.05114",
+      "arxiv_id": "2609.05114",
+      "title": "VoxelFix: Post-Hoc Semantic Correction of Completed 3D Voxel Maps",
+      "authors": [
+        "Sunesh Praveen Raja Sundarasami",
+        "Taehyoung Kim",
+        "Johannes Scherer",
+        "Tomaž Cotič",
+        "Sivasubiramaniam Subbiah",
+        "Andreas Greiner",
+        "Paul Spannaus",
+        "Sebastian Houben"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.05114",
+      "pdf_url": "https://arxiv.org/pdf/2609.05114",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/4eb067a8838be0e653c48c2ee620f5fc371436c8",
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出VoxelFix，在几何与占据固定的已完成3D体素图上做事后语义修正：用图模型依据局部几何与邻域语义纠正体素标签，在OccuFly航拍地图上跨四种分割模型将mIoU稳定提升4.23–5.00个百分点，并在分布外场景显示迁移能力。",
+      "change_zh": "既有语义图修正路线要么依赖原始观测、要么把占据纳入预测问题、要么对完成图做非学习局部正则；该工作改为在几何与占据完全固定的完成图上直接做可学习的图式标签修正，并按上游类别混淆对标注图制造连续损坏区域来合成训练对，摆脱对原始感知数据的依赖。",
+      "why_it_matters": "可靠语义3D地图是无人机搜救、侦察与航拍自主的底层支撑，也是ObjectNav场景理解的基础；事后修正可即插即用于现役建图管线，低成本修复感知误差并提升地图可靠性，间接增强UAV目标搜索与下游导航任务对建图噪声的鲁棒性，对空间智能与重建技术线有直接价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "geometry"
       ]
     },
     {
@@ -2304,6 +2642,44 @@
         "aerial",
         "benchmark",
         "uav"
+      ]
+    },
+    {
+      "id": "2609.04894",
+      "arxiv_id": "2609.04894",
+      "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+      "authors": [
+        "Linsen Zhu",
+        "Mengqing Cai"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.04894",
+      "pdf_url": "https://arxiv.org/pdf/2609.04894",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文为截至2026年8月的批判性综述，按授权委派、时间持久性与环境耦合梳理LLM智能体在数字、社会、虚拟与物理环境的进展与局限，提出'经证成的授权委派'启发式及后续研究议程。",
+      "change_zh": "不同于常见能力清单式综述，它拒绝'迈向自主'单线叙事，把模型、执行框架与环境解耦，沿授权、持久性、环境耦合三轴重组证据，主张仅在权限有界、可检测、可安全恢复且人类可控时扩展智能体行动范围。",
+      "why_it_matters": "对多模态智能体、规划智能体、世界模型与具身评测线提供跨环境证据梳理与评测议程；其有界授权与分阶段物理验证思想可启示UAV目标搜索与ObjectNav中LLM智能体的安全部署与失效恢复，但不提供直接的导航方法。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "world model"
       ]
     },
     {
@@ -2818,72 +3194,80 @@
     }
   ],
   "briefing": {
-    "text": "本批工作有两条主线：一是免训练路线，用3D场景图、共享鸟瞰图等显式结构武装冻结的MLLM/VLM；二是闭环路线，靠世界模型与宏动作强化学习解决长时程控制。首推Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps：首个免训练空地协同VLN基线，共享鸟瞰图让无人机与地面车完成感知-规划分工；GraFT以紧凑3D场景图为冻结MLLM补足几何结构，在VSI-Bench上超过微调空间模型；Revisiting Topological Graphs把VLN-CE重构为拓扑图上的宏动作MDP，以图PPO闭环刷新R2R-CE/RxR-CE。趋势观察：结构化3D先验叠加冻结大模型，正成为具身导航绕开大规模微调的默认配方。",
-    "added": 8,
-    "at": "2026-09-04T05:32:23.762131+00:00",
+    "text": "本批工作主线是具身智能的世界建模与空间记忆。首推NavArena：把冻结的3DGS重建自动转成导航基准，产出2220万条专家轨迹并支持闭环评测，直击训练数据瓶颈；TourPhysics用确定性物理仿真管状态、视频生成管外观，从单图实现持久探索与操作并抑制长时漂移；Linguistic Trajectory Encoding把物体运动史压缩为语言加稀疏锚点，支撑长时程空间查询。3DGS重建正从可视化资产变为导航训练与评测的基础设施。",
+    "added": 9,
+    "at": "2026-09-07T20:30:44.911792+00:00",
     "new": [
       {
-        "t": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
-        "u": "https://arxiv.org/abs/2609.03892",
-        "r": 9,
-        "g": 7,
-        "s": "GraFT是免训练框架，用紧凑3D场景图为冻结MLLM补足3D结构：符号几何工具、BEV布局渲染与自我中心帧锚定，在ScanQA与VSI-Bench上超越同骨干基线及微调空间模型。",
-        "c": ""
-      },
-      {
-        "t": "Revisiting Topological Graphs for Macro Action based Closed-loop Reinforcement Learning of Vision Language Navigation in Continuous Environment",
-        "u": "https://arxiv.org/abs/2609.03906",
-        "r": 9,
-        "g": 7,
-        "s": "该论文将VLN-CE重构为分层MDP，以拓扑图前沿节点为宏动作空间，低层用免训练控制器充当状态转移，并以动作感知价值头驱动图PPO实现闭环强化学习，在R2R-CE与RxR-CE上取得SOTA。",
-        "c": ""
-      },
-      {
-        "t": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
-        "u": "https://arxiv.org/abs/2609.03483",
-        "r": 10,
-        "g": 7,
-        "s": "提出首个免训练空地协同VLN基线AGC-VLN：无人机在俯视图上渲染地面车位姿与目标标记生成共享鸟瞰图，地面车据此用冻结VLM规划执行，无人机用3D-SPF搜索目标，CARLA-Air上联合成功率77.0%。",
-        "c": "https://github.com/ZSN2024/AGC-VLN"
-      },
-      {
-        "t": "SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving",
-        "u": "https://arxiv.org/abs/2609.03602",
-        "r": 6,
-        "g": 7,
-        "s": "SV-WAM提出环绕视角世界-动作模型，将未来视频预测作为训练期稠密监督而非推理输出，用动作中心因果掩码使部署时丢弃视频分支，实现高效低延迟的端到端自动驾驶规划。",
-        "c": ""
-      },
-      {
-        "t": "FailBench: How Reliable are VLMs at Judging Robot Task Success?",
-        "u": "https://arxiv.org/abs/2609.03611",
-        "r": 6,
-        "g": 8,
-        "s": "FailBench汇集14个数据源的2197次机器人操作尝试，系统评测13个VLM失败检测器，最优仅0.77平衡准确率，微调模型反逊于通用VLM，且在模糊证据下系统性偏向判成功。",
-        "c": ""
-      },
-      {
-        "t": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
-        "u": "https://arxiv.org/abs/2609.03565",
+        "t": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+        "u": "https://arxiv.org/abs/2609.04802",
         "r": 8,
         "g": 7,
-        "s": "本文提出端到端JEPA世界模型，在潜空间预测基础上加入逆动力学与状态对齐，使潜表征保留控制相关信息，在四个规划基准上取得领先成功率。",
+        "s": "提出语言轨迹编码LTE，把动态物体运动历史压缩为语言描述加稀疏空间与视觉锚点的混合表示，支持长时程自然语言查询，并构建基于EgoLife的SMB基准，检索性能显著超越VLM与结构化记忆基线。",
         "c": ""
       },
       {
-        "t": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
-        "u": "https://arxiv.org/abs/2609.04196",
+        "t": "TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image",
+        "u": "https://arxiv.org/abs/2609.04911",
         "r": 8,
-        "g": 7,
-        "s": "Puffin-World提出统一多模态架构，原生联合建模物理（重力场）、几何（深度）与外观三种3D世界状态，采用统一Omni-Camera表示，在单一生成过程中同步合成未来视角并重建几何，支持闭环探索应用，并构建1600万级数据集且开源代码与模型。",
-        "c": ""
-      },
-      {
-        "t": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
-        "u": "https://arxiv.org/abs/2609.03941",
-        "r": 6,
         "g": 6,
-        "s": "针对RL后训练中rollout生成成本高的瓶颈，提出GRPO组级重放控制原语：Headroom按剩余学习价值排序、Drift按与当前策略兼容性门控，不改在线流即可超越朴素重放，并在Agentic Search上以更低耗时取得相当质量。",
+        "s": "TourPhysics从单幅图像与物理配置出发，融合确定性物理仿真与视频生成，分工管理仿真状态、几何与外观记忆，实现持久探索与操作，在相机漫游与物体操作上优于基线并缓解长时漂移。",
+        "c": ""
+      },
+      {
+        "t": "Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study",
+        "u": "https://arxiv.org/abs/2609.04607",
+        "r": 8,
+        "g": 7,
+        "s": "本文以Terra 3DSG为案例，在五个户外机器人数据集上系统评测开放集3D场景图的语义点嵌入、基于图的对象检索导航、区域理解与内存占用，发现约70%检索成功率、嵌入多模离群与区域理解仍是瓶颈。",
+        "c": ""
+      },
+      {
+        "t": "First Things First: Teaching LLM-Based Agents to Prioritize Must-Haves before Nice-to-Haves",
+        "u": "https://arxiv.org/abs/2609.05224",
+        "r": 7,
+        "g": 7,
+        "s": "针对用户复杂结构化需求，本文构建3649道必选/可选优先级题目，发现MLLM智能体常误解并违反必选约束，提出FTF-RL强化学习优化多优先级需求推理，显著提升成功率并泛化至逻辑数学基准。",
+        "c": "https://github.com/claire62/FTF-RL"
+      },
+      {
+        "t": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+        "u": "https://arxiv.org/abs/2609.04894",
+        "r": 7,
+        "g": 6,
+        "s": "该文为截至2026年8月的批判性综述，按授权委派、时间持久性与环境耦合梳理LLM智能体在数字、社会、虚拟与物理环境的进展与局限，提出'经证成的授权委派'启发式及后续研究议程。",
+        "c": ""
+      },
+      {
+        "t": "FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement",
+        "u": "https://arxiv.org/abs/2609.05325",
+        "r": 7,
+        "g": 7,
+        "s": "提出FIRE-LIVWO，基于IESKF紧耦合融合4D毫米波雷达、LiDAR、视觉与轮式里程计，通过在线可观测性分析检测退化并自适应切换融合模式，在烟雾与几何退化场景实现鲁棒定位。",
+        "c": ""
+      },
+      {
+        "t": "NavArena: Automated Construction of Goal-Oriented Navigation Benchmarks from 3D Gaussian Splatting Reconstructions",
+        "u": "https://arxiv.org/abs/2609.04602",
+        "r": 10,
+        "g": 8,
+        "s": "NavArena将固定3DGS重建自动转为目标导向导航基准：冻结3DGS渲染RGB-D，由高斯密度与高度统计生成占据代价图，从开放词汇掩码提取语义目标，在2000余场景产出2220万条专家轨迹并支持闭环评测。",
+        "c": ""
+      },
+      {
+        "t": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+        "u": "https://arxiv.org/abs/2609.05416",
+        "r": 7,
+        "g": 7,
+        "s": "WorldSculpt提出从多视角对齐视频生成组合式3D场景：将单物体生成先验Pixal3D扩展多视角条件通路，仅在规范空间用单物体数据微调，即可泛化到数百物体、重度遮挡场景，并发布带真值网格的UE-MeshyScene基准。",
+        "c": ""
+      },
+      {
+        "t": "VoxelFix: Post-Hoc Semantic Correction of Completed 3D Voxel Maps",
+        "u": "https://arxiv.org/abs/2609.05114",
+        "r": 7,
+        "g": 7,
+        "s": "提出VoxelFix，在几何与占据固定的已完成3D体素图上做事后语义修正：用图模型依据局部几何与邻域语义纠正体素标签，在OccuFly航拍地图上跨四种分割模型将mIoU稳定提升4.23–5.00个百分点，并在分布外场景显示迁移能力。",
         "c": ""
       }
     ]

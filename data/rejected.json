@@ -478,5 +478,53 @@
     "reason": "属机械臂操作的VLA策略后训练，世界模型仅服务于操作精调，无导航决策成分，落入明确拒绝的VLA操作范围。",
     "rejected_at": "2026-09-04",
     "url": "https://arxiv.org/abs/2609.03681"
+  },
+  "2609.05314": {
+    "title": "Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "LLM在楼宇HVAC/建筑能源系统的垂直应用综述，不涉及空间、导航或机器人自主，属范围外的垂直领域套用。",
+    "rejected_at": "2026-09-07",
+    "url": "https://arxiv.org/abs/2609.05314"
+  },
+  "2609.05161": {
+    "title": "APEX-RBD: Mixed-Precision Exploration Framework for Hardware-Efficient Robot Dynamics Accelerator Design",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "核心贡献是面向机器人刚体动力学的混合精度加速器硬件设计自动化（EDA/芯片设计范畴），不涉及导航决策、空间智能或机器人自主算法本身，仅以机器人动力学计算为应用对象，属术语擦边。",
+    "rejected_at": "2026-09-07",
+    "url": "https://arxiv.org/abs/2609.05161"
+  },
+  "2609.04523": {
+    "title": "MaxKernel: Agentic Kernel Generation for TPUs",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "LLM多智能体用于TPU内核/编译器优化，属系统与硬件加速的垂直应用，与空间智能、导航、机器人自主均无关，属范围外的模型套用类工作。",
+    "rejected_at": "2026-09-07",
+    "url": "https://arxiv.org/abs/2609.04523"
+  },
+  "2609.05397": {
+    "title": "CrossDepth: Geometry-Constrained Attention for Generalizable Multi-View Surround Depth Estimation",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属自动驾驶环视多相机自监督深度估计的被动3D感知工作，无导航决策、具身智能体或机器人自主核心系统成分，仅与空间智能技术线边缘相关。",
+    "rejected_at": "2026-09-07",
+    "url": "https://arxiv.org/abs/2609.05397"
+  },
+  "2609.04913": {
+    "title": "ARIA - An Agentic Framework for Autonomous Testing of Infotainment Systems",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "将多智能体LLM套用于车载信息娱乐GUI自动测试这一垂直应用，与空间、导航、机器人自主无关，属范围外的软件QA应用。",
+    "rejected_at": "2026-09-07",
+    "url": "https://arxiv.org/abs/2609.04913"
+  },
+  "2609.04381": {
+    "title": "Where Appearance Fails, Geometry Recognizes: A CAD-Free 3D Shape Prior That Complements Vision Foundation Models",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "研究对象是无标注条件下的物体识别（3D形状先验与冻结基础模型特征融合），不涉及导航决策、主动感知规划或空间记忆，仅与3D理解边缘相关。",
+    "rejected_at": "2026-09-07",
+    "url": "https://arxiv.org/abs/2609.04381"
   }
 }
