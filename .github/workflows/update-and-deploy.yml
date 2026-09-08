@@ -2,6 +2,7 @@ name: Update papers and deploy
 
 on:
   schedule:
+    - cron: "40 1 * * *" # Beijing 09:40 — catches the ~08:00 arXiv announcement same morning
     - cron: "0 17 * * *"
     - cron: "0 19 * * *"
   workflow_dispatch:
@@ -50,7 +51,7 @@ jobs:
           EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: python scripts/notify_serverchan.py daily
       - name: Top up classics on a thin day
-        if: github.event_name == 'schedule' && github.event.schedule == '0 17 * * *'
+        if: github.event_name == 'schedule' && github.event.schedule == '40 1 * * *'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
