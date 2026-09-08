@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:05:05.542011+00:00",
+  "updated_at": "2026-09-08T10:03:38.564482+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5447,6 +5447,43 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4393160747",
+      "arxiv_id": "",
+      "title": "ExpeL: LLM Agents Are Experiential Learners",
+      "authors": [
+        "Andrew Zhao",
+        "Daniel Huang",
+        "Quentin Xu",
+        "Matthieu Gaetan Lin",
+        "Yong‐Jin Liu",
+        "Gao Huang"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "citation_count": 117,
+      "url": "https://doi.org/10.1609/aaai.v38i17.29936",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29936/31635",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（Proceedings of the AAAI Conference on Artificial Intelligence），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "ExpeL提出无需参数更新的经验学习智能体：自主从训练任务收集经验并用自然语言提炼知识，推理时检索洞察与经验做决策，性能随经验累积持续提升并具迁移潜力。",
+      "change_zh": "常见路线是任务内试错反思（如Reflexion）或参数微调，ExpeL改为跨任务持久积累经验、以自然语言提炼可复用洞察并在推理时检索，实现不访问模型权重的持续学习与任务间迁移。",
+      "why_it_matters": "其无梯度经验积累范式可直接启发UAV目标搜索与ObjectNav：导航智能体可从历史任务沉淀『何处易发现目标、如何解读指令』类洞察，提升跨场景泛化与样本效率，为长时程具身智能体的记忆机制提供范式。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "llm agent"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
+    },
+    {
       "id": "https://openalex.org/W4401417422",
       "arxiv_id": "",
       "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
@@ -5482,6 +5519,129 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4402727761",
+      "arxiv_id": "",
+      "title": "ULIP-2: Towards Scalable Multimodal Pre-Training for 3D Understanding",
+      "authors": [
+        "Le Xue",
+        "Ning Yu",
+        "Shu Zhang",
+        "Artemis Panagopoulou",
+        "Junnan Li",
+        "Roberto Martín-Martín",
+        "Jia-Jun Wu",
+        "Caiming Xiong",
+        "Ran Xu",
+        "Juan Carlos Niebles",
+        "Silvio Savarese"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 116,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.02558",
+      "pdf_url": "",
+      "code_url": "https://github.com/salesforce/ULIP",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ULIP-2提出三模态预训练框架，利用现成多模态大模型自动为3D形状生成整体语言描述，仅需3D数据输入、无需人工标注即可扩展至大规模数据，在零样本3D分类等下游任务上刷新SOTA。",
+      "change_zh": "相比ULIP、Cap3D等依赖人工收集或众包3D文本描述的三模态对齐路线，ULIP-2用多模态大模型批量自动生成描述，消除了人工标注这一可扩展性瓶颈，并配合扩大backbone规模，实现无人工标注的规模化3D多模态预训练。",
+      "why_it_matters": "该工作属于空间智能技术线的核心进展：可扩展的3D-语言对齐表征为ObjectNav开放词汇目标识别、UAV目标搜索中的开放词汇语义感知以及3D场景理解提供更强的预训练基础模型，是具身导航感知模块可直接复用的基础能力。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
+    },
+    {
+      "id": "2408.06292",
+      "arxiv_id": "2408.06292",
+      "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+      "authors": [
+        "Chris Lu",
+        "Cong Lu",
+        "R. T. Lange",
+        "Jakob Foerster",
+        "Jeff Clune",
+        "David Ha"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 114,
+      "url": "https://arxiv.org/abs/2408.06292",
+      "pdf_url": "https://arxiv.org/pdf/2408.06292",
+      "code_url": "https://github.com/SakanaAI/AI-Scientist",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出首个全自动科学发现框架The AI Scientist，由前沿大模型独立完成想法生成、写代码、跑实验、撰写论文并自动评审，在三个机器学习子领域以每篇不足15美元成本产出完整论文，自动评审接近人类水平。",
+      "change_zh": "相比常见的LLM辅助科研（仅头脑风暴、写代码片段等局部环节），该工作将想法生成、实验执行、论文撰写与自动评审整合为端到端闭环，首次实现全流程无需人类介入，并借助近人类水平的自动审稿人支持开放式迭代改进。",
+      "why_it_matters": "虽不直接涉及机器人或导航，但作为智能体系统标志性进展，其长程自主规划、工具使用、多智能体（审稿人）协同与自我评估范式，对构建可自主执行UAV目标搜索与ObjectNav任务并迭代改进的具身智能体有重要方法论借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
+    },
+    {
+      "id": "2505.09388",
+      "arxiv_id": "2505.09388",
+      "title": "Qwen3 Technical Report",
+      "authors": [
+        "An Yang",
+        "Anfeng Li",
+        "Baosong Yang",
+        "Beichen Zhang",
+        "Binyuan Hui",
+        "Bo Zheng",
+        "B. X. Yu",
+        "Chang Gao",
+        "C. Huang",
+        "Chenxu Lv",
+        "Chujie Zheng",
+        "Dayiheng Liu"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 111,
+      "url": "https://arxiv.org/abs/2505.09388",
+      "pdf_url": "https://arxiv.org/pdf/2505.09388",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Qwen3系列提供0.6B至235B的稠密与MoE大模型，将思考与非思考模式统一为单一框架，支持按任务复杂度分配思考预算，在代码、数学与智能体基准达到SOTA并全面开源。",
+      "change_zh": "相比分开维护对话模型与推理模型的常见路线，Qwen3把两者统一进单一模型并支持思考预算按需分配推理算力；同时用旗舰模型蒸馏降低小模型训练成本，并将多语言覆盖扩至119种。",
+      "why_it_matters": "Qwen3在智能体任务上的能力与Apache 2.0开源权重，使其可作为UAV目标搜索任务规划、VLN指令解析与ObjectNav策略的骨干模型；思考预算机制还为具身场景在延迟与推理深度间的权衡提供实用工具。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
+    },
+    {
       "id": "https://openalex.org/W4396857182",
       "arxiv_id": "",
       "title": "Strategies for Optimized UAV Surveillance in Various Tasks and Scenarios: A Review",
@@ -5515,6 +5675,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4410438635",
+      "arxiv_id": "",
+      "title": "Advances in UAV Path Planning: A Comprehensive Review of Methods, Challenges, and Future Directions",
+      "authors": [
+        "Wenlong Meng",
+        "Xuegang Zhang",
+        "Lvzhuoyu Zhou",
+        "Hangyu Guo",
+        "Xin Hu"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "Drones",
+      "citation_count": 99,
+      "url": "https://doi.org/10.3390/drones9050376",
+      "pdf_url": "https://www.mdpi.com/2504-446X/9/5/376/pdf?version=1747399075",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文综述无人机路径规划方法，涵盖确定性模型、随机采样、仿生算法与集成框架，并讨论静态、动态与三维场景下的性能，及机器学习方法、能耗优化与多机协同等方向。",
+      "change_zh": "作为综述本文不提出新方法，其贡献在于系统整合经典与学习类规划算法的谱系，并把静态/动态/三维场景、能耗与多机任务分配纳入统一讨论框架，属知识梳理而非技术路线创新。",
+      "why_it_matters": "路径规划是UAV主动目标搜索、侦察与接近任务的底层核心能力，综述梳理的采样规划、学习型自适应规划与多机协同分配，可直接支撑搜救搜索中的轨迹生成与集群任务分派，并服务于状态估计与控制线。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "drone",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
       "id": "https://openalex.org/W4390590927",
@@ -5627,6 +5825,40 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4390691205",
+      "arxiv_id": "",
+      "title": "Ad Astra: Simultaneous Tracking and Navigation With Megaconstellation LEO Satellites",
+      "authors": [
+        "Zaher M. Kassas",
+        "Nadim Khairallah",
+        "Sharbel Kozhaya"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Aerospace and Electronic Systems Magazine",
+      "citation_count": 86,
+      "url": "https://doi.org/10.1109/maes.2023.3267440",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "STAN框架利用Orbcomm、Iridium、Starlink低轨卫星下行信号的伪距与多普勒观测量，经紧耦合EKF融合惯导并同时估计卫星与载具状态，将GNSS拒止下载具定位误差从数百米降至数十米。",
+      "change_zh": "常规GNSS拒止导航多依赖视觉、地形匹配或已知星历的合作卫星信号；STAN改用认知接收机从非合作低轨卫星下行信号中提取观测量，并把卫星状态与载具状态放入同一EKF联合估计，无需星历即可用巨型星座辅助惯导。",
+      "why_it_matters": "该工作属状态估计与控制技术线：为UAV与地面载具在GNSS拒止、干扰或欺骗环境下提供米级定位，可直接支撑搜救、侦察等长航时UAV任务的自主导航，并可作为视觉/激光定位之外的无线信号定位冗余方案。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
+    },
+    {
       "id": "https://openalex.org/W4394627367",
       "arxiv_id": "",
       "title": "ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments",
@@ -5668,6 +5900,46 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4409201921",
+      "arxiv_id": "",
+      "title": "Gnss-denied unmanned aerial vehicle navigation: analyzing computational complexity, sensor fusion, and localization methodologies",
+      "authors": [
+        "Imen Jarraya",
+        "Abdulrahman Al-Batati",
+        "Muhammad Bilal Kadri",
+        "Mohamed Abdelkader",
+        "Adel Ammar",
+        "Wadii Boulila",
+        "Anis Koubâa"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "Satellite Navigation",
+      "citation_count": 84,
+      "url": "https://doi.org/10.1186/s43020-025-00162-z",
+      "pdf_url": "https://satellite-navigation.springeropen.com/counter/pdf/10.1186/s43020-025-00162-z",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文综述GNSS拒止环境下无人机户外定位的传感器与算法，提出绝对/相对定位二分类体系，指出视觉定位最有效但单一传感器不足，需混合融合策略。",
+      "change_zh": "相比逐个技术点的常规综述，本文建立绝对定位与相对定位的统一二分框架，并从计算复杂度与传感器融合角度横向比较，结论强调混合多传感器路线；但摘要未说明文献筛选方法与量化对比。",
+      "why_it_matters": "GNSS拒止定位是无人机主动目标搜索、搜救侦察等户外任务的基础前提，本综述可为UAV自主飞行的定位方案选型与多传感器融合设计提供参考，直接支撑状态估计与控制及空域自主技术线。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "localization",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
+    },
+    {
       "id": "https://openalex.org/W4393252844",
       "arxiv_id": "",
       "title": "preciseSLAM: Robust, Real-Time, LiDAR–Inertial–Ultrasonic Tightly-Coupled SLAM With Ultraprecise Positioning for Plant Factories",
@@ -5707,6 +5979,43 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4399891154",
+      "arxiv_id": "",
+      "title": "Autonomous UAV Navigation with Adaptive Control Based on Deep Reinforcement Learning",
+      "authors": [
+        "Yongfeng Yin",
+        "Zhetao Wang",
+        "Lili Zheng",
+        "Qingran Su",
+        "Yang Guo"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Electronics",
+      "citation_count": 80,
+      "url": "https://doi.org/10.3390/electronics13132432",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对低空复杂环境，该文将自适应高度与速度的三维无人机导航建模为MDP，用深度强化学习求解，并以引导注意力在导航与避障间切换决策焦点、速度约束损失改善速度控制，仿真优于部分SOTA算法。",
+      "change_zh": "常见无人机导航强化学习多固定飞行高度与速度，该文放开两者实现自适应控制，并以引导注意力让决策在导航与避障任务间随障碍变化切换，配合速度约束损失改进速度控制，从而针对低空复杂环境增强避障能力。",
+      "why_it_matters": "低空搜救侦察等UAV主动目标搜索需在复杂环境灵活调整高度速度并可靠避障，该文的注意力切换与速度约束损失为接近与避障决策提供了思路；但仅仿真验证，对ObjectNav类地面目标导航的直接价值有限。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
       "id": "s2:22cb569525194d67e964f61fa102506429cf85f4",
@@ -5752,6 +6061,42 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T02:36:58Z"
+    },
+    {
+      "id": "https://openalex.org/W4410863395",
+      "arxiv_id": "",
+      "title": "Comprehensive Review of Path Planning Techniques for Unmanned Aerial Vehicles (UAVs)",
+      "authors": [
+        "Pawan Kumar",
+        "Kunwar Pal",
+        "Mahesh Chandra Govil"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "ACM Computing Surveys",
+      "citation_count": 58,
+      "url": "https://doi.org/10.1145/3737280",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3737280",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文系统综述无人机路径规划方法，涵盖采样式、人工势场、仿生与AI类算法，从路径长度、飞行时间、避障、实时性等维度比较优劣与适用场景，并指出开放问题。",
+      "change_zh": "作为综述，其价值在于统一比较框架，把启发式、数学、仿生与机器学习方法放到路径长度、实时性、避障、多机多目标等同一组维度下横向对比；但仅凭摘要无法判断相比既有UAV路径规划综述的具体新增贡献。",
+      "why_it_matters": "路径规划是无人机搜救、侦察与目标接近的运动层基础，该综述为UAV主动目标搜索提供算法选型与实时性/避障权衡依据，帮助衔接任务级搜索决策与底层轨迹生成，对空域自主落地有直接参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "aerial",
+        "search and rescue",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
       "id": "https://openalex.org/W4413981576",
@@ -5869,6 +6214,46 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4409474240",
+      "arxiv_id": "",
+      "title": "OWRT-DETR: A Novel Real-Time Transformer Network for Small-Object Detection in Open-Water Search and Rescue From UAV Aerial Imagery",
+      "authors": [
+        "Shuai Ma",
+        "Yihong Zhang",
+        "Ling Peng",
+        "Chen Sun",
+        "Baolong Ding",
+        "Yongdong Zhu"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "citation_count": 45,
+      "url": "https://doi.org/10.1109/tgrs.2025.3560928",
+      "pdf_url": "",
+      "code_url": "https://github.com/mshauima/OWRT-DETR",
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Transactions on Geoscience and Remote Sensing），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出面向无人机开阔水域搜救的实时Transformer检测网络OWRT-DETR，含跨尺度特征金字塔、多尺度感知融合与小目标增强三个模块，在SeaDronesSee等三个公开数据集上超越多个SOTA，并提供轻量版。",
+      "change_zh": "相比主流CNN检测器固定感受野、固定空间尺度的路线，改用DETR式Transformer架构，引入跨尺度交互、通道-空间全局关联与小目标增强模块，并用PConv/Rep重构骨干得到轻量版；摘要称系首个用于开阔水域无人机图像的Transformer检测网络。",
+      "why_it_matters": "可作为UAV搜救目标搜索的实时感知前端：高精度小目标检测能支撑无人机从航拍图像中发现落水人员与船只并引导后续接近；但论文止于检测层，未涉及主动搜索策略或导航决策，与ObjectNav等导航技术线无直接关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "drone",
+        "search and rescue",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
       "id": "2601.14352",
@@ -8054,49 +8439,179 @@
       "rigor": 2,
       "reason": "将现成LLM套用于医疗垂直领域，与空间、导航、机器人无关，且为无实验支撑的综述观点文章。",
       "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4410362031": {
+      "title": "Retrieval-augmented generation for educational application: A systematic survey",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "这是RAG/LLM在教育垂直领域的应用综述，与空间、导航、机器人均无关，属将现成大模型套用到无关垂直应用的典型范围外情形，且无实验仅文献梳理。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4402193259": {
+      "title": "Putting GPT-4o to the Sword: A Comprehensive Evaluation of Language, Vision, Speech, and Multimodal Proficiency",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "属对现成通用大模型的常规能力评测，未涉及空间推理、导航或具身任务，也未提出新基准或评测框架，与收录范围仅边缘相关。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4393317046": {
+      "title": "The impact of large language models on radiology: a guide for radiologists on the latest innovations in AI",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "面向放射科医生的LLM医疗应用综述，属于与空间、导航、机器人无关的垂直领域套用，且无任何实验验证，超出收录范围。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4393157467": {
+      "title": "Visual Adversarial Examples Jailbreak Aligned Large Language Models",
+      "relevance": 3,
+      "rigor": 6,
+      "reason": "本文属于多模态LLM对抗安全与越狱攻击研究，并非模型/智能体能力本身的显著进展，且与空间、导航、机器人均无关，属范围外安全类工作。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4411005431": {
+      "title": "Biomni: A General-Purpose Biomedical AI Agent",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "将LLM智能体与检索增强规划套用于生物医学这一垂直领域，与空间、导航、机器人均无关，属于收录范围明确排除的应用类工作。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4404641323": {
+      "title": "An automatic end-to-end chemical synthesis development platform powered by large language models",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "将现成GPT-4经预提示封装为六个化学任务智能体套用于化学合成垂直场景，与空间、导航、机器人均无关，属范围外的智能体垂直应用。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4401628481": {
+      "title": "Large Language Model Enhanced Multi-Agent Systems for 6G Communications",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "将LLM多智能体框架（检索、规划、评估、反思）套用于6G通信垂直领域，与空间、导航、机器人无关，属范围外纯通信应用。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4393021028": {
+      "title": "Foresight—a generative pretrained transformer for modelling of patient timelines using electronic health records: a retrospective modelling study",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "该工作是大模型在医疗电子病历纵向预测这一垂直领域的应用，与空间、导航、机器人等技术线完全无关，属明确拒绝范围。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4403439923": {
+      "title": "Inspiration from Visual Ecology for Advancing Multifunctional Robotic Vision Systems: Bio‐inspired Electronic Eyes and Neuromorphic Image Sensors",
+      "relevance": 3,
+      "rigor": 4,
+      "reason": "本文是仿生电子眼与神经形态图像传感器硬件的综述，仅以自主导航为背景动机，不涉及收录技术线中的导航决策、空间智能、状态估计或主动感知算法本身。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4409336001": {
+      "title": "Advancing Metal–Organic Framework‐Based Composites for Effective Chemical Warfare Agent Detoxification under Real‐World Conditions",
+      "relevance": 0,
+      "rigor": 4,
+      "reason": "本文为材料化学领域综述，主题是金属有机框架(MOF)复合材料降解化学战剂，与具身导航、UAV搜索、空间智能、机器人自主等全部收录技术线毫无关联，纯属范围外；且为文献综述，无导航相关的实验设置与基线对比。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4406191272": {
+      "title": "Ethical use of ChatGPT in education—Best practices to combat AI-induced plagiarism",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "属ChatGPT教育伦理与防抄袭管理类讨论，与空间、导航、机器人无关且无任何实验方法。",
+      "excluded_at": "2026-09-08"
     }
   },
-  "last_citation_refresh": "2026-09-08T09:05:05.542011+00:00",
   "briefing": {
-    "text": "本批入库工作聚焦多模态基础模型：语言-视觉定位、神经隐式建图、综合基准与体系综述，正好覆盖具身导航的语言接口与空间感知两端。优先读 Kosmos-2，它把指代表达编码为位置token并基于GrIT训练，模型可直接输出边界框，为指令跟随导航提供现成的语言-区域对齐能力；NICER-SLAM 则在纯RGB输入下联合优化相机位姿与分层神经隐式地图，重建与新视角合成接近RGB-D方案，适合无深度传感器的移动平台参考；想快速建立领域全景可从综述 Multimodal Foundation Models: From Specialists to General-Purpose Assistants 入手。整体看，定位、建图等具身基础能力正被并入通用多模态大模型，专用模块与基础模型的边界日益模糊。",
-    "added": 4,
-    "at": "2026-09-08T06:11:06.415511+00:00",
+    "text": "本批过半是无人机导航与路径规划研究，其余是LLM智能体与基础模型类工作。首推ULIP-2，它用现成多模态大模型自动生成3D语言描述、免人工标注即可扩展三模态预训练，是语义导航的可扩展感知底座；ExpeL证明智能体仅以自然语言提炼经验就能持续提升并迁移，对导航智能体的记忆机制设计有直接参照；Ad Astra借低轨卫星信号把GNSS拒止下的载具定位误差从数百米压到数十米。可见经典规划与定位方法正加速并入基础模型驱动的具身智能技术栈。",
+    "added": 10,
+    "at": "2026-09-08T10:03:38.564482+00:00",
     "new": [
       {
-        "t": "Kosmos-2: Grounding Multimodal Large Language Models to the World",
-        "u": "https://arxiv.org/abs/2306.14824",
-        "r": 8,
-        "g": 9,
-        "s": "Kosmos-2 是微软提出的多模态大模型，将指代表达表示为 Markdown 链接形式的位置 token，基于大规模图文定位数据 GrIT 训练，使 MLLM 原生具备文本与视觉区域（边界框）互相定位的能力。",
-        "c": "",
-        "cit": 133
-      },
-      {
-        "t": "NICER-SLAM: Neural Implicit Scene Encoding for RGB SLAM",
-        "u": "https://doi.org/10.1109/3dv62453.2024.00096",
-        "r": 6,
+        "t": "ExpeL: LLM Agents Are Experiential Learners",
+        "u": "https://doi.org/10.1609/aaai.v38i17.29936",
+        "r": 7,
         "g": 7,
-        "s": "NICER-SLAM提出纯RGB稠密SLAM系统，联合优化相机位姿与分层神经隐式地图，融合单目几何先验、光流与warping损失，实现高质量重建、新视角合成，性能媲美RGB-D方案。",
+        "s": "ExpeL提出无需参数更新的经验学习智能体：自主从训练任务收集经验并用自然语言提炼知识，推理时检索洞察与经验做决策，性能随经验累积持续提升并具迁移潜力。",
         "c": "",
-        "cit": 133
+        "cit": 117
       },
       {
-        "t": "SEED-Bench: Benchmarking Multimodal Large Language Models",
-        "u": "https://doi.org/10.1109/cvpr52733.2024.01263",
+        "t": "ULIP-2: Towards Scalable Multimodal Pre-Training for 3D Understanding",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.02558",
+        "r": 8,
+        "g": 8,
+        "s": "ULIP-2提出三模态预训练框架，利用现成多模态大模型自动为3D形状生成整体语言描述，仅需3D数据输入、无需人工标注即可扩展至大规模数据，在零样本3D分类等下游任务上刷新SOTA。",
+        "c": "https://github.com/salesforce/ULIP",
+        "cit": 116
+      },
+      {
+        "t": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "u": "https://arxiv.org/abs/2408.06292",
+        "r": 8,
+        "g": 7,
+        "s": "提出首个全自动科学发现框架The AI Scientist，由前沿大模型独立完成想法生成、写代码、跑实验、撰写论文并自动评审，在三个机器学习子领域以每篇不足15美元成本产出完整论文，自动评审接近人类水平。",
+        "c": "https://github.com/SakanaAI/AI-Scientist",
+        "cit": 114
+      },
+      {
+        "t": "Qwen3 Technical Report",
+        "u": "https://arxiv.org/abs/2505.09388",
+        "r": 8,
+        "g": 8,
+        "s": "Qwen3系列提供0.6B至235B的稠密与MoE大模型，将思考与非思考模式统一为单一框架，支持按任务复杂度分配思考预算，在代码、数学与智能体基准达到SOTA并全面开源。",
+        "c": "",
+        "cit": 111
+      },
+      {
+        "t": "Advances in UAV Path Planning: A Comprehensive Review of Methods, Challenges, and Future Directions",
+        "u": "https://doi.org/10.3390/drones9050376",
+        "r": 7,
+        "g": 5,
+        "s": "本文综述无人机路径规划方法，涵盖确定性模型、随机采样、仿生算法与集成框架，并讨论静态、动态与三维场景下的性能，及机器学习方法、能耗优化与多机协同等方向。",
+        "c": "",
+        "cit": 99
+      },
+      {
+        "t": "Ad Astra: Simultaneous Tracking and Navigation With Megaconstellation LEO Satellites",
+        "u": "https://doi.org/10.1109/maes.2023.3267440",
         "r": 7,
         "g": 8,
-        "s": "SEED-Bench构建含2.4万道人工标注多选题的多模态大模型综合基准，将MLLM能力按可接受与生成的模态划分为L0-L4层级，覆盖27个维度含文本与图像生成，并系统评测22个开源模型。",
-        "c": "https://github.com/AILab-CVC/SEED-Bench",
-        "cit": 128
+        "s": "STAN框架利用Orbcomm、Iridium、Starlink低轨卫星下行信号的伪距与多普勒观测量，经紧耦合EKF融合惯导并同时估计卫星与载具状态，将GNSS拒止下载具定位误差从数百米降至数十米。",
+        "c": "",
+        "cit": 86
       },
       {
-        "t": "Multimodal Foundation Models: From Specialists to General-Purpose Assistants",
-        "u": "https://doi.org/10.1561/0600000110",
-        "r": 8,
-        "g": 6,
-        "s": "该专著系统综述多模态基础模型从专用到通用助手的演进，覆盖视觉骨干预训练、文生图、LLM启发的统一视觉模型、多模态大模型端到端训练与LLM工具链五大主题。",
+        "t": "Gnss-denied unmanned aerial vehicle navigation: analyzing computational complexity, sensor fusion, and localization methodologies",
+        "u": "https://doi.org/10.1186/s43020-025-00162-z",
+        "r": 7,
+        "g": 5,
+        "s": "本文综述GNSS拒止环境下无人机户外定位的传感器与算法，提出绝对/相对定位二分类体系，指出视觉定位最有效但单一传感器不足，需混合融合策略。",
         "c": "",
-        "cit": 123
+        "cit": 84
+      },
+      {
+        "t": "Autonomous UAV Navigation with Adaptive Control Based on Deep Reinforcement Learning",
+        "u": "https://doi.org/10.3390/electronics13132432",
+        "r": 7,
+        "g": 5,
+        "s": "针对低空复杂环境，该文将自适应高度与速度的三维无人机导航建模为MDP，用深度强化学习求解，并以引导注意力在导航与避障间切换决策焦点、速度约束损失改善速度控制，仿真优于部分SOTA算法。",
+        "c": "",
+        "cit": 80
+      },
+      {
+        "t": "Comprehensive Review of Path Planning Techniques for Unmanned Aerial Vehicles (UAVs)",
+        "u": "https://doi.org/10.1145/3737280",
+        "r": 7,
+        "g": 6,
+        "s": "本文系统综述无人机路径规划方法，涵盖采样式、人工势场、仿生与AI类算法，从路径长度、飞行时间、避障、实时性等维度比较优劣与适用场景，并指出开放问题。",
+        "c": "",
+        "cit": 58
+      },
+      {
+        "t": "OWRT-DETR: A Novel Real-Time Transformer Network for Small-Object Detection in Open-Water Search and Rescue From UAV Aerial Imagery",
+        "u": "https://doi.org/10.1109/tgrs.2025.3560928",
+        "r": 6,
+        "g": 7,
+        "s": "提出面向无人机开阔水域搜救的实时Transformer检测网络OWRT-DETR，含跨尺度特征金字塔、多尺度感知融合与小目标增强三个模块，在SeaDronesSee等三个公开数据集上超越多个SOTA，并提供轻量版。",
+        "c": "https://github.com/mshauima/OWRT-DETR",
+        "cit": 45
       }
     ]
   }
