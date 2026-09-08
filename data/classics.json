@@ -1226,6 +1226,45 @@
       "added_at": "2026-09-04T19:37:49Z"
     },
     {
+      "id": "https://openalex.org/W4389520747",
+      "arxiv_id": "2305.14992",
+      "title": "Reasoning with Language Model is Planning with World Model",
+      "authors": [
+        "Shibo Hao",
+        "Yi Gu",
+        "Haodi Ma",
+        "Joshua Hong",
+        "Zhen Wang",
+        "Daisy Wang",
+        "Zhiting Hu"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 1148,
+      "url": "https://doi.org/10.18653/v1/2023.emnlp-main.507",
+      "pdf_url": "https://aclanthology.org/2023.emnlp-main.507.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出RAP框架，将LLM同时用作世界模型与推理智能体，用蒙特卡洛树搜索策略性探索推理空间并平衡探索与利用，在规划生成、数学与逻辑推理上超越CoT等强基线。",
+      "change_zh": "不同于CoT等单向生成推理链的提示方法，RAP将LLM推理重构为规划问题：LLM兼任世界模型预测状态与动作后果，用MCTS探索备选推理路径、预期奖励并迭代精化，把推理从一次生成变为奖励引导的树搜索。",
+      "why_it_matters": "RAP为LLM智能体的深思熟虑规划提供范式：把模型当作世界模型并用MCTS前瞻搜索，可迁移到UAV目标搜索与ObjectNav的动作决策、任务规划与长程推理，亦为规划智能体与世界模型两条技术线奠基。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "exploration",
+        "world model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T05:39:39.759268+00:00"
+    },
+    {
       "id": "https://openalex.org/W3133648073",
       "arxiv_id": "2010.08196",
       "title": "FAST-LIO: A Fast, Robust LiDAR-Inertial Odometry Package by Tightly-Coupled Iterated Kalman Filter",
@@ -5409,45 +5448,6 @@
       "added_at": "2026-09-02T02:36:58Z"
     },
     {
-      "id": "https://openalex.org/W4389520747",
-      "arxiv_id": "",
-      "title": "Reasoning with Language Model is Planning with World Model",
-      "authors": [
-        "Shibo Hao",
-        "Yi Gu",
-        "Haodi Ma",
-        "Joshua Hong",
-        "Zhen Wang",
-        "Daisy Wang",
-        "Zhiting Hu"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 139,
-      "url": "https://doi.org/10.18653/v1/2023.emnlp-main.507",
-      "pdf_url": "https://aclanthology.org/2023.emnlp-main.507.pdf",
-      "code_url": "",
-      "topics": [
-        "多模态大模型与智能体"
-      ],
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "提出RAP框架，将LLM同时用作世界模型与推理智能体，用蒙特卡洛树搜索策略性探索推理空间并平衡探索与利用，在规划生成、数学与逻辑推理上超越CoT等强基线。",
-      "change_zh": "不同于CoT等单向生成推理链的提示方法，RAP将LLM推理重构为规划问题：LLM兼任世界模型预测状态与动作后果，用MCTS探索备选推理路径、预期奖励并迭代精化，把推理从一次生成变为奖励引导的树搜索。",
-      "why_it_matters": "RAP为LLM智能体的深思熟虑规划提供范式：把模型当作世界模型并用MCTS前瞻搜索，可迁移到UAV目标搜索与ObjectNav的动作决策、任务规划与长程推理，亦为规划智能体与世界模型两条技术线奠基。",
-      "relevance_rating": 8,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 24,
-      "keywords": [
-        "exploration",
-        "world model"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-08T05:39:39.759268+00:00"
-    },
-    {
       "id": "https://openalex.org/W4393160204",
       "arxiv_id": "",
       "title": "Detecting and Preventing Hallucinations in Large Vision Language Models",
@@ -8518,7 +8518,6 @@
       "excluded_at": "2026-09-08"
     }
   },
-  "last_citation_refresh": "2026-09-08T10:24:40.936137+00:00",
   "briefing": {
     "text": "本批过半是无人机导航与路径规划研究，其余是LLM智能体与基础模型类工作。首推ULIP-2，它用现成多模态大模型自动生成3D语言描述、免人工标注即可扩展三模态预训练，是语义导航的可扩展感知底座；ExpeL证明智能体仅以自然语言提炼经验就能持续提升并迁移，对导航智能体的记忆机制设计有直接参照；Ad Astra借低轨卫星信号把GNSS拒止下的载具定位误差从数百米压到数十米。可见经典规划与定位方法正加速并入基础模型驱动的具身智能技术栈。",
     "added": 10,
