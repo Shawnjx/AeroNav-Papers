@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T10:24:40.936137+00:00",
+  "updated_at": "2026-09-08T12:10:26.540667+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2502,6 +2502,50 @@
       "added_at": "2026-09-02T06:05:40Z"
     },
     {
+      "id": "https://openalex.org/W4385431115",
+      "arxiv_id": "2302.07241",
+      "title": "ConceptFusion: Open-set multimodal 3D mapping",
+      "authors": [
+        "Krishna Murthy Jatavallabhula",
+        "Alihusein Kuwajerwala",
+        "Qiao Gu",
+        "Mohd Omama",
+        "Ganesh Iyer",
+        "Soroush Saryazdi",
+        "Tao Chen",
+        "Alaa Maalouf",
+        "Shuang Li",
+        "Nikhil Keetha",
+        "Ayush Tewari",
+        "Joshua B. Tenenbaum"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 424,
+      "url": "https://doi.org/10.15607/rss.2023.xix.066",
+      "pdf_url": "https://doi.org/10.15607/rss.2023.xix.066",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ConceptFusion将像素对齐的开放集特征经SLAM与多视图融合嵌入3D地图，实现免训练零样本的多模态空间推理，长尾概念保留优于监督方法（3D IoU高逾40%），并在真实数据、仿真家居、桌面操作与自动驾驶平台验证。",
+      "change_zh": "常见3D建图以几何或闭集语义为主；该工作把基础模型的像素级开放集特征融入SLAM地图，使地图可被语言、图像、音频多模态查询并支持零样本空间推理，无需训练微调，把建图从几何/闭集范式转向开放语义范式。",
+      "why_it_matters": "为ObjectNav开放词汇目标发现与UAV搜救/侦察中的目标定位提供了可语言查询的开放语义地图基础，零样本概念定位可直接作为目标条件导航的语义前端，是空间智能支撑具身导航的关键基础能力。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "slam",
+        "spatial reasoning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
+    },
+    {
       "id": "https://openalex.org/W4401417422",
       "arxiv_id": "2310.07896",
       "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
@@ -2901,6 +2945,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T06:28:08Z"
+    },
+    {
+      "id": "https://openalex.org/W4393160204",
+      "arxiv_id": "2308.06394",
+      "title": "Detecting and Preventing Hallucinations in Large Vision Language Models",
+      "authors": [
+        "Anisha Gunjal",
+        "Jihan Yin",
+        "Erhan Bas"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "citation_count": 347,
+      "url": "https://doi.org/10.1609/aaai.v38i16.29771",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29771/31328",
+      "code_url": "https://github.com/hendryx-scale/mhal-detect",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（Proceedings of the AAAI Conference on Artificial Intelligence），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "本文构建首个多模态幻觉检测数据集M-HalDetect（16k细粒度标注），用细粒度偏好优化FDPO与奖励模型拒绝采样分别降低InstructBLIP幻觉41%和55%，且可泛化到LLaVA等模型。",
+      "change_zh": "以往工作只关注物体级幻觉并偏重事后度量；本文将幻觉标注细化到实体描述与关系不忠实层面，构造可训练的细粒度数据集，并用细粒度DPO和多模态奖励模型把'检测'推进为'预防'。",
+      "why_it_matters": "视觉语言模型是VLN与ObjectNav指令理解和目标识别的底座，幻觉会直接导致错误目标与错误动作；本文的细粒度幻觉抑制与可泛化奖励模型可提升无人机目标搜索与目标导航中场景描述的可信度。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "vision language model",
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
       "id": "https://openalex.org/W4226481925",
@@ -4760,50 +4842,6 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
-      "id": "https://openalex.org/W4385431115",
-      "arxiv_id": "",
-      "title": "ConceptFusion: Open-set multimodal 3D mapping",
-      "authors": [
-        "Krishna Murthy Jatavallabhula",
-        "Alihusein Kuwajerwala",
-        "Qiao Gu",
-        "Mohd Omama",
-        "Ganesh Iyer",
-        "Soroush Saryazdi",
-        "Tao Chen",
-        "Alaa Maalouf",
-        "Shuang Li",
-        "Nikhil Keetha",
-        "Ayush Tewari",
-        "Joshua B. Tenenbaum"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 205,
-      "url": "https://doi.org/10.15607/rss.2023.xix.066",
-      "pdf_url": "https://doi.org/10.15607/rss.2023.xix.066",
-      "code_url": "",
-      "topics": [
-        "空间智能"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "ConceptFusion将像素对齐的开放集特征经SLAM与多视图融合嵌入3D地图，实现免训练零样本的多模态空间推理，长尾概念保留优于监督方法（3D IoU高逾40%），并在真实数据、仿真家居、桌面操作与自动驾驶平台验证。",
-      "change_zh": "常见3D建图以几何或闭集语义为主；该工作把基础模型的像素级开放集特征融入SLAM地图，使地图可被语言、图像、音频多模态查询并支持零样本空间推理，无需训练微调，把建图从几何/闭集范式转向开放语义范式。",
-      "why_it_matters": "为ObjectNav开放词汇目标发现与UAV搜救/侦察中的目标定位提供了可语言查询的开放语义地图基础，零样本概念定位可直接作为目标条件导航的语义前端，是空间智能支撑具身导航的关键基础能力。",
-      "relevance_rating": 8,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 24,
-      "keywords": [
-        "slam",
-        "spatial reasoning"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-05T06:35:42Z"
-    },
-    {
       "id": "2107.07243",
       "arxiv_id": "2107.07243",
       "title": "VILENS: Visual, Inertial, Lidar, and Leg Odometry for All-Terrain Legged Robots",
@@ -5446,44 +5484,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T02:36:58Z"
-    },
-    {
-      "id": "https://openalex.org/W4393160204",
-      "arxiv_id": "",
-      "title": "Detecting and Preventing Hallucinations in Large Vision Language Models",
-      "authors": [
-        "Anisha Gunjal",
-        "Jihan Yin",
-        "Erhan Bas"
-      ],
-      "published": "2024",
-      "source": "OpenAlex",
-      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
-      "citation_count": 138,
-      "url": "https://doi.org/10.1609/aaai.v38i16.29771",
-      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29771/31328",
-      "code_url": "https://github.com/hendryx-scale/mhal-detect",
-      "topics": [
-        "多模态大模型与智能体"
-      ],
-      "evidence": "强",
-      "evidence_note": "发表来源命中白名单（Proceedings of the AAAI Conference on Artificial Intelligence），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
-      "summary_zh": "本文构建首个多模态幻觉检测数据集M-HalDetect（16k细粒度标注），用细粒度偏好优化FDPO与奖励模型拒绝采样分别降低InstructBLIP幻觉41%和55%，且可泛化到LLaVA等模型。",
-      "change_zh": "以往工作只关注物体级幻觉并偏重事后度量；本文将幻觉标注细化到实体描述与关系不忠实层面，构造可训练的细粒度数据集，并用细粒度DPO和多模态奖励模型把'检测'推进为'预防'。",
-      "why_it_matters": "视觉语言模型是VLN与ObjectNav指令理解和目标识别的底座，幻觉会直接导致错误目标与错误动作；本文的细粒度幻觉抑制与可泛化奖励模型可提升无人机目标搜索与目标导航中场景描述的可信度。",
-      "relevance_rating": 7,
-      "rigor_rating": 8,
-      "venue_verified": true,
-      "score": 25,
-      "keywords": [
-        "benchmark",
-        "evaluation",
-        "instruction",
-        "vision language model",
-        "vlm"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
       "id": "https://openalex.org/W4408841099",
@@ -8518,6 +8518,7 @@
       "excluded_at": "2026-09-08"
     }
   },
+  "last_citation_refresh": "2026-09-08T12:10:26.540667+00:00",
   "briefing": {
     "text": "本批过半是无人机导航与路径规划研究，其余是LLM智能体与基础模型类工作。首推ULIP-2，它用现成多模态大模型自动生成3D语言描述、免人工标注即可扩展三模态预训练，是语义导航的可扩展感知底座；ExpeL证明智能体仅以自然语言提炼经验就能持续提升并迁移，对导航智能体的记忆机制设计有直接参照；Ad Astra借低轨卫星信号把GNSS拒止下的载具定位误差从数百米压到数十米。可见经典规划与定位方法正加速并入基础模型驱动的具身智能技术栈。",
     "added": 10,
