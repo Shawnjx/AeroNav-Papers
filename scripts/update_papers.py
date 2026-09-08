@@ -57,13 +57,18 @@ def fetch_arxiv():
     out=[];total=0;errs=0
     for query in CFG["queries"]:
         url="https://export.arxiv.org/api/query?"+urlencode({"search_query":query,"start":0,"max_results":30,"sortBy":"submittedDate","sortOrder":"descending"})
-        try:
-            r=fetch(url)
-            if r.status_code!=200:
-                print(f"arXiv HTTP {r.status_code} on: {query[:70]}");errs+=1;time.sleep(3);continue
-            feed=feedparser.parse(r.content)
-        except requests.RequestException as e:
-            print("arXiv query failed:",type(e).__name__);errs+=1;time.sleep(3);continue
+        r=None
+        for attempt in range(3):
+            try:
+                r=fetch(url,tries=1)
+                if r.status_code==200:break
+                if r.status_code!=429:print(f"arXiv HTTP {r.status_code} on: {query[:70]}");r=None;break
+                print(f"arXiv 429 on: {query[:50]} (attempt {attempt+1}/3)")
+            except requests.RequestException as e:
+                print(f"arXiv query failed: {type(e).__name__} (attempt {attempt+1}/3)");r=None
+            if attempt<2:time.sleep(20*(attempt+1))
+        if r is None or r.status_code!=200:errs+=1;continue
+        feed=feedparser.parse(r.content)
         total+=len(feed.entries)
         for e in feed.entries:
             aid=e.id.rsplit("/",1)[-1].split("v")[0]

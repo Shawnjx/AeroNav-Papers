@@ -46,7 +46,7 @@ def main():
         label="经典入库" if kind=="classic" else "日报"
         send(f"AeroNav {label} {b.get('at','')[:10]} · 新增{b.get('added',0)}篇",f"{build_desp(b)}\n\n---\n[打开 AeroNav Papers]({SITE})");return
     if run_added>0:print("additions without briefing text; skip");return
-    if kind=="daily" and os.getenv("EVENT_NAME")=="schedule" and os.getenv("EVENT_SCHEDULE","").startswith("40 1 "):
+    if kind=="daily" and os.getenv("EVENT_NAME")=="schedule" and os.getenv("EVENT_SCHEDULE","").startswith("0 10 "):
         send(f"AeroNav 日报 {datetime.now(timezone.utc).date()} · 今日无新增",f"今日检索线没有新论文通过质量漏斗，系统运行正常。可以翻看经典必读库或近期精选。\n\n今日新增较少，已自动加跑一轮经典库更新，稍后会再推一条入库简报。\n\n---\n[打开 AeroNav Papers]({SITE})");return
     print("no new papers this run; skip (catch-up or manual run)")
 
