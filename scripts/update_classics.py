@@ -6,6 +6,8 @@ import json, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import requests
+
 from update_papers import CFG, DATA, UA, clean, classify, code_signal, evidence, llm_review, norm_title, venue_verified, oa_get, abstract_from_inv, arxiv_id_of
 from briefing import write_briefing
 
@@ -42,9 +44,45 @@ def search():
     if not out:print("WARNING: no candidates found at all; check OpenAlex connectivity")
     return out
 
+def s2_citations(aids):
+    """One batched request for all arXiv ids; S2 merges preprint/published versions."""
+    try:
+        r=requests.post("https://api.semanticscholar.org/graph/v1/paper/batch",params={"fields":"citationCount"},json={"ids":[f"ARXIV:{a}" for a in aids]},headers=UA,timeout=60)
+        if r.status_code!=200:print(f"S2 batch status {r.status_code}; skipping S2");return {}
+        return {a:(d or {}).get("citationCount") or 0 for a,d in zip(aids,r.json().get("data") or [])}
+    except requests.RequestException as e:
+        print("S2 batch failed:",type(e).__name__);return {}
+
+def refresh_citations(old,keep):
+    """Citation counts are one-time snapshots and OpenAlex splits preprint/published
+    twins with separate counts — re-sync from OpenAlex (max across title-matched twins)
+    plus S2 (merged versions), at most once every 5 days. Returns (ran, updated)."""
+    last=old.get("last_citation_refresh") or ""
+    if last:
+        try:
+            if (datetime.now(timezone.utc)-datetime.fromisoformat(last)).days<5:return False,0
+        except ValueError:pass
+    aids=[p["arxiv_id"] for p in keep.values() if p.get("arxiv_id")]
+    s2=s2_citations(aids)
+    updated=0
+    for p in keep.values():
+        best=max(p.get("citation_count") or 0,s2.get(p.get("arxiv_id") or "") or 0)
+        try:
+            for w in oa_get(f'title.search:{p["title"]}',sort="cited_by_count:desc",per_page=25) or []:
+                if norm_title(w.get("display_name") or "")==norm_title(p["title"]):
+                    best=max(best,w.get("cited_by_count") or 0)
+        except Exception:pass
+        if best>(p.get("citation_count") or 0):
+            print(f"CITE {p.get('citation_count')}->{best} {p['title'][:55]}")
+            p["citation_count"]=best;updated+=1
+        time.sleep(1)
+    print(f"Citations refreshed: {updated} updated via max(OpenAlex twins, S2) across {len(keep)} papers")
+    return True,updated
+
 def main():
     old=json.loads(CLASSICS.read_text(encoding="utf-8")) if CLASSICS.exists() else {"papers":[],"excluded":{}}
     keep={p["id"]:p for p in old.get("papers",[]) if int(str(p.get("published"))[:4] or 0)>=YEAR-MAXAGE}
+    refreshed,updated=refresh_citations(old,keep)
     excl=dict(old.get("excluded",{}))
     daily=json.loads(DATA.read_text(encoding="utf-8")).get("papers",[]) if DATA.exists() else []
     by_aid={p["arxiv_id"]:p for p in daily if p.get("arxiv_id")}
@@ -79,8 +117,9 @@ def main():
         time.sleep(1 if os.getenv("S2_API_KEY") else 3)
     if len(excl)>500:excl=dict(sorted(excl.items(),key=lambda kv:kv[1].get("excluded_at",""))[-500:])
     papers=sorted(keep.values(),key=lambda p:-p.get("citation_count",0))
-    changed=(added+reused)>0 or len(old.get("papers",[]))!=len(papers)
+    changed=(added+reused)>0 or updated>0 or len(old.get("papers",[]))!=len(papers)
     payload={"updated_at":NOW.isoformat() if changed else old.get("updated_at"),"catalog":CFG.get("topics_catalog"),"papers":papers,"excluded":excl}
+    if refreshed:payload["last_citation_refresh"]=NOW.isoformat()
     if added+reused:payload["briefing"]={"text":write_briefing("classic",new_batch),"added":added+reused,"at":NOW.isoformat(),"new":new_batch}
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     CLASSICS.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
