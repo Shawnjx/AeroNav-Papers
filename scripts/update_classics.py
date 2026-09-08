@@ -44,16 +44,39 @@ def search():
     if not out:print("WARNING: no candidates found at all; check OpenAlex connectivity")
     return out
 
-def s2_citations(aids):
-    """One batched request for all arXiv ids; S2 merges preprint/published versions."""
+def s2_citations(ids):
+    """One batched request; S2 merges preprint/published versions, so ARXIV: and DOI:
+    lookups return the same merged record. Returns {s2id: (citations, arxiv_id)}."""
     try:
-        r=requests.post("https://api.semanticscholar.org/graph/v1/paper/batch",params={"fields":"citationCount"},json={"ids":[f"ARXIV:{a}" for a in aids]},headers=UA,timeout=60)
+        r=requests.post("https://api.semanticscholar.org/graph/v1/paper/batch",params={"fields":"citationCount,externalIds"},json={"ids":ids},headers=UA,timeout=60)
         if r.status_code!=200:print(f"S2 batch status {r.status_code}; skipping S2");return {}
         body=r.json()
         rows=body.get("data") if isinstance(body,dict) else body
-        return {a:(x or {}).get("citationCount") or 0 for a,x in zip(aids,rows or [])}
+        out={}
+        for key,x in zip(ids,rows or []):
+            if x:out[key]=(x.get("citationCount") or 0,((x.get("externalIds") or {}).get("ArXiv") or ""))
+        return out
     except requests.RequestException as e:
         print("S2 batch failed:",type(e).__name__);return {}
+
+def s2_id_of(p):
+    if p.get("arxiv_id"):return f"ARXIV:{p['arxiv_id']}"
+    for u in (p.get("url") or "",p.get("id") or ""):
+        m=re.search(r"doi\.org/(10\.[^/]+/.+)$",u)
+        if m:return "DOI:"+m.group(1)
+    return ""
+
+def s2_search_citations(p):
+    """Fallback for records with no arXiv id and a DOI S2 doesn't know (e.g. ACL
+    proceedings DOIs): find the merged S2 record by title."""
+    try:
+        r=requests.get("https://api.semanticscholar.org/graph/v1/paper/search",params={"query":p["title"][:200],"limit":10,"fields":"citationCount,externalIds,title"},headers=UA,timeout=25)
+        if r.status_code!=200:return 0,""
+        for x in (r.json().get("data") or []):
+            if norm_title(x.get("title") or "")==norm_title(p["title"]):
+                return x.get("citationCount") or 0,((x.get("externalIds") or {}).get("ArXiv") or "")
+    except requests.RequestException:pass
+    return 0,""
 
 def refresh_citations(old,keep):
     """Citation counts are one-time snapshots and OpenAlex splits preprint/published
@@ -64,13 +87,21 @@ def refresh_citations(old,keep):
         try:
             if (datetime.now(timezone.utc)-datetime.fromisoformat(last)).days<5:return False,0
         except ValueError:pass
-    aids=[p["arxiv_id"] for p in keep.values() if p.get("arxiv_id")]
-    s2=s2_citations(aids)
+    papers=list(keep.values())
+    s2=s2_citations([k for k in (s2_id_of(p) for p in papers) if k])
     updated=0
-    for p in keep.values():
-        best=max(p.get("citation_count") or 0,s2.get(p.get("arxiv_id") or "") or 0)
+    for p in papers:
+        row=s2.get(s2_id_of(p)) or (0,"")
+        if not row[0]:
+            c,a=s2_search_citations(p)
+            if c:row=(c,a or row[1])
+            time.sleep(1.5)
+        best=max(p.get("citation_count") or 0,row[0])
+        if row[1] and not p.get("arxiv_id"):
+            print(f"BACKFILL arxiv_id={row[1]} {p['title'][:55]}");p["arxiv_id"]=row[1]
         try:
-            for w in oa_get(f'title.search:{p["title"]}',sort="cited_by_count:desc",per_page=25) or []:
+            title=re.sub(r"([:,\\])",r"\\\1",p["title"])
+            for w in oa_get(f"title.search:{title}",sort="cited_by_count:desc",per_page=25,tries=1) or []:
                 if norm_title(w.get("display_name") or "")==norm_title(p["title"]):
                     best=max(best,w.get("cited_by_count") or 0)
         except Exception:pass
@@ -78,7 +109,7 @@ def refresh_citations(old,keep):
             print(f"CITE {p.get('citation_count')}->{best} {p['title'][:55]}")
             p["citation_count"]=best;updated+=1
         time.sleep(1)
-    print(f"Citations refreshed: {updated} updated via max(OpenAlex twins, S2) across {len(keep)} papers")
+    print(f"Citations refreshed: {updated} updated via max(OpenAlex twins, S2) across {len(papers)} papers")
     return True,updated
 
 def main():
