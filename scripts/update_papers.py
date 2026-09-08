@@ -184,7 +184,7 @@ def main():
             m=re.search(r"https?://github\.com/[\w./-]+",p["abstract"])
             if m and not p.get("code_url"):p["code_url"]=m.group(0).rstrip(".")
             p["keywords"]=sorted({w for ws in CFG["keywords"].values() for w in ws if w in (p["title"]+" "+p["abstract"]).lower()})[:8]
-            p.pop("abstract",None);existing[p["id"]]=p;added+=1
+            p.pop("abstract",None);p["added_at"]=datetime.now(timezone.utc).isoformat();existing[p["id"]]=p;added+=1
             new_batch.append({"t":p["title"],"u":p["url"],"r":p.get("relevance_rating"),"g":p.get("rigor_rating"),"s":p.get("summary_zh",""),"c":p.get("code_url","")})
         time.sleep(1 if os.getenv("S2_API_KEY") else 3)
     if len(rej)>300:rej=dict(sorted(rej.items(),key=lambda kv:kv[1].get("rejected_at",""))[-300:])
