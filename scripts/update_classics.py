@@ -49,7 +49,9 @@ def s2_citations(aids):
     try:
         r=requests.post("https://api.semanticscholar.org/graph/v1/paper/batch",params={"fields":"citationCount"},json={"ids":[f"ARXIV:{a}" for a in aids]},headers=UA,timeout=60)
         if r.status_code!=200:print(f"S2 batch status {r.status_code}; skipping S2");return {}
-        return {a:(d or {}).get("citationCount") or 0 for a,d in zip(aids,r.json().get("data") or [])}
+        body=r.json()
+        rows=body.get("data") if isinstance(body,dict) else body
+        return {a:(x or {}).get("citationCount") or 0 for a,x in zip(aids,rows or [])}
     except requests.RequestException as e:
         print("S2 batch failed:",type(e).__name__);return {}
 
@@ -82,7 +84,10 @@ def refresh_citations(old,keep):
 def main():
     old=json.loads(CLASSICS.read_text(encoding="utf-8")) if CLASSICS.exists() else {"papers":[],"excluded":{}}
     keep={p["id"]:p for p in old.get("papers",[]) if int(str(p.get("published"))[:4] or 0)>=YEAR-MAXAGE}
-    refreshed,updated=refresh_citations(old,keep)
+    try:
+        refreshed,updated=refresh_citations(old,keep)
+    except Exception as e:
+        print("citation refresh skipped:",type(e).__name__,str(e)[:80]);refreshed,updated=False,0
     excl=dict(old.get("excluded",{}))
     daily=json.loads(DATA.read_text(encoding="utf-8")).get("papers",[]) if DATA.exists() else []
     by_aid={p["arxiv_id"]:p for p in daily if p.get("arxiv_id")}
