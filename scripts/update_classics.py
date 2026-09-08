@@ -68,14 +68,19 @@ def s2_id_of(p):
 
 def s2_search_citations(p):
     """Fallback for records with no arXiv id and a DOI S2 doesn't know (e.g. ACL
-    proceedings DOIs): find the merged S2 record by title."""
-    try:
-        r=requests.get("https://api.semanticscholar.org/graph/v1/paper/search",params={"query":p["title"][:200],"limit":10,"fields":"citationCount,externalIds,title"},headers=UA,timeout=25)
-        if r.status_code!=200:return 0,""
-        for x in (r.json().get("data") or []):
-            if norm_title(x.get("title") or "")==norm_title(p["title"]):
-                return x.get("citationCount") or 0,((x.get("externalIds") or {}).get("ArXiv") or "")
-    except requests.RequestException:pass
+    proceedings DOIs): find the merged S2 record by title. Anonymous pool rate-limits
+    hard, so back off once and stay silent-skippable."""
+    for attempt in range(2):
+        try:
+            r=requests.get("https://api.semanticscholar.org/graph/v1/paper/search",params={"query":p["title"][:200],"limit":10,"fields":"citationCount,externalIds,title"},headers=UA,timeout=25)
+            if r.status_code==200:
+                for x in (r.json().get("data") or []):
+                    if norm_title(x.get("title") or "")==norm_title(p["title"]):
+                        return x.get("citationCount") or 0,((x.get("externalIds") or {}).get("ArXiv") or "")
+                return 0,""
+            if r.status_code==429:time.sleep(12);continue
+            print(f"S2 search status {r.status_code}");return 0,""
+        except requests.RequestException:time.sleep(8)
     return 0,""
 
 def refresh_citations(old,keep):
