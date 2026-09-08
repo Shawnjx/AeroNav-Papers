@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T05:39:39.759268+00:00",
+  "updated_at": "2026-09-08T06:11:06.415511+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5057,6 +5057,86 @@
       "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
+      "id": "2306.14824",
+      "arxiv_id": "2306.14824",
+      "title": "Kosmos-2: Grounding Multimodal Large Language Models to the World",
+      "authors": [
+        "Zhiliang Peng",
+        "Wenhui Wang",
+        "Li Dong",
+        "Yaru Hao",
+        "Shaohan Huang",
+        "Shuming Ma",
+        "Furu Wei"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 133,
+      "url": "https://arxiv.org/abs/2306.14824",
+      "pdf_url": "https://arxiv.org/pdf/2306.14824",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Kosmos-2 是微软提出的多模态大模型，将指代表达表示为 Markdown 链接形式的位置 token，基于大规模图文定位数据 GrIT 训练，使 MLLM 原生具备文本与视觉区域（边界框）互相定位的能力。",
+      "change_zh": "此前 MLLM 只做整体图文理解，指代定位依赖专用小模型分而治之；Kosmos-2 把边界框离散为位置 token 并与文本词元绑定，用统一数据与单一生成式模型同时实现 grounding 与 referring，让定位能力成为大模型的原生技能。",
+      "why_it_matters": "grounding 是语言与像素空间坐标的桥梁：UAV 主动目标搜索与 ObjectNav 都需把语言目标映射到图像中的候选区域再驱动接近，Kosmos-2 的开放区域定位为此提供感知基座，也是 MLLM 智能体与空间智能方向的标志性进展。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "instruction",
+        "mllm",
+        "multimodal large language model",
+        "world model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T06:11:06.415511+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4399574562",
+      "arxiv_id": "",
+      "title": "NICER-SLAM: Neural Implicit Scene Encoding for RGB SLAM",
+      "authors": [
+        "Zihan Zhu",
+        "Songyou Peng",
+        "Viktor Larsson",
+        "Zhaopeng Cui",
+        "Martin R. Oswald",
+        "Andreas Geiger",
+        "Marc Pollefeys"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 133,
+      "url": "https://doi.org/10.1109/3dv62453.2024.00096",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "NICER-SLAM提出纯RGB稠密SLAM系统，联合优化相机位姿与分层神经隐式地图，融合单目几何先验、光流与warping损失，实现高质量重建、新视角合成，性能媲美RGB-D方案。",
+      "change_zh": "常见神经隐式SLAM要么依赖RGB-D传感器、要么外挂独立单目追踪；该工作改为纯RGB下联合优化相机位姿与分层神经隐式地图，并用SDF到密度的局部自适应变换适配复杂大场景。",
+      "why_it_matters": "稠密RGB SLAM是机器人自主核心能力，无需深度传感器即可输出高保真地图与位姿，降低感知硬件门槛，可为无人机主动目标搜索、场景理解与导航建图提供空间基础，但优化式方法距实时机载部署仍有距离。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T06:11:06.415511+00:00"
+    },
+    {
       "id": "https://openalex.org/W4385151905",
       "arxiv_id": "",
       "title": "An Adaptive Conversion Speed Q-Learning Algorithm for Search and Rescue UAV Path Planning in Unknown Environments",
@@ -5098,6 +5178,47 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4402716381",
+      "arxiv_id": "",
+      "title": "SEED-Bench: Benchmarking Multimodal Large Language Models",
+      "authors": [
+        "Bohao Li",
+        "Yuying Ge",
+        "Yixiao Ge",
+        "Guangzhi Wang",
+        "Rui Wang",
+        "Ruimao Zhang",
+        "Ying Shan"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 128,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.01263",
+      "pdf_url": "",
+      "code_url": "https://github.com/AILab-CVC/SEED-Bench",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SEED-Bench构建含2.4万道人工标注多选题的多模态大模型综合基准，将MLLM能力按可接受与生成的模态划分为L0-L4层级，覆盖27个维度含文本与图像生成，并系统评测22个开源模型。",
+      "change_zh": "以往MLLM基准多只评估单对图文输入的理解能力，本文以L0-L4模态层级重新划分能力范畴并纳入图像生成评测，同时用人工标注真值的选择题实现无需人工或GPT介入的客观、可自动化的横向评测。",
+      "why_it_matters": "UAV目标搜索、aerial VLN与ObjectNav日益依赖MLLM/VLM作感知与指令理解底座，该基准为筛选和评测这些底座模型提供了标准化客观工具；但摘要未列出27维具体内容，与具身导航任务的直接耦合程度有限。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-08T06:11:06.415511+00:00"
     },
     {
       "id": "https://openalex.org/W4401417061",
@@ -5174,6 +5295,42 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4396681775",
+      "arxiv_id": "",
+      "title": "Multimodal Foundation Models: From Specialists to General-Purpose Assistants",
+      "authors": [
+        "Chunyuan Li",
+        "Zhe Gan",
+        "Zhengyuan Yang",
+        "Jianwei Yang",
+        "Linjie Li",
+        "Lijuan Wang",
+        "Jianfeng Gao"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Foundations and Trends® in Computer Graphics and Vision",
+      "citation_count": 123,
+      "url": "https://doi.org/10.1561/0600000110",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该专著系统综述多模态基础模型从专用到通用助手的演进，覆盖视觉骨干预训练、文生图、LLM启发的统一视觉模型、多模态大模型端到端训练与LLM工具链五大主题。",
+      "change_zh": "作为综述专著，其贡献是提出统一分类法，把视觉骨干、文生图等专用模型与统一视觉模型、多模态大模型端到端训练、LLM工具链纳入同一演进叙事，勾勒从专用到通用助手的范式转变；不含新方法或实验。",
+      "why_it_matters": "对多模态大模型与智能体线是体系化核心参考；其中MLLM训练与LLM工具链章节，为UAV主动目标搜索与ObjectNav中的开放词汇目标理解、指令语义解析及LLM规划智能体提供模型底座与方法地图。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-08T06:11:06.415511+00:00"
     },
     {
       "id": "https://openalex.org/W4390494915",
@@ -7715,102 +7872,230 @@
       "rigor": 6,
       "reason": "教育技术接受度问卷研究（改良TAM/PLS-SEM，657名教师样本），属教育社会科学，与具身导航、UAV目标搜索、空间智能、大模型与智能体等全部收录技术线完全无关。",
       "excluded_at": "2026-09-08"
+    },
+    "2310.01728": {
+      "title": "TimeLLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "将LLM重编程用于时间序列预测，是与空间、导航、机器人无关的垂直领域应用，仅借LLM术语擦边，属收录范围外。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4414594130": {
+      "title": "Large Language Models for Cyber Security: A Systematic Literature Review",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "该文是LLM应用于网络安全这一垂直领域的系统性文献综述，与空间、导航、机器人及具身智能的研究范围无实质关联，属于将大模型套用到无关垂直领域的范围外工作。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4395466417": {
+      "title": "Research Progress and Application of Multimodal Flexible Sensors for Electronic Skin",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "电子皮肤多模态柔性传感器综述属材料与器件领域，虽提及机器人应用，但不涉及导航决策、空间智能或机器人自主的任何收录技术线。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4367663104": {
+      "title": "OVD-SLAM: An Online Visual SLAM for Dynamic Environments",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "属动态视觉SLAM子领域的常规增量改进：在ORB-SLAM3上组合语义+深度+光流并做逐点权重优化的同类工作众多，未体现高影响力系统性贡献。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4392761817": {
+      "title": "Histone H3K9 Lactylation Confers Temozolomide Resistance in Glioblastoma via LUC7L2‐Mediated MLH1 Intron Retention",
+      "relevance": 0,
+      "rigor": 8,
+      "reason": "该论文为肿瘤表观遗传学（组蛋白乳酸化与胶质母细胞瘤化疗耐药机制）研究，与具身导航、UAV搜索、空间智能、机器人自主等全部收录技术线毫无关联，属范围外。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4393203759": {
+      "title": "Quantitative Evaluation of Large Language Models to Streamline Radiology Report Impressions: A Multimodal Retrospective Analysis",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "将现成大模型套用于放射学报告精简这一医疗垂直任务，与空间、导航、机器人无关，属明确排除范围；且摘要缺失，无法核实方法细节。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4396851501": {
+      "title": "Emerging 2D Ferroelectric Devices for In‐Sensor and In‐Memory Computing",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为二维铁电材料与存内/传感内神经形态计算硬件领域的综述，与具身导航、空间智能、机器人自主等全部收录技术线均无关，仅因'sensing'一词与感知擦边。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4387775056": {
+      "title": "Virtual training, real effects: a narrative review on sports performance enhancement through interventions in virtual reality",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "本文是体育科学领域的VR运动训练叙事综述，研究对象为人类运动员而非机器人或智能体，与具身导航、空域自主、大模型智能体等全部收录技术线无关，仅'虚拟到现实'术语擦边。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4398133351": {
+      "title": "Harnessing Artificial Intelligence in Multimodal Omics Data Integration: Paving the Path for the Next Frontier in Precision Medicine",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "生物医学多组学数据整合综述，将大模型应用于精准医疗垂直领域，与空间智能、导航、机器人自主均无关，属明确排除范围。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4319656339": {
+      "title": "I Asked a ChatGPT to Write an Editorial About How We Can Incorporate Chatbots Into Neurosurgical Research and Patient Care…",
+      "relevance": 1,
+      "rigor": 1,
+      "reason": "将现成ChatGPT直接套用于神经外科医疗与科研这一垂直领域，与空间、导航、机器人无关，且无任何实验、基线或评估，仅为生成文本加评论的社论。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4411505840": {
+      "title": "AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "该工作是将生成式AI套用于教育辅导垂直领域的应用研究，与空间智能、导航、机器人等全部收录技术线无关，属于明确排除范围。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4406849011": {
+      "title": "Artificial intelligence and innovation capability: A dynamic capabilities perspective",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "属管理学实证研究，考察企业AI使用对创新能力的链式中介影响，与具身导航、空间智能、机器人自主等全部收录技术线无关，仅为术语'AI'擦边。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4405599065": {
+      "title": "SciAgents: Automating Scientific Discovery Through Bioinspired Multi‐Agent Intelligent Graph Reasoning",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "该工作是将现成LLM与多智能体编排套用于材料科学/科学发现这一垂直领域，与空间智能、导航、机器人等技术线无关，属范围外应用而非智能体能力本身的通用性进展。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4402670791": {
+      "title": "MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "将现成LLM以角色扮演多智能体协作套用于医疗问答垂直领域，训练-free且与空间、导航、机器人无关，属于范围明确排除的垂直应用类工作。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4366603507": {
+      "title": "A systematic review on the flavor of soy‐based fermented foods: Core fermentation microbiome, multisensory flavor substances, key enzymes, and metabolic pathways",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "本文为食品发酵微生物学领域综述，主题为豆基发酵食品风味形成机制，与具身导航、空间智能、机器人自主等全部收录技术线毫无关联，属范围外论文。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4366597599": {
+      "title": "Charting the Evolution and Future of Conversational Agents: A Research Agenda Along Five Waves and New Frontiers",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该文是信息系统视角下对话智能体（CA）领域的文献计量综述，仅梳理对话系统研究历史与设计部署议题，不涉及空间、导航、机器人，也不是智能体能力（推理/记忆/工具使用等）的技术性进展，属收录范围外。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4389519488": {
+      "title": "Character-LLM: A Trainable Agent for Role-Playing",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "属LLM角色扮演/人物拟像的垂直应用，与空间智能、导航、机器人均无关，仅'agent'一词与收录范围擦边",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4385819939": {
+      "title": "Intelligent Control of Multilegged Robot Smooth Motion: A Review",
+      "relevance": 4,
+      "rigor": 4,
+      "reason": "多足机器人步态柔顺与运动控制的定性综述，非公认高影响力系统工作且不含导航决策成分，无原创实验与定量评估，按状态估计与控制线的落地影响力标准属常规综述。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4411306079": {
+      "title": "Medical digital twins: enabling precision medicine and medical artificial intelligence",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "属医疗健康领域的数字孪生政策观点论文，将AI与大模型套用于精准医疗垂直场景，与空间智能、导航、机器人等技术线无实质关联，且无实验、无基线与消融。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4411254634": {
+      "title": "Large Language Models in Medicine: Applications, Challenges, and Future Directions",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文是将LLM套用于医疗垂直领域的综述，与空间、导航、机器人均无关（医疗应用明确列为拒收类别），且属综述无自有方法与实验。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4401553778": {
+      "title": "A survey on integration of large language models with intelligent robots",
+      "relevance": 7,
+      "rigor": 4,
+      "reason": "入门向综述，仅有文献分类梳理与提示工程教程示例，无系统性实验、评测协议或可复现细节，方法可信度难以验证。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4393002303": {
+      "title": "On the Opportunities and Challenges of Foundation Models for GeoAI (Vision Paper)",
+      "relevance": 4,
+      "rigor": 5,
+      "reason": "GIS/遥感社区的愿景立场论文，七项评测任务（地名识别、痴呆时序预测、POI分类、遥感场景分类等）均不涉及导航、机器人或具身智能，仅借“地理空间/多模态”术语与收录范围擦边。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4400415334": {
+      "title": "Utilising artificial intelligence-enhanced writing mediation to develop academic writing skills in EFL learners: a qualitative study",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文是将现成LLM（ChatGPT）套用于EFL写作教学的垂直教育应用，与空间、导航、机器人及智能体能力本身的进展均无关，属收录范围外。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4401806258": {
+      "title": "Exploiting Radio Frequency Characteristics With a Support Unmanned Aerial Vehicle to Improve Wireless Sensor Location Estimation Accuracy",
+      "relevance": 4,
+      "rigor": 5,
+      "reason": "核心是基于射频信号强度特征的无线传感器定位与信号处理，无人机仅充当移动测量平台，任务对象是物联网传感器而非视觉/具身目标搜索，属范围外的RF感知与通信定位问题。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4406232026": {
+      "title": "Taking the next step with generative artificial intelligence: The transformative role of multimodal large language models in science education",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "将GPT-4 Vision等现成MLLM套用于科学教育这一垂直领域，与空间、导航、机器人无关，且仅为理论框架与示例场景的概念性论述，无任何实验验证。",
+      "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4402400123": {
+      "title": "Revolutionizing Health Care: The Transformative Impact of Large Language Models in Medicine",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "将现成LLM套用于医疗垂直领域，与空间、导航、机器人无关，且为无实验支撑的综述观点文章。",
+      "excluded_at": "2026-09-08"
     }
   },
   "briefing": {
-    "text": "本批经典主线是大模型走向具身与协作：多智能体流程分工、LLM充当世界模型的规划推理、多模态视觉短板与幻觉治理，以及稠密SLAM重建。首推RoCo：用辩证对话生成子任务与路标点、借碰撞反馈迭代改进，是多机器人LLM协作闭环的代表；Reasoning with Language Model is Planning with World Model让LLM兼作世界模型与推理智能体，以MCTS探索推理空间，可直接迁移到具身规划；Eyes Wide Shut？以CLIP盲对暴露多模态大模型在基础视觉模式上的失效，对依赖视觉接地的导航智能体尤具警示。趋势是从展示能力转向可靠性、接地与闭环规划。",
-    "added": 10,
-    "at": "2026-09-08T05:39:39.759268+00:00",
+    "text": "本批入库工作聚焦多模态基础模型：语言-视觉定位、神经隐式建图、综合基准与体系综述，正好覆盖具身导航的语言接口与空间感知两端。优先读 Kosmos-2，它把指代表达编码为位置token并基于GrIT训练，模型可直接输出边界框，为指令跟随导航提供现成的语言-区域对齐能力；NICER-SLAM 则在纯RGB输入下联合优化相机位姿与分层神经隐式地图，重建与新视角合成接近RGB-D方案，适合无深度传感器的移动平台参考；想快速建立领域全景可从综述 Multimodal Foundation Models: From Specialists to General-Purpose Assistants 入手。整体看，定位、建图等具身基础能力正被并入通用多模态大模型，专用模块与基础模型的边界日益模糊。",
+    "added": 4,
+    "at": "2026-09-08T06:11:06.415511+00:00",
     "new": [
       {
-        "t": "RoCo: Dialectic Multi-Robot Collaboration with Large Language Models",
-        "u": "https://doi.org/10.1109/icra57147.2024.10610855",
-        "r": 6,
-        "g": 7,
-        "s": "让各机器人配备LLM，通过辩证对话共同推理任务策略，生成子任务计划与任务空间路标点供多臂运动规划器加速轨迹规划，并利用碰撞等环境反馈在上下文中迭代改进；发布6任务基准RoCoBench并在真机验证人机协作。",
-        "c": "",
-        "cit": 154
-      },
-      {
-        "t": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
-        "u": "https://arxiv.org/abs/2308.00352",
-        "r": 9,
-        "g": 7,
-        "s": "MetaGPT把人类标准作业流程编码为提示序列，让多个LLM智能体按流水线角色分工协作并校验中间结果，以减少级联幻觉，在软件工程基准上生成比对话式多智能体系统更连贯的方案。",
-        "c": "https://github.com/geekan/MetaGPT",
-        "cit": 152
-      },
-      {
-        "t": "Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",
-        "u": "https://arxiv.org/abs/2308.12966",
-        "r": 9,
-        "g": 8,
-        "s": "本文提出Qwen-VL系列大规模视觉语言模型，通过视觉感受器、输入输出接口、三阶段训练与多语言多模态语料赋予其视觉能力，在图像描述、问答、视觉定位等基准上刷新同规模通用模型纪录。",
-        "c": "https://github.com/QwenLM/Qwen-VL",
-        "cit": 149
-      },
-      {
-        "t": "Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs",
-        "u": "https://doi.org/10.1109/cvpr52733.2024.00914",
+        "t": "Kosmos-2: Grounding Multimodal Large Language Models to the World",
+        "u": "https://arxiv.org/abs/2306.14824",
         "r": 8,
-        "g": 8,
-        "s": "本文揭示多模态大模型的视觉短板源于CLIP表征缺陷，通过'CLIP盲对'构建MMVP基准，暴露GPT-4V等模型在九类基础视觉模式上的错误与幻觉，并提出混合视觉自监督特征的MoF方法提升视觉接地能力。",
-        "c": "",
-        "cit": 145
-      },
-      {
-        "t": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
-        "u": "https://arxiv.org/abs/2404.00282",
-        "r": 6,
-        "g": 5,
-        "s": "本综述系统梳理大语言模型增强强化学习的研究，基于智能体-环境交互范式提出信息处理器、奖励设计者、决策者与生成器四类角色的分类框架，并分析各角色缓解的RL挑战与未来方向。",
-        "c": "",
-        "cit": 144
-      },
-      {
-        "t": "GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction",
-        "u": "https://doi.org/10.1109/iccv51070.2023.00345",
-        "r": 7,
-        "g": 8,
-        "s": "提出稠密视觉SLAM框架GO-SLAM，以回环检测与在线全局光束法平差为核心，利用全部历史帧的学习全局几何逐帧优化位姿，并同步更新神经隐式表面表示，实现实时且全局一致的三维重建。",
-        "c": "",
-        "cit": 142
-      },
-      {
-        "t": "Reasoning with Language Model is Planning with World Model",
-        "u": "https://doi.org/10.18653/v1/2023.emnlp-main.507",
-        "r": 8,
-        "g": 8,
-        "s": "提出RAP框架，将LLM同时用作世界模型与推理智能体，用蒙特卡洛树搜索策略性探索推理空间并平衡探索与利用，在规划生成、数学与逻辑推理上超越CoT等强基线。",
-        "c": "",
-        "cit": 139
-      },
-      {
-        "t": "Orbeez-SLAM: A Real-time Monocular Visual SLAM with ORB Features and NeRF-realized Mapping",
-        "u": "https://doi.org/10.1109/icra48891.2023.10160950",
-        "r": 7,
-        "g": 6,
-        "s": "Orbeez-SLAM将ORB特征视觉里程计与NeRF隐式神经表征建图结合，仅用单目RGB输入即可实时定位并生成稠密地图，无需预训练即可适应新场景。",
-        "c": "https://github.com/MarvinChung/Orbeez-SLAM",
-        "cit": 139
-      },
-      {
-        "t": "Detecting and Preventing Hallucinations in Large Vision Language Models",
-        "u": "https://doi.org/10.1609/aaai.v38i16.29771",
-        "r": 7,
-        "g": 8,
-        "s": "本文构建首个多模态幻觉检测数据集M-HalDetect（16k细粒度标注），用细粒度偏好优化FDPO与奖励模型拒绝采样分别降低InstructBLIP幻觉41%和55%，且可泛化到LLaVA等模型。",
-        "c": "https://github.com/hendryx-scale/mhal-detect",
-        "cit": 138
-      },
-      {
-        "t": "Large language models for robotics: Opportunities, challenges, and perspectives",
-        "u": "https://doi.org/10.1016/j.jai.2024.12.003",
-        "r": 8,
-        "g": 6,
-        "s": "本文系统综述LLM与多模态LLM在机器人任务规划等具身任务中的集成应用，并提出基于GPT-4V的具身任务规划框架，结合自然语言指令与机器人视觉感知，在多个数据集上验证了性能提升。",
+        "g": 9,
+        "s": "Kosmos-2 是微软提出的多模态大模型，将指代表达表示为 Markdown 链接形式的位置 token，基于大规模图文定位数据 GrIT 训练，使 MLLM 原生具备文本与视觉区域（边界框）互相定位的能力。",
         "c": "",
         "cit": 133
+      },
+      {
+        "t": "NICER-SLAM: Neural Implicit Scene Encoding for RGB SLAM",
+        "u": "https://doi.org/10.1109/3dv62453.2024.00096",
+        "r": 6,
+        "g": 7,
+        "s": "NICER-SLAM提出纯RGB稠密SLAM系统，联合优化相机位姿与分层神经隐式地图，融合单目几何先验、光流与warping损失，实现高质量重建、新视角合成，性能媲美RGB-D方案。",
+        "c": "",
+        "cit": 133
+      },
+      {
+        "t": "SEED-Bench: Benchmarking Multimodal Large Language Models",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.01263",
+        "r": 7,
+        "g": 8,
+        "s": "SEED-Bench构建含2.4万道人工标注多选题的多模态大模型综合基准，将MLLM能力按可接受与生成的模态划分为L0-L4层级，覆盖27个维度含文本与图像生成，并系统评测22个开源模型。",
+        "c": "https://github.com/AILab-CVC/SEED-Bench",
+        "cit": 128
+      },
+      {
+        "t": "Multimodal Foundation Models: From Specialists to General-Purpose Assistants",
+        "u": "https://doi.org/10.1561/0600000110",
+        "r": 8,
+        "g": 6,
+        "s": "该专著系统综述多模态基础模型从专用到通用助手的演进，覆盖视觉骨干预训练、文生图、LLM启发的统一视觉模型、多模态大模型端到端训练与LLM工具链五大主题。",
+        "c": "",
+        "cit": 123
       }
     ]
   }
