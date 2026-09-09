@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T12:10:26.540667+00:00",
+  "updated_at": "2026-09-09T08:03:46.016334+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1084,7 +1084,7 @@
       "published": "2022",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 1543,
+      "citation_count": 1544,
       "url": "https://arxiv.org/abs/2207.05608",
       "pdf_url": "https://arxiv.org/pdf/2207.05608",
       "code_url": "",
@@ -1668,7 +1668,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 860,
+      "citation_count": 861,
       "url": "https://doi.org/10.1109/cvpr52733.2024.01354",
       "pdf_url": "",
       "code_url": "https://github.com/THUDM/CogVLM",
@@ -8518,6 +8518,7 @@
       "excluded_at": "2026-09-08"
     }
   },
+  "last_citation_refresh": "2026-09-09T08:03:46.016334+00:00",
   "briefing": {
     "text": "本批过半是无人机导航与路径规划研究，其余是LLM智能体与基础模型类工作。首推ULIP-2，它用现成多模态大模型自动生成3D语言描述、免人工标注即可扩展三模态预训练，是语义导航的可扩展感知底座；ExpeL证明智能体仅以自然语言提炼经验就能持续提升并迁移，对导航智能体的记忆机制设计有直接参照；Ad Astra借低轨卫星信号把GNSS拒止下的载具定位误差从数百米压到数十米。可见经典规划与定位方法正加速并入基础模型驱动的具身智能技术栈。",
     "added": 10,
