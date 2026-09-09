@@ -159,13 +159,21 @@ def main():
     rej=json.loads(REJECTED.read_text(encoding="utf-8")) if REJECTED.exists() else {}
     stems=[s.lower() for s in CFG.get("action_stems",[])]
     candidates={}
-    for p in fetch_arxiv():
+    def accept(p):
         p["topics"],p["relevance_score"]=classify(p)
         hay=(p["title"]+" "+p["abstract"]).lower()
-        if p["relevance_score"]<CFG.get("min_relevance_score",2):continue
-        if stems and not any(s in hay for s in stems) and p["relevance_score"]<CFG.get("bypass_stems_score",99):continue
+        if p["relevance_score"]<CFG.get("min_relevance_score",2):return
+        if stems and not any(s in hay for s in stems) and p["relevance_score"]<CFG.get("bypass_stems_score",99):return
         candidates[p["id"]]=p
+    for p in fetch_arxiv():accept(p)
     fresh=[p for k,p in candidates.items() if k not in existing and k not in rej]
+    if not fresh and existing:
+        # arXiv search index lags the ~08:00 CST announcement by hours; its queries
+        # "succeed" with stale results. OpenAlex ingests DOIs pre-announcement, so
+        # probe it before giving up on this run.
+        print("arXiv line has nothing new — probing OpenAlex fallback discovery")
+        for p in fetch_openalex_recent():accept(p)
+        fresh=[p for k,p in candidates.items() if k not in existing and k not in rej]
     fresh=sorted(fresh,key=lambda p:(p["relevance_score"],p["published"]),reverse=True)[:CFG["max_new_per_run"]]
     added=0;new_batch=[]
     for p in fresh:
