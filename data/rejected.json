@@ -526,5 +526,13 @@
     "reason": "研究对象是无标注条件下的物体识别（3D形状先验与冻结基础模型特征融合），不涉及导航决策、主动感知规划或空间记忆，仅与3D理解边缘相关。",
     "rejected_at": "2026-09-07",
     "url": "https://arxiv.org/abs/2609.04381"
+  },
+  "2609.04544": {
+    "title": "Integrating Agentic Artificial Intelligence with High-Performance Computing for Grid Planning",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "LLM智能体被套用于电网潮流规划这一垂直领域，与空间智能、导航或机器人自主无关，属范围外的领域应用。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.04544"
   }
 }
