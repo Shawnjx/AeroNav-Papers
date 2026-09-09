@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T20:29:49.884349+00:00",
+  "updated_at": "2026-09-09T09:55:32.376822+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -110,6 +110,94 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2609.08402",
+      "arxiv_id": "2609.08402",
+      "title": "Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method",
+      "authors": [
+        "Boao Yu",
+        "Zimo Chen",
+        "Junreng Rao",
+        "Yue Hu",
+        "Zhengqiu Zhu",
+        "Yong Zhao",
+        "Rusheng Ju"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08402",
+      "pdf_url": "https://arxiv.org/pdf/2609.08402",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出首个空地协同目标搜索基准AGOS-Bench与7.7k条轨迹数据集，并设计免训练、工具增强的AGOS-Agent，以搜索-交接-验证协议协调VLM完成UAV-UGV联合搜索验证指定车辆，九个VLM骨干中八个成功率提升。",
+      "change_zh": "与单机ObjectNav或单体VLM零样本导航不同，该文将目标搜索显式分解为UAV空中发现与UGV地面验证的交接式异构协作，把复杂动态协调交给协议而非VLM本身，使其专注场景理解与决策，且全程免训练。摘要未提供协议组件消融细节。",
+      "why_it_matters": "直接服务UAV主动目标搜索与ObjectNav：首个空地协同目标搜索基准填补多视角参考目标搜索的评测空白，7.7k轨迹可支撑模仿学习，其搜索-交接-验证协议为异构机器人分工与VLM决策解耦提供可复用范式，并系统评测了九个VLM的具身搜索能力。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "agentic",
+        "benchmark",
+        "uav",
+        "vlm"
+      ],
+      "added_at": "2026-09-09T09:36:02.190541+00:00"
+    },
+    {
+      "id": "2609.08159",
+      "arxiv_id": "2609.08159",
+      "title": "OmniNav: Robust Long-Horizon Target Navigation in Dynamic Environments",
+      "authors": [
+        "Yujie Tang",
+        "Meiling Wang",
+        "Jinhao Jiang",
+        "Sibo Zuo",
+        "Yinan Deng",
+        "Xinyu Zhang",
+        "Yufeng Yue"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08159",
+      "pdf_url": "https://arxiv.org/pdf/2609.08159",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OmniNav将长时程目标导航表述为因子化任务状态后验的持续推断，结合可更新3D场景记忆、贝叶斯信念修正与交互可行端点选择，在ObjectNav与实例导航基准及真机上取得最优成功率。",
+      "change_zh": "常见模块化ObjectNav多假设场景记忆静态有效、探索仅用正面证据；OmniNav将其重构为持续后验推断：显式剔除过期场景证据、把搜索失败作为负证据修正目标信念，并使导航终点满足操作可达与碰撞约束，实现分层闭环恢复。",
+      "why_it_matters": "直接推进ObjectNav与实例导航：可更新场景记忆与负证据信念修正在目标重定位、动态干扰下更稳健；该思想可迁移到UAV搜救等目标会移动、需利用失败搜索信息的主动目标搜索，且真机抓放实验验证了sim2real落地性。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "instance navigation",
+        "objectnav"
+      ],
+      "added_at": "2026-09-09T09:41:51.117045+00:00"
     },
     {
       "id": "2609.04602",
@@ -435,6 +523,98 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.08164",
+      "arxiv_id": "2609.08164",
+      "title": "Dual-Layer Semantic-Spatial Belief Mapping for Aerial Object Goal Navigation",
+      "authors": [
+        "Jianqiang Xiao",
+        "Xiang Deng",
+        "Yuexuan Sun",
+        "Yanjin Wu",
+        "Wenbiao Yan",
+        "Liqiang Nie"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08164",
+      "pdf_url": "https://arxiv.org/pdf/2609.08164",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 12,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AeroBelief用双层语义-空间信念图把VLM瞬时观测转为持久空间信念，直觉层引导探索、证据层确认目标，配合时序稳定的区域引导，在UAV-ON基准上取得最优SR/OSR/SPL。",
+      "change_zh": "相比直接累积VLM帧级检测或单层语义图的常见路线，该文把信念分为场景级直觉层与目标级证据层并做证据门控融合，用保守证据资格化抑制噪声累积；探索引导与语义信念解耦并加时序承诺，减少重复低收益搜索。",
+      "why_it_matters": "该工作直击UAV开放词汇目标搜索与ObjectNav的核心痛点——VLM观测噪声大、稀疏且空间瞬时，双层信念与证据资格化为机载语义建图提供可复用范式，其保持探索压力的区域引导设计对地面ObjectNav亦有借鉴价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "exploration",
+        "object goal navigation",
+        "objectnav",
+        "uav",
+        "vlm"
+      ],
+      "added_at": "2026-09-09T09:34:40.750784+00:00"
+    },
+    {
+      "id": "2609.08442",
+      "arxiv_id": "2609.08442",
+      "title": "AirAnchor: Bridging Local and Global Spatial Information for Zero-Shot Aerial Vision-and-Language Navigation",
+      "authors": [
+        "Shanwei Fan",
+        "Bin Zhang",
+        "Zhiwei Xu",
+        "Yingxuan Teng",
+        "Siqi Dai",
+        "Lin Cheng",
+        "Guoliang Fan"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08442",
+      "pdf_url": "https://arxiv.org/pdf/2609.08442",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AirAnchor面向零样本空域视觉语言导航，以空间锚点融合在线局部表征与增量维护的全局目标记忆，并在智能体框架中整合决策，在AerialVLN上显著超越已有零样本基线。",
+      "change_zh": "常见零样本空域导航多在单一尺度运作：或在线建局部表征，或离线积累全局记忆；AirAnchor以决策相关的空间锚点为桥，将锚点接地、持久目标记忆与智能体决策统一进一个框架，实现局部与全局空间信息互补。",
+      "why_it_matters": "空域VLN是核心收录线，其局部接地加持久地标记忆的思路可迁移到无人机搜救中的目标重定位与长程规划，也可为ObjectNav提供实例级空间记忆与锚点式接地参考，缓解长时程空间一致性问题。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "agentic",
+        "drone",
+        "instruction",
+        "spatial memory"
+      ],
+      "added_at": "2026-09-09T09:35:20.481912+00:00"
+    },
+    {
       "id": "2608.12835",
       "arxiv_id": "2608.12835",
       "title": "AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN",
@@ -611,6 +791,41 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.06424",
+      "arxiv_id": "2609.06424",
+      "title": "OVMAN: A Task and Benchmark for Open-Vocabulary Motion-Aware Navigation",
+      "authors": [
+        "Dibyendu Ghosh"
+      ],
+      "published": "2026-09-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06424",
+      "pdf_url": "https://arxiv.org/pdf/2609.06424",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OVMAN提出感知场景变化的开放词汇导航任务与基准：智能体浏览场景后，场景经脚本化改变，需导航到由变化定义的目标（如被移动的椅子或花瓶原位），并发布219个经oracle验证可解的双访回合，现有系统表现不佳。",
+      "change_zh": "常见导航基准把目标定义在当前可见世界中，该工作把目标锚定在两次访问之间的变化上：目标可以是物体原来的空位置，那里已无可检测对象，迫使智能体依赖对首访场景的空间记忆与过去时态查询，而非仅靠在线感知重识别目标。",
+      "why_it_matters": "对ObjectNav，它把开放词汇目标导航从静态场景推进到时变场景，暴露现有零样本导航器与开放词汇地图在实例定位和时空记忆上的短板；对UAV重访式搜救中“目标曾在何处”的空位导航同样关键，提供了可借鉴的任务范式与严格的oracle认证评测方法。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "geometry"
+      ],
+      "added_at": "2026-09-09T09:55:29.376506+00:00"
+    },
+    {
       "id": "2609.01404",
       "arxiv_id": "2609.01404",
       "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
@@ -660,6 +875,46 @@
         "multimodal large language model"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.05515",
+      "arxiv_id": "2609.05515",
+      "title": "Multi-robot Learning-based Informative Path Planning Using Spatio-Temporal Gaussian Process Kalman Filter",
+      "authors": [
+        "Muqing Cao",
+        "Yunwoo Lee",
+        "Junbin Yuan",
+        "Lorenzo Schenk",
+        "Sebastian Scherer"
+      ],
+      "published": "2026-08-31",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.05515",
+      "pdf_url": "https://arxiv.org/pdf/2609.05515",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出网格化时空GP-卡尔曼滤波框架用于多机器人信息路径规划，以单一潜在场表示匿名目标存在，支持任意视场与距离相关噪声，分散式信念融合结合RL邻居选择，仿真与双无人机户外实验验证。",
+      "change_zh": "相比为每个目标维护一个GP、依赖简化感知模型与集中式信念更新的常见路线，该方法以单一网格潜在场统一表征匿名目标，递归更新支持真实相机视场与距离相关噪声，并通过协方差交叉实现去中心化保守信念融合。",
+      "why_it_matters": "对UAV主动目标搜索价值直接：真实感知建模与去中心化多机协作为搜救侦察与持续监视提供可部署方案，7000平米户外双机实验验证sim2real，其时空不确定性建模思路亦可迁移至地面目标导航。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "uav"
+      ],
+      "added_at": "2026-09-09T09:45:53.911988+00:00"
     },
     {
       "id": "2608.28270",
@@ -1114,6 +1369,87 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.08292",
+      "arxiv_id": "2609.08292",
+      "title": "EvoNav-Bench: Benchmarking Lifelong Navigation in Evolving Environments",
+      "authors": [
+        "Xilin Wang",
+        "Guoxi Zhang",
+        "Hongming Xu",
+        "Zhuofan Zhang",
+        "Tianxu Wang",
+        "Lifeng Fan"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08292",
+      "pdf_url": "https://arxiv.org/pdf/2609.08292",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EvoNav-Bench是基于ProcTHOR、扩展GOAT-Bench范式的终身导航基准，通过在导航任务间引入环境变化，使既往经验有用但不可尽信，可控评估复用场景记忆的导航智能体在环境演化下的表现，并揭示现有方法易失效。",
+      "change_zh": "常见终身导航基准默认环境静态、既往观测恒久可靠；该工作打破该前提，在任务间注入可控的环境演化，使先验经验有用但不可尽信，首次可控地暴露并量化场景记忆复用方法在变化环境下的失效模式，并以三种启发式策略作对照分析。",
+      "why_it_matters": "对ObjectNav与终身导航，该基准直接检验场景图/快照记忆在动态环境下的可靠性，为记忆更新机制提供评测土壤；对UAV反复搜救侦察这类需跨任务复用空间记忆的任务，其发现同样提示持久空间记忆必须具备应对场景演化的更新能力。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "exploration"
+      ],
+      "added_at": "2026-09-09T09:42:26.537522+00:00"
+    },
+    {
+      "id": "2609.09069",
+      "arxiv_id": "2609.09069",
+      "title": "Rethinking Learned Occupancy in Autonomous Active Mapping with Observation-Gated Filtering",
+      "authors": [
+        "Jiahui Zhang",
+        "Bonian Han",
+        "Gongbo Liang",
+        "Yu Zhang"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09069",
+      "pdf_url": "https://arxiv.org/pdf/2609.09069",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文在闭环主动建图基准中系统研究学习式占据补全对规划的双重作用，发现提升占据精度并非单调提升覆盖性能，并提出观测门控滤波抑制无支撑预测以改进易失败起点。",
+      "change_zh": "相比常见的\"补全更准即建图更好\"路线，该文不追求更强的占据补全模型，而是以受控实验解耦占据精度与闭环覆盖的关系，并用无需重训练的观测门控滤波在线修订面向规划的几何，把重心从模型精度转向预测何时可信。",
+      "why_it_matters": "对主动感知与重建技术线，它揭示了预测几何与规划的耦合失效模式并给出轻量在线修订方案；其门控滤波思想可迁移到UAV主动搜索与探索中的占据补全，也为ObjectNav等依赖记忆地图的规划提供何时信任预测的判据。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-09-09T09:46:40.231282+00:00"
+    },
+    {
       "id": "2609.03892",
       "arxiv_id": "2609.03892",
       "title": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
@@ -1291,6 +1627,128 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.06623",
+      "arxiv_id": "2609.06623",
+      "title": "CAVEAT: Recurrent Multimodal Diffusion Planning for Mapless Aerial Exploration",
+      "authors": [
+        "Steven Visch",
+        "Nicolò Botteghi",
+        "Antonio Franchi",
+        "Barbara Bazzana"
+      ],
+      "published": "2026-09-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06623",
+      "pdf_url": "https://arxiv.org/pdf/2609.06623",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出无人机无图探索的循环多模态扩散策略：以激光雷达、视觉与位姿融合的循环状态为条件，模仿FUELv2专家生成航点，辅以滚动推理与局部SDF避障，并在实机上验证部分探索与目标伺服。",
+      "change_zh": "主流方案依赖持续维护的全局地图与前沿驱动规划；本文以固定维循环内部状态隐式承载探索记忆，把基于地图的FUELv2专家蒸馏为无图扩散策略，并以滚动推理温启动与局部SDF启发替代显式全局规划。",
+      "why_it_matters": "该工作直接服务UAV主动探索与搜救：摆脱全局地图降低机载内存与计算负担，为无人机目标搜索提供可实机部署的学习策略范式；其专家蒸馏与循环状态设计对ObjectNav无图端到端导航同样具参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "uav",
+        "waypoint"
+      ],
+      "added_at": "2026-09-09T09:36:55.657221+00:00"
+    },
+    {
+      "id": "2609.06820",
+      "arxiv_id": "2609.06820",
+      "title": "Diagnosing and Dynamically Filtering Occupancy World Models for Active Mapping",
+      "authors": [
+        "Jiahui Zhang",
+        "Gongbo Liang",
+        "Yu Zhang"
+      ],
+      "published": "2026-09-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06820",
+      "pdf_url": "https://arxiv.org/pdf/2609.06820",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文诊断占用世界模型误差对主动建图规划的影响，发现仅修正假阳性或假阴性并不能稳定提升覆盖率，并据此提出保留未知区域预测、抑制无观测支持的动态过滤策略。",
+      "change_zh": "常见路线追求更准的占用补全再喂给规划器；本文改变做法，用固定规划器加真值神谕对照实验分离占用误差影响，证明精度提升不必然改善建图，并按在线观测支持度动态保留或抑制预测。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav中依赖占用补全的探索规划有直接启发：提升世界模型精度未必提升探索效率，可达性与规划才是瓶颈；动态过滤思路可用于抑制幻觉几何，引导视角朝向可达表面。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "3d scene",
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-09-09T09:43:38.581816+00:00"
+    },
+    {
+      "id": "2609.06251",
+      "arxiv_id": "2609.06251",
+      "title": "MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control",
+      "authors": [
+        "Ting Huang",
+        "Yue Huang",
+        "Zeyu Zhang",
+        "Shuicheng Yan",
+        "Hao Tang"
+      ],
+      "published": "2026-09-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06251",
+      "pdf_url": "https://arxiv.org/pdf/2609.06251",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文以监督CoT对齐与RL训练VLA完成多粒度具身推理，用条件化解码器输出任务级动作交机体控制器执行，在VLN-CE、四足控制与Go2/G1真机任务上优于强基线。",
+      "change_zh": "该文改变主流VLA隐式推理或整体动作预测的做法：用监督CoT对齐加RL显式提升推理到动作一致性，并以条件化解码器把任务级动作生成与机体专属执行解耦，实现统一接口下跨机体的长程闭环控制。",
+      "why_it_matters": "其CoT+RL训练与推理-动作解耦设计直接利好地面VLN，为长程指令跟随提供更可靠动作生成；任务级动作与机体执行分离的思路可迁移至UAV目标搜索与ObjectNav跨平台部署，但未在这两类任务上实验。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "deployment",
+        "evaluation",
+        "instruction",
+        "instruction following"
+      ],
+      "added_at": "2026-09-09T09:45:12.685772+00:00"
+    },
+    {
       "id": "2609.00950",
       "arxiv_id": "2609.00950",
       "title": "HitMem: Hierarchical Temporal 3D Memory with Multi-Modal Context-Aware Retrieval for Dynamic Environments",
@@ -1460,6 +1918,89 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.09082",
+      "arxiv_id": "2609.09082",
+      "title": "GoDeep: Annotation-Free Open-Vocabulary 3D Scene Understanding via Language-Space Lifting",
+      "authors": [
+        "Thodoris Betsas",
+        "Anastasios Doulamis",
+        "Andreas Georgopoulos"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09082",
+      "pdf_url": "https://arxiv.org/pdf/2609.09082",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免标注的开放词汇3D场景理解方法：用视觉语言模型将位姿图像翻译为实体级文本描述，投影并聚合到纯语言嵌入空间，无需3D训练语料与专用编码器，在ScanNet++等基准上具竞争力且逐点可解释。",
+      "change_zh": "常见路线把CLIP特征提升到3D联合嵌入并依赖大3D语料与专用编码器；本文改为让VLM仅充当“翻译器”输出实体级描述，直接在通用纯语言嵌入空间中接地、投影与聚合，实现零3D训练，且对OOV物体的存在/缺失判别更锐利、预测点级可解释。",
+      "why_it_matters": "免标注、可解释的开放词汇3D语义理解属于空间智能核心能力，可为开放词汇ObjectNav的目标接地与UAV目标搜索中的语义地图构建提供无需3D训练的方案；纯文本离散表示便于与LLM智能体及主动感知建图流程衔接，支撑跨域泛化。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "localization"
+      ],
+      "added_at": "2026-09-09T09:42:55.575626+00:00"
+    },
+    {
+      "id": "2609.06880",
+      "arxiv_id": "2609.06880",
+      "title": "Contextual Observer Grounding: Evaluating Situated Spatial Reasoning in Vision-Language Models",
+      "authors": [
+        "Mimo Shirasaka",
+        "Haochen Zhang",
+        "Yonatan Bisk"
+      ],
+      "published": "2026-09-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06880",
+      "pdf_url": "https://arxiv.org/pdf/2609.06880",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出语境观察者锚定概念，构建POVBench基准，用3D场景与多视角查询评估VLM从说话人视角理解空间关系并定位未指定目标的能力，发现显式分解观察者相对推理可提升定位。",
+      "change_zh": "不同于常规固定在全局或相机坐标系评测空间关系，该工作将观察者锚定分为隐含推断、明述、给定三形态，要求模型从语境线索推断说话人视角并据此定位目标，直指具身交流中被忽视的视角推断问题。",
+      "why_it_matters": "观察者视角推断是VLN指令与目标定位中方位词歧义的根源，POVBench为诊断改进MLLM空间推理提供可控基准，结论可迁移至无人机与地面目标搜索的人机指令理解，帮助智能体正确解析搜救者视角的方位描述。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "instruction",
+        "localization",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-09-09T09:37:35.396346+00:00"
     },
     {
       "id": "2609.04802",
@@ -1798,6 +2339,45 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.08512",
+      "arxiv_id": "2609.08512",
+      "title": "TASG-Explore: Traversability-Aware Sector-Guided Exploration for Ground Robot on Uneven Terrain",
+      "authors": [
+        "Shaocong Wang",
+        "Shiliang Shao",
+        "Ting Wang",
+        "Guangjie Han",
+        "Lianqing Liu"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08512",
+      "pdf_url": "https://arxiv.org/pdf/2609.08512",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出不平地形地面机器人探索框架TASG-Explore：以变体素地面拟合与自适应障碍编码做分层通行性分析，用扇区引导与动态拓扑路图规划路线，基准与真机实验中超越六种先进规划器。",
+      "change_zh": "常见路线或细致地形推理拖慢全局探索，或粗区域引导漏掉窄通道。本文用变体素地面拟合与8位障碍编码把通行性分析提速6.3倍，并以扇区聚类、地形耦合视点及含未知拓扑假设的路图兼顾快速扩展与安全通行。",
+      "why_it_matters": "自主探索是主动感知与在线建图的核心问题，本文的地形通行性分析与高效视点规划可迁移到复杂地形下的目标搜索与接近任务，其真机验证也为搜救侦察类UAV与地面系统的落地提供效率与安全性参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "exploration"
+      ],
+      "added_at": "2026-09-09T09:47:13.826551+00:00"
+    },
+    {
       "id": "2609.04911",
       "arxiv_id": "2609.04911",
       "title": "TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image",
@@ -2086,6 +2666,86 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.09005",
+      "arxiv_id": "2609.09005",
+      "title": "DXPR: Depth-Based Vision-LiDAR Cross-Modal Place Recognition Using Vision Foundation Models",
+      "authors": [
+        "Yungsoo Han",
+        "Youngseok Jang",
+        "Seungwon Roh",
+        "Jeongyeon Seo",
+        "H. Jin Kim"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09005",
+      "pdf_url": "https://arxiv.org/pdf/2609.09005",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DXPR将单目图像与激光点云统一为深度图表示，用单一视觉基础模型骨干学习模态不变描述子，辅以几何感知重叠挖掘器调制度量学习，实现相机查询LiDAR地图的跨模态重定位，跨季节昼夜均鲁棒。",
+      "change_zh": "常见跨模态重定位需为图像与点云各配专用编码器；DXPR改用统一深度图表示，以单个视觉基础模型骨干直接学习模态不变描述子，并用像素级几何重叠分数重标模糊样本对、自适应调节正样本边界，取代固定标签训练。",
+      "why_it_matters": "重定位是定位建图与机器人自主的底层能力。该工作让仅配相机的无人机在预建LiDAR地图中稳健全局定位，省去机载激光载荷且跨季节昼夜鲁棒，对搜救侦察等UAV长时任务及已建图环境下的自主导航部署有实用价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "odometry"
+      ],
+      "added_at": "2026-09-09T09:49:51.004121+00:00"
+    },
+    {
+      "id": "2609.08832",
+      "arxiv_id": "2609.08832",
+      "title": "Closing the Consistency Gap: Self-Evolving Agents That Learn to Stay on Course",
+      "authors": [
+        "Evelyn Duesterwald",
+        "Benjamin Elder",
+        "Lilian Ngweta",
+        "Shashanka Ubaru",
+        "Malgorzata Zimon"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08832",
+      "pdf_url": "https://arxiv.org/pdf/2609.08832",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "发现LLM智能体重复执行同一任务成功率不稳定，定义\"一致性差距\"；提出自进化框架：一致性分析器定位易翻转步骤，指南生成器将其转为情景记忆指导执行，AppWorld上五连成功占比提升16分。",
+      "change_zh": "常见路线追求平均准确率（提示工程、反思、微调），本文将优化目标转向多次执行的稳定性：显式定义并度量\"一致性差距\"，对同任务多次轨迹做差分定位易翻转步骤，再将诊断固化为可复用情景记忆，形成跨任务累积的自进化闭环。",
+      "why_it_matters": "属智能体技术线核心关切：一致性是LLM智能体可部署的前提，其差分诊断加记忆固化的自进化机制是通用可靠性范式；UAV目标搜索与ObjectNav中依赖VLM/LLM的决策同样存在重复执行漂移，可借鉴该思路提升真机落地可信度。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-09-09T09:52:18.758375+00:00"
     },
     {
       "id": "2609.05325",
@@ -2699,6 +3359,86 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.09025",
+      "arxiv_id": "2609.09025",
+      "title": "Task-driven Processing with Coarse-to-Fine Glimpse-based Active Perception",
+      "authors": [
+        "Oleh Kolner",
+        "Thomas Ortner",
+        "Stanisław Woźniak",
+        "Angeliki Pantazi"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09025",
+      "pdf_url": "https://arxiv.org/pdf/2609.09025",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CF-GAP是任务驱动的粗到细瞥视主动感知前端，利用任务信息迭代聚焦高分辨率杂乱场景相关区域供下游检测器高分辨处理，在HR-InsDet与Robotools上AP最高提升20%。",
+      "change_zh": "常见实例检测将整图缩放后一次性处理，细节易丢失；CF-GAP改为任务驱动的瞥视序列选择，粗到细迭代聚焦相关区域，只对局部高分辨处理，作为即插前端兼容现有检测器，并让轻量模型超越大模型。",
+      "why_it_matters": "任务驱动的瞥视式主动聚焦对UAV搜救/侦察等高分辨率大场景目标搜索与ObjectNav开放词汇目标发现有直接借鉴：以计算受限的主动注意替代全图处理，适合机载算力受限的目标定位与接近任务。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "active perception",
+        "benchmark"
+      ],
+      "added_at": "2026-09-09T09:48:49.464948+00:00"
+    },
+    {
+      "id": "2609.07091",
+      "arxiv_id": "2609.07091",
+      "title": "Human-Aware Target Tracking and Navigation: Fusing Kinematic State Estimation with Structural Map Constraints",
+      "authors": [
+        "Sagar Gupta",
+        "Don Gideon",
+        "Seng W. Loke",
+        "Kevin Lee",
+        "Bijo Sebastian"
+      ],
+      "published": "2026-09-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.07091",
+      "pdf_url": "https://arxiv.org/pdf/2609.07091",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该系统面向行人跟随中的遮挡丢失，融合视觉跟踪、激光聚类与轮速/IMU状态估计；丢失后基于拓扑地图沿行走通道传播目标轨迹、预测直行或转向，驱动避障规划主动重获，真机7秒遮挡重获率71.4%。",
+      "change_zh": "相比依赖匀速运动预测或丢失即停的常见跟随方案，该方法用拓扑地图结构约束（行走通道、路口、左行惯例）生成目标的离散可行轨迹集，把地图级预测直接接入局部避障规划，实现遮挡期的主动重获而非被动等待。",
+      "why_it_matters": "目标因遮挡丢失是UAV主动搜索与ObjectNav的共同痛点，其以环境结构先验约束目标运动假设、主动规划重获的思路，可迁移至搜救目标重捕与实例导航搜索策略，真机实现亦有参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "odometry",
+        "spatial reasoning",
+        "state estimation"
+      ],
+      "added_at": "2026-09-09T09:39:49.696260+00:00"
+    },
+    {
       "id": "2609.04894",
       "arxiv_id": "2609.04894",
       "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
@@ -2871,6 +3611,45 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.08848",
+      "arxiv_id": "2609.08848",
+      "title": "FIRE3D: Feed-forward Interactive 3D Scene Reconstruction Within A Minute",
+      "authors": [
+        "Hongchi Xia",
+        "Tianhang Cheng",
+        "Wei-Chiu Ma",
+        "Shenlong Wang"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.08848",
+      "pdf_url": "https://arxiv.org/pdf/2609.08848",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FIRE3D是前馈端到端框架，从单张RGB图像或随手视频一分钟内生成组合式三维场景资产，含每物体6自由度位姿、包围盒、网格与纹理，免测试时优化，比既有交互就绪方法快数个数量级。",
+      "change_zh": "常见路线要么逐场景测试时优化、可交互但慢，要么前馈快速却缺物体级完整性；该工作改为端到端前馈预测逐物体的位姿、框、网格与纹理组合表示并做物体级补全，兼得速度与物理可交互性，把交互就绪重建压到一分钟内。",
+      "why_it_matters": "对ObjectNav与UAV目标搜索属间接价值：可快速批量生成物体级解耦、仿真就绪的场景资产，降低训练环境与基准构建成本，其逐物体位姿与补全亦是3D场景理解能力；但论文本身面向游戏与交互内容生成，与导航决策无直接关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "3d scene",
+        "geometry"
+      ],
+      "added_at": "2026-09-09T09:48:09.773206+00:00"
     },
     {
       "id": "2609.03602",
@@ -3261,80 +4040,160 @@
     }
   ],
   "briefing": {
-    "text": "本批工作主线是具身智能的世界建模与空间记忆。首推NavArena：把冻结的3DGS重建自动转成导航基准，产出2220万条专家轨迹并支持闭环评测，直击训练数据瓶颈；TourPhysics用确定性物理仿真管状态、视频生成管外观，从单图实现持久探索与操作并抑制长时漂移；Linguistic Trajectory Encoding把物体运动史压缩为语言加稀疏锚点，支撑长时程空间查询。3DGS重建正从可视化资产变为导航训练与评测的基础设施。",
-    "added": 9,
-    "at": "2026-09-07T20:30:44.911792+00:00",
+    "text": "本批主线是导航走出静态世界假设：空域与空地协同、环境动态演化、以及VLM瞬时观测与持久空间信念图的结合集中出现。优先读三篇：Towards Embodied Air-Ground Cooperative Object Search给出首个空地协同目标搜索基准AGOS-Bench与7.7k轨迹，免训练AGOS-Agent令九个VLM骨干中八个成功率提升，基准与数据均可直接复用；OmniNav把长时程导航表述为因子化任务状态后验的持续推断，在ObjectNav、实例导航与真机均取得最优，是信念推断路线的代表作；EvoNav-Bench在任务间注入环境变化，使既往经验有用但不可尽信，揭示场景记忆复用易失效。趋势：基准正从静态单体设定转向演化环境与异构协同，持久信念记忆渐成VLM导航的标配。",
+    "added": 19,
+    "at": "2026-09-09T09:56:30.971854+00:00",
     "new": [
       {
-        "t": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
-        "u": "https://arxiv.org/abs/2609.04802",
-        "r": 8,
+        "t": "Dual-Layer Semantic-Spatial Belief Mapping for Aerial Object Goal Navigation",
+        "u": "https://arxiv.org/abs/2609.08164",
+        "r": 10,
         "g": 7,
-        "s": "提出语言轨迹编码LTE，把动态物体运动历史压缩为语言描述加稀疏空间与视觉锚点的混合表示，支持长时程自然语言查询，并构建基于EgoLife的SMB基准，检索性能显著超越VLM与结构化记忆基线。",
+        "s": "AeroBelief用双层语义-空间信念图把VLM瞬时观测转为持久空间信念，直觉层引导探索、证据层确认目标，配合时序稳定的区域引导，在UAV-ON基准上取得最优SR/OSR/SPL。",
         "c": ""
       },
       {
-        "t": "TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image",
-        "u": "https://arxiv.org/abs/2609.04911",
-        "r": 8,
-        "g": 6,
-        "s": "TourPhysics从单幅图像与物理配置出发，融合确定性物理仿真与视频生成，分工管理仿真状态、几何与外观记忆，实现持久探索与操作，在相机漫游与物体操作上优于基线并缓解长时漂移。",
-        "c": ""
-      },
-      {
-        "t": "Open-Set 3D Scene Graphs for Field Robotics: An Outdoor Case Study",
-        "u": "https://arxiv.org/abs/2609.04607",
-        "r": 8,
+        "t": "AirAnchor: Bridging Local and Global Spatial Information for Zero-Shot Aerial Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.08442",
+        "r": 10,
         "g": 7,
-        "s": "本文以Terra 3DSG为案例，在五个户外机器人数据集上系统评测开放集3D场景图的语义点嵌入、基于图的对象检索导航、区域理解与内存占用，发现约70%检索成功率、嵌入多模离群与区域理解仍是瓶颈。",
+        "s": "AirAnchor面向零样本空域视觉语言导航，以空间锚点融合在线局部表征与增量维护的全局目标记忆，并在智能体框架中整合决策，在AerialVLN上显著超越已有零样本基线。",
         "c": ""
       },
       {
-        "t": "First Things First: Teaching LLM-Based Agents to Prioritize Must-Haves before Nice-to-Haves",
-        "u": "https://arxiv.org/abs/2609.05224",
-        "r": 7,
-        "g": 7,
-        "s": "针对用户复杂结构化需求，本文构建3649道必选/可选优先级题目，发现MLLM智能体常误解并违反必选约束，提出FTF-RL强化学习优化多优先级需求推理，显著提升成功率并泛化至逻辑数学基准。",
-        "c": "https://github.com/claire62/FTF-RL"
-      },
-      {
-        "t": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
-        "u": "https://arxiv.org/abs/2609.04894",
-        "r": 7,
-        "g": 6,
-        "s": "该文为截至2026年8月的批判性综述，按授权委派、时间持久性与环境耦合梳理LLM智能体在数字、社会、虚拟与物理环境的进展与局限，提出'经证成的授权委派'启发式及后续研究议程。",
-        "c": ""
-      },
-      {
-        "t": "FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement",
-        "u": "https://arxiv.org/abs/2609.05325",
-        "r": 7,
-        "g": 7,
-        "s": "提出FIRE-LIVWO，基于IESKF紧耦合融合4D毫米波雷达、LiDAR、视觉与轮式里程计，通过在线可观测性分析检测退化并自适应切换融合模式，在烟雾与几何退化场景实现鲁棒定位。",
-        "c": ""
-      },
-      {
-        "t": "NavArena: Automated Construction of Goal-Oriented Navigation Benchmarks from 3D Gaussian Splatting Reconstructions",
-        "u": "https://arxiv.org/abs/2609.04602",
+        "t": "Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method",
+        "u": "https://arxiv.org/abs/2609.08402",
         "r": 10,
         "g": 8,
-        "s": "NavArena将固定3DGS重建自动转为目标导向导航基准：冻结3DGS渲染RGB-D，由高斯密度与高度统计生成占据代价图，从开放词汇掩码提取语义目标，在2000余场景产出2220万条专家轨迹并支持闭环评测。",
+        "s": "提出首个空地协同目标搜索基准AGOS-Bench与7.7k条轨迹数据集，并设计免训练、工具增强的AGOS-Agent，以搜索-交接-验证协议协调VLM完成UAV-UGV联合搜索验证指定车辆，九个VLM骨干中八个成功率提升。",
         "c": ""
       },
       {
-        "t": "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
-        "u": "https://arxiv.org/abs/2609.05416",
-        "r": 7,
-        "g": 7,
-        "s": "WorldSculpt提出从多视角对齐视频生成组合式3D场景：将单物体生成先验Pixal3D扩展多视角条件通路，仅在规范空间用单物体数据微调，即可泛化到数百物体、重度遮挡场景，并发布带真值网格的UE-MeshyScene基准。",
+        "t": "CAVEAT: Recurrent Multimodal Diffusion Planning for Mapless Aerial Exploration",
+        "u": "https://arxiv.org/abs/2609.06623",
+        "r": 9,
+        "g": 6,
+        "s": "提出无人机无图探索的循环多模态扩散策略：以激光雷达、视觉与位姿融合的循环状态为条件，模仿FUELv2专家生成航点，辅以滚动推理与局部SDF避障，并在实机上验证部分探索与目标伺服。",
         "c": ""
       },
       {
-        "t": "VoxelFix: Post-Hoc Semantic Correction of Completed 3D Voxel Maps",
-        "u": "https://arxiv.org/abs/2609.05114",
+        "t": "Contextual Observer Grounding: Evaluating Situated Spatial Reasoning in Vision-Language Models",
+        "u": "https://arxiv.org/abs/2609.06880",
+        "r": 8,
+        "g": 7,
+        "s": "本文提出语境观察者锚定概念，构建POVBench基准，用3D场景与多视角查询评估VLM从说话人视角理解空间关系并定位未指定目标的能力，发现显式分解观察者相对推理可提升定位。",
+        "c": ""
+      },
+      {
+        "t": "Human-Aware Target Tracking and Navigation: Fusing Kinematic State Estimation with Structural Map Constraints",
+        "u": "https://arxiv.org/abs/2609.07091",
+        "r": 7,
+        "g": 6,
+        "s": "该系统面向行人跟随中的遮挡丢失，融合视觉跟踪、激光聚类与轮速/IMU状态估计；丢失后基于拓扑地图沿行走通道传播目标轨迹、预测直行或转向，驱动避障规划主动重获，真机7秒遮挡重获率71.4%。",
+        "c": ""
+      },
+      {
+        "t": "OmniNav: Robust Long-Horizon Target Navigation in Dynamic Environments",
+        "u": "https://arxiv.org/abs/2609.08159",
+        "r": 10,
+        "g": 8,
+        "s": "OmniNav将长时程目标导航表述为因子化任务状态后验的持续推断，结合可更新3D场景记忆、贝叶斯信念修正与交互可行端点选择，在ObjectNav与实例导航基准及真机上取得最优成功率。",
+        "c": ""
+      },
+      {
+        "t": "EvoNav-Bench: Benchmarking Lifelong Navigation in Evolving Environments",
+        "u": "https://arxiv.org/abs/2609.08292",
+        "r": 9,
+        "g": 7,
+        "s": "EvoNav-Bench是基于ProcTHOR、扩展GOAT-Bench范式的终身导航基准，通过在导航任务间引入环境变化，使既往经验有用但不可尽信，可控评估复用场景记忆的导航智能体在环境演化下的表现，并揭示现有方法易失效。",
+        "c": ""
+      },
+      {
+        "t": "GoDeep: Annotation-Free Open-Vocabulary 3D Scene Understanding via Language-Space Lifting",
+        "u": "https://arxiv.org/abs/2609.09082",
+        "r": 8,
+        "g": 7,
+        "s": "提出免标注的开放词汇3D场景理解方法：用视觉语言模型将位姿图像翻译为实体级文本描述，投影并聚合到纯语言嵌入空间，无需3D训练语料与专用编码器，在ScanNet++等基准上具竞争力且逐点可解释。",
+        "c": ""
+      },
+      {
+        "t": "Diagnosing and Dynamically Filtering Occupancy World Models for Active Mapping",
+        "u": "https://arxiv.org/abs/2609.06820",
+        "r": 9,
+        "g": 6,
+        "s": "本文诊断占用世界模型误差对主动建图规划的影响，发现仅修正假阳性或假阴性并不能稳定提升覆盖率，并据此提出保留未知区域预测、抑制无观测支持的动态过滤策略。",
+        "c": ""
+      },
+      {
+        "t": "MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control",
+        "u": "https://arxiv.org/abs/2609.06251",
+        "r": 8,
+        "g": 8,
+        "s": "该文以监督CoT对齐与RL训练VLA完成多粒度具身推理，用条件化解码器输出任务级动作交机体控制器执行，在VLN-CE、四足控制与Go2/G1真机任务上优于强基线。",
+        "c": ""
+      },
+      {
+        "t": "Multi-robot Learning-based Informative Path Planning Using Spatio-Temporal Gaussian Process Kalman Filter",
+        "u": "https://arxiv.org/abs/2609.05515",
+        "r": 9,
+        "g": 8,
+        "s": "提出网格化时空GP-卡尔曼滤波框架用于多机器人信息路径规划，以单一潜在场表示匿名目标存在，支持任意视场与距离相关噪声，分散式信念融合结合RL邻居选择，仿真与双无人机户外实验验证。",
+        "c": ""
+      },
+      {
+        "t": "Rethinking Learned Occupancy in Autonomous Active Mapping with Observation-Gated Filtering",
+        "u": "https://arxiv.org/abs/2609.09069",
+        "r": 9,
+        "g": 7,
+        "s": "该文在闭环主动建图基准中系统研究学习式占据补全对规划的双重作用，发现提升占据精度并非单调提升覆盖性能，并提出观测门控滤波抑制无支撑预测以改进易失败起点。",
+        "c": ""
+      },
+      {
+        "t": "TASG-Explore: Traversability-Aware Sector-Guided Exploration for Ground Robot on Uneven Terrain",
+        "u": "https://arxiv.org/abs/2609.08512",
+        "r": 7,
+        "g": 8,
+        "s": "提出不平地形地面机器人探索框架TASG-Explore：以变体素地面拟合与自适应障碍编码做分层通行性分析，用扇区引导与动态拓扑路图规划路线，基准与真机实验中超越六种先进规划器。",
+        "c": ""
+      },
+      {
+        "t": "FIRE3D: Feed-forward Interactive 3D Scene Reconstruction Within A Minute",
+        "u": "https://arxiv.org/abs/2609.08848",
+        "r": 6,
+        "g": 7,
+        "s": "FIRE3D是前馈端到端框架，从单张RGB图像或随手视频一分钟内生成组合式三维场景资产，含每物体6自由度位姿、包围盒、网格与纹理，免测试时优化，比既有交互就绪方法快数个数量级。",
+        "c": ""
+      },
+      {
+        "t": "Task-driven Processing with Coarse-to-Fine Glimpse-based Active Perception",
+        "u": "https://arxiv.org/abs/2609.09025",
+        "r": 7,
+        "g": 6,
+        "s": "CF-GAP是任务驱动的粗到细瞥视主动感知前端，利用任务信息迭代聚焦高分辨率杂乱场景相关区域供下游检测器高分辨处理，在HR-InsDet与Robotools上AP最高提升20%。",
+        "c": ""
+      },
+      {
+        "t": "DXPR: Depth-Based Vision-LiDAR Cross-Modal Place Recognition Using Vision Foundation Models",
+        "u": "https://arxiv.org/abs/2609.09005",
         "r": 7,
         "g": 7,
-        "s": "提出VoxelFix，在几何与占据固定的已完成3D体素图上做事后语义修正：用图模型依据局部几何与邻域语义纠正体素标签，在OccuFly航拍地图上跨四种分割模型将mIoU稳定提升4.23–5.00个百分点，并在分布外场景显示迁移能力。",
+        "s": "DXPR将单目图像与激光点云统一为深度图表示，用单一视觉基础模型骨干学习模态不变描述子，辅以几何感知重叠挖掘器调制度量学习，实现相机查询LiDAR地图的跨模态重定位，跨季节昼夜均鲁棒。",
+        "c": ""
+      },
+      {
+        "t": "Closing the Consistency Gap: Self-Evolving Agents That Learn to Stay on Course",
+        "u": "https://arxiv.org/abs/2609.08832",
+        "r": 7,
+        "g": 7,
+        "s": "发现LLM智能体重复执行同一任务成功率不稳定，定义\"一致性差距\"；提出自进化框架：一致性分析器定位易翻转步骤，指南生成器将其转为情景记忆指导执行，AppWorld上五连成功占比提升16分。",
+        "c": ""
+      },
+      {
+        "t": "OVMAN: A Task and Benchmark for Open-Vocabulary Motion-Aware Navigation",
+        "u": "https://arxiv.org/abs/2609.06424",
+        "r": 9,
+        "g": 8,
+        "s": "OVMAN提出感知场景变化的开放词汇导航任务与基准：智能体浏览场景后，场景经脚本化改变，需导航到由变化定义的目标（如被移动的椅子或花瓶原位），并发布219个经oracle验证可解的双访回合，现有系统表现不佳。",
         "c": ""
       }
     ]

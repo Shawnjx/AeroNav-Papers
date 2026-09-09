@@ -534,5 +534,53 @@
     "reason": "LLM智能体被套用于电网潮流规划这一垂直领域，与空间智能、导航或机器人自主无关，属范围外的领域应用。",
     "rejected_at": "2026-09-09",
     "url": "https://arxiv.org/abs/2609.04544"
+  },
+  "2609.08275": {
+    "title": "Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作属文生音视频生成与专业剪辑执行的评测基准及垂直应用型智能体，不涉及空间、导航或机器人，命中范围外排除项'文生图/文生视频'。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.08275"
+  },
+  "2609.08805": {
+    "title": "Evaluation Principles for MRI-MRA Registration in Trigeminal Neuralgia: An ROI-Centered Neurovascular Benchmark",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "论文属于医学影像配准的临床垂直评测，与具身导航、UAV目标搜索及机器人自主等技术线无关，属范围外。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.08805"
+  },
+  "2609.08686": {
+    "title": "CausalChapter: Improving Long-Video Chaptering with Interventional Dependency Modeling",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作是将长上下文语言模型套用于长视频章节切分这一垂直视频理解应用，与空间智能、具身导航、机器人自主均无关（摘要中navigation仅指视频浏览），属范围外应用类拒绝。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.08686"
+  },
+  "2609.08155": {
+    "title": "SciFigure2Code: An AI-Reconstructed Benchmark for Scientific Figure-to-Code",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "科学图表转代码属图表理解与代码生成的垂直图文应用基准，与空间、导航、机器人及具身智能技术线均无关。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.08155"
+  },
+  "2609.08796": {
+    "title": "Hi-FLoop: Hierarchical State-Feedback Loops for Multi-Timescale World Modeling",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "面向Waymo式多智能体交通仿真任务的世界模型，属自动驾驶场景生成方向，不含导航决策或具身机器人成分，与UAV搜索/ObjectNav/VLN等核心线仅在世界模型方法论上间接相关。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.08796"
+  },
+  "2609.07002": {
+    "title": "WM-Craftnet: World Synesthesia Model for Generalizable and Robust Dexterous In-Hand Manipulation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心任务为灵巧手内操作，属明确排除的机械臂操作范畴且不含任何导航决策成分，世界模型与sim2real仅为术语层面的擦边关联。",
+    "rejected_at": "2026-09-09",
+    "url": "https://arxiv.org/abs/2609.07002"
   }
 }
