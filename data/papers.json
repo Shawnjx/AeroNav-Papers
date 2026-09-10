@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T09:55:32.376822+00:00",
+  "updated_at": "2026-09-10T08:53:18.178570+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1959,6 +1959,45 @@
       "added_at": "2026-09-09T09:42:55.575626+00:00"
     },
     {
+      "id": "2609.09380",
+      "arxiv_id": "2609.09380",
+      "title": "AccelMPC: High-Rate, Low-Power FPGA-Accelerated Model Predictive Control for Tiny Drones",
+      "authors": [
+        "Andrea Grillo",
+        "Brian Plancher"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09380",
+      "pdf_url": "https://arxiv.org/pdf/2609.09380",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AccelMPC以算法、数值、FPGA与物理集成的端到端协同设计，在35克Crazyflie上实现1kHz机载约束MPC，求解较MCU方案快15.6倍，能耗延迟积改善195.4倍。",
+      "change_zh": "常见做法是在MCU上运行缓存型MPC并被迫降低控制频率；本文改变在于算法、数值表示、FPGA映射与定制PCB的端到端协同设计，使35克微型无人机以1kHz求解超两万变量的约束MPC。",
+      "why_it_matters": "1kHz机载约束MPC是微型无人机敏捷机动的控制底座：UAV主动目标搜索在动态障碍中接近目标依赖快速轨迹优化，本文让35克平台实时求解两万级变量问题，为小型搜救侦察机的敏捷避障与真机部署补上算力短板。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "drone",
+        "model predictive control"
+      ],
+      "added_at": "2026-09-10T08:40:25.997177+00:00"
+    },
+    {
       "id": "2609.06880",
       "arxiv_id": "2609.06880",
       "title": "Contextual Observer Grounding: Evaluating Situated Spatial Reasoning in Vision-Language Models",
@@ -2339,6 +2378,49 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.10445",
+      "arxiv_id": "2609.10445",
+      "title": "Building Multilingual Bridges: Data Mixing as the Pillar of Generalization for In-Language Reasoning",
+      "authors": [
+        "Mehrnaz Mofakhami",
+        "Ananya Sahu",
+        "Alejandro R. Salamanca",
+        "Daniel D'souza",
+        "Alexandre Berard",
+        "Thomas Euyang",
+        "Marzieh Fadaee",
+        "Julia Kreutzer"
+      ],
+      "published": "2026-09-09",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.10445",
+      "pdf_url": "https://arxiv.org/pdf/2609.10445",
+      "code_url": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作研究L2推理：让模型以提问语言而非英语推理，通过优化SFT数据混合与调度训练3.35B模型，在60种语言上实现逾93%的母语推理率。",
+      "change_zh": "常见做法是推理模型默认以英语思考再翻译，或需为每种语言构造推理监督；该工作证明推理是语言无关行为，仅靠广覆盖多语言非推理数据与英语推理骨干的混合调度，即可迁移到留出语言，无需逐语言推理标注。",
+      "why_it_matters": "虽不涉及导航机器人，但作为LLM推理训练的数据方法进展属模型与智能体核心线：其数据混合结论（广覆盖非推理数据加英语推理骨干即可迁移推理）可为多语言智能体与具身指令跟随的跨语言泛化提供配方参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "instruction following"
+      ],
+      "added_at": "2026-09-10T08:52:32.868681+00:00"
+    },
+    {
       "id": "2609.08512",
       "arxiv_id": "2609.08512",
       "title": "TASG-Explore: Traversability-Aware Sector-Guided Exploration for Ground Robot on Uneven Terrain",
@@ -2668,6 +2750,46 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.09898",
+      "arxiv_id": "2609.09898",
+      "title": "Grounded Evaluation and Repair for NL-to-PDDL Problem Generation",
+      "authors": [
+        "Joana Rosa",
+        "Pedro Santos",
+        "Valdemar Oliveira",
+        "Romão Silva",
+        "L. Miguel Silveira",
+        "Bruno Martins"
+      ],
+      "published": "2026-09-09",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09898",
+      "pdf_url": "https://arxiv.org/pdf/2609.09898",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文构建端到端自然语言转PDDL流水线，融合LLM生成、解析与规划验证、领域一致性检查、LLM批评者与迭代修复，并用结构匹配与语义等价做参考式评估，发现运行成功与参考重建可显著背离。",
+      "change_zh": "常见路线以语法合法或规划器求解成功评价NL转PDDL质量，易高估忠实度；本文改用面向参考问题的重建式评估（重命名不变结构匹配、语义等价），并据领域描述与运行诊断构造细粒度反馈做结构化迭代修复。",
+      "why_it_matters": "对规划智能体线有价值：LLM把自然语言任务转成形式化PDDL是具身与无人机任务规划的高层接口，接地评估与结构化修复能提升任务规格的忠实度，对UAV目标搜索与ObjectNav的目标形式化亦有参考意义。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "added_at": "2026-09-10T08:49:13.146400+00:00"
+    },
+    {
       "id": "2609.09005",
       "arxiv_id": "2609.09005",
       "title": "DXPR: Depth-Based Vision-LiDAR Cross-Modal Place Recognition Using Vision Foundation Models",
@@ -2746,6 +2868,44 @@
         "evaluation"
       ],
       "added_at": "2026-09-09T09:52:18.758375+00:00"
+    },
+    {
+      "id": "2609.09234",
+      "arxiv_id": "2609.09234",
+      "title": "Learning to Fly: Stable Vision-Guided UAV Servoing with Compact Target-Centric Cues and Reinforcement Learning",
+      "authors": [
+        "Saurbh Singh Jamwal",
+        "Nived Chebrolu"
+      ],
+      "published": "2026-09-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09234",
+      "pdf_url": "https://arxiv.org/pdf/2609.09234",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 7,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文面向长时程无人机视觉伺服，用轻量分割提取目标图像偏移与相对深度，结合机体速度和重力投影构成12维紧凑观测，比较PPO与三种课程策略，消融与扰动实验显示学习策略比经典控制器更鲁棒。",
+      "change_zh": "与直接从RGB端到端学习或依赖经典伺服控制器不同，该文把感知压缩为分割给出的目标偏移与深度等紧凑线索，加上速度和重力投影构成12维观测，避免高维视觉导致的策略不稳定，并系统对比三种课程对鲁棒性的增益。",
+      "why_it_matters": "对UAV搜救侦察等主动目标搜索任务，该工作提供发现目标后稳定接近与持续跟踪的控制基座；紧凑12维观测降低机载算力门槛，课程训练增强抗扰动能力，对目标搜索的末段接近与悬停监视有直接参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "uav"
+      ],
+      "added_at": "2026-09-10T08:41:59.905258+00:00"
     },
     {
       "id": "2609.05325",
@@ -3397,6 +3557,56 @@
       "added_at": "2026-09-09T09:48:49.464948+00:00"
     },
     {
+      "id": "2609.09396",
+      "arxiv_id": "2609.09396",
+      "title": "VANTAGE-Bench: Evaluating the Infrastructure AI Gap in Vision-Language Models",
+      "authors": [
+        "Zaid Pervaiz Bhat",
+        "Nimra Nayyar",
+        "Arihant Jain",
+        "Lap Fung Chan",
+        "John Suchanek",
+        "Yu Wang",
+        "Varun Praveen",
+        "Tomasz Kornuta",
+        "Vidya Nariyambut Murali"
+      ],
+      "published": "2026-09-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.09396",
+      "pdf_url": "https://arxiv.org/pdf/2609.09396",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/25aad0c9873abd6e37503acbef0044de70b3e5f4",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VANTAGE-Bench面向固定摄像头基础设施视频评测VLM，覆盖物流、交通、智能空间三域，含跟踪等八种任务，零样本测17个模型，发现事件验证与时间定位显著落后于消费级基准。",
+      "change_zh": "相比以消费级视频与选择题为主的主流VLM评测，本工作转向固定摄像头基础设施场景，统一图像与视频和四类能力，引入稠密描述、时空定位等八种任务，并首次在固定摄像头视频上提出单遍轨迹的单目标跟踪协议。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav价值偏间接：其揭示的VLM时间定位、跟踪与指代表达短板，正是固定/机载视角目标发现与监视的感知基座，可作导航感知选型参考；但无导航决策与移动智能体，难以直接迁移。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "leaderboard",
+        "localization",
+        "vlm"
+      ],
+      "added_at": "2026-09-10T08:45:08.663638+00:00"
+    },
+    {
       "id": "2609.07091",
       "arxiv_id": "2609.07091",
       "title": "Human-Aware Target Tracking and Navigation: Fusing Kinematic State Estimation with Structural Map Constraints",
@@ -3611,6 +3821,44 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.10433",
+      "arxiv_id": "2609.10433",
+      "title": "Multi-Agent Reinforcement Learning for Autonomous UAV Exploration in Wildfire Response",
+      "authors": [
+        "Caden Chandra",
+        "Jerry Ng"
+      ],
+      "published": "2026-09-09",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.10433",
+      "pdf_url": "https://arxiv.org/pdf/2609.10433",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 8,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出多智能体深度强化学习框架，训练无人机在仿真野火环境中自主导航与监测；训练损失收敛、奖励上升及火场边界跟踪等行为表明策略随训练逐步稳定有效。",
+      "change_zh": "摘要仅描述常规深度强化学习训练流程，标题提及多智能体但未说明协作机制，也未与单智能体、传统规划或搜索方法对比，真正改变之处信息不足，无法判断相对现有路线的实质创新。",
+      "why_it_matters": "对UAV主动目标搜索有一定参考价值：野火监测等动态灾害场景可检验强化学习策略在持续变化环境下的奖励设计影响与行为泛化；但缺少基线与量化评测，实际借鉴意义有限，需更强实验支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "uav"
+      ],
+      "added_at": "2026-09-10T08:41:10.426296+00:00"
     },
     {
       "id": "2609.08848",
@@ -4040,160 +4288,56 @@
     }
   ],
   "briefing": {
-    "text": "本批主线是导航走出静态世界假设：空域与空地协同、环境动态演化、以及VLM瞬时观测与持久空间信念图的结合集中出现。优先读三篇：Towards Embodied Air-Ground Cooperative Object Search给出首个空地协同目标搜索基准AGOS-Bench与7.7k轨迹，免训练AGOS-Agent令九个VLM骨干中八个成功率提升，基准与数据均可直接复用；OmniNav把长时程导航表述为因子化任务状态后验的持续推断，在ObjectNav、实例导航与真机均取得最优，是信念推断路线的代表作；EvoNav-Bench在任务间注入环境变化，使既往经验有用但不可尽信，揭示场景记忆复用易失效。趋势：基准正从静态单体设定转向演化环境与异构协同，持久信念记忆渐成VLM导航的标配。",
-    "added": 19,
-    "at": "2026-09-09T09:56:30.971854+00:00",
+    "text": "本批入库以无人机具身智能为主线，覆盖机载高频控制、学习型视觉伺服与多智能体火场探索，兼有语言到规划的评测工作。首推AccelMPC：算法与FPGA协同设计让35克Crazyflie实现1kHz机载约束MPC，能耗延迟积改善近两百倍，直指机载算力瓶颈；Learning to Fly用12维目标中心紧凑观测加PPO课程学习完成长时程伺服，扰动下比经典控制器更稳，其观测设计可迁移到视觉导航；Grounded Evaluation and Repair for NL-to-PDDL Problem Generation发现运行成功与参考重建可显著背离，提醒语言到规划的生成必须接地评估。趋势上看，算法-硬件-学习协同正把高频控制与鲁棒策略压进克级平台。",
+    "added": 6,
+    "at": "2026-09-10T08:54:33.843682+00:00",
     "new": [
       {
-        "t": "Dual-Layer Semantic-Spatial Belief Mapping for Aerial Object Goal Navigation",
-        "u": "https://arxiv.org/abs/2609.08164",
-        "r": 10,
-        "g": 7,
-        "s": "AeroBelief用双层语义-空间信念图把VLM瞬时观测转为持久空间信念，直觉层引导探索、证据层确认目标，配合时序稳定的区域引导，在UAV-ON基准上取得最优SR/OSR/SPL。",
-        "c": ""
-      },
-      {
-        "t": "AirAnchor: Bridging Local and Global Spatial Information for Zero-Shot Aerial Vision-and-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.08442",
-        "r": 10,
-        "g": 7,
-        "s": "AirAnchor面向零样本空域视觉语言导航，以空间锚点融合在线局部表征与增量维护的全局目标记忆，并在智能体框架中整合决策，在AerialVLN上显著超越已有零样本基线。",
-        "c": ""
-      },
-      {
-        "t": "Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method",
-        "u": "https://arxiv.org/abs/2609.08402",
-        "r": 10,
-        "g": 8,
-        "s": "提出首个空地协同目标搜索基准AGOS-Bench与7.7k条轨迹数据集，并设计免训练、工具增强的AGOS-Agent，以搜索-交接-验证协议协调VLM完成UAV-UGV联合搜索验证指定车辆，九个VLM骨干中八个成功率提升。",
-        "c": ""
-      },
-      {
-        "t": "CAVEAT: Recurrent Multimodal Diffusion Planning for Mapless Aerial Exploration",
-        "u": "https://arxiv.org/abs/2609.06623",
-        "r": 9,
-        "g": 6,
-        "s": "提出无人机无图探索的循环多模态扩散策略：以激光雷达、视觉与位姿融合的循环状态为条件，模仿FUELv2专家生成航点，辅以滚动推理与局部SDF避障，并在实机上验证部分探索与目标伺服。",
-        "c": ""
-      },
-      {
-        "t": "Contextual Observer Grounding: Evaluating Situated Spatial Reasoning in Vision-Language Models",
-        "u": "https://arxiv.org/abs/2609.06880",
-        "r": 8,
-        "g": 7,
-        "s": "本文提出语境观察者锚定概念，构建POVBench基准，用3D场景与多视角查询评估VLM从说话人视角理解空间关系并定位未指定目标的能力，发现显式分解观察者相对推理可提升定位。",
-        "c": ""
-      },
-      {
-        "t": "Human-Aware Target Tracking and Navigation: Fusing Kinematic State Estimation with Structural Map Constraints",
-        "u": "https://arxiv.org/abs/2609.07091",
-        "r": 7,
-        "g": 6,
-        "s": "该系统面向行人跟随中的遮挡丢失，融合视觉跟踪、激光聚类与轮速/IMU状态估计；丢失后基于拓扑地图沿行走通道传播目标轨迹、预测直行或转向，驱动避障规划主动重获，真机7秒遮挡重获率71.4%。",
-        "c": ""
-      },
-      {
-        "t": "OmniNav: Robust Long-Horizon Target Navigation in Dynamic Environments",
-        "u": "https://arxiv.org/abs/2609.08159",
-        "r": 10,
-        "g": 8,
-        "s": "OmniNav将长时程目标导航表述为因子化任务状态后验的持续推断，结合可更新3D场景记忆、贝叶斯信念修正与交互可行端点选择，在ObjectNav与实例导航基准及真机上取得最优成功率。",
-        "c": ""
-      },
-      {
-        "t": "EvoNav-Bench: Benchmarking Lifelong Navigation in Evolving Environments",
-        "u": "https://arxiv.org/abs/2609.08292",
-        "r": 9,
-        "g": 7,
-        "s": "EvoNav-Bench是基于ProcTHOR、扩展GOAT-Bench范式的终身导航基准，通过在导航任务间引入环境变化，使既往经验有用但不可尽信，可控评估复用场景记忆的导航智能体在环境演化下的表现，并揭示现有方法易失效。",
-        "c": ""
-      },
-      {
-        "t": "GoDeep: Annotation-Free Open-Vocabulary 3D Scene Understanding via Language-Space Lifting",
-        "u": "https://arxiv.org/abs/2609.09082",
-        "r": 8,
-        "g": 7,
-        "s": "提出免标注的开放词汇3D场景理解方法：用视觉语言模型将位姿图像翻译为实体级文本描述，投影并聚合到纯语言嵌入空间，无需3D训练语料与专用编码器，在ScanNet++等基准上具竞争力且逐点可解释。",
-        "c": ""
-      },
-      {
-        "t": "Diagnosing and Dynamically Filtering Occupancy World Models for Active Mapping",
-        "u": "https://arxiv.org/abs/2609.06820",
-        "r": 9,
-        "g": 6,
-        "s": "本文诊断占用世界模型误差对主动建图规划的影响，发现仅修正假阳性或假阴性并不能稳定提升覆盖率，并据此提出保留未知区域预测、抑制无观测支持的动态过滤策略。",
-        "c": ""
-      },
-      {
-        "t": "MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control",
-        "u": "https://arxiv.org/abs/2609.06251",
-        "r": 8,
-        "g": 8,
-        "s": "该文以监督CoT对齐与RL训练VLA完成多粒度具身推理，用条件化解码器输出任务级动作交机体控制器执行，在VLN-CE、四足控制与Go2/G1真机任务上优于强基线。",
-        "c": ""
-      },
-      {
-        "t": "Multi-robot Learning-based Informative Path Planning Using Spatio-Temporal Gaussian Process Kalman Filter",
-        "u": "https://arxiv.org/abs/2609.05515",
-        "r": 9,
-        "g": 8,
-        "s": "提出网格化时空GP-卡尔曼滤波框架用于多机器人信息路径规划，以单一潜在场表示匿名目标存在，支持任意视场与距离相关噪声，分散式信念融合结合RL邻居选择，仿真与双无人机户外实验验证。",
-        "c": ""
-      },
-      {
-        "t": "Rethinking Learned Occupancy in Autonomous Active Mapping with Observation-Gated Filtering",
-        "u": "https://arxiv.org/abs/2609.09069",
-        "r": 9,
-        "g": 7,
-        "s": "该文在闭环主动建图基准中系统研究学习式占据补全对规划的双重作用，发现提升占据精度并非单调提升覆盖性能，并提出观测门控滤波抑制无支撑预测以改进易失败起点。",
-        "c": ""
-      },
-      {
-        "t": "TASG-Explore: Traversability-Aware Sector-Guided Exploration for Ground Robot on Uneven Terrain",
-        "u": "https://arxiv.org/abs/2609.08512",
+        "t": "AccelMPC: High-Rate, Low-Power FPGA-Accelerated Model Predictive Control for Tiny Drones",
+        "u": "https://arxiv.org/abs/2609.09380",
         "r": 7,
         "g": 8,
-        "s": "提出不平地形地面机器人探索框架TASG-Explore：以变体素地面拟合与自适应障碍编码做分层通行性分析，用扇区引导与动态拓扑路图规划路线，基准与真机实验中超越六种先进规划器。",
+        "s": "AccelMPC以算法、数值、FPGA与物理集成的端到端协同设计，在35克Crazyflie上实现1kHz机载约束MPC，求解较MCU方案快15.6倍，能耗延迟积改善195.4倍。",
         "c": ""
       },
       {
-        "t": "FIRE3D: Feed-forward Interactive 3D Scene Reconstruction Within A Minute",
-        "u": "https://arxiv.org/abs/2609.08848",
+        "t": "Multi-Agent Reinforcement Learning for Autonomous UAV Exploration in Wildfire Response",
+        "u": "https://arxiv.org/abs/2609.10433",
+        "r": 7,
+        "g": 5,
+        "s": "本文提出多智能体深度强化学习框架，训练无人机在仿真野火环境中自主导航与监测；训练损失收敛、奖励上升及火场边界跟踪等行为表明策略随训练逐步稳定有效。",
+        "c": ""
+      },
+      {
+        "t": "Learning to Fly: Stable Vision-Guided UAV Servoing with Compact Target-Centric Cues and Reinforcement Learning",
+        "u": "https://arxiv.org/abs/2609.09234",
+        "r": 7,
+        "g": 7,
+        "s": "该文面向长时程无人机视觉伺服，用轻量分割提取目标图像偏移与相对深度，结合机体速度和重力投影构成12维紧凑观测，比较PPO与三种课程策略，消融与扰动实验显示学习策略比经典控制器更鲁棒。",
+        "c": ""
+      },
+      {
+        "t": "VANTAGE-Bench: Evaluating the Infrastructure AI Gap in Vision-Language Models",
+        "u": "https://arxiv.org/abs/2609.09396",
         "r": 6,
-        "g": 7,
-        "s": "FIRE3D是前馈端到端框架，从单张RGB图像或随手视频一分钟内生成组合式三维场景资产，含每物体6自由度位姿、包围盒、网格与纹理，免测试时优化，比既有交互就绪方法快数个数量级。",
-        "c": ""
-      },
-      {
-        "t": "Task-driven Processing with Coarse-to-Fine Glimpse-based Active Perception",
-        "u": "https://arxiv.org/abs/2609.09025",
-        "r": 7,
-        "g": 6,
-        "s": "CF-GAP是任务驱动的粗到细瞥视主动感知前端，利用任务信息迭代聚焦高分辨率杂乱场景相关区域供下游检测器高分辨处理，在HR-InsDet与Robotools上AP最高提升20%。",
-        "c": ""
-      },
-      {
-        "t": "DXPR: Depth-Based Vision-LiDAR Cross-Modal Place Recognition Using Vision Foundation Models",
-        "u": "https://arxiv.org/abs/2609.09005",
-        "r": 7,
-        "g": 7,
-        "s": "DXPR将单目图像与激光点云统一为深度图表示，用单一视觉基础模型骨干学习模态不变描述子，辅以几何感知重叠挖掘器调制度量学习，实现相机查询LiDAR地图的跨模态重定位，跨季节昼夜均鲁棒。",
-        "c": ""
-      },
-      {
-        "t": "Closing the Consistency Gap: Self-Evolving Agents That Learn to Stay on Course",
-        "u": "https://arxiv.org/abs/2609.08832",
-        "r": 7,
-        "g": 7,
-        "s": "发现LLM智能体重复执行同一任务成功率不稳定，定义\"一致性差距\"；提出自进化框架：一致性分析器定位易翻转步骤，指南生成器将其转为情景记忆指导执行，AppWorld上五连成功占比提升16分。",
-        "c": ""
-      },
-      {
-        "t": "OVMAN: A Task and Benchmark for Open-Vocabulary Motion-Aware Navigation",
-        "u": "https://arxiv.org/abs/2609.06424",
-        "r": 9,
         "g": 8,
-        "s": "OVMAN提出感知场景变化的开放词汇导航任务与基准：智能体浏览场景后，场景经脚本化改变，需导航到由变化定义的目标（如被移动的椅子或花瓶原位），并发布219个经oracle验证可解的双访回合，现有系统表现不佳。",
+        "s": "VANTAGE-Bench面向固定摄像头基础设施视频评测VLM，覆盖物流、交通、智能空间三域，含跟踪等八种任务，零样本测17个模型，发现事件验证与时间定位显著落后于消费级基准。",
+        "c": ""
+      },
+      {
+        "t": "Grounded Evaluation and Repair for NL-to-PDDL Problem Generation",
+        "u": "https://arxiv.org/abs/2609.09898",
+        "r": 7,
+        "g": 7,
+        "s": "本文构建端到端自然语言转PDDL流水线，融合LLM生成、解析与规划验证、领域一致性检查、LLM批评者与迭代修复，并用结构匹配与语义等价做参考式评估，发现运行成功与参考重建可显著背离。",
+        "c": ""
+      },
+      {
+        "t": "Building Multilingual Bridges: Data Mixing as the Pillar of Generalization for In-Language Reasoning",
+        "u": "https://arxiv.org/abs/2609.10445",
+        "r": 7,
+        "g": 8,
+        "s": "该工作研究L2推理：让模型以提问语言而非英语推理，通过优化SFT数据混合与调度训练3.35B模型，在60种语言上实现逾93%的母语推理率。",
         "c": ""
       }
     ]
