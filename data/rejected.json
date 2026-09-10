@@ -654,5 +654,37 @@
     "reason": "该工作将LangGraph/RAG/MCP等现成智能体工具套用于可重构制造的数字孪生调试这一垂直应用，与空间智能、导航或机器人自主决策无关，且机器人加工单元属操作类场景、无导航决策成分，按范围规则应拒绝。",
     "rejected_at": "2026-09-10",
     "url": "https://arxiv.org/abs/2609.09503"
+  },
+  "2609.05818": {
+    "title": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "LLM智能体工具使用评测垂直套用于蛋白质设计领域，与空间、导航、机器人无关，属于研究范围中明确拒绝的大模型垂直应用类工作。",
+    "rejected_at": "2026-09-10",
+    "url": "https://arxiv.org/abs/2609.05818"
+  },
+  "2609.07398": {
+    "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "评测本体全部为机械臂/双手/灵巧手操作控制，属范围明确排除的机械臂操作与VLA控制；世界模型线限定'用于导航与规划'，本文不含任何导航决策成分。",
+    "rejected_at": "2026-09-10",
+    "url": "https://arxiv.org/abs/2609.07398"
+  },
+  "2609.06229": {
+    "title": "SWE-Test: Benchmarking LLM Vulnerability Discovery via Input Prediction",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属于LLM智能体在软件漏洞发现这一垂直领域的基准评测，与空间、导航、机器人均无关，超出收录范围。",
+    "rejected_at": "2026-09-10",
+    "url": "https://arxiv.org/abs/2609.06229"
+  },
+  "2609.05783": {
+    "title": "Closed-Loop Evaluation of Bird's-Eye-View Maps from Cross-View Transformers as Inputs to Behavior-Cloning Policies",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属于自动驾驶BEV感知与行为克隆策略的闭环评测研究，不在空域/地面具身导航及各基础能力技术线收录范围内，仅评测理念有间接参考价值。",
+    "rejected_at": "2026-09-10",
+    "url": "https://arxiv.org/abs/2609.05783"
   }
 }

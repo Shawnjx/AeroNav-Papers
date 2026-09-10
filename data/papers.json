@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T08:53:18.178570+00:00",
+  "updated_at": "2026-09-10T14:09:37.521609+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -63,6 +63,51 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.06476",
+      "arxiv_id": "2609.06476",
+      "title": "One MLLM, One Call: Efficient Zero-Shot Vision-and-Language Navigation via Spatial-Aware Waypoints",
+      "authors": [
+        "Shiqi Pan",
+        "Qi Zheng",
+        "Hanqin Sun",
+        "Youjian Zhang",
+        "Daquan Feng",
+        "Xu Wang"
+      ],
+      "published": "2026-09-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06476",
+      "pdf_url": "https://arxiv.org/pdf/2609.06476",
+      "code_url": "https://github.com/kkpsq/O2C-Nav-Code",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 9,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/d7b75e2a10493f6b31b52e9b931127ca95fec9bc",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出零样本VLN-CE框架O2C-Nav，每步仅调用一次MLLM，将历史感知候选路点投影为图像标记供其选择，并由FMM规划器生成无碰撞路径，在R2R-CE与RxR-CE上超越现有零样本方法。",
+      "change_zh": "相比依赖预训练路点预测器或每步多次查询大模型的常见零样本路线，本文改为每步仅一次模型调用：免训练生成结构化历史感知路点并直接标注在RGB图像上，让MLLM基于显式空间标记选择目标，兼顾效率、空间感知与记忆。",
+      "why_it_matters": "该范式将候选动作显式空间化后交由MLLM一次决策，大幅降低推理延迟，对实时性敏感的UAV主动目标搜索与ObjectNav的直接高效大模型决策具参考价值；路点视觉标记提供空间记忆与感知接地，或可迁移至空域与目标条件导航。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 29,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "instruction",
+        "mllm",
+        "r2r",
+        "waypoint"
+      ],
+      "added_at": "2026-09-10T14:02:34.779336+00:00"
+    },
     {
       "id": "2609.02350",
       "arxiv_id": "2609.02350",
@@ -1749,6 +1794,44 @@
       "added_at": "2026-09-09T09:45:12.685772+00:00"
     },
     {
+      "id": "2609.05596",
+      "arxiv_id": "2609.05596",
+      "title": "Time-Aware Assistive Navigation",
+      "authors": [
+        "Masaki Kuribayashi",
+        "Zhongkai Shangguan",
+        "Eshed Ohn-Bar"
+      ],
+      "published": "2026-09-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.05596",
+      "pdf_url": "https://arxiv.org/pdf/2609.05596",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文构建户外第一人称辅助导航的大规模多模态基准，考察MLLM实时生成安全及时指令的能力，发现现成模型微调后仍不足，监督预测指令原因可在开环、闭环及sim2real下显著提升。",
+      "change_zh": "常见视觉语言导航工作聚焦指令内容本身，本文将焦点转向『何时说』的实时时机问题，要求辅助导航智能体对响应时机敏感；并用显式监督指令背后原因的简单改动替代复杂模型改造，跨开环、闭环与真机设定验证。",
+      "why_it_matters": "为地面VLN与MLLM智能体评测提供含真机验证的时序敏感基准，揭示现成模型在时间推理与安全物体感知上的短板；其监督指令原因的思路可迁移至ObjectNav的指令生成与解释，对具身评测与智能体线均有价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "language agent",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-09-10T14:06:10.667775+00:00"
+    },
+    {
       "id": "2609.00950",
       "arxiv_id": "2609.00950",
       "title": "HitMem: Hierarchical Temporal 3D Memory with Multi-Modal Context-Aware Retrieval for Dynamic Environments",
@@ -2906,6 +2989,82 @@
         "uav"
       ],
       "added_at": "2026-09-10T08:41:59.905258+00:00"
+    },
+    {
+      "id": "2609.06535",
+      "arxiv_id": "2609.06535",
+      "title": "3DHarnessBench: Probing Agentic 3D-to-Code Capabilities of Frontier Vision-Language Models",
+      "authors": [
+        "Ling Liu",
+        "Bingchen Gong",
+        "Amal Dev Parakkat",
+        "Maks Ovsjanikov"
+      ],
+      "published": "2026-09-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06535",
+      "pdf_url": "https://arxiv.org/pdf/2609.06535",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "3DHarnessBench是一个评测前沿视觉语言模型能否以Blender Python代码恢复3D几何的基准，通过单视图、多视图、主动视觉到完全3D交互四级递进的测试环境，考察模型的主动探索、工具调用与自我纠错能力。",
+      "change_zh": "以往3D重建评测多采用固定输入提示，本工作借助Blender MCP把「主动获取信息」本身作为评测变量，构建四级递进的agentic测试框架，系统量化了前沿模型在3D-to-code任务上参差不齐的主动推理与工具使用能力。",
+      "why_it_matters": "为空间智能与多模态智能体评测提供了新范式，量化VLM的主动3D感知、视角选择与自纠错能力，这些结论可指导UAV主动目标搜索与ObjectNav中依赖VLM的主动感知与决策模块的能力边界判断与系统设计。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "geometry",
+        "vlm"
+      ],
+      "added_at": "2026-09-10T14:03:02.809007+00:00"
+    },
+    {
+      "id": "2609.06837",
+      "arxiv_id": "2609.06837",
+      "title": "BinauralVAE: Spatial Audio Reconstruction For World Models",
+      "authors": [
+        "Luis Vitor Zerkowski",
+        "Luiz Velho"
+      ],
+      "published": "2026-09-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.06837",
+      "pdf_url": "https://arxiv.org/pdf/2609.06837",
+      "code_url": "https://github.com/Luizerko/BinauralVAE",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/ede8ddda5392a116de05606cbe6e23ba33e12a59",
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出开源的双耳空间音频重建管线BinauralVAE，评测多种含复数值VAE在内的架构以学习双耳信号鲁棒潜表征，数据由仿真机器人导航环境采集，为未来音频世界模型的状态表征奠定基础。",
+      "change_zh": "常见世界模型几乎均以视觉为中心，本文转向听觉模态，围绕导航动作与声学后果的因果关联构建音频状态表征，并系统比较复数值VAE等架构；但摘要未给出具体指标与下游导航验证，实际改变程度信息不足。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav有潜在补充价值：声学可在视觉遮挡、低光等退化条件下辅助目标发现与空间感知，音频世界模型可望支撑无视觉导航决策；但目前仅为表征管线，尚无导航决策实验，价值偏方向性。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "spatial understanding",
+        "world model"
+      ],
+      "added_at": "2026-09-10T14:08:44.097377+00:00"
     },
     {
       "id": "2609.05325",
@@ -4288,57 +4447,41 @@
     }
   ],
   "briefing": {
-    "text": "本批入库以无人机具身智能为主线，覆盖机载高频控制、学习型视觉伺服与多智能体火场探索，兼有语言到规划的评测工作。首推AccelMPC：算法与FPGA协同设计让35克Crazyflie实现1kHz机载约束MPC，能耗延迟积改善近两百倍，直指机载算力瓶颈；Learning to Fly用12维目标中心紧凑观测加PPO课程学习完成长时程伺服，扰动下比经典控制器更稳，其观测设计可迁移到视觉导航；Grounded Evaluation and Repair for NL-to-PDDL Problem Generation发现运行成功与参考重建可显著背离，提醒语言到规划的生成必须接地评估。趋势上看，算法-硬件-学习协同正把高频控制与鲁棒策略压进克级平台。",
-    "added": 6,
-    "at": "2026-09-10T08:54:33.843682+00:00",
+    "text": "本批论文的主线是多模态大模型进入具身导航后的推理效率、能力评测与模态扩展。首推 One MLLM, One Call：将历史候选路点投影为图像标记，每步仅调用一次MLLM即可完成决策，并在R2R-CE与RxR-CE上超越现有零样本方法，效率与性能俱佳；Time-Aware Assistive Navigation 以大规模户外第一人称基准发现，微调后的现成模型仍给不出安全及时的导航指令，而监督预测指令原因可在开环、闭环与sim2real迁移中带来一致提升；BinauralVAE 则为世界模型补上双耳空间音频的状态表征，打开视觉之外的模态。趋势上，具身导航正从纯视觉推理转向低调用成本、多模态感知与安全敏感的真实场景。",
+    "added": 4,
+    "at": "2026-09-10T14:10:48.327692+00:00",
     "new": [
       {
-        "t": "AccelMPC: High-Rate, Low-Power FPGA-Accelerated Model Predictive Control for Tiny Drones",
-        "u": "https://arxiv.org/abs/2609.09380",
-        "r": 7,
+        "t": "One MLLM, One Call: Efficient Zero-Shot Vision-and-Language Navigation via Spatial-Aware Waypoints",
+        "u": "https://arxiv.org/abs/2609.06476",
+        "r": 10,
         "g": 8,
-        "s": "AccelMPC以算法、数值、FPGA与物理集成的端到端协同设计，在35克Crazyflie上实现1kHz机载约束MPC，求解较MCU方案快15.6倍，能耗延迟积改善195.4倍。",
-        "c": ""
+        "s": "提出零样本VLN-CE框架O2C-Nav，每步仅调用一次MLLM，将历史感知候选路点投影为图像标记供其选择，并由FMM规划器生成无碰撞路径，在R2R-CE与RxR-CE上超越现有零样本方法。",
+        "c": "https://github.com/kkpsq/O2C-Nav-Code"
       },
       {
-        "t": "Multi-Agent Reinforcement Learning for Autonomous UAV Exploration in Wildfire Response",
-        "u": "https://arxiv.org/abs/2609.10433",
-        "r": 7,
-        "g": 5,
-        "s": "本文提出多智能体深度强化学习框架，训练无人机在仿真野火环境中自主导航与监测；训练损失收敛、奖励上升及火场边界跟踪等行为表明策略随训练逐步稳定有效。",
-        "c": ""
-      },
-      {
-        "t": "Learning to Fly: Stable Vision-Guided UAV Servoing with Compact Target-Centric Cues and Reinforcement Learning",
-        "u": "https://arxiv.org/abs/2609.09234",
+        "t": "3DHarnessBench: Probing Agentic 3D-to-Code Capabilities of Frontier Vision-Language Models",
+        "u": "https://arxiv.org/abs/2609.06535",
         "r": 7,
         "g": 7,
-        "s": "该文面向长时程无人机视觉伺服，用轻量分割提取目标图像偏移与相对深度，结合机体速度和重力投影构成12维紧凑观测，比较PPO与三种课程策略，消融与扰动实验显示学习策略比经典控制器更鲁棒。",
+        "s": "3DHarnessBench是一个评测前沿视觉语言模型能否以Blender Python代码恢复3D几何的基准，通过单视图、多视图、主动视觉到完全3D交互四级递进的测试环境，考察模型的主动探索、工具调用与自我纠错能力。",
         "c": ""
       },
       {
-        "t": "VANTAGE-Bench: Evaluating the Infrastructure AI Gap in Vision-Language Models",
-        "u": "https://arxiv.org/abs/2609.09396",
-        "r": 6,
+        "t": "Time-Aware Assistive Navigation",
+        "u": "https://arxiv.org/abs/2609.05596",
+        "r": 8,
         "g": 8,
-        "s": "VANTAGE-Bench面向固定摄像头基础设施视频评测VLM，覆盖物流、交通、智能空间三域，含跟踪等八种任务，零样本测17个模型，发现事件验证与时间定位显著落后于消费级基准。",
+        "s": "本文构建户外第一人称辅助导航的大规模多模态基准，考察MLLM实时生成安全及时指令的能力，发现现成模型微调后仍不足，监督预测指令原因可在开环、闭环及sim2real下显著提升。",
         "c": ""
       },
       {
-        "t": "Grounded Evaluation and Repair for NL-to-PDDL Problem Generation",
-        "u": "https://arxiv.org/abs/2609.09898",
+        "t": "BinauralVAE: Spatial Audio Reconstruction For World Models",
+        "u": "https://arxiv.org/abs/2609.06837",
         "r": 7,
-        "g": 7,
-        "s": "本文构建端到端自然语言转PDDL流水线，融合LLM生成、解析与规划验证、领域一致性检查、LLM批评者与迭代修复，并用结构匹配与语义等价做参考式评估，发现运行成功与参考重建可显著背离。",
-        "c": ""
-      },
-      {
-        "t": "Building Multilingual Bridges: Data Mixing as the Pillar of Generalization for In-Language Reasoning",
-        "u": "https://arxiv.org/abs/2609.10445",
-        "r": 7,
-        "g": 8,
-        "s": "该工作研究L2推理：让模型以提问语言而非英语推理，通过优化SFT数据混合与调度训练3.35B模型，在60种语言上实现逾93%的母语推理率。",
-        "c": ""
+        "g": 6,
+        "s": "本文提出开源的双耳空间音频重建管线BinauralVAE，评测多种含复数值VAE在内的架构以学习双耳信号鲁棒潜表征，数据由仿真机器人导航环境采集，为未来音频世界模型的状态表征奠定基础。",
+        "c": "https://github.com/Luizerko/BinauralVAE"
       }
     ]
   }
