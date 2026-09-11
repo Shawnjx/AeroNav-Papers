@@ -686,5 +686,53 @@
     "reason": "属于自动驾驶BEV感知与行为克隆策略的闭环评测研究，不在空域/地面具身导航及各基础能力技术线收录范围内，仅评测理念有间接参考价值。",
     "rejected_at": "2026-09-10",
     "url": "https://arxiv.org/abs/2609.05783"
+  },
+  "2609.11766": {
+    "title": "Visual-SLAM for the detection of hidden tomatoes in greenhouses by Hierarchical Localization and GLOMAPfor robotized harvesting",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "将GLOMAP与HLoc等现成开源工具组合应用于温室番茄建图的垂直农业场景，无导航或自主决策成分，实验仅单株果串且离线处理，属应用集成而非SLAM与建图技术本身的显著进展。",
+    "rejected_at": "2026-09-11",
+    "url": "https://arxiv.org/abs/2609.11766"
+  },
+  "2609.11548": {
+    "title": "World in World: Explore the World with World Models",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属于自回归视频世界模型的免训练视角控制与重渲染研究，评测仅限视频感知质量、时序一致性与相机跟随精度，未涉及导航、规划或任何具身任务，接近文生视频/视频编辑方向，与'用于导航与规划的世界模型'技术线仅术语擦边。",
+    "rejected_at": "2026-09-11",
+    "url": "https://arxiv.org/abs/2609.11548"
+  },
+  "2609.11886": {
+    "title": "Guided Super-Resolution of Digital Elevation Models with Diffusion-Based Image Generators",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "属于遥感影像引导的DSM超分与图像生成应用，仅与3D表面数据在术语上相近，与具身导航、UAV目标搜索及智能体基础能力均无实质关联。",
+    "rejected_at": "2026-09-11",
+    "url": "https://arxiv.org/abs/2609.11886"
+  },
+  "2609.11786": {
+    "title": "Beyond Word Error Rate: A Switch Aware Evaluation of ASR and Audio Language Models on English Yoruba Code-Switched Speech",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "该论文是对英语-约鲁巴语码切换语音的ASR与音频大模型评测，属于语音处理垂直领域基准，与具身导航、空间智能、智能体能力本身均无实质关联，按范围规则应拒绝。",
+    "rejected_at": "2026-09-11",
+    "url": "https://arxiv.org/abs/2609.11786"
+  },
+  "2609.11838": {
+    "title": "Target leakage, not model class, explains reported accuracy in survey-based cardiovascular screening: a leakage-tiered audit of glass-box and tabular foundation models",
+    "relevance": 1,
+    "rigor": 8,
+    "reason": "纯医疗健康垂直应用（心血管筛查）的表格模型泄漏审计，不涉及空间、导航、机器人或具身智能，属收录范围明确排除项。",
+    "rejected_at": "2026-09-11",
+    "url": "https://arxiv.org/abs/2609.11838"
+  },
+  "2609.10855": {
+    "title": "Evaluation of Vision-Language Models Across Diverse Coastal Environments",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "本质是海岸环境的纯图像分割/VLM对齐评测数据集与基准，无导航决策、空间推理或具身交互成分，属范围外明确排除的纯分割检测类工作。",
+    "rejected_at": "2026-09-11",
+    "url": "https://arxiv.org/abs/2609.10855"
   }
 }

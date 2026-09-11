@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T14:09:37.521609+00:00",
+  "updated_at": "2026-09-11T08:50:11.001588+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1672,6 +1672,51 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.10895",
+      "arxiv_id": "2609.10895",
+      "title": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs",
+      "authors": [
+        "Yizhan Li",
+        "Jianxin You",
+        "Mengyang Xiong",
+        "Yinhuan Chen",
+        "Zicheng Zhao",
+        "Dekun Wu",
+        "Dongqing Zhang",
+        "Bang Liu"
+      ],
+      "published": "2026-09-09",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.10895",
+      "pdf_url": "https://arxiv.org/pdf/2609.10895",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ReactHuman提出首个物理落地的类人反应式决策基准：MLLM充当仿真人形机器人大脑，应对17类突发家庭危险，含上千个可复现场景、240Hz刚体仿真真值与五维评分，评测七个模型发现约三分之一危险应对失败。",
+      "change_zh": "不同于被动看视频做物理问答或导航/整理等长程任务评测，该基准首次考察模型能否把物理理解即时转化为安全关键的反应动作，并物理执行每个决策使其产生可观测后果；还引入外观与物理属性矛盾的对抗物体及免标注仿真真值。",
+      "why_it_matters": "直接充实具身基准与评测及MLLM智能体决策线：系统揭示大模型作机器人决策核心在安全关键反应上的缺陷（信外观轻运动、不随规模改善），可作可扩展训练信号；对UAV主动搜索、ObjectNav等导航决策核心的实时危险响应与评测设计亦有借鉴。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-09-11T08:37:30.624512+00:00"
+    },
+    {
       "id": "2609.06623",
       "arxiv_id": "2609.06623",
       "title": "CAVEAT: Recurrent Multimodal Diffusion Planning for Mapless Aerial Exploration",
@@ -2833,6 +2878,123 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.11382",
+      "arxiv_id": "2609.11382",
+      "title": "SwarmNxt: Open-source Software-Hardware Platform for Fast and Agile Aerial Swarms",
+      "authors": [
+        "Charbel Toumieh",
+        "Niel Mistry",
+        "Benjamin Jarvis",
+        "Simon Jeger",
+        "Peize Liu",
+        "Shaojie Shen",
+        "Dario Floreano"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.11382",
+      "pdf_url": "https://arxiv.org/pdf/2609.11382",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SwarmNxt是基于开源OmniNxt无人机的空中集群软硬件平台，提供装配教程、并行部署自动化工具与ROS 2自主导航框架，集成控制、规划与深度估计，经六机与四机真机实验验证。",
+      "change_zh": "不同于依赖闭源商用无人机或逐台手工调试多机的常见做法，该工作将开源硬件、集群并行部署与ROS 2多机导航栈整合为端到端工具链，大幅降低敏捷视觉集群真机研究的工程门槛。",
+      "why_it_matters": "为空域自主研究提供可复现的真机基础设施：去中心化规划、机间避障与板载深度估计是多无人机搜救、侦察与目标搜索的直接使能组件，也可作为集群导航及UAV目标搜索算法的真机验证测试床。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "drone",
+        "instruction"
+      ],
+      "added_at": "2026-09-11T08:35:34.013910+00:00"
+    },
+    {
+      "id": "2609.11920",
+      "arxiv_id": "2609.11920",
+      "title": "EVPeriscope: Extended Perception across Aerial and Ground Vehicles with Event-based Propeller Tracking",
+      "authors": [
+        "Dexter Ong",
+        "Vijay Kumar",
+        "Pratik Chaudhari"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.11920",
+      "pdf_url": "https://arxiv.org/pdf/2609.11920",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EVPeriscope利用地面机器人朝上的事件相机捕捉无人机螺旋桨的高频视觉特征，实现跨空地机器人的相对定位与200Hz纯机载闭环控制，使无人机成为地面机器人的延伸感知平台。",
+      "change_zh": "不同于基于帧相机与人工标志物的传统空地相对定位方案，本文利用事件相机对螺旋桨高频闪烁特征的检测，摆脱运动模糊与光照变化限制，实现昼夜全天候、全机载计算的无人机检测定位与控制。",
+      "why_it_matters": "该系统为空地异构协同提供鲁棒相对定位基础，使无人机在地面传感器退化或被密林遮挡时充当延伸感知节点，可支撑搜救侦察等UAV主动目标搜索与野外导航的真机落地，对状态估计与控制及真机部署技术线有价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "localization"
+      ],
+      "added_at": "2026-09-11T08:36:23.639542+00:00"
+    },
+    {
+      "id": "2609.11499",
+      "arxiv_id": "2609.11499",
+      "title": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+      "authors": [
+        "Zhiqi Li",
+        "Yuxuan Liao",
+        "Bo Zhu"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.11499",
+      "pdf_url": "https://arxiv.org/pdf/2609.11499",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出RCWM递归代码世界模型，用递归场景程序与自调用求解器按整体-局部-整体流程从单张参考图重建复杂3D可执行世界，视觉语言智能体对比渲染与参考图引导细化，优于既有代码式重建方法。",
+      "change_zh": "与一次性生成场景代码或整体式三维重建不同，RCWM让求解器递归自调用：先建整体、再递归重建未定局部、最后回访整体修正边界与共享误差，使细粒度结构拥有独立感知-编辑闭环，同时保持全局几何与空间关系。",
+      "why_it_matters": "代码化可执行世界可作为仿真环境，为ObjectNav与UAV目标搜索智能体提供低成本可控训练评测场景；其递归构造与渲染-参考闭环也为世界模型、空间智能技术线提供建世界新范式，但摘要未展示导航侧直接应用。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-09-11T08:47:25.657059+00:00"
+    },
+    {
       "id": "2609.09898",
       "arxiv_id": "2609.09898",
       "title": "Grounded Evaluation and Repair for NL-to-PDDL Problem Generation",
@@ -3678,6 +3840,88 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.11172",
+      "arxiv_id": "2609.11172",
+      "title": "Beyond Visual Quality: Evaluating Physical Consistency under Ego-Motion with EgoGenEval",
+      "authors": [
+        "Yilin Long",
+        "Chenming Zhu",
+        "Zitang Gou",
+        "Jingli Lin",
+        "Tai Wang"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.11172",
+      "pdf_url": "https://arxiv.org/pdf/2609.11172",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/fe94cf3a778a01af9a87533d9214706139f220c2",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出几何接地、免位姿的EgoGenEval基准，含1400案例与2360目标视角，评测自我运动下视觉生成器的物理一致性，分测相机运动接地与场景状态保持，并做受控SFT训练研究。",
+      "change_zh": "现有评测多关注单图或单步视觉质量，本工作转向自我运动下的多步物理一致性，分解为相机运动接地与场景状态保持两轴，并用受控SFT实验指出成对教师强制目标是瓶颈，指向以轨迹为中心的新范式。",
+      "why_it_matters": "自我运动下仍保持场景一致的生成器是导航世界模型与合成数据源的关键候选；该基准揭示现有模型短板，可为UAV目标搜索与ObjectNav的数据生成、世界模型评估与训练改进提供依据。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-09-11T08:44:47.195109+00:00"
+    },
+    {
+      "id": "2609.11079",
+      "arxiv_id": "2609.11079",
+      "title": "RIDE: Relocalization-Informed Depth Estimation with 3D Gaussian Splatting",
+      "authors": [
+        "Jiarong Lian",
+        "Zhe Xiao",
+        "Zhaoyang Zhang",
+        "Wei Li",
+        "Ruizhi Chen"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.11079",
+      "pdf_url": "https://arxiv.org/pdf/2609.11079",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RIDE利用3DGS重定位内点对应的稀疏度量深度，结合预训练视频深度先验与全局/局部校正及时序记忆，从机器人RGB流估计稠密度量深度，免微调在机器人序列上提升精度与一致性。",
+      "change_zh": "常见做法仅对单目/视频深度模型做尺度对齐；本文将重定位的像素-3D点对应作为稀疏度量深度约束融入深度先验，并以全局/局部校正与时序记忆应对观测不均与短暂缺失，尺度初始化后可跨观测间隙输出稠密深度。",
+      "why_it_matters": "为机器人自主提供低成本RGB稠密度量感知：对UAV主动目标搜索与ObjectNav的避障、度量建图与目标接近，以及3DGS重定位系统的感知—定位闭环一体化有直接支撑价值，提升导航与状态估计链路的鲁棒性。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-09-11T08:45:58.788621+00:00"
+    },
+    {
       "id": "2609.09025",
       "arxiv_id": "2609.09025",
       "title": "Task-driven Processing with Coarse-to-Fine Glimpse-based Active Perception",
@@ -3980,6 +4224,107 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.11929",
+      "arxiv_id": "2609.11929",
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "authors": [
+        "Haiwen Diao",
+        "Jiahao Wang",
+        "Chenjing Ding",
+        "Hanming Deng",
+        "Jiangnan Chen",
+        "Ruixi Zhang",
+        "Ruohui Wang",
+        "Wenwen Tong",
+        "Xiangyu Fan",
+        "Yubo Wang",
+        "Yue Zhu",
+        "Yuwei Niu",
+        "Zhengqi Bai",
+        "Zhiqian Lin",
+        "Zhitao Yang",
+        "Zhongang Cai",
+        "Bo Yang",
+        "Chen Feng",
+        "Chengguang Lv",
+        "Guangjia Liu",
+        "Guanlin Wang",
+        "Hanyu Zhang",
+        "Haojia Yu",
+        "Hongcan Xiao",
+        "Hongli Wang",
+        "Huan Wu",
+        "Huaping Zhong",
+        "Jian Fang",
+        "Jianan Fan",
+        "Jiaqi Li",
+        "Jiefan Lu",
+        "Jing Zuo",
+        "Jingcheng Ni",
+        "Junxiang Xu",
+        "Linjun Dai",
+        "Mutian Xu",
+        "Peishen Yan",
+        "Penghao Wu",
+        "Ruijie Mao",
+        "Ruisi Wang",
+        "Shihao Bai",
+        "Shuang Yang",
+        "Shuya Yang",
+        "Shuyan Zheng",
+        "Silei Wu",
+        "Siying Li",
+        "Tao Chu",
+        "Tianbo Zhong",
+        "Tongxi Zhou",
+        "Weichao Luo",
+        "Weichen Fan",
+        "Wenhao Jia",
+        "Wenjie Gao",
+        "Xiangli Kong",
+        "Yan Li",
+        "Yang Yong",
+        "Zimo Wen",
+        "Zixuan Qian",
+        "Wenxiu Sun",
+        "Ruihao Gong",
+        "Quan Wang",
+        "Lewei Lu",
+        "Lei Yang",
+        "Ziwei Liu",
+        "Dahua Lin"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.11929",
+      "pdf_url": "https://arxiv.org/pdf/2609.11929",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "发布8B MoT原生统一多模态模型SenseNova-U1.5，在无编码器、无VAE架构下统一视觉理解与生成，借助空间一致patch重建、数据策展与结构化提示训练，再经多专家on-policy蒸馏后训练，在图像保真、文本渲染、多参考编辑与交错生成上显著提升。",
+      "change_zh": "相比常见'视觉编码器+扩散/自回归生成器'的分离式多模态路线，该工作彻底去掉编码器与VAE，让理解与生成共享同一原生骨干；后训练用多专家on-policy蒸馏将美学、文本渲染、图像编辑等专项能力整合进单一模型，并支持4K原生分辨率，践行端到端统一建模范式。",
+      "why_it_matters": "作为理解-生成统一的基础模型新进展，它为多模态大模型与智能体线提供了新架构与蒸馏训练范式，并承诺开源训练代码；其对长结构化视觉指令的泛化或可服务具身智能体的视觉规划接口，但摘要未涉及空间推理与导航任务，对UAV目标搜索与ObjectNav仅是间接的基础能力储备。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "instruction",
+        "instruction following"
+      ],
+      "added_at": "2026-09-11T08:39:56.536017+00:00"
     },
     {
       "id": "2609.10433",
@@ -4447,41 +4792,65 @@
     }
   ],
   "briefing": {
-    "text": "本批论文的主线是多模态大模型进入具身导航后的推理效率、能力评测与模态扩展。首推 One MLLM, One Call：将历史候选路点投影为图像标记，每步仅调用一次MLLM即可完成决策，并在R2R-CE与RxR-CE上超越现有零样本方法，效率与性能俱佳；Time-Aware Assistive Navigation 以大规模户外第一人称基准发现，微调后的现成模型仍给不出安全及时的导航指令，而监督预测指令原因可在开环、闭环与sim2real迁移中带来一致提升；BinauralVAE 则为世界模型补上双耳空间音频的状态表征，打开视觉之外的模态。趋势上，具身导航正从纯视觉推理转向低调用成本、多模态感知与安全敏感的真实场景。",
-    "added": 4,
-    "at": "2026-09-10T14:10:48.327692+00:00",
+    "text": "今日入库横跨真机平台、跨域感知与决策评测。首推ReactHuman：首个物理落地的反应式决策基准，提供240Hz刚体仿真真值，七个MLLM约三分之一居家危险应对失败，直接暴露现有模型短板。EVPeriscope用朝上事件相机追踪螺旋桨，实现空地机器人相对定位与200Hz机载闭环，硬件思路可低成本复用。Recursive Code World Models从单图递归重建可执行3D世界，可作仿真训练底座。趋势上，评测正从静态任务转向突发物理事件，世界模型走向仿真上游。",
+    "added": 7,
+    "at": "2026-09-11T08:52:34.505093+00:00",
     "new": [
       {
-        "t": "One MLLM, One Call: Efficient Zero-Shot Vision-and-Language Navigation via Spatial-Aware Waypoints",
-        "u": "https://arxiv.org/abs/2609.06476",
-        "r": 10,
-        "g": 8,
-        "s": "提出零样本VLN-CE框架O2C-Nav，每步仅调用一次MLLM，将历史感知候选路点投影为图像标记供其选择，并由FMM规划器生成无碰撞路径，在R2R-CE与RxR-CE上超越现有零样本方法。",
-        "c": "https://github.com/kkpsq/O2C-Nav-Code"
-      },
-      {
-        "t": "3DHarnessBench: Probing Agentic 3D-to-Code Capabilities of Frontier Vision-Language Models",
-        "u": "https://arxiv.org/abs/2609.06535",
+        "t": "SwarmNxt: Open-source Software-Hardware Platform for Fast and Agile Aerial Swarms",
+        "u": "https://arxiv.org/abs/2609.11382",
         "r": 7,
         "g": 7,
-        "s": "3DHarnessBench是一个评测前沿视觉语言模型能否以Blender Python代码恢复3D几何的基准，通过单视图、多视图、主动视觉到完全3D交互四级递进的测试环境，考察模型的主动探索、工具调用与自我纠错能力。",
+        "s": "SwarmNxt是基于开源OmniNxt无人机的空中集群软硬件平台，提供装配教程、并行部署自动化工具与ROS 2自主导航框架，集成控制、规划与深度估计，经六机与四机真机实验验证。",
         "c": ""
       },
       {
-        "t": "Time-Aware Assistive Navigation",
-        "u": "https://arxiv.org/abs/2609.05596",
+        "t": "EVPeriscope: Extended Perception across Aerial and Ground Vehicles with Event-based Propeller Tracking",
+        "u": "https://arxiv.org/abs/2609.11920",
+        "r": 7,
+        "g": 7,
+        "s": "EVPeriscope利用地面机器人朝上的事件相机捕捉无人机螺旋桨的高频视觉特征，实现跨空地机器人的相对定位与200Hz纯机载闭环控制，使无人机成为地面机器人的延伸感知平台。",
+        "c": ""
+      },
+      {
+        "t": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs",
+        "u": "https://arxiv.org/abs/2609.10895",
         "r": 8,
         "g": 8,
-        "s": "本文构建户外第一人称辅助导航的大规模多模态基准，考察MLLM实时生成安全及时指令的能力，发现现成模型微调后仍不足，监督预测指令原因可在开环、闭环及sim2real下显著提升。",
+        "s": "ReactHuman提出首个物理落地的类人反应式决策基准：MLLM充当仿真人形机器人大脑，应对17类突发家庭危险，含上千个可复现场景、240Hz刚体仿真真值与五维评分，评测七个模型发现约三分之一危险应对失败。",
         "c": ""
       },
       {
-        "t": "BinauralVAE: Spatial Audio Reconstruction For World Models",
-        "u": "https://arxiv.org/abs/2609.06837",
+        "t": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+        "u": "https://arxiv.org/abs/2609.11929",
+        "r": 6,
+        "g": 7,
+        "s": "发布8B MoT原生统一多模态模型SenseNova-U1.5，在无编码器、无VAE架构下统一视觉理解与生成，借助空间一致patch重建、数据策展与结构化提示训练，再经多专家on-policy蒸馏后训练，在图像保真、文本渲染、多参考编辑与交错生成上显著提升。",
+        "c": ""
+      },
+      {
+        "t": "Beyond Visual Quality: Evaluating Physical Consistency under Ego-Motion with EgoGenEval",
+        "u": "https://arxiv.org/abs/2609.11172",
+        "r": 6,
+        "g": 8,
+        "s": "提出几何接地、免位姿的EgoGenEval基准，含1400案例与2360目标视角，评测自我运动下视觉生成器的物理一致性，分测相机运动接地与场景状态保持，并做受控SFT训练研究。",
+        "c": ""
+      },
+      {
+        "t": "RIDE: Relocalization-Informed Depth Estimation with 3D Gaussian Splatting",
+        "u": "https://arxiv.org/abs/2609.11079",
         "r": 7,
         "g": 6,
-        "s": "本文提出开源的双耳空间音频重建管线BinauralVAE，评测多种含复数值VAE在内的架构以学习双耳信号鲁棒潜表征，数据由仿真机器人导航环境采集，为未来音频世界模型的状态表征奠定基础。",
-        "c": "https://github.com/Luizerko/BinauralVAE"
+        "s": "RIDE利用3DGS重定位内点对应的稀疏度量深度，结合预训练视频深度先验与全局/局部校正及时序记忆，从机器人RGB流估计稠密度量深度，免微调在机器人序列上提升精度与一致性。",
+        "c": ""
+      },
+      {
+        "t": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+        "u": "https://arxiv.org/abs/2609.11499",
+        "r": 7,
+        "g": 7,
+        "s": "本文提出RCWM递归代码世界模型，用递归场景程序与自调用求解器按整体-局部-整体流程从单张参考图重建复杂3D可执行世界，视觉语言智能体对比渲染与参考图引导细化，优于既有代码式重建方法。",
+        "c": ""
       }
     ]
   }
