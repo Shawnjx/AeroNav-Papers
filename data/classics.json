@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T14:11:19.562239+00:00",
+  "updated_at": "2026-09-11T07:58:43.618358+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5726,6 +5726,44 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4402727272",
+      "arxiv_id": "",
+      "title": "TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding",
+      "authors": [
+        "Shuhuai Ren",
+        "Linli Yao",
+        "Shicheng Li",
+        "Xu Sun",
+        "Lu Hou"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 116,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.01357",
+      "pdf_url": "",
+      "code_url": "https://github.com/RenShuhuai-Andy/TimeChat",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TimeChat是面向长视频理解的时间敏感多模态大模型，以时间戳感知帧编码器和滑动视频Q-Former建模时序，结合12.5万条指令数据微调，在时序定位等任务上零样本领先。",
+      "change_zh": "常见视频大模型将视频压成定长视觉令牌，时间信息大量丢失，难以回答\"何时发生\"的问题。TimeChat把时间戳显式注入帧特征并用滑动Q-Former适应任意时长，使模型能定位到具体时刻并做时序推理。",
+      "why_it_matters": "对多模态大模型线，它把显式时间感知引入视频LLM，是长视频时序推理的代表性进展；虽无导航实验，但时序定位与长视频记忆能力可为具身智能体回看视频、从演示学习导航提供感知基础。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "instruction",
+        "localization",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-11T07:58:43.618358+00:00"
+    },
+    {
       "id": "https://openalex.org/W4410438635",
       "arxiv_id": "",
       "title": "Advances in UAV Path Planning: A Comprehensive Review of Methods, Challenges, and Future Directions",
@@ -8516,103 +8554,42 @@
       "rigor": 2,
       "reason": "属ChatGPT教育伦理与防抄袭管理类讨论，与空间、导航、机器人无关且无任何实验方法。",
       "excluded_at": "2026-09-08"
+    },
+    "https://openalex.org/W4376112785": {
+      "title": "Goods and Bads of the Endocannabinoid System as a Therapeutic Target: Lessons Learned after 30 Years",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文为内源性大麻素系统的药理学治疗靶点综述，属于生物医学领域，与具身导航、UAV、空间智能、机器人自主等全部收录技术线完全无关。",
+      "excluded_at": "2026-09-11"
+    },
+    "https://openalex.org/W4387773384": {
+      "title": "MechGPT, a Language-Based Strategy for Mechanics and Materials Modeling That Connects Knowledge Across Scales, Disciplines, and Modalities",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "该工作是将LLM微调与知识图谱应用于材料力学这一垂直领域，与空间、导航、机器人自主均无关，属典型范围外的大模型垂直应用，应拒绝收录。",
+      "excluded_at": "2026-09-11"
+    },
+    "https://openalex.org/W4416453399": {
+      "title": "Cognitive offloading or cognitive overload? How AI alters the mental architecture of coping",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文是将AI套用于心理健康/认知心理学垂直领域的理论评述，与空间、导航、机器人均无关，且纯观点论述、无实验设置与验证。",
+      "excluded_at": "2026-09-11"
     }
   },
-  "last_citation_refresh": "2026-09-10T14:11:19.562239+00:00",
   "briefing": {
-    "text": "本批过半是无人机导航与路径规划研究，其余是LLM智能体与基础模型类工作。首推ULIP-2，它用现成多模态大模型自动生成3D语言描述、免人工标注即可扩展三模态预训练，是语义导航的可扩展感知底座；ExpeL证明智能体仅以自然语言提炼经验就能持续提升并迁移，对导航智能体的记忆机制设计有直接参照；Ad Astra借低轨卫星信号把GNSS拒止下的载具定位误差从数百米压到数十米。可见经典规划与定位方法正加速并入基础模型驱动的具身智能技术栈。",
-    "added": 10,
-    "at": "2026-09-08T10:03:38.564482+00:00",
+    "text": "本轮入库工作主线清晰：多模态大模型正从静态图文理解扩展到长视频的时序理解与定位。最值得精读的是TimeChat——它以时间戳感知帧编码器和滑动视频Q-Former显式建模时间维度，配合12.5万条指令数据微调，在时序定位等任务上取得零样本领先，为具身智能体处理长时程观测提供了可直接迁移的时间对齐范式，其数据构造与评测方案也颇具复用价值。趋势上看，时间戳级的细粒度时序建模正成为视频大模型通向具身场景长时记忆与经验回放的关键组件。",
+    "added": 1,
+    "at": "2026-09-11T07:58:43.618358+00:00",
     "new": [
       {
-        "t": "ExpeL: LLM Agents Are Experiential Learners",
-        "u": "https://doi.org/10.1609/aaai.v38i17.29936",
+        "t": "TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.01357",
         "r": 7,
-        "g": 7,
-        "s": "ExpeL提出无需参数更新的经验学习智能体：自主从训练任务收集经验并用自然语言提炼知识，推理时检索洞察与经验做决策，性能随经验累积持续提升并具迁移潜力。",
-        "c": "",
-        "cit": 117
-      },
-      {
-        "t": "ULIP-2: Towards Scalable Multimodal Pre-Training for 3D Understanding",
-        "u": "https://doi.org/10.1109/cvpr52733.2024.02558",
-        "r": 8,
         "g": 8,
-        "s": "ULIP-2提出三模态预训练框架，利用现成多模态大模型自动为3D形状生成整体语言描述，仅需3D数据输入、无需人工标注即可扩展至大规模数据，在零样本3D分类等下游任务上刷新SOTA。",
-        "c": "https://github.com/salesforce/ULIP",
+        "s": "TimeChat是面向长视频理解的时间敏感多模态大模型，以时间戳感知帧编码器和滑动视频Q-Former建模时序，结合12.5万条指令数据微调，在时序定位等任务上零样本领先。",
+        "c": "https://github.com/RenShuhuai-Andy/TimeChat",
         "cit": 116
-      },
-      {
-        "t": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
-        "u": "https://arxiv.org/abs/2408.06292",
-        "r": 8,
-        "g": 7,
-        "s": "提出首个全自动科学发现框架The AI Scientist，由前沿大模型独立完成想法生成、写代码、跑实验、撰写论文并自动评审，在三个机器学习子领域以每篇不足15美元成本产出完整论文，自动评审接近人类水平。",
-        "c": "https://github.com/SakanaAI/AI-Scientist",
-        "cit": 114
-      },
-      {
-        "t": "Qwen3 Technical Report",
-        "u": "https://arxiv.org/abs/2505.09388",
-        "r": 8,
-        "g": 8,
-        "s": "Qwen3系列提供0.6B至235B的稠密与MoE大模型，将思考与非思考模式统一为单一框架，支持按任务复杂度分配思考预算，在代码、数学与智能体基准达到SOTA并全面开源。",
-        "c": "",
-        "cit": 111
-      },
-      {
-        "t": "Advances in UAV Path Planning: A Comprehensive Review of Methods, Challenges, and Future Directions",
-        "u": "https://doi.org/10.3390/drones9050376",
-        "r": 7,
-        "g": 5,
-        "s": "本文综述无人机路径规划方法，涵盖确定性模型、随机采样、仿生算法与集成框架，并讨论静态、动态与三维场景下的性能，及机器学习方法、能耗优化与多机协同等方向。",
-        "c": "",
-        "cit": 99
-      },
-      {
-        "t": "Ad Astra: Simultaneous Tracking and Navigation With Megaconstellation LEO Satellites",
-        "u": "https://doi.org/10.1109/maes.2023.3267440",
-        "r": 7,
-        "g": 8,
-        "s": "STAN框架利用Orbcomm、Iridium、Starlink低轨卫星下行信号的伪距与多普勒观测量，经紧耦合EKF融合惯导并同时估计卫星与载具状态，将GNSS拒止下载具定位误差从数百米降至数十米。",
-        "c": "",
-        "cit": 86
-      },
-      {
-        "t": "Gnss-denied unmanned aerial vehicle navigation: analyzing computational complexity, sensor fusion, and localization methodologies",
-        "u": "https://doi.org/10.1186/s43020-025-00162-z",
-        "r": 7,
-        "g": 5,
-        "s": "本文综述GNSS拒止环境下无人机户外定位的传感器与算法，提出绝对/相对定位二分类体系，指出视觉定位最有效但单一传感器不足，需混合融合策略。",
-        "c": "",
-        "cit": 84
-      },
-      {
-        "t": "Autonomous UAV Navigation with Adaptive Control Based on Deep Reinforcement Learning",
-        "u": "https://doi.org/10.3390/electronics13132432",
-        "r": 7,
-        "g": 5,
-        "s": "针对低空复杂环境，该文将自适应高度与速度的三维无人机导航建模为MDP，用深度强化学习求解，并以引导注意力在导航与避障间切换决策焦点、速度约束损失改善速度控制，仿真优于部分SOTA算法。",
-        "c": "",
-        "cit": 80
-      },
-      {
-        "t": "Comprehensive Review of Path Planning Techniques for Unmanned Aerial Vehicles (UAVs)",
-        "u": "https://doi.org/10.1145/3737280",
-        "r": 7,
-        "g": 6,
-        "s": "本文系统综述无人机路径规划方法，涵盖采样式、人工势场、仿生与AI类算法，从路径长度、飞行时间、避障、实时性等维度比较优劣与适用场景，并指出开放问题。",
-        "c": "",
-        "cit": 58
-      },
-      {
-        "t": "OWRT-DETR: A Novel Real-Time Transformer Network for Small-Object Detection in Open-Water Search and Rescue From UAV Aerial Imagery",
-        "u": "https://doi.org/10.1109/tgrs.2025.3560928",
-        "r": 6,
-        "g": 7,
-        "s": "提出面向无人机开阔水域搜救的实时Transformer检测网络OWRT-DETR，含跨尺度特征金字塔、多尺度感知融合与小目标增强三个模块，在SeaDronesSee等三个公开数据集上超越多个SOTA，并提供轻量版。",
-        "c": "https://github.com/mshauima/OWRT-DETR",
-        "cit": 45
       }
     ]
   }
