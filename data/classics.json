@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T14:02:39.335167+00:00",
+  "updated_at": "2026-09-12T13:20:59.958810+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5874,6 +5874,44 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4412203333",
+      "arxiv_id": "",
+      "title": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
+      "authors": [
+        "Zeyu Zhang",
+        "Quanyu Dai",
+        "Xiaohe Bo",
+        "Chen Ma",
+        "Rui Li",
+        "Xu Chen",
+        "Jieming Zhu",
+        "Zhenhua Dong",
+        "Ji-Rong Wen"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "ACM Transactions on Information Systems",
+      "citation_count": 108,
+      "url": "https://doi.org/10.1145/3748302",
+      "pdf_url": "",
+      "code_url": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该综述系统梳理LLM智能体的记忆机制，先界定记忆是什么与为何需要，再归纳记忆模块的设计与评测方法，展示记忆在多类智能体应用中的作用，并总结局限与未来方向，附开源仓库持续更新。",
+      "change_zh": "作为综述，其贡献在于把散落各论文的记忆机制统一到'是什么—为何需要—如何设计—如何评测'的整体框架下，并尝试抽象共性有效设计模式，而非提出新方法或新实验；摘要层面未给出具体技术路线细节。",
+      "why_it_matters": "记忆是LLM/多模态智能体'推理/记忆/工具使用'核心能力之一，该综述为智能体记忆设计提供系统参照，属核心收录线的高影响力工作；对UAV主动目标搜索与ObjectNav而言，长程交互与空间历史记忆也是提升搜索与目标定位能力的重要基础。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-12T13:20:59.958810+00:00"
+    },
+    {
       "id": "https://openalex.org/W4409201921",
       "arxiv_id": "",
       "title": "Gnss-denied unmanned aerial vehicle navigation: analyzing computational complexity, sensor fusion, and localization methodologies",
@@ -8575,22 +8613,35 @@
       "rigor": 2,
       "reason": "该文是将AI套用于心理健康/认知心理学垂直领域的理论评述，与空间、导航、机器人均无关，且纯观点论述、无实验设置与验证。",
       "excluded_at": "2026-09-11"
+    },
+    "https://openalex.org/W4389143442": {
+      "title": "BUSINESS INTELLIGENCE TRANSFORMATION THROUGH AI AND DATA ANALYTICS",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "该文为AI与数据分析在商业智能（BI）这一垂直商业领域的应用综述，与空间、导航、机器人及大模型/智能体能力本身的进展均无关，且仅为文献回顾无实验，明显超出收录范围。",
+      "excluded_at": "2026-09-12"
+    },
+    "https://openalex.org/W4362662207": {
+      "title": "Sex Differences in Alzheimer’s Disease",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "属医学/神经科学综述，研究阿尔茨海默病的性别差异与生物标志物，与具身导航、UAV目标搜索等全部收录技术线无实质关联。",
+      "excluded_at": "2026-09-12"
     }
   },
-  "last_citation_refresh": "2026-09-11T14:02:39.335167+00:00",
   "briefing": {
-    "text": "本轮入库工作主线清晰：多模态大模型正从静态图文理解扩展到长视频的时序理解与定位。最值得精读的是TimeChat——它以时间戳感知帧编码器和滑动视频Q-Former显式建模时间维度，配合12.5万条指令数据微调，在时序定位等任务上取得零样本领先，为具身智能体处理长时程观测提供了可直接迁移的时间对齐范式，其数据构造与评测方案也颇具复用价值。趋势上看，时间戳级的细粒度时序建模正成为视频大模型通向具身场景长时记忆与经验回放的关键组件。",
+    "text": "本轮入库的主线是大模型智能体的记忆机制——智能体如何存储、检索并复用历史经验，这直接关系到具身导航的长程规划与跨场景泛化。最值得精读的是被引已过百的 A Survey on the Memory Mechanism of Large Language Model-based Agents：它先厘清“记忆是什么、为何需要”，再归纳记忆模块的设计与评测方法，梳理记忆在多类智能体应用中的作用，并附持续更新的开源仓库，可作为切入该方向的路线图。从趋势看，记忆研究正从纯文本智能体向具身场景外溢，导航智能体的经验积累能力或成下一波研究热点。 （注：本轮清单实际仅含一篇，故只推荐此篇；后续条目入库后可按同一体例补足2-3篇。）",
     "added": 1,
-    "at": "2026-09-11T07:58:43.618358+00:00",
+    "at": "2026-09-12T13:20:59.958810+00:00",
     "new": [
       {
-        "t": "TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding",
-        "u": "https://doi.org/10.1109/cvpr52733.2024.01357",
-        "r": 7,
-        "g": 8,
-        "s": "TimeChat是面向长视频理解的时间敏感多模态大模型，以时间戳感知帧编码器和滑动视频Q-Former建模时序，结合12.5万条指令数据微调，在时序定位等任务上零样本领先。",
-        "c": "https://github.com/RenShuhuai-Andy/TimeChat",
-        "cit": 116
+        "t": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
+        "u": "https://doi.org/10.1145/3748302",
+        "r": 8,
+        "g": 7,
+        "s": "该综述系统梳理LLM智能体的记忆机制，先界定记忆是什么与为何需要，再归纳记忆模块的设计与评测方法，展示记忆在多类智能体应用中的作用，并总结局限与未来方向，附开源仓库持续更新。",
+        "c": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
+        "cit": 108
       }
     ]
   }
