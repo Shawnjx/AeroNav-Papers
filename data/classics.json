@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T13:20:59.958810+00:00",
+  "updated_at": "2026-09-13T14:28:33.873567+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -807,7 +807,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 1945,
+      "citation_count": 1946,
       "url": "https://doi.org/10.18653/v1/2023.emnlp-main.20",
       "pdf_url": "https://aclanthology.org/2023.emnlp-main.20.pdf",
       "code_url": "",
@@ -2167,7 +2167,7 @@
       "published": "2022",
       "source": "OpenAlex",
       "venue": "Science Robotics",
-      "citation_count": 598,
+      "citation_count": 601,
       "url": "https://doi.org/10.1126/scirobotics.abm5954",
       "pdf_url": "",
       "code_url": "",
@@ -2246,7 +2246,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 564,
+      "citation_count": 565,
       "url": "https://doi.org/10.1109/icra48506.2021.9561996",
       "pdf_url": "",
       "code_url": "",
@@ -2427,6 +2427,48 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T06:28:08Z"
+    },
+    {
+      "id": "https://openalex.org/W4390871919",
+      "arxiv_id": "2307.10984",
+      "title": "Metric3D: Towards Zero-shot Metric 3D Prediction from A Single Image",
+      "authors": [
+        "Wei Yin",
+        "Chi Zhang",
+        "Hao Chen",
+        "Zhipeng Cai",
+        "Gang Yu",
+        "Kaixuan Wang",
+        "Xiaozhi Chen",
+        "Chunhua Shen"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 482,
+      "url": "https://doi.org/10.1109/iccv51070.2023.00830",
+      "pdf_url": "",
+      "code_url": "https://github.com/YvanYin/Metric3D",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出规范相机空间变换模块，显式化解多相机模型带来的度量歧义，使单目模型能在800万图像、数千种相机上稳定训练，实现零样本单图度量三维预测，并在7个零样本基准取得SOTA。",
+      "change_zh": "常见路线要么仅在单一相机模型内做度量深度，要么以仿射不变深度换取零样本泛化但丢失真实尺度；本文用规范相机空间变换显式解耦相机内参歧义，使大规模混合数据训练与真实度量恢复首次兼得。",
+      "why_it_matters": "零样本度量深度是ObjectNav与UAV目标搜索感知栈的基础能力：可直接缓解单目SLAM尺度漂移并支撑稠密度量建图，为仅RGB智能体与轻量无人机提供免标定、可泛化的几何先验，属空间智能核心进展。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "geometry",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W3172675210",
@@ -3146,7 +3188,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "Science Robotics",
-      "citation_count": 322,
+      "citation_count": 323,
       "url": "https://doi.org/10.1126/scirobotics.adg1462",
       "pdf_url": "https://www.zora.uzh.ch/id/eprint/257394/1/2310.10943.pdf",
       "code_url": "",
@@ -3227,7 +3269,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "IEEE Transactions on Intelligent Transportation Systems",
-      "citation_count": 313,
+      "citation_count": 314,
       "url": "https://doi.org/10.1109/tits.2021.3063477",
       "pdf_url": "",
       "code_url": "",
@@ -3262,7 +3304,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "Drones",
-      "citation_count": 311,
+      "citation_count": 312,
       "url": "https://doi.org/10.3390/drones7020089",
       "pdf_url": "https://www.mdpi.com/2504-446X/7/2/89/pdf?version=1676364835",
       "code_url": "",
@@ -3553,6 +3595,41 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "https://openalex.org/W4386066489",
+      "arxiv_id": "2211.11704",
+      "title": "ESLAM: Efficient Dense SLAM System Based on Hybrid Representation of Signed Distance Fields",
+      "authors": [
+        "Mohammad Mahdi Johari",
+        "Camilla Carta",
+        "François Fleuret"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 296,
+      "url": "https://doi.org/10.1109/cvpr52729.2023.01670",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ESLAM是基于符号距离场混合表示的高效稠密RGB-D SLAM系统，用多尺度正交特征平面加浅层解码器解码TSDF与RGB，顺序读取图像增量重建场景并在线估计相机位姿。",
+      "change_zh": "相比依赖MLP逐点查询或需预训练的神经隐式SLAM常见路线，改用多尺度轴对齐正交特征平面的混合表示配浅层解码器，免预训练、提速最高10倍，在Replica/ScanNet/TUM上重建与定位精度较此前SOTA提升逾50%。",
+      "why_it_matters": "高效免预训练的稠密SLAM是机器人自主核心能力，可为UAV主动目标搜索与ObjectNav提供实时高保真稠密地图与可靠位姿基座；其平面混合表示显式紧凑，也利于大规模场景的空间记忆与在线建图。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
+    },
+    {
       "id": "https://openalex.org/W4285512293",
       "arxiv_id": "2112.13659",
       "title": "M2DGR: A Multi-Sensor and Multi-Scenario SLAM Dataset for Ground Robots",
@@ -3587,41 +3664,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T06:48:10Z"
-    },
-    {
-      "id": "https://openalex.org/W4386066489",
-      "arxiv_id": "2211.11704",
-      "title": "ESLAM: Efficient Dense SLAM System Based on Hybrid Representation of Signed Distance Fields",
-      "authors": [
-        "Mohammad Mahdi Johari",
-        "Camilla Carta",
-        "François Fleuret"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 295,
-      "url": "https://doi.org/10.1109/cvpr52729.2023.01670",
-      "pdf_url": "",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "ESLAM是基于符号距离场混合表示的高效稠密RGB-D SLAM系统，用多尺度正交特征平面加浅层解码器解码TSDF与RGB，顺序读取图像增量重建场景并在线估计相机位姿。",
-      "change_zh": "相比依赖MLP逐点查询或需预训练的神经隐式SLAM常见路线，改用多尺度轴对齐正交特征平面的混合表示配浅层解码器，免预训练、提速最高10倍，在Replica/ScanNet/TUM上重建与定位精度较此前SOTA提升逾50%。",
-      "why_it_matters": "高效免预训练的稠密SLAM是机器人自主核心能力，可为UAV主动目标搜索与ObjectNav提供实时高保真稠密地图与可靠位姿基座；其平面混合表示显式紧凑，也利于大规模场景的空间记忆与在线建图。",
-      "relevance_rating": 8,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 24,
-      "keywords": [
-        "localization",
-        "slam"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W4401416363",
@@ -3674,7 +3716,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "IEEE Robotics and Automation Letters",
-      "citation_count": 287,
+      "citation_count": 288,
       "url": "https://arxiv.org/abs/2010.13150",
       "pdf_url": "https://arxiv.org/pdf/2010.13150",
       "code_url": "https://github.com/KIT-ISAS/lili-om",
@@ -4107,6 +4149,44 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4404782209",
+      "arxiv_id": "",
+      "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+      "authors": [
+        "Liang Tian",
+        "Zhiwei He",
+        "Wenxiang Jiao",
+        "Xing Wang",
+        "Yan Wang",
+        "Rui Wang",
+        "Yujiu Yang",
+        "Shuming Shi",
+        "Zhaopeng Tu"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 256,
+      "url": "https://doi.org/10.18653/v1/2024.emnlp-main.992",
+      "pdf_url": "https://aclanthology.org/2024.emnlp-main.992.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文发现LLM自反思存在思维退化问题，即一旦自信便难以产生新想法，提出多智能体辩论框架，多个智能体针锋相对辩论并由裁判管理，激发发散思维，在常识机器翻译与反直觉算术推理上验证有效。",
+      "change_zh": "相比单智能体自我反思的迭代精炼路线，该工作引入多智能体针锋相对辩论与裁判机制，用外部对抗性视角打破单模型思维退化；并提出辩论自适应终止与裁判公平性分析，将发散思维显式注入LLM推理。",
+      "why_it_matters": "多智能体辩论是LLM协同纠错的经典框架，充实多模态大模型与智能体、规划智能体两条线；以外部对抗视角缓解思维退化的思路，可启发UAV目标搜索与ObjectNav中的多假设探索与决策校验，惟未做具身验证。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
+    },
+    {
       "id": "https://openalex.org/W4319160361",
       "arxiv_id": "",
       "title": "Multi-sensor integrated navigation/positioning systems using data fusion: From analytics-based to learning-based approaches",
@@ -4127,7 +4207,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "Information Fusion",
-      "citation_count": 254,
+      "citation_count": 255,
       "url": "https://doi.org/10.1016/j.inffus.2023.01.025",
       "pdf_url": "",
       "code_url": "",
@@ -4166,7 +4246,7 @@
       "published": "2022",
       "source": "OpenAlex",
       "venue": "IEEE Control Systems",
-      "citation_count": 253,
+      "citation_count": 254,
       "url": "https://doi.org/10.1109/mcs.2022.3187542",
       "pdf_url": "",
       "code_url": "",
@@ -4186,44 +4266,6 @@
         "aerial",
         "motion planning"
       ],
-      "is_classic": true,
-      "added_at": "2026-09-03T19:57:56Z"
-    },
-    {
-      "id": "https://openalex.org/W4404782209",
-      "arxiv_id": "",
-      "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
-      "authors": [
-        "Liang Tian",
-        "Zhiwei He",
-        "Wenxiang Jiao",
-        "Xing Wang",
-        "Yan Wang",
-        "Rui Wang",
-        "Yujiu Yang",
-        "Shuming Shi",
-        "Zhaopeng Tu"
-      ],
-      "published": "2024",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 251,
-      "url": "https://doi.org/10.18653/v1/2024.emnlp-main.992",
-      "pdf_url": "https://aclanthology.org/2024.emnlp-main.992.pdf",
-      "code_url": "",
-      "topics": [
-        "多模态大模型与智能体"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "本文发现LLM自反思存在思维退化问题，即一旦自信便难以产生新想法，提出多智能体辩论框架，多个智能体针锋相对辩论并由裁判管理，激发发散思维，在常识机器翻译与反直觉算术推理上验证有效。",
-      "change_zh": "相比单智能体自我反思的迭代精炼路线，该工作引入多智能体针锋相对辩论与裁判机制，用外部对抗性视角打破单模型思维退化；并提出辩论自适应终止与裁判公平性分析，将发散思维显式注入LLM推理。",
-      "why_it_matters": "多智能体辩论是LLM协同纠错的经典框架，充实多模态大模型与智能体、规划智能体两条线；以外部对抗视角缓解思维退化的思路，可启发UAV目标搜索与ObjectNav中的多假设探索与决策校验，惟未做具身验证。",
-      "relevance_rating": 8,
-      "rigor_rating": 7,
-      "venue_verified": false,
-      "score": 24,
-      "keywords": [],
       "is_classic": true,
       "added_at": "2026-09-03T19:57:56Z"
     },
@@ -5027,48 +5069,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
-    },
-    {
-      "id": "https://openalex.org/W4390871919",
-      "arxiv_id": "",
-      "title": "Metric3D: Towards Zero-shot Metric 3D Prediction from A Single Image",
-      "authors": [
-        "Wei Yin",
-        "Chi Zhang",
-        "Hao Chen",
-        "Zhipeng Cai",
-        "Gang Yu",
-        "Kaixuan Wang",
-        "Xiaozhi Chen",
-        "Chunhua Shen"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 200,
-      "url": "https://doi.org/10.1109/iccv51070.2023.00830",
-      "pdf_url": "",
-      "code_url": "https://github.com/YvanYin/Metric3D",
-      "topics": [
-        "空间智能"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "提出规范相机空间变换模块，显式化解多相机模型带来的度量歧义，使单目模型能在800万图像、数千种相机上稳定训练，实现零样本单图度量三维预测，并在7个零样本基准取得SOTA。",
-      "change_zh": "常见路线要么仅在单一相机模型内做度量深度，要么以仿射不变深度换取零样本泛化但丢失真实尺度；本文用规范相机空间变换显式解耦相机内参歧义，使大规模混合数据训练与真实度量恢复首次兼得。",
-      "why_it_matters": "零样本度量深度是ObjectNav与UAV目标搜索感知栈的基础能力：可直接缓解单目SLAM尺度漂移并支撑稠密度量建图，为仅RGB智能体与轻量无人机提供免标定、可泛化的几何先验，属空间智能核心进展。",
-      "relevance_rating": 8,
-      "rigor_rating": 9,
-      "venue_verified": false,
-      "score": 26,
-      "keywords": [
-        "3d scene",
-        "benchmark",
-        "geometry",
-        "slam"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-05T06:35:42Z"
     },
     {
       "id": "https://openalex.org/W4220849261",
@@ -8629,6 +8629,7 @@
       "excluded_at": "2026-09-12"
     }
   },
+  "last_citation_refresh": "2026-09-13T14:28:33.873567+00:00",
   "briefing": {
     "text": "本轮入库的主线是大模型智能体的记忆机制——智能体如何存储、检索并复用历史经验，这直接关系到具身导航的长程规划与跨场景泛化。最值得精读的是被引已过百的 A Survey on the Memory Mechanism of Large Language Model-based Agents：它先厘清“记忆是什么、为何需要”，再归纳记忆模块的设计与评测方法，梳理记忆在多类智能体应用中的作用，并附持续更新的开源仓库，可作为切入该方向的路线图。从趋势看，记忆研究正从纯文本智能体向具身场景外溢，导航智能体的经验积累能力或成下一波研究热点。 （注：本轮清单实际仅含一篇，故只推荐此篇；后续条目入库后可按同一体例补足2-3篇。）",
     "added": 1,
