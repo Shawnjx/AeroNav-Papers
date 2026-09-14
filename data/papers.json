@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T16:31:11.172776+00:00",
+  "updated_at": "2026-09-14T20:51:47.932111+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1412,6 +1412,98 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.13082",
+      "arxiv_id": "2609.13082",
+      "title": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction",
+      "authors": [
+        "Baoyang Jiang",
+        "Fengchun Zhang",
+        "Leyuan Wang",
+        "Haotian Li",
+        "Yida Wang",
+        "Zhe Ji",
+        "Jinshan Lai",
+        "Xi Ren",
+        "Danyang Li",
+        "Zheng Yang",
+        "Jianwei Hu",
+        "Qiang Ma"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.13082",
+      "pdf_url": "https://arxiv.org/pdf/2609.13082",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出具身基准自动构建框架Embodied-BenchForge，以技能编排合成产物并用依赖图追踪，配合需求引导的验证与局部修复闭环，生成离线EQA与交互式具身基准，并评测多种模型能力。",
+      "change_zh": "相比只覆盖单一环节或固定环境的常规基准构建方式，本文将整条构建流水线统一为智能体闭环合成：以可复用技能编排产物生成，用依赖图记录中间产物，验证失败时按溯源做局部重执行或上游回滚，防止局部缺陷扩散至最终基准。",
+      "why_it_matters": "该工作直接充实具身基准与评测线，提供低成本、可验证地批量生成EQA与交互式具身评测的流水线，其闭环验证与修复机制亦可迁移到导航类评测数据生产；摘要未提UAV搜索或ObjectNav，直接关联待正文验证。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "mllm"
+      ],
+      "added_at": "2026-09-14T20:45:38.080032+00:00"
+    },
+    {
+      "id": "2609.12285",
+      "arxiv_id": "2609.12285",
+      "title": "AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation",
+      "authors": [
+        "Long Giang Vu",
+        "Chengkai Yao",
+        "Yuxin Liu",
+        "FNU Aryan",
+        "Rajath Chandrashekar Aralikatti"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12285",
+      "pdf_url": "https://arxiv.org/pdf/2609.12285",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AnchorVLN提出“VLM给语义、几何定度量”的开放词汇室内VLN系统，以EMBODIED-NAV-MCP工具服务器在接口层强制语义-几何边界，在CMU VLN挑战赛2026的指令跟随与物体指涉两项任务上定量验证。",
+      "change_zh": "相比让VLM直接回归米制坐标或在管线中手工融合几何的常见做法，该工作把语义-几何边界编码进MCP工具接口：工具不接受米/弧度输入，VLM只输出语义、几何模块决定度量，从而无需为不同机器人或任务改动下游自主控制栈。",
+      "why_it_matters": "为地面VLN与开放词汇目标导航提供了将大模型语义能力与度量几何解耦的可复用范式，其“语义提案+几何仲裁”思路可迁移至UAV主动目标搜索以缓解VLM方位与距离估计不可靠的问题，并示范了MCP工具化封装具身导航系统的工程路径。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "instruction",
+        "instruction following",
+        "vlm",
+        "waypoint"
+      ],
+      "added_at": "2026-09-14T20:45:07.976875+00:00"
     },
     {
       "id": "2609.08292",
@@ -4384,6 +4476,51 @@
       "added_at": "2026-09-14T09:59:14.250606+00:00"
     },
     {
+      "id": "2609.12747",
+      "arxiv_id": "2609.12747",
+      "title": "Assisted Spatial Cognition Through Vision-Language Models",
+      "authors": [
+        "H. Riaz",
+        "J. B. Fernandez",
+        "I. Mills",
+        "D. Hickey",
+        "F. Cleary",
+        "M. I. Ali"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12747",
+      "pdf_url": "https://arxiv.org/pdf/2609.12747",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 5,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/c7b73ff227730bcaa2cc05d2f22e6193bc041879",
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "面向视障与神经多样性用户的辅助导航框架：手机单目RGB视频经SLAM3R实时生成稠密点云，SpatialLM输出结构化3D场景，本地LLM生成场景描述与目标距离，多环境视频验证3D场景理解与目标定位精度。",
+      "change_zh": "相比依赖预设路线、缺乏3D理解的常见助盲导航，该工作转向实时稠密重建与结构化场景理解：免参考点的多点云对齐后，由本地LLM对建筑元素和朝向目标框做空间推理与测距，注重端侧隐私；但组件多为已有模型，创新主要在系统组合层面。",
+      "why_it_matters": "其结构化3D场景（建筑元素+朝向目标框+精确距离）正是ObjectNav目标定位所需的空间先验；单目RGB实时稠密重建对载荷受限的UAV目标搜索有直接参考价值，端侧LLM部署契合机载低时延自主需求，为感知-推理一体化落地提供可复用管线。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "3d scene",
+        "evaluation",
+        "slam",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-09-14T20:46:51.476650+00:00"
+    },
+    {
       "id": "2609.11929",
       "arxiv_id": "2609.11929",
       "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
@@ -4483,6 +4620,42 @@
         "instruction following"
       ],
       "added_at": "2026-09-11T08:39:56.536017+00:00"
+    },
+    {
+      "id": "2609.12188",
+      "arxiv_id": "2609.12188",
+      "title": "Battery-Aware Predictive Trajectory Planning and Control for Multirotors Under Disturbances",
+      "authors": [
+        "Krishna Bhavithavya Kidambi"
+      ],
+      "published": "2026-09-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12188",
+      "pdf_url": "https://arxiv.org/pdf/2609.12188",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出面向多旋翼的电池感知预测轨迹规划与控制框架，通过车辆-电机-电池闭环传播评估候选轨迹，把扰动控制需求、能耗与电压相关的执行能力纳入规划，仿真任务中节能7.46%、跟踪RMSE降约72%。",
+      "change_zh": "常见扰动感知规划多只优化动力学可行性与跟踪性能，电池仅作事后续航估计；本文将电池电气演化与端电压相关的旋翼执行能力纳入闭环轨迹传播评估，使规划器预见能耗与执行器退化的耦合后果，低电量下会改变轨迹选择。",
+      "why_it_matters": "对UAV长时间搜救、侦察等主动目标搜索任务，续航与抗扰执行能力直接决定任务成败；该框架把电量与电压退化纳入规划，可提升长航时飞行的能量效率与安全性，为上层目标搜索与导航决策提供更可靠的底层轨迹规划与控制支撑。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "trajectory planning"
+      ],
+      "added_at": "2026-09-14T20:51:44.931826+00:00"
     },
     {
       "id": "2609.10433",
@@ -4950,16 +5123,40 @@
     }
   ],
   "briefing": {
-    "text": "今日入库工作聚焦通信受限场景下的多机器人协同探索，主线是断连条件下如何权衡探索进度与信息同步。最值得读的是 MACE（Communication-Constrained Multi-Robot Exploration With Adaptive Communication Windows）：它在去中心化架构下于预设通信窗口内估计赶赴通信点的代价，把“是否中断探索去通信”建模为车辆定向问题的变体，显式权衡通信收益与沿途探索机会，仿真中总探索时间最多降低23%，这套决策建模思路可直接迁移到其他多机任务。趋势上看，多机器人导航正从单纯路径规划转向探索与通信的联合调度，“何时通信”正变得与“怎么走”同等重要。",
-    "added": 1,
-    "at": "2026-09-14T16:32:14.088965+00:00",
+    "text": "本批工作聚焦具身导航的系统化落地，覆盖语义-几何协同、基准自动构建、辅助导航与能耗规划四个方向。最值得读AnchorVLN：它用EMBODIED-NAV-MCP在接口层分离VLM语义与几何度量，为开放词汇VLN给出可复用的架构边界；Embodied-BenchForge以依赖图追踪加验证-修复闭环自动生成EQA与交互式基准，直击评测数据瓶颈；Assisted Spatial Cognition把SLAM3R与SpatialLM串成手机端本地管线，为视障用户提供实时场景描述与目标距离。趋势上，工具化接口与Agent自动化构建基准正成为具身导航的新基础设施。",
+    "added": 4,
+    "at": "2026-09-14T20:52:18.637489+00:00",
     "new": [
       {
-        "t": "Communication-Constrained Multi-Robot Exploration With Adaptive Communication Windows",
-        "u": "https://arxiv.org/abs/2609.12502",
-        "r": 7,
+        "t": "AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation",
+        "u": "https://arxiv.org/abs/2609.12285",
+        "r": 9,
         "g": 7,
-        "s": "MACE是去中心化多机器人探索框架，在预定通信窗口估计前往通信点的代价，将该决策建模为车辆定向问题变体，权衡通信收益与沿途探索，仿真中总探索时间最多降低23%。",
+        "s": "AnchorVLN提出“VLM给语义、几何定度量”的开放词汇室内VLN系统，以EMBODIED-NAV-MCP工具服务器在接口层强制语义-几何边界，在CMU VLN挑战赛2026的指令跟随与物体指涉两项任务上定量验证。",
+        "c": ""
+      },
+      {
+        "t": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction",
+        "u": "https://arxiv.org/abs/2609.13082",
+        "r": 9,
+        "g": 7,
+        "s": "该文提出具身基准自动构建框架Embodied-BenchForge，以技能编排合成产物并用依赖图追踪，配合需求引导的验证与局部修复闭环，生成离线EQA与交互式具身基准，并评测多种模型能力。",
+        "c": ""
+      },
+      {
+        "t": "Assisted Spatial Cognition Through Vision-Language Models",
+        "u": "https://arxiv.org/abs/2609.12747",
+        "r": 7,
+        "g": 5,
+        "s": "面向视障与神经多样性用户的辅助导航框架：手机单目RGB视频经SLAM3R实时生成稠密点云，SpatialLM输出结构化3D场景，本地LLM生成场景描述与目标距离，多环境视频验证3D场景理解与目标定位精度。",
+        "c": ""
+      },
+      {
+        "t": "Battery-Aware Predictive Trajectory Planning and Control for Multirotors Under Disturbances",
+        "u": "https://arxiv.org/abs/2609.12188",
+        "r": 6,
+        "g": 7,
+        "s": "提出面向多旋翼的电池感知预测轨迹规划与控制框架，通过车辆-电机-电池闭环传播评估候选轨迹，把扰动控制需求、能耗与电压相关的执行能力纳入规划，仿真任务中节能7.46%、跟踪RMSE降约72%。",
         "c": ""
       }
     ]

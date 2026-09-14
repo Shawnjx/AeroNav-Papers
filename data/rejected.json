@@ -734,5 +734,53 @@
     "reason": "本质是海岸环境的纯图像分割/VLM对齐评测数据集与基准，无导航决策、空间推理或具身交互成分，属范围外明确排除的纯分割检测类工作。",
     "rejected_at": "2026-09-11",
     "url": "https://arxiv.org/abs/2609.10855"
+  },
+  "2609.13013": {
+    "title": "TileNet: Tile-Based CNN-SVM Architecture for Autonomous Unmanned Aerial Systems Inspection of Flat Roofs",
+    "relevance": 4,
+    "rigor": 5,
+    "reason": "本质是无人机航拍平屋顶缺陷的图像分类垂直应用，仅借UAV平台与目标检测术语擦边，无搜索策略、导航决策或空间智能等核心技术贡献，且基线（AlexNet/GoogLeNet）陈旧。",
+    "rejected_at": "2026-09-14",
+    "url": "https://arxiv.org/abs/2609.13013"
+  },
+  "2609.13072": {
+    "title": "MAxBench: A Multinomial Concept Recovery Benchmark",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "该文属LLM内部可解释性研究（激活空间概念几何与转向的元评测），不涉及新模型、训练方法或智能体能力进展，也与空间、导航、机器人无关，落入\"纯LLM理论\"的拒绝范畴。",
+    "rejected_at": "2026-09-14",
+    "url": "https://arxiv.org/abs/2609.13072"
+  },
+  "2609.12691": {
+    "title": "Semantically Aligned Gradient-Driven Context-Preserving Image Editing",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属指令引导图像编辑（文生图类生成式编辑）方向，VLM仅被当作训练期蒸馏监督工具，与导航、空间智能、机器人自主均无实质关联，属范围外应用。",
+    "rejected_at": "2026-09-14",
+    "url": "https://arxiv.org/abs/2609.12691"
+  },
+  "2609.12663": {
+    "title": "What Did the MLLM Hear? Token-Level Spectro-Temporal Grounding for Audio MLLM Explainability",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "属音频MLLM事后可解释性分析工具，非新模型/训练方法/智能体框架等能力本身进展，且与空间、导航、机器人无关，仅为多模态大模型术语边缘擦边。",
+    "rejected_at": "2026-09-14",
+    "url": "https://arxiv.org/abs/2609.12663"
+  },
+  "2609.13009": {
+    "title": "How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属纯LLM物理问答基准的专家审计研究，与空间智能、导航、机器人及智能体各技术线均无实质关联，仅评测方法学可迁移，判定为边缘范围外。",
+    "rejected_at": "2026-09-14",
+    "url": "https://arxiv.org/abs/2609.13009"
+  },
+  "2609.12347": {
+    "title": "DWMP: Leveraging Dual World Models for Humanoid Obstacle Traversal",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "人形机器人越障属底层运动控制技能，双世界模型服务于运动策略生成而非导航与任务规划，且非公认高影响力控制系统工作，按控制线落地影响力标准仅属边缘相关。",
+    "rejected_at": "2026-09-14",
+    "url": "https://arxiv.org/abs/2609.12347"
   }
 }
