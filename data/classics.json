@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T14:28:33.873567+00:00",
+  "updated_at": "2026-09-14T16:32:42.105386+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6332,6 +6332,45 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4414050442",
+      "arxiv_id": "",
+      "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+      "authors": [
+        "An‐Chieh Cheng",
+        "Yandong Ji",
+        "Zhaojing Yang",
+        "Zaitian Gongye",
+        "Xueyan Zou",
+        "Jan Kautz",
+        "Erdem Bıyık",
+        "Hongxu Yin",
+        "Sifei Liu",
+        "Xiaolong Wang"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 43,
+      "url": "https://doi.org/10.15607/rss.2025.xxi.018",
+      "pdf_url": "https://doi.org/10.15607/rss.2025.xxi.018",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "NaVILA提出面向足式机器人的视觉-语言-动作导航模型，将视觉语言理解与足式运动控制结合实现语言或目标引导的导航；摘要缺失（仅项目页链接），方法与实验细节无法核实。",
+      "change_zh": "摘要缺失，无法核实具体创新点。仅从题目判断：其把VLA范式从机械臂操作迁移到足式机器人的导航决策层，让语言与视觉输入驱动底层运动控制，属于含导航决策成分的VLA，而非末端操作。",
+      "why_it_matters": "为地面VLN与ObjectNav提供了足式真机载体与VLA建模范式，直接支撑真机与Sim2Real路线；其高层语言动作驱动底层控制的分层思路，对UAV主动目标搜索中的指令跟随与目标接近亦有可迁移的借鉴价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-14T16:32:42.105386+00:00"
+    },
+    {
       "id": "2601.14352",
       "arxiv_id": "2601.14352",
       "title": "RoboBrain 2.5: Depth in Sight, Time in Mind",
@@ -8627,22 +8666,42 @@
       "rigor": 3,
       "reason": "属医学/神经科学综述，研究阿尔茨海默病的性别差异与生物标志物，与具身导航、UAV目标搜索等全部收录技术线无实质关联。",
       "excluded_at": "2026-09-12"
+    },
+    "https://openalex.org/W1509527650": {
+      "title": "Introducing Translation Studies: Theories and Applications",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "纯人文社科（翻译学）教材，与具身导航、空间智能、机器人自主等所有收录技术线无关，仅在术语层面提及机器翻译与大语言模型的影响。",
+      "excluded_at": "2026-09-14"
+    },
+    "https://openalex.org/W4213454368": {
+      "title": "Neuro-symbolic approaches in artificial intelligence",
+      "relevance": 3,
+      "rigor": 3,
+      "reason": "该文是通用AI领域的神经符号方法综述，仅概念性地提及规划与场景解释，与UAV搜索、VLN、ObjectNav等收录技术线无直接关联，且为无实验的概述性文章。",
+      "excluded_at": "2026-09-14"
+    },
+    "https://openalex.org/W4361029920": {
+      "title": "Deep Reinforcement Learning Based Resource Allocation and Trajectory Planning in Integrated Sensing and Communications UAV Network",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "属通信领域ISAC资源分配工作，优化目标为频谱效率而非导航决策或目标搜索，UAV轨迹仅是通信优化手段，落入'纯通信与信号处理'拒绝类。",
+      "excluded_at": "2026-09-14"
     }
   },
-  "last_citation_refresh": "2026-09-13T14:28:33.873567+00:00",
   "briefing": {
-    "text": "本轮入库的主线是大模型智能体的记忆机制——智能体如何存储、检索并复用历史经验，这直接关系到具身导航的长程规划与跨场景泛化。最值得精读的是被引已过百的 A Survey on the Memory Mechanism of Large Language Model-based Agents：它先厘清“记忆是什么、为何需要”，再归纳记忆模块的设计与评测方法，梳理记忆在多类智能体应用中的作用，并附持续更新的开源仓库，可作为切入该方向的路线图。从趋势看，记忆研究正从纯文本智能体向具身场景外溢，导航智能体的经验积累能力或成下一波研究热点。 （注：本轮清单实际仅含一篇，故只推荐此篇；后续条目入库后可按同一体例补足2-3篇。）",
+    "text": "本轮入库的这批近五年高被引经典集中指向同一条主线：把视觉-语言-动作（VLA）模型从轮式仿真推向足式真机导航。其中最值得优先精读的是NaVILA: Legged Robot Vision-Language-Action Model for Navigation，它把语言指令的语义理解与足式运动控制耦合进统一的导航策略，被引43、相关度9，是足式具身导航方向的代表性工作；但需注意其入库摘要缺失，方法与实验细节建议到项目页核对后再引用。从趋势看，具身导航正加速从单模态控制走向VLA一体化并落到腿足平台。",
     "added": 1,
-    "at": "2026-09-12T13:20:59.958810+00:00",
+    "at": "2026-09-14T16:32:42.105386+00:00",
     "new": [
       {
-        "t": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
-        "u": "https://doi.org/10.1145/3748302",
-        "r": 8,
-        "g": 7,
-        "s": "该综述系统梳理LLM智能体的记忆机制，先界定记忆是什么与为何需要，再归纳记忆模块的设计与评测方法，展示记忆在多类智能体应用中的作用，并总结局限与未来方向，附开源仓库持续更新。",
-        "c": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
-        "cit": 108
+        "t": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+        "u": "https://doi.org/10.15607/rss.2025.xxi.018",
+        "r": 9,
+        "g": 5,
+        "s": "NaVILA提出面向足式机器人的视觉-语言-动作导航模型，将视觉语言理解与足式运动控制结合实现语言或目标引导的导航；摘要缺失（仅项目页链接），方法与实验细节无法核实。",
+        "c": "",
+        "cit": 43
       }
     ]
   }
