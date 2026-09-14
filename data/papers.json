@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T08:50:11.001588+00:00",
+  "updated_at": "2026-09-14T09:59:17.250960+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2048,6 +2048,50 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.12456",
+      "arxiv_id": "2609.12456",
+      "title": "PATH: Continuous Target Sensing among Autonomous Cooperative Drones",
+      "authors": [
+        "Heegyeong Kim",
+        "Alice James",
+        "Avishkar Seth",
+        "Endrowednes Kuantama",
+        "Jane Williamson",
+        "Yimeng Feng",
+        "Richard Han"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12456",
+      "pdf_url": "https://arxiv.org/pdf/2609.12456",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PATH提出几何辅助的双无人机目标跟踪交接框架：发送机以RGB-D将目标重建为度量3D点，接收机估计相对位姿后投影为图像空间先验，经交叉视角互认握手验证后完成跟踪权转移，真机实验误差达厘米级。",
+      "change_zh": "相比依赖全局定位或外观匹配的常见交接路线，PATH改走几何路线：以度量三维点重建与相对位姿投影生成空间先验，并以双向互认握手显式验证候选目标，规避视觉特征歧义，且通信量低于16kB/s。",
+      "why_it_matters": "对UAV持续目标搜索与侦察价值直接：单机续航受限是多机协同的动因，PATH使跟踪权能在异视角无人机间可靠交接，支撑长时程搜救与监视；其几何先验加双向验证思路亦可借鉴到多智能体目标发现的交接环节。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "drone",
+        "geometry",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-09-14T09:57:24.744479+00:00"
+    },
+    {
       "id": "2609.09082",
       "arxiv_id": "2609.09082",
       "title": "GoDeep: Annotation-Free Open-Vocabulary 3D Scene Understanding via Language-Space Lifting",
@@ -2876,6 +2920,45 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.12837",
+      "arxiv_id": "2609.12837",
+      "title": "Parameter Sensitivity Analysis for Aerial LiDAR-Inertial Odometries in low-altitude flights",
+      "authors": [
+        "Robert Milijas",
+        "Jose Ramiro Martinez-de Dios",
+        "Stjepan Bogdan"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12837",
+      "pdf_url": "https://arxiv.org/pdf/2609.12837",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "在多种低空飞行LiDAR数据集上对FAST-LIO2与Cartographer做穷举网格搜索，结合皮尔逊相关与随机森林置换重要性量化各参数对ATE的影响，识别关键参数并给出简化调参流程与建议，94%案例ATE距最优仅5cm内。",
+      "change_zh": "常见LIO调参依赖人工经验试凑或单场景验证，本文改为系统性数据驱动的参数敏感性研究：穷举网格搜索加统计相关性与机器学习特征重要性分析，把调参经验转化为可复用的量化推荐和简化流程，而非提出新算法。",
+      "why_it_matters": "LIO是无人机低空自主飞行与目标搜索任务的定位基石，调参不当直接损害轨迹精度与任务可靠性；本文面向机载多类型LiDAR给出量化调参指南，可降低UAV真机部署与Sim2Real迁移的门槛，间接提升搜救、侦察等上层导航任务的定位稳定性。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "localization",
+        "odometry",
+        "slam"
+      ],
+      "added_at": "2026-09-14T09:57:54.102532+00:00"
     },
     {
       "id": "2609.11382",
@@ -4226,6 +4309,44 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.12959",
+      "arxiv_id": "2609.12959",
+      "title": "Distributed Stochastic Optimal Control for Pattern-Oriented Swarms",
+      "authors": [
+        "Qingrui Zhang",
+        "Chenghao Yu",
+        "Feng Xue",
+        "Xintong Wang"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12959",
+      "pdf_url": "https://arxiv.org/pdf/2609.12959",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出基于GRF的分布式随机最优控制框架，将集群协调表述为贝叶斯推断，用无迹变换传播不确定性实现安全避障，以隐式密度场编码队形支持自愈重构，经仿真与室内外真机集群实验验证。",
+      "change_zh": "常见集群编队依赖显式智能体-目标分配，本文把GRF扩展至时间域，将协调统一为贝叶斯推断，队形以密度场隐式表达并与分配解耦，从而天然获得分布式自愈与弹性重构，并显式传播动态障碍与邻机不确定性保障安全。",
+      "why_it_matters": "为UAV自主飞行提供不确定性感知的分布式安全避障与运动控制，可支撑搜救侦察中的多机协同搜索与目标安全接近；15机室内与4机室外真机部署体现扎实的sim2real验证，对状态估计与控制及真机部署线均有参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "deployment",
+        "uav"
+      ],
+      "added_at": "2026-09-14T09:59:14.250606+00:00"
+    },
+    {
       "id": "2609.11929",
       "arxiv_id": "2609.11929",
       "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
@@ -4792,64 +4913,32 @@
     }
   ],
   "briefing": {
-    "text": "今日入库横跨真机平台、跨域感知与决策评测。首推ReactHuman：首个物理落地的反应式决策基准，提供240Hz刚体仿真真值，七个MLLM约三分之一居家危险应对失败，直接暴露现有模型短板。EVPeriscope用朝上事件相机追踪螺旋桨，实现空地机器人相对定位与200Hz机载闭环，硬件思路可低成本复用。Recursive Code World Models从单图递归重建可执行3D世界，可作仿真训练底座。趋势上，评测正从静态任务转向突发物理事件，世界模型走向仿真上游。",
-    "added": 7,
-    "at": "2026-09-11T08:52:34.505093+00:00",
+    "text": "本批工作聚焦无人机自主系统的感知、估计与控制全链条。首推PATH: Continuous Target Sensing among Autonomous Cooperative Drones：以RGB-D将目标重建为度量3D点，经交叉视角互认握手完成双机跟踪交接，真机误差达厘米级，为多机感知接力提供了可复用的几何接口；Parameter Sensitivity Analysis for Aerial LiDAR-Inertial Odometries in low-altitude flights用网格搜索与随机森林置换重要性量化FAST-LIO2等参数对ATE的影响，94%案例距最优仅5cm内，调参建议可直接落地；Distributed Stochastic Optimal Control for Pattern-Oriented Swarms以GRF隐式密度场编码队形并支持自愈重构，方法可迁移至其他集群任务。趋势上，无人机研究正从单机算法优化走向多机感知—估计—控制的系统级闭环。",
+    "added": 3,
+    "at": "2026-09-14T09:59:47.174889+00:00",
     "new": [
       {
-        "t": "SwarmNxt: Open-source Software-Hardware Platform for Fast and Agile Aerial Swarms",
-        "u": "https://arxiv.org/abs/2609.11382",
-        "r": 7,
-        "g": 7,
-        "s": "SwarmNxt是基于开源OmniNxt无人机的空中集群软硬件平台，提供装配教程、并行部署自动化工具与ROS 2自主导航框架，集成控制、规划与深度估计，经六机与四机真机实验验证。",
-        "c": ""
-      },
-      {
-        "t": "EVPeriscope: Extended Perception across Aerial and Ground Vehicles with Event-based Propeller Tracking",
-        "u": "https://arxiv.org/abs/2609.11920",
-        "r": 7,
-        "g": 7,
-        "s": "EVPeriscope利用地面机器人朝上的事件相机捕捉无人机螺旋桨的高频视觉特征，实现跨空地机器人的相对定位与200Hz纯机载闭环控制，使无人机成为地面机器人的延伸感知平台。",
-        "c": ""
-      },
-      {
-        "t": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs",
-        "u": "https://arxiv.org/abs/2609.10895",
+        "t": "PATH: Continuous Target Sensing among Autonomous Cooperative Drones",
+        "u": "https://arxiv.org/abs/2609.12456",
         "r": 8,
-        "g": 8,
-        "s": "ReactHuman提出首个物理落地的类人反应式决策基准：MLLM充当仿真人形机器人大脑，应对17类突发家庭危险，含上千个可复现场景、240Hz刚体仿真真值与五维评分，评测七个模型发现约三分之一危险应对失败。",
-        "c": ""
-      },
-      {
-        "t": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
-        "u": "https://arxiv.org/abs/2609.11929",
-        "r": 6,
         "g": 7,
-        "s": "发布8B MoT原生统一多模态模型SenseNova-U1.5，在无编码器、无VAE架构下统一视觉理解与生成，借助空间一致patch重建、数据策展与结构化提示训练，再经多专家on-policy蒸馏后训练，在图像保真、文本渲染、多参考编辑与交错生成上显著提升。",
+        "s": "PATH提出几何辅助的双无人机目标跟踪交接框架：发送机以RGB-D将目标重建为度量3D点，接收机估计相对位姿后投影为图像空间先验，经交叉视角互认握手验证后完成跟踪权转移，真机实验误差达厘米级。",
         "c": ""
       },
       {
-        "t": "Beyond Visual Quality: Evaluating Physical Consistency under Ego-Motion with EgoGenEval",
-        "u": "https://arxiv.org/abs/2609.11172",
-        "r": 6,
-        "g": 8,
-        "s": "提出几何接地、免位姿的EgoGenEval基准，含1400案例与2360目标视角，评测自我运动下视觉生成器的物理一致性，分测相机运动接地与场景状态保持，并做受控SFT训练研究。",
-        "c": ""
-      },
-      {
-        "t": "RIDE: Relocalization-Informed Depth Estimation with 3D Gaussian Splatting",
-        "u": "https://arxiv.org/abs/2609.11079",
-        "r": 7,
-        "g": 6,
-        "s": "RIDE利用3DGS重定位内点对应的稀疏度量深度，结合预训练视频深度先验与全局/局部校正及时序记忆，从机器人RGB流估计稠密度量深度，免微调在机器人序列上提升精度与一致性。",
-        "c": ""
-      },
-      {
-        "t": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
-        "u": "https://arxiv.org/abs/2609.11499",
+        "t": "Parameter Sensitivity Analysis for Aerial LiDAR-Inertial Odometries in low-altitude flights",
+        "u": "https://arxiv.org/abs/2609.12837",
         "r": 7,
         "g": 7,
-        "s": "本文提出RCWM递归代码世界模型，用递归场景程序与自调用求解器按整体-局部-整体流程从单张参考图重建复杂3D可执行世界，视觉语言智能体对比渲染与参考图引导细化，优于既有代码式重建方法。",
+        "s": "在多种低空飞行LiDAR数据集上对FAST-LIO2与Cartographer做穷举网格搜索，结合皮尔逊相关与随机森林置换重要性量化各参数对ATE的影响，识别关键参数并给出简化调参流程与建议，94%案例ATE距最优仅5cm内。",
+        "c": ""
+      },
+      {
+        "t": "Distributed Stochastic Optimal Control for Pattern-Oriented Swarms",
+        "u": "https://arxiv.org/abs/2609.12959",
+        "r": 6,
+        "g": 7,
+        "s": "提出基于GRF的分布式随机最优控制框架，将集群协调表述为贝叶斯推断，用无迹变换传播不确定性实现安全避障，以隐式密度场编码队形支持自愈重构，经仿真与室内外真机集群实验验证。",
         "c": ""
       }
     ]
