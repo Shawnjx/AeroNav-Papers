@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T09:59:17.250960+00:00",
+  "updated_at": "2026-09-14T16:31:11.172776+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2961,6 +2961,43 @@
       "added_at": "2026-09-14T09:57:54.102532+00:00"
     },
     {
+      "id": "2609.12502",
+      "arxiv_id": "2609.12502",
+      "title": "Communication-Constrained Multi-Robot Exploration With Adaptive Communication Windows",
+      "authors": [
+        "Ben Rossano",
+        "Jaein Lim",
+        "Jonathan P. How"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12502",
+      "pdf_url": "https://arxiv.org/pdf/2609.12502",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "MACE是去中心化多机器人探索框架，在预定通信窗口估计前往通信点的代价，将该决策建模为车辆定向问题变体，权衡通信收益与沿途探索，仿真中总探索时间最多降低23%。",
+      "change_zh": "常见路线依赖偶遇式通信或固定会合点，前者通信过少、后者绕行浪费。MACE将通信决策显式建模为带收益的定向问题，按需自适应安排通信窗口，并让赴约途中顺带探索，实现通信频率与探索效率的联合优化。",
+      "why_it_matters": "对主动感知与多机器人探索技术线有直接价值：真实搜救侦察中通信常受限，MACE的通信—探索权衡机制可迁移到多无人机协同搜索与分布式建图任务，为间歇通信下的导航智能体信息共享策略提供参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "exploration",
+        "geometry"
+      ],
+      "added_at": "2026-09-14T16:31:08.172509+00:00"
+    },
+    {
       "id": "2609.11382",
       "arxiv_id": "2609.11382",
       "title": "SwarmNxt: Open-source Software-Hardware Platform for Fast and Agile Aerial Swarms",
@@ -4913,32 +4950,16 @@
     }
   ],
   "briefing": {
-    "text": "本批工作聚焦无人机自主系统的感知、估计与控制全链条。首推PATH: Continuous Target Sensing among Autonomous Cooperative Drones：以RGB-D将目标重建为度量3D点，经交叉视角互认握手完成双机跟踪交接，真机误差达厘米级，为多机感知接力提供了可复用的几何接口；Parameter Sensitivity Analysis for Aerial LiDAR-Inertial Odometries in low-altitude flights用网格搜索与随机森林置换重要性量化FAST-LIO2等参数对ATE的影响，94%案例距最优仅5cm内，调参建议可直接落地；Distributed Stochastic Optimal Control for Pattern-Oriented Swarms以GRF隐式密度场编码队形并支持自愈重构，方法可迁移至其他集群任务。趋势上，无人机研究正从单机算法优化走向多机感知—估计—控制的系统级闭环。",
-    "added": 3,
-    "at": "2026-09-14T09:59:47.174889+00:00",
+    "text": "今日入库工作聚焦通信受限场景下的多机器人协同探索，主线是断连条件下如何权衡探索进度与信息同步。最值得读的是 MACE（Communication-Constrained Multi-Robot Exploration With Adaptive Communication Windows）：它在去中心化架构下于预设通信窗口内估计赶赴通信点的代价，把“是否中断探索去通信”建模为车辆定向问题的变体，显式权衡通信收益与沿途探索机会，仿真中总探索时间最多降低23%，这套决策建模思路可直接迁移到其他多机任务。趋势上看，多机器人导航正从单纯路径规划转向探索与通信的联合调度，“何时通信”正变得与“怎么走”同等重要。",
+    "added": 1,
+    "at": "2026-09-14T16:32:14.088965+00:00",
     "new": [
       {
-        "t": "PATH: Continuous Target Sensing among Autonomous Cooperative Drones",
-        "u": "https://arxiv.org/abs/2609.12456",
-        "r": 8,
-        "g": 7,
-        "s": "PATH提出几何辅助的双无人机目标跟踪交接框架：发送机以RGB-D将目标重建为度量3D点，接收机估计相对位姿后投影为图像空间先验，经交叉视角互认握手验证后完成跟踪权转移，真机实验误差达厘米级。",
-        "c": ""
-      },
-      {
-        "t": "Parameter Sensitivity Analysis for Aerial LiDAR-Inertial Odometries in low-altitude flights",
-        "u": "https://arxiv.org/abs/2609.12837",
+        "t": "Communication-Constrained Multi-Robot Exploration With Adaptive Communication Windows",
+        "u": "https://arxiv.org/abs/2609.12502",
         "r": 7,
         "g": 7,
-        "s": "在多种低空飞行LiDAR数据集上对FAST-LIO2与Cartographer做穷举网格搜索，结合皮尔逊相关与随机森林置换重要性量化各参数对ATE的影响，识别关键参数并给出简化调参流程与建议，94%案例ATE距最优仅5cm内。",
-        "c": ""
-      },
-      {
-        "t": "Distributed Stochastic Optimal Control for Pattern-Oriented Swarms",
-        "u": "https://arxiv.org/abs/2609.12959",
-        "r": 6,
-        "g": 7,
-        "s": "提出基于GRF的分布式随机最优控制框架，将集群协调表述为贝叶斯推断，用无迹变换传播不确定性实现安全避障，以隐式密度场编码队形支持自愈重构，经仿真与室内外真机集群实验验证。",
+        "s": "MACE是去中心化多机器人探索框架，在预定通信窗口估计前往通信点的代价，将该决策建模为车辆定向问题变体，权衡通信收益与沿途探索，仿真中总探索时间最多降低23%。",
         "c": ""
       }
     ]
