@@ -782,5 +782,29 @@
     "reason": "人形机器人越障属底层运动控制技能，双世界模型服务于运动策略生成而非导航与任务规划，且非公认高影响力控制系统工作，按控制线落地影响力标准仅属边缘相关。",
     "rejected_at": "2026-09-14",
     "url": "https://arxiv.org/abs/2609.12347"
+  },
+  "2609.13606": {
+    "title": "From Vision to Harvest: Benchmarking Vision-Language Models for Multi-Arm Robotic Fruit Harvesting",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "多臂果实采摘属机械臂操作/VLA类基准，核心是机械臂任务与轨迹规划、多臂协同，不含导航决策成分，按收录范围规则应拒收。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.13606"
+  },
+  "2609.14219": {
+    "title": "Task-Specified Active Metrological Inspection with Measurement-Steered VLA Manipulation and Deterministic Evidence Gating",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "属机械臂VLA操作与工业计量检测垂直应用，不含导航决策成分，与收录范围仅'主动检测/active'术语擦边。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.14219"
+  },
+  "2609.14183": {
+    "title": "DreamSat-Bench: Development and Initial Testing of a Testbed for AI-Based Pose Estimation from 3D Reconstruction",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "研究对象为在轨航天器交会相对导航的位姿估计测试床，超出UAV/地面具身导航及各基础能力线的核心范畴，仅sim2real基准方法论边缘相关。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.14183"
   }
 }

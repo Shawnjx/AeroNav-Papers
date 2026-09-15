@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:51:47.932111+00:00",
+  "updated_at": "2026-09-15T09:43:39.287450+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -834,6 +834,99 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.15683",
+      "arxiv_id": "2609.15683",
+      "title": "V-ICAL Bench: Evaluating Video In-Context Learning for Multimodal Agents in Interactive Environments",
+      "authors": [
+        "Ziqian Fan",
+        "Shibo Xu",
+        "Junjie Li",
+        "Xiangyu Zhao",
+        "Shengyuan Ding",
+        "Yifan Yang",
+        "Zhenjie Yang",
+        "Haodong Duan",
+        "Yue Zhou",
+        "Zhihang Zhong",
+        "Xue Yang"
+      ],
+      "published": "2026-09-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.15683",
+      "pdf_url": "https://arxiv.org/pdf/2609.15683",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "V-ICAL是评测多模态智能体视频情境学习的基准：在37个交互环境的342项任务上，以人工演示视频为情境范例测试19个SOTA模型，最佳仅得54.4分，远低于人类83.6，暴露策略转化与适应短板。",
+      "change_zh": "以往智能体评测多以文本指令或图文输入驱动，该基准改为考察从视频演示中无参数更新地归纳策略：以人工演示视频作情境范例，要求模型在新环境中接地执行并依反馈迭代，把ICL与状态接地、时序记忆、规划等智能体能力贯通评测。",
+      "why_it_matters": "视频情境学习是从演示快速获取策略的途径：若智能体能可靠将演示视频转为可执行策略，UAV目标搜索与ObjectNav即可免微调地从少量示范泛化；该基准系统暴露了多模态大模型的短板，为空间智能与智能体研究指明方向。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "multimodal agent"
+      ],
+      "added_at": "2026-09-15T09:38:06.339997+00:00"
+    },
+    {
+      "id": "2609.14561",
+      "arxiv_id": "2609.14561",
+      "title": "GLAM: Training a latent world model over global spatiotemporal memory for active exploration and navigation",
+      "authors": [
+        "I-Tak Ieong",
+        "Ruizhi Feng",
+        "Zhaoyang Lu",
+        "Yifei Cao",
+        "Jiayao Zhao",
+        "Leon Li",
+        "Senhua Zhu",
+        "Wenbo Ding"
+      ],
+      "published": "2026-09-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.14561",
+      "pdf_url": "https://arxiv.org/pdf/2609.14561",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 8,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "GLAM在全局时空记忆上训练目标条件潜空间世界模型，以JEPA式潜预测联合预测未来地图token与机器人中心航点潜变量并解码为导航方案，在HM3D ObjectNav上超越复现的BSC-Nav。",
+      "change_zh": "常见导航世界模型多在RGB/图像空间重建未来观测，GLAM改为在全局时空记忆的地图级潜token上做JEPA式联合预测，让未来空间演化与导航意图共享同一潜空间，直接解出航点而非再经图像解码。摘要未提及消融实验，验证仅限受控子集与单一基线。",
+      "why_it_matters": "直接推进ObjectNav与导航世界模型：把记忆、预测与规划统一进地图潜空间，为主动探索提供可学习的前向模型；其「预测未来地图+航点」范式有望迁移到UAV主动目标搜索中的前瞻探索与目标接近决策。",
+      "relevance_rating": 10,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "exploration",
+        "objectnav",
+        "semantic navigation",
+        "spatial memory",
+        "waypoint",
+        "world model"
+      ],
+      "added_at": "2026-09-15T09:35:39.587966+00:00"
     },
     {
       "id": "2609.06424",
@@ -2642,6 +2735,42 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.12345",
+      "arxiv_id": "2609.12345",
+      "title": "ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents",
+      "authors": [
+        "Bowen Guan",
+        "Zhentao Yin",
+        "Yanming Shen"
+      ],
+      "published": "2026-09-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.12345",
+      "pdf_url": "https://arxiv.org/pdf/2609.12345",
+      "code_url": "https://github.com/gbw206/ParaRecover",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ParaRecover是面向多轮并行工具使用智能体的过程级基准，基于14类错误类型构建10626个实例，提出SDE量规从结构完整性、诊断推理与策略演化三方面评估恢复能力，并发现十余个主流LLM在错误传播与重规划上仍有明显短板。",
+      "change_zh": "常规基准仅看最终任务成功或单次调用对错，本文转向过程级错误定位与恢复评估，聚焦多轮并行调用中错误跨依赖分支的级联传播，并以SDE量规把恢复能力拆解为结构完整性、诊断推理与策略演化，且该量规本身可作监督信号改进智能体。",
+      "why_it_matters": "属智能体工具使用与系统性评测技术线，直接价值在LLM智能体可靠性研究。对UAV主动目标搜索与ObjectNav等长程具身任务，其错误定位、反思恢复与重规划能力及过程级评测思路可迁移到导航智能体的失败处理与评测设计，但与导航本体无直接关联。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "localization"
+      ],
+      "added_at": "2026-09-15T09:40:44.070404+00:00"
+    },
+    {
       "id": "2609.10445",
       "arxiv_id": "2609.10445",
       "title": "Building Multilingual Bridges: Data Mixing as the Pillar of Generalization for In-Language Reasoning",
@@ -3012,6 +3141,178 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.15606",
+      "arxiv_id": "2609.15606",
+      "title": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
+      "authors": [
+        "Weixin Xu",
+        "Zhenyu Yang",
+        "Bing Wang",
+        "Shengsheng Qian",
+        "Changsheng Xu"
+      ],
+      "published": "2026-09-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.15606",
+      "pdf_url": "https://arxiv.org/pdf/2609.15606",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VideoScout将长视频理解建模为序列证据获取问题，智能体逐轮决定观看节奏、证据保留与回访时机，经SFT加轨迹级强化学习两阶段训练，7B模型在长视频理解与推理基准上表现强劲。",
+      "change_zh": "相比均匀帧采样与粗到细缩放路线，本文把长视频理解变为智能体沿时间轴的序列证据获取：动态控制观看快慢、保留关键证据、回访不确定片段并决定停答时机，用含进度IoU对齐的复合奖励做轨迹级RL训练。",
+      "why_it_matters": "其序列证据获取与自适应节奏决策，与UAV主动目标搜索和ObjectNav的主动感知高度同构：在有限感知预算下决定看哪里、何时回访与停止；SFT冷启动加轨迹级RL的训练配方可为具身主动探索智能体提供借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "exploration",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-09-15T09:37:24.678227+00:00"
+    },
+    {
+      "id": "2609.15478",
+      "arxiv_id": "2609.15478",
+      "title": "BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender",
+      "authors": [
+        "Yolo Y. Tang",
+        "Daiki Shimada",
+        "Jiayue Meng",
+        "Jing Bi",
+        "Pinxin Liu",
+        "Yicheng Wang",
+        "Yunzhong Xiao",
+        "Zhangyun Tan",
+        "Zeliang Zhang",
+        "Chao Huang",
+        "Susan Liang",
+        "Qianxiang Shen",
+        "Luchuan Song",
+        "Ali Vosoughi",
+        "Mingqian Feng",
+        "Melika Filvantorkaman",
+        "Chenliang Xu"
+      ],
+      "published": "2026-09-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.15478",
+      "pdf_url": "https://arxiv.org/pdf/2609.15478",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出BVB基准，让智能体在统一沙箱与成本限制下用代码将真实视频重建为Blender动画，经双VQA与感知相似度双轴评分，评测51种配置，发现语义保持（最高53.7%）仍是瓶颈。",
+      "change_zh": "相比以问答为主的主流视频理解评测，BVB要求智能体用代码将视频重建为Blender动画场景，在统一沙箱与共享成本上限下公平对比，渲染后按语义保持与感知相似双轴评分，把被动问答变为可执行的重建式评测。",
+      "why_it_matters": "该基准考察智能体把动态视频内化为可渲染3D场景的时空理解能力，为空间智能与世界模型提供可执行评测范式；这类场景结构化能力是ObjectNav与UAV目标搜索场景认知的基础，但不含导航实验。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "multimodal agent"
+      ],
+      "added_at": "2026-09-15T09:39:41.495055+00:00"
+    },
+    {
+      "id": "2609.14426",
+      "arxiv_id": "2609.14426",
+      "title": "Learning-Based Dynamic Obstacle Avoidance for a UAV Using Only Three Range Sensors",
+      "authors": [
+        "Mohammad Reza Ranjbar Divkoti",
+        "A. Pedro Aguiar"
+      ],
+      "published": "2026-09-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.14426",
+      "pdf_url": "https://arxiv.org/pdf/2609.14426",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出仅依赖三个定向测距传感器的无人机运动规划框架，将行为栅格地图与PPO深度强化学习结合，在未知动态环境中实现定高、仅偏航可控约束下的实时静动态避障与目标到达。",
+      "change_zh": "常见路线依赖激光雷达或视觉稠密感知并用MPC等经典规划；本文的改变在于状态表征与策略协同设计：用行为栅格图聚合三路稀疏测距构建结构化局部表示，使PPO在极端部分可观测、非完整约束下实现可靠避障，摆脱稠密传感器依赖。",
+      "why_it_matters": "对UAV主动目标搜索支撑直接：搜救与侦察中无人机需在动态杂乱环境安全接近目标，该方案以三个低成本测距实现实时避障与到达并经真机验证，为小型平台的接近阶段与sim2real部署提供轻量基线；与ObjectNav的语义目标导航关联较弱。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "model predictive control",
+        "motion planning",
+        "uav"
+      ],
+      "added_at": "2026-09-15T09:36:19.207470+00:00"
+    },
+    {
+      "id": "2609.14297",
+      "arxiv_id": "2609.14297",
+      "title": "Multi-Task Visual Perception Network with LLM Conditioning for Autonomous Navigation",
+      "authors": [
+        "Praveen Kumar",
+        "K. R. Guruprasad",
+        "Tushar Sandhan"
+      ],
+      "published": "2026-09-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.14297",
+      "pdf_url": "https://arxiv.org/pdf/2609.14297",
+      "code_url": "https://github.com/PraveenSingh24/VL-Navigation",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免全局地图的服务机器人导航框架：多任务视觉感知网络结合LLM理解文本/语音指令，依据局部视觉线索生成顺序动作计划，并相对即时目标重置定位以抑制里程计漂移，真机与仿真实验均优于对比方法。",
+      "change_zh": "常见路线依赖全局一致地图加全局路径规划，漂移累积会使其长期失效；本文彻底放弃全局地图，用LLM把指令转为基于局部视觉与自中心几何的顺序动作计划，并以即时目标为参考重置定位，把漂移控制为最小累积。",
+      "why_it_matters": "对地面VLN与ObjectNav提供了免全局地图的长期运行思路：以局部视觉和即时目标重置定位可缓解长时程漂移，LLM解析指令降低对精确地图先验的依赖，对UAV大范围搜救等缺乏可靠全局定位场景的主动目标搜索亦有借鉴价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "instruction",
+        "localization",
+        "odometry"
+      ],
+      "added_at": "2026-09-15T09:41:22.868022+00:00"
     },
     {
       "id": "2609.12837",
@@ -5123,41 +5424,65 @@
     }
   ],
   "briefing": {
-    "text": "本批工作聚焦具身导航的系统化落地，覆盖语义-几何协同、基准自动构建、辅助导航与能耗规划四个方向。最值得读AnchorVLN：它用EMBODIED-NAV-MCP在接口层分离VLM语义与几何度量，为开放词汇VLN给出可复用的架构边界；Embodied-BenchForge以依赖图追踪加验证-修复闭环自动生成EQA与交互式基准，直击评测数据瓶颈；Assisted Spatial Cognition把SLAM3R与SpatialLM串成手机端本地管线，为视障用户提供实时场景描述与目标距离。趋势上，工具化接口与Agent自动化构建基准正成为具身导航的新基础设施。",
-    "added": 4,
-    "at": "2026-09-14T20:52:18.637489+00:00",
+    "text": "今日七篇的主线是具身导航与世界模型、主动探索式智能体及多模态智能体评测的交汇。首推GLAM：它在全局时空记忆上训练JEPA式目标条件潜世界模型，联合预测未来地图token与航点潜变量，在HM3D ObjectNav上超越复现的BSC-Nav，是记忆与潜预测结合导航的代表作。V-ICAL Bench以37个交互环境、342项任务检验视频情境学习，最强模型仅54.4分而人类达83.6，量化暴露了策略转化与适应短板，评测方向值得细读。VideoScout则把长视频理解建模为主动决定观看节奏与回访时机的序列决策，其主动感知思想可迁移到机器人探索。趋势上，导航正从被动策略学习转向记忆驱动的世界模型与可评测的智能体行为闭环。",
+    "added": 7,
+    "at": "2026-09-15T09:44:22.151301+00:00",
     "new": [
       {
-        "t": "AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation",
-        "u": "https://arxiv.org/abs/2609.12285",
-        "r": 9,
-        "g": 7,
-        "s": "AnchorVLN提出“VLM给语义、几何定度量”的开放词汇室内VLN系统，以EMBODIED-NAV-MCP工具服务器在接口层强制语义-几何边界，在CMU VLN挑战赛2026的指令跟随与物体指涉两项任务上定量验证。",
+        "t": "GLAM: Training a latent world model over global spatiotemporal memory for active exploration and navigation",
+        "u": "https://arxiv.org/abs/2609.14561",
+        "r": 10,
+        "g": 6,
+        "s": "GLAM在全局时空记忆上训练目标条件潜空间世界模型，以JEPA式潜预测联合预测未来地图token与机器人中心航点潜变量并解码为导航方案，在HM3D ObjectNav上超越复现的BSC-Nav。",
         "c": ""
       },
       {
-        "t": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction",
-        "u": "https://arxiv.org/abs/2609.13082",
-        "r": 9,
-        "g": 7,
-        "s": "该文提出具身基准自动构建框架Embodied-BenchForge，以技能编排合成产物并用依赖图追踪，配合需求引导的验证与局部修复闭环，生成离线EQA与交互式具身基准，并评测多种模型能力。",
-        "c": ""
-      },
-      {
-        "t": "Assisted Spatial Cognition Through Vision-Language Models",
-        "u": "https://arxiv.org/abs/2609.12747",
+        "t": "Learning-Based Dynamic Obstacle Avoidance for a UAV Using Only Three Range Sensors",
+        "u": "https://arxiv.org/abs/2609.14426",
         "r": 7,
-        "g": 5,
-        "s": "面向视障与神经多样性用户的辅助导航框架：手机单目RGB视频经SLAM3R实时生成稠密点云，SpatialLM输出结构化3D场景，本地LLM生成场景描述与目标距离，多环境视频验证3D场景理解与目标定位精度。",
+        "g": 7,
+        "s": "提出仅依赖三个定向测距传感器的无人机运动规划框架，将行为栅格地图与PPO深度强化学习结合，在未知动态环境中实现定高、仅偏航可控约束下的实时静动态避障与目标到达。",
         "c": ""
       },
       {
-        "t": "Battery-Aware Predictive Trajectory Planning and Control for Multirotors Under Disturbances",
-        "u": "https://arxiv.org/abs/2609.12188",
-        "r": 6,
+        "t": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
+        "u": "https://arxiv.org/abs/2609.15606",
+        "r": 7,
         "g": 7,
-        "s": "提出面向多旋翼的电池感知预测轨迹规划与控制框架，通过车辆-电机-电池闭环传播评估候选轨迹，把扰动控制需求、能耗与电压相关的执行能力纳入规划，仿真任务中节能7.46%、跟踪RMSE降约72%。",
+        "s": "VideoScout将长视频理解建模为序列证据获取问题，智能体逐轮决定观看节奏、证据保留与回访时机，经SFT加轨迹级强化学习两阶段训练，7B模型在长视频理解与推理基准上表现强劲。",
         "c": ""
+      },
+      {
+        "t": "V-ICAL Bench: Evaluating Video In-Context Learning for Multimodal Agents in Interactive Environments",
+        "u": "https://arxiv.org/abs/2609.15683",
+        "r": 9,
+        "g": 8,
+        "s": "V-ICAL是评测多模态智能体视频情境学习的基准：在37个交互环境的342项任务上，以人工演示视频为情境范例测试19个SOTA模型，最佳仅得54.4分，远低于人类83.6，暴露策略转化与适应短板。",
+        "c": ""
+      },
+      {
+        "t": "BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender",
+        "u": "https://arxiv.org/abs/2609.15478",
+        "r": 7,
+        "g": 7,
+        "s": "提出BVB基准，让智能体在统一沙箱与成本限制下用代码将真实视频重建为Blender动画，经双VQA与感知相似度双轴评分，评测51种配置，发现语义保持（最高53.7%）仍是瓶颈。",
+        "c": ""
+      },
+      {
+        "t": "ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents",
+        "u": "https://arxiv.org/abs/2609.12345",
+        "r": 7,
+        "g": 7,
+        "s": "ParaRecover是面向多轮并行工具使用智能体的过程级基准，基于14类错误类型构建10626个实例，提出SDE量规从结构完整性、诊断推理与策略演化三方面评估恢复能力，并发现十余个主流LLM在错误传播与重规划上仍有明显短板。",
+        "c": "https://github.com/gbw206/ParaRecover"
+      },
+      {
+        "t": "Multi-Task Visual Perception Network with LLM Conditioning for Autonomous Navigation",
+        "u": "https://arxiv.org/abs/2609.14297",
+        "r": 7,
+        "g": 6,
+        "s": "提出免全局地图的服务机器人导航框架：多任务视觉感知网络结合LLM理解文本/语音指令，依据局部视觉线索生成顺序动作计划，并相对即时目标重置定位以抑制里程计漂移，真机与仿真实验均优于对比方法。",
+        "c": "https://github.com/PraveenSingh24/VL-Navigation"
       }
     ]
   }
