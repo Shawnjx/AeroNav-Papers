@@ -806,5 +806,93 @@
     "reason": "研究对象为在轨航天器交会相对导航的位姿估计测试床，超出UAV/地面具身导航及各基础能力线的核心范畴，仅sim2real基准方法论边缘相关。",
     "rejected_at": "2026-09-15",
     "url": "https://arxiv.org/abs/2609.14183"
+  },
+  "2609.15939": {
+    "title": "Vulnerability Localization Benchmark: Measuring Agentic Security Analysis at Repository Scale",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该文是面向网络安全垂直领域的仓库级漏洞定位基准，与空间智能、导航、机器人等收录技术线无关，属范围外的智能体垂直应用评测。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15939"
+  },
+  "2609.15695": {
+    "title": "NoteVQA: Benchmarking VLMs on Real-Life Questions from Human Communities",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该工作是基于小红书日常生活求助帖的消费级图文问答/AI搜索VLM评测基准，仅涉及ReAct+检索的常规智能体套用，与空间、导航、机器人均无关，属范围明示拒绝的纯图文问答类应用。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15695"
+  },
+  "2609.15855": {
+    "title": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "该工作为心理健康高危对话的LLM安全评测基准，属于与空间、导航、机器人无关的临床垂直应用评测，落入范围外（类似医疗分诊类应用）。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15855"
+  },
+  "2609.15794": {
+    "title": "KnowBench: Effort Reduction as a Unified, Deployment-Grounded Benchmark for Clinical AI",
+    "relevance": 1,
+    "rigor": 3,
+    "reason": "医疗临床文档AI的垂直应用基准，与空间智能、导航、机器人均无关（属明确排除范畴），且为单一公司自建基准评测自有专有系统、无外部基线、部分统计被保留，可信度与可复现性不足。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15794"
+  },
+  "2609.14840": {
+    "title": "El Agente Potente: High-Throughput Agentic Atomistic Simulations",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作是将LLM智能体与编码代理套用于原子模拟、材料计算等与空间、导航、机器人无关的垂直科学计算领域，并非通用智能体能力本身的显著进展，按范围应拒绝。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.14840"
+  },
+  "2609.14903": {
+    "title": "HydroMap: Probabilistic Water Surface Elevation Mapping for Semantic Scene Representation in Inland Waterways",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "面向内河自主水面艇的水面高程建图系统，平台与任务均不在UAV/地面具身导航范围，仅与在线建图/语义建图技术线边缘相关，且非公认高影响力系统工作。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.14903"
+  },
+  "2609.14878": {
+    "title": "Real-World Reinforcement Learning with MPC Scaffolding for Dexterous Manipulation",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作属于灵巧手/机械臂操作的真机强化学习，不含任何导航决策成分，与收录的空域/地面导航、空间智能等技术线无实质关联。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.14878"
+  },
+  "2609.15668": {
+    "title": "Circuit-MLLM: Topological Logic-Guided Latent-Space Visual Reasoning for Circuit Schematic Understanding",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "将MLLM套用于电路原理图理解这一与空间、导航、机器人均无关的垂直领域应用，属明确排除范围。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15668"
+  },
+  "2609.15859": {
+    "title": "LongAgent: History-Guided Agentic Search for Longitudinal Outcome Prediction",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "将智能体/LLM搜索套用于医疗纵向数据结局预测这一垂直领域，与空间、导航、机器人均无关，属范围明确排除的应用类工作。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15859"
+  },
+  "2609.15801": {
+    "title": "When Should a World Model Move? Loss-Conditioned State Execution",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "虽以世界模型为题，但方法与主实验（M4时间序列、电商库存预测）属预测决策的统计认证，与导航、规划或机器人无关，仅术语擦边。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15801"
+  },
+  "2609.15779": {
+    "title": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向表格/文件/数据库等异构数据的数据智能体语义层，属与空间、导航、机器人无关的垂直数据应用，其自进化机制也为数据语义定制，非通用智能体能力本身的显著进展。",
+    "rejected_at": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.15779"
   }
 }
