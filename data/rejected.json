@@ -894,5 +894,77 @@
     "reason": "面向表格/文件/数据库等异构数据的数据智能体语义层，属与空间、导航、机器人无关的垂直数据应用，其自进化机制也为数据语义定制，非通用智能体能力本身的显著进展。",
     "rejected_at": "2026-09-15",
     "url": "https://arxiv.org/abs/2609.15779"
+  },
+  "2609.17124": {
+    "title": "LOTUSim-Energy: A Maritime Simulator for Human-Drone Interaction in Autonomous Offshore Operation \\& Maintenance",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属海上风电运维垂直领域的多域仿真平台，核心贡献为仿真集成与人机监督界面，不含目标搜索、语言导航或具身评测方法学，与收录技术线仅边缘相关。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.17124"
+  },
+  "2609.17099": {
+    "title": "GeoLAM: Learning Geometry-Grounded Latent Actions from Unlabeled Human Videos",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "该工作面向机械臂操作的潜动作学习与VLA式控制，不含导航决策成分，按范围条款属于拒绝类别。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.17099"
+  },
+  "2609.16629": {
+    "title": "Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "面向WSN数据采集的UAV路径规划，核心贡献是元学习配置差分进化的学习式优化方法，任务本质属通信组网应用的轨迹优化，未推进UAV目标搜索、空域VLN或机器人自主核心能力，仅与轨迹规划线边缘相关。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.16629"
+  },
+  "2609.16958": {
+    "title": "Waggle Dance Inspired Motion Communication for Multiple UAVs in MuJoCo",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "核心是仿生运动通信协议在MuJoCo中的小规模可行性演示，未命中UAV主动搜索、空域VLN、ObjectNav或状态估计与控制等收录技术线的方法性进展，属边缘相关。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.16958"
+  },
+  "2609.17479": {
+    "title": "Det-LIME: Detector-Aware, Multi-Instance Local Interpretable Model-Agnostic Explanations for Automated Marine Mammal Detection",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作属于面向海洋哺乳动物检测保护工作流的可解释性（XAI）方法，不涉及搜索决策、导航、空间智能或机器人自主，仅因使用航拍影像与UAV目标搜索术语擦边，属范围外垂直应用。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.17479"
+  },
+  "2609.17152": {
+    "title": "ResLRP: The Role of Residual Cancellation in Attribution Instability in Vision Transformers",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "该工作属ViT/VLM输入归因与可解释性研究，并非模型/智能体能力本身或空间、导航、机器人技术的进展，超出收录范围。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.17152"
+  },
+  "2609.17450": {
+    "title": "ORCA: Occlusion-Aware Refinement and Completion for Novel View Synthesis",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "单图新视角合成与生成式补全属视觉/图形任务，无主动感知决策或导航成分，仅与3D场景重建边缘相关。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.17450"
+  },
+  "2609.17443": {
+    "title": "BrainFocus: EEG-Guided ROI Selection for Efficient Vision-Language Models",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "将EEG信号套用到视觉问答效率优化，属脑机接口垂直应用，与空间理解、导航、机器人无关，也不构成大模型与智能体能力本身的显著进展。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.17443"
+  },
+  "2609.16810": {
+    "title": "Motion planning in high dimensional spaces hybridizing RRT and HAR via position-direction decoupling",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "纯高维采样运动规划算法，仅验证于钢琴搬运基准与分子构象采样，无导航或真机机器人落地场景，非公认高影响力规划器系统，属范围边缘。",
+    "rejected_at": "2026-09-16",
+    "url": "https://arxiv.org/abs/2609.16810"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T20:13:40.843990+00:00",
+  "updated_at": "2026-09-16T09:19:34.699268+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1594,6 +1594,55 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.17198",
+      "arxiv_id": "2609.17198",
+      "title": "TIO-Former: Ultra-Lightweight 6-Directional ToF-Inertial Odometry for Nano-UAVs via a Streaming Causal Transformer",
+      "authors": [
+        "Yang Liu",
+        "Yifan He",
+        "Wenhao Zhao",
+        "Xiangyu Mo",
+        "Yang Xu",
+        "Hao Wei",
+        "Mingze Ma",
+        "Huan Li",
+        "Yifan Wu",
+        "Zipeng Dai",
+        "Xin Zhou",
+        "Fei Gao"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.17198",
+      "pdf_url": "https://arxiv.org/pdf/2609.17198",
+      "code_url": "https://github.com/Ly041021/TIO-Former",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 10,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出面向纳米无人机的测距-惯性里程计TIO-Former：以IMU与六个轻量多区ToF阵列替代相机与光流，经双侧门控差分与IMU引导交叉注意力，流式因果Transformer保证算力内存有界，真机飞行显著降低位置误差。",
+      "change_zh": "相比光流与学习型惯性等纳米机常规路线，改用六个正交ToF阵列的稀疏测距与IMU紧耦合，并以局部KV缓存加Chunk-FIFO压缩记忆的流式因果Transformer，使推理开销与内存不随飞行时长增长，适配边缘端常时运行。",
+      "why_it_matters": "作为状态估计与控制线的核心工作，为纳米无人机提供15克级负载下的度量自运动锚点，是搜救侦察等UAV主动目标搜索与空中VLN在微型平台落地的底层前提；其有界内存流式架构与RISC-V真机部署也为边缘侧具身智能提供可复用范式。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "odometry",
+        "state estimation",
+        "uav"
+      ],
+      "added_at": "2026-09-16T09:07:09.714246+00:00"
+    },
+    {
       "id": "2609.13082",
       "arxiv_id": "2609.13082",
       "title": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction",
@@ -1942,6 +1991,97 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.16610",
+      "arxiv_id": "2609.16610",
+      "title": "EgoPathBench: Evaluating Zero-Shot Egocentric Waypoint Decision-Making in Vision-Language Models",
+      "authors": [
+        "Yang Zhao",
+        "Zhuo Chen",
+        "Xubo Yang"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.16610",
+      "pdf_url": "https://arxiv.org/pdf/2609.16610",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出EgoPathBench，一个第一人称路标导航决策基准，含五类任务与逾3.4万条数据，评测VLM在给定RGB图像与语言目标下选择可行路标和有序路线的能力；九个VLM最高仅28.3分，微调Qwen后大幅提升并泛化到外部空间基准。",
+      "change_zh": "相比以往只孤立评测方向、关系或目标识别的空间智能基准，该工作转为评测目标识别、动作后果评估、距离估计与路径规划相整合的第一人称路标决策，并在点智能体与具身几何两种约束下检验候选可行性与相邻边合法性，且每条路线题均附几何验证的参考路径并开放训练资源。",
+      "why_it_matters": "该基准量化暴露了当前VLM在具身约束下形成完整目标一致路线的短板（具身路径成功率仅2.9%），为地面VLN/ObjectNav乃至UAV目标搜索所依赖的VLM空间决策能力提供诊断工具；配套训练数据可将模型分数从3.9提升至38.9并泛化到外部空间基准，是改进导航基础模型的有效资源。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "spatial intelligence",
+        "vlm",
+        "waypoint"
+      ],
+      "added_at": "2026-09-16T09:08:22.219003+00:00"
+    },
+    {
+      "id": "2609.16697",
+      "arxiv_id": "2609.16697",
+      "title": "World Models for Embodied Intelligence: From Plausible to Controllable to Actionable",
+      "authors": [
+        "Nanjie Yao",
+        "Hao Wang",
+        "Chong Cheng",
+        "Zhikang Chen",
+        "Wenzhe Li",
+        "Jiafei Lyu",
+        "Li Shen",
+        "Peilin Zhao",
+        "Zongqing Lu",
+        "Gao Huang",
+        "Steven Hoi",
+        "Dacheng Tao",
+        "Deheng Ye"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.16697",
+      "pdf_url": "https://arxiv.org/pdf/2609.16697",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该综述为具身智能世界模型提出Plausible-Controllable-Actionable三级能力框架，以及几何/物理/动作与数据/奖励/策略/模型改进环交叉的3×4矩阵，梳理操控、导航、自动驾驶等领域进展与挑战，主张按行为改进而非视觉保真度评价世界模型。",
+      "change_zh": "相比常见按架构、输出模态或应用领域组织的世界模型综述，本文以“预测能力如何改进行为”为主线，将模型分为可信、可控、可行动三个递进层级，并把评测重心从视觉逼真度转向任务相关状态捕捉、干预效应预测与闭环行为收益，为领域提供了新的分类与评价标准。",
+      "why_it_matters": "世界模型属收录范围核心基础线，与UAV主动目标搜索及ObjectNav直接相关：二者均需预测观测与干预后果来选择动作和视角。该文的能力分级与评测框架可直接指导导航世界模型的基准设计、评测协议与闭环验证，是导航与规划世界模型研究的重要参考综述。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-09-16T09:12:24.521800+00:00"
     },
     {
       "id": "2609.15098",
@@ -2361,6 +2501,46 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.17499",
+      "arxiv_id": "2609.17499",
+      "title": "ENCP: Episode-Normalized Conformal Prediction for Vision-and-Language Navigation",
+      "authors": [
+        "Vicky Feliren",
+        "A. Taufiq Asyhari",
+        "Muhamad Risqi U. Saputra"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.17499",
+      "pdf_url": "https://arxiv.org/pdf/2609.17499",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ENCP针对VLN回合序列难以保形校准的问题，用策略残差置信度重标非一致性分数并按回合校准，在步骤相依下保证逐步覆盖率，R2R与REVERIE上跨四种策略验证。",
+      "change_zh": "常见保形预测按独立单步样本校准，在变长且步骤相依的VLN回合上失去覆盖保证；ENCP改为按回合归一化残差置信度并校准单一最大非一致性分数，把覆盖率保证从样本级扩展到逐步级。",
+      "why_it_matters": "为地面VLN提供模型无关且带统计保证的逐步不确定性量化，支持安全决策与人机交接；该框架与任务解耦，可迁移到UAV目标搜索与ObjectNav，支撑何时求助、何时终止等可信自主机制。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "r2r",
+        "reverie"
+      ],
+      "added_at": "2026-09-16T09:16:19.446349+00:00"
     },
     {
       "id": "2609.12456",
@@ -2865,6 +3045,49 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.17387",
+      "arxiv_id": "2609.17387",
+      "title": "PanoGS-SLAM: Panoramic 3D Gaussian Splatting SLAM",
+      "authors": [
+        "Yongqi Mao",
+        "Hao Shi",
+        "Yufan Zhang",
+        "Zhonghua Yi",
+        "Xiangfei Guo",
+        "Kaiwei Wang"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.17387",
+      "pdf_url": "https://arxiv.org/pdf/2609.17387",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PanoGS-SLAM是首个基于3D高斯泼溅的全景稠密SLAM系统，在球面域直接进行可微渲染与位姿优化，提出球面一致光度损失和深度引导高斯初始化，实现实时稳定跟踪与高质量建图。",
+      "change_zh": "多数3DGS-SLAM面向窄视场针孔相机，本文将可微渲染与位姿优化搬到球面域，用球面一致光度损失修正等距柱状投影的面积畸变，并以深度引导初始化稳定增量建图，还通过控制视场实验揭示感知几何对优化收敛性的根本影响。",
+      "why_it_matters": "全景稠密SLAM对无人机全向感知尤其有价值：大视场提升快速机动与大视角变化下的位姿可观测性与跟踪稳定性，为UAV主动目标搜索提供更鲁棒的定位与建图底座；高质量稠密地图也可服务ObjectNav的场景理解与目标定位。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "localization",
+        "mental map",
+        "slam"
+      ],
+      "added_at": "2026-09-16T09:08:52.250900+00:00"
+    },
+    {
       "id": "2609.14987",
       "arxiv_id": "2609.14987",
       "title": "ActGuard: Pre-execution Action Auditing against Indirect Prompt Injection in LLM Agents",
@@ -2905,6 +3128,45 @@
         "localization"
       ],
       "added_at": "2026-09-15T20:06:35.316025+00:00"
+    },
+    {
+      "id": "2609.16368",
+      "arxiv_id": "2609.16368",
+      "title": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+      "authors": [
+        "Ghazal Farhani",
+        "Shabnam Shabani"
+      ],
+      "published": "2026-09-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.16368",
+      "pdf_url": "https://arxiv.org/pdf/2609.16368",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 8,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "UDAV面向无人机引导无人车的越野导航：对VLM航拍图像路线预测多次随机采样，取medoid为名义路线，由空间离散度估计不确定性并触发重考虑，ADE较确定性规划降低25.1%。",
+      "change_zh": "相比单次确定性VLM路线预测，UDAV把采样自一致性当作更好的名义解，并将样本空间离散度转化为可操作的不确定性信号，仅在高不确定航点触发重考虑，以较低计算预算抑制尾部大误差，优于更大预算的K=10共识基线。",
+      "why_it_matters": "为空域-地面协同导航提供VLM输出可靠性度量：不确定性门控重考虑机制可迁移到UAV目标搜索中评估航路置信度，也适用于ObjectNav等按不确定性触发重规划，抑制基础模型导航的尾部大误差。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "uav",
+        "vlm",
+        "waypoint"
+      ],
+      "added_at": "2026-09-16T09:07:58.269227+00:00"
     },
     {
       "id": "2609.14567",
@@ -3354,6 +3616,124 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.17269",
+      "arxiv_id": "2609.17269",
+      "title": "Semantic-Spatial Agreement Verification for Mitigating Object Hallucination in Multimodal Large Language Models",
+      "authors": [
+        "Ziheng Ren",
+        "Qian Gao",
+        "Jun Fan",
+        "Guohui Ding",
+        "Zhenyu Yang",
+        "Yuteng Xiao"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.17269",
+      "pdf_url": "https://arxiv.org/pdf/2609.17269",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出免训练的SSAV方法校验MLLM的物体声称：聚合多个语义等价查询估计语义支持，并用QIRV考察跨查询区域定位的持续性、重叠度与候选优势，以几何平均融合语义与空间证据，在POPE、CHAIR等评测中显著缓解物体幻觉。",
+      "change_zh": "常见幻觉缓解多依赖解码干预或对比微调；本文转向事后外部校验路线：把物体声称视为可用视觉证据检验的命题，以跨查询语义稳定性与区域定位一致性双路证据几何融合来打分，任一分支缺乏支持即压低分数，免训练且证据可解释。",
+      "why_it_matters": "MLLM正日益成为ObjectNav与UAV主动目标搜索中的感知与决策组件，物体幻觉会直接导致误报目标与错误接近行为。SSAV提供免训练、可解释的声称校验与空间定位一致性证据，可用于提升导航智能体感知输出可信度，降低幻觉目标对空间决策的误导。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-09-16T09:13:28.419410+00:00"
+    },
+    {
+      "id": "2609.17039",
+      "arxiv_id": "2609.17039",
+      "title": "Bi-FlowGS: Bridging Generative View Completion and Gaussian Geometry through Bidirectional Flow Co-Refinement",
+      "authors": [
+        "Yuetong Wang",
+        "Jinsheng Quan",
+        "Yi Yang",
+        "Yawei Luo"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.17039",
+      "pdf_url": "https://arxiv.org/pdf/2609.17039",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对稀疏视角3DGS中渲染好但几何错的Geometry Cheating失效，用光流桥接视频补全与几何正则，V2G与G2V双向精炼使补全视频与场景迭代互促，提升渲染与几何一致性。",
+      "change_zh": "既有方法或仅在观测视角上正则几何，或把视频补全视角只作RGB伪监督；本文用光流作双向桥梁：将恢复视频的时序对应蒸馏进几何，再用几何引导视频修复，二者迭代互促，把单向伪监督变为闭环共精炼。",
+      "why_it_matters": "为主动感知与重建线提供新工具：稀疏视角几何可靠重建可支撑无人机快速侦察测绘与搜救建图，几何正确性也关系ObjectNav场景记忆与距离推理，几何约束生成监督的思路可迁移至导航生成先验利用。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "geometry"
+      ],
+      "added_at": "2026-09-16T09:14:59.977199+00:00"
+    },
+    {
+      "id": "2609.17145",
+      "arxiv_id": "2609.17145",
+      "title": "LiLi: Lie Theory Based 3D LiDAR Scan Alignment Degeneracy Detection",
+      "authors": [
+        "Vsevolod Hulchuk",
+        "Jan Bayer",
+        "Jan Faigl"
+      ],
+      "published": "2026-09-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.17145",
+      "pdf_url": "https://arxiv.org/pdf/2609.17145",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LiLi利用李群李代数理论检测3D激光扫描配准退化，对优化解施加扰动并比较重优化位姿，系统刻画SE(3)中退化变换全集，在合成与真实长走廊、隧道数据中定位精度显著优于基于Hessian的退化检测。",
+      "change_zh": "常见退化检测基于Hessian/法向量特征值分析，假设数据关联固定，易受噪声与复合退化影响；LiLi转而考虑数据点的重新关联，通过扰动优化解并比较所得位姿识别退化方向，并用se(3)生成元系统描述全部退化变换，检测更鲁棒。",
+      "why_it_matters": "激光里程计在长走廊、隧道等退化场景的鲁棒性是机器人自主落地的关键瓶颈。该检测器可直接嵌入LiDAR里程计，提升无人机与地面平台在GNSS拒止、结构缺失环境下的定位建图可靠性，为搜救侦察及目标搜索导航提供状态估计支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "odometry"
+      ],
+      "added_at": "2026-09-16T09:19:31.698910+00:00"
+    },
+    {
       "id": "2609.15606",
       "arxiv_id": "2609.15606",
       "title": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
@@ -3626,6 +4006,58 @@
         "real world"
       ],
       "added_at": "2026-09-15T20:02:16.126570+00:00"
+    },
+    {
+      "id": "2609.16443",
+      "arxiv_id": "2609.16443",
+      "title": "The Neverwhere Visual Parkour Benchmark Suite",
+      "authors": [
+        "Ziyu Chen",
+        "Henghui Bao",
+        "Haoran Chang",
+        "Alan Yu",
+        "Ran Choi",
+        "Kai McClennen",
+        "Gio Huh",
+        "Kevin Yang",
+        "Ri-Zhao Qiu",
+        "Yajvan Ravan",
+        "John J. Leonard",
+        "Xiaolong Wang",
+        "Phillip Isola",
+        "Ge Yang",
+        "Yue Wang"
+      ],
+      "published": "2026-09-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.16443",
+      "pdf_url": "https://arxiv.org/pdf/2609.16443",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出Neverwhere基准套件，以六十余个超逼真3D高斯泼溅重建的室内外城市场景构建闭环评测环境，用于大规模可复现地评测视觉运动控制器，并分析仅用3DGS数据训练策略的泛化缺陷。",
+      "change_zh": "相比常用简化仿真资产评测路线，该工作把高保真3D高斯泼溅重建批量接入闭环连续测试，实现部署前大规模可复现评测；同时用多场景训练与新颖场景评测的对比，揭示仅依赖3DGS生成数据训练的泛化风险。",
+      "why_it_matters": "该基准为真机与Sim2Real及具身评测线提供了超逼真、可复现的闭环评测基础设施，其3DGS场景接入流程与跨场景泛化分析对视觉运动控制落地有直接参考；对UAV目标搜索与ObjectNav的高保真仿真评测建设亦有借鉴价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-09-16T09:15:36.559276+00:00"
     },
     {
       "id": "2609.14426",
@@ -6103,112 +6535,88 @@
     }
   ],
   "briefing": {
-    "text": "本批主线是免训练零样本VLN：VLM不再直接回归动作，转而负责候选比较、结果校验与状态调度，外围还有多机MPC、GNSS退化估计与智能体安全审计等支撑工作。首推HarnessVLN，以统一工具接口加事件记忆与时空图校验MLLM提议，把指令跟随与ObjectNav并入同一框架，四项基准刷新免训练SOTA；C2Nav只让VLM对控制器候选做序数比较而非输出航点数值，规避VLM给基数量的幻觉，附双模型验证与消融；LG-VLN用LangGraph把解析、规划与失败恢复编排为状态图，是可直接复用的工程蓝图。趋势观察：“VLM判断、经典模块执行”的分工正收敛为零样本导航的通用范式。",
-    "added": 13,
-    "at": "2026-09-15T20:14:23.686900+00:00",
+    "text": "今日入库横跨具身导航全栈：从纳米无人机轻量里程计、3DGS-SLAM，到VLM路标决策及其可靠性校验。最值得读三篇：World Models for Embodied Intelligence以Plausible-Controllable-Actionable三级框架梳理世界模型，主张按行为改进而非视觉保真评估，适合快速定位研究坐标；EgoPathBench以逾3.4万条第一人称数据揭示九个VLM零样本路标决策最高仅28.3分，直接照出VLM空间决策短板；UDAV用多次采样的空间离散度估计VLM路线不确定性并触发重规划，ADE降低25.1%，示范了不确定性量化的落地路径。趋势上，VLM正成为导航决策的核心组件，其校准与可靠性正接棒成为研究焦点。",
+    "added": 10,
+    "at": "2026-09-16T09:20:15.783333+00:00",
     "new": [
       {
-        "t": "Conflict-Predictive Variable Horizons in Multi-Drone Distributed Model Predictive Control",
-        "u": "https://arxiv.org/abs/2609.13270",
-        "r": 6,
-        "g": 7,
-        "s": "针对多机分布式MPC避撞固定时域的长短两难，提出冲突预测式可变时域：无人机外推邻机航线、闭式求冲突时间，选取覆盖最远冲突的最小时域，证明递归可行与渐近稳定，仿真中计算量下降且保持安全间隔。",
-        "c": ""
-      },
-      {
-        "t": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
-        "u": "https://arxiv.org/abs/2609.15195",
-        "r": 10,
+        "t": "TIO-Former: Ultra-Lightweight 6-Directional ToF-Inertial Odometry for Nano-UAVs via a Streaming Causal Transformer",
+        "u": "https://arxiv.org/abs/2609.17198",
+        "r": 8,
         "g": 8,
-        "s": "提出免训练零样本的Agent Harness框架，经统一工具接口协调感知、接地、导航、恢复与终止，以事件记忆与时空图校验MLLM导航提议，统一支持指令跟随与ObjectNav，四项基准刷新免训练SOTA。",
-        "c": ""
+        "s": "提出面向纳米无人机的测距-惯性里程计TIO-Former：以IMU与六个轻量多区ToF阵列替代相机与光流，经双侧门控差分与IMU引导交叉注意力，流式因果Transformer保证算力内存有界，真机飞行显著降低位置误差。",
+        "c": "https://github.com/Ly041021/TIO-Former"
       },
       {
-        "t": "C$^2$Nav: Compare Before You Commit for Zero-Shot Vision-and-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.15142",
-        "r": 10,
-        "g": 8,
-        "s": "C2Nav是免训练的零样本VLN-CE框架，让VLM只对控制器构建的候选方案做序数比较，而非直接输出航点、朝向等基数量，包含看、记、停三个模块，在R2R-CE上以两个模型验证并做消融。",
-        "c": ""
-      },
-      {
-        "t": "AlgoEvo: Self-Evolving Agentic Search for Automated Algorithm Discovery",
-        "u": "https://arxiv.org/abs/2609.15820",
-        "r": 6,
-        "g": 7,
-        "s": "AlgoEvo将自动算法发现变为交互式知识积累过程：智能体依运行时反馈自主诊断并编辑代码，配合设计技能库与任务级经验树，在六项基准上以更少评估与token开销匹敌或超越专用方法。",
-        "c": ""
-      },
-      {
-        "t": "Atria Dawn: The Dawn of Agentic Superintelligence",
-        "u": "https://arxiv.org/abs/2609.15818",
-        "r": 7,
-        "g": 7,
-        "s": "本文提出面向科研与工程工作流的基础智能体语言模型Atria Dawn Preview，通过可验证经验管线训练，在16项基准中5项取得最高分，并基于769条任务记录分析人机协作模式。",
-        "c": ""
-      },
-      {
-        "t": "Belief-Adaptive Online Autonomy for Quadrotor UAV Navigation under GNSS Degradation in Urban Environments",
-        "u": "https://arxiv.org/abs/2609.14806",
-        "r": 7,
+        "t": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+        "u": "https://arxiv.org/abs/2609.16368",
+        "r": 8,
         "g": 6,
-        "s": "针对城市空域GNSS多径、遮挡与延迟引入的非平稳相关误差，该文在EKF融合框架中加入GNSS信任隐状态建模、二阶在线信念自适应与延迟感知乱序量测处理，仿真场景中估计与跟踪误差低于朴素、自适应与一阶基线。",
+        "s": "UDAV面向无人机引导无人车的越野导航：对VLM航拍图像路线预测多次随机采样，取medoid为名义路线，由空间离散度估计不确定性并触发重考虑，ADE较确定性规划降低25.1%。",
         "c": ""
       },
       {
-        "t": "GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving",
-        "u": "https://arxiv.org/abs/2609.15169",
-        "r": 6,
+        "t": "EgoPathBench: Evaluating Zero-Shot Egocentric Waypoint Decision-Making in Vision-Language Models",
+        "u": "https://arxiv.org/abs/2609.16610",
+        "r": 8,
         "g": 8,
-        "s": "GRAVA将接地、推理与动作统一进单一自回归VLM，用轨迹锚定类型图序列化接地推理并生成可执行规划器动作，构建GR-NavSim数据集，NAVSIM上达纯自回归驾驶SOTA。",
+        "s": "提出EgoPathBench，一个第一人称路标导航决策基准，含五类任务与逾3.4万条数据，评测VLM在给定RGB图像与语言目标下选择可行路标和有序路线的能力；九个VLM最高仅28.3分，微调Qwen后大幅提升并泛化到外部空间基准。",
         "c": ""
       },
       {
-        "t": "ActGuard: Pre-execution Action Auditing against Indirect Prompt Injection in LLM Agents",
-        "u": "https://arxiv.org/abs/2609.14987",
-        "r": 7,
-        "g": 7,
-        "s": "提出LLM智能体执行前动作审计框架：先预测即将使用的工具构建局部先验，对候选动作做工具级与参数级偏差定位，仅掩蔽确证恶意片段后重生成动作，兼顾安全与效用。",
-        "c": "https://github.com/binzhwang/ActGuard"
-      },
-      {
-        "t": "Comparing Trajectories from Positions Alone: Curvature-Based Time Alignment and Drift Error Metric",
-        "u": "https://arxiv.org/abs/2609.14936",
-        "r": 7,
-        "g": 6,
-        "s": "本文面向SLAM与状态估计提出标准化轨迹评测协议：基于曲率信号的时间对齐方法与按行程距离归一化的漂移误差度量，显式处理时间同步、采样对齐与外参标定，并通过敏感性分析量化评测参数的影响。",
-        "c": ""
-      },
-      {
-        "t": "MarKey: Marginal Utility Guided Greedy Keyframe Selection for Long Video Understanding",
-        "u": "https://arxiv.org/abs/2609.15408",
-        "r": 6,
-        "g": 7,
-        "s": "MarKey提出免训练的长视频关键帧选择框架，将选帧建模为子集感知的贪心优化，用同时度量查询相关性、边际覆盖增益与上下文冗余的代理效用逐帧挑选，并以代表锚点和有界窗口降低迭代比较开销，在六个视频理解基准上稳定超越现有方法。",
-        "c": ""
-      },
-      {
-        "t": "Learning Multi-Agent Task Assignment and Navigation in the Factory: from Simulation to Real Robots",
-        "u": "https://arxiv.org/abs/2609.14567",
+        "t": "PanoGS-SLAM: Panoramic 3D Gaussian Splatting SLAM",
+        "u": "https://arxiv.org/abs/2609.17387",
         "r": 7,
         "g": 8,
-        "s": "提出融合2D激光雷达与任务状态的去中心化多智能体强化学习方法FMAPPO，用于工厂多机器人机床看管的任务分配与安全导航，完成高保真仿真到真机的完整部署验证。",
+        "s": "PanoGS-SLAM是首个基于3D高斯泼溅的全景稠密SLAM系统，在球面域直接进行可微渲染与位姿优化，提出球面一致光度损失和深度引导高斯初始化，实现实时稳定跟踪与高质量建图。",
         "c": ""
       },
       {
-        "t": "LG-VLN: A Zero-Shot Vision-and-Language Navigation Framework with LangGraph State Orchestration",
-        "u": "https://arxiv.org/abs/2609.15098",
+        "t": "World Models for Embodied Intelligence: From Plausible to Controllable to Actionable",
+        "u": "https://arxiv.org/abs/2609.16697",
         "r": 9,
         "g": 6,
-        "s": "LG-VLN是零样本单目RGB的VLN-CE框架，以共享CleanDIFT特征统一几何与语义表征，用LangGraph将指令解析、感知、规划与失败恢复编排为状态图，在R2R-CE val-unseen上取得21.3%成功率。",
+        "s": "该综述为具身智能世界模型提出Plausible-Controllable-Actionable三级能力框架，以及几何/物理/动作与数据/奖励/策略/模型改进环交叉的3×4矩阵，梳理操控、导航、自动驾驶等领域进展与挑战，主张按行为改进而非视觉保真度评价世界模型。",
         "c": ""
       },
       {
-        "t": "Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation",
-        "u": "https://arxiv.org/abs/2609.15800",
+        "t": "Semantic-Spatial Agreement Verification for Mitigating Object Hallucination in Multimodal Large Language Models",
+        "u": "https://arxiv.org/abs/2609.17269",
         "r": 7,
-        "g": 6,
-        "s": "提出SCoRE，面向视觉富文档问答的智能体VRAG框架：探索时仅将查询相关观测及来源指针存入文本台账，终止时重载所引原始图像并按逻辑顺序整合证据作答，结合冷启动轨迹蒸馏与证据感知强化学习端到端优化。",
+        "g": 7,
+        "s": "本文提出免训练的SSAV方法校验MLLM的物体声称：聚合多个语义等价查询估计语义支持，并用QIRV考察跨查询区域定位的持续性、重叠度与候选优势，以几何平均融合语义与空间证据，在POPE、CHAIR等评测中显著缓解物体幻觉。",
+        "c": ""
+      },
+      {
+        "t": "Bi-FlowGS: Bridging Generative View Completion and Gaussian Geometry through Bidirectional Flow Co-Refinement",
+        "u": "https://arxiv.org/abs/2609.17039",
+        "r": 7,
+        "g": 7,
+        "s": "针对稀疏视角3DGS中渲染好但几何错的Geometry Cheating失效，用光流桥接视频补全与几何正则，V2G与G2V双向精炼使补全视频与场景迭代互促，提升渲染与几何一致性。",
+        "c": ""
+      },
+      {
+        "t": "The Neverwhere Visual Parkour Benchmark Suite",
+        "u": "https://arxiv.org/abs/2609.16443",
+        "r": 7,
+        "g": 7,
+        "s": "本文提出Neverwhere基准套件，以六十余个超逼真3D高斯泼溅重建的室内外城市场景构建闭环评测环境，用于大规模可复现地评测视觉运动控制器，并分析仅用3DGS数据训练策略的泛化缺陷。",
+        "c": ""
+      },
+      {
+        "t": "ENCP: Episode-Normalized Conformal Prediction for Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.17499",
+        "r": 8,
+        "g": 7,
+        "s": "ENCP针对VLN回合序列难以保形校准的问题，用策略残差置信度重标非一致性分数并按回合校准，在步骤相依下保证逐步覆盖率，R2R与REVERIE上跨四种策略验证。",
+        "c": ""
+      },
+      {
+        "t": "LiLi: Lie Theory Based 3D LiDAR Scan Alignment Degeneracy Detection",
+        "u": "https://arxiv.org/abs/2609.17145",
+        "r": 7,
+        "g": 7,
+        "s": "LiLi利用李群李代数理论检测3D激光扫描配准退化，对优化解施加扰动并比较重优化位姿，系统刻画SE(3)中退化变换全集，在合成与真实长走廊、隧道数据中定位精度显著优于基于Hessian的退化检测。",
         "c": ""
       }
     ]
