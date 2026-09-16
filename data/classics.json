@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T15:00:52.347951+00:00",
+  "updated_at": "2026-09-16T08:29:40.746326+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5802,6 +5802,44 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4402716330",
+      "arxiv_id": "",
+      "title": "Monkey: Image Resolution and Text Label are Important Things for Large Multi-Modal Models",
+      "authors": [
+        "Zhang Li",
+        "Biao Yang",
+        "Qiang Liu",
+        "Zhiyin Ma",
+        "Shuo Zhang",
+        "Jingxu Yang",
+        "Yabo Sun",
+        "Yuliang Liu",
+        "Xiang Bai"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 117,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.02527",
+      "pdf_url": "",
+      "code_url": "https://github.com/Yuliang-Liu/Monkey",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Monkey将高分辨率图像切分为与视觉编码器预训练尺度一致的块并各配独立适配器，结合多级描述生成的数据构建方法，提升了多模态大模型在高分辨率输入与细粒度场景理解上的能力。",
+      "change_zh": "相比直接插值放大或缩放输入分辨率的常见LMM做法，Monkey把高分辨率图像切成与视觉编码器训练尺度一致的块，逐块配独立适配器以保留原尺度表征，并以多级描述标注增强生成数据的场景-对象关联，改变了细节感知与数据构建方式。",
+      "why_it_matters": "高分辨率细粒度视觉理解是UAV航拍目标搜索中识别小目标、密集场景文字以及ObjectNav开放词汇目标识别的关键底座能力；Monkey的开源方案与多级描述数据策略可为无人机与地面导航任务的感知模块提供可直接复用的高分辨率MLLM模型。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-16T08:29:40.746326+00:00"
+    },
+    {
       "id": "https://openalex.org/W4410438635",
       "arxiv_id": "",
       "title": "Advances in UAV Path Planning: A Comprehensive Review of Methods, Challenges, and Future Directions",
@@ -6459,6 +6497,47 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T02:36:58Z"
+    },
+    {
+      "id": "https://openalex.org/W4413926275",
+      "arxiv_id": "",
+      "title": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
+      "authors": [
+        "Wenxiao Cai",
+        "Iaroslav Ponomarenko",
+        "Jianhao Yuan",
+        "Xiaoqi Li",
+        "Wankou Yang",
+        "Hao Dong",
+        "Bo Zhao"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 41,
+      "url": "https://doi.org/10.1109/icra55743.2025.11128671",
+      "pdf_url": "",
+      "code_url": "https://github.com/BAAI-DCAI/SpatialBot",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出融合RGB与深度图像的视觉语言模型SpatialBot，构建多层级深度问答数据集SpatialQA/E与评测基准SpatialBench，在空间理解、通用VLM基准及具身任务上均取得显著提升，模型代码数据全部开源。",
+      "change_zh": "相比仅用RGB做2D图文理解的常见VLM路线，该工作显式引入深度图作为输入模态，用从粗到细的多层级深度问答数据训练模型获得精确空间感知，并配套系统性空间理解基准；摘要未披露具体训练与方法细节。",
+      "why_it_matters": "空间与深度理解是UAV主动目标搜索和ObjectNav的基础能力，此类模型可直接增强导航智能体的目标距离判断、3D场景理解与空间推理，其数据集与基准也为具身导航方向的空间能力训练和评测提供了公开工具。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "spatial understanding",
+        "vision language model",
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-16T08:29:40.746326+00:00"
     }
   ],
   "excluded": {
@@ -8689,20 +8768,28 @@
       "excluded_at": "2026-09-14"
     }
   },
-  "last_citation_refresh": "2026-09-15T15:00:52.347951+00:00",
   "briefing": {
-    "text": "本轮入库的这批近五年高被引经典集中指向同一条主线：把视觉-语言-动作（VLA）模型从轮式仿真推向足式真机导航。其中最值得优先精读的是NaVILA: Legged Robot Vision-Language-Action Model for Navigation，它把语言指令的语义理解与足式运动控制耦合进统一的导航策略，被引43、相关度9，是足式具身导航方向的代表性工作；但需注意其入库摘要缺失，方法与实验细节建议到项目页核对后再引用。从趋势看，具身导航正加速从单模态控制走向VLA一体化并落到腿足平台。",
-    "added": 1,
-    "at": "2026-09-14T16:32:42.105386+00:00",
+    "text": "本轮两篇高被引工作主线一致：为多模态大模型补上感知短板，分别从分辨率与空间两个维度切入。Monkey把高分辨率图像切块并配独立适配器，结合多级描述数据，显著提升细粒度场景理解，是高分辨率VLM路线的代表作；SpatialBot融合RGB与深度图，构建SpatialQA数据集与SpatialBench基准，验证了深度信息对空间理解和具身任务的实际价值，且代码数据全开源、便于复现。趋势来看，具身导航正倒逼VLM同时做到看得清与量得准，高分辨率与3D空间感知将逐步成为标配。",
+    "added": 2,
+    "at": "2026-09-16T08:29:40.746326+00:00",
     "new": [
       {
-        "t": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
-        "u": "https://doi.org/10.15607/rss.2025.xxi.018",
+        "t": "Monkey: Image Resolution and Text Label are Important Things for Large Multi-Modal Models",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.02527",
+        "r": 7,
+        "g": 8,
+        "s": "Monkey将高分辨率图像切分为与视觉编码器预训练尺度一致的块并各配独立适配器，结合多级描述生成的数据构建方法，提升了多模态大模型在高分辨率输入与细粒度场景理解上的能力。",
+        "c": "https://github.com/Yuliang-Liu/Monkey",
+        "cit": 117
+      },
+      {
+        "t": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
+        "u": "https://doi.org/10.1109/icra55743.2025.11128671",
         "r": 9,
-        "g": 5,
-        "s": "NaVILA提出面向足式机器人的视觉-语言-动作导航模型，将视觉语言理解与足式运动控制结合实现语言或目标引导的导航；摘要缺失（仅项目页链接），方法与实验细节无法核实。",
-        "c": "",
-        "cit": 43
+        "g": 8,
+        "s": "提出融合RGB与深度图像的视觉语言模型SpatialBot，构建多层级深度问答数据集SpatialQA/E与评测基准SpatialBench，在空间理解、通用VLM基准及具身任务上均取得显著提升，模型代码数据全部开源。",
+        "c": "https://github.com/BAAI-DCAI/SpatialBot",
+        "cit": 41
       }
     ]
   }
