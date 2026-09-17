@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T09:46:14.006679+00:00",
+  "updated_at": "2026-09-17T14:39:00.863028+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2673,6 +2673,51 @@
         "reverie"
       ],
       "added_at": "2026-09-16T09:16:19.446349+00:00"
+    },
+    {
+      "id": "2609.16074",
+      "arxiv_id": "2609.16074",
+      "title": "World-Action Models for Robot Learning and Control: A Survey",
+      "authors": [
+        "Zuxing Lu",
+        "Hongjia Zhai",
+        "Guanzhi Wang",
+        "Huajian Zeng",
+        "Jiaqi Yang",
+        "Jingyu Liu",
+        "Lei Cheng",
+        "Yuantai Zhang",
+        "Yuheng Qiu",
+        "Zezhou Cheng",
+        "Ivan Laptev",
+        "Danfei Xu"
+      ],
+      "published": "2026-09-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.16074",
+      "pdf_url": "https://arxiv.org/pdf/2609.16074",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文是世界-动作模型（WAM）的机器人导向综述，将未来世界预测与可执行动作生成耦合，给出统一分类法，并总结其在操控、导航与自动驾驶中的应用及数据集与评测基准。",
+      "change_zh": "相比孤立研究世界模型或反应式VLA策略的常见路线，本文将预测与动作生成统一为WAM框架，厘清其与世界模型、基于模型强化学习、动作条件视频生成及VLA的边界，系统梳理表征、转移建模、动作接口与训练范式。",
+      "why_it_matters": "该综述为导航与规划用世界模型技术线提供统一视角和评测梳理，预测加动作生成的思路可启发UAV主动目标搜索的前瞻规划与ObjectNav长程决策；但作为综述，其价值主要在于梳理脉络而非提出新方法。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-09-17T14:38:57.862728+00:00"
     },
     {
       "id": "2609.13845",
@@ -6904,64 +6949,16 @@
     }
   ],
   "briefing": {
-    "text": "今日七篇覆盖空中、室内、水下与降雪等场景，主线是语言、几何基础模型进入导航的感知-决策回路，单传感器方案逼近多传感器融合。首推VLM-MPPI：六路行为条件MPPI并行生成语义各异轨迹，VLM按指令异步选轨，20Hz重规划并经真机四旋翼验证，示范了VLM实时上机的可行路径；AdaGeoVLN把几何基础模型各深度中间表征分阶段接入策略，辅以有界KV记忆管理，单RGB流即在R2R-CE与RxR-CE取得强结果，值得VLN方向细读；SOL-SLAM仅凭前视声呐以逆合成高斯牛顿实现嵌入式实时SLAM，AUV实测精度比肩FLS+DVL+IMU融合。趋势：基础模型正被压进毫秒级控制回路，单模态方案持续蚕食多传感器栈。",
-    "added": 7,
-    "at": "2026-09-17T09:48:42.723729+00:00",
+    "text": "今日入库以World-Action Models for Robot Learning and Control: A Survey为主角：这篇综述把“预测未来世界状态”与“生成可执行动作”耦合为世界-动作模型（WAM）的统一框架，给出系统分类法，并梳理其在操控、导航与自动驾驶中的应用及相关数据集与评测基准。对具身导航研究者，这是目前少见的地图式文献，可用来定位自身课题在全局中的坐标，其中导航部分的基准与数据集盘点可直接服务实验设计，也适合作为新人入门的结构化阅读路径。趋势上看，世界模型正从纯预测走向预测与控制一体化，导航方法的上游范式或将被重写。",
+    "added": 1,
+    "at": "2026-09-17T14:39:19.849190+00:00",
     "new": [
       {
-        "t": "VLM-MPPI: Grounding Natural Language in Behaviorally Diverse Trajectories for Aerial Navigation",
-        "u": "https://arxiv.org/abs/2609.18451",
-        "r": 9,
-        "g": 7,
-        "s": "提出分层无人机导航框架：六个行为条件MPPI并行生成语义各异的可行动作模式，投影到FPV图像后由预训练VLM按语言指令异步选轨迹，20Hz重规划加PID跟踪，并在Isaac Sim与真实四旋翼上验证安全飞行。",
-        "c": ""
-      },
-      {
-        "t": "AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution",
-        "u": "https://arxiv.org/abs/2609.18520",
+        "t": "World-Action Models for Robot Learning and Control: A Survey",
+        "u": "https://arxiv.org/abs/2609.16074",
         "r": 8,
-        "g": 6,
-        "s": "AeroWeaver提出一种具身智能体框架，将LLM语义决策接入受治理的无人机技能，用角色条件化的局部智能体实现分布式集群协同，并以角色索引的经验在线精炼技能选择，实现免训练的自适应多机执行。",
-        "c": "https://github.com/Admire-ljb/AeroWeaver"
-      },
-      {
-        "t": "AdaGeoVLN: Selective Geometry Across Representation Depth and Navigation Time for Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.18789",
-        "r": 9,
-        "g": 8,
-        "s": "提出流式VLN方法AdaGeoVLN，将几何基础模型不同深度的中间表征耦合到策略各阶段，并按指令相关性、几何置信度与转移新颖性有界保留历史KV记忆，在R2R-CE与RxR-CE上以单RGB流取得强性能。",
-        "c": ""
-      },
-      {
-        "t": "Active perception for robotic harvesting: 3D reconstruction and localisation of tomatoes hidden within clusters in a Mediterranean greenhouse",
-        "u": "https://arxiv.org/abs/2609.18738",
-        "r": 7,
-        "g": 6,
-        "s": "该文面向温室番茄采摘，提出基于NBV主动规划的五阶段流水线（点云采集、SOR滤波、区域生长分割、DBSCAN遮挡恢复、位姿估计），在仿真中实现簇内遮挡果实的高精度三维重建与定位。",
-        "c": ""
-      },
-      {
-        "t": "SOL-SLAM: Inverse Compositional Gauss-Newton Direct Registration for Fast Sonar-Only Local SLAM",
-        "u": "https://arxiv.org/abs/2609.18893",
-        "r": 7,
         "g": 7,
-        "s": "提出仅用前视声呐的稠密直接配准局部SLAM，以逆合成高斯牛顿优化实现嵌入式平台实时运行，AUV实机试验中平移误差优于稀疏关键点基线，精度媲美FLS+DVL+IMU多传感器融合。",
-        "c": ""
-      },
-      {
-        "t": "ReRadar: Robust Radar Global Localization via Rotation-Equivariant Descriptor Learning",
-        "u": "https://arxiv.org/abs/2609.18092",
-        "r": 6,
-        "g": 7,
-        "s": "ReRadar利用可定向卷积提取旋转等变雷达特征，经群池化与NetVLAD聚合为旋转不变描述子，再结合检索与地标匹配求解3自由度位姿，实现毫米波雷达全局定位，在OORD、Mulran、Boreas降雪序列上取得高Recall@1。",
-        "c": ""
-      },
-      {
-        "t": "PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection",
-        "u": "https://arxiv.org/abs/2609.19143",
-        "r": 7,
-        "g": 7,
-        "s": "PANORAMA定义全景接地描述任务，构建人工标注的PanoCaps基准与gPQ指标，通过让VLM的短语表征条件化预训练分割模型生成候选掩码并学习选择，实现高质量像素级接地描述。",
+        "s": "本文是世界-动作模型（WAM）的机器人导向综述，将未来世界预测与可执行动作生成耦合，给出统一分类法，并总结其在操控、导航与自动驾驶中的应用及数据集与评测基准。",
         "c": ""
       }
     ]

@@ -1078,5 +1078,13 @@
     "reason": "属软体连续体/生长机器人硬件平台与开源系统工作，虽面向搜救但非UAV主动目标搜索，也未见自主导航决策或收录线内基础能力的方法贡献，仅应用场景擦边。",
     "rejected_at": "2026-09-17",
     "url": "https://arxiv.org/abs/2609.17781"
+  },
+  "2609.16309": {
+    "title": "Agentic Search Spaces for Tabular Machine Learning",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "将现成LLM智能体套用于表格机器学习HPO这一垂直领域，与空间、导航、机器人无关，属范围中明确排除的应用类工作。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.16309"
   }
 }
