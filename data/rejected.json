@@ -966,5 +966,117 @@
     "reason": "纯高维采样运动规划算法，仅验证于钢琴搬运基准与分子构象采样，无导航或真机机器人落地场景，非公认高影响力规划器系统，属范围边缘。",
     "rejected_at": "2026-09-16",
     "url": "https://arxiv.org/abs/2609.16810"
+  },
+  "2609.18326": {
+    "title": "UAVs Meet Embodied Intelligence: Bridging Human Intents and Flying Dynamics Via Harnessing Physical-Digital AI Agents",
+    "relevance": 9,
+    "rigor": 3,
+    "reason": "综述/立场性文章，无实验设置、基线对比或可复现验证，严谨度未达收录阈值。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18326"
+  },
+  "2609.17843": {
+    "title": "RoboVAD: A Large Cross-Domain Evaluation Benchmark for Anomaly Detection in Robotic Arm Manipulation Videos",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属于机械臂操作视频异常检测基准，不含导航决策成分，落入明确排除的机械臂操作范畴。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.17843"
+  },
+  "2609.18881": {
+    "title": "Body-Motion Control of a Simulated Aerial Swarm from a First-Person View",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心是上身动作遥操作无人机编队的人机交互用户研究，仅含仿真与人工操控，不涉及自主导航、感知或控制算法，属无人机术语擦边的范围外工作。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18881"
+  },
+  "2609.18690": {
+    "title": "RankGround: Efficient High-Resolution GUI Grounding via Lightweight Reranker-Guided Crop Selection",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "研究对象为数字GUI界面的屏幕级视觉定位，属将VLM套用于GUI自动化垂直场景，与空间、导航、机器人自主均无关，超出收录范围。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18690"
+  },
+  "2609.18153": {
+    "title": "Prior Evolution and Task Alignment for Aerial Grasping",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "空中抓取属无人机操纵类操作，核心是抓取机动轨迹优化与执行评价，不含导航决策成分，按收录范围应拒绝。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18153"
+  },
+  "2609.18813": {
+    "title": "Asymptotically Optimal Multi-Robot Task and Motion Planning",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "属多机械臂协同操作的经典任务与运动规划（非LLM/foundation模型路线），落入被排除的机械臂操作范畴，摘要未体现导航决策成分，与收录的空域/地面导航及规划智能体各技术线均不贴切。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18813"
+  },
+  "2609.18245": {
+    "title": "A3P5 NEMESIS Integrated Rover Design for Environmental Reconnaissance and Robotic Sampling with Reproducible Mobility Analysis and an External Data Machine Learning Calibration Benchmark",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "属于轮式rover样机机械设计与环境传感器标定的工程报告：机器人部分仅为静态设计校核、无导航决策或自主能力实测，ML基准是与空间/导航/机器人无关的垂直应用，属收录范围外。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18245"
+  },
+  "2609.18782": {
+    "title": "A Convergence Framework for Deep $V$-Learning: Error Propagation and Sharp Action-Gap Bounds",
+    "relevance": 2,
+    "rigor": 3,
+    "reason": "纯强化学习V-learning收敛性理论，无实验且不涉及导航、空间或具身要素，超出收录范围。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18782"
+  },
+  "2609.18548": {
+    "title": "HAP: A Hand-Driven Active Perception Framework for Egocentric Head Motion Prediction",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "论文本质为自我中心人体头部运动预测（人类行为建模），虽标题含'主动感知'并建模目标遮挡推理，但研究主体是人而非机器人自主系统，与收录的机器人主动感知、导航决策与具身智能体技术线无直接关联，属术语擦边。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18548"
+  },
+  "2609.19088": {
+    "title": "MUSE: Benchmarking Large Vision-Language Models on Multi-Modal Understanding in Situated Education",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该基准面向教育场景艺术图像理解的纯图文评测，属与空间、导航、机器人无关的垂直应用，按范围规则应拒绝收录。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.19088"
+  },
+  "2609.18844": {
+    "title": "ReFigBench: Benchmarking Scientific Figure Reconstruction as Editable PowerPoint Artifacts",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "任务为科学综述图重建可编辑PPT的文档智能体基准，属与空间、导航、机器人无关的垂直应用评测，仅智能体评测方法论（harness影响）与收录线边缘擦边。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18844"
+  },
+  "2609.18392": {
+    "title": "DistAL: Distance-based Advantage Learning for VLA Fine-Tuning",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "属于机械臂操作与VLA微调（advantage conditioning改进），无导航决策或空间智能成分，超出收录范围。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18392"
+  },
+  "2609.18908": {
+    "title": "How Much is a Human Right Worth? ECtHR-NPD: A Benchmark for Predicting Non-Pecuniary Damage Awards",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作是面向欧洲人权法院赔偿金额预测的法律领域大模型评测基准，与空间智能、导航、机器人均无关联，属研究范围中明确排除的金融法律类大模型垂直应用。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.18908"
+  },
+  "2609.17781": {
+    "title": "SPROUT: The Open-Source Soft Growing Robot for Search and Rescue",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "属软体连续体/生长机器人硬件平台与开源系统工作，虽面向搜救但非UAV主动目标搜索，也未见自主导航决策或收录线内基础能力的方法贡献，仅应用场景擦边。",
+    "rejected_at": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.17781"
   }
 }

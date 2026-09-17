@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:53:14.782606+00:00",
+  "updated_at": "2026-09-17T09:46:14.006679+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -653,6 +653,53 @@
         "instruction"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.18789",
+      "arxiv_id": "2609.18789",
+      "title": "AdaGeoVLN: Selective Geometry Across Representation Depth and Navigation Time for Vision-Language Navigation",
+      "authors": [
+        "Quan-Dung Pham",
+        "Anh Dao",
+        "Danh Vinh Le",
+        "Nguyen Viet Tri Pham",
+        "The-Anh Nguyen",
+        "Zhirui Dai",
+        "Yiyu Chen",
+        "Tuyen P. Le",
+        "Truong Nguyen",
+        "Quan Nguyen"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.18789",
+      "pdf_url": "https://arxiv.org/pdf/2609.18789",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出流式VLN方法AdaGeoVLN，将几何基础模型不同深度的中间表征耦合到策略各阶段，并按指令相关性、几何置信度与转移新颖性有界保留历史KV记忆，在R2R-CE与RxR-CE上以单RGB流取得强性能。",
+      "change_zh": "常见路线仅反复注入几何基础模型的末端特征，历史信息要么全存要么丢弃；本文改为按表征深度把早中晚期特征分别对接策略各阶段，并用有界预算的导航感知KV记忆选择性保留历史几何证据，兼顾性能与内存开销。",
+      "why_it_matters": "直接推进地面VLN对几何表征的利用方式；其『按深度选特征、按预算留历史』的思路对内存受限的UAV长时目标搜索与ObjectNav同样有价值——选择性保留几何证据可迁移至无人机搜救建图与目标导航的历史记忆设计。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "geometry",
+        "instruction",
+        "r2r",
+        "spatial understanding",
+        "vlm"
+      ],
+      "added_at": "2026-09-17T09:18:55.532678+00:00"
     },
     {
       "id": "2609.08164",
@@ -1594,6 +1641,47 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.18451",
+      "arxiv_id": "2609.18451",
+      "title": "VLM-MPPI: Grounding Natural Language in Behaviorally Diverse Trajectories for Aerial Navigation",
+      "authors": [
+        "Hanbing Zhang",
+        "Fangguo Zhao",
+        "Zerui Li",
+        "Xin Guan",
+        "Peng Cheng",
+        "Shuo Li"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.18451",
+      "pdf_url": "https://arxiv.org/pdf/2609.18451",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出分层无人机导航框架：六个行为条件MPPI并行生成语义各异的可行动作模式，投影到FPV图像后由预训练VLM按语言指令异步选轨迹，20Hz重规划加PID跟踪，并在Isaac Sim与真实四旋翼上验证安全飞行。",
+      "change_zh": "常见做法让VLM/LLM直接输出航点或端到端学策略，语义与动力学易脱节；本文改为由行为条件MPPI集成刻意生成多模态轨迹，VLM只在FPV叠加图上做视觉动作选择，异步解耦语义决策与20Hz实时控制。",
+      "why_it_matters": "为空域VLN提供了把语言语义落到动力学可行行为的可部署范式，其VLM异步选轨迹机制容忍大模型延迟，可迁移到UAV搜救侦察中按指令切换接近方式；候选投影式选择思路对地面ObjectNav亦有借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "uav",
+        "vlm"
+      ],
+      "added_at": "2026-09-17T09:14:23.267056+00:00"
+    },
+    {
       "id": "2609.17198",
       "arxiv_id": "2609.17198",
       "title": "TIO-Former: Ultra-Lightweight 6-Directional ToF-Inertial Odometry for Nano-UAVs via a Streaming Causal Transformer",
@@ -2501,6 +2589,50 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.18520",
+      "arxiv_id": "2609.18520",
+      "title": "AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution",
+      "authors": [
+        "Jiabin Lou",
+        "Yirong Yang",
+        "Haopeng Wang",
+        "Xuxin Lv",
+        "Xinyu Liu",
+        "Diyuan Hou",
+        "Xuehong Liu",
+        "Rongye Shi",
+        "Wenjun Wu"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.18520",
+      "pdf_url": "https://arxiv.org/pdf/2609.18520",
+      "code_url": "https://github.com/Admire-ljb/AeroWeaver",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AeroWeaver提出一种具身智能体框架，将LLM语义决策接入受治理的无人机技能，用角色条件化的局部智能体实现分布式集群协同，并以角色索引的经验在线精炼技能选择，实现免训练的自适应多机执行。",
+      "change_zh": "相比由中央LLM从全局上下文生成联合动作或依赖离线训练集群策略的常见做法，该工作改为技能层受治理的语义接地、按角色条件部署局部智能体做分布式执行，并用角色索引经验做奖励引导的在线技能选择更新，免训练地持续适应。",
+      "why_it_matters": "对UAV主动目标搜索与侦察直接相关：集群搜索需把语言级任务理解落到可执行技能并分布式协同，该框架提供技能接地、去中心化协同与免训练自适应机制，可迁移到多机搜救侦察；其经验驱动的技能选择思路对ObjectNav等目标条件导航的技能编排亦有借鉴。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "llm agent",
+        "uav"
+      ],
+      "added_at": "2026-09-17T09:18:03.680607+00:00"
     },
     {
       "id": "2609.17499",
@@ -3650,6 +3782,85 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.18893",
+      "arxiv_id": "2609.18893",
+      "title": "SOL-SLAM: Inverse Compositional Gauss-Newton Direct Registration for Fast Sonar-Only Local SLAM",
+      "authors": [
+        "Kalvik Jakkala",
+        "Jason O'Kane"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.18893",
+      "pdf_url": "https://arxiv.org/pdf/2609.18893",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出仅用前视声呐的稠密直接配准局部SLAM，以逆合成高斯牛顿优化实现嵌入式平台实时运行，AUV实机试验中平移误差优于稀疏关键点基线，精度媲美FLS+DVL+IMU多传感器融合。",
+      "change_zh": "常见声学SLAM依赖昂贵多模态传感器套件与稀疏特征提取，丢弃本已稀疏的声学回波信息；该工作改为对整幅强度扫描与递归更新的局部图做稠密直接配准，用逆合成高斯牛顿压低算力，且只求局部一致性而非全局精度，以单声呐替代多传感器载荷。",
+      "why_it_matters": "主要价值在状态估计与控制线：证明稠密直接配准可在资源受限嵌入式平台用单声呐达到多传感器融合里程计水平。其轻量化单传感器实时里程计思路可迁移至算力受限的UAV导航与目标搜索平台，但与ObjectNav无直接关联。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "odometry",
+        "slam"
+      ],
+      "added_at": "2026-09-17T09:22:28.050210+00:00"
+    },
+    {
+      "id": "2609.19143",
+      "arxiv_id": "2609.19143",
+      "title": "PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection",
+      "authors": [
+        "Sara Pieri",
+        "Evangelos Kazakos",
+        "Shizhe Chen",
+        "Josef Sivic",
+        "Cordelia Schmid"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.19143",
+      "pdf_url": "https://arxiv.org/pdf/2609.19143",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PANORAMA定义全景接地描述任务，构建人工标注的PanoCaps基准与gPQ指标，通过让VLM的短语表征条件化预训练分割模型生成候选掩码并学习选择，实现高质量像素级接地描述。",
+      "change_zh": "常见路线用端到端掩码生成或先检测后接地，易产出描述不全或掩码不准；本工作改将接地定义为从短语条件化掩码提议池中选取，并与描述生成联合训练，支持一个短语对应多实例，另增gPQ指标。",
+      "why_it_matters": "像素级实体接地是ObjectNav开放词汇目标发现与UAV目标搜索的感知基础；其掩码提议选择范式与gPQ指标为具身智能体的语言接地感知提供了可复用组件与评测参照。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "vlm"
+      ],
+      "added_at": "2026-09-17T09:36:31.112607+00:00"
     },
     {
       "id": "2609.17269",
@@ -5211,6 +5422,46 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.18738",
+      "arxiv_id": "2609.18738",
+      "title": "Active perception for robotic harvesting: 3D reconstruction and localisation of tomatoes hidden within clusters in a Mediterranean greenhouse",
+      "authors": [
+        "Fernando Cañadas-Aránega",
+        "Rowan Border",
+        "José C. Moreno",
+        "José L. Blanco-Claraco"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.18738",
+      "pdf_url": "https://arxiv.org/pdf/2609.18738",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文面向温室番茄采摘，提出基于NBV主动规划的五阶段流水线（点云采集、SOR滤波、区域生长分割、DBSCAN遮挡恢复、位姿估计），在仿真中实现簇内遮挡果实的高精度三维重建与定位。",
+      "change_zh": "相比固定传感器仅检测可见表面果实的常见做法，该工作以NBV主动移动视角采集点云，结合区域生长分割与DBSCAN聚类，恢复簇内被遮挡果实并输出完整位姿，把感知从被动可见扩展到主动遮挡恢复。",
+      "why_it_matters": "其主动改变视角以发现被遮挡目标的思路可迁移至UAV遮蔽目标主动搜索与ObjectNav杂乱场景目标发现；毫米级位姿精度与遮挡分级评测也为主动感知线提供参照，惟特化于农业场景。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "active perception",
+        "geometry",
+        "localization",
+        "next best view"
+      ],
+      "added_at": "2026-09-17T09:21:12.268692+00:00"
+    },
+    {
       "id": "2609.15169",
       "arxiv_id": "2609.15169",
       "title": "GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving",
@@ -5755,6 +6006,45 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.18092",
+      "arxiv_id": "2609.18092",
+      "title": "ReRadar: Robust Radar Global Localization via Rotation-Equivariant Descriptor Learning",
+      "authors": [
+        "Duc Manh Nguyen",
+        "Truong Giang Dao",
+        "Gia Nghiem Luong",
+        "Viet Trung Hoang",
+        "Anh Quang Nguyen"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.18092",
+      "pdf_url": "https://arxiv.org/pdf/2609.18092",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ReRadar利用可定向卷积提取旋转等变雷达特征，经群池化与NetVLAD聚合为旋转不变描述子，再结合检索与地标匹配求解3自由度位姿，实现毫米波雷达全局定位，在OORD、Mulran、Boreas降雪序列上取得高Recall@1。",
+      "change_zh": "相比常规雷达位置识别直接聚合特征、丢弃空间结构而旋转敏感的路线，本文显式以可定向CNN建模旋转等变性并构造旋转不变描述子，且不止于检索，还将描述子检索与地标位姿求解耦合为完整全局定位流程，并系统评估目标域适配与跨数据集两种设定。",
+      "why_it_matters": "毫米波雷达在雨雪尘雾等视觉退化环境下仍能稳定感知，全局定位与回环是长程自主（包括UAV搜救侦察、恶劣天气下的自主导航）的基础能力；旋转不变描述子提升了任意朝向下的检索鲁棒性，跨数据集泛化与降雪场景结果对落地有实际参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "evaluation",
+        "localization"
+      ],
+      "added_at": "2026-09-17T09:31:21.873185+00:00"
     },
     {
       "id": "2609.15820",
@@ -6614,24 +6904,64 @@
     }
   ],
   "briefing": {
-    "text": "今日入库的两篇工作分别从评测与方法两端推进长时程智能体研究。最值得读的是 LePlanner: An Iterative Amortized Controller For World Models：它在冻结世界模型上训练迭代摊销控制器，在导航、接触操作与连续控制任务中以远低于在线搜索的计算量匹配或超越 CEM、MPPI，直接回应了导航系统实时规划的算力瓶颈。其次是 MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding，其“代码智能体随轮次增多指令遵循快速退化”的发现与约束验证流程，可迁移到具身指令跟随的多轮评测设计。趋势观察：离线摊销控制正逐步替代在线搜索，成为世界模型走向实时部署的关键路径。",
-    "added": 2,
-    "at": "2026-09-16T19:53:42.259300+00:00",
+    "text": "今日七篇覆盖空中、室内、水下与降雪等场景，主线是语言、几何基础模型进入导航的感知-决策回路，单传感器方案逼近多传感器融合。首推VLM-MPPI：六路行为条件MPPI并行生成语义各异轨迹，VLM按指令异步选轨，20Hz重规划并经真机四旋翼验证，示范了VLM实时上机的可行路径；AdaGeoVLN把几何基础模型各深度中间表征分阶段接入策略，辅以有界KV记忆管理，单RGB流即在R2R-CE与RxR-CE取得强结果，值得VLN方向细读；SOL-SLAM仅凭前视声呐以逆合成高斯牛顿实现嵌入式实时SLAM，AUV实测精度比肩FLS+DVL+IMU融合。趋势：基础模型正被压进毫秒级控制回路，单模态方案持续蚕食多传感器栈。",
+    "added": 7,
+    "at": "2026-09-17T09:48:42.723729+00:00",
     "new": [
       {
-        "t": "MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
-        "u": "https://arxiv.org/abs/2609.14992",
-        "r": 6,
+        "t": "VLM-MPPI: Grounding Natural Language in Behaviorally Diverse Trajectories for Aerial Navigation",
+        "u": "https://arxiv.org/abs/2609.18451",
+        "r": 9,
         "g": 7,
-        "s": "MTAC-IFBench是多轮智能体编程的指令遵循基准，含6大类18小类约束、平均每实例91.33条约束，用检查表、脚本与裁判智能体验证，发现现有代码智能体随轮次增多性能快速退化。",
+        "s": "提出分层无人机导航框架：六个行为条件MPPI并行生成语义各异的可行动作模式，投影到FPV图像后由预训练VLM按语言指令异步选轨迹，20Hz重规划加PID跟踪，并在Isaac Sim与真实四旋翼上验证安全飞行。",
         "c": ""
       },
       {
-        "t": "LePlanner: An Iterative Amortized Controller For World Models",
-        "u": "https://arxiv.org/abs/2609.13845",
+        "t": "AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution",
+        "u": "https://arxiv.org/abs/2609.18520",
         "r": 8,
+        "g": 6,
+        "s": "AeroWeaver提出一种具身智能体框架，将LLM语义决策接入受治理的无人机技能，用角色条件化的局部智能体实现分布式集群协同，并以角色索引的经验在线精炼技能选择，实现免训练的自适应多机执行。",
+        "c": "https://github.com/Admire-ljb/AeroWeaver"
+      },
+      {
+        "t": "AdaGeoVLN: Selective Geometry Across Representation Depth and Navigation Time for Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.18789",
+        "r": 9,
+        "g": 8,
+        "s": "提出流式VLN方法AdaGeoVLN，将几何基础模型不同深度的中间表征耦合到策略各阶段，并按指令相关性、几何置信度与转移新颖性有界保留历史KV记忆，在R2R-CE与RxR-CE上以单RGB流取得强性能。",
+        "c": ""
+      },
+      {
+        "t": "Active perception for robotic harvesting: 3D reconstruction and localisation of tomatoes hidden within clusters in a Mediterranean greenhouse",
+        "u": "https://arxiv.org/abs/2609.18738",
+        "r": 7,
+        "g": 6,
+        "s": "该文面向温室番茄采摘，提出基于NBV主动规划的五阶段流水线（点云采集、SOR滤波、区域生长分割、DBSCAN遮挡恢复、位姿估计），在仿真中实现簇内遮挡果实的高精度三维重建与定位。",
+        "c": ""
+      },
+      {
+        "t": "SOL-SLAM: Inverse Compositional Gauss-Newton Direct Registration for Fast Sonar-Only Local SLAM",
+        "u": "https://arxiv.org/abs/2609.18893",
+        "r": 7,
         "g": 7,
-        "s": "LePlanner提出一种基于冻结世界模型的迭代摊销控制器，以到达并保持目标的目标函数训练，在导航、接触操作与连续控制环境中以远低于在线搜索的计算量匹配或超越CEM、MPPI等搜索规划器。",
+        "s": "提出仅用前视声呐的稠密直接配准局部SLAM，以逆合成高斯牛顿优化实现嵌入式平台实时运行，AUV实机试验中平移误差优于稀疏关键点基线，精度媲美FLS+DVL+IMU多传感器融合。",
+        "c": ""
+      },
+      {
+        "t": "ReRadar: Robust Radar Global Localization via Rotation-Equivariant Descriptor Learning",
+        "u": "https://arxiv.org/abs/2609.18092",
+        "r": 6,
+        "g": 7,
+        "s": "ReRadar利用可定向卷积提取旋转等变雷达特征，经群池化与NetVLAD聚合为旋转不变描述子，再结合检索与地标匹配求解3自由度位姿，实现毫米波雷达全局定位，在OORD、Mulran、Boreas降雪序列上取得高Recall@1。",
+        "c": ""
+      },
+      {
+        "t": "PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection",
+        "u": "https://arxiv.org/abs/2609.19143",
+        "r": 7,
+        "g": 7,
+        "s": "PANORAMA定义全景接地描述任务，构建人工标注的PanoCaps基准与gPQ指标，通过让VLM的短语表征条件化预训练分割模型生成候选掩码并学习选择，实现高质量像素级接地描述。",
         "c": ""
       }
     ]
