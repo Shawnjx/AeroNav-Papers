@@ -1142,5 +1142,13 @@
     "reason": "属通用AI分域评测的统计抽样与小区域估计方法，实验对象为通用基准与智能体对话流量，不涉及具身导航、空间智能或机器人，仅与「评测」术语擦边。",
     "rejected_at": "2026-09-18",
     "url": "https://arxiv.org/abs/2609.20758"
+  },
+  "2609.17992": {
+    "title": "The Operable Pareto Front: Distilling Offline Search into Run-Time Control for Multi-Objective UAV Edge-Computing Scheduling",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "核心问题是无人机边缘计算的关联与卸载调度（偏通信网络优化），仅轨迹子决策与机器人自主边缘相关，且为纯仿真验证，不属十一条技术线核心范围。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.17992"
   }
 }
