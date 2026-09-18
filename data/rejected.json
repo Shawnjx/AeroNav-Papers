@@ -1086,5 +1086,61 @@
     "reason": "将现成LLM智能体套用于表格机器学习HPO这一垂直领域，与空间、导航、机器人无关，属范围中明确排除的应用类工作。",
     "rejected_at": "2026-09-17",
     "url": "https://arxiv.org/abs/2609.16309"
+  },
+  "2609.20691": {
+    "title": "Custom PX4 firmware for autonomous hybrid aerial-marine missions",
+    "relevance": 5,
+    "rigor": 4,
+    "reason": "属于PX4固件的常规工程增量扩展，仅仿真案例演示、无基线对比与量化指标，非社区高影响力系统工作，与UAV目标搜索、VLN等核心问题关联弱。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.20691"
+  },
+  "2609.20582": {
+    "title": "V2-STRep: VLM-Grounded Structured Task Representations for Reusable Robot Skills Acquired from Generated Videos",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "核心是机械臂操作技能获取、抓取位姿重建与臂端轨迹优化，属机械臂操作与VLA控制范畴，不含导航决策成分，按范围拒绝。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.20582"
+  },
+  "2609.19688": {
+    "title": "LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该文属于语言驱动的物理仿真角色全身物体交互（角色动画/操作类控制），不含导航决策或空间感知成分，超出收录技术线。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.19688"
+  },
+  "2609.20407": {
+    "title": "Resilient Motion Planning for Free-Flying Space Robots under Actuator Failures",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属太空自由飞行机器人在微重力环境下的执行器失效容错运动规划，是空间机器人专用问题，与收录聚焦的空域/地面导航自主及具身智能仅存在运动规划方法论上的边缘交集，且摘要未显示其为社区公认的高影响力系统工作。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.20407"
+  },
+  "2609.20078": {
+    "title": "FlipToSee: A Probabilistic Stable Placement Prior for Active Visual Exploration via Regrasping",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "该工作本质是桌面物体的翻转重抓与稳定放置先验学习，属机械臂操作范畴且无导航决策成分，仅借'主动视觉探索'术语与收录线擦边。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.20078"
+  },
+  "2609.20818": {
+    "title": "SplashSplat: Reconstructing Splashing Liquids from Real-World Multi-View Videos",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "被动多视角视频的离线流体动态重建，无主动感知、在线建图或任何导航与机器人自主成分，仅与'重建'术语擦边，属范围外。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.20818"
+  },
+  "2609.20758": {
+    "title": "Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "属通用AI分域评测的统计抽样与小区域估计方法，实验对象为通用基准与智能体对话流量，不涉及具身导航、空间智能或机器人，仅与「评测」术语擦边。",
+    "rejected_at": "2026-09-18",
+    "url": "https://arxiv.org/abs/2609.20758"
   }
 }

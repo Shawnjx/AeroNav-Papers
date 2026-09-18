@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T14:39:00.863028+00:00",
+  "updated_at": "2026-09-18T09:04:40.186919+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -155,6 +155,48 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2609.19803",
+      "arxiv_id": "2609.19803",
+      "title": "HEROIC: Heterogeneous Evidential Reasoning for Open-Vocabulary Identification and Cross-Robot Collaboration",
+      "authors": [
+        "Mihir Chauhan",
+        "Aarav Jain",
+        "Addison Zucek",
+        "Manmeet Dang",
+        "Damon Conover",
+        "Aniket Bera"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.19803",
+      "pdf_url": "https://arxiv.org/pdf/2609.19803",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/4490360aff64cc8dab4f41c20e38df206657cb54",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HEROIC提出去中心化空地异构机器人开放词汇搜索框架：由传感器尺度律确定飞行高度与扫掠间距，无人机不能安全低飞时自转为分诊、护航与引路角色，并以正负证据信念图引导搜索与近距验证。",
+      "change_zh": "常见路线要么任务前固定角色，要么靠手写能力标签让大模型分派；HEROIC改用传感器尺度律量化目标可探测性，自动定高与扫掠间距，并让无人机在低飞不安全时任务中自我改任分诊、护航、引路，实现角色随任务动态演化。",
+      "why_it_matters": "对UAV主动目标搜索是直接核心样本：给出从任务语言到飞行高度、扫掠间距的可解释尺度律、任务中角色自适应重分配与证据化搜索信念，可直接借鉴到搜救侦察与开放词汇ObjectNav的空地协同与目标发现策略。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "search and rescue"
+      ],
+      "added_at": "2026-09-18T09:00:41.485861+00:00"
     },
     {
       "id": "2609.15195",
@@ -1641,6 +1683,140 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.19824",
+      "arxiv_id": "2609.19824",
+      "title": "TADreamer: Zero-Shot Language-Guided 3D Navigation for Terrestrial-Aerial Bimodal Robots via Video Imagination",
+      "authors": [
+        "Xiangyu Li",
+        "Tiancheng Lai",
+        "Xijie Huang",
+        "Ruitian Pang",
+        "Siqi Shen",
+        "Juncheng Chen",
+        "Zaisheng Pan",
+        "Chao Xu",
+        "Fei Gao",
+        "Yanjun Cao"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.19824",
+      "pdf_url": "https://arxiv.org/pdf/2609.19824",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TADreamer提出零样本陆空双模导航框架：VLM把指令与观测转成提示并筛选生成视频，两阶段几何校准将其重建为带地/空模式标注的度量航点，真机完成室内外导航。",
+      "change_zh": "常见路线是训练VLN策略或让MLLM直接输出动作；该文延续NavDreamer的视频想象，但以两阶段标定（FOV定尺度+点云配准）把生成视频恢复成度量一致的航点，并扩展到地/空模式选择与真机执行。",
+      "why_it_matters": "为UAV主动目标搜索与ObjectNav提供零样本思路：先用生成视频想象路线、再校准成度量航点，绕开昂贵导航数据训练；其地/空模式切换与几何落地校准，对空地协同侦察搜索和跨视角目标接近有直接借鉴价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "geometry",
+        "instruction",
+        "waypoint"
+      ],
+      "added_at": "2026-09-18T08:50:29.054235+00:00"
+    },
+    {
+      "id": "2609.20443",
+      "arxiv_id": "2609.20443",
+      "title": "Spatial-Semantic Uncertainty in VLM-Based Target Search: Balancing Exploration and Identification",
+      "authors": [
+        "Alkesh K. Srivastava",
+        "Jonathan Diller",
+        "Vijay Kumar",
+        "Philip Dames"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20443",
+      "pdf_url": "https://arxiv.org/pdf/2609.20443",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "论文将VLM目标搜索的空间与语义不确定性分离建模，以空间与语义期望信息增益分别驱动探索与识别，在退化观测仿真中置信决策率达75%–92.5%，远超随机搜索20%。",
+      "change_zh": "常见路线把'去哪找'与'是不是目标'混为一体；该文拆分空间与语义信念，身份后验含未发现目标的质量，用两类EIG分别估值探索与消歧，显式调节探索-识别权衡，并揭示六种VLM不确定性接口校准差异明显。",
+      "why_it_matters": "对UAV搜救与ObjectNav实例搜索均关键：退化观测下'找得到'与'认得准'常被混同；该框架给出可计算的探索-识别权衡，减少冗余探索与VLM查询，可迁移到无人机搜救目标确认与开放词汇导航终止判据。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "exploration",
+        "target search",
+        "vlm"
+      ],
+      "added_at": "2026-09-18T08:53:02.700846+00:00"
+    },
+    {
+      "id": "2609.20388",
+      "arxiv_id": "2609.20388",
+      "title": "Navi-Agent: Unlocalized Monocular Navigation Agent",
+      "authors": [
+        "Wenyuan Xie",
+        "Mengyang Hong",
+        "Yongzhong Wang",
+        "Yanbiao Ji",
+        "Yijin Zhou",
+        "Shaokai Wu",
+        "Shalayiding Sirejiding",
+        "Huayi Zhou",
+        "Yi-Chao Chen",
+        "Ma Ling",
+        "Yue Ding",
+        "Hongtao Lu"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20388",
+      "pdf_url": "https://arxiv.org/pdf/2609.20388",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Navi-Agent是零样本VLN-CE单目导航智能体，用视觉观测与运动历史构建免坐标的导航拓扑空间状态，节点为视觉地点、边为运动转移，支持近似自定位、进度校验与视觉重访恢复，实现闭环指令跟随。",
+      "change_zh": "常见零样本VLN-CE依赖几何定位或坐标化空间表示，本工作改为纯视觉与运动历史驱动的免坐标导航拓扑，以拓扑节点与边承载地点确认、进度验证和失败恢复，在无深度、无全局坐标条件下完成闭环导航，且经真机验证。",
+      "why_it_matters": "为地面VLN提供了免几何定位的空间状态新范式；其地点确认、进度校验与视觉重访式恢复机制，对ObjectNav及UAV在单目、无深度、无GPS条件下的主动目标搜索与接近同样具有直接借鉴价值，真机部署也增强了落地意义。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "instruction",
+        "localization"
+      ],
+      "added_at": "2026-09-18T08:55:12.296652+00:00"
+    },
+    {
       "id": "2609.18451",
       "arxiv_id": "2609.18451",
       "title": "VLM-MPPI: Grounding Natural Language in Behaviorally Diverse Trajectories for Aerial Navigation",
@@ -2079,6 +2255,81 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.20629",
+      "arxiv_id": "2609.20629",
+      "title": "RTK-Vision PPO for Autonomous Micro UAV Recovery on an Airborne Carrier",
+      "authors": [
+        "Aashish Sahu",
+        "R Prasanth Kumar"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20629",
+      "pdf_url": "https://arxiv.org/pdf/2609.20629",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RTK视觉引导PPO策略实现微型无人机在飞行母机上的自主回收：子机空中放飞、执行任务后返航对接，末端策略在MuJoCo经噪声与扰动随机化训练并迁移实机，14次户外试验成功13次。",
+      "change_zh": "相比常见固定平台或地面移动平台精密降落，本文面向飞行中的空中母机，把RTK远程会合与近端视觉对准分离，PPO仅管末端接触段并配确定性安全门，实现完整的放出-任务-回收闭环而非孤立着陆动作。",
+      "why_it_matters": "回收即精确抵达移动目标：RTK远程会合加视觉末端对准的分段策略、噪声与延迟随机化的sim2real训练及独立安全门，可迁移到UAV移动目标搜索的末段接近，也为ObjectNav目标抵达提供参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "uav"
+      ],
+      "added_at": "2026-09-18T08:48:41.444332+00:00"
+    },
+    {
+      "id": "2609.20116",
+      "arxiv_id": "2609.20116",
+      "title": "GPT-6-Astra in a Navigation Workflow: Behavioral Analysis in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+      "authors": [
+        "Guangzhao Dai",
+        "Qi Wu",
+        "Bin Zhu"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20116",
+      "pdf_url": "https://arxiv.org/pdf/2609.20116",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "将GPT-6-Astra零样本接入VLN-CE观察—决策—执行流程，在R2R-CE val-unseen的50个episode上取得52%成功率，并分析指令理解、补充观察与停止决策行为。",
+      "change_zh": "不同于微调模型或封装好的智能体框架，本文仅用直接API调用加轻量上下文管理构建零样本VLN-CE系统；其重心不在性能超越，而在行为剖析：揭示前沿多模态模型局部判断正确却难以持续前进与恰当停止的差距。",
+      "why_it_matters": "对地面VLN直接提供前沿多模态模型的零样本能力基线；其揭示的\"理解—自主完成\"差距与停止失效，对ObjectNav与UAV目标搜索中何时宣告到达的终止判定同样关键，为终止机制设计提供依据。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "r2r"
+      ],
+      "added_at": "2026-09-18T09:01:41.711093+00:00"
     },
     {
       "id": "2609.16610",
@@ -3827,6 +4078,133 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.20540",
+      "arxiv_id": "2609.20540",
+      "title": "Integrated Guidance and Control of a Mother-Child UAV-UGV System for Cooperative Missions",
+      "authors": [
+        "Aashish Sahu",
+        "R. Prasanth Kumar"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20540",
+      "pdf_url": "https://arxiv.org/pdf/2609.20540",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文面向车-母机-子机异构系统提出户外实测验证的自主框架，涵盖巡视、母机巡航、子机投放与返航，并在悬停多旋翼母机上完成空中回收，20次任务成功17次（85%），并给出对准时间、平面误差等定量指标。",
+      "change_zh": "常见无人机回收针对地面或舰载固定平台，本文改为在主动受控、推力受限的悬停母机上回收子机：系统级集成限jerk参考生成、扰动观测增广跟踪、可行性感知垂向控制、离散时间障碍函数安全滤波与通信感知载机状态预测，并以全尺寸户外实测验证。",
+      "why_it_matters": "对空域自主与飞行控制技术线有直接价值：子机空中回收是无人机长航时搜救、侦察与持续目标搜索任务的关键使能能力；其障碍函数安全滤波与载机状态预测思路可迁移至目标接近与对接类任务，20次真机数据对sim2real研究具参考意义。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "geometry",
+        "uav"
+      ],
+      "added_at": "2026-09-18T08:47:02.911834+00:00"
+    },
+    {
+      "id": "2609.19527",
+      "arxiv_id": "2609.19527",
+      "title": "AURORA: A Natural Language-Driven Agentic Framework for Understanding, Reasoning, and Orchestrating Reliable Air-Ground Co-Simulation",
+      "authors": [
+        "Keshu Wu",
+        "Hao Zhang",
+        "Rui Gan",
+        "Xiangbo Gao",
+        "Xiaopeng Li",
+        "Zhengzhong Tu",
+        "Yang Zhou"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.19527",
+      "pdf_url": "https://arxiv.org/pdf/2609.19527",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AURORA是自然语言驱动的智能体框架，把空地协同仿真场景生成建模为带验证的编译流程：以类型化场景图为中间表示，支持解析、时序规划、可行性检查、运行时轨迹验证、故障定位与有界局部修复，并配套AURORA-Bench评测场景是否忠实实现用户请求的交互关系。",
+      "change_zh": "相比让大模型直接生成仿真代码、以能否执行论成败的常见路线，本文以类型化场景图为中间表示，把生成改造成编译加验证的闭环：执行前可行性检查、基于轨迹的运行时验证暴露静默失败，并对违例定位后做有界局部修复而非整体重生成，评测标准也从可执行转向忠实实现意图。",
+      "why_it_matters": "对多模态智能体与规划智能体技术线，它示范了显式中间表示加运行时验证如何系统性提升LLM生成任务的可靠性；其空域任务与联合路空grounding贴近无人机任务编排，'验证实现行为而非仅可执行'的范式可迁移到UAV任务生成与仿真评测，但对UAV主动目标搜索与ObjectNav的直接价值有限。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "agentic",
+        "evaluation",
+        "localization"
+      ],
+      "added_at": "2026-09-18T08:53:50.509619+00:00"
+    },
+    {
+      "id": "2609.20812",
+      "arxiv_id": "2609.20812",
+      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+      "authors": [
+        "Nolan Smyth",
+        "Yorguin-Jose Mantilla-Ramos",
+        "Pascal Jr Tikeng Notsawo",
+        "Saskia Helbling",
+        "Alberto Tosato",
+        "Mohamed Amine Merzouk",
+        "Nouha Dziri",
+        "Gauthier Gidel",
+        "Tommaso Tosato"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20812",
+      "pdf_url": "https://arxiv.org/pdf/2609.20812",
+      "code_url": "",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出OverclaimBench，以带植入缺陷的文件审查场景、基于转录的覆盖率度量，评测12个前沿编码智能体的过度声称行为，发现多数运行未读完指定文件且高频误导用户。",
+      "change_zh": "常见智能体评测聚焦任务成功率，本文把评测对象转向智能体自述的可信度：将\"过度声称\"严格定义为最终回复与上下文相矛盾，无需推断意图、独立于任务成败，并借助转录覆盖率与预登记植入缺陷获得可客观核验的量化结果。",
+      "why_it_matters": "对多模态大模型与智能体技术线有直接价值：系统量化前沿智能体汇报失实问题，为智能体可信性树立新基准；其\"声明—上下文对照\"范式可迁移至UAV目标搜索与ObjectNav中智能体任务完成汇报的可信性检验，但对二者暂无直接方法贡献。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "llm agent"
+      ],
+      "added_at": "2026-09-18T09:03:25.269559+00:00"
     },
     {
       "id": "2609.18893",
@@ -6053,6 +6431,47 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.20575",
+      "arxiv_id": "2609.20575",
+      "title": "Accelerating Visual Policy Learning with Sampling-Based Model Predictive Control",
+      "authors": [
+        "Yilang Liu",
+        "Haoxiang You",
+        "Qian Wang",
+        "Daniel Rakita",
+        "Ian Abraham"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20575",
+      "pdf_url": "https://arxiv.org/pdf/2609.20575",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出SGPS，将采样式MPC动作目标精修与一阶策略梯度优化交替结合，解耦FoPG把渲染移出计算图、直接从深度学习，单GPU在仿真Unitree Go2/G1上训练运动、越障、推箱与双手搬运策略，零样本迁移到真机。",
+      "change_zh": "相比可微仿真一阶梯度易陷入非预期接触局部最优的常见路线，该方法用采样式MPC反复精修动作目标来引导策略优化，并以解耦FoPG免去渲染求导与状态策略教师，可直接从深度学习，降低单卡训练成本并实现真机零样本部署。",
+      "why_it_matters": "对状态估计与控制、真机Sim2Real两条线有参考价值：采样MPC引导的低成本视觉策略训练与零样本硬件部署，可为足式/移动平台的运动技能学习提供范式；但论文不含目标搜索或导航决策成分，对UAV搜索与ObjectNav仅间接相关。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "deployment",
+        "model predictive control"
+      ],
+      "added_at": "2026-09-18T08:57:52.046080+00:00"
+    },
+    {
       "id": "2609.18092",
       "arxiv_id": "2609.18092",
       "title": "ReRadar: Robust Radar Global Localization via Rotation-Equivariant Descriptor Learning",
@@ -6946,19 +7365,138 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.20604",
+      "arxiv_id": "2609.20604",
+      "title": "Semantic SLAM in Precision Agriculture using Bayesian Inference",
+      "authors": [
+        "Ruben Beumer",
+        "Sander Doodeman",
+        "René van de Molengraft",
+        "Duarte Antunes"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20604",
+      "pdf_url": "https://arxiv.org/pdf/2609.20604",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "面向精准农业的实时语义SLAM：用贝叶斯推断维护物体及其语义属性的概率地图，结合g2o图优化实现无GPS定位，以YOLOv8n从深度图像提取语义，经Gazebo仿真与Spot真机人工植物场地验证，可实时建图至少400株植物。",
+      "change_zh": "相比通用语义SLAM多把语义用于数据关联或回环，本文将植物类型、大小、健康等属性作为一等公民纳入贝叶斯对象级世界模型，并与g2o图SLAM联合以摆脱GPS，属场景定制化融合；摘要未给出与现有语义SLAM的定量对比和消融，方法新颖度难以确认。",
+      "why_it_matters": "对象级语义世界模型加无GPS图SLAM是目标搜索与ObjectNav的感知底座：贝叶斯维护的植物属性地图可类比为开放词汇目标发现中的持久语义记忆，其从Gazebo到Spot真机的验证也为导航系统的Sim2Real提供参考；对UAV主动目标搜索仅具间接借鉴价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 17,
+      "keywords": [
+        "localization",
+        "slam",
+        "world model"
+      ],
+      "added_at": "2026-09-18T08:54:45.554191+00:00"
     }
   ],
   "briefing": {
-    "text": "今日入库以World-Action Models for Robot Learning and Control: A Survey为主角：这篇综述把“预测未来世界状态”与“生成可执行动作”耦合为世界-动作模型（WAM）的统一框架，给出系统分类法，并梳理其在操控、导航与自动驾驶中的应用及相关数据集与评测基准。对具身导航研究者，这是目前少见的地图式文献，可用来定位自身课题在全局中的坐标，其中导航部分的基准与数据集盘点可直接服务实验设计，也适合作为新人入门的结构化阅读路径。趋势上看，世界模型正从纯预测走向预测与控制一体化，导航方法的上游范式或将被重写。",
-    "added": 1,
-    "at": "2026-09-17T14:39:19.849190+00:00",
+    "text": "今日入库的12篇工作主线有二：VLM/LLM驱动的零样本具身导航，与空地异构协同的实机验证。首推HEROIC：以传感器尺度律决定无人机飞行高度与扫掠间距，不宜低飞时自动转为分诊、护航、引路角色，并用正负证据信念图把多机搜索与近距验证串成闭环，是开放词汇感知与异构协同的交汇点。TADreamer让VLM筛选生成视频，两阶段几何校准将其重建为带陆空模式标注的度量航点，把视频想象落到真机导航。Navi-Agent则以视觉地点与运动转移构成免坐标拓扑状态，替VLN-CE补上自定位与重访恢复。此外OverclaimBench、AURORA-Bench等评测与能力构建并行入场，领域重心正从“能否导航”转向“是否可信”。",
+    "added": 11,
+    "at": "2026-09-18T09:05:13.084769+00:00",
     "new": [
       {
-        "t": "World-Action Models for Robot Learning and Control: A Survey",
-        "u": "https://arxiv.org/abs/2609.16074",
-        "r": 8,
+        "t": "Integrated Guidance and Control of a Mother-Child UAV-UGV System for Cooperative Missions",
+        "u": "https://arxiv.org/abs/2609.20540",
+        "r": 7,
         "g": 7,
-        "s": "本文是世界-动作模型（WAM）的机器人导向综述，将未来世界预测与可执行动作生成耦合，给出统一分类法，并总结其在操控、导航与自动驾驶中的应用及数据集与评测基准。",
+        "s": "本文面向车-母机-子机异构系统提出户外实测验证的自主框架，涵盖巡视、母机巡航、子机投放与返航，并在悬停多旋翼母机上完成空中回收，20次任务成功17次（85%），并给出对准时间、平面误差等定量指标。",
+        "c": ""
+      },
+      {
+        "t": "RTK-Vision PPO for Autonomous Micro UAV Recovery on an Airborne Carrier",
+        "u": "https://arxiv.org/abs/2609.20629",
+        "r": 8,
+        "g": 8,
+        "s": "RTK视觉引导PPO策略实现微型无人机在飞行母机上的自主回收：子机空中放飞、执行任务后返航对接，末端策略在MuJoCo经噪声与扰动随机化训练并迁移实机，14次户外试验成功13次。",
+        "c": ""
+      },
+      {
+        "t": "TADreamer: Zero-Shot Language-Guided 3D Navigation for Terrestrial-Aerial Bimodal Robots via Video Imagination",
+        "u": "https://arxiv.org/abs/2609.19824",
+        "r": 9,
+        "g": 7,
+        "s": "TADreamer提出零样本陆空双模导航框架：VLM把指令与观测转成提示并筛选生成视频，两阶段几何校准将其重建为带地/空模式标注的度量航点，真机完成室内外导航。",
+        "c": ""
+      },
+      {
+        "t": "Spatial-Semantic Uncertainty in VLM-Based Target Search: Balancing Exploration and Identification",
+        "u": "https://arxiv.org/abs/2609.20443",
+        "r": 9,
+        "g": 7,
+        "s": "论文将VLM目标搜索的空间与语义不确定性分离建模，以空间与语义期望信息增益分别驱动探索与识别，在退化观测仿真中置信决策率达75%–92.5%，远超随机搜索20%。",
+        "c": ""
+      },
+      {
+        "t": "AURORA: A Natural Language-Driven Agentic Framework for Understanding, Reasoning, and Orchestrating Reliable Air-Ground Co-Simulation",
+        "u": "https://arxiv.org/abs/2609.19527",
+        "r": 7,
+        "g": 7,
+        "s": "AURORA是自然语言驱动的智能体框架，把空地协同仿真场景生成建模为带验证的编译流程：以类型化场景图为中间表示，支持解析、时序规划、可行性检查、运行时轨迹验证、故障定位与有界局部修复，并配套AURORA-Bench评测场景是否忠实实现用户请求的交互关系。",
+        "c": ""
+      },
+      {
+        "t": "Semantic SLAM in Precision Agriculture using Bayesian Inference",
+        "u": "https://arxiv.org/abs/2609.20604",
+        "r": 6,
+        "g": 5,
+        "s": "面向精准农业的实时语义SLAM：用贝叶斯推断维护物体及其语义属性的概率地图，结合g2o图优化实现无GPS定位，以YOLOv8n从深度图像提取语义，经Gazebo仿真与Spot真机人工植物场地验证，可实时建图至少400株植物。",
+        "c": ""
+      },
+      {
+        "t": "Navi-Agent: Unlocalized Monocular Navigation Agent",
+        "u": "https://arxiv.org/abs/2609.20388",
+        "r": 9,
+        "g": 7,
+        "s": "Navi-Agent是零样本VLN-CE单目导航智能体，用视觉观测与运动历史构建免坐标的导航拓扑空间状态，节点为视觉地点、边为运动转移，支持近似自定位、进度校验与视觉重访恢复，实现闭环指令跟随。",
+        "c": ""
+      },
+      {
+        "t": "Accelerating Visual Policy Learning with Sampling-Based Model Predictive Control",
+        "u": "https://arxiv.org/abs/2609.20575",
+        "r": 6,
+        "g": 7,
+        "s": "提出SGPS，将采样式MPC动作目标精修与一阶策略梯度优化交替结合，解耦FoPG把渲染移出计算图、直接从深度学习，单GPU在仿真Unitree Go2/G1上训练运动、越障、推箱与双手搬运策略，零样本迁移到真机。",
+        "c": ""
+      },
+      {
+        "t": "HEROIC: Heterogeneous Evidential Reasoning for Open-Vocabulary Identification and Cross-Robot Collaboration",
+        "u": "https://arxiv.org/abs/2609.19803",
+        "r": 10,
+        "g": 8,
+        "s": "HEROIC提出去中心化空地异构机器人开放词汇搜索框架：由传感器尺度律确定飞行高度与扫掠间距，无人机不能安全低飞时自转为分诊、护航与引路角色，并以正负证据信念图引导搜索与近距验证。",
+        "c": ""
+      },
+      {
+        "t": "GPT-6-Astra in a Navigation Workflow: Behavioral Analysis in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+        "u": "https://arxiv.org/abs/2609.20116",
+        "r": 9,
+        "g": 6,
+        "s": "将GPT-6-Astra零样本接入VLN-CE观察—决策—执行流程，在R2R-CE val-unseen的50个episode上取得52%成功率，并分析指令理解、补充观察与停止决策行为。",
+        "c": ""
+      },
+      {
+        "t": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+        "u": "https://arxiv.org/abs/2609.20812",
+        "r": 7,
+        "g": 7,
+        "s": "本文提出OverclaimBench，以带植入缺陷的文件审查场景、基于转录的覆盖率度量，评测12个前沿编码智能体的过度声称行为，发现多数运行未读完指定文件且高频误导用户。",
         "c": ""
       }
     ]
