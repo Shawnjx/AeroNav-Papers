@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T08:10:16.482978+00:00",
+  "updated_at": "2026-09-18T14:06:56.932809+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -4296,6 +4296,46 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-03T19:57:56Z"
+    },
+    {
+      "id": "https://openalex.org/W4401023556",
+      "arxiv_id": "",
+      "title": "Large Language Model Based Multi-agents: A Survey of Progress and Challenges",
+      "authors": [
+        "Taicheng Guo",
+        "Xiuying Chen",
+        "Yaqi Wang",
+        "Ruidi Chang",
+        "Shichao Pei",
+        "Nitesh V. Chawla",
+        "Olaf Wiest",
+        "Xiangliang Zhang"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 257,
+      "url": "https://doi.org/10.24963/ijcai.2024/890",
+      "pdf_url": "https://www.ijcai.org/proceedings/2024/0890.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文综述基于大语言模型的多智能体系统进展，梳理其应用领域与仿真设定、智能体画像构建与通信机制、能力培养方法，并总结常用数据集与基准，附开源仓库持续跟踪研究动态。",
+      "change_zh": "作为综述，本文并非方法创新，而是系统性梳理从单智能体到多智能体演进的研究图景，从领域设定、画像与通信、技能成长三个维度建立分析框架，并汇总数据集与基准，为该方向提供统一参照。",
+      "why_it_matters": "多智能体协同是LLM智能体线的核心议题；该综述为多无人机协同目标搜索的任务分配与通信机制提供概念框架与基准索引，其画像与通信方法可迁移至UAV集群搜救及ObjectNav分层规划等多智能体协调研究。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agent planning",
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-18T14:06:56.932809+00:00"
     },
     {
       "id": "https://openalex.org/W4404782209",
@@ -8768,29 +8808,19 @@
       "excluded_at": "2026-09-14"
     }
   },
-  "last_citation_refresh": "2026-09-18T08:10:16.482978+00:00",
   "briefing": {
-    "text": "本轮两篇高被引工作主线一致：为多模态大模型补上感知短板，分别从分辨率与空间两个维度切入。Monkey把高分辨率图像切块并配独立适配器，结合多级描述数据，显著提升细粒度场景理解，是高分辨率VLM路线的代表作；SpatialBot融合RGB与深度图，构建SpatialQA数据集与SpatialBench基准，验证了深度信息对空间理解和具身任务的实际价值，且代码数据全开源、便于复现。趋势来看，具身导航正倒逼VLM同时做到看得清与量得准，高分辨率与3D空间感知将逐步成为标配。",
-    "added": 2,
-    "at": "2026-09-16T08:29:40.746326+00:00",
+    "text": "编辑注：本轮清单实际只提供了一篇条目，无法按惯例选出2-3篇荐读，速览围绕该篇展开。 本轮仅入库一篇，主线是以大语言模型为底座的多智能体系统。Large Language Model Based Multi-agents: A Survey of Progress and Challenges值得优先精读：它将该方向拆为智能体画像、通信机制与能力培养三个模块，并汇总常用数据集、基准与持续更新的开源仓库，可作入门路线图。其仿真设定与多智能体协作部分，正对应具身导航中的环境交互与集群探索问题，便于寻找结合点。趋势上，具身任务正从单体走向LLM驱动的多智能体协同，多机探索与智能体间通信值得提前布局。",
+    "added": 1,
+    "at": "2026-09-18T14:06:56.932809+00:00",
     "new": [
       {
-        "t": "Monkey: Image Resolution and Text Label are Important Things for Large Multi-Modal Models",
-        "u": "https://doi.org/10.1109/cvpr52733.2024.02527",
+        "t": "Large Language Model Based Multi-agents: A Survey of Progress and Challenges",
+        "u": "https://doi.org/10.24963/ijcai.2024/890",
         "r": 7,
-        "g": 8,
-        "s": "Monkey将高分辨率图像切分为与视觉编码器预训练尺度一致的块并各配独立适配器，结合多级描述生成的数据构建方法，提升了多模态大模型在高分辨率输入与细粒度场景理解上的能力。",
-        "c": "https://github.com/Yuliang-Liu/Monkey",
-        "cit": 117
-      },
-      {
-        "t": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
-        "u": "https://doi.org/10.1109/icra55743.2025.11128671",
-        "r": 9,
-        "g": 8,
-        "s": "提出融合RGB与深度图像的视觉语言模型SpatialBot，构建多层级深度问答数据集SpatialQA/E与评测基准SpatialBench，在空间理解、通用VLM基准及具身任务上均取得显著提升，模型代码数据全部开源。",
-        "c": "https://github.com/BAAI-DCAI/SpatialBot",
-        "cit": 41
+        "g": 6,
+        "s": "本文综述基于大语言模型的多智能体系统进展，梳理其应用领域与仿真设定、智能体画像构建与通信机制、能力培养方法，并总结常用数据集与基准，附开源仓库持续跟踪研究动态。",
+        "c": "",
+        "cit": 257
       }
     ]
   }
