@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T09:04:40.186919+00:00",
+  "updated_at": "2026-09-19T08:33:49.677216+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2840,6 +2840,50 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.19659",
+      "arxiv_id": "2609.19659",
+      "title": "EmbodiedMind: Adaptive Data Curation and Prefix-Tree Reinforcement Learning for Efficient Embodied Intelligence",
+      "authors": [
+        "Feifan Wang",
+        "Z Zhang",
+        "Yu Zhang",
+        "Lingfeng Wang",
+        "Yurui Zhu",
+        "Jin Deng",
+        "Mingliang Zhang",
+        "Zhengguang Gao",
+        "YongCheng Wang",
+        "Jin Xu",
+        "Ri Yang"
+      ],
+      "published": "2026-09-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.19659",
+      "pdf_url": "https://arxiv.org/pdf/2609.19659",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出具身基础模型高效训练范式EmbodiedMind：拒绝采样微调筛选低信息样本，IR-GRPO按难度分层队列平衡任务梯度，Trie-GRPO以动作前缀树做步级优势估计解决长程信用分配，18个基准平均70.02%。",
+      "change_zh": "常见路线是在海量具身数据上直接SFT加轨迹级RL，全部token共担奖励；本文改为拒绝采样筛样本、难度分层队列平衡梯度、动作前缀树实现步级优势估计，将数据挑选、任务均衡与信用分配统一到同一训练流程。",
+      "why_it_matters": "步级信用分配与高效数据筛选对导航智能体训练普遍适用：前缀树优势估计若用于VLN/ObjectNav或UAV指令跟随模型训练，可缓解长程稀疏奖励并降低算力门槛；但摘要未列明18个基准是否含导航任务，迁移性待正文确认。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "task planning"
+      ],
+      "added_at": "2026-09-19T08:33:46.676874+00:00"
     },
     {
       "id": "2609.18520",
@@ -7407,96 +7451,16 @@
     }
   ],
   "briefing": {
-    "text": "今日入库的12篇工作主线有二：VLM/LLM驱动的零样本具身导航，与空地异构协同的实机验证。首推HEROIC：以传感器尺度律决定无人机飞行高度与扫掠间距，不宜低飞时自动转为分诊、护航、引路角色，并用正负证据信念图把多机搜索与近距验证串成闭环，是开放词汇感知与异构协同的交汇点。TADreamer让VLM筛选生成视频，两阶段几何校准将其重建为带陆空模式标注的度量航点，把视频想象落到真机导航。Navi-Agent则以视觉地点与运动转移构成免坐标拓扑状态，替VLN-CE补上自定位与重访恢复。此外OverclaimBench、AURORA-Bench等评测与能力构建并行入场，领域重心正从“能否导航”转向“是否可信”。",
-    "added": 11,
-    "at": "2026-09-18T09:05:13.084769+00:00",
+    "text": "今日入库围绕具身基础模型的高效训练展开，主线是数据质量筛选与长程任务的信用分配两大瓶颈。本期最值得精读的是EmbodiedMind：它用拒绝采样微调剔除低信息样本以压缩训练开销，IR-GRPO以难度分层队列平衡任务间梯度，Trie-GRPO借动作前缀树实现步级优势估计，为长程信用分配给出了可直接借鉴的解法，并在18个基准上取得平均70.02%。趋势上看，具身智能的竞争重心正从堆算力转向数据筛选与奖励粒度的精细化设计。",
+    "added": 1,
+    "at": "2026-09-19T08:34:15.919587+00:00",
     "new": [
       {
-        "t": "Integrated Guidance and Control of a Mother-Child UAV-UGV System for Cooperative Missions",
-        "u": "https://arxiv.org/abs/2609.20540",
-        "r": 7,
-        "g": 7,
-        "s": "本文面向车-母机-子机异构系统提出户外实测验证的自主框架，涵盖巡视、母机巡航、子机投放与返航，并在悬停多旋翼母机上完成空中回收，20次任务成功17次（85%），并给出对准时间、平面误差等定量指标。",
-        "c": ""
-      },
-      {
-        "t": "RTK-Vision PPO for Autonomous Micro UAV Recovery on an Airborne Carrier",
-        "u": "https://arxiv.org/abs/2609.20629",
+        "t": "EmbodiedMind: Adaptive Data Curation and Prefix-Tree Reinforcement Learning for Efficient Embodied Intelligence",
+        "u": "https://arxiv.org/abs/2609.19659",
         "r": 8,
-        "g": 8,
-        "s": "RTK视觉引导PPO策略实现微型无人机在飞行母机上的自主回收：子机空中放飞、执行任务后返航对接，末端策略在MuJoCo经噪声与扰动随机化训练并迁移实机，14次户外试验成功13次。",
-        "c": ""
-      },
-      {
-        "t": "TADreamer: Zero-Shot Language-Guided 3D Navigation for Terrestrial-Aerial Bimodal Robots via Video Imagination",
-        "u": "https://arxiv.org/abs/2609.19824",
-        "r": 9,
         "g": 7,
-        "s": "TADreamer提出零样本陆空双模导航框架：VLM把指令与观测转成提示并筛选生成视频，两阶段几何校准将其重建为带地/空模式标注的度量航点，真机完成室内外导航。",
-        "c": ""
-      },
-      {
-        "t": "Spatial-Semantic Uncertainty in VLM-Based Target Search: Balancing Exploration and Identification",
-        "u": "https://arxiv.org/abs/2609.20443",
-        "r": 9,
-        "g": 7,
-        "s": "论文将VLM目标搜索的空间与语义不确定性分离建模，以空间与语义期望信息增益分别驱动探索与识别，在退化观测仿真中置信决策率达75%–92.5%，远超随机搜索20%。",
-        "c": ""
-      },
-      {
-        "t": "AURORA: A Natural Language-Driven Agentic Framework for Understanding, Reasoning, and Orchestrating Reliable Air-Ground Co-Simulation",
-        "u": "https://arxiv.org/abs/2609.19527",
-        "r": 7,
-        "g": 7,
-        "s": "AURORA是自然语言驱动的智能体框架，把空地协同仿真场景生成建模为带验证的编译流程：以类型化场景图为中间表示，支持解析、时序规划、可行性检查、运行时轨迹验证、故障定位与有界局部修复，并配套AURORA-Bench评测场景是否忠实实现用户请求的交互关系。",
-        "c": ""
-      },
-      {
-        "t": "Semantic SLAM in Precision Agriculture using Bayesian Inference",
-        "u": "https://arxiv.org/abs/2609.20604",
-        "r": 6,
-        "g": 5,
-        "s": "面向精准农业的实时语义SLAM：用贝叶斯推断维护物体及其语义属性的概率地图，结合g2o图优化实现无GPS定位，以YOLOv8n从深度图像提取语义，经Gazebo仿真与Spot真机人工植物场地验证，可实时建图至少400株植物。",
-        "c": ""
-      },
-      {
-        "t": "Navi-Agent: Unlocalized Monocular Navigation Agent",
-        "u": "https://arxiv.org/abs/2609.20388",
-        "r": 9,
-        "g": 7,
-        "s": "Navi-Agent是零样本VLN-CE单目导航智能体，用视觉观测与运动历史构建免坐标的导航拓扑空间状态，节点为视觉地点、边为运动转移，支持近似自定位、进度校验与视觉重访恢复，实现闭环指令跟随。",
-        "c": ""
-      },
-      {
-        "t": "Accelerating Visual Policy Learning with Sampling-Based Model Predictive Control",
-        "u": "https://arxiv.org/abs/2609.20575",
-        "r": 6,
-        "g": 7,
-        "s": "提出SGPS，将采样式MPC动作目标精修与一阶策略梯度优化交替结合，解耦FoPG把渲染移出计算图、直接从深度学习，单GPU在仿真Unitree Go2/G1上训练运动、越障、推箱与双手搬运策略，零样本迁移到真机。",
-        "c": ""
-      },
-      {
-        "t": "HEROIC: Heterogeneous Evidential Reasoning for Open-Vocabulary Identification and Cross-Robot Collaboration",
-        "u": "https://arxiv.org/abs/2609.19803",
-        "r": 10,
-        "g": 8,
-        "s": "HEROIC提出去中心化空地异构机器人开放词汇搜索框架：由传感器尺度律确定飞行高度与扫掠间距，无人机不能安全低飞时自转为分诊、护航与引路角色，并以正负证据信念图引导搜索与近距验证。",
-        "c": ""
-      },
-      {
-        "t": "GPT-6-Astra in a Navigation Workflow: Behavioral Analysis in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
-        "u": "https://arxiv.org/abs/2609.20116",
-        "r": 9,
-        "g": 6,
-        "s": "将GPT-6-Astra零样本接入VLN-CE观察—决策—执行流程，在R2R-CE val-unseen的50个episode上取得52%成功率，并分析指令理解、补充观察与停止决策行为。",
-        "c": ""
-      },
-      {
-        "t": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-        "u": "https://arxiv.org/abs/2609.20812",
-        "r": 7,
-        "g": 7,
-        "s": "本文提出OverclaimBench，以带植入缺陷的文件审查场景、基于转录的覆盖率度量，评测12个前沿编码智能体的过度声称行为，发现多数运行未读完指定文件且高频误导用户。",
+        "s": "提出具身基础模型高效训练范式EmbodiedMind：拒绝采样微调筛选低信息样本，IR-GRPO按难度分层队列平衡任务梯度，Trie-GRPO以动作前缀树做步级优势估计解决长程信用分配，18个基准平均70.02%。",
         "c": ""
       }
     ]
