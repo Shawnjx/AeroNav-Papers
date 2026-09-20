@@ -8806,9 +8806,15 @@
       "rigor": 5,
       "reason": "属通信领域ISAC资源分配工作，优化目标为频谱效率而非导航决策或目标搜索，UAV轨迹仅是通信优化手段，落入'纯通信与信号处理'拒绝类。",
       "excluded_at": "2026-09-14"
+    },
+    "https://openalex.org/W4408411093": {
+      "title": "Enhancing diagnostic capability with multi-agents conversational large language models",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "属于医疗诊断垂直应用，将现成LLM多智能体套用于临床场景，与空间、导航、机器人均无关，明确落在拒绝范围（类似医疗分诊类应用）。",
+      "excluded_at": "2026-09-20"
     }
   },
-  "last_citation_refresh": "2026-09-19T13:40:37.166296+00:00",
   "briefing": {
     "text": "编辑注：本轮清单实际只提供了一篇条目，无法按惯例选出2-3篇荐读，速览围绕该篇展开。 本轮仅入库一篇，主线是以大语言模型为底座的多智能体系统。Large Language Model Based Multi-agents: A Survey of Progress and Challenges值得优先精读：它将该方向拆为智能体画像、通信机制与能力培养三个模块，并汇总常用数据集、基准与持续更新的开源仓库，可作入门路线图。其仿真设定与多智能体协作部分，正对应具身导航中的环境交互与集群探索问题，便于寻找结合点。趋势上，具身任务正从单体走向LLM驱动的多智能体协同，多机探索与智能体间通信值得提前布局。",
     "added": 1,
