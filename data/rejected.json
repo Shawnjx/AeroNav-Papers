@@ -1150,5 +1150,93 @@
     "reason": "核心问题是无人机边缘计算的关联与卸载调度（偏通信网络优化），仅轨迹子决策与机器人自主边缘相关，且为纯仿真验证，不属十一条技术线核心范围。",
     "rejected_at": "2026-09-18",
     "url": "https://arxiv.org/abs/2609.17992"
+  },
+  "2609.20965": {
+    "title": "AeRove: A Compact Bimodal Aerial-Terrestrial Drone with Rapid Bistable Reconfiguration for Close-Range Pipeline Inspection",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心贡献是双稳态变构机构与护圈变轮的双模机电设计，巡检导航与漏点检测仅为平台能力验证，未涉及收录范围内的主动搜索、导航决策或感知算法进展。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.20965"
+  },
+  "2609.21099": {
+    "title": "Dynamic Modeling and LQR Control of a Single Coaxial Drone with 2DOF Thrust Vectoring Mechanism",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "属状态估计与控制线但为常规增量工作：新机构建模配教科书式LQR与EKF，仅高保真仿真验证，无真机实验与基线对比，落地影响力不足",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21099"
+  },
+  "2609.20982": {
+    "title": "ASGARD: Action-Space Guard for UAV Resilience via Reinforcement Learning",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "核心贡献是RL无人机控制策略的动作空间对抗攻击防御，属安全/鲁棒性方向，仅在控制执行层与收录技术线边缘相关，不涉及导航决策、目标搜索或空间智能。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.20982"
+  },
+  "2609.21803": {
+    "title": "Contact-Rich Motion Planning via GPU-Parallel Mode Evaluation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属机械臂接触丰富操作的运动规划（平面推动、双手非抓取操作），不含导航决策成分，仅与轨迹规划术语相邻，超出收录范围。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21803"
+  },
+  "2609.22069": {
+    "title": "OmniVBench: A Benchmark and Large-Scale Dataset for Omni Reference-to-Video Generation",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该文是参考条件视频生成（R2V）的评测基准与训练数据集，属文生/生成视频类生成媒体工作，不涉及具身导航、空间智能或机器人自主，落在明确排除的收录范围外。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.22069"
+  },
+  "2609.21787": {
+    "title": "Compact but Moving: Intervention-Relevant Geometry in Recurrent World Models",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "该文是对循环世界模型内部干预几何的机理可解释性研究，未涉及任何导航或规划任务，与'用于导航与规划的世界模型'技术线仅边缘重叠。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21787"
+  },
+  "2609.21650": {
+    "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "属于机械臂操作与VLA控制微调（LIBERO、RoboTwin桌面操作任务），不含导航决策或目标搜索成分，命中收录范围明确排除项。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21650"
+  },
+  "2609.21903": {
+    "title": "The Role of Radiometric Features in Cross-Site Leaf-Wood Segmentation of LiDAR Point Clouds",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属于林业遥感的叶木点云分割应用（服务生物量估算与QSM重建），虽使用LiDAR与无人机激光扫描数据，但与导航、机器人自主或通用空间智能研究无关，仅术语与传感器擦边。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21903"
+  },
+  "2609.21822": {
+    "title": "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "研究对象为通用目标检测数据集的标注错误与标注不确定性，未涉及具身导航、空域自主或收录的基础能力技术线，属纯检测数据集与检测评测范畴。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21822"
+  },
+  "2609.21609": {
+    "title": "Potential-Field Action Representation for Reinforcement Learning in Contact-Rich Manipulation",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "本文为机械臂接触操作（销孔插入）的RL动作表示研究，不含任何导航决策成分，属范围明确排除的机械臂操作与VLA控制。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21609"
+  },
+  "2609.21722": {
+    "title": "CIBuzzBench: A Benchmark for Cross-Lingual Understanding of Chinese Internet Buzzwords",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "纯跨语言文化语义与内容安全的LLM评测基准，不涉及空间、导航、机器人或智能体能力，属研究范围外的NLP垂直应用。",
+    "rejected_at": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.21722"
   }
 }
