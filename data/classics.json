@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T13:40:37.166296+00:00",
+  "updated_at": "2026-09-21T16:20:57.042799+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -119,7 +119,7 @@
       "published": "2025",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 7971,
+      "citation_count": 7999,
       "url": "https://arxiv.org/abs/2505.09388",
       "pdf_url": "https://arxiv.org/pdf/2505.09388",
       "code_url": "",
@@ -225,6 +225,43 @@
       "added_at": "2026-09-02T02:58:22Z"
     },
     {
+      "id": "https://openalex.org/W4387835442",
+      "arxiv_id": "2304.03442",
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "authors": [
+        "Joon Sung Park",
+        "Joseph O’Brien",
+        "Carrie J. Cai",
+        "Meredith Ringel Morris",
+        "Percy Liang",
+        "Michael S. Bernstein"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 5586,
+      "url": "https://doi.org/10.1145/3586183.3606763",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3586183.3606763",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "将大语言模型扩展为具备完整记忆流、动态检索、高层反思与行为规划的生成式智能体，在类Sims沙盒小镇中让25个智能体产生可信个体与涌现社会行为，消融验证观察、规划、反思组件均关键。",
+      "change_zh": "相比把LLM当一次性问答或脚本化NPC，本文把记忆流、反思、检索与规划整合成可持续运转的智能体闭环：以自然语言记录全部经历、周期性合成高层反思、动态检索支撑行为规划，使长期个体与群体行为可信，成为后续智能体记忆架构的范式起点。",
+      "why_it_matters": "其记忆-反思-规划架构是智能体长期自主性的通用底座：UAV搜救的长时任务记忆与策略复盘、ObjectNav的语义记忆与目标推理、多智能体协同侦察等，均可借鉴其经验存储与反思机制来支撑长时程决策与策略改进。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-02T02:58:22Z"
+    },
+    {
       "id": "2304.03442",
       "arxiv_id": "2304.03442",
       "title": "Generative Agents: Interactive Simulacra of Human Behavior",
@@ -260,43 +297,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T06:35:42Z"
-    },
-    {
-      "id": "https://openalex.org/W4387835442",
-      "arxiv_id": "2304.03442",
-      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
-      "authors": [
-        "Joon Sung Park",
-        "Joseph O’Brien",
-        "Carrie J. Cai",
-        "Meredith Ringel Morris",
-        "Percy Liang",
-        "Michael S. Bernstein"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 5559,
-      "url": "https://doi.org/10.1145/3586183.3606763",
-      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3586183.3606763",
-      "code_url": "",
-      "topics": [
-        "多模态大模型与智能体"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "将大语言模型扩展为具备完整记忆流、动态检索、高层反思与行为规划的生成式智能体，在类Sims沙盒小镇中让25个智能体产生可信个体与涌现社会行为，消融验证观察、规划、反思组件均关键。",
-      "change_zh": "相比把LLM当一次性问答或脚本化NPC，本文把记忆流、反思、检索与规划整合成可持续运转的智能体闭环：以自然语言记录全部经历、周期性合成高层反思、动态检索支撑行为规划，使长期个体与群体行为可信，成为后续智能体记忆架构的范式起点。",
-      "why_it_matters": "其记忆-反思-规划架构是智能体长期自主性的通用底座：UAV搜救的长时任务记忆与策略复盘、ObjectNav的语义记忆与目标推理、多智能体协同侦察等，均可借鉴其经验存储与反思机制来支撑长时程决策与策略改进。",
-      "relevance_rating": 9,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 26,
-      "keywords": [
-        "evaluation"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-02T02:58:22Z"
     },
     {
       "id": "2303.11366",
@@ -729,7 +729,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 2310,
+      "citation_count": 2317,
       "url": "https://arxiv.org/abs/2305.16291",
       "pdf_url": "https://arxiv.org/pdf/2305.16291",
       "code_url": "",
@@ -1428,7 +1428,7 @@
       "published": "2022",
       "source": "OpenAlex",
       "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-      "citation_count": 1112,
+      "citation_count": 1117,
       "url": "https://doi.org/10.1109/cvpr52688.2022.01245",
       "pdf_url": "",
       "code_url": "",
@@ -1702,7 +1702,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
-      "citation_count": 918,
+      "citation_count": 924,
       "url": "https://doi.org/10.1609/aaai.v38i17.29936",
       "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29936/31635",
       "code_url": "",
@@ -1942,7 +1942,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 786,
+      "citation_count": 789,
       "url": "https://doi.org/10.1109/iccv51070.2023.00280",
       "pdf_url": "",
       "code_url": "",
@@ -3226,7 +3226,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "IEEE Transactions on Robotics",
-      "citation_count": 351,
+      "citation_count": 352,
       "url": "https://doi.org/10.1109/tro.2023.3248510",
       "pdf_url": "https://zaguan.unizar.es/record/126293/files/texto_completo.pdf",
       "code_url": "",
@@ -4336,6 +4336,45 @@
       "added_at": "2026-09-03T19:57:56Z"
     },
     {
+      "id": "https://openalex.org/W4297510490",
+      "arxiv_id": "",
+      "title": "Convex Optimization for Trajectory Generation: A Tutorial on Generating Dynamically Feasible Trajectories Reliably and Efficiently",
+      "authors": [
+        "Danylo Malyuta",
+        "Taylor P. Reynolds",
+        "Michael Szmuk",
+        "Thomas Lew",
+        "Riccardo Bonalli",
+        "Marco Pavone",
+        "Behçet Açıkmeşe"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Control Systems",
+      "citation_count": 259,
+      "url": "https://doi.org/10.1109/mcs.2022.3187542",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文系统讲解三种基于凸优化的轨迹生成方法：无损凸化LCvx及序列凸规划SCvx、GuSTO，涵盖收敛理论、数值示例与开源SCP工具箱，广泛应用于火箭着陆与飞行器规划。",
+      "change_zh": "相比采样式规划或直接求解非凸问题的常见路线，其核心思路是通过问题重构与逐次凸化把非凸轨迹生成转为凸优化子问题，换取收敛保证与机载实时性；但作为教程综述，本身未提出全新算法。",
+      "why_it_matters": "LCvx与SCvx已是四旋翼/固定翼机载实时轨迹规划的主流手段，是UAV主动目标搜索中动态避障与快速接近目标的底层引擎，其开源SCP工具箱可直接嵌入无人机与地面机器人导航系统。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "motion planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-03T19:57:56Z"
+    },
+    {
       "id": "https://openalex.org/W4401023556",
       "arxiv_id": "",
       "title": "Large Language Model Based Multi-agents: A Survey of Progress and Challenges",
@@ -4376,45 +4415,6 @@
       "added_at": "2026-09-18T14:06:56.932809+00:00"
     },
     {
-      "id": "https://openalex.org/W4297510490",
-      "arxiv_id": "",
-      "title": "Convex Optimization for Trajectory Generation: A Tutorial on Generating Dynamically Feasible Trajectories Reliably and Efficiently",
-      "authors": [
-        "Danylo Malyuta",
-        "Taylor P. Reynolds",
-        "Michael Szmuk",
-        "Thomas Lew",
-        "Riccardo Bonalli",
-        "Marco Pavone",
-        "Behçet Açıkmeşe"
-      ],
-      "published": "2022",
-      "source": "OpenAlex",
-      "venue": "IEEE Control Systems",
-      "citation_count": 256,
-      "url": "https://doi.org/10.1109/mcs.2022.3187542",
-      "pdf_url": "",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "本文系统讲解三种基于凸优化的轨迹生成方法：无损凸化LCvx及序列凸规划SCvx、GuSTO，涵盖收敛理论、数值示例与开源SCP工具箱，广泛应用于火箭着陆与飞行器规划。",
-      "change_zh": "相比采样式规划或直接求解非凸问题的常见路线，其核心思路是通过问题重构与逐次凸化把非凸轨迹生成转为凸优化子问题，换取收敛保证与机载实时性；但作为教程综述，本身未提出全新算法。",
-      "why_it_matters": "LCvx与SCvx已是四旋翼/固定翼机载实时轨迹规划的主流手段，是UAV主动目标搜索中动态避障与快速接近目标的底层引擎，其开源SCP工具箱可直接嵌入无人机与地面机器人导航系统。",
-      "relevance_rating": 7,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 22,
-      "keywords": [
-        "aerial",
-        "motion planning"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-03T19:57:56Z"
-    },
-    {
       "id": "https://openalex.org/W4319160361",
       "arxiv_id": "",
       "title": "Multi-sensor integrated navigation/positioning systems using data fusion: From analytics-based to learning-based approaches",
@@ -4435,7 +4435,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "Information Fusion",
-      "citation_count": 255,
+      "citation_count": 257,
       "url": "https://doi.org/10.1016/j.inffus.2023.01.025",
       "pdf_url": "",
       "code_url": "",
@@ -4928,6 +4928,45 @@
       "added_at": "2026-09-05T06:35:42Z"
     },
     {
+      "id": "https://openalex.org/W4402670135",
+      "arxiv_id": "",
+      "title": "MM-LLMs: Recent Advances in MultiModal Large Language Models",
+      "authors": [
+        "Duzhen Zhang",
+        "Yahan Yu",
+        "Jiahua Dong",
+        "Chenxing Li",
+        "Dan Su",
+        "Chenhui Chu",
+        "Dong Yu"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 230,
+      "url": "https://doi.org/10.18653/v1/2024.findings-acl.738",
+      "pdf_url": "https://aclanthology.org/2024.findings-acl.738.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文系统综述多模态大语言模型最新进展：给出模型架构与训练流程的通用设计范式，建立覆盖126个模型的分类体系，回顾主流基准表现并总结关键训练配方，附实时跟踪网站。",
+      "change_zh": "相比单点模型论文，本文以统一设计范式抽象126个MM-LLM的架构与训练差异，把分散进展整理为可比较的分类体系与训练配方，并以实时网站持续追踪，改变的是领域知识的组织与检索方式而非技术路线本身。",
+      "why_it_matters": "MM-LLM是空域/地面VLN指令理解、开放词汇ObjectNav与UAV目标搜索的底层能力底座；其架构范式与训练配方综述可助导航研究者低成本选型改造模型，是具身智能体接入大模型的重要参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-04T19:37:49Z"
+    },
+    {
       "id": "https://openalex.org/W3133767727",
       "arxiv_id": "2010.08215",
       "title": "BALM: Bundle Adjustment for Lidar Mapping",
@@ -4959,45 +4998,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T04:46:08Z"
-    },
-    {
-      "id": "https://openalex.org/W4402670135",
-      "arxiv_id": "",
-      "title": "MM-LLMs: Recent Advances in MultiModal Large Language Models",
-      "authors": [
-        "Duzhen Zhang",
-        "Yahan Yu",
-        "Jiahua Dong",
-        "Chenxing Li",
-        "Dan Su",
-        "Chenhui Chu",
-        "Dong Yu"
-      ],
-      "published": "2024",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 227,
-      "url": "https://doi.org/10.18653/v1/2024.findings-acl.738",
-      "pdf_url": "https://aclanthology.org/2024.findings-acl.738.pdf",
-      "code_url": "",
-      "topics": [
-        "多模态大模型与智能体"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "本文系统综述多模态大语言模型最新进展：给出模型架构与训练流程的通用设计范式，建立覆盖126个模型的分类体系，回顾主流基准表现并总结关键训练配方，附实时跟踪网站。",
-      "change_zh": "相比单点模型论文，本文以统一设计范式抽象126个MM-LLM的架构与训练差异，把分散进展整理为可比较的分类体系与训练配方，并以实时网站持续追踪，改变的是领域知识的组织与检索方式而非技术路线本身。",
-      "why_it_matters": "MM-LLM是空域/地面VLN指令理解、开放词汇ObjectNav与UAV目标搜索的底层能力底座；其架构范式与训练配方综述可助导航研究者低成本选型改造模型，是具身智能体接入大模型的重要参考。",
-      "relevance_rating": 8,
-      "rigor_rating": 7,
-      "venue_verified": false,
-      "score": 23,
-      "keywords": [
-        "benchmark",
-        "multimodal large language model"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-04T19:37:49Z"
     },
     {
       "id": "https://openalex.org/W4383109468",
@@ -5584,7 +5584,7 @@
       "published": "2022",
       "source": "OpenAlex",
       "venue": "IEEE Robotics and Automation Letters",
-      "citation_count": 165,
+      "citation_count": 169,
       "url": "https://arxiv.org/abs/2201.04114",
       "pdf_url": "https://arxiv.org/pdf/2201.04114",
       "code_url": "",
@@ -5847,6 +5847,44 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "https://openalex.org/W4360584287",
+      "arxiv_id": "",
+      "title": "Distributed Stochastic Algorithm Based on Enhanced Genetic Algorithm for Path Planning of Multi-UAV Cooperative Area Search",
+      "authors": [
+        "Jibin Zheng",
+        "Minghui Ding",
+        "Lu Sun",
+        "Hongwei Liu"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Intelligent Transportation Systems",
+      "citation_count": 124,
+      "url": "https://doi.org/10.1109/tits.2023.3258482",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文针对多无人机协同区域搜索协作不足的问题，基于DMPC框架建立分布式约束优化模型，兼顾重复搜索、连通性与避撞，并用增强遗传算法的分布式随机算法求解，仿真验证效率与可扩展性提升。",
+      "change_zh": "相比常见的集中式规划或易陷入局部最优的分布式方法，该文将全局搜索目标分解为邻居交互的分布式约束优化问题，并以点交叉算子与任意时刻局部搜索（ALS）增强遗传算法，从而逃离局部最优并随时保留可用解。",
+      "why_it_matters": "对UAV主动目标搜索中的搜救侦察多机协同有直接价值：分布式优化兼顾覆盖效率、连通与避撞且可扩展，可为多机搜索任务规划提供求解范式；但仅为仿真层面的路径优化，未涉及感知检测，与地面ObjectNav关联弱。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "model predictive control",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
       "id": "https://openalex.org/W4396681775",
       "arxiv_id": "",
       "title": "Multimodal Foundation Models: From Specialists to General-Purpose Assistants",
@@ -5881,44 +5919,6 @@
       "keywords": [],
       "is_classic": true,
       "added_at": "2026-09-08T06:11:06.415511+00:00"
-    },
-    {
-      "id": "https://openalex.org/W4360584287",
-      "arxiv_id": "",
-      "title": "Distributed Stochastic Algorithm Based on Enhanced Genetic Algorithm for Path Planning of Multi-UAV Cooperative Area Search",
-      "authors": [
-        "Jibin Zheng",
-        "Minghui Ding",
-        "Lu Sun",
-        "Hongwei Liu"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "IEEE Transactions on Intelligent Transportation Systems",
-      "citation_count": 121,
-      "url": "https://doi.org/10.1109/tits.2023.3258482",
-      "pdf_url": "",
-      "code_url": "",
-      "topics": [
-        "UAV 目标搜索"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "本文针对多无人机协同区域搜索协作不足的问题，基于DMPC框架建立分布式约束优化模型，兼顾重复搜索、连通性与避撞，并用增强遗传算法的分布式随机算法求解，仿真验证效率与可扩展性提升。",
-      "change_zh": "相比常见的集中式规划或易陷入局部最优的分布式方法，该文将全局搜索目标分解为邻居交互的分布式约束优化问题，并以点交叉算子与任意时刻局部搜索（ALS）增强遗传算法，从而逃离局部最优并随时保留可用解。",
-      "why_it_matters": "对UAV主动目标搜索中的搜救侦察多机协同有直接价值：分布式优化兼顾覆盖效率、连通与避撞且可扩展，可为多机搜索任务规划提供求解范式；但仅为仿真层面的路径优化，未涉及感知检测，与地面ObjectNav关联弱。",
-      "relevance_rating": 8,
-      "rigor_rating": 7,
-      "venue_verified": false,
-      "score": 23,
-      "keywords": [
-        "aerial",
-        "benchmark",
-        "model predictive control",
-        "uav"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
       "id": "https://openalex.org/W4410438635",
@@ -6006,7 +6006,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "Drones",
-      "citation_count": 109,
+      "citation_count": 110,
       "url": "https://doi.org/10.3390/drones8050193",
       "pdf_url": "",
       "code_url": "",
@@ -8815,6 +8815,7 @@
       "excluded_at": "2026-09-20"
     }
   },
+  "last_citation_refresh": "2026-09-21T16:20:57.042799+00:00",
   "briefing": {
     "text": "编辑注：本轮清单实际只提供了一篇条目，无法按惯例选出2-3篇荐读，速览围绕该篇展开。 本轮仅入库一篇，主线是以大语言模型为底座的多智能体系统。Large Language Model Based Multi-agents: A Survey of Progress and Challenges值得优先精读：它将该方向拆为智能体画像、通信机制与能力培养三个模块，并汇总常用数据集、基准与持续更新的开源仓库，可作入门路线图。其仿真设定与多智能体协作部分，正对应具身导航中的环境交互与集群探索问题，便于寻找结合点。趋势上，具身任务正从单体走向LLM驱动的多智能体协同，多机探索与智能体间通信值得提前布局。",
     "added": 1,
