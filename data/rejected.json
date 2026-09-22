@@ -1238,5 +1238,101 @@
     "reason": "纯跨语言文化语义与内容安全的LLM评测基准，不涉及空间、导航、机器人或智能体能力，属研究范围外的NLP垂直应用。",
     "rejected_at": "2026-09-21",
     "url": "https://arxiv.org/abs/2609.21722"
+  },
+  "2609.23157": {
+    "title": "Orientation-Aware Control and Trajectory Design for Aerial RIS-Assisted Wireless Communications",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "核心是空域RIS辅助无线通信的通信-控制联合设计，优化目标是网络吞吐量，属通信系统范畴（接近'纯通信与信号处理'拒绝类），与收录的UAV目标搜索、导航决策及机器人自主核心技术线无实质关联。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.23157"
+  },
+  "2609.24218": {
+    "title": "Audio-based UAV Localization with Adaptive Temporal Correspondence via Reinforcement Learning",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该文是对外来无人机目标做被动声学定位的反无人机预警应用，属声学信号处理与检测范畴，不涉及机器人自身状态估计、导航决策或空间智能，仅与'UAV''定位'术语擦边。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24218"
+  },
+  "2609.23643": {
+    "title": "Spiking Neural Network Actor-Critic Proximal Policy Optimization Control for Autonomous UAV Navigation Through Constrained Openings in Civil Infrastructure and Buildings",
+    "relevance": 5,
+    "rigor": 4,
+    "reason": "将SNN替换PPO中的网络模块属常规增量改进，仅自建仿真场景报告成功率，无与标准PPO等基线对比、无消融，方法增益与能耗收益不可验证。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.23643"
+  },
+  "2609.24511": {
+    "title": "InsertAnything: Generalizable Contact-Rich Precision Insertion from Simulation to Reality",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "属机械臂精密装配（peg-in-hole插入）操作，不含任何导航决策成分，按收录范围规则明确排除。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24511"
+  },
+  "2609.24133": {
+    "title": "Phrase-Level Robotic Guqin Performance: Bimanual Motion Planning and Audio-Tactile Interaction Monitoring",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "属于双臂机械臂操作类乐器演奏系统，不含导航决策成分，亦非LLM规划智能体或公认高影响力的规划/控制工作，按范围规定应拒绝。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24133"
+  },
+  "2609.25001": {
+    "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "主体是游戏玩法数据与评测套件，虽涉及多时域指令分解与长程规划，但不针对空间导航、具身自主或机器人核心问题，属边缘相关。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.25001"
+  },
+  "2609.24864": {
+    "title": "SE(3) Neural Potential Fields for 6-DoF Trajectory Planning Directly from Images Without Explicit 3D Reconstruction",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "该工作属于机械臂抓取场景下的桌面6-DoF轨迹规划（机械臂操作范畴，无移动导航决策成分），且仅在两个桌面场景、单一UR10平台小规模验证，对收录的导航与机器人自主技术线的直接相关度和落地影响力均不足。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24864"
+  },
+  "2609.24846": {
+    "title": "Range-Aided SLAM Initialization Exploiting Accurate Heading Information",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属SLAM初始化的专门化方法改进，面向AUV单一场景且仅单一真实数据集验证，摘要未见基线对比与广泛落地影响力证据，按状态估计线标准属常规增量工作。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24846"
+  },
+  "2609.24350": {
+    "title": "LIBERO-VPro: Benchmarking Closed-Loop Visual Robustness of Robotic Foundation Models",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "面向机械臂操作与VLA/WAM的鲁棒性评测基准，无导航决策成分，属研究范围明确排除的操作领域，仅评测方法学与具身评测线擦边。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24350"
+  },
+  "2609.24855": {
+    "title": "Extracting Arguments, Not Just Classifying Them: Instruction-Tuned LLMs for Generative Component Detection",
+    "relevance": 1,
+    "rigor": 6,
+    "reason": "论点成分检测属纯NLP文本任务，将指令微调LLM套用于与空间、导航、机器人无关的垂直领域，按研究范围明确拒绝。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24855"
+  },
+  "2609.24799": {
+    "title": "When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "医疗LLM后训练量化属纯LLM训练/部署技巧在垂直领域的应用，与空间、导航、机器人及通用模型/智能体能力本身无关，范围外。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.24799"
+  },
+  "2609.23504": {
+    "title": "Imagine then Verify: Affordance-Targeted Active Perception for Task-Oriented Grasping in Cluttered Scenes",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "论文核心目标是任务导向抓取（机械臂操作），NBV主动感知仅服务于抓取执行且不含任何导航决策成分，按范围排除条款应予拒收。",
+    "rejected_at": "2026-09-22",
+    "url": "https://arxiv.org/abs/2609.23504"
   }
 }
