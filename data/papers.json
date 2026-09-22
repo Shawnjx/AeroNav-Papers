@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T09:25:37.901476+00:00",
+  "updated_at": "2026-09-22T20:00:58.464857+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -3609,6 +3609,43 @@
         "uav"
       ],
       "added_at": "2026-09-17T09:18:03.680607+00:00"
+    },
+    {
+      "id": "2609.20889",
+      "arxiv_id": "2609.20889",
+      "title": "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
+      "authors": [
+        "Pradyumna Tambwekar",
+        "Yenchia Feng",
+        "Deep Patel",
+        "Karime Maamari"
+      ],
+      "published": "2026-09-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.20889",
+      "pdf_url": "https://arxiv.org/pdf/2609.20889",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Proxifield提出去中心化、轮次自适应的LLM多智能体通信协议，依据演化中的语义邻近构建稀疏通信图，用四种推理时路由信号连接智能体，无需模型训练或中央规划器。",
+      "change_zh": "相比常见固定拓扑（星型/共享上下文）或中央编排路线，本工作让各智能体在推理时基于语义邻近自建稀疏通信图，用四种信号按轮次动态选择通信对象，把可扩展性与容错性作为协议设计的一等目标。",
+      "why_it_matters": "该协议在无人机搜救域验证，为多机协同目标搜索提供了随规模扩展且抗个体失效的通信机制，直接呼应UAV主动搜救线；其去中心化多智能体协同也属多模态大模型与智能体线核心议题，并可迁移至多智能体导航任务。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "drone",
+        "search and rescue"
+      ],
+      "added_at": "2026-09-22T20:00:55.464454+00:00"
     },
     {
       "id": "2609.17499",
@@ -8817,152 +8854,16 @@
     }
   ],
   "briefing": {
-    "text": "今日主线：世界模型与结构化推理正进入导航与探索的闭环，而新基准与可解释性工作则反过来审视具身模型时空理解的可靠性。首推 WOLF，它以循环世界模型预测局部占据与可见性、生成预测性frontier，把LiDAR探索从实测驱动转向预测驱动；A Topological Representation with Object-Path Graphs 将开放词汇语义推理与拓扑导航统一进轻量框架，并经真机验证；WORLDS 以持久图为世界状态、由并行推理者维护竞争假设，在CityNav刷新纪录并完成四旋翼实飞。趋势：生成式预测叠加结构化世界状态，正接替纯端到端策略成为具身导航的默认架构。",
-    "added": 18,
-    "at": "2026-09-22T09:26:47.384367+00:00",
+    "text": "今日入库工作聚焦多智能体去中心化通信这一主线。最值得读的是Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity：它依据演化中的语义邻近动态构建稀疏通信图，用四种推理时路由信号连接智能体，实现轮次自适应的LLM协作，且无需模型训练与中央规划器，对多机器人导航中通信开销和规模扩展难题是可直接落地的方案。从趋势看，以语义距离取代固定拓扑或物理近邻来组织智能体交互，正成为具身多智能体系统的设计方向。",
+    "added": 1,
+    "at": "2026-09-22T20:01:29.723757+00:00",
     "new": [
       {
-        "t": "WOLF: World Model Guided LiDAR Exploration with Predictive Frontiers",
-        "u": "https://arxiv.org/abs/2609.23656",
-        "r": 10,
-        "g": 8,
-        "s": "提出WOLF框架，用循环世界模型从UAV探索轨迹学习观测动态，结合观测历史与候选运动预测局部占据与可见性，生成预测性frontier与实测frontier共同引导视点选择与轨迹规划，加速LiDAR自主探索。",
-        "c": ""
-      },
-      {
-        "t": "OpenFlyScan: A Quality-Guided Aerial Reconstruction System for Consumer Drones",
-        "u": "https://arxiv.org/abs/2609.24253",
-        "r": 9,
-        "g": 7,
-        "s": "OpenFlyScan面向消费级无人机，用从3DGS渲染误差学得的质量模型预测重建薄弱区域，规划器据此生成补拍航带并经移动App执行，实现低成本高质量的城市三维资产构建。",
-        "c": ""
-      },
-      {
-        "t": "M3GA-Wild: A Large-Scale Dataset and Benchmark for Multi-Modal Multi-session Ground-to-Aerial Place Recognition in Forests",
-        "u": "https://arxiv.org/abs/2609.23003",
-        "r": 7,
-        "g": 7,
-        "s": "M3GA-Wild是首个森林场景多模态多会话地空跨视角地点识别基准，整合36公里地面RGB与LiDAR、370公顷航拍影像及精确6自由度位姿，系统评测视觉、激光、跨模态与多模态方法。",
-        "c": ""
-      },
-      {
-        "t": "AnalogDepth: Multi-view Geometry from FPV drones under Analog Video Transmission",
-        "u": "https://arxiv.org/abs/2609.24312",
-        "r": 7,
-        "g": 7,
-        "s": "模拟图传噪声会显著破坏Depth Anything 3在FPV无人机图像上的深度估计精度，作者构建真实噪声库，结合LoRA注入DINOv2骨干与师生蒸馏做参数高效适配，在六段真实飞行序列上降低深度RMSE与重建Chamfer距离。",
-        "c": ""
-      },
-      {
-        "t": "FlockDiffusion: Assignment-Conditioned Diffusion for Multi-Drone Task Allocation and Completion",
-        "u": "https://arxiv.org/abs/2609.23745",
-        "r": 6,
-        "g": 7,
-        "s": "FlockDiffusion用场景图编码、显式分配头与分配条件扩散Transformer一次前向联合求解多无人机任务捆绑分配与机群轨迹生成，自回归教师提供离线监督，仿真中较经典流水线提速逾6倍。",
-        "c": ""
-      },
-      {
-        "t": "ActiveArena: Benchmarking and Understanding Active Perception in Robotic Manipulation",
-        "u": "https://arxiv.org/abs/2609.24124",
-        "r": 7,
-        "g": 8,
-        "s": "ActiveArena为机器人操作中的主动感知构建仿真器与基准：35个任务需多轮视点探索与交互取证并结合记忆推理，另配13种VLA配置受控研究记忆写入、容量与规划对ID/OOD泛化的影响。",
-        "c": ""
-      },
-      {
-        "t": "Do LiDAR Language Models Really Understand Spatio-temporal Relationships?",
-        "u": "https://arxiv.org/abs/2609.24452",
-        "r": 8,
-        "g": 8,
-        "s": "提出LiDAR-Hallu基准与诊断协议，用150个nuScenes场景的1万道几何参照问题检测4D激光雷达语言模型的时空关系理解，揭示聚合准确率掩盖的捷径依赖与系统性失效。",
-        "c": "https://github.com/Awesome4D/4DMLLM_Hallucination_Bench"
-      },
-      {
-        "t": "A Topological Representation with Object-Path Graphs for Open-Vocabulary Instance Navigation",
-        "u": "https://arxiv.org/abs/2609.24189",
-        "r": 10,
-        "g": 7,
-        "s": "提出对象-路径拓扑图，将开放词汇语义推理与拓扑导航统一在单一轻量框架内，结合全局路径规划、节点定位与语义视觉伺服，在HM3D、Replica及真机实验中验证开放词汇实例导航性能。",
-        "c": ""
-      },
-      {
-        "t": "ME-VLM:A Unified VLM for Embodied Cognition and Agent Coordination",
-        "u": "https://arxiv.org/abs/2609.24526",
-        "r": 9,
-        "g": 7,
-        "s": "ME-VLM是融合具身认知与多智能体能力的统一视觉语言模型（4B/35B-A3B），经能力注入、专家强化学习与多教师蒸馏训练，在具身、智能体、导航及自动驾驶基准上表现竞争性，并支持边缘部署。",
-        "c": "https://github.com/MachEmbodied/ME-VLM"
-      },
-      {
-        "t": "Cognitive Action Reasoning for Proactive Robots from Human-Centered Multimodal Observations",
-        "u": "https://arxiv.org/abs/2609.23486",
-        "r": 7,
-        "g": 7,
-        "s": "提出主动机器人动作推理任务ProRobo，构建含1万条视觉-音频-文本样本的真实数据集ProAction，以两阶段人机协同流程标注认知级高层动作，评测主流多模态大模型并提出基准模型MMC2Act。",
-        "c": ""
-      },
-      {
-        "t": "HappyWorld-Bench",
-        "u": "https://arxiv.org/abs/2609.24308",
-        "r": 8,
-        "g": 8,
-        "s": "HappyWorld-Bench是世界模型综合评测基准，以六项世界能力分层框架覆盖视频、空间、具身三条独立赛道，用人类A/B对比Elo评分与行为正确性自动指标系统评测31个模型，揭示长时一致性与交互响应的可靠性缺口。",
-        "c": ""
-      },
-      {
-        "t": "RiverVLN: Phase-Grounded Temporal Vision--Language Navigation for Unmanned Surface Vehicles",
-        "u": "https://arxiv.org/abs/2609.23423",
+        "t": "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
+        "u": "https://arxiv.org/abs/2609.20889",
         "r": 8,
         "g": 7,
-        "s": "提出首个无人艇长时程河流VLN基准RiverVLN与PGT-NAV框架：把指令分解为可视觉验证的有序语义阶段并在线维护，融合视觉运动证据预测连续SE(2)位姿增量、闭环重规划，经Unity-ROS仿真与真实艇验证。",
-        "c": ""
-      },
-      {
-        "t": "What do VLM-Based Vision-Language Navigation Models Rely on: Interpreting and Steering Policy Behavior",
-        "u": "https://arxiv.org/abs/2609.24576",
-        "r": 8,
-        "g": 7,
-        "s": "本文研究基于VLM的视觉语言导航模型的可解释性与可引导性，用干预式度量分析视觉观察、指令与视觉记忆对导航决策的因果影响，发现策略依赖全部模态并编码导航进度与语义结构，且可通过内部激活实现概念级引导与零样本真实场景迁移。",
-        "c": ""
-      },
-      {
-        "t": "BayesianGS-SLAM: Uncertainty-Aware Neural Rendering SLAM via Probabilistic Formulation",
-        "u": "https://arxiv.org/abs/2609.24140",
-        "r": 6,
-        "g": 7,
-        "s": "提出不确定性感知的3D高斯溅射SLAM框架，将传感器噪声与不透明度诱导的不确定性经渲染过程传播，同时估计颜色与深度的预测不确定性，统一用于建图、跟踪与关键帧选择，并在真实RGB-D数据集上验证。",
-        "c": ""
-      },
-      {
-        "t": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
-        "u": "https://arxiv.org/abs/2609.24984",
-        "r": 8,
-        "g": 6,
-        "s": "WorldCrafter提出带隐式3D感知记忆的视频世界模型，由相机查询将历史多视角观测压缩为目标视角token，结合时序上下文与少步蒸馏，从单图或文本实现分钟级流式场景探索，提升长时程一致性与相机控制精度。",
-        "c": ""
-      },
-      {
-        "t": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-        "u": "https://arxiv.org/abs/2609.24972",
-        "r": 7,
-        "g": 8,
-        "s": "RRSI针对LLM智能体外壳递归自改进易过拟合训练任务的问题，用退火编辑预算、探索性提议和带批评家与剪枝器的选择器施加正则化，八个基准上分布内至多提升14.1分、OOD至多4.7分。",
-        "c": "https://github.com/google-research/rrsi"
-      },
-      {
-        "t": "BarrierFormer: Transformer-Guided Predictive Barrier Enforcement for Safe Robot Control",
-        "u": "https://arxiv.org/abs/2609.23896",
-        "r": 6,
-        "g": 6,
-        "s": "BarrierFormer以因果Transformer编码观测-动作历史，自回归生成预测rollout替代动力学模型，经barrier critic评估rollout上的CBF约束违反并由安全教师提供监督，学到推理时无需模型与在线优化的实时安全控制策略。",
-        "c": ""
-      },
-      {
-        "t": "Structured World-State Reasoning for Agentic Robotic Search",
-        "u": "https://arxiv.org/abs/2609.23841",
-        "r": 9,
-        "g": 8,
-        "s": "WORLDS将地理先验初始化的持久图作为世界状态，由并行推理者维护竞争假设、多模态审查者主动取证、裁决者锁定目标，在CityNav上以51.8%成功率刷新纪录并完成四旋翼实飞验证。",
+        "s": "Proxifield提出去中心化、轮次自适应的LLM多智能体通信协议，依据演化中的语义邻近构建稀疏通信图，用四种推理时路由信号连接智能体，无需模型训练或中央规划器。",
         "c": ""
       }
     ]
