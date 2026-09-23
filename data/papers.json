@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:00:58.464857+00:00",
+  "updated_at": "2026-09-23T09:24:33.935182+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -155,6 +155,52 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2609.26408",
+      "arxiv_id": "2609.26408",
+      "title": "SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation",
+      "authors": [
+        "Quanhua Chen",
+        "Juhan Kang",
+        "Runfeng Lin",
+        "ZiFei Zhang",
+        "Enquang Feng",
+        "Chunran Zheng",
+        "Xiwang Dong",
+        "Jiarong Lin"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26408",
+      "pdf_url": "https://arxiv.org/pdf/2609.26408",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "SparseNav是免训练VLN框架：维持轻量BEV几何地图与稀疏地标记忆，由指令管理器追踪进度、按活跃子指令按需调用开放词汇分割，VLM从混合边界与方向航点中择路，R2R-CE/RxR-CE达42.8%/40.7%，并部署四足真机。",
+      "change_zh": "常见地图式VLN持续分割并累积稠密语义，浪费算力且干扰VLM规划。SparseNav改为指令条件化按需感知：仅当子指令查询的地标可见且其度量位置可影响决策时才调用分割，以稀疏地标记忆替代稠密语义图，兼顾感知成本与决策清晰度。",
+      "why_it_matters": "直接命中地面VLN核心问题并提供免训练强基线；其按需开放词汇感知思想可迁移至ObjectNav目标搜索与UAV主动搜救——仅任务相关时调用昂贵感知以省机载算力；四足机器人无预建图真机部署亦为该技术线提供了sim2real实证。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "instruction",
+        "localization",
+        "r2r",
+        "semantic navigation",
+        "vlm",
+        "waypoint"
+      ],
+      "added_at": "2026-09-23T09:07:04.815098+00:00"
     },
     {
       "id": "2609.23656",
@@ -1100,6 +1146,51 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.26007",
+      "arxiv_id": "2609.26007",
+      "title": "Skytopia: Monocular Drone Navigation with Action-Conditioned Latent World Models",
+      "authors": [
+        "Yuhang Zhang",
+        "Rangya Zhang",
+        "Yujing Shang",
+        "Zhuoyuan Yu",
+        "Weiying Wang",
+        "Steven Yang",
+        "Qingsong Yan",
+        "Chao Yan",
+        "Mir Feroskhan"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26007",
+      "pdf_url": "https://arxiv.org/pdf/2609.26007",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Skytopia：基于动作条件隐世界模型与3D高斯溅射平台的单目无人机导航策略，仅保留世界模型表征、部署时丢弃预测器，统一支持点目标、图像目标与无目标导航并零微调真机部署。",
+      "change_zh": "常见世界模型导航需在部署时逐帧预测并回馈动作生成；本文论证执行动作几乎解释观测变化、预测即已知位移下的场景重投影，策略只需表征：训练后丢弃预测器，推理成本降59.4%，单一策略服务三种导航规格。",
+      "why_it_matters": "对UAV目标搜索与接近直接可用：单目轻量、零微调真机部署，契合机载算力受限的搜救侦察；'表征而非预测'的世界模型设计可迁移到ObjectNav与无人机目标搜索，3DGS平台或缓解空域仿真数据稀缺。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "deployment",
+        "drone",
+        "world model"
+      ],
+      "added_at": "2026-09-23T09:09:08.919320+00:00"
+    },
+    {
       "id": "2609.24526",
       "arxiv_id": "2609.24526",
       "title": "ME-VLM:A Unified VLM for Embodied Cognition and Agent Coordination",
@@ -1846,6 +1937,52 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.25636",
+      "arxiv_id": "2609.25636",
+      "title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
+      "authors": [
+        "Chang Guo",
+        "Yukun Xie",
+        "Bohan Tan",
+        "Zheng Chang",
+        "Zhaokai Yin",
+        "Qianli Ma",
+        "Yingqiao Wang",
+        "Chao Liang",
+        "Zhipeng Zhang"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.25636",
+      "pdf_url": "https://arxiv.org/pdf/2609.25636",
+      "code_url": "https://github.com/AutoLab-SAI-SJTU/RoboFollow",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RoboFollow提出具身指令跟随诊断基准：以高场景熵场景、L0-L3分层扰动协议和混淆控制诊断，评测九种VLA与WAM策略，揭示高成功率掩盖了语言指令跟随能力的真实不足。",
+      "change_zh": "不同于常规在低熵单任务场景用成功率评价智能体的路线，该工作指出场景只允许一个任务时语言冗余、指标虚高，改用多任务分支的高熵场景强制依赖语言，并以四级扰动和意图/执行双分把理解与运动执行解耦诊断。",
+      "why_it_matters": "对具身基准与评测及地面VLN直接相关：低场景熵造成的『语言冗余假象』同样可能存在于指令跟随与ObjectNav评测中，其高熵场景构建与分层扰动协议可迁移用于诊断导航智能体是否真正利用语言，提升评测效度；对UAV主动目标搜索关联较弱。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "instruction following",
+        "vlm"
+      ],
+      "added_at": "2026-09-23T09:09:42.266184+00:00"
     },
     {
       "id": "2609.24253",
@@ -3346,6 +3483,176 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.25898",
+      "arxiv_id": "2609.25898",
+      "title": "Robust Active-Perception Control for Global-State-Free Aerial-Ground Cooperation",
+      "authors": [
+        "Mingxuan Zhang",
+        "Jiajun Yu",
+        "Baozhe Zhang",
+        "Pengxiang Zhou",
+        "Wentao Liu",
+        "Fei Gao",
+        "Chao Xu",
+        "Yanjun Cao"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.25898",
+      "pdf_url": "https://arxiv.org/pdf/2609.25898",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出全局状态无关的空地协同主动感知框架COPA：单轴云台解耦相机与无人机俯仰，TCN预测UGV短时运动，MPC联合优化无人机与云台控制，仿真与真机实验验证持续可见性与稳健跟踪。",
+      "change_zh": "常见路线依赖全局定位且感知控制解耦，固定相机易因姿态-视场冲突丢目标。COPA在UGV固连非惯性系直接控制，把云台角与目标像面状态纳入模型，TCN预测对方运动供MPC联合优化，摆脱全局状态依赖。",
+      "why_it_matters": "对UAV主动目标搜索的目标发现后跟踪与接近阶段直接有用：免全局定位适配GPS拒止多机协同，主动感知MPC确保目标不脱视野，是感知-控制一体化的真机验证，对主动感知与控制线有参考价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "localization",
+        "model predictive control",
+        "uav"
+      ],
+      "added_at": "2026-09-23T09:06:34.879426+00:00"
+    },
+    {
+      "id": "2609.26360",
+      "arxiv_id": "2609.26360",
+      "title": "Hierarchical Floorplan-Guided Vision-Language Exploration for Embodied Question Answering",
+      "authors": [
+        "Albert Gassol Puigjaner",
+        "Kostas Alexis"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26360",
+      "pdf_url": "https://arxiv.org/pdf/2609.26360",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HFLEX-EQA提出层次化EQA探索框架：从RGB-D在线构建层级场景图与开放词汇占据地图，VLM联合户型先验规划，用房级发现策略引导语义前沿探索，在两个EQA基准与四足真机上验证。",
+      "change_zh": "常见路线仅以局部观测加语义地图驱动VLM探索；本文引入估计的拓扑户型先验，让VLM联合场景图、观测历史与户型推理，用房级发现策略导向未观测的语义相关房间，从局部贪心转向结构感知的全局探索。",
+      "why_it_matters": "开放词汇前沿与房级目标选择思路可直接迁移到ObjectNav开放词汇目标搜索；对UAV主动目标搜索，用结构先验约束探索方向亦有借鉴；真机四足部署体现Sim2Real价值，并为VLM智能体探索与在线空间记忆提供系统参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "exploration",
+        "vlm"
+      ],
+      "added_at": "2026-09-23T09:15:11.928283+00:00"
+    },
+    {
+      "id": "2609.25841",
+      "arxiv_id": "2609.25841",
+      "title": "Metric-Bench: Exploring In-context Spatial Metric Reasoning in VLMs for Indoor Scenes",
+      "authors": [
+        "Yuling Xi",
+        "Haokai Zhang",
+        "Muzhi Zhu",
+        "Hao Zhong",
+        "Zongze Du",
+        "Hengyu Zhao",
+        "Chenchen Jing",
+        "Yufei Yin",
+        "Bin Qin",
+        "Yongjie Yang",
+        "Zhenbo Luo",
+        "Hao Chen",
+        "Chunhua Shen"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.25841",
+      "pdf_url": "https://arxiv.org/pdf/2609.25841",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Metric-Bench基准，利用图中已知尺寸的参考物体引导VLM在无相机内参下进行度量空间推理，并配套强化微调方法MetricReasoner，显著提升空间度量理解与泛化能力。",
+      "change_zh": "相比依赖相机内参或像素级监督的3D估计路线，该工作改用图中已知尺寸参考物做上下文度量推理，以可验证数值奖励的强化微调替代刚性像素监督，在提升度量能力的同时尽量保留通用多模态能力。",
+      "why_it_matters": "无内参的度量推理能力可为UAV目标搜索与ObjectNav提供尺度感知，使智能体从单图推断目标与场景的真实尺寸和距离，辅助接近与决策；其避免灾难性遗忘的适配方式对导航VLM的训练亦有参考价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "spatial reasoning",
+        "vision language model",
+        "vlm"
+      ],
+      "added_at": "2026-09-23T09:15:43.916380+00:00"
+    },
+    {
+      "id": "2609.25611",
+      "arxiv_id": "2609.25611",
+      "title": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
+      "authors": [
+        "Qwen Team"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.25611",
+      "pdf_url": "https://arxiv.org/pdf/2609.25611",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.CV",
+        "cs.MM"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文发布原生全模态智能体模型Qwen3.8-Omni-Flash，基于稀疏MoE与百万token上下文，经多模态协同训练将文本智能体能力迁移至音视频，并开源插件框架与实时交互框架。",
+      "change_zh": "以往全模态模型侧重感知与交互，本文以原生多模态协同训练把文本域智能体能力迁移到音视频，并以系统级视角将实时多模态交互拆解为上下文记忆管理、工具调用与子智能体编排，配套开源插件与实时框架。",
+      "why_it_matters": "对UAV搜索与ObjectNav无直接实验，但作为原生全模态基础模型，其长时程智能体执行、百万上下文、工具调用与子智能体编排能力，可为具身导航与语音指令跟随提供推理规划底座。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "multimodal agent"
+      ],
+      "added_at": "2026-09-23T09:22:44.175071+00:00"
+    },
+    {
       "id": "2609.24576",
       "arxiv_id": "2609.24576",
       "title": "What do VLM-Based Vision-Language Navigation Models Rely on: Interpreting and Steering Policy Behavior",
@@ -4269,6 +4576,50 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.26780",
+      "arxiv_id": "2609.26780",
+      "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+      "authors": [
+        "Haobo Zheng",
+        "Tan Tang",
+        "Yan Chen",
+        "Weijie Wang",
+        "Yingcai Wu"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26780",
+      "pdf_url": "https://arxiv.org/pdf/2609.26780",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "面向多方对话长期记忆，提出说话人中心双轨记忆：逐字与结构化两轨按个人与群体两级视图组织，查询时按实体、事件、时间融合证据，并以说话人条件GRPO强化学习训练写入器，多项基准领先。",
+      "change_zh": "常见LLM记忆以检索相关片段为主，易丢失说话人归属与群体关系；本工作改以说话人为中心，将逐字记录与推断状态分轨存储并分个人/群体两级视图，再用说话人条件GRPO强化学习降低写入时的归因与更新错误。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav无直接空间价值，但属收录的智能体记忆技术线：其结构化双轨记忆与RL训练写入器范式，可为具身智能体的长期状态记忆、多主体人机交互与指令跟随中的关系记忆提供方法借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "leaderboard"
+      ],
+      "added_at": "2026-09-23T09:17:59.436998+00:00"
     },
     {
       "id": "2609.24124",
@@ -7094,6 +7445,105 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.26793",
+      "arxiv_id": "2609.26793",
+      "title": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
+      "authors": [
+        "Shufan Sun",
+        "Chen Wang",
+        "Enxin Song",
+        "Jiatao Gu",
+        "Lingjie Liu"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26793",
+      "pdf_url": "https://arxiv.org/pdf/2609.26793",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HARMONY用层次化思维链结合VLM智能体推理与视觉几何模型，从单张室内图像恢复房间布局，按墙面、家具、摆件层次放置物体并以点云细化，重建语义一致且与输入对齐的3D场景。",
+      "change_zh": "相比纯VLM推理语义合理但几何不准、或纯几何点云质量受限的既有路线，本文将两者串成层次化流水线：相机标定后由VLM推布局，再按墙面→独立家具→依附摆件顺序放置，逐物体以点云细化，反思回路防误差累积。",
+      "why_it_matters": "单图生成结构化3D场景可为ObjectNav提供仿真场景与训练数据，物体级布局关系可作导航智能体的场景先验；“VLM分层推理+几何校验”闭环对空间记忆与主动感知有借鉴；对UAV主动目标搜索价值有限。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "3d scene",
+        "agentic",
+        "geometry",
+        "vlm"
+      ],
+      "added_at": "2026-09-23T09:12:24.258065+00:00"
+    },
+    {
+      "id": "2609.26490",
+      "arxiv_id": "2609.26490",
+      "title": "Benchmarking Robots for Everyday Environments: From Lab Experiments to Real-World Operations",
+      "authors": [
+        "Raphael Memmesheimer",
+        "Martina Overbeck",
+        "Dominik Beyer",
+        "Björn Kral",
+        "Sabine Bellmann",
+        "Sven Schneider",
+        "Jan Zimmermann",
+        "Anna-Maria Meer",
+        "Medina Klicic",
+        "Simone Roth",
+        "Carolin Straßmann",
+        "Alexander Arntz",
+        "Marlene Wessels",
+        "Johannes Kraus",
+        "Paul Schweidler",
+        "Tristan Schnell",
+        "Christoph Zimmermann",
+        "Benedikt Pulver",
+        "Wilhelm Stork",
+        "Martin Gersch",
+        "Sven Behnke",
+        "Arne Rönnau"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26490",
+      "pdf_url": "https://arxiv.org/pdf/2609.26490",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出面向公共环境机器人部署的跨学科评测框架，历时三年对户外清扫、地下通道清扫与图书馆交互服务三类机器人开展多次现场评测，综合考察任务完成、交互质量、安全与经济可行性，弥合实验室指标与真实运营需求的差距。",
+      "change_zh": "相比常见以仿真或实验室指标为主的具身评测路线，该工作把评测搬到真实公共场景，借跨学科专家共识与三年七次现场活动，构建涵盖任务、交互、安全与经济的综合评测概念，检验从实验室原型到运营系统的转变。",
+      "why_it_matters": "该工作为具身基准与真机部署评测技术线提供了从实验室走向真实运营的系统方法论，其任务-安全-经济多维评测视角可启发ObjectNav与UAV目标搜索算法在真实场景下的落地评估与指标设计，但与两者核心算法本身无直接关联。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-09-23T09:19:25.287769+00:00"
+    },
+    {
       "id": "2609.18738",
       "arxiv_id": "2609.18738",
       "title": "Active perception for robotic harvesting: 3D reconstruction and localisation of tomatoes hidden within clusters in a Mediterranean greenhouse",
@@ -7678,6 +8128,44 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.26315",
+      "arxiv_id": "2609.26315",
+      "title": "ArborSplat: Online Semantic Gaussian Splatting SLAM for Orchards",
+      "authors": [
+        "Alessandro Masini",
+        "Matteo Frosi",
+        "Mirko Usuelli",
+        "Matteo Matteucci"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26315",
+      "pdf_url": "https://arxiv.org/pdf/2609.26315",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "面向果园的在线语义3DGS SLAM系统，以LiDAR里程计跟踪，用类别高度带和地面约束直接在Gaussian地图上优化语义并在线融合多视角证据，多物候期果园实测ATE低于0.5米，优于SGS-SLAM、GS3LAM且更快。",
+      "change_zh": "常见路线把图像语义投影到3D点且以外观驱动优化，细弱结构易被背景深度污染；本文改为直接在Gaussian地图上优化语义，用拟合地面之上的类别高度带约束，在线融合多视角证据并剔除矛盾标签，为欠表示结构预留容量，跟踪改用LiDAR里程计。",
+      "why_it_matters": "对状态估计与在线建图技术线有直接价值：在果园等苛刻环境中保持亚米级ATE并提供保留细结构的语义地图，可为果园巡查、目标发现等UAV与地面导航任务提供语义空间记忆；细结构语义保持的思路对ObjectNav类语义建图亦有借鉴。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "odometry",
+        "slam"
+      ],
+      "added_at": "2026-09-23T09:24:30.934752+00:00"
     },
     {
       "id": "2609.24140",
@@ -8600,6 +9088,43 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.26766",
+      "arxiv_id": "2609.26766",
+      "title": "TM-APR: Thermal Temporal-Memory Localization via Analytic Online Adaptation",
+      "authors": [
+        "Yanshuo Bai",
+        "Kanji Tanaka"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.26766",
+      "pdf_url": "https://arxiv.org/pdf/2609.26766",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "针对热成像视觉位置识别在线部署中环境依赖强、重训练开销大且难建模非线性热漂移的问题，首次将解析类增量学习引入域不变VPR，并融合无迹传播、高斯混合与H∞优化，实现O(1)闭式更新以稳定实时SLAM。",
+      "change_zh": "常规热VPR域适配依赖反向传播式在线微调，开销大且无法应对极端非线性热波动；本文改用免梯度解析闭式矩阵更新，并利用ACIL与现代控制论的代数等价性嵌入无迹传播、高斯混合与H∞鲁棒优化，从更新机制上保证延迟有界。",
+      "why_it_matters": "热VPR是夜间与恶劣条件下无人机及机器人长程定位的关键能力，可直接支撑夜间搜救侦察等UAV任务与导航的定位底座；其免反传、O(1)有界延迟的在线适配思路契合机载算力受限平台，对状态估计与控制线有较强落地参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "deployment",
+        "localization",
+        "slam"
+      ],
+      "added_at": "2026-09-23T09:17:04.222437+00:00"
+    },
+    {
       "id": "2609.23896",
       "arxiv_id": "2609.23896",
       "title": "BarrierFormer: Transformer-Guided Predictive Barrier Enforcement for Safe Robot Control",
@@ -8814,6 +9339,49 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.25741",
+      "arxiv_id": "2609.25741",
+      "title": "Fysiverse-3D-Vision Technical Report: Generating Executable 3D Worlds from Images through Unified Spatial Reasoning",
+      "authors": [
+        "Dingkang Yang",
+        "Yizhou Liu",
+        "Wendong Cheng",
+        "Zizhi Chen",
+        "Shunli Wang",
+        "Yang Liu",
+        "Hongsheng Li",
+        "Lihua Zhang"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.25741",
+      "pdf_url": "https://arxiv.org/pdf/2609.25741",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出视觉-语言-几何统一框架Fysiverse-3D-Vision，从单张图像重建3D场景并生成可执行资产，将空间布局推理与资产生成解耦，用跨注意力预测物体平移旋转缩放，并以碰撞感知优化保证物理一致性。",
+      "change_zh": "常见图像条件3D生成路线把空间布局估计与特定资产生成器耦合，难以联合建模语义、度量几何与场景级空间关系；本工作把布局推理独立出来并与几何重建在共享表示中互相增强，统一Transformer建模场景上下文，再经碰撞感知优化细化物理一致性。",
+      "why_it_matters": "属于空间智能基础能力：可从单图生成带度量几何与物体级空间关系的可编辑、可仿真3D世界，有望为UAV目标搜索与ObjectNav提供低成本的环境与场景生成来源，支持交互式编辑和物理仿真，服务于具身训练环境构建。",
+      "relevance_rating": 6,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 17,
+      "keywords": [
+        "3d scene",
+        "geometry",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-09-23T09:18:33.222173+00:00"
+    },
+    {
       "id": "2609.20604",
       "arxiv_id": "2609.20604",
       "title": "Semantic SLAM in Precision Agriculture using Bayesian Inference",
@@ -8854,16 +9422,112 @@
     }
   ],
   "briefing": {
-    "text": "今日入库工作聚焦多智能体去中心化通信这一主线。最值得读的是Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity：它依据演化中的语义邻近动态构建稀疏通信图，用四种推理时路由信号连接智能体，实现轮次自适应的LLM协作，且无需模型训练与中央规划器，对多机器人导航中通信开销和规模扩展难题是可直接落地的方案。从趋势看，以语义距离取代固定拓扑或物理近邻来组织智能体交互，正成为具身多智能体系统的设计方向。",
-    "added": 1,
-    "at": "2026-09-22T20:01:29.723757+00:00",
+    "text": "本批聚焦具身导航与空间智能：免训练VLM框架、世界模型与诊断基准并进。首推SparseNav，凭BEV地图与稀疏地标记忆免训练完成VLN，R2R-CE达42.8%并部署四足，证明模块化可抗衡端到端；Skytopia以动作条件世界模型统一三类无人机导航、零微调上真机；RoboFollow用分层扰动揭示VLA高成功率下的指令跟随幻象。趋势：免训练、重记忆与几何先验的路线正逼近端到端，评测重心转向真实能力。",
+    "added": 13,
+    "at": "2026-09-23T09:25:51.721740+00:00",
     "new": [
       {
-        "t": "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
-        "u": "https://arxiv.org/abs/2609.20889",
+        "t": "Robust Active-Perception Control for Global-State-Free Aerial-Ground Cooperation",
+        "u": "https://arxiv.org/abs/2609.25898",
         "r": 8,
         "g": 7,
-        "s": "Proxifield提出去中心化、轮次自适应的LLM多智能体通信协议，依据演化中的语义邻近构建稀疏通信图，用四种推理时路由信号连接智能体，无需模型训练或中央规划器。",
+        "s": "提出全局状态无关的空地协同主动感知框架COPA：单轴云台解耦相机与无人机俯仰，TCN预测UGV短时运动，MPC联合优化无人机与云台控制，仿真与真机实验验证持续可见性与稳健跟踪。",
+        "c": ""
+      },
+      {
+        "t": "SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.26408",
+        "r": 10,
+        "g": 8,
+        "s": "SparseNav是免训练VLN框架：维持轻量BEV几何地图与稀疏地标记忆，由指令管理器追踪进度、按活跃子指令按需调用开放词汇分割，VLM从混合边界与方向航点中择路，R2R-CE/RxR-CE达42.8%/40.7%，并部署四足真机。",
+        "c": ""
+      },
+      {
+        "t": "Skytopia: Monocular Drone Navigation with Action-Conditioned Latent World Models",
+        "u": "https://arxiv.org/abs/2609.26007",
+        "r": 9,
+        "g": 8,
+        "s": "提出Skytopia：基于动作条件隐世界模型与3D高斯溅射平台的单目无人机导航策略，仅保留世界模型表征、部署时丢弃预测器，统一支持点目标、图像目标与无目标导航并零微调真机部署。",
+        "c": ""
+      },
+      {
+        "t": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
+        "u": "https://arxiv.org/abs/2609.25636",
+        "r": 8,
+        "g": 8,
+        "s": "RoboFollow提出具身指令跟随诊断基准：以高场景熵场景、L0-L3分层扰动协议和混淆控制诊断，评测九种VLA与WAM策略，揭示高成功率掩盖了语言指令跟随能力的真实不足。",
+        "c": "https://github.com/AutoLab-SAI-SJTU/RoboFollow"
+      },
+      {
+        "t": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
+        "u": "https://arxiv.org/abs/2609.26793",
+        "r": 7,
+        "g": 6,
+        "s": "HARMONY用层次化思维链结合VLM智能体推理与视觉几何模型，从单张室内图像恢复房间布局，按墙面、家具、摆件层次放置物体并以点云细化，重建语义一致且与输入对齐的3D场景。",
+        "c": ""
+      },
+      {
+        "t": "Hierarchical Floorplan-Guided Vision-Language Exploration for Embodied Question Answering",
+        "u": "https://arxiv.org/abs/2609.26360",
+        "r": 8,
+        "g": 7,
+        "s": "HFLEX-EQA提出层次化EQA探索框架：从RGB-D在线构建层级场景图与开放词汇占据地图，VLM联合户型先验规划，用房级发现策略引导语义前沿探索，在两个EQA基准与四足真机上验证。",
+        "c": ""
+      },
+      {
+        "t": "Metric-Bench: Exploring In-context Spatial Metric Reasoning in VLMs for Indoor Scenes",
+        "u": "https://arxiv.org/abs/2609.25841",
+        "r": 8,
+        "g": 7,
+        "s": "提出Metric-Bench基准，利用图中已知尺寸的参考物体引导VLM在无相机内参下进行度量空间推理，并配套强化微调方法MetricReasoner，显著提升空间度量理解与泛化能力。",
+        "c": ""
+      },
+      {
+        "t": "TM-APR: Thermal Temporal-Memory Localization via Analytic Online Adaptation",
+        "u": "https://arxiv.org/abs/2609.26766",
+        "r": 6,
+        "g": 6,
+        "s": "针对热成像视觉位置识别在线部署中环境依赖强、重训练开销大且难建模非线性热漂移的问题，首次将解析类增量学习引入域不变VPR，并融合无迹传播、高斯混合与H∞优化，实现O(1)闭式更新以稳定实时SLAM。",
+        "c": ""
+      },
+      {
+        "t": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+        "u": "https://arxiv.org/abs/2609.26780",
+        "r": 7,
+        "g": 8,
+        "s": "面向多方对话长期记忆，提出说话人中心双轨记忆：逐字与结构化两轨按个人与群体两级视图组织，查询时按实体、事件、时间融合证据，并以说话人条件GRPO强化学习训练写入器，多项基准领先。",
+        "c": ""
+      },
+      {
+        "t": "Fysiverse-3D-Vision Technical Report: Generating Executable 3D Worlds from Images through Unified Spatial Reasoning",
+        "u": "https://arxiv.org/abs/2609.25741",
+        "r": 6,
+        "g": 5,
+        "s": "提出视觉-语言-几何统一框架Fysiverse-3D-Vision，从单张图像重建3D场景并生成可执行资产，将空间布局推理与资产生成解耦，用跨注意力预测物体平移旋转缩放，并以碰撞感知优化保证物理一致性。",
+        "c": ""
+      },
+      {
+        "t": "Benchmarking Robots for Everyday Environments: From Lab Experiments to Real-World Operations",
+        "u": "https://arxiv.org/abs/2609.26490",
+        "r": 7,
+        "g": 6,
+        "s": "本文提出面向公共环境机器人部署的跨学科评测框架，历时三年对户外清扫、地下通道清扫与图书馆交互服务三类机器人开展多次现场评测，综合考察任务完成、交互质量、安全与经济可行性，弥合实验室指标与真实运营需求的差距。",
+        "c": ""
+      },
+      {
+        "t": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
+        "u": "https://arxiv.org/abs/2609.25611",
+        "r": 8,
+        "g": 7,
+        "s": "本文发布原生全模态智能体模型Qwen3.8-Omni-Flash，基于稀疏MoE与百万token上下文，经多模态协同训练将文本智能体能力迁移至音视频，并开源插件框架与实时交互框架。",
+        "c": ""
+      },
+      {
+        "t": "ArborSplat: Online Semantic Gaussian Splatting SLAM for Orchards",
+        "u": "https://arxiv.org/abs/2609.26315",
+        "r": 6,
+        "g": 7,
+        "s": "面向果园的在线语义3DGS SLAM系统，以LiDAR里程计跟踪，用类别高度带和地面约束直接在Gaussian地图上优化语义并在线融合多视角证据，多物候期果园实测ATE低于0.5米，优于SGS-SLAM、GS3LAM且更快。",
         "c": ""
       }
     ]

@@ -1334,5 +1334,61 @@
     "reason": "论文核心目标是任务导向抓取（机械臂操作），NBV主动感知仅服务于抓取执行且不含任何导航决策成分，按范围排除条款应予拒收。",
     "rejected_at": "2026-09-22",
     "url": "https://arxiv.org/abs/2609.23504"
+  },
+  "2609.26620": {
+    "title": "GeoComposer: Geometry-Grounded Photographic Composition Instruction",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作属摄影构图图像编辑/生成应用，几何先验仅服务于美学与生成一致性，与空间智能、导航、机器人无关，落入文生图/垂直应用拒收范围。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.26620"
+  },
+  "2609.26777": {
+    "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "该工作是面向SGLang生产推理服务软件工程的领域专用智能体基准，属ML基础设施/软件工程评测，与空间智能、导航、机器人等收录技术线无实质关联，仅'智能体'术语擦边。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.26777"
+  },
+  "2609.25932": {
+    "title": "Unsigned Distance Maps on 2D Point Cloud Registration",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属状态估计技术线的常规增量改进：以预计算距离场加速2D点云配准，仅在一个真实数据集(IILABS 3D)上验证，未体现社区公认的系统级落地影响力，按收录标准应拒绝。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.25932"
+  },
+  "2609.26425": {
+    "title": "QuantWM: Temporally Consistent 2-Bit KV Cache Quantization for World Models and Video Generation",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心贡献是面向文生视频与生成式世界模型的KV缓存2比特量化，属推理压缩/部署加速技术，不涉及导航、规划或具身能力，仅以'世界模型'术语擦边。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.26425"
+  },
+  "2609.26325": {
+    "title": "Leveraging Vision-Based Point Cloud Map Priors for Camera-Based 3D Object Detection and Online Vectorized HD Mapping",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向自动驾驶的相机3D目标检测与在线矢量化高精地图，属感知精度提升工作，与具身导航、UAV目标搜索、ObjectNav等核心收录问题仅边缘相关。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.26325"
+  },
+  "2609.25689": {
+    "title": "MotionForge: A Data Generation Pipeline and Large-Scale Benchmark for Long-Horizon Manipulation of Dynamic Objects with Domain Shifts",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属于机械臂动态操作与VLA策略评测基准，不含导航决策成分，为明确排除范围",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.25689"
+  },
+  "2609.26618": {
+    "title": "NavSafe-$\\infty$: Benchmarking Closed-Loop Driving Safety in Photorealistic Environments",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "主题为自动驾驶端到端策略的闭环安全评测，超出收录的具身导航（UAV搜索/空域VLN/ObjectNav/地面VLN）及相关基础能力技术线范畴。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.26618"
   }
 }
