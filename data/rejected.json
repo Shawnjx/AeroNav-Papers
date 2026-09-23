@@ -1390,5 +1390,13 @@
     "reason": "主题为自动驾驶端到端策略的闭环安全评测，超出收录的具身导航（UAV搜索/空域VLN/ObjectNav/地面VLN）及相关基础能力技术线范畴。",
     "rejected_at": "2026-09-23",
     "url": "https://arxiv.org/abs/2609.26618"
+  },
+  "2609.24664": {
+    "title": "Agentic AI Enabling Autonomous, Self-Organizing, and Evolving UAV Networks",
+    "relevance": 5,
+    "rigor": 3,
+    "reason": "核心问题是低空UAV通信网络自组织（接入/回传/中继），属通信组网范畴而非目标搜索、导航或空间智能，且为观点式文章仅有个案演示，无基线对比与消融。",
+    "rejected_at": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.24664"
   }
 }

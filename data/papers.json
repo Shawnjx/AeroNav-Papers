@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T09:24:33.935182+00:00",
+  "updated_at": "2026-09-23T14:41:59.338206+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2075,6 +2075,43 @@
       "added_at": "2026-09-22T09:09:48.294958+00:00"
     },
     {
+      "id": "2609.22925",
+      "arxiv_id": "2609.22925",
+      "title": "\"Dear LLaVA, Please Drive\": A Depth-Aware Vision-Language Agent for Closed-Loop Robotic Control",
+      "authors": [
+        "Sebastian Berger",
+        "Katharina Winter",
+        "Fabian B. Flohr"
+      ],
+      "published": "2026-09-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.22925",
+      "pdf_url": "https://arxiv.org/pdf/2609.22925",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文以LLaVA为底座构建深度感知导航智能体，用命令式学习优化可微几何代价场替代轨迹标签，借助LoRA打通语义目标选择到无碰撞轨迹规划的语言驱动端到端控制，并验证仿真到真机迁移。",
+      "change_zh": "常见路线依赖模仿学习与标注轨迹且感知规划分立。本文改用命令式学习直接优化可微几何代价场，仅凭双目深度生成无碰撞路径，共享VLM骨干加任务LoRA，以不到1%参数更新打通语义到轨迹的统一闭环。",
+      "why_it_matters": "对ObjectNav与地面VLN，免轨迹标签的命令式学习缓解数据瓶颈，端到端语义到控制方案可参考；对UAV主动目标搜索，仅凭深度避障与不到1%参数微调契合机载算力限制，代价场优化思路可迁移到目标接近与绕障。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "language agent",
+        "semantic navigation",
+        "trajectory planning",
+        "vlm"
+      ],
+      "added_at": "2026-09-23T14:41:23.550053+00:00"
+    },
+    {
       "id": "2609.21716",
       "arxiv_id": "2609.21716",
       "title": "AgenticSwarm: Semantic Perception and Adaptive Task Allocation for Heterogeneous Multi-UAV Missions",
@@ -2804,6 +2841,47 @@
         "world model"
       ],
       "added_at": "2026-09-22T09:14:35.254187+00:00"
+    },
+    {
+      "id": "2609.23695",
+      "arxiv_id": "2609.23695",
+      "title": "PhysAI-Bench: A Benchmark for LLM-Based Agentic Decision-Making in Autonomous UAV-Centric Physical AI",
+      "authors": [
+        "Mohamed Amine Ferrag",
+        "Merouane Debbah",
+        "Abderrahmane Lakas",
+        "Manu Perumkunnil",
+        "Norbert Tihanyi"
+      ],
+      "published": "2026-09-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.23695",
+      "pdf_url": "https://arxiv.org/pdf/2609.23695",
+      "code_url": "https://github.com/maferrag/physai-bench",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 10,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/272de92e29e7103e40f0d26569da3f086dc93a29",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该基准面向无人机物理智能体决策评测，从自主无人机任务对话轨迹自动抽取10178个决策实例，保留任务上下文、工具调用、A2A交互与6G网络条件，两阶段评测29个基础模型，最优准确率仅52%。",
+      "change_zh": "不同于常见聚焦物理感知、直觉物理或导航的基准，它把评测重心转向无人机任务中的智能体决策本身：实例保留时序依赖、MCP工具调用、A2A交互与6G网络状态，且只暴露决策前信息以防未来事件泄露、逼近在线决策。",
+      "why_it_matters": "它为空域自主与LLM智能体提供了标准化决策评测：揭示最强模型在无人机任务决策上也仅约52%准确率，量化了工具使用、多智能体交互与网络约束下的决策短板，可指导UAV目标搜索等任务的模型选型与智能体能力提升。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "agentic",
+        "benchmark",
+        "uav"
+      ],
+      "added_at": "2026-09-23T14:39:15.176497+00:00"
     },
     {
       "id": "2609.21502",
@@ -4809,6 +4887,46 @@
         "exploration"
       ],
       "added_at": "2026-09-21T09:51:17.598489+00:00"
+    },
+    {
+      "id": "2609.22385",
+      "arxiv_id": "2609.22385",
+      "title": "Active Spatial Inspection for Effective and Efficient Embodied Exploration",
+      "authors": [
+        "Wenbin Wang",
+        "Xiang Bai",
+        "Yizhao Wang",
+        "Hang Sun",
+        "Dong Ren",
+        "Jie Qin",
+        "Qingquan Li",
+        "Bing Wang"
+      ],
+      "published": "2026-09-18",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.22385",
+      "pdf_url": "https://arxiv.org/pdf/2609.22385",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出ACE框架，以空间显式的主动巡检重思具身探索：证据化感知把模糊线索变为精确定位与定向核验，暴露感知式移动前瞻择优前进，缓解早停与过度探索的矛盾，较SOTA导航成功率高18.0%。",
+      "change_zh": "常见具身探索以粗粒度、间接的线索评估决定停止或继续，易早停或冗余探索；本文改为空间显式决策范式，用证据定位加定向核验判断线索是否充分，用前瞻优先与回溯抑制选择方向，将『是否继续巡检』变成显式可判问题。",
+      "why_it_matters": "何时终止探索、何时继续搜索是UAV主动目标搜索与ObjectNav的共同瓶颈。ACE将线索充分性判断显式化并给出量化收益（导航成功+18.0%、EQA效率+10.3%），其证据定位与方向抑制机制可迁移到搜救中的目标确认与目标导航的终止判据设计。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "localization"
+      ],
+      "added_at": "2026-09-23T14:41:56.337819+00:00"
     },
     {
       "id": "2609.17387",
@@ -9422,112 +9540,32 @@
     }
   ],
   "briefing": {
-    "text": "本批聚焦具身导航与空间智能：免训练VLM框架、世界模型与诊断基准并进。首推SparseNav，凭BEV地图与稀疏地标记忆免训练完成VLN，R2R-CE达42.8%并部署四足，证明模块化可抗衡端到端；Skytopia以动作条件世界模型统一三类无人机导航、零微调上真机；RoboFollow用分层扰动揭示VLA高成功率下的指令跟随幻象。趋势：免训练、重记忆与几何先验的路线正逼近端到端，评测重心转向真实能力。",
-    "added": 13,
-    "at": "2026-09-23T09:25:51.721740+00:00",
+    "text": "今日入库工作沿“评测—控制—探索”三个环节推进具身智能落地。PhysAI-Bench从无人机任务对话轨迹抽取10178个决策实例，保留工具调用与6G网络条件，29个模型最优仅52%准确率，量化了LLM物理决策的短板。首推\"Dear LLaVA, Please Drive\"：以可微几何代价场替代轨迹标签做命令式学习，经LoRA打通语义目标到无碰撞轨迹并完成真机迁移，为语言驱动控制省去昂贵的动作标注；ACE同样值得细读，其证据化感知与前瞻择优直面早停与过度探索的两难，导航成功率高出SOTA 18.0%。具身导航正从单点算法竞赛转向“基准暴露短板、方法补齐闭环”的协同演进。",
+    "added": 3,
+    "at": "2026-09-23T14:42:35.725177+00:00",
     "new": [
       {
-        "t": "Robust Active-Perception Control for Global-State-Free Aerial-Ground Cooperation",
-        "u": "https://arxiv.org/abs/2609.25898",
+        "t": "PhysAI-Bench: A Benchmark for LLM-Based Agentic Decision-Making in Autonomous UAV-Centric Physical AI",
+        "u": "https://arxiv.org/abs/2609.23695",
         "r": 8,
         "g": 7,
-        "s": "提出全局状态无关的空地协同主动感知框架COPA：单轴云台解耦相机与无人机俯仰，TCN预测UGV短时运动，MPC联合优化无人机与云台控制，仿真与真机实验验证持续可见性与稳健跟踪。",
-        "c": ""
+        "s": "该基准面向无人机物理智能体决策评测，从自主无人机任务对话轨迹自动抽取10178个决策实例，保留任务上下文、工具调用、A2A交互与6G网络条件，两阶段评测29个基础模型，最优准确率仅52%。",
+        "c": "https://github.com/maferrag/physai-bench"
       },
       {
-        "t": "SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.26408",
-        "r": 10,
-        "g": 8,
-        "s": "SparseNav是免训练VLN框架：维持轻量BEV几何地图与稀疏地标记忆，由指令管理器追踪进度、按活跃子指令按需调用开放词汇分割，VLM从混合边界与方向航点中择路，R2R-CE/RxR-CE达42.8%/40.7%，并部署四足真机。",
-        "c": ""
-      },
-      {
-        "t": "Skytopia: Monocular Drone Navigation with Action-Conditioned Latent World Models",
-        "u": "https://arxiv.org/abs/2609.26007",
+        "t": "\"Dear LLaVA, Please Drive\": A Depth-Aware Vision-Language Agent for Closed-Loop Robotic Control",
+        "u": "https://arxiv.org/abs/2609.22925",
         "r": 9,
-        "g": 8,
-        "s": "提出Skytopia：基于动作条件隐世界模型与3D高斯溅射平台的单目无人机导航策略，仅保留世界模型表征、部署时丢弃预测器，统一支持点目标、图像目标与无目标导航并零微调真机部署。",
+        "g": 7,
+        "s": "本文以LLaVA为底座构建深度感知导航智能体，用命令式学习优化可微几何代价场替代轨迹标签，借助LoRA打通语义目标选择到无碰撞轨迹规划的语言驱动端到端控制，并验证仿真到真机迁移。",
         "c": ""
       },
       {
-        "t": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
-        "u": "https://arxiv.org/abs/2609.25636",
+        "t": "Active Spatial Inspection for Effective and Efficient Embodied Exploration",
+        "u": "https://arxiv.org/abs/2609.22385",
         "r": 8,
-        "g": 8,
-        "s": "RoboFollow提出具身指令跟随诊断基准：以高场景熵场景、L0-L3分层扰动协议和混淆控制诊断，评测九种VLA与WAM策略，揭示高成功率掩盖了语言指令跟随能力的真实不足。",
-        "c": "https://github.com/AutoLab-SAI-SJTU/RoboFollow"
-      },
-      {
-        "t": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
-        "u": "https://arxiv.org/abs/2609.26793",
-        "r": 7,
         "g": 6,
-        "s": "HARMONY用层次化思维链结合VLM智能体推理与视觉几何模型，从单张室内图像恢复房间布局，按墙面、家具、摆件层次放置物体并以点云细化，重建语义一致且与输入对齐的3D场景。",
-        "c": ""
-      },
-      {
-        "t": "Hierarchical Floorplan-Guided Vision-Language Exploration for Embodied Question Answering",
-        "u": "https://arxiv.org/abs/2609.26360",
-        "r": 8,
-        "g": 7,
-        "s": "HFLEX-EQA提出层次化EQA探索框架：从RGB-D在线构建层级场景图与开放词汇占据地图，VLM联合户型先验规划，用房级发现策略引导语义前沿探索，在两个EQA基准与四足真机上验证。",
-        "c": ""
-      },
-      {
-        "t": "Metric-Bench: Exploring In-context Spatial Metric Reasoning in VLMs for Indoor Scenes",
-        "u": "https://arxiv.org/abs/2609.25841",
-        "r": 8,
-        "g": 7,
-        "s": "提出Metric-Bench基准，利用图中已知尺寸的参考物体引导VLM在无相机内参下进行度量空间推理，并配套强化微调方法MetricReasoner，显著提升空间度量理解与泛化能力。",
-        "c": ""
-      },
-      {
-        "t": "TM-APR: Thermal Temporal-Memory Localization via Analytic Online Adaptation",
-        "u": "https://arxiv.org/abs/2609.26766",
-        "r": 6,
-        "g": 6,
-        "s": "针对热成像视觉位置识别在线部署中环境依赖强、重训练开销大且难建模非线性热漂移的问题，首次将解析类增量学习引入域不变VPR，并融合无迹传播、高斯混合与H∞优化，实现O(1)闭式更新以稳定实时SLAM。",
-        "c": ""
-      },
-      {
-        "t": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
-        "u": "https://arxiv.org/abs/2609.26780",
-        "r": 7,
-        "g": 8,
-        "s": "面向多方对话长期记忆，提出说话人中心双轨记忆：逐字与结构化两轨按个人与群体两级视图组织，查询时按实体、事件、时间融合证据，并以说话人条件GRPO强化学习训练写入器，多项基准领先。",
-        "c": ""
-      },
-      {
-        "t": "Fysiverse-3D-Vision Technical Report: Generating Executable 3D Worlds from Images through Unified Spatial Reasoning",
-        "u": "https://arxiv.org/abs/2609.25741",
-        "r": 6,
-        "g": 5,
-        "s": "提出视觉-语言-几何统一框架Fysiverse-3D-Vision，从单张图像重建3D场景并生成可执行资产，将空间布局推理与资产生成解耦，用跨注意力预测物体平移旋转缩放，并以碰撞感知优化保证物理一致性。",
-        "c": ""
-      },
-      {
-        "t": "Benchmarking Robots for Everyday Environments: From Lab Experiments to Real-World Operations",
-        "u": "https://arxiv.org/abs/2609.26490",
-        "r": 7,
-        "g": 6,
-        "s": "本文提出面向公共环境机器人部署的跨学科评测框架，历时三年对户外清扫、地下通道清扫与图书馆交互服务三类机器人开展多次现场评测，综合考察任务完成、交互质量、安全与经济可行性，弥合实验室指标与真实运营需求的差距。",
-        "c": ""
-      },
-      {
-        "t": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
-        "u": "https://arxiv.org/abs/2609.25611",
-        "r": 8,
-        "g": 7,
-        "s": "本文发布原生全模态智能体模型Qwen3.8-Omni-Flash，基于稀疏MoE与百万token上下文，经多模态协同训练将文本智能体能力迁移至音视频，并开源插件框架与实时交互框架。",
-        "c": ""
-      },
-      {
-        "t": "ArborSplat: Online Semantic Gaussian Splatting SLAM for Orchards",
-        "u": "https://arxiv.org/abs/2609.26315",
-        "r": 6,
-        "g": 7,
-        "s": "面向果园的在线语义3DGS SLAM系统，以LiDAR里程计跟踪，用类别高度带和地面约束直接在Gaussian地图上优化语义并在线融合多视角证据，多物候期果园实测ATE低于0.5米，优于SGS-SLAM、GS3LAM且更快。",
+        "s": "提出ACE框架，以空间显式的主动巡检重思具身探索：证据化感知把模糊线索变为精确定位与定向核验，暴露感知式移动前瞻择优前进，缓解早停与过度探索的矛盾，较SOTA导航成功率高18.0%。",
         "c": ""
       }
     ]
