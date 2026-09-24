@@ -1398,5 +1398,69 @@
     "reason": "核心问题是低空UAV通信网络自组织（接入/回传/中继），属通信组网范畴而非目标搜索、导航或空间智能，且为观点式文章仅有个案演示，无基线对比与消融。",
     "rejected_at": "2026-09-23",
     "url": "https://arxiv.org/abs/2609.24664"
+  },
+  "2609.28328": {
+    "title": "BronchoTop: Bronchoscopy Navigation via RGB-Only Topological Localization",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属临床支气管镜导航的医学垂直应用，与收录的UAV/地面具身导航及机器人自主核心线仅共享拓扑视觉定位技术成分，属边缘相关未达收录标准。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28328"
+  },
+  "2609.28044": {
+    "title": "AeRSoM: An Aerial Rigid-Soft Integrated Manipulator for Contact-Rich Manipulation",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "核心为无人机载机械臂的接触式操作与柔顺控制，属范围明确排除的机械臂操作类工作，不含导航决策成分，仅'空中平台'与UAV技术线术语擦边。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28044"
+  },
+  "2609.27695": {
+    "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "核心是机械臂平行夹爪的触觉操作与抓取，无导航决策成分，仅'目标搜索/主动感知'术语与收录范围擦边，属范围外操作类工作。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.27695"
+  },
+  "2609.28184": {
+    "title": "VLMs Can Describe, But Not Measure: Object-Centric Scene Understanding for Robotic Manipulation",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "面向桌面机械臂操作的单帧RGB-D物体级感知与任务执行，属机械臂操作/VLA范畴且不含导航决策成分，仅在术语上触及VLM与3D场景理解。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28184"
+  },
+  "2609.28366": {
+    "title": "AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向自动驾驶长尾场景的垂直数据集与VLM微调，不属空域/地面具身导航及所列基础能力技术线，仅以grounding与轨迹规划等术语擦边。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28366"
+  },
+  "2609.28449": {
+    "title": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作为软件工程/代码执行推理领域的LLM评测基准，与空间、导航、机器人均无关，属范围外垂直领域应用。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28449"
+  },
+  "2609.28216": {
+    "title": "From Agent Output to Authorized Transition",
+    "relevance": 1,
+    "rigor": 2,
+    "reason": "论文属于智能体工程产出的合规与生命周期治理（软件/固件/PCB授权过渡契约），与空间、导航、机器人各技术线无关，且为无实验验证的概念框架，属范围外。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28216"
+  },
+  "2609.28270": {
+    "title": "Predicting Quantization Price for Selecting PTQ Configurations Before Deployment",
+    "relevance": 2,
+    "rigor": 3,
+    "reason": "本文属神经网络后训练量化配置选择方法研究，与具身导航、空间智能、大模型智能体能力或机器人自主等收录技术线均无实质关联，且摘要未报告任何实验验证。",
+    "rejected_at": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.28270"
   }
 }

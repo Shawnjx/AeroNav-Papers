@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T14:41:59.338206+00:00",
+  "updated_at": "2026-09-24T09:15:01.622018+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1146,6 +1146,88 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.27720",
+      "arxiv_id": "2609.27720",
+      "title": "CoRelNav: Collaborative Relational Navigation for Multi-Robot Spatially Constrained Semantic Navigation",
+      "authors": [
+        "Jinyu He",
+        "Zihao Mao",
+        "Haonan Jin",
+        "Mengyin Fu",
+        "Wenjie Song"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27720",
+      "pdf_url": "https://arxiv.org/pdf/2609.27720",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出多机器人协同关系导航框架CoRelNav，以空间语义场将任务约束转化为探索效用，把任务条件化多机探索与候选驱动的协同验证耦合，跨机器人聚合互补证据完成目标与周边物体关系的验证，并在仿真与两台真机上验证有效。",
+      "change_zh": "常见关系导航多为单机，多机系统又少做关系验证；本文真正改变的是把探索分配与候选验证耦合：随候选信息积累按团队导航代价将机器人重分配至互补证据采集，并在拓扑节点间聚合实例一致观测，用分布式局部证据消解关系歧义。",
+      "why_it_matters": "对ObjectNav线，它把目标条件从类别扩展到关系约束并给出多机协同解法，缓解关系验证的证据不足问题；其按证据效用重分配探索资源的思路可迁移到多无人机搜救与目标接近中的分工与确认，双真机部署也为具身导航落地提供参考。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "exploration",
+        "semantic navigation"
+      ],
+      "added_at": "2026-09-24T09:07:45.634364+00:00"
+    },
+    {
+      "id": "2609.28296",
+      "arxiv_id": "2609.28296",
+      "title": "Talk2Escape: Conversational Grounding for Vision-and-Language Navigation",
+      "authors": [
+        "Zerui Li",
+        "Sihao Lin",
+        "Yanyan Shao",
+        "Jiwen Zhang",
+        "Xiangyu Shi",
+        "Shijie Li",
+        "Qi Wu"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.28296",
+      "pdf_url": "https://arxiv.org/pdf/2609.28296",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出模型无关的对话干预框架，将地面VLN由开环改为闭环：轻量模块监测运动学，检测到局部循环或轨迹偏离即生成接地查询向预言机或人类纠偏，R2R-CE成功率达66%并在四足真机迁移。",
+      "change_zh": "常见路线是单轮开环指令跟随，误差累积无纠错。该文改为闭环主动干预：持续监测运动学，检测到局部循环或严重偏航即生成接地查询求助，且以模型无关插件作用于任意基础智能体，纠错源可为算法预言机或真人。",
+      "why_it_matters": "闭环纠错是具身导航共性短板：ObjectNav与UAV目标搜索同样受感知混淆和里程漂移困扰，其运动学异常检测加定向求助的干预机制、模型无关插件与真机验证，为各导航任务的失败恢复提供可迁移范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation",
+        "odometry",
+        "r2r"
+      ],
+      "added_at": "2026-09-24T09:09:56.407122+00:00"
+    },
+    {
       "id": "2609.26007",
       "arxiv_id": "2609.26007",
       "title": "Skytopia: Monocular Drone Navigation with Action-Conditioned Latent World Models",
@@ -1937,6 +2019,45 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.27526",
+      "arxiv_id": "2609.27526",
+      "title": "NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation",
+      "authors": [
+        "Jingyang Liu",
+        "Sujia Yao",
+        "Jiayuan Gu",
+        "Lan Xu"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27526",
+      "pdf_url": "https://arxiv.org/pdf/2609.27526",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "NavProbe是分层零样本导航智能体，以动态子目标议程结合主动证据检索，紧凑索引关联摘要与视觉记录，按需检索证据修订子目标，在R2R-CE与ObjectNav上超越零样本基线。",
+      "change_zh": "常见零样本导航需在完整视觉历史（高成本）与紧凑摘要（丢细节）间取舍。NavProbe改为用紧凑索引把摘要与其视觉几何记录链接，上下文不足时主动检索定向证据以修订子目标，实现可回溯推理且无需全量处理。",
+      "why_it_matters": "对ObjectNav与地面VLN零样本导航是直接强结果，其按需检索历史证据、可修订子目标的机制对UAV长程目标搜索尤其相关：搜救侦察中证据累积需回溯早前判断，紧凑索引式记忆可迁移至空域搜索。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "deployment",
+        "objectnav",
+        "r2r"
+      ],
+      "added_at": "2026-09-24T09:09:07.459195+00:00"
     },
     {
       "id": "2609.25636",
@@ -4656,6 +4777,85 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.27340",
+      "arxiv_id": "2609.27340",
+      "title": "Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP",
+      "authors": [
+        "Jungsoo Lee",
+        "Jaegyun Park",
+        "Wansoo Kim"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27340",
+      "pdf_url": "https://arxiv.org/pdf/2609.27340",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出经MCP暴露的非侵入式表示层：将占用栅格转为位姿感知的度量图像、以路点级语义标注记录观测，使任意MCP兼容LLM无需机器人专用封装即可驱动ROS导航，在仿真室内环境完成自主建图与空间/语义目标选择。",
+      "change_zh": "常见做法是为机器人编写定制LLM封装或微调导航模型，耦合紧且难复用；该文把空间与语义表示标准化为MCP工具，让LLM与ROS导航栈解耦、即插即用，不修改现有导航栈，降低了LLM能力跨导航系统复用的工程门槛。",
+      "why_it_matters": "为地面具身导航与LLM规划智能体提供可复用的系统集成范式，其地图转图像的空间表示与路点级语义记忆思路，可迁移至UAV主动目标搜索的地图利用与ObjectNav开放词汇目标选择，降低大模型接入导航系统的门槛。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "instruction",
+        "semantic navigation",
+        "spatial reasoning",
+        "waypoint"
+      ],
+      "added_at": "2026-09-24T09:04:32.242355+00:00"
+    },
+    {
+      "id": "2609.27463",
+      "arxiv_id": "2609.27463",
+      "title": "Safety-Filtered Distributed Koopman-MPC",
+      "authors": [
+        "Shengjun Zhang",
+        "Wenhao Li",
+        "Zhenxin Lin",
+        "Zhenglong Sun"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27463",
+      "pdf_url": "https://arxiv.org/pdf/2609.27463",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该论文提出安全滤波分布式Koopman-MPC：邻居轨迹仅驱动预测，本地感知与货架几何构造硬约束QP投影控制输入，在丢包下保障多机器人仓库导航的碰撞安全与可行性。",
+      "change_zh": "常规DMPC用邻居轨迹同时做预测与避碰约束，丢包即两者皆失；本文将两角色解耦：轨迹仅驱动Koopman预测，安全改由本地感知的硬约束QP投影保障，并给出采样间分离定理与在线可行性判据。",
+      "why_it_matters": "对状态估计与控制线及多机器人自主有价值：通信丢包下的安全滤波与可行性证书有望迁移到无人机集群搜索侦察的分布式避碰；对ObjectNav等单机导航价值有限，主要为集群运动控制提供带形式化保证的安全范式。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "deployment",
+        "geometry",
+        "model predictive control"
+      ],
+      "added_at": "2026-09-24T09:11:53.389904+00:00"
+    },
+    {
       "id": "2609.26780",
       "arxiv_id": "2609.26780",
       "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
@@ -5498,6 +5698,91 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.28225",
+      "arxiv_id": "2609.28225",
+      "title": "Large-Scale Geometric Map-Based Localization of UAVs in GNSS-Denied Urban Environments",
+      "authors": [
+        "Garth Terlizzi",
+        "Kaveh Fathian"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.28225",
+      "pdf_url": "https://arxiv.org/pdf/2609.28225",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 10,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "针对GNSS拒止城市环境的无人机定位，从下视图像检测建筑物并跨帧累积成图，用融合三角形结构与建筑形状的几何描述子匹配建筑轮廓库，在113–452平方公里搜索区保持高召回远超基线。",
+      "change_zh": "常见做法依赖卫星图像检索或学习式视觉描述子，易受外观变化影响且随搜索区增大迅速失效；本文改走纯几何路线，将建筑间三角形结构与单体形状编码为描述子并跨帧累积成图匹配，几何线索在数百平方公里尺度依然有效。",
+      "why_it_matters": "GNSS拒止定位是城市空域自主的前提能力；无人机搜救、侦察与目标接近任务都依赖可靠定位。该几何方案抗外观变化、可扩展至城市级搜索区，也以建筑结构为锚为空间智能提供表征思路，落地价值直接。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "geometry",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-09-24T09:01:39.663528+00:00"
+    },
+    {
+      "id": "2609.28416",
+      "arxiv_id": "2609.28416",
+      "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+      "authors": [
+        "Shuang Sun",
+        "Guoxin Chen",
+        "Fanzhe Meng",
+        "Jia Deng",
+        "Huatong Song",
+        "Jinhao Jiang",
+        "Wayne Xin Zhao",
+        "Hongteng Xu",
+        "Ji-Rong Wen"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.28416",
+      "pdf_url": "https://arxiv.org/pdf/2609.28416",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Agent-Editing世界模型AEWM，不模拟工具响应而建模动作对任务进展的影响：判别关键/探索/噪声决策并编辑被污染状态，配合真实执行，在多个基准上提升3.2–6.7分。",
+      "change_zh": "常见语言世界模型预测工具/环境响应，本文认为真实反馈可得时重建高熵响应价值有限，转而建模动作如何塑造任务进展，并直接编辑智能体历史中的过时假设与噪声决策（任务状态污染），经真实执行落地而非仅给批评。",
+      "why_it_matters": "对大模型与智能体线属核心收录，提供状态自纠偏训练与评测方案；编辑历史、消除任务状态污染的思路可启发长时程UAV目标搜索与ObjectNav智能体的记忆规划修正；实验未涉具身，对导航为间接启发。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "llm agent",
+        "world model"
+      ],
+      "added_at": "2026-09-24T09:03:42.445689+00:00"
     },
     {
       "id": "2609.24312",
@@ -7563,6 +7848,46 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.27363",
+      "arxiv_id": "2609.27363",
+      "title": "From LiDAR Maps to Visual Localization: Unified Visual Association for Robust Point-Line-Plane Pose Estimation",
+      "authors": [
+        "Wentao Zhao",
+        "Zikun Chen",
+        "Yihe Niu",
+        "Haoyu Chen",
+        "Jingchuan Wang"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27363",
+      "pdf_url": "https://arxiv.org/pdf/2609.27363",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出把LiDAR地图的几何与反射率渲染为带2D-3D溯源的准图像，使相机观测与地图视图共享成熟视觉特征与匹配器，实现先验LiDAR地图下的全局定位与连续6-DoF跟踪，并以分布感知、可观测性互补优化增强鲁棒性。",
+      "change_zh": "常见跨模态定位需专门学习图像-LiDAR对应模型；本文改为把LiDAR地图渲染成保留2D-3D溯源的准图像，复用成熟视觉特征与匹配器建立点线关联，并把匹配歧义以分布形式传播为方向性位姿不确定度、按需补强弱观测方向，而非压缩为标量置信度。",
+      "why_it_matters": "对UAV长时程自主尤为关键：仅靠预建LiDAR地图即可在光照剧变、动态遮挡下完成全局重定位与连续6-DoF跟踪，为搜救、侦察等无人机的持久导航提供位姿底座，也可作为ObjectNav等导航栈的底层定位模块，实验含EuRoC MAV数据集。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-09-24T09:05:09.588816+00:00"
+    },
+    {
       "id": "2609.26793",
       "arxiv_id": "2609.26793",
       "title": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
@@ -8246,6 +8571,84 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.27219",
+      "arxiv_id": "2609.27219",
+      "title": "Vision-Based Control of a Tether-Suspended Aerial Radiation Sensing Payload",
+      "authors": [
+        "Ian Snider",
+        "Brian J. Quiter",
+        "Emil Rofors",
+        "Mark W. Mueller"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27219",
+      "pdf_url": "https://arxiv.org/pdf/2609.27219",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 7,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出视觉控制方法：无人机下视相机追踪系绳吊挂辐射探测载荷的环形标记，四状态卡尔曼滤波估计摆角摆率，带积分LQR直接调节载荷轨迹，外场抗风试验使过渡段载荷跟踪误差较基线降20%。",
+      "change_zh": "相比将探测器装机低飞或无控制吊挂的常见做法，本文把被控对象从无人机本体改为系绳末端的无驱动载荷，用机载视觉闭环直接抑制摆动并让载荷而非飞机沿测线飞行，兼顾近地探测灵敏度与避免旋翼下洗扰动污染。",
+      "why_it_matters": "对UAV目标搜索有支撑：辐射源巡查本质是近距目标探测与接近，本系统让探测器贴近地面提升灵敏度又避免下洗扬尘，为危险源定位提供真机方案；同时为飞行控制线贡献了欠驱动吊挂载荷视觉伺服调节的外场实证案例。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "drone",
+        "waypoint"
+      ],
+      "added_at": "2026-09-24T09:02:35.173850+00:00"
+    },
+    {
+      "id": "2609.27509",
+      "arxiv_id": "2609.27509",
+      "title": "Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM",
+      "authors": [
+        "Preeti Chatterjee",
+        "Jin Lu",
+        "Jin Sun",
+        "Suchendra M. Bhandarkar"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.27509",
+      "pdf_url": "https://arxiv.org/pdf/2609.27509",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "KYS-SLAM是ORB-SLAM3的模块化扩展，将上下文证据重新表述为匹配代价，以连续对应调制替代二值特征拒绝；为关键点融合语义类、全景实例与免训练运动先验，在KITTI、EuRoC等21个序列上ATE RMSE降17.4%–27.7%。",
+      "change_zh": "常见语义/动态SLAM对动态物体特征做二值剔除，以牺牲匹配密度换外点抑制；本文改为将语义类、实例身份与免训练运动评分经分层兼容性融合为对应代价，只降权不丢弃，保留BA所需几何支撑，且单一固定配置跨室外驾驶、室内飞行与合成域无需调参。",
+      "why_it_matters": "对状态估计与控制线有直接价值：语义-运动先验驱动的特征级加权提升了动态场景定位鲁棒性，其免训练、免调参的跨域设定对UAV搜救侦察与ObjectNav等任务中视觉里程计模块的真机部署有借鉴意义，但不含导航决策成分，属支撑能力而非核心导航方法。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "domain transfer",
+        "slam"
+      ],
+      "added_at": "2026-09-24T09:11:09.491292+00:00"
     },
     {
       "id": "2609.26315",
@@ -9540,32 +9943,88 @@
     }
   ],
   "briefing": {
-    "text": "今日入库工作沿“评测—控制—探索”三个环节推进具身智能落地。PhysAI-Bench从无人机任务对话轨迹抽取10178个决策实例，保留工具调用与6G网络条件，29个模型最优仅52%准确率，量化了LLM物理决策的短板。首推\"Dear LLaVA, Please Drive\"：以可微几何代价场替代轨迹标签做命令式学习，经LoRA打通语义目标到无碰撞轨迹并完成真机迁移，为语言驱动控制省去昂贵的动作标注；ACE同样值得细读，其证据化感知与前瞻择优直面早停与过度探索的两难，导航成功率高出SOTA 18.0%。具身导航正从单点算法竞赛转向“基准暴露短板、方法补齐闭环”的协同演进。",
-    "added": 3,
-    "at": "2026-09-23T14:42:35.725177+00:00",
+    "text": "本批工作主线是LLM驱动的导航推理与多机器人协同，另有GNSS拒止定位、视觉SLAM与安全控制等支撑。首推Talk2Escape：模型无关地把VLN从开环改为闭环，检出轨迹循环或偏航即生成接地查询向人或预言机纠偏，R2R-CE成功率达66%并迁移四足真机；NavProbe以动态子目标议程配合主动证据检索实现零样本导航，在R2R-CE与ObjectNav上超越零样本基线；CoRelNav用空间语义场将任务约束转为探索效用，再以跨机协同验证确认目标与周边物体的关系，经两台真机检验。趋势观察：闭环纠偏、证据核查与多机协同正在合流，导航智能体从单机开环决策转向可验证的协同范式。",
+    "added": 10,
+    "at": "2026-09-24T09:16:33.053600+00:00",
     "new": [
       {
-        "t": "PhysAI-Bench: A Benchmark for LLM-Based Agentic Decision-Making in Autonomous UAV-Centric Physical AI",
-        "u": "https://arxiv.org/abs/2609.23695",
-        "r": 8,
+        "t": "Large-Scale Geometric Map-Based Localization of UAVs in GNSS-Denied Urban Environments",
+        "u": "https://arxiv.org/abs/2609.28225",
+        "r": 7,
         "g": 7,
-        "s": "该基准面向无人机物理智能体决策评测，从自主无人机任务对话轨迹自动抽取10178个决策实例，保留任务上下文、工具调用、A2A交互与6G网络条件，两阶段评测29个基础模型，最优准确率仅52%。",
-        "c": "https://github.com/maferrag/physai-bench"
-      },
-      {
-        "t": "\"Dear LLaVA, Please Drive\": A Depth-Aware Vision-Language Agent for Closed-Loop Robotic Control",
-        "u": "https://arxiv.org/abs/2609.22925",
-        "r": 9,
-        "g": 7,
-        "s": "本文以LLaVA为底座构建深度感知导航智能体，用命令式学习优化可微几何代价场替代轨迹标签，借助LoRA打通语义目标选择到无碰撞轨迹规划的语言驱动端到端控制，并验证仿真到真机迁移。",
+        "s": "针对GNSS拒止城市环境的无人机定位，从下视图像检测建筑物并跨帧累积成图，用融合三角形结构与建筑形状的几何描述子匹配建筑轮廓库，在113–452平方公里搜索区保持高召回远超基线。",
         "c": ""
       },
       {
-        "t": "Active Spatial Inspection for Effective and Efficient Embodied Exploration",
-        "u": "https://arxiv.org/abs/2609.22385",
+        "t": "Vision-Based Control of a Tether-Suspended Aerial Radiation Sensing Payload",
+        "u": "https://arxiv.org/abs/2609.27219",
+        "r": 6,
+        "g": 7,
+        "s": "提出视觉控制方法：无人机下视相机追踪系绳吊挂辐射探测载荷的环形标记，四状态卡尔曼滤波估计摆角摆率，带积分LQR直接调节载荷轨迹，外场抗风试验使过渡段载荷跟踪误差较基线降20%。",
+        "c": ""
+      },
+      {
+        "t": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+        "u": "https://arxiv.org/abs/2609.28416",
+        "r": 7,
+        "g": 7,
+        "s": "提出Agent-Editing世界模型AEWM，不模拟工具响应而建模动作对任务进展的影响：判别关键/探索/噪声决策并编辑被污染状态，配合真实执行，在多个基准上提升3.2–6.7分。",
+        "c": ""
+      },
+      {
+        "t": "Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP",
+        "u": "https://arxiv.org/abs/2609.27340",
         "r": 8,
         "g": 6,
-        "s": "提出ACE框架，以空间显式的主动巡检重思具身探索：证据化感知把模糊线索变为精确定位与定向核验，暴露感知式移动前瞻择优前进，缓解早停与过度探索的矛盾，较SOTA导航成功率高18.0%。",
+        "s": "提出经MCP暴露的非侵入式表示层：将占用栅格转为位姿感知的度量图像、以路点级语义标注记录观测，使任意MCP兼容LLM无需机器人专用封装即可驱动ROS导航，在仿真室内环境完成自主建图与空间/语义目标选择。",
+        "c": ""
+      },
+      {
+        "t": "From LiDAR Maps to Visual Localization: Unified Visual Association for Robust Point-Line-Plane Pose Estimation",
+        "u": "https://arxiv.org/abs/2609.27363",
+        "r": 7,
+        "g": 6,
+        "s": "提出把LiDAR地图的几何与反射率渲染为带2D-3D溯源的准图像，使相机观测与地图视图共享成熟视觉特征与匹配器，实现先验LiDAR地图下的全局定位与连续6-DoF跟踪，并以分布感知、可观测性互补优化增强鲁棒性。",
+        "c": ""
+      },
+      {
+        "t": "CoRelNav: Collaborative Relational Navigation for Multi-Robot Spatially Constrained Semantic Navigation",
+        "u": "https://arxiv.org/abs/2609.27720",
+        "r": 9,
+        "g": 8,
+        "s": "本文提出多机器人协同关系导航框架CoRelNav，以空间语义场将任务约束转化为探索效用，把任务条件化多机探索与候选驱动的协同验证耦合，跨机器人聚合互补证据完成目标与周边物体关系的验证，并在仿真与两台真机上验证有效。",
+        "c": ""
+      },
+      {
+        "t": "NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation",
+        "u": "https://arxiv.org/abs/2609.27526",
+        "r": 9,
+        "g": 7,
+        "s": "NavProbe是分层零样本导航智能体，以动态子目标议程结合主动证据检索，紧凑索引关联摘要与视觉记录，按需检索证据修订子目标，在R2R-CE与ObjectNav上超越零样本基线。",
+        "c": ""
+      },
+      {
+        "t": "Talk2Escape: Conversational Grounding for Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.28296",
+        "r": 9,
+        "g": 8,
+        "s": "提出模型无关的对话干预框架，将地面VLN由开环改为闭环：轻量模块监测运动学，检测到局部循环或轨迹偏离即生成接地查询向预言机或人类纠偏，R2R-CE成功率达66%并在四足真机迁移。",
+        "c": ""
+      },
+      {
+        "t": "Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM",
+        "u": "https://arxiv.org/abs/2609.27509",
+        "r": 6,
+        "g": 7,
+        "s": "KYS-SLAM是ORB-SLAM3的模块化扩展，将上下文证据重新表述为匹配代价，以连续对应调制替代二值特征拒绝；为关键点融合语义类、全景实例与免训练运动先验，在KITTI、EuRoC等21个序列上ATE RMSE降17.4%–27.7%。",
+        "c": ""
+      },
+      {
+        "t": "Safety-Filtered Distributed Koopman-MPC",
+        "u": "https://arxiv.org/abs/2609.27463",
+        "r": 7,
+        "g": 8,
+        "s": "该论文提出安全滤波分布式Koopman-MPC：邻居轨迹仅驱动预测，本地感知与货架几何构造硬约束QP投影控制输入，在丢包下保障多机器人仓库导航的碰撞安全与可行性。",
         "c": ""
       }
     ]
