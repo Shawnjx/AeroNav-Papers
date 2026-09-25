@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T09:34:07.580788+00:00",
+  "updated_at": "2026-09-25T15:00:02.860407+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -829,6 +829,51 @@
         "localization"
       ],
       "added_at": "2026-09-22T09:10:08.722764+00:00"
+    },
+    {
+      "id": "2609.23407",
+      "arxiv_id": "2609.23407",
+      "title": "OmniEcho: Audio-Visual Spatial Understanding for Omni-Modal Embodied Agents",
+      "authors": [
+        "Ruixun Liu",
+        "Yuxuan Wang",
+        "Jiacheng Xie",
+        "Yuhuan You",
+        "Donghua Cai",
+        "Junming Lin",
+        "Xiong-Hui Chen",
+        "Zhifang Guo",
+        "Yunfei Chu",
+        "Qize Yang",
+        "Xize Cheng",
+        "Jin Xu"
+      ],
+      "published": "2026-09-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.23407",
+      "pdf_url": "https://arxiv.org/pdf/2609.23407",
+      "code_url": "https://github.com/PKU-VaLuE-Lab/OmniEcho/tree/main",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出统一基准OmniEchoBench，覆盖197个真实场景、六项音视频空间感知及音视语言导航任务，并构建融合FOA空间音频编码与语义音频通路的全模态模型OmniEcho，感知性能领先。",
+      "change_zh": "常见音视觉具身研究多依赖仿真双耳音频与单一任务；该文改用真实采集的一阶Ambisonic音频与几何一致的可控渲染管线，在模型中并行设置FOA空间编码与语义音频通路，并把空间声感知与音视语言导航纳入统一评测体系。",
+      "why_it_matters": "声音是目标发现的重要线索：声源引导导航与ObjectNav及UAV搜救中循声寻人高度契合，可作为视觉之外的先验缩小搜索空间；其真实数据基准与几何一致的音频渲染管线，也为空间智能与具身评测提供了可复用的数据基础。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "localization",
+        "spatial understanding"
+      ],
+      "added_at": "2026-09-25T14:59:25.415237+00:00"
     },
     {
       "id": "2609.18789",
@@ -10487,105 +10532,17 @@
     }
   ],
   "briefing": {
-    "text": "本批工作主线是把LLM推理与世界模型嵌入具身规划与导航全链路，兼及建图、定位与评测。首推GPT-6-Astra Lights Up Embodied Navigation：仅凭单目RGB零样本在R2R-CE取得79.0%成功率并剖析失败模式，标定了通用基础模型的导航上限；Beyond Spatial Benchmarks实证空间推理分数与导航表现脱节，经Spatial-Nav-100K微调并蒸馏出免显式推理的学生策略，8B模型在HM3D/MP3D低算力下领先ObjectNav；Representation World Model则把规划编入表征几何，推理时直接构造潜路径，免去递归推演与动作空间搜索。趋势观察：大模型供先验、小模型跑策略的分工架构，正成为具身导航低算力落地的共同路径。",
-    "added": 12,
-    "at": "2026-09-25T09:35:02.659928+00:00",
+    "text": "本期入库的主线是用空间音频补全具身导航的感知与理解。最值得读的是OmniEcho：其构建的OmniEchoBench覆盖197个真实场景、六项音视频空间感知与音视语言导航任务，把此前分散的评测统一到一套基准上；配套模型融合FOA空间音频编码与语义音频通路两条支路，感知性能领先，可作为该方向的新基线。趋势观察：空间音频正从导航的辅助信号变为空间推理的核心输入，基准与模型同步推出的做法将更常见。",
+    "added": 1,
+    "at": "2026-09-25T15:00:34.918198+00:00",
     "new": [
       {
-        "t": "Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots",
-        "u": "https://arxiv.org/abs/2609.29043",
-        "r": 7,
-        "g": 7,
-        "s": "针对RoboCup@Home的GPSR任务，本文提出将指令分类与动作生成拆分为两个专门化阶段的LLM链式规划架构，将每次推理的提示词长度缩短约45%，在三种模型与真机HSR上验证规划一致性提升，并指出执行层是剩余瓶颈。",
-        "c": ""
-      },
-      {
-        "t": "GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
-        "u": "https://arxiv.org/abs/2609.29861",
+        "t": "OmniEcho: Audio-Visual Spatial Understanding for Omni-Modal Embodied Agents",
+        "u": "https://arxiv.org/abs/2609.23407",
         "r": 9,
-        "g": 6,
-        "s": "该文在连续环境VLN-CE上零样本评测通用基础模型GPT-6-Astra，仅凭单目RGB自主决定何时观察、移动与停止，在R2R-CE上取得79.0%成功率并分析其失败模式。",
-        "c": ""
-      },
-      {
-        "t": "Fly, Drive, Reconfigure: A Modular Reconfigurable Aerial-Ground Platform for Field Operations",
-        "u": "https://arxiv.org/abs/2609.28887",
-        "r": 7,
-        "g": 7,
-        "s": "HARP是可重构异构空地机器人平台：侦察机建图并驱动能耗感知规划器联合选择路线与空地机动模式，各模块独立飞行越过地面难行地形后自主对接成地面车以省能运输载荷，经多环节野外实验及格陵兰冰盖部署验证。",
-        "c": ""
-      },
-      {
-        "t": "Retrieve-to-Localize: Bridging Large Language Models and LiDAR Geometry for Spatial Grounding",
-        "u": "https://arxiv.org/abs/2609.29835",
-        "r": 7,
-        "g": 7,
-        "s": "该文提出SpatialLiDAR-LM，将LiDAR点特征与LLM对齐，通过语言条件、位置感知的检索与局部点精修直接从几何回归目标坐标，并构建SpatialLiDAR-QA基准。",
-        "c": ""
-      },
-      {
-        "t": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
-        "u": "https://arxiv.org/abs/2609.29171",
-        "r": 8,
-        "g": 6,
-        "s": "提出表征世界模型RWM，把规划直接编入表征几何：用端点表征构造潜路径并以逆动力学做局部监督，推理时在当前与目标表征间直接构造潜路径并恢复动作，免除递归推演与动作空间搜索。",
-        "c": ""
-      },
-      {
-        "t": "Beyond Spatial Benchmarks: From Spatial Reasoning to Navigation",
-        "u": "https://arxiv.org/abs/2609.29934",
-        "r": 9,
-        "g": 7,
-        "s": "该文实证揭示空间推理基准成绩与导航性能存在落差，构建Spatial-Nav-100K两阶段微调8B模型，并以空间先验教师蒸馏出免显式推理的学生策略，在HM3D与MP3D上以低算力取得领先ObjectNav结果。",
-        "c": "https://github.com/ylwhxht/Spatial-Nav"
-      },
-      {
-        "t": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI",
-        "u": "https://arxiv.org/abs/2609.30147",
-        "r": 7,
-        "g": 7,
-        "s": "GRASP是策略感知的多阶段LLM任务规划框架：先编译全局宏观指南，再在隔离上下文中探索局部策略，最后由多准则判别器独立评估，在日历调度、ZebraLogic与数学基准上大幅超越直接LLM规划器并消除多任务退化。",
-        "c": ""
-      },
-      {
-        "t": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
-        "u": "https://arxiv.org/abs/2609.29892",
-        "r": 7,
-        "g": 7,
-        "s": "提出Qwen-Planner-Agent这一闭环AI-for-AI开发框架：由智能体数据飞轮造数，监督冷启动加混合环境在线智能体强化学习（CARE），并以执行证据驱动模型与运行时工具链协同进化，在移动规划基准MobilePA-Bench上综合表现最优且基本保持通用能力。",
-        "c": ""
-      },
-      {
-        "t": "Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think",
-        "u": "https://arxiv.org/abs/2609.30036",
-        "r": 7,
-        "g": 7,
-        "s": "该文指出以最终目标图像评分动作会限制世界模型规划器，因长程目标可能需先远离；提出Anchored Planning，检索与当前和目标观测相似的记录片段，以其早期观测为中间目标，用冻结LeWM模型评分动作，无需额外训练即在四个长程任务上超越原版规划器。",
-        "c": ""
-      },
-      {
-        "t": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
-        "u": "https://arxiv.org/abs/2609.30199",
-        "r": 6,
-        "g": 7,
-        "s": "提出ExplorationBench基准，用规则可执行且与预训练知识冲突的异星世界沙盒（AlienCode、AlienLogic共140任务）评测AI系统的探索能力，测试10个系统，发现最强者能习得陌生规则但表现波动大且会停滞倒退。",
-        "c": ""
-      },
-      {
-        "t": "IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis",
-        "u": "https://arxiv.org/abs/2609.29444",
-        "r": 7,
-        "g": 7,
-        "s": "本文提出角色解耦的深度搜索智能体范式IterSynth，将规划与证据综合拆分为Planner和Synthesizer，以演化摘要作为持久状态，并用强化学习方法RDPO训练，在BrowseComp等五个深搜基准上超越同类8B智能体。",
-        "c": ""
-      },
-      {
-        "t": "OREN-X: Octree Residual Network for Real-Time Multi-Modal Mapping",
-        "u": "https://arxiv.org/abs/2609.29157",
-        "r": 8,
         "g": 8,
-        "s": "OREN-X提出基于八叉树的在线多模态建图方法，用共享数据结构统一存储几何SDF、辐射场与视觉语言特征，实现跨模态协同与实时性能。",
-        "c": ""
+        "s": "该文提出统一基准OmniEchoBench，覆盖197个真实场景、六项音视频空间感知及音视语言导航任务，并构建融合FOA空间音频编码与语义音频通路的全模态模型OmniEcho，感知性能领先。",
+        "c": "https://github.com/PKU-VaLuE-Lab/OmniEcho/tree/main"
       }
     ]
   }

@@ -1510,5 +1510,29 @@
     "reason": "该工作是将LLM多智能体套用于GPU内核代码优化这一垂直系统领域，与空间、导航、机器人均无关，属智能体垂直应用的范围外工作。",
     "rejected_at": "2026-09-25",
     "url": "https://arxiv.org/abs/2609.30059"
+  },
+  "2609.25503": {
+    "title": "SBMVTrack: Spike-Budgeted Multi-View Learning for Energy-Efficient UAV Tracking",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "该文属UAV视觉目标跟踪的脉冲网络能效优化，不含主动目标搜索、导航决策或控制成分，仅与UAV目标技术线术语相邻，属边缘相关。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.25503"
+  },
+  "2609.27486": {
+    "title": "Active Learning for Low-Altitude Radio Map Construction via Plug-and-Play Flow Matching",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心是低空RF无线电地图构建与通信测量采样，属明确排除的RF感知/纯通信信号处理范畴，虽含无人机轨迹设计但服务于通信建图，与目标搜索、导航决策或空间智能无实质关联。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.27486"
+  },
+  "2609.27449": {
+    "title": "X2Real: an eXtensive simulation benchmark for real-world generalist policies",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "机械臂操作策略的仿真评测基准，摘要未含任何导航决策成分，属范围明确排除的操作/VLA类工作，仅与具身基准、Sim2Real术语擦边。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.27449"
   }
 }
