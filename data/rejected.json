@@ -1462,5 +1462,53 @@
     "reason": "本文属神经网络后训练量化配置选择方法研究，与具身导航、空间智能、大模型智能体能力或机器人自主等收录技术线均无实质关联，且摘要未报告任何实验验证。",
     "rejected_at": "2026-09-24",
     "url": "https://arxiv.org/abs/2609.28270"
+  },
+  "2609.30037": {
+    "title": "AERIAL: Adversarial Evaluation of Robustness in Accuracy-Preserving Low-Precision EEG Decoders",
+    "relevance": 1,
+    "rigor": 7,
+    "reason": "研究对象是EEG脑机接口解码器的低精度压缩与对抗鲁棒性评测，属生物医学信号处理与ML安全范畴，与空域/地面导航、空间智能、机器人自主等收录技术线无实质关联。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.30037"
+  },
+  "2609.29091": {
+    "title": "From Passive Execution to Active Exploration: Agentic Embodied Manipulation in Realistic Environments",
+    "relevance": 4,
+    "rigor": 5,
+    "reason": "核心为具身抓放操作（Find-and-Place），摘要未体现移动导航决策成分，其主动探索服务于操作而非目标搜索导航，命中机械臂操作排除项。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.29091"
+  },
+  "2609.29933": {
+    "title": "An Empirical Study of VLM Pipelines for Long-Document QA",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "研究对象为长文档图文问答，属范围明确排除的纯图文问答类垂直应用，仅借用VLM与agentic流水线术语，与空间、导航、机器人均无关。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.29933"
+  },
+  "2609.30214": {
+    "title": "Underwater C3-JEPA: An Object-Centric Cross-View World Model for ROV Salvage",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "该工作是面向水下ROV重载打捞的接触式操作世界模型，本质属机械臂操作/VLA控制范畴且不含任何导航决策成分，而世界模型线仅收用于导航与规划的应用，故超出收录范围。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.30214"
+  },
+  "2609.30137": {
+    "title": "Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作是将LLM工具型智能体与仿真评测套用于金融客服垂直领域，与空间、导航、机器人自主均无关，属范围中明确排除的垂直应用类论文。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.30137"
+  },
+  "2609.30059": {
+    "title": "KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作是将LLM多智能体套用于GPU内核代码优化这一垂直系统领域，与空间、导航、机器人均无关，属智能体垂直应用的范围外工作。",
+    "rejected_at": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.30059"
   }
 }

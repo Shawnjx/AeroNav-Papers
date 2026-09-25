@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T09:15:01.622018+00:00",
+  "updated_at": "2026-09-25T09:34:07.580788+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1144,6 +1144,49 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.29934",
+      "arxiv_id": "2609.29934",
+      "title": "Beyond Spatial Benchmarks: From Spatial Reasoning to Navigation",
+      "authors": [
+        "Xun Huang",
+        "Shijia Zhao",
+        "Rongsheng Qu",
+        "Jiayuan Li",
+        "Xin Lu",
+        "Weixin Li",
+        "Chenglu Wen",
+        "Cheng Wang"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29934",
+      "pdf_url": "https://arxiv.org/pdf/2609.29934",
+      "code_url": "https://github.com/ylwhxht/Spatial-Nav",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文实证揭示空间推理基准成绩与导航性能存在落差，构建Spatial-Nav-100K两阶段微调8B模型，并以空间先验教师蒸馏出免显式推理的学生策略，在HM3D与MP3D上以低算力取得领先ObjectNav结果。",
+      "change_zh": "不同于单纯刷空间推理基准或直接套用闭源大模型做导航，本文先证明基准式空间专精与导航脱节，再让空间监督对齐导航目标与阶段，并将教师空间先验蒸馏进学生策略，推理时无需显式空间推理，大幅降低算力与延迟。",
+      "why_it_matters": "对ObjectNav直接提供了高性价比开源强基线与「空间能力应对齐任务而非基准」的方法论启示；对UAV主动目标搜索亦有借鉴：把空间先验蒸馏进策略、推理期免慢速链式推理，利于机载低延迟部署，空间监督与搜索决策联合训练的思路可迁移。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-09-25T09:27:31.672034+00:00"
     },
     {
       "id": "2609.27720",
@@ -2890,6 +2933,91 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.29861",
+      "arxiv_id": "2609.29861",
+      "title": "GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+      "authors": [
+        "Guangzhao Dai",
+        "Qianru Sun",
+        "Qi Wu",
+        "Bin Zhu"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29861",
+      "pdf_url": "https://arxiv.org/pdf/2609.29861",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文在连续环境VLN-CE上零样本评测通用基础模型GPT-6-Astra，仅凭单目RGB自主决定何时观察、移动与停止，在R2R-CE上取得79.0%成功率并分析其失败模式。",
+      "change_zh": "相比依赖导航微调、训练航点预测器或预建地图的常见VLN-CE路线，该文用最小接口让通用基础模型从单目RGB端到端地自行决策；但接口与提示细节披露不足，实际改变幅度有待正文验证。",
+      "why_it_matters": "它表明通用基础模型零样本即可超越监督VLN-CE基线，为地面与空域VLN、ObjectNav及UAV目标搜索提供免训练的模型驱动范式参考；其目标验证仍失败的发现也提示具身任务需补充主动感知与空间记忆能力。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "r2r",
+        "waypoint"
+      ],
+      "added_at": "2026-09-25T09:24:41.815005+00:00"
+    },
+    {
+      "id": "2609.29157",
+      "arxiv_id": "2609.29157",
+      "title": "OREN-X: Octree Residual Network for Real-Time Multi-Modal Mapping",
+      "authors": [
+        "Zhirui Dai",
+        "Qihao Qian",
+        "Dinh Minh Nguyen",
+        "Quan-Dung Pham",
+        "Kiana Bronder",
+        "Carlos Nieto-Granda",
+        "Yiyu Chen",
+        "Quan Nguyen",
+        "Nikolay Atanasov"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29157",
+      "pdf_url": "https://arxiv.org/pdf/2609.29157",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "OREN-X提出基于八叉树的在线多模态建图方法，用共享数据结构统一存储几何SDF、辐射场与视觉语言特征，实现跨模态协同与实时性能。",
+      "change_zh": "常见做法将几何、辐射与视觉语言各模态分别表示和估计，本文改为以八叉树作为共享结构统一索引多模态场，引入跨模态协同锐化SDF，并用在线字典学习压缩语言特征，兼得实时渲染与高精度开放词汇查询。",
+      "why_it_matters": "其开放词汇3D特征与实时建图可直接作为ObjectNav与UAV目标搜索的空间记忆后端：语言查询支持开放词汇目标定位，SDF几何支撑规划控制，字典压缩降低机载存储，长期任务可用统一地图检索目标。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "geometry",
+        "localization",
+        "online mapping"
+      ],
+      "added_at": "2026-09-25T09:33:26.964741+00:00"
     },
     {
       "id": "2609.24308",
@@ -4777,6 +4905,52 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.29171",
+      "arxiv_id": "2609.29171",
+      "title": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
+      "authors": [
+        "Yijun Yuan",
+        "Weicheng Zheng",
+        "Weibang Wang",
+        "Minghui Qin",
+        "Chang Sun",
+        "Junhao Huang",
+        "Kenan Li",
+        "Anmin Liu",
+        "Yicheng Yao",
+        "Hang Zhao"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29171",
+      "pdf_url": "https://arxiv.org/pdf/2609.29171",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出表征世界模型RWM，把规划直接编入表征几何：用端点表征构造潜路径并以逆动力学做局部监督，推理时在当前与目标表征间直接构造潜路径并恢复动作，免除递归推演与动作空间搜索。",
+      "change_zh": "常见世界模型先学显式动力学再靠搜索、优化或策略预测做规划，RWM改为把可达性与动作信息嵌入表征几何本身，使规划退化为端点间潜路径构造加逆动力学解码；但摘要未给出与主流世界模型的基线对比和消融细节。",
+      "why_it_matters": "对「用于导航与规划的世界模型」线提供新范式：若目标可编码为表征端点，目标条件导航与UAV目标搜索可跳过昂贵rollout与动作搜索，直接生成可行动作序列、降低规划延迟；对规划智能体亦有借鉴，但需验证长程感知导航下的扩展性。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-09-25T09:26:56.664477+00:00"
+    },
+    {
       "id": "2609.27340",
       "arxiv_id": "2609.27340",
       "title": "Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP",
@@ -5698,6 +5872,321 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.29043",
+      "arxiv_id": "2609.29043",
+      "title": "Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots",
+      "authors": [
+        "Lucas Da Mota Bruno",
+        "Jiahao Sim",
+        "Yoshinobu Hagiwara"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29043",
+      "pdf_url": "https://arxiv.org/pdf/2609.29043",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对RoboCup@Home的GPSR任务，本文提出将指令分类与动作生成拆分为两个专门化阶段的LLM链式规划架构，将每次推理的提示词长度缩短约45%，在三种模型与真机HSR上验证规划一致性提升，并指出执行层是剩余瓶颈。",
+      "change_zh": "相比把全部上下文一次性塞进单条提示词的常见做法，本文将指令理解与动作生成解耦为两个专门化LLM阶段，把每次推理提示词压缩约45%，缓解上下文膨胀与'中间遗忘'；但链式分阶段思路本身并非全新，贡献更多在于跨模型的系统化评测与真机失败分析。",
+      "why_it_matters": "对规划智能体线有直接参考价值：长自然语言指令的两阶段分解同样适用于UAV搜救指令理解与ObjectNav开放词汇目标导航的多步任务解析；真机实验揭示'规划成功不等于任务完成'，提示执行层与感知建图仍是具身导航落地的关键瓶颈。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "instruction",
+        "task planning"
+      ],
+      "added_at": "2026-09-25T09:24:11.897830+00:00"
+    },
+    {
+      "id": "2609.28887",
+      "arxiv_id": "2609.28887",
+      "title": "Fly, Drive, Reconfigure: A Modular Reconfigurable Aerial-Ground Platform for Field Operations",
+      "authors": [
+        "Li-Yu Lo",
+        "Yanbaihui Liu",
+        "Chengchuan Shu",
+        "Tyler Harris",
+        "Jonathan Ryan",
+        "Boyuan Chen"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.28887",
+      "pdf_url": "https://arxiv.org/pdf/2609.28887",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HARP是可重构异构空地机器人平台：侦察机建图并驱动能耗感知规划器联合选择路线与空地机动模式，各模块独立飞行越过地面难行地形后自主对接成地面车以省能运输载荷，经多环节野外实验及格陵兰冰盖部署验证。",
+      "change_zh": "常见异构机器人团队的物理角色在任务中固定、只分工不重组；该工作让模块在任务中途改变物理构型：先分散飞行跨越地形限制，再自主装配组合成协作地面车，并把路线选择与空/地模式纳入统一的能耗规划框架。",
+      "why_it_matters": "对空域自主与真机部署有直接价值：侦察建图加能耗感知的路线与机动模式联合规划，可迁移到长航时UAV搜救与目标搜索的能耗优化；其外场与冰盖实测也为主动感知、在线建图与野外具身系统提供了宝贵的真实部署经验。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "deployment"
+      ],
+      "added_at": "2026-09-25T09:25:57.733266+00:00"
+    },
+    {
+      "id": "2609.29835",
+      "arxiv_id": "2609.29835",
+      "title": "Retrieve-to-Localize: Bridging Large Language Models and LiDAR Geometry for Spatial Grounding",
+      "authors": [
+        "Byounggun Park",
+        "Giyong Moon",
+        "Jusung Kim",
+        "Soonmin Hwang"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29835",
+      "pdf_url": "https://arxiv.org/pdf/2609.29835",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出SpatialLiDAR-LM，将LiDAR点特征与LLM对齐，通过语言条件、位置感知的检索与局部点精修直接从几何回归目标坐标，并构建SpatialLiDAR-QA基准。",
+      "change_zh": "常见LiDAR-语言模型把坐标当文本token解码，易脱离几何；该文改为语言条件下检索位置感知候选框并做局部点云精修，使坐标直接来自LiDAR几何，并系统构建单步与多步关系定位基准。",
+      "why_it_matters": "语言指代目标的三维定位是ObjectNav与UAV目标搜索的底层能力；其语言条件检索加几何精修范式，可为带LiDAR的无人系统输出可用目标坐标，弥补VLM空间关系推理与定位精度不足。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "geometry",
+        "spatial understanding",
+        "vlm"
+      ],
+      "added_at": "2026-09-25T09:26:33.180537+00:00"
+    },
+    {
+      "id": "2609.30147",
+      "arxiv_id": "2609.30147",
+      "title": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI",
+      "authors": [
+        "Arunabh Srivastava",
+        "Mohammad A.",
+        "Khojastepour",
+        "Srimat Chakradhar",
+        "Sennur Ulukus"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.30147",
+      "pdf_url": "https://arxiv.org/pdf/2609.30147",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GRASP是策略感知的多阶段LLM任务规划框架：先编译全局宏观指南，再在隔离上下文中探索局部策略，最后由多准则判别器独立评估，在日历调度、ZebraLogic与数学基准上大幅超越直接LLM规划器并消除多任务退化。",
+      "change_zh": "相比让单一LLM直接生成计划或简单思维链路线，GRASP把规划解耦为生成-修订-评估三个上下文隔离的专职模块，用预编译宏观指南正则化全局策略、隔离窗口探索局部策略、独立判别器把关，从而抑制任务复杂度与多任务场景下的可靠性崩塌。",
+      "why_it_matters": "作为LLM agentic规划线的新框架，其上下文隔离与生成-评估解耦为高复杂度、多任务下的可靠规划提供范式，可启发UAV搜救任务分解与ObjectNav高层规划的抗退化设计；但论文实验均为纯语言推理基准，无空间或导航验证，具身侧价值属间接借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "llm planner"
+      ],
+      "added_at": "2026-09-25T09:28:39.460229+00:00"
+    },
+    {
+      "id": "2609.29892",
+      "arxiv_id": "2609.29892",
+      "title": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+      "authors": [
+        "Tingyu Qu",
+        "Weigao Sun",
+        "Yuecheng Liu",
+        "Yucheng Zhao",
+        "Yi Zhu",
+        "Yifeng Ding",
+        "Qiyi Wang",
+        "Sihan Cao",
+        "Pengkun Jiao",
+        "Hanlei Xie",
+        "Xiongwei Wu",
+        "Qichao Wang",
+        "Haodong Zhang",
+        "Jiajun Liu",
+        "Yuhao Wang",
+        "Yuqing Xie",
+        "Junpeng Zhao",
+        "Long Chen",
+        "Ming Ma",
+        "Sihan Yang",
+        "Ziwang Zhao",
+        "Yanhao Jia",
+        "Liangquan Gong",
+        "Feida Zhu",
+        "Yiran Zhong",
+        "Steven Hoi"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29892",
+      "pdf_url": "https://arxiv.org/pdf/2609.29892",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Qwen-Planner-Agent这一闭环AI-for-AI开发框架：由智能体数据飞轮造数，监督冷启动加混合环境在线智能体强化学习（CARE），并以执行证据驱动模型与运行时工具链协同进化，在移动规划基准MobilePA-Bench上综合表现最优且基本保持通用能力。",
+      "change_zh": "不同于直接提示现成大模型或依赖静态SFT数据的常见智能体开发路线，本文让AI闭环参与自身构建：专用智能体自动构造任务与筛选训练数据并用训练反馈迭代，在线RL中引入能力感知的奖励与优势设计（CARE）平衡性能与推理/工具成本，执行证据回流同时驱动模型与记忆、技能、工具编排的协同适配。",
+      "why_it_matters": "论文本身不涉及导航或机器人，但其方法可迁移至具身场景：数据飞轮与人类把关机制可缓解UAV目标搜索、ObjectNav等真机交互昂贵的训练数据瓶颈；成本感知在线RL与模型-执行器协同进化为长时程具身智能体的奖励设计、技能记忆与工具编排提供可借鉴范式，对范围内智能体训练技术线有参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-09-25T09:29:26.919413+00:00"
+    },
+    {
+      "id": "2609.30036",
+      "arxiv_id": "2609.30036",
+      "title": "Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think",
+      "authors": [
+        "Xvyuan Liu",
+        "Jianjie Fang",
+        "Chen Gao",
+        "Yong Li"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.30036",
+      "pdf_url": "https://arxiv.org/pdf/2609.30036",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文指出以最终目标图像评分动作会限制世界模型规划器，因长程目标可能需先远离；提出Anchored Planning，检索与当前和目标观测相似的记录片段，以其早期观测为中间目标，用冻结LeWM模型评分动作，无需额外训练即在四个长程任务上超越原版规划器。",
+      "change_zh": "常见路线聚焦改进世界模型预测精度并以最终目标评分搜索动作；本文不改模型也不训练，只更换规划目标：从经验库检索锚定片段、瞄准近端中间观测，并随执行缩短检索跨度，且证明更低的后继预测误差不必然带来更好控制。",
+      "why_it_matters": "对目标条件导航与UAV目标搜索有直接启示：长程趋近目标常需先远离终点，'以检索到的中间目标替代终态评分'这一免训练策略可迁移到世界模型驱动的ObjectNav与无人机搜索规划，并提示评估世界模型应看控制收益而非预测误差。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-09-25T09:30:55.535188+00:00"
+    },
+    {
+      "id": "2609.29444",
+      "arxiv_id": "2609.29444",
+      "title": "IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis",
+      "authors": [
+        "Xingyu Wu",
+        "Yuchen Yan",
+        "Zhengxi Lu",
+        "Siqi Chen",
+        "Xin ZHANG",
+        "Aiting Liu",
+        "Chao Deng",
+        "Jie Liu",
+        "Jin Ma",
+        "Jian Shao",
+        "Jun Xiao",
+        "Yongliang Shen"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.29444",
+      "pdf_url": "https://arxiv.org/pdf/2609.29444",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出角色解耦的深度搜索智能体范式IterSynth，将规划与证据综合拆分为Planner和Synthesizer，以演化摘要作为持久状态，并用强化学习方法RDPO训练，在BrowseComp等五个深搜基准上超越同类8B智能体。",
+      "change_zh": "相比ReAct式单策略智能体混合处理规划、搜索与综合，IterSynth拆分出Planner与Synthesizer两角色，并以滚动演化的摘要状态替代持续膨胀的原始搜索历史，降低上下文噪声；训练上用轮级量规奖励实现角色级优势估计与更精准的信用分配。",
+      "why_it_matters": "该工作不含空间或导航成分，但属智能体系统能力的实质进展：角色解耦与摘要持久状态的思路可迁移到处理长程观测流、上下文噪声严重的VLN与UAV搜索智能体，RDPO的角色级信用分配也可为具身智能体的分角色RL训练提供参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "llm agent"
+      ],
+      "added_at": "2026-09-25T09:32:55.736840+00:00"
     },
     {
       "id": "2609.28225",
@@ -8573,6 +9062,61 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.30199",
+      "arxiv_id": "2609.30199",
+      "title": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
+      "authors": [
+        "Ming Zhang",
+        "Zhenghao Xiang",
+        "Peizhong Gao",
+        "Yujiong Shen",
+        "Yuhui Wang",
+        "Zhonghan Yue",
+        "Shihan Dou",
+        "Zhangyue Yin",
+        "Junjie Ye",
+        "Shichun Liu",
+        "Weihuang Zheng",
+        "Jiahao Chen",
+        "Jiayi Chen",
+        "Hongzhang Liu",
+        "Jiaqi Shao",
+        "Tao Gui",
+        "Qi Zhang",
+        "Xuanjing Huang",
+        "Suncong Zheng",
+        "Maxm Pan"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.30199",
+      "pdf_url": "https://arxiv.org/pdf/2609.30199",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出ExplorationBench基准，用规则可执行且与预训练知识冲突的异星世界沙盒（AlienCode、AlienLogic共140任务）评测AI系统的探索能力，测试10个系统，发现最强者能习得陌生规则但表现波动大且会停滞倒退。",
+      "change_zh": "常见智能体评测多在已知领域任务上测执行或推理，难以排除预训练记忆召回；本文改用规则可执行、与常识冲突的异星世界，使答案可被精确验证且纯回忆无法解题，把难以评估的科学探索能力转化为可测问题。",
+      "why_it_matters": "对具身导航直接价值有限，但评测方法有借鉴：UAV搜索与ObjectNav同样要求智能体在陌生环境中凭反馈主动获取知识而非依赖记忆，其防预训练污染、可精确验证的基准设计可为具身探索类评测提供新范式。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "exploration"
+      ],
+      "added_at": "2026-09-25T09:31:50.656255+00:00"
+    },
+    {
       "id": "2609.27219",
       "arxiv_id": "2609.27219",
       "title": "Vision-Based Control of a Tether-Suspended Aerial Radiation Sensing Payload",
@@ -9943,88 +10487,104 @@
     }
   ],
   "briefing": {
-    "text": "本批工作主线是LLM驱动的导航推理与多机器人协同，另有GNSS拒止定位、视觉SLAM与安全控制等支撑。首推Talk2Escape：模型无关地把VLN从开环改为闭环，检出轨迹循环或偏航即生成接地查询向人或预言机纠偏，R2R-CE成功率达66%并迁移四足真机；NavProbe以动态子目标议程配合主动证据检索实现零样本导航，在R2R-CE与ObjectNav上超越零样本基线；CoRelNav用空间语义场将任务约束转为探索效用，再以跨机协同验证确认目标与周边物体的关系，经两台真机检验。趋势观察：闭环纠偏、证据核查与多机协同正在合流，导航智能体从单机开环决策转向可验证的协同范式。",
-    "added": 10,
-    "at": "2026-09-24T09:16:33.053600+00:00",
+    "text": "本批工作主线是把LLM推理与世界模型嵌入具身规划与导航全链路，兼及建图、定位与评测。首推GPT-6-Astra Lights Up Embodied Navigation：仅凭单目RGB零样本在R2R-CE取得79.0%成功率并剖析失败模式，标定了通用基础模型的导航上限；Beyond Spatial Benchmarks实证空间推理分数与导航表现脱节，经Spatial-Nav-100K微调并蒸馏出免显式推理的学生策略，8B模型在HM3D/MP3D低算力下领先ObjectNav；Representation World Model则把规划编入表征几何，推理时直接构造潜路径，免去递归推演与动作空间搜索。趋势观察：大模型供先验、小模型跑策略的分工架构，正成为具身导航低算力落地的共同路径。",
+    "added": 12,
+    "at": "2026-09-25T09:35:02.659928+00:00",
     "new": [
       {
-        "t": "Large-Scale Geometric Map-Based Localization of UAVs in GNSS-Denied Urban Environments",
-        "u": "https://arxiv.org/abs/2609.28225",
+        "t": "Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots",
+        "u": "https://arxiv.org/abs/2609.29043",
         "r": 7,
         "g": 7,
-        "s": "针对GNSS拒止城市环境的无人机定位，从下视图像检测建筑物并跨帧累积成图，用融合三角形结构与建筑形状的几何描述子匹配建筑轮廓库，在113–452平方公里搜索区保持高召回远超基线。",
+        "s": "针对RoboCup@Home的GPSR任务，本文提出将指令分类与动作生成拆分为两个专门化阶段的LLM链式规划架构，将每次推理的提示词长度缩短约45%，在三种模型与真机HSR上验证规划一致性提升，并指出执行层是剩余瓶颈。",
         "c": ""
       },
       {
-        "t": "Vision-Based Control of a Tether-Suspended Aerial Radiation Sensing Payload",
-        "u": "https://arxiv.org/abs/2609.27219",
-        "r": 6,
-        "g": 7,
-        "s": "提出视觉控制方法：无人机下视相机追踪系绳吊挂辐射探测载荷的环形标记，四状态卡尔曼滤波估计摆角摆率，带积分LQR直接调节载荷轨迹，外场抗风试验使过渡段载荷跟踪误差较基线降20%。",
+        "t": "GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+        "u": "https://arxiv.org/abs/2609.29861",
+        "r": 9,
+        "g": 6,
+        "s": "该文在连续环境VLN-CE上零样本评测通用基础模型GPT-6-Astra，仅凭单目RGB自主决定何时观察、移动与停止，在R2R-CE上取得79.0%成功率并分析其失败模式。",
         "c": ""
       },
       {
-        "t": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
-        "u": "https://arxiv.org/abs/2609.28416",
+        "t": "Fly, Drive, Reconfigure: A Modular Reconfigurable Aerial-Ground Platform for Field Operations",
+        "u": "https://arxiv.org/abs/2609.28887",
         "r": 7,
         "g": 7,
-        "s": "提出Agent-Editing世界模型AEWM，不模拟工具响应而建模动作对任务进展的影响：判别关键/探索/噪声决策并编辑被污染状态，配合真实执行，在多个基准上提升3.2–6.7分。",
+        "s": "HARP是可重构异构空地机器人平台：侦察机建图并驱动能耗感知规划器联合选择路线与空地机动模式，各模块独立飞行越过地面难行地形后自主对接成地面车以省能运输载荷，经多环节野外实验及格陵兰冰盖部署验证。",
         "c": ""
       },
       {
-        "t": "Spatial and Semantic Reasoning for LLM-Driven Robot Navigation via MCP",
-        "u": "https://arxiv.org/abs/2609.27340",
+        "t": "Retrieve-to-Localize: Bridging Large Language Models and LiDAR Geometry for Spatial Grounding",
+        "u": "https://arxiv.org/abs/2609.29835",
+        "r": 7,
+        "g": 7,
+        "s": "该文提出SpatialLiDAR-LM，将LiDAR点特征与LLM对齐，通过语言条件、位置感知的检索与局部点精修直接从几何回归目标坐标，并构建SpatialLiDAR-QA基准。",
+        "c": ""
+      },
+      {
+        "t": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
+        "u": "https://arxiv.org/abs/2609.29171",
         "r": 8,
         "g": 6,
-        "s": "提出经MCP暴露的非侵入式表示层：将占用栅格转为位姿感知的度量图像、以路点级语义标注记录观测，使任意MCP兼容LLM无需机器人专用封装即可驱动ROS导航，在仿真室内环境完成自主建图与空间/语义目标选择。",
+        "s": "提出表征世界模型RWM，把规划直接编入表征几何：用端点表征构造潜路径并以逆动力学做局部监督，推理时在当前与目标表征间直接构造潜路径并恢复动作，免除递归推演与动作空间搜索。",
         "c": ""
       },
       {
-        "t": "From LiDAR Maps to Visual Localization: Unified Visual Association for Robust Point-Line-Plane Pose Estimation",
-        "u": "https://arxiv.org/abs/2609.27363",
-        "r": 7,
-        "g": 6,
-        "s": "提出把LiDAR地图的几何与反射率渲染为带2D-3D溯源的准图像，使相机观测与地图视图共享成熟视觉特征与匹配器，实现先验LiDAR地图下的全局定位与连续6-DoF跟踪，并以分布感知、可观测性互补优化增强鲁棒性。",
-        "c": ""
-      },
-      {
-        "t": "CoRelNav: Collaborative Relational Navigation for Multi-Robot Spatially Constrained Semantic Navigation",
-        "u": "https://arxiv.org/abs/2609.27720",
-        "r": 9,
-        "g": 8,
-        "s": "本文提出多机器人协同关系导航框架CoRelNav，以空间语义场将任务约束转化为探索效用，把任务条件化多机探索与候选驱动的协同验证耦合，跨机器人聚合互补证据完成目标与周边物体关系的验证，并在仿真与两台真机上验证有效。",
-        "c": ""
-      },
-      {
-        "t": "NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation",
-        "u": "https://arxiv.org/abs/2609.27526",
+        "t": "Beyond Spatial Benchmarks: From Spatial Reasoning to Navigation",
+        "u": "https://arxiv.org/abs/2609.29934",
         "r": 9,
         "g": 7,
-        "s": "NavProbe是分层零样本导航智能体，以动态子目标议程结合主动证据检索，紧凑索引关联摘要与视觉记录，按需检索证据修订子目标，在R2R-CE与ObjectNav上超越零样本基线。",
+        "s": "该文实证揭示空间推理基准成绩与导航性能存在落差，构建Spatial-Nav-100K两阶段微调8B模型，并以空间先验教师蒸馏出免显式推理的学生策略，在HM3D与MP3D上以低算力取得领先ObjectNav结果。",
+        "c": "https://github.com/ylwhxht/Spatial-Nav"
+      },
+      {
+        "t": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI",
+        "u": "https://arxiv.org/abs/2609.30147",
+        "r": 7,
+        "g": 7,
+        "s": "GRASP是策略感知的多阶段LLM任务规划框架：先编译全局宏观指南，再在隔离上下文中探索局部策略，最后由多准则判别器独立评估，在日历调度、ZebraLogic与数学基准上大幅超越直接LLM规划器并消除多任务退化。",
         "c": ""
       },
       {
-        "t": "Talk2Escape: Conversational Grounding for Vision-and-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.28296",
-        "r": 9,
-        "g": 8,
-        "s": "提出模型无关的对话干预框架，将地面VLN由开环改为闭环：轻量模块监测运动学，检测到局部循环或轨迹偏离即生成接地查询向预言机或人类纠偏，R2R-CE成功率达66%并在四足真机迁移。",
+        "t": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+        "u": "https://arxiv.org/abs/2609.29892",
+        "r": 7,
+        "g": 7,
+        "s": "提出Qwen-Planner-Agent这一闭环AI-for-AI开发框架：由智能体数据飞轮造数，监督冷启动加混合环境在线智能体强化学习（CARE），并以执行证据驱动模型与运行时工具链协同进化，在移动规划基准MobilePA-Bench上综合表现最优且基本保持通用能力。",
         "c": ""
       },
       {
-        "t": "Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM",
-        "u": "https://arxiv.org/abs/2609.27509",
+        "t": "Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think",
+        "u": "https://arxiv.org/abs/2609.30036",
+        "r": 7,
+        "g": 7,
+        "s": "该文指出以最终目标图像评分动作会限制世界模型规划器，因长程目标可能需先远离；提出Anchored Planning，检索与当前和目标观测相似的记录片段，以其早期观测为中间目标，用冻结LeWM模型评分动作，无需额外训练即在四个长程任务上超越原版规划器。",
+        "c": ""
+      },
+      {
+        "t": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
+        "u": "https://arxiv.org/abs/2609.30199",
         "r": 6,
         "g": 7,
-        "s": "KYS-SLAM是ORB-SLAM3的模块化扩展，将上下文证据重新表述为匹配代价，以连续对应调制替代二值特征拒绝；为关键点融合语义类、全景实例与免训练运动先验，在KITTI、EuRoC等21个序列上ATE RMSE降17.4%–27.7%。",
+        "s": "提出ExplorationBench基准，用规则可执行且与预训练知识冲突的异星世界沙盒（AlienCode、AlienLogic共140任务）评测AI系统的探索能力，测试10个系统，发现最强者能习得陌生规则但表现波动大且会停滞倒退。",
         "c": ""
       },
       {
-        "t": "Safety-Filtered Distributed Koopman-MPC",
-        "u": "https://arxiv.org/abs/2609.27463",
+        "t": "IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis",
+        "u": "https://arxiv.org/abs/2609.29444",
         "r": 7,
+        "g": 7,
+        "s": "本文提出角色解耦的深度搜索智能体范式IterSynth，将规划与证据综合拆分为Planner和Synthesizer，以演化摘要作为持久状态，并用强化学习方法RDPO训练，在BrowseComp等五个深搜基准上超越同类8B智能体。",
+        "c": ""
+      },
+      {
+        "t": "OREN-X: Octree Residual Network for Real-Time Multi-Modal Mapping",
+        "u": "https://arxiv.org/abs/2609.29157",
+        "r": 8,
         "g": 8,
-        "s": "该论文提出安全滤波分布式Koopman-MPC：邻居轨迹仅驱动预测，本地感知与货架几何构造硬约束QP投影控制输入，在丢包下保障多机器人仓库导航的碰撞安全与可行性。",
+        "s": "OREN-X提出基于八叉树的在线多模态建图方法，用共享数据结构统一存储几何SDF、辐射场与视觉语言特征，实现跨模态协同与实时性能。",
         "c": ""
       }
     ]
