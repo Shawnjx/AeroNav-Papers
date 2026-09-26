@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T15:00:02.860407+00:00",
+  "updated_at": "2026-09-26T14:02:50.381464+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -3853,6 +3853,44 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.28976",
+      "arxiv_id": "2609.28976",
+      "title": "ReVNM: Learning-Based Visual Navigation from a Remote Camera",
+      "authors": [
+        "Michikuni Eguchi",
+        "Kohei Honda",
+        "Masafumi Endo",
+        "Yasuhiro Yoshimura",
+        "Ryo Yonetani"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.28976",
+      "pdf_url": "https://arxiv.org/pdf/2609.28976",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ReVNM用单个远程监控相机同时充当观测源与隐式环境地图，通过exo2ego模块从远端画面预测自车视角深度以避障，仅在随机生成世界训练即可零样本迁移到真机导航，仿真与真机均验证有效。",
+      "change_zh": "常规VNM依赖机载自车相机、长程导航需预建地图；本文改用单个固定远程相机同时提供观测与隐式地图，免去预建地图与机载视觉处理，并以exo2ego深度预测弥补非自车视角的避障困难，用随机合成世界训练解决远程视角数据缺失。",
+      "why_it_matters": "它为免建图的目标条件导航提供了新观测范式，exo2ego思路可迁移到空地协同与UAV搜索中，把空中/外视角观测转化为可执行的自车避障信号；其随机世界合成训练与零样本真机迁移也是具身导航sim2real的实用参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "localization",
+        "mental map",
+        "real robot"
+      ],
+      "added_at": "2026-09-26T14:02:47.381032+00:00"
     },
     {
       "id": "2609.25898",
@@ -10532,17 +10570,17 @@
     }
   ],
   "briefing": {
-    "text": "本期入库的主线是用空间音频补全具身导航的感知与理解。最值得读的是OmniEcho：其构建的OmniEchoBench覆盖197个真实场景、六项音视频空间感知与音视语言导航任务，把此前分散的评测统一到一套基准上；配套模型融合FOA空间音频编码与语义音频通路两条支路，感知性能领先，可作为该方向的新基线。趋势观察：空间音频正从导航的辅助信号变为空间推理的核心输入，基准与模型同步推出的做法将更常见。",
+    "text": "今日入库工作主线是复用非本体视角与生成式仿真，压缩导航系统从训练到真机部署的成本，其中最值得优先精读的是ReVNM：它让单个远程监控相机兼任观测源与隐式环境地图，exo2ego模块从第三人称画面预测自车视角深度以避障，仅在随机生成的世界中训练即可零样本迁移到真机，并在仿真与实物上均得到验证。整体看，具身导航正从依赖机器人自带传感器转向复用监控相机等已部署基础设施，并以程序化生成世界替代昂贵的真机数据采集。",
     "added": 1,
-    "at": "2026-09-25T15:00:34.918198+00:00",
+    "at": "2026-09-26T14:03:08.328687+00:00",
     "new": [
       {
-        "t": "OmniEcho: Audio-Visual Spatial Understanding for Omni-Modal Embodied Agents",
-        "u": "https://arxiv.org/abs/2609.23407",
-        "r": 9,
-        "g": 8,
-        "s": "该文提出统一基准OmniEchoBench，覆盖197个真实场景、六项音视频空间感知及音视语言导航任务，并构建融合FOA空间音频编码与语义音频通路的全模态模型OmniEcho，感知性能领先。",
-        "c": "https://github.com/PKU-VaLuE-Lab/OmniEcho/tree/main"
+        "t": "ReVNM: Learning-Based Visual Navigation from a Remote Camera",
+        "u": "https://arxiv.org/abs/2609.28976",
+        "r": 8,
+        "g": 7,
+        "s": "ReVNM用单个远程监控相机同时充当观测源与隐式环境地图，通过exo2ego模块从远端画面预测自车视角深度以避障，仅在随机生成世界训练即可零样本迁移到真机导航，仿真与真机均验证有效。",
+        "c": ""
       }
     ]
   }
