@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T15:01:19.513487+00:00",
+  "updated_at": "2026-09-26T14:03:39.635862+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2224,6 +2224,78 @@
       "added_at": "2026-09-02T06:28:08Z"
     },
     {
+      "id": "2103.12352",
+      "arxiv_id": "2103.12352",
+      "title": "iMAP: Implicit Mapping and Positioning in Real-Time",
+      "authors": [
+        "Edgar Sucar",
+        "Shikun Liu",
+        "J. V. Ortiz",
+        "Andrew J. Davison"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "citation_count": 670,
+      "url": "https://arxiv.org/abs/2103.12352",
+      "pdf_url": "https://arxiv.org/pdf/2103.12352",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "iMAP首次证明MLP可作为手持RGB-D实时SLAM的唯一场景表示：无需先验数据在在线运行中持续训练，构建稠密的场景级隐式占用与颜色地图并直接用于相机追踪，追踪达10Hz、全局建图2Hz。",
+      "change_zh": "相比传统依赖TSDF体素或surfel的稠密SLAM，iMAP把场景表示整体替换为在线持续训练的MLP，边走边学、无需任何先验数据；借助关键帧结构与动态像素采样实现实时，并带来自动细节控制与对未观测区域的平滑合理补全。",
+      "why_it_matters": "作为神经隐式SLAM的开山之作，为稠密建图与空间记忆提供了紧凑连续的表示范式，深刻影响NICE-SLAM等后续体系；对UAV目标搜索与ObjectNav所需的在线建图、空间记忆与几何补全具有直接的基础支撑价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "geometry",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
+    },
+    {
+      "id": "https://openalex.org/W3204752575",
+      "arxiv_id": "",
+      "title": "BARF: Bundle-Adjusting Neural Radiance Fields",
+      "authors": [
+        "Chen-Hsuan Lin",
+        "Wei-Chiu Ma",
+        "Antonio B. Torralba",
+        "Simon Lucey"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "citation_count": 628,
+      "url": "https://doi.org/10.1109/iccv48922.2021.00569",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（2021 IEEE/CVF International Conference on Computer Vision (ICCV)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "BARF针对NeRF需精确相机位姿的限制，提出联合学习神经三维表示与相机帧配准的束调整方法，联系经典图像对齐理论，采用由粗到细配准并指出位置编码不利于配准，实现未知位姿视频的新视图合成与定位。",
+      "change_zh": "传统NeRF训练需以精确相机位姿为输入，定位与建图多分阶段处理。BARF将束调整与神经场景表示联合优化，理论上证明由粗到细配准适用于NeRF，并揭示位置编码对配准的负面影响，使位姿估计与神经建图可端到端联合求解。",
+      "why_it_matters": "该文为视觉定位系统（如SLAM）与稠密三维建图重建开辟新途径；相机位姿与场景重建是UAV主动目标搜索、ObjectNav等导航任务的底层支撑，BARF让NeRF摆脱精确位姿依赖，为导航中的场景表示与定位能力提供基础。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
+    },
+    {
       "id": "https://openalex.org/W4229007520",
       "arxiv_id": "",
       "title": "Swarm of micro flying robots in the wild",
@@ -2767,6 +2839,42 @@
       "added_at": "2026-09-02T04:03:14Z"
     },
     {
+      "id": "2103.01486",
+      "arxiv_id": "2103.01486",
+      "title": "Patch-NetVLAD: Multi-Scale Fusion of Locally-Global Descriptors for Place Recognition",
+      "authors": [
+        "Stephen Hausler",
+        "Sourav Garg",
+        "Ming Xu",
+        "Michael John Milford",
+        "Tobias W. Fischer"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 443,
+      "url": "https://arxiv.org/abs/2103.01486",
+      "pdf_url": "https://arxiv.org/pdf/2103.01486",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文从NetVLAD残差导出patch级局部特征，在特征空间网格上聚合匹配，并以积分特征空间做多尺度融合，使视觉地点识别对季节、光照与视角变化高度鲁棒，在多个真实数据集上达到SOTA。",
+      "change_zh": "常见地点识别要么用全局描述子丢失局部细节，要么依赖固定空间邻域的局部关键点。该文改由NetVLAD残差在特征空间网格上导出patch特征，统一局部与全局优势，并以积分特征空间做多尺度融合，还提供精度-速度可配置的框架。",
+      "why_it_matters": "地点识别是SLAM回环检测与长期定位的核心模块，该工作显著提升季节、光照与视角剧变下的鲁棒性并速度可配置，可直接增强机器人与无人机定位建图能力，为长时程自主导航与UAV搜救中的重定位提供更可靠的位置先验。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
+    },
+    {
       "id": "https://openalex.org/W4385431115",
       "arxiv_id": "2302.07241",
       "title": "ConceptFusion: Open-set multimodal 3D mapping",
@@ -2922,6 +3030,45 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "2107.00822",
+      "arxiv_id": "2107.00822",
+      "title": "F-LOAM : Fast LiDAR Odometry and Mapping",
+      "authors": [
+        "Han Wang",
+        "Chen Wang",
+        "Chunlin Chen",
+        "Lihua Xie"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 419,
+      "url": "https://arxiv.org/abs/2107.00822",
+      "pdf_url": "https://arxiv.org/pdf/2107.00822",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "F-LOAM提出非迭代两阶段畸变补偿的激光SLAM框架，提取边线与平面特征分别匹配局部边线图和平面图进行位姿优化，在KITTI上以超10Hz速度实现领先定位精度，兼顾效率与精度。",
+      "change_zh": "相比LOAM等采用scan-to-scan匹配与scan-to-map精化两级迭代的传统路线，它以非迭代的两阶段畸变补偿替代迭代求解，显著降低计算开销，在精度基本持平的前提下于普通CPU实现实时运行。",
+      "why_it_matters": "激光里程计是UAV主动目标搜索与ObjectNav等具身系统的基础状态估计模块，F-LOAM开源、KITTI排名领先且算力需求低，为机载/车载导航部署提供可直接使用的实时里程计方案，落地影响力高。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "localization",
+        "odometry",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
       "id": "https://openalex.org/W3199184510",
@@ -3326,6 +3473,41 @@
       "keywords": [],
       "is_classic": true,
       "added_at": "2026-09-23T08:29:23.578165+00:00"
+    },
+    {
+      "id": "2010.07820",
+      "arxiv_id": "2010.07820",
+      "title": "DynaSLAM II: Tightly-Coupled Multi-Object Tracking and SLAM",
+      "authors": [
+        "Berta Bescos",
+        "Carlos Campos",
+        "Juan D. Tardós",
+        "José Neira"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 337,
+      "url": "https://arxiv.org/abs/2010.07820",
+      "pdf_url": "https://arxiv.org/pdf/2010.07820",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "DynaSLAM II是面向双目与RGB-D相机的视觉SLAM系统，用实例语义分割与ORB特征跟踪动态物体，在新型Bundle Adjustment中联合优化静态场景、相机与动态目标轨迹及三维包围盒，兼顾场景理解与相机跟踪。",
+      "change_zh": "常见SLAM假设场景刚性并把动态物体当外点剔除，本文反向将动态目标建模为被跟踪对象，以紧耦合Bundle Adjustment联合优化相机、静态结构与动态物体轨迹及三维包围盒，把动态信息从干扰变为对相机跟踪与场景理解的增益。",
+      "why_it_matters": "该工作属状态估计与控制核心线，动态SLAM是机器人在人群等非刚性环境中自主运行的基础；对UAV目标搜索与ObjectNav而言，拥挤动态场景下的鲁棒定位与物体运动线索可支撑更可靠的导航与接近决策。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
       "id": "https://openalex.org/W4226481925",
@@ -4378,6 +4560,47 @@
       "added_at": "2026-09-08T06:11:06.415511+00:00"
     },
     {
+      "id": "2101.06894",
+      "arxiv_id": "2101.06894",
+      "title": "Kimera: From SLAM to spatial perception with 3D dynamic scene graphs",
+      "authors": [
+        "Antoni Rosinol",
+        "Andrew Violette",
+        "Marcus Abate",
+        "Nathan Hughes",
+        "Yun Chang",
+        "Jingnan Shi",
+        "Arjun Gupta",
+        "Luca Carlone"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "The International Journal of Robotics Research",
+      "citation_count": 264,
+      "url": "https://arxiv.org/abs/2101.06894",
+      "pdf_url": "https://arxiv.org/pdf/2101.06894",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（The International Journal of Robotics Research），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出3D动态场景图（DSG）分层表示物体、房间等概念及其时空关系，并实现首个从视觉-惯性数据全自动构建DSG的开源系统，涵盖SLAM、度量语义重建、物体定位、人体估计与场景解析。",
+      "change_zh": "常见SLAM仅输出稀疏点云或稠密几何，语义建图多为孤立物体集合；本文改为分层动态场景图，统一刻画度量与语义、静态与动态实体及其时空关系，全自动构建并直接支撑分层语义路径规划。",
+      "why_it_matters": "为空间智能提供统一环境表示底座：3D场景图可直接充当导航的空间记忆与分层规划载体，文中已演示实时语义路径规划，对ObjectNav目标搜索与UAV在大场景中的语义理解与长程规划有直接支撑价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": true,
+      "score": 29,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
+    },
+    {
       "id": "https://openalex.org/W3168086592",
       "arxiv_id": "2103.05056",
       "title": "LCDNet: Deep Loop Closure Detection and Point Cloud Registration for LiDAR SLAM",
@@ -5269,6 +5492,39 @@
       "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
+      "id": "2010.11061",
+      "arxiv_id": "2010.11061",
+      "title": "MADER: Trajectory Planner in Multiagent and Dynamic Environments",
+      "authors": [
+        "Jesus Tordesillas",
+        "Jonathan P. How"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 213,
+      "url": "https://arxiv.org/abs/2010.11061",
+      "pdf_url": "https://arxiv.org/pdf/2010.11061",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出无人机三维去中心化异步无碰撞轨迹规划器MADER，面向静态/动态障碍与多智能体环境，用MINVO基获得比常用Bernstein/B样条更小的外多面体分离约束，并以碰撞检查-复核机制保证安全。",
+      "change_zh": "相比常用Bernstein/B样条且依赖同步或中心化的方案，改用MINVO基得到体积小2.36-254.9倍的外多面体、把分离平面作为优化变量，实现异步去中心化多机避碰，并以已提交轨迹约束加检查-复核保障安全。",
+      "why_it_matters": "轨迹规划是无人机自主落地的核心能力，MADER在动态杂乱与多机环境下兼顾实时性、安全与飞行效率，可直接支撑搜救侦察等UAV主动目标搜索任务中的低空避障与快速接近目标，是状态估计与控制线上具代表性的高影响力规划器工作。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
+    },
+    {
       "id": "https://openalex.org/W4413926275",
       "arxiv_id": "2406.13642",
       "title": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
@@ -5377,6 +5633,43 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4206742276",
+      "arxiv_id": "",
+      "title": "Autonomous Drone Racing with Deep Reinforcement Learning",
+      "authors": [
+        "Yunlong Song",
+        "Mats Steinweg",
+        "Elia Kaufmann",
+        "Davide Scaramuzza"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 200,
+      "url": "https://doi.org/10.1109/iros51168.2021.9636053",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "该论文用深度强化学习结合相对门观测，为四旋翼竞速生成近似时间最优轨迹并可适应环境变化，在仿真与真机多赛道验证，物理无人机速度达60km/h。",
+      "change_zh": "常见路线依赖轨迹优化，需预先已知门位并以简化动力学换取可解性，结果往往只适配单一场地；该工作改用深度强化学习与相对门观测，学得可跨赛道泛化并适应环境变化的近时间最优策略，且计算开销更低。",
+      "why_it_matters": "它是无人机自主飞行与轨迹规划的标志性成果，其RL策略与真机60km/h验证为空域自主提供高速敏捷飞行基座；对UAV主动目标搜索中的快速接近与轨迹生成有直接借鉴价值，也示范了仿真到真机的迁移范式。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "drone",
+        "real world",
+        "waypoint"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
       "id": "https://openalex.org/W4285506552",
@@ -5581,6 +5874,40 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4225796999",
+      "arxiv_id": "",
+      "title": "Align and Prompt: Video-and-Language Pre-training with Entity Prompts",
+      "authors": [
+        "Dongxu Li",
+        "Junnan Li",
+        "Hongdong Li",
+        "Juan Carlos Niebles",
+        "Steven C. H. Hoi"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "citation_count": 175,
+      "url": "https://doi.org/10.1109/cvpr52688.2022.00490",
+      "pdf_url": "",
+      "code_url": "https://github.com/salesforce/ALPRO",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出视频-语言预训练框架AlPro，通过视频文本对比损失（VTC）与实体提示建模（PEM）两个自监督任务，在稀疏采样帧上实现无需目标检测器的细粒度跨模态对齐，在文本-视频检索与视频问答上取得SOTA。",
+      "change_zh": "相比依赖现成目标检测器提供区域特征、需密集处理视频帧的常见视频-语言预训练路线，该工作以实体提示模块在稀疏采样帧上自监督学习细粒度区域-实体对齐，并用实例级对比损失先对齐单模态特征以缓解模态错位，摆脱检测器词表与算力瓶颈。",
+      "why_it_matters": "对多模态大模型技术线有参考价值：免检测器的细粒度实体-区域对齐与实例级对比对齐可迁移至开放词汇感知与指令-视觉接地，为ObjectNav与空中VLN的视觉语言底座提供训练范式；但论文本身只做检索与视频问答，未涉及导航、无人机或具身任务。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
       "id": "2204.12831",
@@ -6527,6 +6854,45 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "2503.03751",
+      "arxiv_id": "2503.03751",
+      "title": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
+      "authors": [
+        "Xuanchi Ren",
+        "Tianchang Shen",
+        "Jiahui Huang",
+        "Huan Ling",
+        "Yifan Lu",
+        "Merlin Nimier-David",
+        "Thomas J. Muller",
+        "Alexander Keller",
+        "Sanja Fidler",
+        "Jun Gao"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 49,
+      "url": "https://arxiv.org/abs/2503.03751",
+      "pdf_url": "https://arxiv.org/pdf/2503.03751",
+      "code_url": "",
+      "topics": [
+        "世界模型"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Gen3C利用种子图像深度构建3D点云缓存，生成时以新相机轨迹下的2D渲染为条件，实现精确相机控制与时序3D一致的视频生成，并在稀疏视角新视角合成上达到SOTA。",
+      "change_zh": "常见做法仅把相机参数当网络输入，让模型自行学习视角依赖；Gen3C先用预测深度构建3D点云缓存，再按相机轨迹渲染2D图像作为生成条件，模型无需记忆已生成内容或从位姿推断结构，专注补全未见区域。",
+      "why_it_matters": "相机可控且3D一致的视频生成是世界模型线核心能力：可模拟给定位姿下的未来观测，为UAV目标搜索与ObjectNav提供策略前瞻、探索想象与数据增广，其稀疏视角新视角合成也可服务侦察与重建。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
       "id": "2601.14352",
@@ -8873,22 +9239,123 @@
       "rigor": 2,
       "reason": "药用植物药物化学综述，AI与spatial omics仅为术语擦边，是将现成技术套用于医药垂直领域，与空间、导航、机器人完全无关，属范围外。",
       "excluded_at": "2026-09-24"
+    },
+    "2103.05606": {
+      "title": "NeX: Real-time View Synthesis with Neural Basis Expansion",
+      "relevance": 3,
+      "rigor": 7,
+      "reason": "该文属新视角合成/神经渲染（MPI改进）工作，非导航、主动感知或空间智能核心方向，仅与3D场景表示术语擦边。",
+      "excluded_at": "2026-09-26"
+    },
+    "https://openalex.org/W3135099046": {
+      "title": "WIT: Wikipedia-based Image Text Dataset for Multimodal Multilingual Machine Learning",
+      "relevance": 3,
+      "rigor": 7,
+      "reason": "通用多模态图文预训练数据集，不含空间理解、导航或机器人要素，不属于具身基准，属范围外的资源性工作。",
+      "excluded_at": "2026-09-26"
+    },
+    "https://openalex.org/W4366390744": {
+      "title": "In Conversation with Artificial Intelligence: Aligning language Models with Human Values",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "属语言哲学与AI伦理的价值对齐讨论，无具身导航、空间智能或机器人关联，也未提出模型与智能体能力本身的显著技术进展，超出收录范围。",
+      "excluded_at": "2026-09-26"
     }
   },
-  "last_citation_refresh": "2026-09-25T15:01:19.513487+00:00",
   "briefing": {
-    "text": "本轮入库工作围绕生成式世界模型的几何可控性展开，核心问题是让视频生成服从精确相机轨迹，从而为具身导航提供可推演的想象环境。首推Gen3C：它先用深度预测把种子帧构建为3D点云缓存，再沿用户指定轨迹渲染点云作为条件送入生成模型，使输出视频在时序上保持3D一致，并在稀疏视角新视角合成任务上达到SOTA；这种显式3D缓存加生成先验的组合，可直接迁移到导航中的前瞻规划与数据增广。从趋势看，视频生成正从视觉演示转向可控的具身环境模拟器，其作为导航策略训练数据引擎的潜力值得关注。",
-    "added": 1,
-    "at": "2026-09-23T08:29:23.578165+00:00",
+    "text": "本批工作围绕三维空间感知主线，从神经隐式SLAM、鲁棒重定位到语义场景图与无人机规划，覆盖具身导航从建图、定位到规划的完整链条。首推Kimera：其3D动态场景图从视觉-惯性数据自动构建物体、房间、建筑的分层语义地图，是导航智能体空间记忆的直接底座；iMAP证明单个MLP即可支撑10Hz实时RGB-D SLAM，开创了神经隐式建图方向；BARF则把经典束调整引入NeRF，解决无位姿视频的训练与配准问题。趋势上，场景表示正从几何重建走向语义分层与生成式可控（如Gen3C），感知与生成的融合将为导航提供可控的世界模型。",
+    "added": 10,
+    "at": "2026-09-26T14:03:39.635862+00:00",
     "new": [
       {
-        "t": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
-        "u": "https://doi.org/10.1109/cvpr52734.2025.00574",
-        "r": 6,
-        "g": 7,
-        "s": "Gen3C提出一种由3D点云缓存引导的视频生成模型：用深度预测构建种子帧点云，按用户给定新相机轨迹渲染点云作为条件，实现精确相机控制与时序3D一致，在稀疏视角新视角合成等任务上达到SOTA。",
+        "t": "iMAP: Implicit Mapping and Positioning in Real-Time",
+        "u": "https://arxiv.org/abs/2103.12352",
+        "r": 8,
+        "g": 8,
+        "s": "iMAP首次证明MLP可作为手持RGB-D实时SLAM的唯一场景表示：无需先验数据在在线运行中持续训练，构建稠密的场景级隐式占用与颜色地图并直接用于相机追踪，追踪达10Hz、全局建图2Hz。",
         "c": "",
-        "cit": 47
+        "cit": 670
+      },
+      {
+        "t": "BARF: Bundle-Adjusting Neural Radiance Fields",
+        "u": "https://doi.org/10.1109/iccv48922.2021.00569",
+        "r": 8,
+        "g": 8,
+        "s": "BARF针对NeRF需精确相机位姿的限制，提出联合学习神经三维表示与相机帧配准的束调整方法，联系经典图像对齐理论，采用由粗到细配准并指出位置编码不利于配准，实现未知位姿视频的新视图合成与定位。",
+        "c": "",
+        "cit": 628
+      },
+      {
+        "t": "Patch-NetVLAD: Multi-Scale Fusion of Locally-Global Descriptors for Place Recognition",
+        "u": "https://arxiv.org/abs/2103.01486",
+        "r": 7,
+        "g": 8,
+        "s": "该文从NetVLAD残差导出patch级局部特征，在特征空间网格上聚合匹配，并以积分特征空间做多尺度融合，使视觉地点识别对季节、光照与视角变化高度鲁棒，在多个真实数据集上达到SOTA。",
+        "c": "",
+        "cit": 443
+      },
+      {
+        "t": "F-LOAM : Fast LiDAR Odometry and Mapping",
+        "u": "https://arxiv.org/abs/2107.00822",
+        "r": 8,
+        "g": 7,
+        "s": "F-LOAM提出非迭代两阶段畸变补偿的激光SLAM框架，提取边线与平面特征分别匹配局部边线图和平面图进行位姿优化，在KITTI上以超10Hz速度实现领先定位精度，兼顾效率与精度。",
+        "c": "",
+        "cit": 419
+      },
+      {
+        "t": "DynaSLAM II: Tightly-Coupled Multi-Object Tracking and SLAM",
+        "u": "https://arxiv.org/abs/2010.07820",
+        "r": 7,
+        "g": 7,
+        "s": "DynaSLAM II是面向双目与RGB-D相机的视觉SLAM系统，用实例语义分割与ORB特征跟踪动态物体，在新型Bundle Adjustment中联合优化静态场景、相机与动态目标轨迹及三维包围盒，兼顾场景理解与相机跟踪。",
+        "c": "",
+        "cit": 337
+      },
+      {
+        "t": "Kimera: From SLAM to spatial perception with 3D dynamic scene graphs",
+        "u": "https://arxiv.org/abs/2101.06894",
+        "r": 9,
+        "g": 9,
+        "s": "提出3D动态场景图（DSG）分层表示物体、房间等概念及其时空关系，并实现首个从视觉-惯性数据全自动构建DSG的开源系统，涵盖SLAM、度量语义重建、物体定位、人体估计与场景解析。",
+        "c": "",
+        "cit": 264
+      },
+      {
+        "t": "MADER: Trajectory Planner in Multiagent and Dynamic Environments",
+        "u": "https://arxiv.org/abs/2010.11061",
+        "r": 7,
+        "g": 8,
+        "s": "提出无人机三维去中心化异步无碰撞轨迹规划器MADER，面向静态/动态障碍与多智能体环境，用MINVO基获得比常用Bernstein/B样条更小的外多面体分离约束，并以碰撞检查-复核机制保证安全。",
+        "c": "",
+        "cit": 213
+      },
+      {
+        "t": "Autonomous Drone Racing with Deep Reinforcement Learning",
+        "u": "https://doi.org/10.1109/iros51168.2021.9636053",
+        "r": 8,
+        "g": 8,
+        "s": "该论文用深度强化学习结合相对门观测，为四旋翼竞速生成近似时间最优轨迹并可适应环境变化，在仿真与真机多赛道验证，物理无人机速度达60km/h。",
+        "c": "",
+        "cit": 200
+      },
+      {
+        "t": "Align and Prompt: Video-and-Language Pre-training with Entity Prompts",
+        "u": "https://doi.org/10.1109/cvpr52688.2022.00490",
+        "r": 6,
+        "g": 8,
+        "s": "提出视频-语言预训练框架AlPro，通过视频文本对比损失（VTC）与实体提示建模（PEM）两个自监督任务，在稀疏采样帧上实现无需目标检测器的细粒度跨模态对齐，在文本-视频检索与视频问答上取得SOTA。",
+        "c": "https://github.com/salesforce/ALPRO",
+        "cit": 175
+      },
+      {
+        "t": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
+        "u": "https://arxiv.org/abs/2503.03751",
+        "r": 7,
+        "g": 7,
+        "s": "Gen3C利用种子图像深度构建3D点云缓存，生成时以新相机轨迹下的2D渲染为条件，实现精确相机控制与时序3D一致的视频生成，并在稀疏视角新视角合成上达到SOTA。",
+        "c": "",
+        "cit": 49
       }
     ]
   }
