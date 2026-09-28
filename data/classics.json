@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T14:59:19.073245+00:00",
+  "updated_at": "2026-09-28T17:57:41.839665+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5781,6 +5781,44 @@
       "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
+      "id": "https://openalex.org/W3159400523",
+      "arxiv_id": "",
+      "title": "Super Odometry: IMU-centric LiDAR-Visual-Inertial Estimator for Challenging Environments",
+      "authors": [
+        "Shibo Zhao",
+        "Hengrui Zhang",
+        "Peng Wang",
+        "Lucas Nogueira",
+        "Sebastian Scherer"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 200,
+      "url": "https://doi.org/10.1109/iros51168.2021.9635862",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出以IMU为中心的LiDAR-视觉-惯性多传感器融合里程计，粗到细恢复运动并兼顾松紧耦合优点，用动态八叉树保障实时性，在感知退化环境实现鲁棒状态估计，已部署于DARPA地下挑战赛的无人机与地面机器人。",
+      "change_zh": "相比常见纯紧耦合或纯松耦合融合路线，该方法以IMU为中心组织多源数据处理：VIO与LIO为约束IMU偏置提供位姿先验，同时接收IMU运动预测，融合两类方法优点；并以动态八叉树替代静态KD树，大幅降低运行时间保障实时性。",
+      "why_it_matters": "高精度鲁棒里程计是无人机在烟雾、黑暗、粉尘等退化环境执行搜救与目标搜索的前提；该系统经DARPA地下挑战赛真机验证并获奖，为UAV主动目标搜索与自主导航提供可靠状态估计底座，属落地影响力高的系统工作。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "drone",
+        "odometry",
+        "state estimation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-28T17:57:41.839665+00:00"
+    },
+    {
       "id": "https://openalex.org/W4285506552",
       "arxiv_id": "2205.13135",
       "title": "LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging Large-Scale Underground Environments",
@@ -9260,103 +9298,28 @@
       "rigor": 3,
       "reason": "属语言哲学与AI伦理的价值对齐讨论，无具身导航、空间智能或机器人关联，也未提出模型与智能体能力本身的显著技术进展，超出收录范围。",
       "excluded_at": "2026-09-26"
+    },
+    "2111.04006": {
+      "title": "A review of location encoding for GeoAI: methods and applications",
+      "relevance": 4,
+      "rigor": 5,
+      "reason": "该综述面向GeoAI地理坐标位置编码与地理空间数据建模应用，与UAV目标搜索、具身导航及机器人空间智能等收录技术线仅属术语层面擦边。",
+      "excluded_at": "2026-09-28"
     }
   },
-  "last_citation_refresh": "2026-09-27T14:59:19.073245+00:00",
   "briefing": {
-    "text": "本批工作围绕三维空间感知主线，从神经隐式SLAM、鲁棒重定位到语义场景图与无人机规划，覆盖具身导航从建图、定位到规划的完整链条。首推Kimera：其3D动态场景图从视觉-惯性数据自动构建物体、房间、建筑的分层语义地图，是导航智能体空间记忆的直接底座；iMAP证明单个MLP即可支撑10Hz实时RGB-D SLAM，开创了神经隐式建图方向；BARF则把经典束调整引入NeRF，解决无位姿视频的训练与配准问题。趋势上，场景表示正从几何重建走向语义分层与生成式可控（如Gen3C），感知与生成的融合将为导航提供可控的世界模型。",
-    "added": 10,
-    "at": "2026-09-26T14:03:39.635862+00:00",
+    "text": "（说明：本轮仅提供一篇条目，故“最值得读”以该篇为核心展开。） 本轮入库条目不多但主线清晰：面向感知退化环境的鲁棒状态估计与多传感器融合里程计。最值得精读的是Super Odometry，它以IMU为中心融合LiDAR与视觉，先粗到细恢复运动、兼顾松紧耦合优点，用动态八叉树保障实时性，且有DARPA地下挑战赛中无人机与地面机器人的部署验证，理论设计与工程落地均具参考价值。从其200次被引与实战部署看，能在真实极端环境中稳定运行的系统级融合方案，正成为具身导航领域高被引的主线方向。",
+    "added": 1,
+    "at": "2026-09-28T17:57:41.839665+00:00",
     "new": [
       {
-        "t": "iMAP: Implicit Mapping and Positioning in Real-Time",
-        "u": "https://arxiv.org/abs/2103.12352",
+        "t": "Super Odometry: IMU-centric LiDAR-Visual-Inertial Estimator for Challenging Environments",
+        "u": "https://doi.org/10.1109/iros51168.2021.9635862",
         "r": 8,
         "g": 8,
-        "s": "iMAP首次证明MLP可作为手持RGB-D实时SLAM的唯一场景表示：无需先验数据在在线运行中持续训练，构建稠密的场景级隐式占用与颜色地图并直接用于相机追踪，追踪达10Hz、全局建图2Hz。",
-        "c": "",
-        "cit": 670
-      },
-      {
-        "t": "BARF: Bundle-Adjusting Neural Radiance Fields",
-        "u": "https://doi.org/10.1109/iccv48922.2021.00569",
-        "r": 8,
-        "g": 8,
-        "s": "BARF针对NeRF需精确相机位姿的限制，提出联合学习神经三维表示与相机帧配准的束调整方法，联系经典图像对齐理论，采用由粗到细配准并指出位置编码不利于配准，实现未知位姿视频的新视图合成与定位。",
-        "c": "",
-        "cit": 628
-      },
-      {
-        "t": "Patch-NetVLAD: Multi-Scale Fusion of Locally-Global Descriptors for Place Recognition",
-        "u": "https://arxiv.org/abs/2103.01486",
-        "r": 7,
-        "g": 8,
-        "s": "该文从NetVLAD残差导出patch级局部特征，在特征空间网格上聚合匹配，并以积分特征空间做多尺度融合，使视觉地点识别对季节、光照与视角变化高度鲁棒，在多个真实数据集上达到SOTA。",
-        "c": "",
-        "cit": 443
-      },
-      {
-        "t": "F-LOAM : Fast LiDAR Odometry and Mapping",
-        "u": "https://arxiv.org/abs/2107.00822",
-        "r": 8,
-        "g": 7,
-        "s": "F-LOAM提出非迭代两阶段畸变补偿的激光SLAM框架，提取边线与平面特征分别匹配局部边线图和平面图进行位姿优化，在KITTI上以超10Hz速度实现领先定位精度，兼顾效率与精度。",
-        "c": "",
-        "cit": 419
-      },
-      {
-        "t": "DynaSLAM II: Tightly-Coupled Multi-Object Tracking and SLAM",
-        "u": "https://arxiv.org/abs/2010.07820",
-        "r": 7,
-        "g": 7,
-        "s": "DynaSLAM II是面向双目与RGB-D相机的视觉SLAM系统，用实例语义分割与ORB特征跟踪动态物体，在新型Bundle Adjustment中联合优化静态场景、相机与动态目标轨迹及三维包围盒，兼顾场景理解与相机跟踪。",
-        "c": "",
-        "cit": 337
-      },
-      {
-        "t": "Kimera: From SLAM to spatial perception with 3D dynamic scene graphs",
-        "u": "https://arxiv.org/abs/2101.06894",
-        "r": 9,
-        "g": 9,
-        "s": "提出3D动态场景图（DSG）分层表示物体、房间等概念及其时空关系，并实现首个从视觉-惯性数据全自动构建DSG的开源系统，涵盖SLAM、度量语义重建、物体定位、人体估计与场景解析。",
-        "c": "",
-        "cit": 264
-      },
-      {
-        "t": "MADER: Trajectory Planner in Multiagent and Dynamic Environments",
-        "u": "https://arxiv.org/abs/2010.11061",
-        "r": 7,
-        "g": 8,
-        "s": "提出无人机三维去中心化异步无碰撞轨迹规划器MADER，面向静态/动态障碍与多智能体环境，用MINVO基获得比常用Bernstein/B样条更小的外多面体分离约束，并以碰撞检查-复核机制保证安全。",
-        "c": "",
-        "cit": 213
-      },
-      {
-        "t": "Autonomous Drone Racing with Deep Reinforcement Learning",
-        "u": "https://doi.org/10.1109/iros51168.2021.9636053",
-        "r": 8,
-        "g": 8,
-        "s": "该论文用深度强化学习结合相对门观测，为四旋翼竞速生成近似时间最优轨迹并可适应环境变化，在仿真与真机多赛道验证，物理无人机速度达60km/h。",
+        "s": "提出以IMU为中心的LiDAR-视觉-惯性多传感器融合里程计，粗到细恢复运动并兼顾松紧耦合优点，用动态八叉树保障实时性，在感知退化环境实现鲁棒状态估计，已部署于DARPA地下挑战赛的无人机与地面机器人。",
         "c": "",
         "cit": 200
-      },
-      {
-        "t": "Align and Prompt: Video-and-Language Pre-training with Entity Prompts",
-        "u": "https://doi.org/10.1109/cvpr52688.2022.00490",
-        "r": 6,
-        "g": 8,
-        "s": "提出视频-语言预训练框架AlPro，通过视频文本对比损失（VTC）与实体提示建模（PEM）两个自监督任务，在稀疏采样帧上实现无需目标检测器的细粒度跨模态对齐，在文本-视频检索与视频问答上取得SOTA。",
-        "c": "https://github.com/salesforce/ALPRO",
-        "cit": 175
-      },
-      {
-        "t": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
-        "u": "https://arxiv.org/abs/2503.03751",
-        "r": 7,
-        "g": 7,
-        "s": "Gen3C利用种子图像深度构建3D点云缓存，生成时以新相机轨迹下的2D渲染为条件，实现精确相机控制与时序3D一致的视频生成，并在稀疏视角新视角合成上达到SOTA。",
-        "c": "",
-        "cit": 49
       }
     ]
   }
