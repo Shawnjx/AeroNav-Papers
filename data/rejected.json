@@ -1534,5 +1534,77 @@
     "reason": "机械臂操作策略的仿真评测基准，摘要未含任何导航决策成分，属范围明确排除的操作/VLA类工作，仅与具身基准、Sim2Real术语擦边。",
     "rejected_at": "2026-09-25",
     "url": "https://arxiv.org/abs/2609.27449"
+  },
+  "2609.30521": {
+    "title": "Aerial Manipulation in the Wild with Onboard Perception, Policy Learning, and Whole-Body Control",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "核心为空中机械臂操作（演示学习策略+全身MPC执行），属\"机械臂操作与VLA控制\"明确排除项，摘要中无任何导航决策成分。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.30521"
+  },
+  "2609.31112": {
+    "title": "DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作属机械臂操作/VLA控制范畴，核心是动态场景下的抓取与位姿优化，不含导航决策、移动智能体或空间导航成分，明确超出收录范围。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31112"
+  },
+  "2609.31364": {
+    "title": "OpenVAM: Open-World Visual Attention Modeling with VLMs",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "人类注视/显著性预测属2D视觉注意力垂直应用，虽用VLM生成解释并提及机器人，但与空间智能、导航及MLLM通用能力本身的进展均无实质关联。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31364"
+  },
+  "2609.31460": {
+    "title": "Segment-Level Agentic Topic Modeling for Improved Data Exploration and Resource Efficiency",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "属将LLM套用于纯文本主题建模的垂直数据挖掘应用，与空间、导航、机器人无关，也未推进模型/智能体能力本身，仅'agentic'一词与范围擦边。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31460"
+  },
+  "2609.31247": {
+    "title": "Geometric Inconsistency Localization in Multi-View Image Sets",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "该工作本质是多媒体取证与NVS评测任务，虽借用多视角几何一致性与跨视图对应，但与具身导航、机器人自主及空间智能核心问题无实质关联，仅术语擦边。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31247"
+  },
+  "2609.31117": {
+    "title": "Comparative Evaluation of an XR Pen-based Control Interface for Semi-Autonomous Mobile Robot Navigation in Service Environments",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "核心贡献是XR人机交互输入设备的可用性用户研究（笔式点选与手柄、手势、RViz的对比评测），属遥操作/HCI方向，未推进收录范围内任一导航智能或机器人自主技术线。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31117"
+  },
+  "2609.31396": {
+    "title": "Augmented Reality Interfaces for Human-Robot Collaboration: Development of a ROS 2-Based Sensor Streaming Framework and Validation via SLAM Algorithms",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "核心贡献为面向人机协作的AR界面与ROS 2传感器流框架，SLAM仅作为验证数据流质量的工具而非状态估计或导航方法本身的贡献，属人机交互接口方向，超出收录的技术线。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31396"
+  },
+  "2609.31326": {
+    "title": "CG-HAF: An Interpretable Global-Local Lesion-Burden Fusion Framework for Ordinal Acne Severity Grading in Agentic Skincare Support",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "属于医疗图像痤疮分级垂直应用，将分类器与检测器融合用于皮肤病学，与空间、导航、机器人及智能体核心能力均无关，题目中的Agentic仅为术语擦边，超出收录范围。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31326"
+  },
+  "2609.31204": {
+    "title": "FlatClip: A Geometry-Aware Surface-Level Baseline for fMRI Representation Learning",
+    "relevance": 1,
+    "rigor": 7,
+    "reason": "把冻结的图像预训练编码器（SigLIP2）套用到fMRI脑成像垂直领域，不涉及空间智能、导航或机器人自主，属明确排除范围，仅为术语擦边。",
+    "rejected_at": "2026-09-28",
+    "url": "https://arxiv.org/abs/2609.31204"
   }
 }
