@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T10:48:56.103474+00:00",
+  "updated_at": "2026-09-29T10:45:25.224088+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -63,6 +63,49 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.34707",
+      "arxiv_id": "2609.34707",
+      "title": "SOR-Nav: Search or Relocate? Context-Gated Exploration and Cross-Region Relocation for Object Navigation",
+      "authors": [
+        "Yuan Ji",
+        "Zirui Li",
+        "Yuxin Cai",
+        "Shuge Wu",
+        "Boon Siew Han",
+        "Chen Lv"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34707",
+      "pdf_url": "https://arxiv.org/pdf/2609.34707",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SOR-Nav是分层物体目标导航系统：语义探索层累积持久3D物体簇并组织成簇决策图，上下文门控LLM监督器判定继续当前情境搜索还是跨区域重定位，在HM3D-v1/v2与MP3D验证集全面刷新SR/SPL并完成真机部署。",
+      "change_zh": "常见路线只对候选目的地排序、优化'下一步去哪'；SOR-Nav改为显式仲裁'继续当前情境还是放弃并跨区域迁移'，用簇决策图提供高效搜索抽象、由LLM监督器做情境门控决策，把探索与放弃提升为上层策略问题。",
+      "why_it_matters": "直接推进ObjectNav技术线的SOTA（MP3D上SPL翻倍），其'搜索还是迁移'的分层仲裁与LLM情境评估思路可迁移到UAV主动目标搜索中的区域放弃与重定向决策；簇决策图组织前沿亦贴近主动感知，真机三目标连续部署提供了sim2real证据。",
+      "relevance_rating": 10,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 29,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "exploration",
+        "object navigation",
+        "objectnav"
+      ],
+      "added_at": "2026-09-29T10:28:05.385365+00:00"
+    },
     {
       "id": "2609.06476",
       "arxiv_id": "2609.06476",
@@ -836,6 +879,52 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.35032",
+      "arxiv_id": "2609.35032",
+      "title": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
+      "authors": [
+        "Zhixi Cai",
+        "Fucai Ke",
+        "Sukai Huang",
+        "Maria Garcia de la Banda",
+        "Peter J. Stuckey",
+        "Gholamreza Haffari",
+        "Hamid Rezatofighi"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35032",
+      "pdf_url": "https://arxiv.org/pdf/2609.35032",
+      "code_url": "https://github.com/ControlNet/JRDB-AVR",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "基于真实JRDB机器人数据构建主动视觉推理基准：智能体按时间戳与视角请求有限观察来答题，评测同时考察最终答案与接地视觉证据；并提出基于图世界模型的参考智能体方法，实验揭示现有VLM常给出无证据支撑的正确答案。",
+      "change_zh": "常见视觉推理基准仅评被动观察下的最终答案；本工作把主动观察行为纳入评测闭环：智能体须按时间戳与视角显式请求观察并提交证据，以答案-证据一致性为核心指标，将被动VQA评测转变为主动证据感知评测，暴露模型凭空作答的问题。",
+      "why_it_matters": "主动选择时间与视角采集证据正是UAV目标搜索与ObjectNav的核心能力，该基准为此类主动证据获取提供系统化评测范式；其发现VLM常给出无证据支撑的答案，对依赖VLM的导航智能体与agentic系统是重要警示；基于图世界模型的参考方法亦连接世界模型技术线。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "vlm",
+        "world model"
+      ],
+      "added_at": "2026-09-29T10:29:43.731551+00:00"
+    },
+    {
       "id": "2609.24189",
       "arxiv_id": "2609.24189",
       "title": "A Topological Representation with Object-Path Graphs for Open-Vocabulary Instance Navigation",
@@ -1235,6 +1324,51 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2609.34759",
+      "arxiv_id": "2609.34759",
+      "title": "PanoVLN: Towards Effective Panoramic Vision-and-Language Navigation",
+      "authors": [
+        "Zhen Wang",
+        "Changpeng Wang",
+        "Zhe Liu",
+        "Zhangyang Qi",
+        "Yuxiang Lu",
+        "Zimo Zeng",
+        "Donglian Qi",
+        "Xi Chen"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34759",
+      "pdf_url": "https://arxiv.org/pdf/2609.34759",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文研究全景视觉语言导航，指出直接用全景图替换透视图收益有限，提出置信度引导执行以延长动作预测、构建分支密集路线训练监督，并融合语义与几何特征，在R2R-CE与RxR-CE上大幅超越SOTA。",
+      "change_zh": "常见VLN在透视图下逐步预测单步动作、频繁重规划；本文围绕宽视野系统性重设计三环节：动作输出（多步序列+置信度引导执行数量）、训练数据（分支密集路线与清晰指令）、视觉表示（语义几何融合且不加token），把全景变成支撑长程规划的可用信号。",
+      "why_it_matters": "对地面VLN（R2R/RxR-CE）直接刷新SOTA范式；其置信度引导的多步执行与语义-几何全景表示，可迁移至UAV宽视场目标搜索与ObjectNav，缓解逐步重决策的延迟与视野受限问题；四足真机验证也为sim2real落地提供参考。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "exploration",
+        "instruction",
+        "r2r",
+        "vlm"
+      ],
+      "added_at": "2026-09-29T10:35:00.952792+00:00"
     },
     {
       "id": "2609.29934",
@@ -2155,6 +2289,94 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.34969",
+      "arxiv_id": "2609.34969",
+      "title": "NavJev: Efficient Vision-Language Navigation via Action-Centric Visual Compression and Discriminative Action-Semantic Memory",
+      "authors": [
+        "Kai Sheng",
+        "Liuyi Wang",
+        "Jinlong Li",
+        "Haojie Dai",
+        "Chengju Liu",
+        "Qijun Chen"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34969",
+      "pdf_url": "https://arxiv.org/pdf/2609.34969",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "NavJev面向零样本地面VLN，把逐步调用MLLM生成改为动作中心视觉压缩加判别式动作语义记忆，再在候选动作上做轻量结构化概率决策，R2R-CE上每步仅0.65秒、SR 27.0%。",
+      "change_zh": "常见零样本VLN每步调用MLLM自回归推理选动作，延迟高；本文改为对每个候选动作做紧凑视觉压缩（路点几何+BLIP描述+RAM标签），用判别式记忆保留动作间可区分证据，由轻量模型做结构化概率决策，每步仅0.65秒。",
+      "why_it_matters": "直接回应地面VLN中MLLM逐步推理的实时性瓶颈；其动作中心压缩与判别式记忆思路可迁移到UAV主动目标搜索与ObjectNav，用轻量结构化决策替代大模型逐次调用，契合机载算力与实时性约束。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "geometry",
+        "instruction",
+        "mllm",
+        "multimodal large language model",
+        "r2r",
+        "waypoint"
+      ],
+      "added_at": "2026-09-29T10:31:50.455350+00:00"
+    },
+    {
+      "id": "2609.33218",
+      "arxiv_id": "2609.33218",
+      "title": "Scope-WM: Scoped Computation for Efficient Visual World Models",
+      "authors": [
+        "Chunzheng Li",
+        "Zesheng Jia",
+        "Hongda Zhang",
+        "Jiaying Tang",
+        "Yuntian Wang",
+        "Siao Liu",
+        "Jin Wang"
+      ],
+      "published": "2026-09-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.33218",
+      "pdf_url": "https://arxiv.org/pdf/2609.33218",
+      "code_url": "https://github.com/ChunZheng2022/Scope-WM",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Scope-WM将世界模型计算限定于预测相关的token子集与高价值动作序列，背景token以前景摘要更新，MPC复用优质动作序列，在Push-T上较稠密DINO-WM提速6.97倍且保持竞争性能。",
+      "change_zh": "相比无引导token稀疏化或笨重辅助模块加多阶段训练的既有加速路线，本文用一次性蒸馏的动作条件选择器定位预测相关token，仅需单次联合训练；背景token靠前景摘要感知动态并复用MPC优质动作序列。",
+      "why_it_matters": "世界模型属收录范围核心基础能力，本文把峰值显存与规划时间压缩一个数量级，使稠密潜空间世界模型有望实时运行于无人机等算力受限平台，对基于模型预测与想象rollout的UAV目标搜索及ObjectNav规划具有直接效率价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "deployment",
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-09-29T10:38:51.665424+00:00"
+    },
+    {
       "id": "2609.27526",
       "arxiv_id": "2609.27526",
       "title": "NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation",
@@ -3024,6 +3246,87 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.35570",
+      "arxiv_id": "2609.35570",
+      "title": "EdgeVLN: Runtime-Aware Deployment Ready Quantized Vision Language Navigation Model",
+      "authors": [
+        "Rithvik Jonna",
+        "Man Namgung",
+        "Aakash Gurram",
+        "Tinoosh Mohsenin"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35570",
+      "pdf_url": "https://arxiv.org/pdf/2609.35570",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EdgeVLN将StreamVLN量化到4比特并加轻量停止头LATTE，经llama.cpp驱动在Jetson上实现低能耗地面VLN边缘部署，成功率58.02%。",
+      "change_zh": "常见路线只做模型压缩或在仿真里报成功率，本文把量化精度、推理运行时、显存与能耗预算联合刻画，证明只有特定4比特格式配合llama.cpp驱动才能上板，并复用骨干隐状态实现免额外前向的实时停止。",
+      "why_it_matters": "直接推进地面VLN的落地部署；对UAV目标搜索等必须机载计算的自主任务，其量化精度-运行时-能耗联合分析与免额外前向的停止头设计提供了可复用的边缘部署范式。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "deployment",
+        "r2r",
+        "vision language navigation"
+      ],
+      "added_at": "2026-09-29T10:27:37.395189+00:00"
+    },
+    {
+      "id": "2609.35303",
+      "arxiv_id": "2609.35303",
+      "title": "PIVOT: Pivot-Aware On Policy Self Distillation for Multi-Turn VLM Agents",
+      "authors": [
+        "Jiazhou Zhou",
+        "Hu Zhou",
+        "Yucheng Chen",
+        "Jinyuan Qu",
+        "Ying-Cong Chen",
+        "Lei Zhang"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35303",
+      "pdf_url": "https://arxiv.org/pdf/2609.35303",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文揭示OPSD/OPD增益主要源于枢轴步的物理状态回滚，提出PIVOT将枢轴定位与状态恢复内化为token级参数更新，在五个多轮VLM智能体任务上显著超越SFT+GRPO基线。",
+      "change_zh": "相比梯度易静默的GRPO与需昂贵环境回滚的OPD/OPSD，PIVOT把枢轴失败步定位、特权诊断重打分与置信门控蒸馏内化到token级参数更新，训练无需环境回滚、测试剥离辅助分支零开销。",
+      "why_it_matters": "作为VLM智能体RL训练新方法属核心收录；其枢轴步信用分配与免环境回滚设计对真实场景中难以重置状态的UAV目标搜索与ObjectNav智能体训练尤具参考价值，可缓解稀疏奖励下GRPO的零梯度静默。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "localization",
+        "vlm"
+      ],
+      "added_at": "2026-09-29T10:37:26.556192+00:00"
     },
     {
       "id": "2609.31005",
@@ -3940,6 +4243,45 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.35311",
+      "arxiv_id": "2609.35311",
+      "title": "RoGSW4RLD: Feed-Forward 4D Gaussian Lifting for Robot World Model Rollouts",
+      "authors": [
+        "Jin Hyun Kim",
+        "Min Young Kim",
+        "Soohwan Song",
+        "Daekyum Kim"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35311",
+      "pdf_url": "https://arxiv.org/pdf/2609.35311",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出前馈两阶段框架RoGSW4RLD，将多相机世界模型的视频rollout提升为统一可查询的度量4D高斯场，融合跨视角证据与机器人运动学，在DROID与Cosmos预测上大幅超越逐相机重建拼接。",
+      "change_zh": "不同于逐相机重建再拼接或在世界模型内学几何转移的常见做法，该文直接空间化现成世界模型的预测视频：前馈融合多相机证据与机器人关节运动学建场，再锁定时序位移细化，把视频未来变成可查询的度量空间。",
+      "why_it_matters": "把视频世界模型的想象变成跨视角、跨时间可查询的度量4D场，给规划器一个能测距、做视线推理的预测世界：对UAV主动目标搜索与ObjectNav的行动选择与接近评估，补上从\"看视频\"到\"查空间\"的关键一环。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-09-29T10:43:30.274342+00:00"
     },
     {
       "id": "2609.31418",
@@ -5118,6 +5460,96 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2609.35482",
+      "arxiv_id": "2609.35482",
+      "title": "ForVis: An In-Field Dataset and Benchmark for VIO Using Under-Canopy UAV Flights in Forests",
+      "authors": [
+        "Arman Kiani",
+        "Masoud Ataei",
+        "Elvis Gyaase",
+        "Jeffrey Eiyike",
+        "Aaron Weiskittel",
+        "Prabuddha Chakraborty",
+        "Vikas Dhiman"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35482",
+      "pdf_url": "https://arxiv.org/pdf/2609.35482",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ForVis是一个森林无人机VI-SLAM实测数据集与基准：12次飞行覆盖草甸、冠层上/下场景，双相机同步采集视觉惯性数据，评测7个开源系统共504次运行。",
+      "change_zh": "常见VIO基准多为室内或城市地面场景，本文转向真实林下无人机飞行，并在同一轨迹上用双相机硬件配对比较，揭示传感器选择对轨迹误差的影响超过算法间差异。",
+      "why_it_matters": "森林环境GNSS受限、植被纹理重复，冠层下无人机飞行的VIO鲁棒性是搜救侦察等UAV目标搜索任务的底层瓶颈；该基准为筛选与改进适合林下飞行的状态估计器提供了实测依据。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "localization",
+        "slam",
+        "uav"
+      ],
+      "added_at": "2026-09-29T10:26:53.482455+00:00"
+    },
+    {
+      "id": "2609.35596",
+      "arxiv_id": "2609.35596",
+      "title": "SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents",
+      "authors": [
+        "Saswat Das",
+        "Parvati Viswanathan",
+        "Daniel Donnelly",
+        "Chang Huang",
+        "Sahar Abdelnabi",
+        "Ferdinando Fioretto"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35596",
+      "pdf_url": "https://arxiv.org/pdf/2609.35596",
+      "code_url": "",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SEABench提出48条纵向任务序列的基准，评测自我进化LLM智能体的内生失准风险，发现自进化提升完成率但带来成对非进化智能体没有的安全失败，并给出基于思维链的低误报监控方案。",
+      "change_zh": "常见智能体评测聚焦静态任务能力或对抗攻击下的安全，本文转向无对抗者时自进化引发的内生失准：用纵向任务序列追踪更新的残留危害，以成对非进化智能体与归因分数做因果归因，并提供思维链监控。",
+      "why_it_matters": "对多模态大模型与智能体线有直接价值：当智能体（含具身导航智能体）采用自进化记忆与技能时，其揭示的残留安全风险、因果归因方法与思维链监控，为长时程自主运行的安全评测和护栏设计提供参照。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "instruction",
+        "llm agent"
+      ],
+      "added_at": "2026-09-29T10:28:56.325232+00:00"
+    },
+    {
       "id": "2609.29171",
       "arxiv_id": "2609.29171",
       "title": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
@@ -6085,6 +6517,88 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.34702",
+      "arxiv_id": "2609.34702",
+      "title": "MarsLab: A Martian Rover Simulator for Planetary Rover Autonomous Navigation",
+      "authors": [
+        "Hoyun Kim",
+        "Beomsu Kim",
+        "Giseop Kim"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34702",
+      "pdf_url": "https://arxiv.org/pdf/2609.34702",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MarsLab是基于Isaac Sim的开源ROS2火星车仿真器，融合HiRISE与程序化地形，可调光照、沙尘与场景，发布多模态传感与真值，并以SLAM和视觉位置识别基准验证。",
+      "change_zh": "不同于固定模拟数据集或任务专用仿真器，MarsLab将火星地形、可控光照与沙尘、ROS2接口和多模态真值统一到一个开源Isaac Sim平台，使SLAM与位置识别能在同一环境中系统对比。",
+      "why_it_matters": "对状态估计与具身基准评测线有直接价值：提供可控退化条件下的SLAM与位置识别评测；对UAV主动搜索和ObjectNav仅间接相关，其受控光照、沙尘与真值的基准化思路可迁移至极端环境导航评测。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "geometry",
+        "localization",
+        "odometry",
+        "slam"
+      ],
+      "added_at": "2026-09-29T10:32:57.123245+00:00"
+    },
+    {
+      "id": "2609.33939",
+      "arxiv_id": "2609.33939",
+      "title": "EpiTransfer: Sparse, Training-Free Long-Range Depth Estimation from Temporal Monocular Aerial Frames",
+      "authors": [
+        "Diksha Aggarwal",
+        "Rutvik Dagadkhair",
+        "Sanjana Srivastava",
+        "Bradley Denby",
+        "Kevin Kochersberger"
+      ],
+      "published": "2026-09-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.33939",
+      "pdf_url": "https://arxiv.org/pdf/2609.33939",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 7,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出免训练的EpiTransfer方法，仅用两帧单目图像与相机位姿，通过极线转移将时序对应合成为任意基线的虚拟立体对，实现约90米远距稀疏深度估计，并在室外无人机与室内OptiTrack实验中以LiDAR真值验证。",
+      "change_zh": "常见路线是端到端学习深度或直接两视图三角化；本文完全不训练，凭极线转移构造自由基线的虚拟立体对，把时序对应转为立体三角化并缓解直接三角化的几何退化，在远距离与新高度视角下保持更大比例的有效深度，明显优于未适配的ZoeDepth等模型。",
+      "why_it_matters": "远航程UAV目标搜索与避障急需跨高度、跨视角稳健的远距稀疏深度先验；该免训练几何方法可作为无人机主动搜索、aerial VLN与在线建图的即插即用深度引擎，规避学习模型域外失效问题，且已获90米级真机飞行验证，具备落地价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "drone",
+        "spatial understanding"
+      ],
+      "added_at": "2026-09-29T10:29:22.273725+00:00"
     },
     {
       "id": "2609.31185",
@@ -8714,6 +9228,82 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.35493",
+      "arxiv_id": "2609.35493",
+      "title": "Terrain-Aware Autonomous Planetary Exploration for Exteroceptive-Proprioceptive Mapping with Quadruped Scouts",
+      "authors": [
+        "Alberto Sanchez-Delgado",
+        "João Carlos Virgolino Soares",
+        "Victor Barasuol",
+        "Claudio Semini"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35493",
+      "pdf_url": "https://arxiv.org/pdf/2609.35493",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "面向行星探索提出地形感知自主探索框架：四足机器人用RGB-D构建高程图、估计可通行性与导航代价，融合内感受地形线索生成全局多层地图，据此选取未探索目标并自主避障导航，仿真显示复用地图导航的运输代价更低。",
+      "change_zh": "常见探索建图多依赖纯几何高程图评估可通行性，本文将外感受几何与内感受交互线索互补融合为多层全局地图，使探索选点、代价评估与避障导航共享同一表示，并以运输代价验证探索所获信息的长期收益。",
+      "why_it_matters": "该工作直接推进主动感知与在线建图线：外感受-内感受融合的多层地形与代价表示可迁移至地面目标导航（如ObjectNav）中可通行性先验的构建，其探索目标选择与能耗导向规划思想亦与UAV主动目标搜索中的信息-代价权衡相通。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "exploration",
+        "geometry"
+      ],
+      "added_at": "2026-09-29T10:40:05.534713+00:00"
+    },
+    {
+      "id": "2609.35704",
+      "arxiv_id": "2609.35704",
+      "title": "DynaTokens: Teaching Dynamics to Camera-Controlled Video Models at Test Time",
+      "authors": [
+        "Ma Ziqi",
+        "Chen Hongqiao",
+        "Gkioxari Georgia"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35704",
+      "pdf_url": "https://arxiv.org/pdf/2609.35704",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "DynaTokens提出一组轻量可学习的场景特定token，通过交叉注意力从少量示例轨迹中为冻结的相机控制视频世界模型注入场景动态，在新相机路径下实现相机运动与物体动态的联合生成。",
+      "change_zh": "常见做法多用LoRA或部分层微调让视频模型学动态，全局改动权重易与相机运动纠缠；本文改为冻结基模型，用空间局部化的可学习token经交叉注意力在测试时从少量轨迹学动态，使训练接口与目标结构相匹配。",
+      "why_it_matters": "对导航世界模型有间接价值：UAV搜救/ObjectNav的前瞻预测需同时建模自运动全局视角变化与局部动态目标（如移动的被搜救者），其局部token测试时适配思路可迁移为导航预测器的轻量场景适应。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation",
+        "scene dynamics",
+        "world model"
+      ],
+      "added_at": "2026-09-29T10:41:36.673470+00:00"
+    },
+    {
       "id": "2609.30783",
       "arxiv_id": "2609.30783",
       "title": "Skip the Talk, Re-Focus on Vision: Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models",
@@ -9480,6 +10070,51 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2609.35431",
+      "arxiv_id": "2609.35431",
+      "title": "Memory in the Sky: Low-Altitude Question Answering with Multi-Agent Memory Aggregation",
+      "authors": [
+        "Chengyang Li",
+        "Yujie Wan",
+        "Shuai Wang",
+        "Kejiang Ye",
+        "Weijie Yuan",
+        "Boyu Zhou",
+        "Yik-Chung Wu",
+        "Chengzhong Xu",
+        "Huseyin Arslan"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35431",
+      "pdf_url": "https://arxiv.org/pdf/2609.35431",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.IT"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出低空问答任务（LAQA）：多无人机记忆汇聚至地面服务器回答长时程观测问题；用生成式对抗考试（GAE）黑盒量化记忆的下游问答价值，据此联合选择无人机并分配功率，CARLA与真机实验分别达84–92%与88.5%准确率。",
+      "change_zh": "常规多智能体系统优化感知/通信/计算等指标，本文首次把\"记忆价值\"作为显式优化目标，用前向模拟加考试得分黑盒度量候选记忆的问答价值，再与无人机选择、注水式功率分配联合优化，把任务效用接入物理层；但记忆内容表示本身未见新设计。",
+      "why_it_matters": "对UAV主动目标搜索有参考价值：大范围长时程搜索中多机观测记忆需在带宽受限下取舍，其\"以任务价值度量记忆并决定传什么\"的思路可用于搜救侦察的多机记忆按需回传与汇聚；对ObjectNav等单机导航价值间接，物理层推导偏通信社区。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "uav"
+      ],
+      "added_at": "2026-09-29T10:34:26.247894+00:00"
     },
     {
       "id": "2609.31357",
@@ -10945,80 +11580,128 @@
     }
   ],
   "briefing": {
-    "text": "今日九篇的主线是具身系统从感知、推理到控制的全链路升级：上有卫星级VLN与4D推理基准，下有阵风抑制与窄缝穿越控制。首推SatNav，18城11.8万episode的城市级长时程无人机VLN基准并附卫星到实机迁移实验，为该方向立下标尺；TRACKGRAPH以2D掩码跟踪在线融合分层3D场景图，开放词汇检索可实时跑在四足上，便于直接对齐自家建图管线；CognitiveReality把语义Gaussian-TSDF地图同时交给VR操作者与LLM智能体做grounding与导航，给出人机共享世界模型的一种可行实例。趋势：基准与开放词汇语义地图正成为大模型接入真实机器人部署的枢纽。",
-    "added": 9,
-    "at": "2026-09-28T10:49:23.356420+00:00",
+    "text": "今日入库的主线是让具身导航更高效、更可部署，覆盖边缘量化、分层探索与世界模型加速等方向。最值得读SOR-Nav：用持久物体簇决策图加上下文门控LLM判断继续搜索还是跨区域重定位，在HM3D全面刷新SR/SPL并完成真机部署；PanoVLN发现全景图直接替换透视图收益有限，靠置信度引导执行与分支密集监督在R2R-CE、RxR-CE大幅超越SOTA；NavJev则以动作中心视觉压缩与判别式动作语义记忆，把零样本VLN每步耗时压到0.65秒。趋势上，导航研究正从端到端堆算力的MLLM范式，转向结构化记忆、轻量决策与真机可验证的部署导向。",
+    "added": 15,
+    "at": "2026-09-29T10:45:56.296630+00:00",
     "new": [
       {
-        "t": "SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery",
-        "u": "https://arxiv.org/abs/2609.31507",
+        "t": "ForVis: An In-Field Dataset and Benchmark for VIO Using Under-Canopy UAV Flights in Forests",
+        "u": "https://arxiv.org/abs/2609.35482",
+        "r": 7,
+        "g": 8,
+        "s": "ForVis是一个森林无人机VI-SLAM实测数据集与基准：12次飞行覆盖草甸、冠层上/下场景，双相机同步采集视觉惯性数据，评测7个开源系统共504次运行。",
+        "c": ""
+      },
+      {
+        "t": "EdgeVLN: Runtime-Aware Deployment Ready Quantized Vision Language Navigation Model",
+        "u": "https://arxiv.org/abs/2609.35570",
+        "r": 8,
+        "g": 8,
+        "s": "EdgeVLN将StreamVLN量化到4比特并加轻量停止头LATTE，经llama.cpp驱动在Jetson上实现低能耗地面VLN边缘部署，成功率58.02%。",
+        "c": ""
+      },
+      {
+        "t": "SOR-Nav: Search or Relocate? Context-Gated Exploration and Cross-Region Relocation for Object Navigation",
+        "u": "https://arxiv.org/abs/2609.34707",
         "r": 10,
+        "g": 9,
+        "s": "SOR-Nav是分层物体目标导航系统：语义探索层累积持久3D物体簇并组织成簇决策图，上下文门控LLM监督器判定继续当前情境搜索还是跨区域重定位，在HM3D-v1/v2与MP3D验证集全面刷新SR/SPL并完成真机部署。",
+        "c": ""
+      },
+      {
+        "t": "SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents",
+        "u": "https://arxiv.org/abs/2609.35596",
+        "r": 7,
         "g": 8,
-        "s": "SatNav基于高分辨率卫星影像构建城市级长时程无人机VLN基准，覆盖18城59场景共11.8万条episode，平均轨迹379米，设边界、地标、路线三类任务，评测经典与LVLM智能体，并做记忆消融与卫星到实机迁移实验。",
+        "s": "SEABench提出48条纵向任务序列的基准，评测自我进化LLM智能体的内生失准风险，发现自进化提升完成率但带来成对非进化智能体没有的安全失败，并给出基于思维链的低误报监控方案。",
         "c": ""
       },
       {
-        "t": "Onboard Wind-Preview Model Predictive Control Using Pitot-Static Sensing for Multirotor UAVs",
-        "u": "https://arxiv.org/abs/2609.31185",
+        "t": "EpiTransfer: Sparse, Training-Free Long-Range Depth Estimation from Temporal Monocular Aerial Frames",
+        "u": "https://arxiv.org/abs/2609.33939",
         "r": 7,
         "g": 7,
-        "s": "该工作在多旋翼无人机前伸杆上安装低成本皮托静压管，提前测得来流风速作为预览信息融入非线性MPC，实现阵风前馈抑制；仿真与室内外真机实验表明悬停误差沿风向较PX4基线降低54%。",
+        "s": "提出免训练的EpiTransfer方法，仅用两帧单目图像与相机位姿，通过极线转移将时序对应合成为任意基线的虚拟立体对，实现约90米远距稀疏深度估计，并在室外无人机与室内OptiTrack实验中以LiDAR真值验证。",
         "c": ""
       },
       {
-        "t": "TRACKGRAPH: Online Open-Vocabulary 3D Scene Graphs via Image-Space Tracking",
-        "u": "https://arxiv.org/abs/2609.31005",
-        "r": 8,
+        "t": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
+        "u": "https://arxiv.org/abs/2609.35032",
+        "r": 9,
         "g": 8,
-        "s": "提出在线开放词汇3D场景图方法：先在图像流跟踪2D掩码再融合成分层场景图，关键帧用FastSAM/CLIP，中间用DINOv3传播掩码，支持开放词汇检索与四足机器人实时建图搜索。",
+        "s": "基于真实JRDB机器人数据构建主动视觉推理基准：智能体按时间戳与视角请求有限观察来答题，评测同时考察最终答案与接地视觉证据；并提出基于图世界模型的参考智能体方法，实验揭示现有VLM常给出无证据支撑的正确答案。",
+        "c": "https://github.com/ControlNet/JRDB-AVR"
+      },
+      {
+        "t": "NavJev: Efficient Vision-Language Navigation via Action-Centric Visual Compression and Discriminative Action-Semantic Memory",
+        "u": "https://arxiv.org/abs/2609.34969",
+        "r": 9,
+        "g": 7,
+        "s": "NavJev面向零样本地面VLN，把逐步调用MLLM生成改为动作中心视觉压缩加判别式动作语义记忆，再在候选动作上做轻量结构化概率决策，R2R-CE上每步仅0.65秒、SR 27.0%。",
         "c": ""
       },
       {
-        "t": "Cybflight: An Embedded Rust Autopilot for Aerial Robotics Research",
-        "u": "https://arxiv.org/abs/2609.31232",
+        "t": "MarsLab: A Martian Rover Simulator for Planetary Rover Autonomous Navigation",
+        "u": "https://arxiv.org/abs/2609.34702",
         "r": 7,
         "g": 7,
-        "s": "Cybflight是开源嵌入式Rust自驾仪，以可替换接口连接硬件、感知、估计、规划与控制，在单片STM32H743上跑MPCTC与INDI，室内外实测12.38与31.4m/s。",
+        "s": "MarsLab是基于Isaac Sim的开源ROS2火星车仿真器，融合HiRISE与程序化地形，可调光照、沙尘与场景，发布多模态传感与真值，并以SLAM和视觉位置识别基准验证。",
         "c": ""
       },
       {
-        "t": "CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation",
-        "u": "https://arxiv.org/abs/2609.31418",
-        "r": 8,
-        "g": 7,
-        "s": "将机器人RGB-D流实时构建为语义索引的Gaussian-TSDF地图，供VR操作者与LLM智能体共享，把语音与射线grounding到持久物体并执行导航、重观测，已在两台四足机器人实测。",
-        "c": ""
-      },
-      {
-        "t": "MVVBench: Benchmarking 4D Reasoning in Vision-Language Models",
-        "u": "https://arxiv.org/abs/2609.30952",
-        "r": 7,
-        "g": 7,
-        "s": "MVVBench是基于真实多相机视频构建的4D推理基准，题目在单视角与单时刻均不可解、须跨视角跨时间联合作答，并系统分析VLM成败原因与推理时引导策略。",
-        "c": ""
-      },
-      {
-        "t": "Skip the Talk, Re-Focus on Vision: Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models",
-        "u": "https://arxiv.org/abs/2609.30783",
+        "t": "Memory in the Sky: Low-Altitude Question Answering with Multi-Agent Memory Aggregation",
+        "u": "https://arxiv.org/abs/2609.35431",
         "r": 6,
         "g": 7,
-        "s": "LIRSeg用可学习潜在令牌替代显式思维链做推理分割，经空间对齐与GRPO分割奖励两阶段训练，并引入三种机制防止表征坍缩，在ReasonSeg、MUSE、MMR上较VisionReasoner提升gIoU达4.9%/7.1%/4.7%，推理令牌约减16倍。",
+        "s": "提出低空问答任务（LAQA）：多无人机记忆汇聚至地面服务器回答长时程观测问题；用生成式对抗考试（GAE）黑盒量化记忆的下游问答价值，据此联合选择无人机并分配功率，CARLA与真机实验分别达84–92%与88.5%准确率。",
         "c": ""
       },
       {
-        "t": "Transformer-based Monte Carlo Localization in Construction Meshes",
-        "u": "https://arxiv.org/abs/2609.31357",
-        "r": 6,
-        "g": 7,
-        "s": "提出面向建筑工地的LiDAR全局重定位系统，以PointNet++位置识别解码器作为蒙特卡洛定位的学习观测模型，仅用网格内仿真数据训练，在真实数据集上优于扩散与ScanContext++基线，单次推理18毫秒。",
+        "t": "PanoVLN: Towards Effective Panoramic Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.34759",
+        "r": 9,
+        "g": 8,
+        "s": "本文研究全景视觉语言导航，指出直接用全景图替换透视图收益有限，提出置信度引导执行以延长动作预测、构建分支密集路线训练监督，并融合语义与几何特征，在R2R-CE与RxR-CE上大幅超越SOTA。",
         "c": ""
       },
       {
-        "t": "Learning Vision-Based Agile Gap Traversal: Differentiable Simulation with a Warm-Started Critic",
-        "u": "https://arxiv.org/abs/2609.30696",
+        "t": "PIVOT: Pivot-Aware On Policy Self Distillation for Multi-Turn VLM Agents",
+        "u": "https://arxiv.org/abs/2609.35303",
+        "r": 8,
+        "g": 8,
+        "s": "该文揭示OPSD/OPD增益主要源于枢轴步的物理状态回滚，提出PIVOT将枢轴定位与状态恢复内化为token级参数更新，在五个多轮VLM智能体任务上显著超越SFT+GRPO基线。",
+        "c": ""
+      },
+      {
+        "t": "Scope-WM: Scoped Computation for Efficient Visual World Models",
+        "u": "https://arxiv.org/abs/2609.33218",
+        "r": 8,
+        "g": 8,
+        "s": "Scope-WM将世界模型计算限定于预测相关的token子集与高价值动作序列，背景token以前景摘要更新，MPC复用优质动作序列，在Push-T上较稠密DINO-WM提速6.97倍且保持竞争性能。",
+        "c": "https://github.com/ChunZheng2022/Scope-WM"
+      },
+      {
+        "t": "Terrain-Aware Autonomous Planetary Exploration for Exteroceptive-Proprioceptive Mapping with Quadruped Scouts",
+        "u": "https://arxiv.org/abs/2609.35493",
         "r": 7,
+        "g": 6,
+        "s": "面向行星探索提出地形感知自主探索框架：四足机器人用RGB-D构建高程图、估计可通行性与导航代价，融合内感受地形线索生成全局多层地图，据此选取未探索目标并自主避障导航，仿真显示复用地图导航的运输代价更低。",
+        "c": ""
+      },
+      {
+        "t": "DynaTokens: Teaching Dynamics to Camera-Controlled Video Models at Test Time",
+        "u": "https://arxiv.org/abs/2609.35704",
+        "r": 6,
+        "g": 8,
+        "s": "DynaTokens提出一组轻量可学习的场景特定token，通过交叉注意力从少量示例轨迹中为冻结的相机控制视频世界模型注入场景动态，在新相机路径下实现相机运动与物体动态的联合生成。",
+        "c": ""
+      },
+      {
+        "t": "RoGSW4RLD: Feed-Forward 4D Gaussian Lifting for Robot World Model Rollouts",
+        "u": "https://arxiv.org/abs/2609.35311",
+        "r": 8,
         "g": 7,
-        "s": "提出两阶段强化学习框架，利用可微仿真的准解析策略梯度与评论家热启动，高效训练四旋翼自中心视觉窄缝穿越策略，并通过真机实验验证。",
+        "s": "提出前馈两阶段框架RoGSW4RLD，将多相机世界模型的视频rollout提升为统一可查询的度量4D高斯场，融合跨视角证据与机器人运动学，在DROID与Cosmos预测上大幅超越逐相机重建拼接。",
         "c": ""
       }
     ]

@@ -1606,5 +1606,85 @@
     "reason": "把冻结的图像预训练编码器（SigLIP2）套用到fMRI脑成像垂直领域，不涉及空间智能、导航或机器人自主，属明确排除范围，仅为术语擦边。",
     "rejected_at": "2026-09-28",
     "url": "https://arxiv.org/abs/2609.31204"
+  },
+  "2609.35507": {
+    "title": "ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属遥感社区的视频问答数据集，仅评测现成视频大模型的被动时空理解，无导航、主动搜索或具身决策成分，与收录技术线仅靠'无人机视频'这一数据来源边缘擦边。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35507"
+  },
+  "2609.34384": {
+    "title": "RoboIRGBench: Benchmarking Implicit Referential Grounding in Vision-Language-Action Models",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "本文是面向机械臂操作VLA模型的评测基准，命中范围中明确排除的机械臂操作与VLA控制条目，且任务不包含任何导航决策成分。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.34384"
+  },
+  "2609.35173": {
+    "title": "Task-Oriented Communications for Edge-Assisted Multi-View Localization",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "核心贡献是任务导向通信、语义编码与边缘调度等通信层方法，仅以视觉定位为应用载体，未推进定位或状态估计本身的技术进展，属边缘相关。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35173"
+  },
+  "2609.35743": {
+    "title": "InfiniHand: Streaming World-Space Hand Motion Estimation from Egocentric Video",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心贡献为第一人称视频的手部动作捕捉与相机自运动联合估计，属AR/计算机视觉方向，不涉及导航、机器人自主或空间智能等收录技术线。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35743"
+  },
+  "2609.35606": {
+    "title": "TCSAlgBench: Benchmarking Automated Proving for Research-Level Theoretical Computer Science",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "该工作是面向理论计算机科学研究级定理证明的LLM评测基准，属与空间、导航、机器人无关的纯数学推理垂直领域评测，按收录范围应拒绝。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35606"
+  },
+  "2609.33235": {
+    "title": "Learning with Object-centric Representations of Tactile Interactive Perception for Robot Manipulation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心为机械臂触觉操作与属性自适应操作策略学习，属明确排除的操作类工作，不含导航决策或空间搜索成分，仅交互感知术语擦边。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.33235"
+  },
+  "2609.35575": {
+    "title": "F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "属机械臂操作与VLA策略自改进的real-to-sim-to-real闭环，无导航或空间搜索决策成分，落入明确排除范围。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35575"
+  },
+  "2609.35504": {
+    "title": "SolveEdit: Benchmarking Visual Problem Solving in Generative Models",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "该论文是面向生成式图像编辑模型的视觉问题求解基准，属文生图/图像编辑生成评测范畴，不涉及空间理解、导航、机器人或智能体能力本身的显著进展，超出收录范围。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35504"
+  },
+  "2609.35530": {
+    "title": "AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "研究对象是多参考图像生成（文生图类）任务的智能体脚手架自动优化，与空间、导航、机器人无关，属范围明示排除方向。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.35530"
+  },
+  "2609.33982": {
+    "title": "Test-Time Spatial Reasoning for Robot Manipulation Using Generative Real-to-Sim",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "论文核心是机械臂物体重排与操作的测试时规划（真机上叠塔等长时程操作任务），不含导航决策成分，属范围中明确排除的机械臂操作方向。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.33982"
   }
 }
