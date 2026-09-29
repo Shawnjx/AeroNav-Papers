@@ -1686,5 +1686,13 @@
     "reason": "论文核心是机械臂物体重排与操作的测试时规划（真机上叠塔等长时程操作任务），不含导航决策成分，属范围中明确排除的机械臂操作方向。",
     "rejected_at": "2026-09-29",
     "url": "https://arxiv.org/abs/2609.33982"
+  },
+  "2609.30674": {
+    "title": "SkillRefine: Cross-Source Skill Induction and Execution Validation for LLM Agents in Refinery Planning Software",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "将LLM智能体技术套用于炼油规划软件AspenTech PIMS这一与空间、导航、机器人无关的垂直领域应用，技能归纳与修复机制深度绑定该领域，属范围外应用。",
+    "rejected_at": "2026-09-29",
+    "url": "https://arxiv.org/abs/2609.30674"
   }
 }
