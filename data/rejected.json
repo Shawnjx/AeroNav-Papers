@@ -1766,5 +1766,37 @@
     "reason": "该工作属自动驾驶规划安全评测范畴，评测对象是nuScenes驾驶规划器而非具身导航智能体，其VLM提醒Agent亦是驾驶垂直应用，未落入空域/地面具身导航或所列基础能力技术线。",
     "rejected_at": "2026-09-30",
     "url": "https://arxiv.org/abs/2609.37871"
+  },
+  "2609.33872": {
+    "title": "Robot-GST: geometry-aware spatial-temporal robot policy representation and evaluation",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该工作面向机械臂操作策略的评估与真机部署验证，不含导航决策成分，按收录范围属明确排除的机械臂操作方向，仅在3D重建与sim2real术语上擦边。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.33872"
+  },
+  "2609.32226": {
+    "title": "Toward Agentic Optical Networks: A Vision of LLM Agent-Driven Autonomous Lifecycle Management",
+    "relevance": 2,
+    "rigor": 2,
+    "reason": "将LLM智能体套用于光通信网络生命周期管理这一垂直领域，与空间、导航、机器人无关，属纯通信方向，且为无实验验证的概念愿景论文。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.32226"
+  },
+  "2609.33336": {
+    "title": "Beyond Conservatism: Recoverability-Conditioned Exploration for Model-Based Imitation Learning",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属通用模型基模仿学习的主动采样方法，核心问题是专家分布附近的交互效率与模型误差，虽用到世界模型并含导航类控制基准，但与空域/地面具身导航及各收录技术线的核心问题仅边缘相关。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.33336"
+  },
+  "2609.33104": {
+    "title": "VPTwin: Real-Sim-Real Video Prediction for Robotic Manipulation Planning",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "该文是面向机械臂操作与操作规划的动作条件视频预测世界模型，属于明确排除的机械臂操作/VLA范畴，不含任何导航决策成分，仅与'用于导航与规划的世界模型'技术线术语擦边。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.33104"
   }
 }

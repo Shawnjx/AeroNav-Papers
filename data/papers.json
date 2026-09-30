@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T10:36:28.024472+00:00",
+  "updated_at": "2026-09-30T16:29:54.358869+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -105,6 +105,45 @@
         "objectnav"
       ],
       "added_at": "2026-09-29T10:28:05.385365+00:00"
+    },
+    {
+      "id": "2609.33581",
+      "arxiv_id": "2609.33581",
+      "title": "ForeFly: A Dual-Horizon World Action Model for Aerial Vision-Language Navigation",
+      "authors": [
+        "Kunhui Wang",
+        "Xintong Zhang",
+        "Junyu Gao",
+        "Changsheng Xu"
+      ],
+      "published": "2026-09-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.33581",
+      "pdf_url": "https://arxiv.org/pdf/2609.33581",
+      "code_url": "https://github.com/kunhuiW/ForeFly",
+      "categories": [],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ForeFly提出面向空域视觉语言导航的双视界潜在世界动作模型，通过近端未来与航路关键未来的前瞻查询及FGAR动作精炼机制，为无人机长航迹指令跟随提供多时间尺度的未来引导。",
+      "change_zh": "常见AVLN方法多为反应式或单一视界预测，ForeFly引入近端与航路关键双视界潜在预测，分别以近期与航路关键视觉记忆初始化前瞻查询，并通过FGAR非对称地利用两种前瞻，实现局部动作增强与航路级校正。",
+      "why_it_matters": "该工作直接命中空域VLN核心线，其双视界世界模型前瞻机制可为UAV主动目标搜索提供长航程路线引导，近端连续性与远端前瞻的分解思路也适用于ObjectNav的局部避障与长程目标推理协同。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 29,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "instruction",
+        "instruction following",
+        "uav"
+      ],
+      "added_at": "2026-09-30T16:18:12.801693+00:00"
     },
     {
       "id": "2609.06476",
@@ -1476,6 +1515,82 @@
       "added_at": "2026-09-29T10:35:00.952792+00:00"
     },
     {
+      "id": "2609.33148",
+      "arxiv_id": "2609.33148",
+      "title": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+      "authors": [
+        "Liang Yao",
+        "Fan Liu",
+        "Hongbo Lu",
+        "Wei Xu",
+        "Jianyu Jiang",
+        "Yijun Shen",
+        "Chuanyi Zhang",
+        "Pai Peng"
+      ],
+      "published": "2026-09-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.33148",
+      "pdf_url": "https://arxiv.org/pdf/2609.33148",
+      "code_url": "https://github.com/1e12Leon/DroneWAM",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DroneWAM是无人机视觉导航的高效世界-动作模型：用JEPA在表征空间预测未来状态，Resampler压缩token，门控自适应分配预测深度，并在含6自由度轨迹与风扰的仿真集上验证。",
+      "change_zh": "相比常见的生成式世界模型逐帧渲染未来图像再决策，本工作在JEPA表征空间直接预测未来状态并用Resampler压缩token；并以偏好训练的门控按场景自适应分配推演深度，将固定深度变为按需计算。",
+      "why_it_matters": "世界-动作模型让无人机在表征空间前瞻动作后果，可为搜救侦察中的主动目标搜索与接近提供预测式规划基础；自适应推演深度与token压缩直击机载算力约束，6自由度风扰数据也补足了空域导航基准。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "drone"
+      ],
+      "added_at": "2026-09-30T16:21:52.975023+00:00"
+    },
+    {
+      "id": "2609.32224",
+      "arxiv_id": "2609.32224",
+      "title": "RAO-Nav: Probing Omni-Language Models for Zero-shot Semantic Audio-Visual Navigation",
+      "authors": [
+        "Qilang Ye",
+        "Meng Liu",
+        "Yu Zhou"
+      ],
+      "published": "2026-09-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.32224",
+      "pdf_url": "https://arxiv.org/pdf/2609.32224",
+      "code_url": "https://github.com/rikeilong/OmniAV",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出零样本语义视听导航管线RAO-Nav，直接调用全能语言模型让智能体听、看、推理并行动，并引入测试时解码空间内的潜在导航推理模块LNR，在公开SAVN基准上无需训练数据即超越SOTA基线。",
+      "change_zh": "常见SAVN路线依赖任务专属训练的专用视听模型，泛化受限；本文改为免训练直接调用OLM的隐式视听知识，并把推理搬到测试时解码空间（LNR模块），另提出全局导航指令新设定考察OLM作为具身智能体的能力。",
+      "why_it_matters": "对ObjectNav与语义目标搜索而言，它示范了免训练利用OLM隐式视听知识做目标导向导航的路径；LNR测试时推理思路可迁移到UAV搜救等声学线索辅助的主动目标搜索，为缺少标注数据场景提供零样本智能体方案。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "instruction"
+      ],
+      "added_at": "2026-09-30T16:29:51.358353+00:00"
+    },
+    {
       "id": "2609.29934",
       "arxiv_id": "2609.29934",
       "title": "Beyond Spatial Benchmarks: From Spatial Reasoning to Navigation",
@@ -2491,6 +2606,88 @@
       "added_at": "2026-09-29T10:31:50.455350+00:00"
     },
     {
+      "id": "2609.34687",
+      "arxiv_id": "2609.34687",
+      "title": "VCN-Bench: A Video-Contextualized Navigation Benchmark for Spatial Reasoning over Prior Visual Experience",
+      "authors": [
+        "Siqi Zhang",
+        "Meng Wei",
+        "Chenyang Wan",
+        "Shaohao Zhu",
+        "Shufan Shen",
+        "Xihui Liu",
+        "Zhihua Wei",
+        "Tai Wang",
+        "Jiangmiao Pang"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34687",
+      "pdf_url": "https://arxiv.org/pdf/2609.34687",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VCN-Bench在Matterport3D上构建视频情境化导航基准，要求MLLM依据先验视频推断指令目标并导航，含五种指令类型、十万训练与1250评测回合，并提供诊断式目标识别与MV-DualVLN基线。",
+      "change_zh": "不同于空间推理基准止步于离线预测、导航基准仅将空间推理作为指令跟随副产品的常见做法，本工作以先验视频记忆驱动目标推断与闭环导航，并用诊断式目标识别将目的地解析错误与后续导航失败解耦，检验空间理解能否延续到序列交互。",
+      "why_it_matters": "直接丰富地面VLN与空间智能评测；将目标识别错误与导航失败解耦的诊断设计对ObjectNav中的目标解析与寻路诊断同样关键，其利用先验视觉经验引导目标推断再导航的范式，对UAV借助历史影像开展主动目标搜索与接近也有方法论借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "instruction",
+        "instruction following",
+        "mllm",
+        "spatial reasoning",
+        "spatial understanding"
+      ],
+      "added_at": "2026-09-30T16:17:49.211932+00:00"
+    },
+    {
+      "id": "2609.34176",
+      "arxiv_id": "2609.34176",
+      "title": "AGILE-GS: Anchor-Guided Fast Next-Best-View Selection for Active 3D Gaussian Splatting",
+      "authors": [
+        "Amirhossein Mollaei Khass",
+        "Nader Motee"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34176",
+      "pdf_url": "https://arxiv.org/pdf/2609.34176",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AGILE-GS在SE(3)上以黎曼梯度上升优化虚拟锚点位姿来标记模型最不确定区域，再用贪婪岭杠杆步骤蒸馏出无冗余候选短列表，免逐候选渲染评分即可选下一视点，性能匹配或超基线且延迟降一至两个数量级。",
+      "change_zh": "常见路线要对候选池逐个渲染或计算信息增益。本文将'找信息最丰处'与'选可达相机'解耦：在SE(3)连续空间梯度上升优化虚拟锚点，再按锚点几何与岭杠杆多样性把大池蒸馏成短列表，昂贵评估仅跑少数视点。",
+      "why_it_matters": "直接命中主动感知与重建技术线。对UAV主动目标搜索，视点选择延迟降低一至两个数量级让机载闭环主动采集更可行；高效3DGS采集也为导航提供快速更新的场景表征，支撑空间记忆与目标发现。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry"
+      ],
+      "added_at": "2026-09-30T16:24:37.617387+00:00"
+    },
+    {
       "id": "2609.33218",
       "arxiv_id": "2609.33218",
       "title": "Scope-WM: Scoped Computation for Efficient Visual World Models",
@@ -2533,6 +2730,88 @@
         "world model"
       ],
       "added_at": "2026-09-29T10:38:51.665424+00:00"
+    },
+    {
+      "id": "2609.32855",
+      "arxiv_id": "2609.32855",
+      "title": "FINE: Future-Informed Navigation Encoding for Data-Efficient Vision-Language Navigation",
+      "authors": [
+        "Khang H. Nguyen",
+        "Hoang Pham Quang Nguyen",
+        "Ha Phuong Nguyen",
+        "Khanh Dinh Binh",
+        "Xuan Ha Nguyen",
+        "Vien Ngo",
+        "Duy Ho Nguyen Minh",
+        "Huan Nguyen",
+        "An T. Le"
+      ],
+      "published": "2026-09-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.32855",
+      "pdf_url": "https://arxiv.org/pdf/2609.32855",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "FINE利用演示轨迹中的未来观测作为隐式监督，以显式地标token预测未来地标区域、以隐式未来token区分真实与反事实未来，提升R2R-CE/RxR-CE成功率与数据效率。",
+      "change_zh": "常见VLN训练只用观测到动作的模仿，浪费轨迹中已有的未来信息；FINE将其转为辅助监督：预测未来地标的2D语义与3D几何区域，并用视频世界模型的反事实对比学习未来token，显著提升少样本数据效率。",
+      "why_it_matters": "对地面VLN直接有价值；从演示的未来观测中挖掘地标级监督、用世界模型做反事实对比的思路，同样适合演示昂贵的ObjectNav与UAV目标搜索，有望在少样本下提升目标发现与接近策略的数据效率。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "instruction",
+        "r2r",
+        "world model"
+      ],
+      "added_at": "2026-09-30T16:27:31.828047+00:00"
+    },
+    {
+      "id": "2609.32313",
+      "arxiv_id": "2609.32313",
+      "title": "MemTransfer: Benchmarking Memory Beyond Matched Experience in Embodied Decision-Making",
+      "authors": [
+        "Haiming Tang",
+        "Xianjie Dai",
+        "Gujie Shao",
+        "Zuyi Guo",
+        "Jingguang Li",
+        "Kailang Ma",
+        "Yihong Tang",
+        "Heye Huang"
+      ],
+      "published": "2026-09-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.32313",
+      "pdf_url": "https://arxiv.org/pdf/2609.32313",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MemTransfer提出具身导航记忆基准，在仿真仓库100个导航任务中，以共享冻结VLM策略统一对比六种记忆表示在起点、路径与历史经验失配下的迁移表现，发现记忆鲁棒性因失配类型而异。",
+      "change_zh": "常见记忆评测关注匹配条件下记忆是否提升性能，该基准固定冻结策略以隔离记忆变量，系统改变起点、路径可用性与历史数量及任务相关性，把'存储了什么'与'决策时能否正确使用'拆开评测。",
+      "why_it_matters": "为具身基准与评测线提供记忆维度的受控评测范式，对ObjectNav与地面VLN中的经验复用、跨起点与跨路径泛化问题有直接参考价值；对UAV主动搜索中的场景经验迁移亦有启示，提示记忆设计需兼顾存储与调用。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "added_at": "2026-09-30T16:27:57.503876+00:00"
     },
     {
       "id": "2609.27526",
@@ -3485,6 +3764,49 @@
         "vlm"
       ],
       "added_at": "2026-09-29T10:37:26.556192+00:00"
+    },
+    {
+      "id": "2609.32626",
+      "arxiv_id": "2609.32626",
+      "title": "World SLAM Model: Joint World Modeling for SLAM and Navigation",
+      "authors": [
+        "Minghui Qin",
+        "Yijun Yuan",
+        "Weicheng Zheng",
+        "Kenan Li",
+        "Weibang Wang",
+        "Chang Sun",
+        "Junhao Huang",
+        "Anmin Liu",
+        "Yicheng Yao",
+        "Hang Zhao"
+      ],
+      "published": "2026-09-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.32626",
+      "pdf_url": "https://arxiv.org/pdf/2609.32626",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "WSM将SLAM的增量状态更新、持久记忆与后端优化机制融入导航世界模型，依据观测与导航目标联合预测未来视觉状态、相机运动和稠密几何，以导航-SLAM联合目标端到端训练，同时改善导航与SLAM表现。",
+      "change_zh": "常见路线把SLAM当上游模块仅输出位姿或地图供导航使用，本文改为将SLAM机制（增量更新、持久记忆、后端误差优化）直接内化为导航世界模型的组件，通过联合目标同时优化视觉预测、几何估计与动作生成。",
+      "why_it_matters": "将几何一致的持久空间状态与后端纠偏注入导航世界模型，对ObjectNav等目标搜索的长时记忆与回环纠错很有价值；同一思路可迁移到UAV主动目标搜索，缓解长航程累积漂移导致的重复探索与目标漏检。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "geometry",
+        "slam",
+        "world model"
+      ],
+      "added_at": "2026-09-30T16:22:31.183733+00:00"
     },
     {
       "id": "2609.31005",
@@ -4568,6 +4890,46 @@
         "uav"
       ],
       "added_at": "2026-09-30T10:31:37.437985+00:00"
+    },
+    {
+      "id": "2609.33462",
+      "arxiv_id": "2609.33462",
+      "title": "SphMind: Towards Robust, Training-Free VLM-based Spatial Reasoning with a 360 Camera",
+      "authors": [
+        "Shriram Damodaran",
+        "Soumyaratna Debnath",
+        "Cheston Tan",
+        "Lin Wang"
+      ],
+      "published": "2026-09-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.33462",
+      "pdf_url": "https://arxiv.org/pdf/2609.33462",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SphMind提出免训练即插即用框架，用球谐函数空间图与推理时几何接地将语义感知与球面几何解耦，使主要在透视图上训练的MLLM能在360度全景下完成鲁棒的方向与空间推理。",
+      "change_zh": "常见路线要么微调MLLM适应全景数据，要么依赖提示工程；该工作改为将语义与几何解耦：MLLM只负责语义，球面几何由等变球谐空间图与推理时闭环优化在外部处理，从而免训练、模型无关地适配全景空间推理。",
+      "why_it_matters": "360度相机广泛用于无人机与地面机器人，鲁棒的全景方向推理可直接支撑UAV目标搜索中的目标方位判断与ObjectNav中的朝向决策和指令理解，为具身导航的空间认知能力提供免训练、可插拔的增强方案，是空间智能技术线上的核心进展。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "mllm",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-09-30T16:19:18.209727+00:00"
     },
     {
       "id": "2609.31418",
@@ -5875,6 +6237,88 @@
       "added_at": "2026-09-29T10:28:56.325232+00:00"
     },
     {
+      "id": "2609.34930",
+      "arxiv_id": "2609.34930",
+      "title": "PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents",
+      "authors": [
+        "Huayi Lai",
+        "Shichao Song",
+        "Qingchen Yu",
+        "Simin Niu",
+        "Mengwei Wang",
+        "Hanyu Wang",
+        "Xun Liang"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34930",
+      "pdf_url": "https://arxiv.org/pdf/2609.34930",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PDEU-Bench评测工具调用LLM智能体的个性化规划生命周期，覆盖计划定义、执行与更新，含214个任务、94个工具，测试15个LLM与记忆方法，发现模型难以连贯规划并保持用户偏好。",
+      "change_zh": "常见工具调用基准只评单次调用或反应式执行，本工作首次把个性化规划拆为计划定义、执行、更新三阶段分别评估偏好遵循与计划质量，揭示局部增益难以跨阶段迁移、偏好遗漏与冲突贯穿全程。",
+      "why_it_matters": "对LLM智能体与规划智能体线直接相关：长程计划定义-执行-更新的闭环评测与偏好记忆结论，可为ObjectNav、无人机指令跟随等需长程目标管理与意图保持的具身智能体提供评测视角；对空间感知无直接贡献。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "llm agent"
+      ],
+      "added_at": "2026-09-30T16:21:09.996938+00:00"
+    },
+    {
+      "id": "2609.34470",
+      "arxiv_id": "2609.34470",
+      "title": "Precise Editing and Flexible Referencing for Interactable Worlds",
+      "authors": [
+        "Xinyao Liao",
+        "Xianfang Zeng",
+        "Zhu Liang",
+        "Zhoujie Fu",
+        "Qianxun Xu",
+        "Jiachi Liu",
+        "Gang Yu",
+        "Guosheng Lin"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34470",
+      "pdf_url": "https://arxiv.org/pdf/2609.34470",
+      "code_url": "https://github.com/leoisufa/EditWorld",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "EditWorld是面向可交互世界的视频世界模型，在自回归生成中流式注入编辑指令与参考图像，把世界建模从探索扩展到精确修改，并提出WBench-Editing基准系统评测流式世界编辑能力。",
+      "change_zh": "常见视频世界模型聚焦生成可探索世界、以导航漫游为主，对已有内容缺乏控制；本文改为支持精确编辑与灵活引用：用Gated Causal Attention处理时变编辑条件、Sparse Context维持有界历史上下文支撑长程推理，并配套数据合成标注管线与专用评测基准。",
+      "why_it_matters": "可编辑、可引用的世界模型让具身智能体能在按需修改的场景中训练与仿真，例如为UAV目标搜索与ObjectNav定制目标位置、增删物体或改变布局，降低真机数据成本；WBench-Editing也为导航规划所用世界模型的评测补上编辑维度。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-09-30T16:23:19.721524+00:00"
+    },
+    {
       "id": "2609.29171",
       "arxiv_id": "2609.29171",
       "title": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
@@ -7141,6 +7585,81 @@
         "uav"
       ],
       "added_at": "2026-09-30T10:19:51.425668+00:00"
+    },
+    {
+      "id": "2609.34574",
+      "arxiv_id": "2609.34574",
+      "title": "Robust Variable-Horizon MPC for Landing a Multirotor UAV on a Moving Platform",
+      "authors": [
+        "Sander Doodeman",
+        "Niels Berkers",
+        "Paula Chanfreut",
+        "Elena Torta",
+        "Duarte Antunes"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34574",
+      "pdf_url": "https://arxiv.org/pdf/2609.34574",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出高效鲁棒变时域MPC，将在线时域搜索限制在先前时域邻域内，并用固定鲁棒正不变管实现与时域无关的约束收紧，保证有界扰动下递归可行性，经仿真与真机实验实现多旋翼降落在移动平台上。",
+      "change_zh": "相比常见收缩/变时域MPC，本文将时域搜索限制在先前时域邻域内并证明递归可行性，用固定不变管使约束收紧与时域无关，再借微分平坦解耦线性化，使鲁棒变时域MPC能在机载低算力平台实时运行。",
+      "why_it_matters": "属状态估计与控制线：为无人机到达非平衡目标提供带递归可行性保证的实时鲁棒控制底层，可支撑UAV目标搜索任务末端的接近与降落环节，且从Gazebo仿真到真机移动平台降落的完整验证具有落地参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "model predictive control",
+        "uav"
+      ],
+      "added_at": "2026-09-30T16:20:04.808250+00:00"
+    },
+    {
+      "id": "2609.34548",
+      "arxiv_id": "2609.34548",
+      "title": "SGG-ReflAct: Sub-Goal Guided ReflAct with Structured Planning for Reliable Long-Horizon Reasoning",
+      "authors": [
+        "Jaeho Jung",
+        "Sung Hoon Jung"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.34548",
+      "pdf_url": "https://arxiv.org/pdf/2609.34548",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/3b0871774129b748001e8a5e6d73cf56efe526c1",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出SGG-ReflAct推理骨干，将LLM规划器生成的子目标显式纳入每步反思以抑制长程漂移，并以束搜索规划器扩展为BeamSGG-ReflAct，在ALFWorld、ScienceWorld、Jericho上超越ReflAct并减少幻觉动作。",
+      "change_zh": "常见ReflAct路线每步仅对照最终目标反思，长程易漂移；该文改为把规划器生成的子目标作为逐步反思的中间锚点，将规划与在线反思耦合，并发现骨干有效性取决于规划质量：显式指明所需操作比单纯束搜索规划探索更能恢复收益。",
+      "why_it_matters": "子目标引导的反思骨干可迁移到LLM驱动的ObjectNav与UAV目标搜索智能体：长程指令跟随与多阶段搜索天然需要中间锚点来抑制目标漂移与幻觉动作；对智能体技术线则提供了规划-反思耦合及规划质量决定推理可靠性的实证依据。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "exploration",
+        "llm agent",
+        "llm planner"
+      ],
+      "added_at": "2026-09-30T16:24:05.224720+00:00"
     },
     {
       "id": "2609.33939",
@@ -11951,6 +12470,44 @@
       "added_at": "2026-09-30T10:26:43.855474+00:00"
     },
     {
+      "id": "2609.32837",
+      "arxiv_id": "2609.32837",
+      "title": "Scanning While Imagining: A Scene-Graph World Model for Robotic Ultrasound Navigation",
+      "authors": [
+        "Xuesong Li",
+        "Shuai Chen",
+        "Feng Li",
+        "Zhongliang Jiang",
+        "Nassir Navab",
+        "Yuan Bi"
+      ],
+      "published": "2026-09-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.32837",
+      "pdf_url": "https://arxiv.org/pdf/2609.32837",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出SonoGraph-WM：以场景图表示解剖结构、不合成超声图像的动作与目标条件世界模型，用统一Transformer联合预测未来场景图与探头位姿，结合滚动时域规划实现目标视图闭环导航，在CT数据与机器人体模上验证。",
+      "change_zh": "多数机器人超声方法选动作时不显式预测解剖随探头运动的变化，本文改为预测结构化场景图而非生成超声图像，并用CT标注图沿体表轨迹合成场景图—位姿配对数据训练，减少对带标注真实超声序列的依赖。",
+      "why_it_matters": "用结构化场景图取代图像生成的目标条件世界模型，结合滚动想象与高频重规划，为ObjectNav目标搜索与UAV主动接近提供可解释的想象式规划范式；从CT合成配对数据缓解标注稀缺的思路亦可借鉴，但医学域方法向通用导航的迁移仍需验证。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-09-30T16:29:15.886164+00:00"
+    },
+    {
       "id": "2609.26766",
       "arxiv_id": "2609.26766",
       "title": "TM-APR: Thermal Temporal-Memory Localization via Analytic Online Adaptation",
@@ -12285,137 +12842,121 @@
     }
   ],
   "briefing": {
-    "text": "这批工作主线是让导航智能体行动前先想清楚：主动搜寻证据、显式评估风险、先建三维理解，再落到航点与控制。首推AerialDojo-200K，它以42个场景、20万余条任务和参考轨迹立起空中目标搜索的统一评测标尺，9个开源闭源MLLM全线失守，指明了方法空白；Seek Before You Move直击VLM代理“缺证据仍自信行动”的进度近视，两阶段训练在R2R-CE与RxR-CE上大幅超越基线；WayFinder用分层VLA免微调打通零样本航点生成与低层运动控制。趋势观察：可验证的证据、风险与进度正取代单纯成功率，成为导航智能体的核心评价轴。",
-    "added": 16,
-    "at": "2026-09-30T10:37:50.776896+00:00",
+    "text": "本批入库主线清晰：世界模型与先验经验正成为具身导航的共同抓手，覆盖动作条件预测、SLAM联合建模与记忆迁移评测。首推ForeFly，其双视界世界动作模型以近端与航路关键两级前瞻查询加动作精炼，解决无人机长航迹指令跟随的多时间尺度难题；World SLAM Model将SLAM的增量更新与后端优化纳入导航世界模型并端到端联合训练，同时改善导航与建图两项任务；MemTransfer则以统一冻结VLM策略对比六种记忆表示在三类经验失配下的迁移，实证记忆鲁棒性随失配类型而变。趋势上，世界模型正从被动预测走向动作条件化与多尺度前瞻，而记忆与先验经验的系统性评测正接棒成为新焦点。",
+    "added": 14,
+    "at": "2026-09-30T16:30:29.764946+00:00",
     "new": [
       {
-        "t": "AerialDojo-200K: A Large-Scale Benchmark Suite for Open-World Aerial Object-Goal Search",
-        "u": "https://arxiv.org/abs/2609.36066",
+        "t": "VCN-Bench: A Video-Contextualized Navigation Benchmark for Spatial Reasoning over Prior Visual Experience",
+        "u": "https://arxiv.org/abs/2609.34687",
+        "r": 9,
+        "g": 7,
+        "s": "VCN-Bench在Matterport3D上构建视频情境化导航基准，要求MLLM依据先验视频推断指令目标并导航，含五种指令类型、十万训练与1250评测回合，并提供诊断式目标识别与MV-DualVLN基线。",
+        "c": ""
+      },
+      {
+        "t": "ForeFly: A Dual-Horizon World Action Model for Aerial Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.33581",
         "r": 10,
         "g": 8,
-        "s": "本文构建大规模开放世界空中目标搜索基准AerialDojo-200K：42个人工标注仿真场景、20万余条语义与图像目标任务实例并附带无碰撞参考轨迹与多视角视频，支持分布内/外统一评测；9个开源与闭源多模态大模型评测表明通用空中智能体仍有较大差距。",
-        "c": ""
+        "s": "ForeFly提出面向空域视觉语言导航的双视界潜在世界动作模型，通过近端未来与航路关键未来的前瞻查询及FGAR动作精炼机制，为无人机长航迹指令跟随提供多时间尺度的未来引导。",
+        "c": "https://github.com/kunhuiW/ForeFly"
       },
       {
-        "t": "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering",
-        "u": "https://arxiv.org/abs/2609.38177",
+        "t": "SphMind: Towards Robust, Training-Free VLM-based Spatial Reasoning with a 360 Camera",
+        "u": "https://arxiv.org/abs/2609.33462",
         "r": 8,
         "g": 7,
-        "s": "本文提出Imagine3D-LLM，在图像token后附加少量可学习摘要token，将其解码为紧凑3D高斯泼溅表征并以光度重建损失监督，与下一词预测联合训练，使MLLM在回答前先想象3D场景，在多个空间推理与3D理解基准上取得一致提升。",
+        "s": "SphMind提出免训练即插即用框架，用球谐函数空间图与推理时几何接地将语义感知与球面几何解耦，使主要在透视图上训练的MLLM能在360度全景下完成鲁棒的方向与空间推理。",
         "c": ""
       },
       {
-        "t": "GeoWind2Plan: Mission-Time 3D Urban Wind Prediction for Energy-Efficient UAV Planning",
-        "u": "https://arxiv.org/abs/2609.36056",
+        "t": "Robust Variable-Horizon MPC for Landing a Multirotor UAV on a Moving Platform",
+        "u": "https://arxiv.org/abs/2609.34574",
         "r": 7,
         "g": 7,
-        "s": "GeoWind2Plan仅凭背景风矢量与建筑三维几何，用几何条件神经算子约3秒预测走廊局部风场，再以物理能耗模型优化三维路径与速度，CFD评估下较无风规划节能4.5%–12.7%。",
+        "s": "提出高效鲁棒变时域MPC，将在线时域搜索限制在先前时域邻域内，并用固定鲁棒正不变管实现与时域无关的约束收紧，保证有界扰动下递归可行性，经仿真与真机实验实现多旋翼降落在移动平台上。",
         "c": ""
       },
       {
-        "t": "WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control",
-        "u": "https://arxiv.org/abs/2609.37922",
-        "r": 8,
-        "g": 7,
-        "s": "分层VLA框架：机外零样本MLLM依据语言上下文与状态图生成航点，机载轻量策略高频执行运动控制，仅导航失败时才查询高层模型，免微调，在AirSim四种环境中成功率最高提升27.45%。",
+        "t": "PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents",
+        "u": "https://arxiv.org/abs/2609.34930",
+        "r": 7,
+        "g": 8,
+        "s": "PDEU-Bench评测工具调用LLM智能体的个性化规划生命周期，覆盖计划定义、执行与更新，含214个任务、94个工具，测试15个LLM与记忆方法，发现模型难以连贯规划并保持用户偏好。",
         "c": ""
       },
       {
-        "t": "Seek Before You Move: Evidence Seeking for Progress Grounding in Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.37353",
+        "t": "DroneWAM: Efficient World Action Model for Drone Visual Navigation",
+        "u": "https://arxiv.org/abs/2609.33148",
         "r": 9,
-        "g": 8,
-        "s": "针对VLM导航代理\"进度近视\"（证据缺失仍自信行动），提出SeekVLN：结合进度推理与主动搜寻证据，经FRG微调与C2PO反事实强化两阶段训练，在R2R-CE与RxR-CE大幅超越基线。",
+        "g": 7,
+        "s": "DroneWAM是无人机视觉导航的高效世界-动作模型：用JEPA在表征空间预测未来状态，Resampler压缩token，门控自适应分配预测深度，并在含6自由度轨迹与风扰的仿真集上验证。",
+        "c": "https://github.com/1e12Leon/DroneWAM"
+      },
+      {
+        "t": "World SLAM Model: Joint World Modeling for SLAM and Navigation",
+        "u": "https://arxiv.org/abs/2609.32626",
+        "r": 9,
+        "g": 6,
+        "s": "WSM将SLAM的增量状态更新、持久记忆与后端优化机制融入导航世界模型，依据观测与导航目标联合预测未来视觉状态、相机运动和稠密几何，以导航-SLAM联合目标端到端训练，同时改善导航与SLAM表现。",
         "c": ""
       },
       {
-        "t": "CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes",
-        "u": "https://arxiv.org/abs/2609.36024",
+        "t": "Precise Editing and Flexible Referencing for Interactable Worlds",
+        "u": "https://arxiv.org/abs/2609.34470",
+        "r": 7,
+        "g": 7,
+        "s": "EditWorld是面向可交互世界的视频世界模型，在自回归生成中流式注入编辑指令与参考图像，把世界建模从探索扩展到精确修改，并提出WBench-Editing基准系统评测流式世界编辑能力。",
+        "c": "https://github.com/leoisufa/EditWorld"
+      },
+      {
+        "t": "SGG-ReflAct: Sub-Goal Guided ReflAct with Structured Planning for Reliable Long-Horizon Reasoning",
+        "u": "https://arxiv.org/abs/2609.34548",
+        "r": 7,
+        "g": 7,
+        "s": "提出SGG-ReflAct推理骨干，将LLM规划器生成的子目标显式纳入每步反思以抑制长程漂移，并以束搜索规划器扩展为BeamSGG-ReflAct，在ALFWorld、ScienceWorld、Jericho上超越ReflAct并减少幻觉动作。",
+        "c": ""
+      },
+      {
+        "t": "AGILE-GS: Anchor-Guided Fast Next-Best-View Selection for Active 3D Gaussian Splatting",
+        "u": "https://arxiv.org/abs/2609.34176",
+        "r": 9,
+        "g": 7,
+        "s": "AGILE-GS在SE(3)上以黎曼梯度上升优化虚拟锚点位姿来标记模型最不确定区域，再用贪婪岭杠杆步骤蒸馏出无冗余候选短列表，免逐候选渲染评分即可选下一视点，性能匹配或超基线且延迟降一至两个数量级。",
+        "c": ""
+      },
+      {
+        "t": "FINE: Future-Informed Navigation Encoding for Data-Efficient Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2609.32855",
+        "r": 9,
+        "g": 7,
+        "s": "FINE利用演示轨迹中的未来观测作为隐式监督，以显式地标token预测未来地标区域、以隐式未来token区分真实与反事实未来，提升R2R-CE/RxR-CE成功率与数据效率。",
+        "c": ""
+      },
+      {
+        "t": "MemTransfer: Benchmarking Memory Beyond Matched Experience in Embodied Decision-Making",
+        "u": "https://arxiv.org/abs/2609.32313",
+        "r": 9,
+        "g": 7,
+        "s": "MemTransfer提出具身导航记忆基准，在仿真仓库100个导航任务中，以共享冻结VLM策略统一对比六种记忆表示在起点、路径与历史经验失配下的迁移表现，发现记忆鲁棒性因失配类型而异。",
+        "c": ""
+      },
+      {
+        "t": "Scanning While Imagining: A Scene-Graph World Model for Robotic Ultrasound Navigation",
+        "u": "https://arxiv.org/abs/2609.32837",
         "r": 6,
         "g": 6,
-        "s": "CoDimRecon提出智能体式重建框架，从多视角RGB观测重建含刚性、铰接与可变形物体的可编辑场景，按维度把可变形物重建为中心线曲线、带厚度的壳面与水密实体，并用仿真器技能与行为测试迭代修正几何、运动与材料模型。",
+        "s": "提出SonoGraph-WM：以场景图表示解剖结构、不合成超声图像的动作与目标条件世界模型，用统一Transformer联合预测未来场景图与探头位姿，结合滚动时域规划实现目标视图闭环导航，在CT数据与机器人体模上验证。",
         "c": ""
       },
       {
-        "t": "Semantic Map Sharing and Capability-Aware Coverage Planning for AI-Native 6G Robotic Coordination",
-        "u": "https://arxiv.org/abs/2609.37666",
-        "r": 6,
-        "g": 6,
-        "s": "提出空地异构机器人搜救覆盖规划框架：将空中观测转为紧凑语义栅格图，据此做可达性区域分解与能力感知路径分配，并以语义增量共享替代全图传输，负载约降82倍，覆盖率达91.5%。",
-        "c": ""
-      },
-      {
-        "t": "Pow3R-SLAM: Real-Time RGB-D SLAM with 3D Reconstruction Priors",
-        "u": "https://arxiv.org/abs/2609.38054",
-        "r": 7,
+        "t": "RAO-Nav: Probing Omni-Language Models for Zero-shot Semantic Audio-Visual Navigation",
+        "u": "https://arxiv.org/abs/2609.32224",
+        "r": 9,
         "g": 7,
-        "s": "提出实时RGB-D SLAM系统Pow3R-SLAM，把深度作为先验而非待融合几何注入两视图3D重建网络Pow3R，缓解深度稀疏问题；在TUM、7-Scenes、Replica等基准上较MASt3R-SLAM更快更准，地图更稠密。",
-        "c": ""
-      },
-      {
-        "t": "Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration to Pattern-Specific Execution",
-        "u": "https://arxiv.org/abs/2609.38108",
-        "r": 7,
-        "g": 7,
-        "s": "本文研究LLM智能体的计划声明—执行差距，提出Planning-as-Routing：LLM声明四种规划模式（预定义/顺序/分层/搜索），确定性路由器将任务派发给模式特定执行器；跨四基准三模型实验显示其显著提升结构保持率与任务成功率。",
-        "c": ""
-      },
-      {
-        "t": "Does Local Video Understanding Transfer Across Encounters? The EgoGears Benchmark",
-        "u": "https://arxiv.org/abs/2609.37938",
-        "r": 8,
-        "g": 8,
-        "s": "EgoGears基于126段自我中心户外路线录像构建2054道单/多视频问题，评测六大模型家族共60个MLLM配置，发现多视频问答平均下降22.5个百分点，瓶颈为证据绑定与路径状态跟踪。",
-        "c": "https://github.com/lei-qi-233/EgoGears"
-      },
-      {
-        "t": "SelfSearch: Reward-Free Search for Self-Improving Agents",
-        "u": "https://arxiv.org/abs/2609.37968",
-        "r": 7,
-        "g": 7,
-        "s": "提出无奖励的智能体自改进搜索方法：智能体复用历史自我修改的推理、工具动作与结果记录，迭代改写自身指令、工具与流程，在六个模型-基准设置上均超过初始智能体，并以约4美元搜索成本匹敌评估引导的搜索基线。",
-        "c": ""
-      },
-      {
-        "t": "ReCAP: Retrieval-Guided Capability Reuse for Multimodal Continual Instruction Tuning",
-        "u": "https://arxiv.org/abs/2609.37889",
-        "r": 7,
-        "g": 6,
-        "s": "ReCAP面向多模态大模型持续指令微调，用外部检索与LLM增量构建领域、推理、格式知识库，检索知识指导生成并组装实例化能力路径，配合自适应子空间回收防止跨阶段参数覆盖，在MCIT基准取得SOTA。",
-        "c": ""
-      },
-      {
-        "t": "DORA: Divergence-Oriented Data-Relay Algorithm for Partially Connected Robot Teams",
-        "u": "https://arxiv.org/abs/2609.36395",
-        "r": 8,
-        "g": 7,
-        "s": "提出异构任务感知覆盖问题HMAC，并在断续通信的多无人机团队中给出以信息价值驱动通信的分歧导向数据中继算法DORA，仿真与真机验证将任务相关目标解决延迟最多降低74.8%。",
-        "c": ""
-      },
-      {
-        "t": "Risk-Aware Semantic Grounding for Trustworthy LLM-Based Robot Planning",
-        "u": "https://arxiv.org/abs/2609.37554",
-        "r": 8,
-        "g": 6,
-        "s": "本文提出面向LLM机器人规划的风险感知语义接地框架，在规划前显式建模歧义、幻觉与语义冲突三类风险，据此决定执行、请求澄清或拒绝指令，并发布TRUST-NAV基准以评测风险指令下的可信规划能力。",
-        "c": ""
-      },
-      {
-        "t": "MUGEN: Interactive Panoramic World Exploration via Camera Control",
-        "u": "https://arxiv.org/abs/2609.38077",
-        "r": 7,
-        "g": 7,
-        "s": "论文发布1300余小时4K全景数据集MUGEN与相机可控生成模型Wan360，以周期RoPE、ERP感知填充与全景Plücker嵌入处理接缝、极点畸变与相机运动，实现可交互360°世界探索。",
-        "c": ""
-      },
-      {
-        "t": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
-        "u": "https://arxiv.org/abs/2609.38147",
-        "r": 7,
-        "g": 7,
-        "s": "提出智能体元推理框架：控制器将选择沿用部分成果、重启或停止等执行控制决策显式化为结构化推理，统一调度工作者并借持久记忆传递上下文，在编程重建与多域长程推理基准上较直接控制平均提升约3.6-4.2分。",
-        "c": ""
+        "s": "该文提出零样本语义视听导航管线RAO-Nav，直接调用全能语言模型让智能体听、看、推理并行动，并引入测试时解码空间内的潜在导航推理模块LNR，在公开SAVN基准上无需训练数据即超越SOTA基线。",
+        "c": "https://github.com/rikeilong/OmniAV"
       }
     ]
   }
