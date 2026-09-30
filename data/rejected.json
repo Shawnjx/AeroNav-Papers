@@ -1798,5 +1798,13 @@
     "reason": "该文是面向机械臂操作与操作规划的动作条件视频预测世界模型，属于明确排除的机械臂操作/VLA范畴，不含任何导航决策成分，仅与'用于导航与规划的世界模型'技术线术语擦边。",
     "rejected_at": "2026-09-30",
     "url": "https://arxiv.org/abs/2609.33104"
+  },
+  "2609.32960": {
+    "title": "Environmental Impact of Generative and Agentic AI: An in-Depth Analysis and Green Solutions",
+    "relevance": 3,
+    "rigor": 3,
+    "reason": "该文是生成式与智能体AI环境足迹的量级估算与政策分析，仅以'agentic AI'术语与智能体线擦边，不涉及模型能力或具身导航的实质技术进展，且无原创实验测量。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.32960"
   }
 }
