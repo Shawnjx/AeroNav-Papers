@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T16:20:08.476095+00:00",
+  "updated_at": "2026-09-30T09:35:17.794817+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5988,6 +5988,40 @@
       "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
+      "id": "2301.06230",
+      "arxiv_id": "2301.06230",
+      "title": "Swarm-SLAM: Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+      "authors": [
+        "Pierre–Yves Lajoie",
+        "Giovanni Beltrame"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 177,
+      "url": "https://arxiv.org/abs/2301.06230",
+      "pdf_url": "https://arxiv.org/pdf/2301.06230",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出开源、去中心化、稀疏的多机协同SLAM系统Swarm-SLAM，支持激光雷达、双目与RGB-D，并引入机间回环优先级排序技术以减少通信并加速收敛。",
+      "change_zh": "相比常见集中式或稠密协同SLAM，它以稀疏架构与去中心化设计面向机器人集群的带宽受限ad-hoc网络，把通信资源优先分配给最有价值的机间回环检测，而非全量交换数据。",
+      "why_it_matters": "多机SLAM是无人机集群搜救、协同侦察等UAV主动目标搜索任务的定位底座，其去中心化与低通信特性契合机群自组网场景，为多机协同探索与真机部署提供高影响力开源基础设施。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-30T09:35:17.794817+00:00"
+    },
+    {
       "id": "https://openalex.org/W4226142707",
       "arxiv_id": "",
       "title": "Artificial Intelligence Approaches for UAV Navigation: Recent Advances and Future Challenges",
@@ -6476,6 +6510,42 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "2403.17846",
+      "arxiv_id": "2403.17846",
+      "title": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+      "authors": [
+        "Abdelrhman Werby",
+        "Chenguang Huang",
+        "Martin Büchner",
+        "Abhinav Valada",
+        "Wolfram Burgard"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 112,
+      "url": "https://arxiv.org/abs/2403.17846",
+      "pdf_url": "https://arxiv.org/pdf/2403.17846",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HOV-SG用视觉基础模型构建楼层/房间/物体分层开放词汇3D场景图，以跨层Voronoi图支持多层建筑语言导航，语义精度超基线、表征缩小75%，并在真实多层环境完成长程导航。",
+      "change_zh": "相比稠密开放词汇地图逐点预测显著性的平面表示，改用楼层-房间-物体的分层场景图承载开放词汇特征，使抽象查询与跨楼层大规模环境可行，并把表征压缩75%，从稠密点级检索转向层级图上导航。",
+      "why_it_matters": "为开放词汇ObjectNav与地面VLN提供可扩展空间记忆：层级抽象让高层指令落地为跨房间/楼层的可导航节点，真机验证实用；对UAV在大范围三维空间的目标搜索与抽象查询检索也有借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "3d scene"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-30T09:35:17.794817+00:00"
     },
     {
       "id": "https://openalex.org/W4396857182",
@@ -9305,22 +9375,79 @@
       "rigor": 5,
       "reason": "该综述面向GeoAI地理坐标位置编码与地理空间数据建模应用，与UAV目标搜索、具身导航及机器人空间智能等收录技术线仅属术语层面擦边。",
       "excluded_at": "2026-09-28"
+    },
+    "2302.03287": {
+      "title": "ChatGPT and Software Testing Education: Promises & Perils",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该文属软件工程教育领域的ChatGPT垂直应用评估，与空间、导航、机器人及具身智能均无关，符合研究范围中\"大模型套用无关垂直领域应拒绝\"的条款。",
+      "excluded_at": "2026-09-30"
+    },
+    "2404.09134": {
+      "title": "Generative AI Agents With Large Language Model for Satellite Networks via a Mixture of Experts Transmission",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "将LLM/RAG生成式智能体与MoE-PPO套用于卫星通信传输优化，属纯通信与信号处理应用，与空间、导航、机器人无关，范围外。",
+      "excluded_at": "2026-09-30"
+    },
+    "2308.07107": {
+      "title": "Large Language Models for Information Retrieval: A Survey",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "该文是将LLM应用于纯文本信息检索（查询改写、检索、重排、阅读器）的垂直领域综述，与空间智能、具身导航、机器人自主等收录技术线无实质关联，属范围外工作。",
+      "excluded_at": "2026-09-30"
+    },
+    "2112.05851": {
+      "title": "Short and Long Range Relation Based Spatio-Temporal Transformer for Micro-Expression Recognition",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "微表情识别属于情感计算的纯视频分类应用，与导航、机器人自主、空间智能及大模型智能体均无实质关联，属研究范围明确排除项。",
+      "excluded_at": "2026-09-30"
+    },
+    "2210.12634": {
+      "title": "RSVG: Exploring Data and Models for Visual Grounding on Remote Sensing Data",
+      "relevance": 4,
+      "rigor": 7,
+      "reason": "该工作属遥感垂直领域的语言条件目标定位（视觉定位）基准与模型研究，仅与航拍图像域有术语关联，无UAV平台、主动搜索或导航决策成分，接近检测类数据集范畴，超出收录范围。",
+      "excluded_at": "2026-09-30"
+    },
+    "2308.10204": {
+      "title": "ChatEDA: A Large Language Model Powered Autonomous Agent for EDA",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "这是把LLM智能体套用到EDA芯片设计这一垂直领域的应用，与空间智能、导航、机器人等收录技术线完全无关。",
+      "excluded_at": "2026-09-30"
+    },
+    "2303.17395": {
+      "title": "WavCaps: A ChatGPT-Assisted Weakly-Labelled Audio Captioning Dataset for Audio-Language Multimodal Research",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "音频-语言数据集工作，与空间智能、导航、机器人无关，仅将ChatGPT当作垂直数据清洗工具使用，属于范围外应用。",
+      "excluded_at": "2026-09-30"
     }
   },
-  "last_citation_refresh": "2026-09-29T16:20:08.476095+00:00",
   "briefing": {
-    "text": "（说明：本轮仅提供一篇条目，故“最值得读”以该篇为核心展开。） 本轮入库条目不多但主线清晰：面向感知退化环境的鲁棒状态估计与多传感器融合里程计。最值得精读的是Super Odometry，它以IMU为中心融合LiDAR与视觉，先粗到细恢复运动、兼顾松紧耦合优点，用动态八叉树保障实时性，且有DARPA地下挑战赛中无人机与地面机器人的部署验证，理论设计与工程落地均具参考价值。从其200次被引与实战部署看，能在真实极端环境中稳定运行的系统级融合方案，正成为具身导航领域高被引的主线方向。",
-    "added": 1,
-    "at": "2026-09-28T17:57:41.839665+00:00",
+    "text": "本批工作的主线是为导航构建高效环境表征：一端压多机建图的通信开销，一端通语言语义的查询接口。Swarm-SLAM以去中心化稀疏架构支持激光雷达、双目与RGB-D的多机协同SLAM，用机间回环优先级排序降低通信、加速收敛，开源可直接复用，宜作多机系统基线。HOV-SG以视觉基础模型构建楼层/房间/物体开放词汇3D场景图，表征缩小75%仍提升语义精度，并在真实多层建筑完成长程语言导航，其跨层Voronoi规划设计值得细读。趋势上，几何地图正让位于可压缩、可语言查询的语义表征。",
+    "added": 2,
+    "at": "2026-09-30T09:35:17.794817+00:00",
     "new": [
       {
-        "t": "Super Odometry: IMU-centric LiDAR-Visual-Inertial Estimator for Challenging Environments",
-        "u": "https://doi.org/10.1109/iros51168.2021.9635862",
+        "t": "Swarm-SLAM: Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+        "u": "https://arxiv.org/abs/2301.06230",
         "r": 8,
-        "g": 8,
-        "s": "提出以IMU为中心的LiDAR-视觉-惯性多传感器融合里程计，粗到细恢复运动并兼顾松紧耦合优点，用动态八叉树保障实时性，在感知退化环境实现鲁棒状态估计，已部署于DARPA地下挑战赛的无人机与地面机器人。",
+        "g": 7,
+        "s": "提出开源、去中心化、稀疏的多机协同SLAM系统Swarm-SLAM，支持激光雷达、双目与RGB-D，并引入机间回环优先级排序技术以减少通信并加速收敛。",
         "c": "",
-        "cit": 200
+        "cit": 177
+      },
+      {
+        "t": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+        "u": "https://arxiv.org/abs/2403.17846",
+        "r": 9,
+        "g": 8,
+        "s": "HOV-SG用视觉基础模型构建楼层/房间/物体分层开放词汇3D场景图，以跨层Voronoi图支持多层建筑语言导航，语义精度超基线、表征缩小75%，并在真实多层环境完成长程导航。",
+        "c": "",
+        "cit": 112
       }
     ]
   }
