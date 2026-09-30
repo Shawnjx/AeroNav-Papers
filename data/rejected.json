@@ -1694,5 +1694,77 @@
     "reason": "将LLM智能体技术套用于炼油规划软件AspenTech PIMS这一与空间、导航、机器人无关的垂直领域应用，技能归纳与修复机制深度绑定该领域，属范围外应用。",
     "rejected_at": "2026-09-29",
     "url": "https://arxiv.org/abs/2609.30674"
+  },
+  "2609.36915": {
+    "title": "AeroManip-VLA: Scalable Vision-Language-Action Learning for Aerial Manipulation with RL-Generated Demonstrations",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "核心是空中机械臂操作与VLA控制的仿真基准与数据生成，导航仅作为部分长时任务的次要成分，不构成导航决策主线，属范围排除项。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.36915"
+  },
+  "2609.36171": {
+    "title": "SkillWeaver: Agentic Exploration over Neural Interaction Skills for Scalable Robot Data Generation",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心是机械臂操作技能与操作演示数据生成并蒸馏为VLA式操作策略，不含导航决策成分，属范围明确排除的操作类工作。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.36171"
+  },
+  "2609.36878": {
+    "title": "NIDAR: NIR-Guided Intrinsic Decomposition for Scalable Scene-Agnostic LiDAR Intensity Reconstruction",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "核心贡献是LiDAR强度仿真合成，属传感器仿真辅助工作，非导航、空间智能或具身智能主线，仅以仿真内SLAM下游演示与sim2real擦边，属边缘相关。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.36878"
+  },
+  "2609.37771": {
+    "title": "Faster and Better? Benchmark Bugs and Design Limitations Distort the Evaluation of Vision-Language-Action Acceleration",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "审计对象全部为机械臂操作类VLA仿真基准（RoboTwin、LIBERO-Plus、VLABench等），聚焦VLA推理加速评测且不含任何导航决策成分，属范围中明确排除的VLA/操作方向，仅评测方法学与'具身基准与评测'线相邻。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.37771"
+  },
+  "2609.37658": {
+    "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该文是面向企业咨询、供应链与商业金融垂直场景的LLM智能体评测基准，与空间智能、导航、机器人及具身能力均无关，属研究范围外的垂直应用。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.37658"
+  },
+  "2609.38120": {
+    "title": "Stochastic World Models for Verifying Vision-Based Neural Feedback Systems",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "属于视觉神经反馈控制系统的形式化验证研究，世界模型仅充当验证用感知替身而非用于导航或规划，与收录技术线仅术语擦边。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.38120"
+  },
+  "2609.37810": {
+    "title": "Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心评测对象为机械臂操作（LIBERO-10与真机操作任务），含触觉交互且无任何导航决策成分，落入范围外'机械臂操作与VLA控制'条目。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.37810"
+  },
+  "2609.37986": {
+    "title": "ORMA: Optimization-based Monocular 4D Reconstruction of Articulated Animals",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "单目动物铰接4D重建属被动式物体级三维视觉任务，不涉及导航决策、空间推理、主动感知或状态估计，仅以'重建'一词与收录范围擦边。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.37986"
+  },
+  "2609.37871": {
+    "title": "ExceptionDrive: A Planning-Oriented Counterfactual Corner-Case Benchmark for Autonomous Driving",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作属自动驾驶规划安全评测范畴，评测对象是nuScenes驾驶规划器而非具身导航智能体，其VLM提醒Agent亦是驾驶垂直应用，未落入空域/地面具身导航或所列基础能力技术线。",
+    "rejected_at": "2026-09-30",
+    "url": "https://arxiv.org/abs/2609.37871"
   }
 }
