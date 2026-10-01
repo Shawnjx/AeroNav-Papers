@@ -1878,5 +1878,29 @@
     "reason": "该工作属LLM跨语言遗忘与安全训练技巧研究，不涉及空间智能、导航、机器人或智能体能力本身的显著进展，落入纯LLM训练技巧类范围外工作。",
     "rejected_at": "2026-10-01",
     "url": "https://arxiv.org/abs/2609.40286"
+  },
+  "2609.36488": {
+    "title": "AdaptArena: Evaluating Test-Time Personalization of Web Agents",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作是对LLM网页智能体（浏览器/GUI任务）测试时个性化与隐式偏好推断的垂直评测基准，仅\"navigation\"术语擦边，与空间智能、具身导航（UAV目标搜索、ObjectNav、VLN）及机器人自主均无实质关联。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.36488"
+  },
+  "2609.37264": {
+    "title": "UniAfford: Token-Routed Multitask Learning for Generalizable 2D-3D Affordance Perception",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "可供性感知主要服务机械臂交互，与UAV目标搜索、ObjectNav、VLN等核心导航线无直接关联，令牌路由的MLLM训练范式也仅在单一垂直任务上验证，未见对模型与智能体社区的广泛影响，属边缘相关。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.37264"
+  },
+  "2609.36553": {
+    "title": "Learning to Explore Hidden Kinematics for Articulated Object Manipulation",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "论文核心任务与评测均为机械臂对门、抽屉等铰接物体的操作（PartManip、ArticuRiddle），属范围明确排除的机械臂操作类工作且不含导航决策成分，主动感知仅是其内部机制而非任务本身。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.36553"
   }
 }

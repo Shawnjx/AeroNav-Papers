@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T11:08:28.921041+00:00",
+  "updated_at": "2026-10-01T17:08:27.604847+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -975,6 +975,49 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2609.37055",
+      "arxiv_id": "2609.37055",
+      "title": "Spatial-OPSD: Self-Improving Spatial Reasoning via Label-Free Self-Distillation",
+      "authors": [
+        "Zhenyu Liu",
+        "Zhangquan Chen",
+        "Keyi Chen",
+        "Mingze Sun",
+        "Xiang An",
+        "Haodong Jing",
+        "Ruqi Huang"
+      ],
+      "published": "2026-09-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.37055",
+      "pdf_url": "https://arxiv.org/pdf/2609.37055",
+      "code_url": "https://github.com/vermouth599/Spatial-OPSD",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 5,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/39934f1101f3435e140237f785355b8512caed16",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出免标签自蒸馏框架Spatial-OPSD：教师模型获取深度、重建三维关系与相机几何等空间先验，学生仅看原始输入并在自采样轨迹上受稠密token级监督，经多轮递归训练持续自我提升VLM的空间推理能力。",
+      "change_zh": "常见路线依赖答案标签或奖励信号提升空间推理；本文改用深度、重建三维关系、相机几何等感知工具天然可得的空间先验构造师生信息不对称，在学生自采样轨迹上做免标签稠密token级蒸馏，并用轮次递归训练稳定多轮自提升。",
+      "why_it_matters": "空间推理是空间智能核心，也是UAV目标搜索与ObjectNav语言—空间对齐的基础：深度、视点与三维关系理解直接决定目标发现与开放词汇目标导航的可靠性；免标签自提升使VLM无需标注即可强化该能力，为具身导航提供更强底座模型。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-01T17:01:02.564092+00:00"
+    },
+    {
       "id": "2609.35032",
       "arxiv_id": "2609.35032",
       "title": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
@@ -1605,6 +1648,41 @@
         "vlm"
       ],
       "added_at": "2026-09-29T10:35:00.952792+00:00"
+    },
+    {
+      "id": "2609.35965",
+      "arxiv_id": "2609.35965",
+      "title": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
+      "authors": [
+        "Yunzhe Xu",
+        "Zhe Liu"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.35965",
+      "pdf_url": "https://arxiv.org/pdf/2609.35965",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文将多智能体视觉语言导航形式化为带依赖与资源约束的协同问题，构建含145场景、11724条轨迹的MAVLN基准，并提出结合LLM调度、共享拓扑记忆与冲突消解执行的TRISS基线系统。",
+      "change_zh": "常见VLN聚焦单智能体单指令；该文首次系统形式化多智能体VLN为含依赖与资源约束的协调问题，配套约束感知指标，并将LLM子任务调度、共享拓扑记忆与无冲突执行耦合为完整系统，改变了仅单人寻路的范式。",
+      "why_it_matters": "多机协同约束建模、LLM子任务调度与共享拓扑记忆可直接迁移到多无人机搜救侦察的分工与冲突消解，约束感知指标也为ObjectNav式评测提供新维度，推动从单体导航走向团队任务求解。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "instruction"
+      ],
+      "added_at": "2026-10-01T17:04:59.074692+00:00"
     },
     {
       "id": "2609.33148",
@@ -2817,6 +2895,45 @@
         "mllm"
       ],
       "added_at": "2026-09-30T10:28:49.001395+00:00"
+    },
+    {
+      "id": "2609.36906",
+      "arxiv_id": "2609.36906",
+      "title": "SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions",
+      "authors": [
+        "Sean Hardesty Lewis",
+        "Zuyi Guo",
+        "Benwang Chen",
+        "Zirui Liu",
+        "Hongyi Lin",
+        "Heye Huang"
+      ],
+      "published": "2026-09-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.36906",
+      "pdf_url": "https://arxiv.org/pdf/2609.36906",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出视点感知语义记忆与主动采集框架，保留每个论断的支持视角、位姿与目标位置估计，用学习的可观测性模型按决策损失期望下降选视角，校准后输出Yes/No/Abstain，在ProcTHOR等基准上显著提升宏F1并降低风险。",
+      "change_zh": "常见路线以覆盖率或语义置信度驱动探索，本文转而在记忆中保留论断级支持视角、位姿与目标估计，把正面支持与搜索覆盖分离，用可学习可观测性模型按终端决策损失期望下降并计入行程代价选视角，校准头还支持弃权决策。",
+      "why_it_matters": "可观测性预测与基于决策损失的视角选择可直接迁移到UAV主动目标搜索的取证式接近与何时停判，也为ObjectNav的目标确认与终止决策提供证据校准思路；视点级支持记忆与弃权机制对主动感知与具身可靠决策均有借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "vlm"
+      ],
+      "added_at": "2026-10-01T17:05:24.631692+00:00"
     },
     {
       "id": "2609.34969",
@@ -11861,6 +11978,49 @@
       "added_at": "2026-10-01T11:02:58.966887+00:00"
     },
     {
+      "id": "2609.36684",
+      "arxiv_id": "2609.36684",
+      "title": "ProgressCompass: Embodied Progress Reward Models Are Lost Without the Right Context",
+      "authors": [
+        "Jianshu Zhang",
+        "Keyi Wu",
+        "Chengxuan Qian",
+        "Xiyuan Yang",
+        "Ce Zhang",
+        "Ariel Tian",
+        "Anbang Liu",
+        "Haoran Lu",
+        "Han Liu"
+      ],
+      "published": "2026-09-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.36684",
+      "pdf_url": "https://arxiv.org/pdf/2609.36684",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文针对具身进度奖励模型的上下文依赖进度估计问题：24任务操作基准配对诊断显示现有PRM缺上下文即迷失；智能体环用VLM为冻结PRM补上下文，进度误差降63%。",
+      "change_zh": "常规进度奖励模型多从当前帧观测打分、并在短任务上训练评测；本文将问题重定义为上下文依赖的进度估计，设计配对注入上下文的诊断协议，并把改进路线从重训模型改为用通用VLM智能体环为冻结PRM供给上下文。",
+      "why_it_matters": "进度奖励模型的密集奖励、验证与监测对VLN、UAV搜索等长程导航同样关键；进度须依历史上下文估计的结论与冻结模型加VLM供上下文的智能体路线可迁移到导航进度评估与奖励塑造；局限是仅操作任务验证。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "instruction",
+        "vlm"
+      ],
+      "added_at": "2026-10-01T17:04:22.985882+00:00"
+    },
+    {
       "id": "2609.35431",
       "arxiv_id": "2609.35431",
       "title": "Memory in the Sky: Low-Altitude Question Answering with Multi-Agent Memory Aggregation",
@@ -11904,6 +12064,40 @@
         "uav"
       ],
       "added_at": "2026-09-29T10:34:26.247894+00:00"
+    },
+    {
+      "id": "2609.36238",
+      "arxiv_id": "2609.36238",
+      "title": "ChronoSRL: Temporal Geometry for Self-Supervised Reinforcement Learning",
+      "authors": [
+        "Nico Bohlinger",
+        "Jan Peters"
+      ],
+      "published": "2026-09-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.36238",
+      "pdf_url": "https://arxiv.org/pdf/2609.36238",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "为自监督RL的critic嵌入赋予时间几何，令状态-目标嵌入距离匹配到达时间，结合生存RL预测到达时间分布与停留时长；在七个运动导航基准及四足sim-to-real任务上超越基线。",
+      "change_zh": "与常见对比/生存RL只用任意度量空间不同，它把critic嵌入距离显式校准为到达目标的时间，未达目标被推至至少一个折扣视野外；并从时间嵌入预测到达时间全分布与近目标停留时长，使策略兼顾快与可靠。",
+      "why_it_matters": "其以到达时间为度量的目标条件RL，可启发ObjectNav式目标接近与UAV搜索中'空间距离≠可达性'的表征与奖励设计；四足sim-to-real的速度与目标位置保持对运动控制落地亦有参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "geometry"
+      ],
+      "added_at": "2026-10-01T17:08:24.604374+00:00"
     },
     {
       "id": "2609.31357",
@@ -13488,128 +13682,48 @@
     }
   ],
   "briefing": {
-    "text": "本批工作横跨经典机器人与大模型智能体两条主线，多机探索、声呐SLAM与安全控制同期在列。首推ASENA：固定权重下靠写程序、修错与技能复用持续自进化，4B策略在R2R/RxR达SOTA并经G1真机验证，示范免扩参数的进化路径；DiffWAM从冻结视频基础模型直接回归度量级3D相机轨迹，机载延迟仅1.08秒，把世界模型推向可部署；AVERT-VLN将人类引导纠错转为决策级偏好对，补上VLN执行期闭环。总体看，导航重心正转向智能体架构、轻量世界模型与执行期自纠错的组合。",
-    "added": 15,
-    "at": "2026-10-01T11:10:01.549286+00:00",
+    "text": "本批工作把具身导航从感知推理推向记忆、奖励与协同层面的可靠决策。首推Spatial-OPSD：免标签自蒸馏把深度、相机几何等空间先验蒸入VLM，支持多轮递归自提升；多智能体VLN方面，MAVLN用145场景、11724条轨迹与TRISS基线把协作形式化为资源约束问题，定义了新赛道；SafeVantage为记忆保留论断的支持视角，按决策损失期望选点并以Abstain控险。趋势是从感知精度转向决策可靠性与多体协作。",
+    "added": 5,
+    "at": "2026-10-01T17:10:14.299744+00:00",
     "new": [
       {
-        "t": "Centralized Multi-UAV Exploration and 3D Reconstruction Using Single-UAV Planners",
-        "u": "https://arxiv.org/abs/2609.40208",
-        "r": 8,
-        "g": 7,
-        "s": "提出集中式多无人机探索框架，通过共享全局TSDF地图与集中规划，将四种现成单机采样式规划器（RH-NBVP、AEP等）适配到多机场景，集成机间避碰与机体自过滤，仿真表明分离部署探索更快。",
-        "c": ""
-      },
-      {
-        "t": "Towards Agile Vision-Based Multi-UAV Flight: Revisiting State Estimation",
-        "u": "https://arxiv.org/abs/2609.39611",
-        "r": 7,
-        "g": 8,
-        "s": "针对多无人机邻机状态估计，指出仅用位置量测间接推断速度/加速度存在固定结构延迟，提出融合倾斜角（推力方向）的线性推力约束卡尔曼滤波，误差降低40%/57%，闭环实验可跟踪超2g机动。",
-        "c": ""
-      },
-      {
-        "t": "ASENA: Self-evolving Agents for Embodied Navigation",
-        "u": "https://arxiv.org/abs/2609.39207",
+        "t": "Spatial-OPSD: Self-Improving Spatial Reasoning via Label-Free Self-Distillation",
+        "u": "https://arxiv.org/abs/2609.37055",
         "r": 9,
         "g": 8,
-        "s": "ASENA将通用编码智能体接入机器人感知与执行，权重固定下靠写程序、修错与技能复用持续自进化，其4B导航策略ASENA-VLN在R2R/RxR达SOTA，并经G1真机验证。",
-        "c": ""
+        "s": "该文提出免标签自蒸馏框架Spatial-OPSD：教师模型获取深度、重建三维关系与相机几何等空间先验，学生仅看原始输入并在自采样轨迹上受稠密token级监督，经多轮递归训练持续自我提升VLM的空间推理能力。",
+        "c": "https://github.com/vermouth599/Spatial-OPSD"
       },
       {
-        "t": "NavHarness: Adaptive Goals for Agentic Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.39915",
-        "r": 9,
-        "g": 8,
-        "s": "提出代理式VLN框架NavHarness：目标智能体设定自适应子目标，验证智能体动态核验完成情况，记忆智能体压缩多模态交互历史，视觉运动智能体执行导航，在R2R-CE、RxR-CE及真机长程导航上验证有效。",
-        "c": ""
-      },
-      {
-        "t": "StreamRig: Exploiting Intra-Rig Geometry for Streaming Multi-Camera Odometry",
-        "u": "https://arxiv.org/abs/2609.40244",
-        "r": 8,
-        "g": 8,
-        "s": "StreamRig在冻结的多视角3D基础模型上构建流式多相机里程计，通过Rig特征重采样、带KV缓存的因果注意力与轻量位姿头，仅训练74.6M参数，在四个数据集上以零样本真机评测取得更低漂移。",
-        "c": "https://github.com/WeiYuFei0217/StreamRig"
-      },
-      {
-        "t": "DiffWAM: A Fast and Efficient Navigation World Action Model",
-        "u": "https://arxiv.org/abs/2609.39763",
-        "r": 9,
-        "g": 7,
-        "s": "DiffWAM从冻结视频基础模型的预测表征直接回归度量级3D相机轨迹，免去在线视频生成与几何重建；FastDreamer异步重叠计算实现机载1.08秒延迟的无人机连续飞行。",
-        "c": ""
-      },
-      {
-        "t": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
-        "u": "https://arxiv.org/abs/2609.40325",
-        "r": 8,
-        "g": 8,
-        "s": "WorldAuditBench在Unreal Engine 5与Three.js构建的13个环境、213个异常任务上，评测多模态智能体耦合导航探索与视觉推理以发现3D世界异常的能力，五个前沿模型成功率仅6.6%–42.3%，远低于人类83.4%。",
-        "c": ""
-      },
-      {
-        "t": "Concurrent Semantic Search and Mission Execution for LTL Missions in Unknown Environments",
-        "u": "https://arxiv.org/abs/2609.39153",
-        "r": 8,
-        "g": 7,
-        "s": "该文提出将任务驱动语义搜索与LTLf任务执行交织推进的自适应高层规划，基于VLM场景图与任务DFA选取兼顾两者的航点以避免阻塞，在五类任务上以更短路径与更少覆盖完成更多任务。",
-        "c": ""
-      },
-      {
-        "t": "PhantomEnvironments: Training LLM Agents in Fictional Worlds",
-        "u": "https://arxiv.org/abs/2609.40221",
-        "r": 7,
-        "g": 8,
-        "s": "该工作提出PhantomEnvironments，用纯规则生成虚构世界中的多轮RL环境，让LLM智能体在模板化文档库中做多跳检索问答，生成零边际成本且无需LLM参与，训练出的智能体能迁移到真实多跳搜索基准并泛化到未见虚构世界。",
-        "c": ""
-      },
-      {
-        "t": "Social-WM: Safety-Aware Latent World Models for Robot Social Navigation",
-        "u": "https://arxiv.org/abs/2609.40177",
-        "r": 9,
-        "g": 7,
-        "s": "提出Social-WM：从自监督RGB视频学习潜在世界模型，以动作条件预测与逆动力学刻画名义与可实行动作差异，并将其作为执行前安全信号，实现免行人跟踪、免特权信息的社会目标导航。",
-        "c": ""
-      },
-      {
-        "t": "RL-Guided PAC-NMPC for Probabilistically-Safe Perception-Based Navigation in Unknown Environments",
-        "u": "https://arxiv.org/abs/2609.39854",
-        "r": 7,
-        "g": 7,
-        "s": "将RL训练的概率actor-critic与传感器预测模型嵌入采样式PAC-NMPC框架，以硬约束提供碰撞概率与价值改进的有限时间统计保证，实现未知环境概率安全的感知导航，并在仿真与固定翼无人机硬件上验证。",
-        "c": ""
-      },
-      {
-        "t": "BatSLAM 2.0: Sequence-Verified Sonar Place Recognition in a Robust Pose Graph",
-        "u": "https://arxiv.org/abs/2609.40085",
+        "t": "ProgressCompass: Embodied Progress Reward Models Are Lost Without the Right Context",
+        "u": "https://arxiv.org/abs/2609.36684",
         "r": 6,
         "g": 7,
-        "s": "BatSLAM 2.0提出纯声呐SLAM系统，由升级的声学前端、序列化回环候选跟踪与校验器、以及高性能因子图框架上的位姿图三部分组成，在仿真与真实录音数据上实现鲁棒拓扑建图，防止地图坍塌并支持地图规模扩展。",
+        "s": "本文针对具身进度奖励模型的上下文依赖进度估计问题：24任务操作基准配对诊断显示现有PRM缺上下文即迷失；智能体环用VLM为冻结PRM补上下文，进度误差降63%。",
         "c": ""
       },
       {
-        "t": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
-        "u": "https://arxiv.org/abs/2609.39600",
-        "r": 7,
-        "g": 8,
-        "s": "提出4B视觉定位基础模型GroundAnything，以双向扩散块状去噪替代自回归串行生成实现并行定位，结合AR转扩散、SFT与GRPO后训练，在30个基准达同规模最优并大幅提速。",
-        "c": ""
-      },
-      {
-        "t": "CoEvoWhen: Policy-Tool Coevolution for Ultra-Long Video Temporal Grounding",
-        "u": "https://arxiv.org/abs/2609.40048",
-        "r": 7,
-        "g": 7,
-        "s": "提出策略-工具协同进化框架：从VLM推理轨迹蒸馏经验，联合进化高层策略与可执行媒体工具形成可复用技能，无需更新模型参数，用于超长视频时序定位，五个基准三种VLM上验证精度提升且降低视觉token开销。",
-        "c": ""
-      },
-      {
-        "t": "AVERT-VLN: Abstention-aware Visual Error Recovery and Training for Vision-and-Language Navigation",
-        "u": "https://arxiv.org/abs/2609.39579",
+        "t": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
+        "u": "https://arxiv.org/abs/2609.35965",
         "r": 9,
+        "g": 8,
+        "s": "该文将多智能体视觉语言导航形式化为带依赖与资源约束的协同问题，构建含145场景、11724条轨迹的MAVLN基准，并提出结合LLM调度、共享拓扑记忆与冲突消解执行的TRISS基线系统。",
+        "c": ""
+      },
+      {
+        "t": "SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions",
+        "u": "https://arxiv.org/abs/2609.36906",
+        "r": 8,
+        "g": 8,
+        "s": "提出视点感知语义记忆与主动采集框架，保留每个论断的支持视角、位姿与目标位置估计，用学习的可观测性模型按决策损失期望下降选视角，校准后输出Yes/No/Abstain，在ProcTHOR等基准上显著提升宏F1并降低风险。",
+        "c": ""
+      },
+      {
+        "t": "ChronoSRL: Temporal Geometry for Self-Supervised Reinforcement Learning",
+        "u": "https://arxiv.org/abs/2609.36238",
+        "r": 6,
         "g": 7,
-        "s": "AVERT-VLN为VLN提出闭环纠错：Monitor在线评估指令-执行一致性，偏航即请求人类引导恢复，纠错转为决策级偏好对改进策略，在R2R-CE与RxR-CE未见集提升成功率。",
+        "s": "为自监督RL的critic嵌入赋予时间几何，令状态-目标嵌入距离匹配到达时间，结合生存RL预测到达时间分布与停留时长；在七个运动导航基准及四足sim-to-real任务上超越基线。",
         "c": ""
       }
     ]
