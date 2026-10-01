@@ -1806,5 +1806,77 @@
     "reason": "该文是生成式与智能体AI环境足迹的量级估算与政策分析，仅以'agentic AI'术语与智能体线擦边，不涉及模型能力或具身导航的实质技术进展，且无原创实验测量。",
     "rejected_at": "2026-09-30",
     "url": "https://arxiv.org/abs/2609.32960"
+  },
+  "2609.38588": {
+    "title": "Drone Soccer: Learning to Manipulate with Multicopter Downwash",
+    "relevance": 4,
+    "rigor": 5,
+    "reason": "无人机用下洗气流运球属空中操纵任务，核心贡献是操纵而非目标搜索或导航决策，超出收录范围。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.38588"
+  },
+  "2609.40212": {
+    "title": "Recognition of Urbanized Areas in UAV-Derived Very-High-Resolution Visible-Light Imagery",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "该文仅为基于已采集无人机影像的离线遥感地物分类研究，无人机只是数据获取平台，不含主动目标搜索、导航决策或自主性成分，属于范围外的遥感图像分类应用。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.40212"
+  },
+  "2609.39323": {
+    "title": "HiWE: Hierarchical World Knowledge Model with Visual Keypoint Enhancement for Zero-Shot 3D Path Planning",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心是机械臂操作的末端执行器路径规划与抓取执行（VLA系框架），不含导航决策成分，属明确排除的机械臂操作与VLA控制范围。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.39323"
+  },
+  "2609.40356": {
+    "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属视频生成/编辑方向：基准对象为视频中场景文字的替换编辑，本质属文生视频族任务，与具身导航、空间智能或机器人自主均无关联，属研究范围明确排除的条目。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.40356"
+  },
+  "2609.38719": {
+    "title": "FlapKAD: A Simulation Dataset of Coupled Wing Kinematics and Aerodynamic Dynamics for Flapping-Wing Aerial Vehicles",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "扑翼飞行器气动动力学仿真数据集与时序预测基准，不含导航决策、状态估计或飞行控制方法贡献，仅'飞行器/仿真'术语与收录范围擦边，属范围外。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.38719"
+  },
+  "2609.38227": {
+    "title": "A Two-Echelon Covering Tour Vehicle Routing Problem with Drones for Post-Disaster Relief",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "本质是运筹学层面的两级车辆路径优化（MILP+元启发式）的灾后物流配送问题，受灾者位置已知、无人机仅作投送载具，不含目标搜索、感知或自主导航决策，仅与无人机/灾后救援术语擦边，属范围外。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.38227"
+  },
+  "2609.39670": {
+    "title": "From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "核心是无人机载机械臂操作与VLA控制，飞行轨迹与跨站点迁移仅作执行支撑，缺少目标搜索/指令跟随等导航决策成分，属范围外。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.39670"
+  },
+  "2609.40361": {
+    "title": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作是MLLM提示优化在医疗诊断垂直领域的套用，与空间、导航、机器人均无关，属于范围中明确排除的医疗类垂直应用（医疗分诊/诊断）。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.40361"
+  },
+  "2609.40286": {
+    "title": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "该工作属LLM跨语言遗忘与安全训练技巧研究，不涉及空间智能、导航、机器人或智能体能力本身的显著进展，落入纯LLM训练技巧类范围外工作。",
+    "rejected_at": "2026-10-01",
+    "url": "https://arxiv.org/abs/2609.40286"
   }
 }
