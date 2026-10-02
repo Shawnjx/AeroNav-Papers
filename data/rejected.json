@@ -1910,5 +1910,37 @@
     "reason": "该工作属多无人机缆索吊挂运输的力分配规划与控制，不含导航决策成分，且为细分应用系统而非社区公认的高影响力通用规划/控制工作，与UAV目标搜索、空域/地面VLN及ObjectNav等核心收录线无关联。",
     "rejected_at": "2026-10-02",
     "url": "https://arxiv.org/abs/2610.01185"
+  },
+  "2610.01682": {
+    "title": "Beyond Leaderboard Scores: A Deployment-Focused Protocol for Interpretable Tracking Evaluation in Pedestrian-Centric Environments",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "属于多目标跟踪（MOT）感知评测协议，不含导航决策、空间智能或收录线核心成分，仅因机器人数据集与嵌入式部署背景与范围边缘擦边。",
+    "rejected_at": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.01682"
+  },
+  "2610.02160": {
+    "title": "4Director: Controlling Video World Models with Rigid 3D Geometry",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "该工作属可控视频生成（文生/图生视频类），服务专业视频制作的相机与物体运动控制，并非用于导航与规划的世界模型，与具身导航和空间智能技术线仅术语擦边。",
+    "rejected_at": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.02160"
+  },
+  "2610.02136": {
+    "title": "MIRTO: a registration-gated, multiverse-tested evaluation protocol for unsupervised anomaly segmentation in brain MRI",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "面向脑MRI无监督异常分割的医学影像评测协议，与具身导航、UAV目标搜索、空间智能等收录技术线无实质关联，仅评测方法论术语与基准评测线擦边。",
+    "rejected_at": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.02136"
+  },
+  "2610.02202": {
+    "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作属于科学文献检索这一学术工具垂直领域的评测基准，与空间智能、导航、机器人及通用智能体能力本身的显著进展均无关，属范围外应用。",
+    "rejected_at": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.02202"
   }
 }

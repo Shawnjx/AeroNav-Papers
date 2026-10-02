@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T10:42:48.575528+00:00",
+  "updated_at": "2026-10-02T16:14:14.261847+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1503,6 +1503,94 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.01219",
+      "arxiv_id": "2610.01219",
+      "title": "EIDA: Execution-Interface Dynamics Adaptation for Real-to-Sim-to-Real Robot Navigation",
+      "authors": [
+        "Yiwei Qian",
+        "Shanze Wang",
+        "Qingyuan Hu",
+        "Xinming Zhang",
+        "Wei Zhang"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01219",
+      "pdf_url": "https://arxiv.org/pdf/2610.01219",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 4,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/e9d3e158a273aff286ad955bbebd336d37dc8a69",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EIDA从目标平台执行数据拟合机体位姿增量与速度反馈模型并更新轻量GPU仿真器，使导航策略适配真实执行接口动态，在Jackal/Go2仿真与真机Go2上大幅提升导航成功率。",
+      "change_zh": "相比常见的系统辨识或域随机化路线，EIDA不重建执行器动力学，而是仅用目标平台执行数据拟合机体位姿增量与策略可见的速度反馈模型，改造轻量仿真器并把反馈历史纳入策略输入，以接口级适配弥合真实执行差异。",
+      "why_it_matters": "直击学习式导航策略真机迁移的关键失败源：命令响应与反馈估计不匹配。对ObjectNav类真机部署及速度接口驱动平台（含UAV目标搜索）均有借鉴价值，给出免执行器建模的接口级sim2real方案。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "real robot"
+      ],
+      "added_at": "2026-10-02T16:07:33.804989+00:00"
+    },
+    {
+      "id": "2610.00878",
+      "arxiv_id": "2610.00878",
+      "title": "UniTrackPLA: Unified Panorama-Language-Action Model for Instruction-Guided Navigation and Dynamic Person Tracking",
+      "authors": [
+        "Pengfei Qi",
+        "Haoran Lin",
+        "Sizhuang Chen",
+        "Kai Luo",
+        "Sirui Zhang",
+        "Xinqi Liu",
+        "Fei Cheng",
+        "Wenrui Chen",
+        "Liming Yin",
+        "Kailun Yang"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.00878",
+      "pdf_url": "https://arxiv.org/pdf/2610.00878",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "eess.IV"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "UniTrackPLA提出统一的全景-语言-动作模型，用全景感知编码让透视预训练编码器处理全向观测，结合世界-动作一致性在线校验与重规划，以单一策略完成指令引导导航与动态人物跟踪，并发布含真机数据的OmniTrackNav-Bench基准。",
+      "change_zh": "常见路线依赖前视观测并为导航与跟踪训练独立策略；本文用全景感知编码使透视预训练视觉编码器可处理全景输入，以共享视觉-语言主干统一预测两任务的连续以机器人为中心航点，并以世界-动作一致性在线校验动作前缀、不一致时触发重规划，形成闭环统一控制。",
+      "why_it_matters": "对地面VLN直接提供全景感知、导航-跟踪统一策略与闭环重规划范式；其任意方位角初始化的动态人物跟踪与动作条件未来状态校验机制，可迁移到UAV主动目标搜索中的目标发现与接近；含96条真机路线的大规模基准也服务具身评测与Sim2Real研究。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "instruction",
+        "waypoint"
+      ],
+      "added_at": "2026-10-02T16:10:01.333120+00:00"
+    },
+    {
       "id": "2609.39207",
       "arxiv_id": "2609.39207",
       "title": "ASENA: Self-evolving Agents for Embodied Navigation",
@@ -2715,6 +2803,47 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.02162",
+      "arxiv_id": "2610.02162",
+      "title": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
+      "authors": [
+        "Hyunwook Choi",
+        "Dahyun Chung",
+        "Hyunsung Kim",
+        "Siyoon Jin",
+        "Jinhyeok Choi",
+        "Junyoung Seo",
+        "Seungryong Kim"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.02162",
+      "pdf_url": "https://arxiv.org/pdf/2610.02162",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出World Observer，通过联合生成主角视角与全景观察者，让视频世界模型持续演算离开主角视野的物体状态，重入视野时更新其状态，并配套世界空间度量与真实和合成场景基准。",
+      "change_zh": "主流视频世界模型以主角视角为中心，物体出视野即失联。该工作将观察与行动解耦，联合生成可自由布置、可扩展的全景观察者持续演算视野外区域，并用共享全景源做几何对应，以高分辨率参考恢复重入细节。",
+      "why_it_matters": "为导航与世界模型技术线提供视野外持续状态记忆：UAV搜救与ObjectNav在长程探索中常需记住离开视野的目标及其动态变化，该能力可支撑重访决策与一致的场景演化预测，新基准亦便于评测此类持久世界建模。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "world model"
+      ],
+      "added_at": "2026-10-02T16:11:29.057981+00:00"
     },
     {
       "id": "2609.40244",
@@ -5181,6 +5310,95 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.01569",
+      "arxiv_id": "2610.01569",
+      "title": "Managing Context and Communication in Distributed Agentic UAV Swarms",
+      "authors": [
+        "Andrea Iannoli",
+        "Ivan Zyrianoff",
+        "Angelo Trotta",
+        "Lorenzo Gigli",
+        "Marco Di Felice"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01569",
+      "pdf_url": "https://arxiv.org/pdf/2610.01569",
+      "code_url": "",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG",
+        "cs.NI",
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 8,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/3778bbd616577f502ea11011e0c27de66fc8a7b5",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出全分布式无人机集群智能体架构：每架无人机由本地小语言模型经事件驱动的推理-行动-观察循环持续控制，运行知识以结构化原子笔记分层存入核心、本地与对端记忆，并由确定性的兴趣感知gossip引擎按语义新颖性与时效性选择性传播。",
+      "change_zh": "相比集中式协调或全量泛洪广播的常见路线，该工作让每架无人机独立运行小语言模型实现去中心化控制，并将信息转发决策交给确定性兴趣感知引擎而非大模型自身（摘要显示让模型决策转发反而完全失败），同时以原子笔记分层记忆对抗长时交互导致的上下文退化。",
+      "why_it_matters": "对UAV主动目标搜索价值直接：长时程多机搜救中上下文退化与通信开销是集群自主规模化的关键瓶颈，其结构化记忆与按接收者语义新颖性选择性分发的机制为分布式协同搜索提供了可实测的信息管理方案；对长时程ObjectNav智能体的记忆与通信管理同样有借鉴意义。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "agentic",
+        "uav"
+      ],
+      "added_at": "2026-10-02T16:05:00.769553+00:00"
+    },
+    {
+      "id": "2610.01019",
+      "arxiv_id": "2610.01019",
+      "title": "FutureWorlds: Learning Robotic World Models from Alternative Futures",
+      "authors": [
+        "Hao Wu",
+        "Shengju Qian",
+        "Weiyan Wang",
+        "Fan Xu",
+        "Fan Zhang",
+        "Yuanpeng He",
+        "Qingsong Wen",
+        "Yuxuan Liang"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01019",
+      "pdf_url": "https://arxiv.org/pdf/2610.01019",
+      "code_url": "https://github.com/Alexander-wu/FutureWorlds",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出FutureWorlds：以多模态离散自回归模型为基础，用多样性束搜索构造候选未来，配候选专属有界记忆与MemSPO优化，在三个机器人数据集上显著降低32帧预测LPIPS。",
+      "change_zh": "常见世界模型多拟合单一未来或用单轨迹奖励；本文改为在强化学习中用多样性束搜索生成多个候选未来，以候选专属有界记忆维护各自历史，并将视频轨迹奖励转为组相对优势学习孰优孰劣，使比较式信号可规模化。",
+      "why_it_matters": "世界模型是收录核心线，本文提升动作条件预测的长时一致性与运动准确性；其比较式学习与候选记忆机制可迁移到UAV搜索与ObjectNav中的想象式规划，帮助智能体在行动前评估多种探索或接近策略的后果。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-02T16:09:29.720337+00:00"
+    },
+    {
       "id": "2609.40208",
       "arxiv_id": "2609.40208",
       "title": "Centralized Multi-UAV Exploration and 3D Reconstruction Using Single-UAV Planners",
@@ -6643,6 +6861,177 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.02117",
+      "arxiv_id": "2610.02117",
+      "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+      "authors": [
+        "Sophia Sirko-Galouchenko",
+        "Monika Wysoczanska",
+        "Andrei Bursuc",
+        "Nicolas Thome",
+        "Spyros Gidaris"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.02117",
+      "pdf_url": "https://arxiv.org/pdf/2610.02117",
+      "code_url": "https://github.com/sirkosophia/Where-OPD",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/199f2d99c40d05d44066f67e27ca89a2db06a6ee",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出空间引导的在策自蒸馏方法：教师利用程序化合成场景中自动生成的物体身份与空间坐标作为特权信息定位多区域证据，学生仅凭图像与问题复现行为，免标注后训练并在真实感知基准上取得泛化提升。",
+      "change_zh": "常见特权蒸馏依赖视觉裁剪缩放、人工grounding标注或外部教师模型；本文改用合成场景自动生成的文本化空间定位信息作为教师特权信号，实现免标注、可扩展的MLLM后训练，并展示超出训练分布的合成到真实迁移。",
+      "why_it_matters": "作为MLLM新训练方法属核心收录：免标注获得更强的细粒度感知与空间定位能力，可为UAV目标搜索与ObjectNav中以MLLM为核心的感知定位模块提供更可靠的目标识别与多区域证据整合，其合成到真实迁移范式也降低空域与室内数据获取成本。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-02T16:08:10.828815+00:00"
+    },
+    {
+      "id": "2610.01105",
+      "arxiv_id": "2610.01105",
+      "title": "Extreme Length Generalization in a Compact Recurrent Architecture for One-Shot Exploration",
+      "authors": [
+        "Izen Thornton",
+        "Aaron Shey",
+        "William Su"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01105",
+      "pdf_url": "https://arxiv.org/pdf/2610.01105",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FRANK是507K参数的紧凑循环架构，融合tau门控循环模块、内容寻址记忆与前馈反射通路，在序列任务上实现十万倍于训练长度的外推，并可驱动实物地面车导航。",
+      "change_zh": "相比靠扩展上下文窗口或增大模型规模的主流长程路线，FRANK以仅507K参数的模块化组合换取十万倍长度外推，并用损伤实验揭示循环、记忆、反射三通路随任务分配，而非笼统堆叠记忆模块。",
+      "why_it_matters": "UAV目标搜索与ObjectNav等长航程任务机载算力固定、任务时长远超训练轨迹，FRANK的记忆驱动长度外推为低算力长时探索策略提供可行路径，其仿真到实物到点导航也初步验证了sim2real潜力。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "waypoint"
+      ],
+      "added_at": "2026-10-02T16:08:44.032204+00:00"
+    },
+    {
+      "id": "2610.01863",
+      "arxiv_id": "2610.01863",
+      "title": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+      "authors": [
+        "Zhening Huang",
+        "Yueyan Li",
+        "Johnathan Chiu",
+        "Xiaoyang Lyu",
+        "Matt Zhou",
+        "Yuxin Yao",
+        "Joan Lasenby",
+        "Shangzhe Wu"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01863",
+      "pdf_url": "https://arxiv.org/pdf/2610.01863",
+      "code_url": "https://github.com/LiteReality/LiteReality-Agent/",
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该系统将RGB-D室内重建表述为编码问题，智能体调用专用工具迭代编辑Room.py脚本，经观察-编辑-验证流程生成可交互、可仿真的三维数字孪生，优于Astra、Fable等前沿模型。",
+      "change_zh": "常见路线多靠端到端生成或重建网络一次输出场景；该工作改为让编码智能体迭代编写可执行的Room.py，用工具完成测量、校验与布局优化，以观察-编辑-验证闭环逐步修正，产出可编辑、可仿真的程序化数字孪生。",
+      "why_it_matters": "real-to-sim可交互仿真场景是ObjectNav等具身任务训练评测的基础设施，能提供可导航网格与关节化资产；其工具化观察-编辑-验证闭环，对UAV目标搜索等需可靠质控的具身智能体也有借鉴意义。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "3d scene",
+        "agentic"
+      ],
+      "added_at": "2026-10-02T16:13:25.592368+00:00"
+    },
+    {
+      "id": "2610.01614",
+      "arxiv_id": "2610.01614",
+      "title": "Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",
+      "authors": [
+        "Xindi Yang",
+        "Baolu Li",
+        "Liam Lee",
+        "Zhenfei Yin",
+        "Songxin Zhang",
+        "Zhuoyang Song",
+        "Xu Jia",
+        "Jianfei Cai",
+        "Tien-Tsin Wong",
+        "Bingyi Jing",
+        "Mengyue Yang"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01614",
+      "pdf_url": "https://arxiv.org/pdf/2610.01614",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Oneira是一个交互式视频世界模型，通过编码智能体维护可扩展的世界状态表，实现生成与交互的闭环，支持对新生成物体的直接交互及长时程状态持久化。",
+      "change_zh": "常见视频世界模型以端到端生成为主，交互多为瞬时视觉特效；Oneira引入由编码智能体维护的显式世界状态表，将新发现实体纳入可操作集合，把交互结果写回状态并跨段保持，再以状态渲染的粗条件视频引导生成。",
+      "why_it_matters": "对世界模型技术线，Oneira将显式可扩展状态引入生成式世界，为可持续探索、状态持久的交互模拟环境提供范式，有望成为ObjectNav与UAV目标搜索策略的可扩展训练评测世界，摘要未涉及真机验证。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "world model"
+      ],
+      "added_at": "2026-10-02T16:14:11.261379+00:00"
+    },
+    {
       "id": "2609.39611",
       "arxiv_id": "2609.39611",
       "title": "Towards Agile Vision-Based Multi-UAV Flight: Revisiting State Estimation",
@@ -7967,6 +8356,45 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.01959",
+      "arxiv_id": "2610.01959",
+      "title": "Training-Free Diffusion Planning with Analytical Local Scores",
+      "authors": [
+        "Michael Y. Fatemi",
+        "Jinhao Liang",
+        "Ferdinando Fioretto"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01959",
+      "pdf_url": "https://arxiv.org/pdf/2610.01959",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免训练的扩散运动规划器，用由避障、平滑、速度与智能体间可行性项导出的解析局部得分替代学习式全局轨迹得分，利用相邻路标点与邻近约束的局部交互重构得分，高效生成平滑无碰的多机轨迹。",
+      "change_zh": "常见扩散规划器需在大量可行轨迹上训练，且与地图绑定、难以在新环境部署；本文利用轨迹得分可由局部交互重构这一观察，以解析局部得分替换学习得分，使去噪过程分解，既保留经典轨迹优化的结构又继承扩散的迭代精炼，摆脱数据依赖。",
+      "why_it_matters": "轨迹/运动规划是机器人自主核心能力。免训练、无演示数据依赖使该规划器可即插即用地迁移到新环境，对UAV搜救侦察中的平滑无碰轨迹生成与大规模集群协同规划有直接实用价值，并将经典轨迹优化与生成式扩散规划在理论上打通。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agent planning",
+        "motion planning",
+        "waypoint"
+      ],
+      "added_at": "2026-10-02T16:11:00.826242+00:00"
     },
     {
       "id": "2609.39854",
@@ -11093,6 +11521,44 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.01573",
+      "arxiv_id": "2610.01573",
+      "title": "LiDARFlow: Real-Time Panel-Based MAV Guidance in Unknown Environments",
+      "authors": [
+        "João Machado",
+        "Zeynep Bilgin",
+        "Matthieu Verdoucq",
+        "Murat Bronz"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01573",
+      "pdf_url": "https://arxiv.org/pdf/2610.01573",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出仅用机载LiDAR的微型无人机实时制导算法LiDARFlow，将源自势流理论的面板法扩展到未知环境，在线构建障碍物表示并生成平滑无碰制导向量场，经室内真机飞行在航点导航与定向制导两种场景验证其轻量性与实时性。",
+      "change_zh": "相比常见的人工势场/采样式局部避障路线，该文将源自空气动力学的面板势流方法扩展到未知环境，用机载LiDAR在线构造并更新障碍面板，直接输出解析平滑的避障向量，计算轻量；但摘要未提供与主流避障规划方法的定量对比。",
+      "why_it_matters": "对空域自主线有直接价值：搜救、侦察等UAV主动目标搜索需在杂乱未知环境中机载实时避障，该轻量解析向量场方案不依赖全局地图与重型计算，可与目标搜索高层决策叠加，提升无人机安全接近目标的能力。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "aerial",
+        "waypoint"
+      ],
+      "added_at": "2026-10-02T16:10:36.558818+00:00"
+    },
+    {
       "id": "2609.37889",
       "arxiv_id": "2609.37889",
       "title": "ReCAP: Retrieval-Guided Capability Reuse for Multimodal Continual Instruction Tuning",
@@ -13720,16 +14186,96 @@
     }
   ],
   "briefing": {
-    "text": "今日入库聚焦部分可观测条件下的主动感知与目标搜索：当目标表观尺度小、观测代价高时，如何在线决定“看向哪里”。本期最值得读的是《Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability》，它将高空无人机PTZ相机的探测序列建模为POMDP并用POMCP在线求解，把检测可靠性显式条件化于目标尺度、辅以选择性集成检测，在逼真仿真中以更少步数发现稀疏地面目标，这一“感知可靠性入规划”的建模思路可迁移到搜救等主动视觉任务。趋势上看，把感知不确定性写进规划闭环、而非单纯堆叠检测器，正成为具身搜索类工作的主流路径。",
-    "added": 1,
-    "at": "2026-10-02T10:43:13.998172+00:00",
+    "text": "这批论文有两条主线：世界模型走向持续演算与交互，导航侧主攻执行、观测与轻量化。首推三篇：EIDA用执行数据拟合接口动态并更新轻量仿真器，补齐sim2real中最易被忽视的执行层失配，真机Go2上成功率大幅提升；UniTrackPLA以单策略统一指令导航与动态人物跟踪，并随文发布含真机数据的OmniTrackNav-Bench，评测可直接对标；World Observer持续演算离开视野的物体状态，补上导航长期记忆的缺口。整体看，记忆持久性与执行接口保真，正取代策略结构创新成为本批工作共同的发力点。",
+    "added": 11,
+    "at": "2026-10-02T16:17:28.131612+00:00",
     "new": [
       {
-        "t": "Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability",
-        "u": "https://arxiv.org/abs/2610.01067",
-        "r": 10,
+        "t": "Managing Context and Communication in Distributed Agentic UAV Swarms",
+        "u": "https://arxiv.org/abs/2610.01569",
+        "r": 8,
         "g": 7,
-        "s": "针对高空无人机因目标表观尺度小而难以观测的问题，将PTZ相机的在线探测序列建模为POMDP，用POMCP求解，感知可靠性条件化于目标尺度并引入选择性集成检测，在逼真仿真中以更少步数发现地面目标。",
+        "s": "该文提出全分布式无人机集群智能体架构：每架无人机由本地小语言模型经事件驱动的推理-行动-观察循环持续控制，运行知识以结构化原子笔记分层存入核心、本地与对端记忆，并由确定性的兴趣感知gossip引擎按语义新颖性与时效性选择性传播。",
+        "c": ""
+      },
+      {
+        "t": "EIDA: Execution-Interface Dynamics Adaptation for Real-to-Sim-to-Real Robot Navigation",
+        "u": "https://arxiv.org/abs/2610.01219",
+        "r": 9,
+        "g": 8,
+        "s": "EIDA从目标平台执行数据拟合机体位姿增量与速度反馈模型并更新轻量GPU仿真器，使导航策略适配真实执行接口动态，在Jackal/Go2仿真与真机Go2上大幅提升导航成功率。",
+        "c": ""
+      },
+      {
+        "t": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+        "u": "https://arxiv.org/abs/2610.02117",
+        "r": 7,
+        "g": 7,
+        "s": "提出空间引导的在策自蒸馏方法：教师利用程序化合成场景中自动生成的物体身份与空间坐标作为特权信息定位多区域证据，学生仅凭图像与问题复现行为，免标注后训练并在真实感知基准上取得泛化提升。",
+        "c": "https://github.com/sirkosophia/Where-OPD"
+      },
+      {
+        "t": "Extreme Length Generalization in a Compact Recurrent Architecture for One-Shot Exploration",
+        "u": "https://arxiv.org/abs/2610.01105",
+        "r": 7,
+        "g": 8,
+        "s": "FRANK是507K参数的紧凑循环架构，融合tau门控循环模块、内容寻址记忆与前馈反射通路，在序列任务上实现十万倍于训练长度的外推，并可驱动实物地面车导航。",
+        "c": ""
+      },
+      {
+        "t": "FutureWorlds: Learning Robotic World Models from Alternative Futures",
+        "u": "https://arxiv.org/abs/2610.01019",
+        "r": 7,
+        "g": 8,
+        "s": "提出FutureWorlds：以多模态离散自回归模型为基础，用多样性束搜索构造候选未来，配候选专属有界记忆与MemSPO优化，在三个机器人数据集上显著降低32帧预测LPIPS。",
+        "c": "https://github.com/Alexander-wu/FutureWorlds"
+      },
+      {
+        "t": "UniTrackPLA: Unified Panorama-Language-Action Model for Instruction-Guided Navigation and Dynamic Person Tracking",
+        "u": "https://arxiv.org/abs/2610.00878",
+        "r": 9,
+        "g": 8,
+        "s": "UniTrackPLA提出统一的全景-语言-动作模型，用全景感知编码让透视预训练编码器处理全向观测，结合世界-动作一致性在线校验与重规划，以单一策略完成指令引导导航与动态人物跟踪，并发布含真机数据的OmniTrackNav-Bench基准。",
+        "c": ""
+      },
+      {
+        "t": "LiDARFlow: Real-Time Panel-Based MAV Guidance in Unknown Environments",
+        "u": "https://arxiv.org/abs/2610.01573",
+        "r": 7,
+        "g": 6,
+        "s": "该文提出仅用机载LiDAR的微型无人机实时制导算法LiDARFlow，将源自势流理论的面板法扩展到未知环境，在线构建障碍物表示并生成平滑无碰制导向量场，经室内真机飞行在航点导航与定向制导两种场景验证其轻量性与实时性。",
+        "c": ""
+      },
+      {
+        "t": "Training-Free Diffusion Planning with Analytical Local Scores",
+        "u": "https://arxiv.org/abs/2610.01959",
+        "r": 7,
+        "g": 7,
+        "s": "提出免训练的扩散运动规划器，用由避障、平滑、速度与智能体间可行性项导出的解析局部得分替代学习式全局轨迹得分，利用相邻路标点与邻近约束的局部交互重构得分，高效生成平滑无碰的多机轨迹。",
+        "c": ""
+      },
+      {
+        "t": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
+        "u": "https://arxiv.org/abs/2610.02162",
+        "r": 9,
+        "g": 7,
+        "s": "提出World Observer，通过联合生成主角视角与全景观察者，让视频世界模型持续演算离开主角视野的物体状态，重入视野时更新其状态，并配套世界空间度量与真实和合成场景基准。",
+        "c": ""
+      },
+      {
+        "t": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+        "u": "https://arxiv.org/abs/2610.01863",
+        "r": 7,
+        "g": 7,
+        "s": "该系统将RGB-D室内重建表述为编码问题，智能体调用专用工具迭代编辑Room.py脚本，经观察-编辑-验证流程生成可交互、可仿真的三维数字孪生，优于Astra、Fable等前沿模型。",
+        "c": "https://github.com/LiteReality/LiteReality-Agent/"
+      },
+      {
+        "t": "Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",
+        "u": "https://arxiv.org/abs/2610.01614",
+        "r": 8,
+        "g": 6,
+        "s": "Oneira是一个交互式视频世界模型，通过编码智能体维护可扩展的世界状态表，实现生成与交互的闭环，支持对新生成物体的直接交互及长时程状态持久化。",
         "c": ""
       }
     ]
