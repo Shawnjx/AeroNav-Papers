@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T17:08:27.604847+00:00",
+  "updated_at": "2026-10-02T10:42:48.575528+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -973,6 +973,44 @@
         "instruction"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.01067",
+      "arxiv_id": "2610.01067",
+      "title": "Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability",
+      "authors": [
+        "Ashik E Rasul",
+        "Hyung-Jin Yoon"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01067",
+      "pdf_url": "https://arxiv.org/pdf/2610.01067",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对高空无人机因目标表观尺度小而难以观测的问题，将PTZ相机的在线探测序列建模为POMDP，用POMCP求解，感知可靠性条件化于目标尺度并引入选择性集成检测，在逼真仿真中以更少步数发现地面目标。",
+      "change_zh": "常见主动目标搜索依赖飞行器移动改变观测位姿，但城市空域管制限制机动；该工作改用机载PTZ变焦作为主动感知动作，将POMCP的感知可靠性条件化于目标尺度，并以按需触发的多模型集成检测替代单次检测。",
+      "why_it_matters": "直接命中UAV主动目标搜索的核心难题：高空小目标发现是搜救侦察的关键瓶颈，其尺度条件化信念规划与按需昂贵检测的思路可迁移到ObjectNav式开放词汇目标发现，也为受限空域下无人机目标发现与接近提供了可行方案。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "target search",
+        "uav"
+      ],
+      "added_at": "2026-10-02T10:42:12.771868+00:00"
     },
     {
       "id": "2609.37055",
@@ -13682,48 +13720,16 @@
     }
   ],
   "briefing": {
-    "text": "本批工作把具身导航从感知推理推向记忆、奖励与协同层面的可靠决策。首推Spatial-OPSD：免标签自蒸馏把深度、相机几何等空间先验蒸入VLM，支持多轮递归自提升；多智能体VLN方面，MAVLN用145场景、11724条轨迹与TRISS基线把协作形式化为资源约束问题，定义了新赛道；SafeVantage为记忆保留论断的支持视角，按决策损失期望选点并以Abstain控险。趋势是从感知精度转向决策可靠性与多体协作。",
-    "added": 5,
-    "at": "2026-10-01T17:10:14.299744+00:00",
+    "text": "今日入库聚焦部分可观测条件下的主动感知与目标搜索：当目标表观尺度小、观测代价高时，如何在线决定“看向哪里”。本期最值得读的是《Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability》，它将高空无人机PTZ相机的探测序列建模为POMDP并用POMCP在线求解，把检测可靠性显式条件化于目标尺度、辅以选择性集成检测，在逼真仿真中以更少步数发现稀疏地面目标，这一“感知可靠性入规划”的建模思路可迁移到搜救等主动视觉任务。趋势上看，把感知不确定性写进规划闭环、而非单纯堆叠检测器，正成为具身搜索类工作的主流路径。",
+    "added": 1,
+    "at": "2026-10-02T10:43:13.998172+00:00",
     "new": [
       {
-        "t": "Spatial-OPSD: Self-Improving Spatial Reasoning via Label-Free Self-Distillation",
-        "u": "https://arxiv.org/abs/2609.37055",
-        "r": 9,
-        "g": 8,
-        "s": "该文提出免标签自蒸馏框架Spatial-OPSD：教师模型获取深度、重建三维关系与相机几何等空间先验，学生仅看原始输入并在自采样轨迹上受稠密token级监督，经多轮递归训练持续自我提升VLM的空间推理能力。",
-        "c": "https://github.com/vermouth599/Spatial-OPSD"
-      },
-      {
-        "t": "ProgressCompass: Embodied Progress Reward Models Are Lost Without the Right Context",
-        "u": "https://arxiv.org/abs/2609.36684",
-        "r": 6,
+        "t": "Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability",
+        "u": "https://arxiv.org/abs/2610.01067",
+        "r": 10,
         "g": 7,
-        "s": "本文针对具身进度奖励模型的上下文依赖进度估计问题：24任务操作基准配对诊断显示现有PRM缺上下文即迷失；智能体环用VLM为冻结PRM补上下文，进度误差降63%。",
-        "c": ""
-      },
-      {
-        "t": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
-        "u": "https://arxiv.org/abs/2609.35965",
-        "r": 9,
-        "g": 8,
-        "s": "该文将多智能体视觉语言导航形式化为带依赖与资源约束的协同问题，构建含145场景、11724条轨迹的MAVLN基准，并提出结合LLM调度、共享拓扑记忆与冲突消解执行的TRISS基线系统。",
-        "c": ""
-      },
-      {
-        "t": "SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions",
-        "u": "https://arxiv.org/abs/2609.36906",
-        "r": 8,
-        "g": 8,
-        "s": "提出视点感知语义记忆与主动采集框架，保留每个论断的支持视角、位姿与目标位置估计，用学习的可观测性模型按决策损失期望下降选视角，校准后输出Yes/No/Abstain，在ProcTHOR等基准上显著提升宏F1并降低风险。",
-        "c": ""
-      },
-      {
-        "t": "ChronoSRL: Temporal Geometry for Self-Supervised Reinforcement Learning",
-        "u": "https://arxiv.org/abs/2609.36238",
-        "r": 6,
-        "g": 7,
-        "s": "为自监督RL的critic嵌入赋予时间几何，令状态-目标嵌入距离匹配到达时间，结合生存RL预测到达时间分布与停留时长；在七个运动导航基准及四足sim-to-real任务上超越基线。",
+        "s": "针对高空无人机因目标表观尺度小而难以观测的问题，将PTZ相机的在线探测序列建模为POMDP，用POMCP求解，感知可靠性条件化于目标尺度并引入选择性集成检测，在逼真仿真中以更少步数发现地面目标。",
         "c": ""
       }
     ]

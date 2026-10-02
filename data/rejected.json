@@ -1902,5 +1902,13 @@
     "reason": "论文核心任务与评测均为机械臂对门、抽屉等铰接物体的操作（PartManip、ArticuRiddle），属范围明确排除的机械臂操作类工作且不含导航决策成分，主动感知仅是其内部机制而非任务本身。",
     "rejected_at": "2026-10-01",
     "url": "https://arxiv.org/abs/2609.36553"
+  },
+  "2610.01185": {
+    "title": "AFD-CAMLs: Agile Force-Distribution-Aware Planning and Control for Cable-Suspended Aerial Multi-Lifting Systems",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "该工作属多无人机缆索吊挂运输的力分配规划与控制，不含导航决策成分，且为细分应用系统而非社区公认的高影响力通用规划/控制工作，与UAV目标搜索、空域/地面VLN及ObjectNav等核心收录线无关联。",
+    "rejected_at": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.01185"
   }
 }
