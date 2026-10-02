@@ -1942,5 +1942,13 @@
     "reason": "该工作属于科学文献检索这一学术工具垂直领域的评测基准，与空间智能、导航、机器人及通用智能体能力本身的显著进展均无关，属范围外应用。",
     "rejected_at": "2026-10-02",
     "url": "https://arxiv.org/abs/2610.02202"
+  },
+  "2609.38637": {
+    "title": "Template-Search Domain Adaptation via Multi-Stage Feature Alignment for Cross-Modal Object Tracking",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该文为纯视觉跨模态目标跟踪的域自适应研究，属感知/跟踪方向，无导航决策、主动搜索或具身交互成分，仅以Anti-UAV-024补充实验擦边UAV应用，属收录范围外。",
+    "rejected_at": "2026-10-02",
+    "url": "https://arxiv.org/abs/2609.38637"
   }
 }

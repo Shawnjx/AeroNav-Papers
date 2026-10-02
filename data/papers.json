@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T16:14:14.261847+00:00",
+  "updated_at": "2026-10-02T21:11:50.977081+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1729,6 +1729,51 @@
         "vlm"
       ],
       "added_at": "2026-09-30T10:25:54.392829+00:00"
+    },
+    {
+      "id": "2609.38537",
+      "arxiv_id": "2609.38537",
+      "title": "Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies",
+      "authors": [
+        "Galbot Team",
+        "Xuchuan Chen",
+        "Xiaoqian Cheng",
+        "Yu Deng",
+        "Lihe Ding",
+        "Shaocong Dong",
+        "Xiangjun Gao",
+        "Haozhe Jia",
+        "Zekai Li",
+        "Zhoujian Li",
+        "Yunrui Lian",
+        "Sikai Liang"
+      ],
+      "published": "2026-09-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.38537",
+      "pdf_url": "https://arxiv.org/pdf/2609.38537",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文系统性评测GPT-6 Astra作为通用具身策略的能力，覆盖抓取、灵巧手、移动操作、导航、运动与人形操控六域，发现其任务决策有用但物理控制不可靠且延迟高。",
+      "change_zh": "相比将大模型仅作高层规划的常见路线，本文系统检验其直接输出低层连续动作、与学习策略（如π0.5）混合控制及反馈自适应的能力，并量化token与延迟开销，揭示决策有用与控制可靠间的鸿沟。",
+      "why_it_matters": "导航评测直接覆盖HM3D目标搜索与RxR指令跟随，为ObjectNav与地面VLN提供前沿多模态大模型的系统基线与绕路、延迟分析；对UAV主动目标搜索可借鉴其大模型直接驱动与混合控制范式的可行性及局限。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "instruction following"
+      ],
+      "added_at": "2026-10-02T21:11:47.976555+00:00"
     },
     {
       "id": "2609.34759",
@@ -4268,6 +4313,45 @@
         "vlm"
       ],
       "added_at": "2026-10-01T10:54:39.171871+00:00"
+    },
+    {
+      "id": "2609.38640",
+      "arxiv_id": "2609.38640",
+      "title": "Yggdrasil: a Layer-First 3D Scene Graph for Real-Time Querying",
+      "authors": [
+        "Arshia Akhavan",
+        "Ermanno Bartoli",
+        "Afnan Algharbi",
+        "Alireza Hoseinpur",
+        "Iolanda Leite",
+        "Bryan Donyanavard"
+      ],
+      "published": "2026-09-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.38640",
+      "pdf_url": "https://arxiv.org/pdf/2609.38640",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Yggdrasil提出首个兼顾生成与消费效率的层优先3D场景图，原生回答下游位置与语义查询，查询仅2-127微秒、较DSG基线快121倍，已集成到目标导航等三条管线。",
+      "change_zh": "该工作把焦点从场景图生成质量转向消费效率：层优先的通用节点/边/层结构统一室内外、扁平或分层表示，原生支持实时位置与语义查询，将延迟压入感知循环的微秒级预算，并消除已发布管线中99%的图处理耗时。",
+      "why_it_matters": "它为空间智能的3D场景图提供可实时消费的底层表示，直接服务ObjectNav等下游导航任务的查询需求，且在嵌入式设备达标，为UAV机载主动目标搜索中场景图的在线构建与低延迟查询提供了基础设施。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "motion planning"
+      ],
+      "added_at": "2026-10-02T21:10:20.244397+00:00"
     },
     {
       "id": "2609.35570",
@@ -8477,6 +8561,42 @@
         "vlm"
       ],
       "added_at": "2026-10-01T11:06:52.142567+00:00"
+    },
+    {
+      "id": "2609.38743",
+      "arxiv_id": "2609.38743",
+      "title": "Learning to Route in Visual Space via Multi-Step Embedding Retrieval",
+      "authors": [
+        "Tianyu Chen",
+        "Mingyuan Zhou",
+        "Jiaxin Wu"
+      ],
+      "published": "2026-09-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2609.38743",
+      "pdf_url": "https://arxiv.org/pdf/2609.38743",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出VHOP基准与VHOP-Router，经SFT、在线模仿与强化学习将嵌入模型变为视觉潜空间自回归多步检索器，单次调用取回链式图像，使智能体视觉搜索成功率与开销显著改善。",
+      "change_zh": "相比常见的让LLM智能体逐步生成文本查询、反复调用单步检索器的路线，本文把多步搜索规划从智能体端下沉到嵌入检索工具内部，直接在视觉潜空间自回归地检索链式图像，一次调用完成多跳搜索。",
+      "why_it_matters": "属多模态智能体工具使用的前沿进展：把检索工具从单步升级为可规划的视觉多步检索器，对智能体社区有直接价值；与UAV目标搜索、ObjectNav无直接物理导航关联，但潜空间链式检索思路可启发视觉记忆检索。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "llm agent"
+      ],
+      "added_at": "2026-10-02T21:11:12.739685+00:00"
     },
     {
       "id": "2609.38054",
@@ -14186,96 +14306,32 @@
     }
   ],
   "briefing": {
-    "text": "这批论文有两条主线：世界模型走向持续演算与交互，导航侧主攻执行、观测与轻量化。首推三篇：EIDA用执行数据拟合接口动态并更新轻量仿真器，补齐sim2real中最易被忽视的执行层失配，真机Go2上成功率大幅提升；UniTrackPLA以单策略统一指令导航与动态人物跟踪，并随文发布含真机数据的OmniTrackNav-Bench，评测可直接对标；World Observer持续演算离开视野的物体状态，补上导航长期记忆的缺口。整体看，记忆持久性与执行接口保真，正取代策略结构创新成为本批工作共同的发力点。",
-    "added": 11,
-    "at": "2026-10-02T16:17:28.131612+00:00",
+    "text": "今日三篇沿“场景表示—视觉检索—通用策略”覆盖具身导航全链路。首推 Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies，其跨六域的评测给出“任务决策可用、物理控制不可靠且延迟高”的明确结论，为通用模型落地划出边界；其次 Yggdrasil: a Layer-First 3D Scene Graph for Real-Time Querying 将场景图查询压至2-127微秒、较DSG基线快121倍，且已接入目标导航等三条管线，工程可用性强；Learning to Route in Visual Space via Multi-Step Embedding Retrieval 则经SFT与强化学习把嵌入模型改造成视觉潜空间自回归检索器，单次调用取回链式图像，降低搜索开销。趋势上，“微秒级场景查询+通用模型负责决策”的分层架构正在导航系统中成形。",
+    "added": 3,
+    "at": "2026-10-02T21:12:29.494525+00:00",
     "new": [
       {
-        "t": "Managing Context and Communication in Distributed Agentic UAV Swarms",
-        "u": "https://arxiv.org/abs/2610.01569",
+        "t": "Yggdrasil: a Layer-First 3D Scene Graph for Real-Time Querying",
+        "u": "https://arxiv.org/abs/2609.38640",
         "r": 8,
-        "g": 7,
-        "s": "该文提出全分布式无人机集群智能体架构：每架无人机由本地小语言模型经事件驱动的推理-行动-观察循环持续控制，运行知识以结构化原子笔记分层存入核心、本地与对端记忆，并由确定性的兴趣感知gossip引擎按语义新颖性与时效性选择性传播。",
+        "g": 8,
+        "s": "Yggdrasil提出首个兼顾生成与消费效率的层优先3D场景图，原生回答下游位置与语义查询，查询仅2-127微秒、较DSG基线快121倍，已集成到目标导航等三条管线。",
         "c": ""
       },
       {
-        "t": "EIDA: Execution-Interface Dynamics Adaptation for Real-to-Sim-to-Real Robot Navigation",
-        "u": "https://arxiv.org/abs/2610.01219",
+        "t": "Learning to Route in Visual Space via Multi-Step Embedding Retrieval",
+        "u": "https://arxiv.org/abs/2609.38743",
+        "r": 7,
+        "g": 7,
+        "s": "提出VHOP基准与VHOP-Router，经SFT、在线模仿与强化学习将嵌入模型变为视觉潜空间自回归多步检索器，单次调用取回链式图像，使智能体视觉搜索成功率与开销显著改善。",
+        "c": ""
+      },
+      {
+        "t": "Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies",
+        "u": "https://arxiv.org/abs/2609.38537",
         "r": 9,
         "g": 8,
-        "s": "EIDA从目标平台执行数据拟合机体位姿增量与速度反馈模型并更新轻量GPU仿真器，使导航策略适配真实执行接口动态，在Jackal/Go2仿真与真机Go2上大幅提升导航成功率。",
-        "c": ""
-      },
-      {
-        "t": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
-        "u": "https://arxiv.org/abs/2610.02117",
-        "r": 7,
-        "g": 7,
-        "s": "提出空间引导的在策自蒸馏方法：教师利用程序化合成场景中自动生成的物体身份与空间坐标作为特权信息定位多区域证据，学生仅凭图像与问题复现行为，免标注后训练并在真实感知基准上取得泛化提升。",
-        "c": "https://github.com/sirkosophia/Where-OPD"
-      },
-      {
-        "t": "Extreme Length Generalization in a Compact Recurrent Architecture for One-Shot Exploration",
-        "u": "https://arxiv.org/abs/2610.01105",
-        "r": 7,
-        "g": 8,
-        "s": "FRANK是507K参数的紧凑循环架构，融合tau门控循环模块、内容寻址记忆与前馈反射通路，在序列任务上实现十万倍于训练长度的外推，并可驱动实物地面车导航。",
-        "c": ""
-      },
-      {
-        "t": "FutureWorlds: Learning Robotic World Models from Alternative Futures",
-        "u": "https://arxiv.org/abs/2610.01019",
-        "r": 7,
-        "g": 8,
-        "s": "提出FutureWorlds：以多模态离散自回归模型为基础，用多样性束搜索构造候选未来，配候选专属有界记忆与MemSPO优化，在三个机器人数据集上显著降低32帧预测LPIPS。",
-        "c": "https://github.com/Alexander-wu/FutureWorlds"
-      },
-      {
-        "t": "UniTrackPLA: Unified Panorama-Language-Action Model for Instruction-Guided Navigation and Dynamic Person Tracking",
-        "u": "https://arxiv.org/abs/2610.00878",
-        "r": 9,
-        "g": 8,
-        "s": "UniTrackPLA提出统一的全景-语言-动作模型，用全景感知编码让透视预训练编码器处理全向观测，结合世界-动作一致性在线校验与重规划，以单一策略完成指令引导导航与动态人物跟踪，并发布含真机数据的OmniTrackNav-Bench基准。",
-        "c": ""
-      },
-      {
-        "t": "LiDARFlow: Real-Time Panel-Based MAV Guidance in Unknown Environments",
-        "u": "https://arxiv.org/abs/2610.01573",
-        "r": 7,
-        "g": 6,
-        "s": "该文提出仅用机载LiDAR的微型无人机实时制导算法LiDARFlow，将源自势流理论的面板法扩展到未知环境，在线构建障碍物表示并生成平滑无碰制导向量场，经室内真机飞行在航点导航与定向制导两种场景验证其轻量性与实时性。",
-        "c": ""
-      },
-      {
-        "t": "Training-Free Diffusion Planning with Analytical Local Scores",
-        "u": "https://arxiv.org/abs/2610.01959",
-        "r": 7,
-        "g": 7,
-        "s": "提出免训练的扩散运动规划器，用由避障、平滑、速度与智能体间可行性项导出的解析局部得分替代学习式全局轨迹得分，利用相邻路标点与邻近约束的局部交互重构得分，高效生成平滑无碰的多机轨迹。",
-        "c": ""
-      },
-      {
-        "t": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
-        "u": "https://arxiv.org/abs/2610.02162",
-        "r": 9,
-        "g": 7,
-        "s": "提出World Observer，通过联合生成主角视角与全景观察者，让视频世界模型持续演算离开主角视野的物体状态，重入视野时更新其状态，并配套世界空间度量与真实和合成场景基准。",
-        "c": ""
-      },
-      {
-        "t": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
-        "u": "https://arxiv.org/abs/2610.01863",
-        "r": 7,
-        "g": 7,
-        "s": "该系统将RGB-D室内重建表述为编码问题，智能体调用专用工具迭代编辑Room.py脚本，经观察-编辑-验证流程生成可交互、可仿真的三维数字孪生，优于Astra、Fable等前沿模型。",
-        "c": "https://github.com/LiteReality/LiteReality-Agent/"
-      },
-      {
-        "t": "Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",
-        "u": "https://arxiv.org/abs/2610.01614",
-        "r": 8,
-        "g": 6,
-        "s": "Oneira是一个交互式视频世界模型，通过编码智能体维护可扩展的世界状态表，实现生成与交互的闭环，支持对新生成物体的直接交互及长时程状态持久化。",
+        "s": "本文系统性评测GPT-6 Astra作为通用具身策略的能力，覆盖抓取、灵巧手、移动操作、导航、运动与人形操控六域，发现其任务决策有用但物理控制不可靠且延迟高。",
         "c": ""
       }
     ]
