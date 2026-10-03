@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T09:38:50.485236+00:00",
+  "updated_at": "2026-10-03T14:37:08.081160+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5375,6 +5375,44 @@
       "added_at": "2026-09-05T06:35:42Z"
     },
     {
+      "id": "2203.03397",
+      "arxiv_id": "2203.03397",
+      "title": "OverlapTransformer: An Efficient and Yaw-Angle-Invariant Transformer Network for LiDAR-Based Place Recognition",
+      "authors": [
+        "Junyi Ma",
+        "Jun Zhang",
+        "Jintao Xu",
+        "Rui Ai",
+        "Weihao Gu",
+        "Xieyuanli Chen"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 236,
+      "url": "https://arxiv.org/abs/2203.03397",
+      "pdf_url": "https://arxiv.org/pdf/2203.03397",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出OverlapTransformer，基于LiDAR距离图像的轻量偏航角不变Transformer网络，单帧耗时不足2ms，用于位置识别与SLAM回环检测和全局定位，在KITTI与Ford Campus上对比SOTA验证泛化性，并发布长期场景新数据集。",
+      "change_zh": "相比Scan Context等点云全局描述子或PointNet式编码的常见路线，该方法沿用距离图像表示但引入注意力结构，并借助网络设计天然获得偏航角不变性，无需旋转增广或多视角查询，同时保持毫秒级推理速度并补充长期重复场景数据集。",
+      "why_it_matters": "作为SLAM回环与全局定位的高效方案，直接服务状态估计与控制线，是社区常用的开源基线；对UAV搜救与ObjectNav等长程任务可间接支撑重定位与空间记忆，但论文本身不含导航决策成分，价值以底层自主能力为主。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 21,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-03T14:37:08.081160+00:00"
+    },
+    {
       "id": "https://openalex.org/W4385482704",
       "arxiv_id": "",
       "title": "Photo tourism: exploring photo collections in 3D",
@@ -6272,6 +6310,48 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T18:49:29.317136+00:00"
+    },
+    {
+      "id": "2103.04131",
+      "arxiv_id": "2103.04131",
+      "title": "Omni-Swarm: A Decentralized Omnidirectional Visual–Inertial–UWB State Estimation System for Aerial Swarms",
+      "authors": [
+        "Hao Xu",
+        "Yichen Zhang",
+        "Boyu Zhou",
+        "Luqi Wang",
+        "Xinjie Yao",
+        "Guotao Meng",
+        "Shaojie Shen"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 160,
+      "url": "https://arxiv.org/abs/2103.04131",
+      "pdf_url": "https://arxiv.org/pdf/2103.04131",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出面向GPS拒止环境的无人机集群去中心化全向视觉-惯性-UWB状态估计系统，前端融合宽视场相机、UWB测距、VIO、地图定位与机间视觉跟踪，后端图优化融合，实现厘米级相对定位与全局一致性。",
+      "change_zh": "相比依赖动作捕捉或中心化处理的常见方案，该工作以全向感知前端加图优化后端的去中心化架构，直接解决集群相对状态的能观性、初始化复杂与全局一致性缺失问题，使机间避障无需任何外部设备即可完成。",
+      "why_it_matters": "为GPS拒止环境下无人机集群自主飞行提供核心定位与相对状态估计能力，是多机搜救、侦察与UAV主动目标搜索等上层任务的基础设施；作为社区公认的高影响力系统工作，对机器人自主落地与集群导航研究均有重要参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "drone",
+        "localization",
+        "odometry",
+        "state estimation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-03T14:37:08.081160+00:00"
     },
     {
       "id": "https://openalex.org/W4391676180",
@@ -9424,31 +9504,51 @@
       "rigor": 7,
       "reason": "音频-语言数据集工作，与空间智能、导航、机器人无关，仅将ChatGPT当作垂直数据清洗工具使用，属于范围外应用。",
       "excluded_at": "2026-09-30"
+    },
+    "https://openalex.org/W3156980589": {
+      "title": "Design Strategies for Electrocatalysts from an Electrochemist’s Perspective",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文为电化学催化剂设计策略综述，与具身导航、UAV目标搜索、空间智能、大模型智能体等全部收录技术线均无关联，属范围外论文。",
+      "excluded_at": "2026-10-03"
+    },
+    "https://openalex.org/W3128351668": {
+      "title": "Scientific research on ecosystem services and human well-being: A bibliometric analysis",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "属环境科学领域的文献计量研究，与具身导航、UAV目标搜索、空间智能及机器人自主等全部收录技术线均无关。",
+      "excluded_at": "2026-10-03"
+    },
+    "https://openalex.org/W4396731749": {
+      "title": "Twenty‐first century technologies and language education: Charting a path forward",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "本文是语言教育学视角文章，仅讨论ChatGPT、机器翻译等现成生成式AI工具对语言教学的冲击与应对，不涉及模型或智能体能力本身的进展，也无具身导航、空间智能、机器人相关内容，属范围外应用与评论文。",
+      "excluded_at": "2026-10-03"
     }
   },
-  "last_citation_refresh": "2026-10-02T09:38:50.485236+00:00",
   "briefing": {
-    "text": "本批工作的主线是为导航构建高效环境表征：一端压多机建图的通信开销，一端通语言语义的查询接口。Swarm-SLAM以去中心化稀疏架构支持激光雷达、双目与RGB-D的多机协同SLAM，用机间回环优先级排序降低通信、加速收敛，开源可直接复用，宜作多机系统基线。HOV-SG以视觉基础模型构建楼层/房间/物体开放词汇3D场景图，表征缩小75%仍提升语义精度，并在真实多层建筑完成长程语言导航，其跨层Voronoi规划设计值得细读。趋势上，几何地图正让位于可压缩、可语言查询的语义表征。",
+    "text": "本轮两篇高被引工作都指向具身导航的底层定位能力：在效率、泛化与GPS拒止等约束下完成位置识别与状态估计。OverlapTransformer以LiDAR距离图像构建偏航角不变的轻量Transformer，单帧耗时不足2ms，跨KITTI与Ford Campus验证泛化并附带长期场景数据集，适合作为回环检测与全局定位的强基线。Omni-Swarm面向GPS拒止环境的无人机集群，将全向视觉、UWB测距与VIO经图优化后端融合，实现厘米级去中心化相对定位，是从单体SLAM走向多机协同估计的代表。整体看，定位栈正沿轻量学习化与集群去中心化两条线索并行演进。",
     "added": 2,
-    "at": "2026-09-30T09:35:17.794817+00:00",
+    "at": "2026-10-03T14:37:08.081160+00:00",
     "new": [
       {
-        "t": "Swarm-SLAM: Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
-        "u": "https://arxiv.org/abs/2301.06230",
-        "r": 8,
+        "t": "OverlapTransformer: An Efficient and Yaw-Angle-Invariant Transformer Network for LiDAR-Based Place Recognition",
+        "u": "https://arxiv.org/abs/2203.03397",
+        "r": 6,
         "g": 7,
-        "s": "提出开源、去中心化、稀疏的多机协同SLAM系统Swarm-SLAM，支持激光雷达、双目与RGB-D，并引入机间回环优先级排序技术以减少通信并加速收敛。",
+        "s": "提出OverlapTransformer，基于LiDAR距离图像的轻量偏航角不变Transformer网络，单帧耗时不足2ms，用于位置识别与SLAM回环检测和全局定位，在KITTI与Ford Campus上对比SOTA验证泛化性，并发布长期场景新数据集。",
         "c": "",
-        "cit": 177
+        "cit": 236
       },
       {
-        "t": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
-        "u": "https://arxiv.org/abs/2403.17846",
+        "t": "Omni-Swarm: A Decentralized Omnidirectional Visual–Inertial–UWB State Estimation System for Aerial Swarms",
+        "u": "https://arxiv.org/abs/2103.04131",
         "r": 9,
         "g": 8,
-        "s": "HOV-SG用视觉基础模型构建楼层/房间/物体分层开放词汇3D场景图，以跨层Voronoi图支持多层建筑语言导航，语义精度超基线、表征缩小75%，并在真实多层环境完成长程导航。",
+        "s": "提出面向GPS拒止环境的无人机集群去中心化全向视觉-惯性-UWB状态估计系统，前端融合宽视场相机、UWB测距、VIO、地图定位与机间视觉跟踪，后端图优化融合，实现厘米级相对定位与全局一致性。",
         "c": "",
-        "cit": 112
+        "cit": 160
       }
     ]
   }
