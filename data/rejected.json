@@ -1950,5 +1950,13 @@
     "reason": "该文为纯视觉跨模态目标跟踪的域自适应研究，属感知/跟踪方向，无导航决策、主动搜索或具身交互成分，仅以Anti-UAV-024补充实验擦边UAV应用，属收录范围外。",
     "rejected_at": "2026-10-02",
     "url": "https://arxiv.org/abs/2609.38637"
+  },
+  "2610.01092": {
+    "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "论文属于以自我为中心的操作类视频生成评测，贴近被排除的文生视频与纯操作方向，虽以世界模拟器为框架但任务全为手部操作、无导航决策或空间探索成分，仅术语与范围擦边。",
+    "rejected_at": "2026-10-03",
+    "url": "https://arxiv.org/abs/2610.01092"
   }
 }

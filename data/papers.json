@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T21:11:50.977081+00:00",
+  "updated_at": "2026-10-03T14:35:35.282273+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5483,6 +5483,54 @@
       "added_at": "2026-10-02T16:09:29.720337+00:00"
     },
     {
+      "id": "2610.00854",
+      "arxiv_id": "2610.00854",
+      "title": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
+      "authors": [
+        "Haojian Huang",
+        "Pukun Zhao",
+        "Zexi Li",
+        "Y. Zhang",
+        "Yangkai Wei",
+        "Wenqian Li",
+        "Han Yang",
+        "Kaiwen Zhou",
+        "Ying-Cong Chen",
+        "Yinchuan Li"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.00854",
+      "pdf_url": "https://arxiv.org/pdf/2610.00854",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/d08167852ff6440a1077f103cbefde058b7acca8",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Embodied Agent Arena基准，汇集32个来源的1000个案例与新GeoProbe几何评测，从几何、空间推理、可供性、规划与操作五维评测七个前沿VLM，发现协调的目标导向动作仍是机器人通用化的关键缺口。",
+      "change_zh": "相比常见的单点能力评测或只看端到端任务成功率的做法，该工作以统一竞技场贯通五类能力，并用最小化测试框架区分度量精度、功能接地与原生目标完成，从而定位局部能力与整体任务成功之间的落差。",
+      "why_it_matters": "该评测系统诊断前沿VLM在几何估计与空间推理上的真实水平，直接关系到ObjectNav开放词汇目标理解与UAV目标搜索所需的视觉定位、空间判断与任务规划可靠性，为导航智能体的模型选型与能力边界提供实证依据。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "localization",
+        "spatial reasoning",
+        "task planning",
+        "vlm"
+      ],
+      "added_at": "2026-10-03T14:32:50.799997+00:00"
+    },
+    {
       "id": "2609.40208",
       "arxiv_id": "2609.40208",
       "title": "Centralized Multi-UAV Exploration and 3D Reconstruction Using Single-UAV Planners",
@@ -8481,6 +8529,44 @@
       "added_at": "2026-10-02T16:11:00.826242+00:00"
     },
     {
+      "id": "2610.01093",
+      "arxiv_id": "2610.01093",
+      "title": "OrbitTAMP: Grounding Language Models for Task and Motion Planning in Spacecraft Rendezvous",
+      "authors": [
+        "Yuji Takubo",
+        "Daniele Gammelli",
+        "Marco Pavone",
+        "Simone D'Amico"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.01093",
+      "pdf_url": "https://arxiv.org/pdf/2610.01093",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/cfcec673bbcaef9f874a34bb53d451cbcc6eb8cb",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出OrbitTAMP分层框架，把LLM语义推理经可复用行为图与领域规划模块接地到航天器交会任务与运动规划：LLM输出部分任务规范，规划器补全决策，轨迹优化生成动力学可行轨迹，任务规范精确恢复率达98%。",
+      "change_zh": "相比让LLM直接生成完整计划或轨迹的常见做法，本文让LLM仅输出部分任务规范，剩余决策交由领域规划器在可行空间求解，再经轨迹优化保证动力学可行；并以校验器引导修正与测试时行为计划搜索提升小模型表现。",
+      "why_it_matters": "对规划智能体线直接有价值：展示LLM语义推理与领域规划器、轨迹优化分层接地及校验器修正范式，把不可信的LLM输出约束进动力学可行空间且可审计；该分层思路可迁移至UAV任务规划与语言指令跟随的安全落地。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "motion planning"
+      ],
+      "added_at": "2026-10-03T14:35:32.281875+00:00"
+    },
+    {
       "id": "2609.39854",
       "arxiv_id": "2609.39854",
       "title": "RL-Guided PAC-NMPC for Probabilistically-Safe Perception-Based Navigation in Unknown Environments",
@@ -8597,6 +8683,43 @@
         "llm agent"
       ],
       "added_at": "2026-10-02T21:11:12.739685+00:00"
+    },
+    {
+      "id": "2610.00731",
+      "arxiv_id": "2610.00731",
+      "title": "Measuring Asset and Scene Reconstruction Effects in Real-to-Sim Robot Evaluation",
+      "authors": [
+        "Sanya Verma",
+        "Luca Cilio",
+        "Velissarios Christodoulou"
+      ],
+      "published": "2026-09-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.00731",
+      "pdf_url": "https://arxiv.org/pdf/2610.00731",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文在双臂机器人单元上对照自建高保真重建与默认开源配方对仿真评测的影响，十组任务-策略得分显示自建重建与真实结果的相关系数达0.90（默认0.51），显著缩小仿真-真实差距。",
+      "change_zh": "常见sim2real研究关注把仿真训练迁移到真实；本文反向量化“以仿真代替真实评测”的可靠性，通过对照两种重建流水线，证明度量尺度、手工物理与高保真资产能显著提升仿真评测与真实结果的相关性。",
+      "why_it_matters": "对sim2real与具身评测线有价值：用真实试验校准仿真评测的对照流程与开源资产可迁移到UAV目标搜索、ObjectNav等导航仿真评测，帮助判断仿真结论可信度、缩小评测层面的差距。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "real robot",
+        "real world"
+      ],
+      "added_at": "2026-10-03T14:33:50.425555+00:00"
     },
     {
       "id": "2609.38054",
@@ -14306,32 +14429,32 @@
     }
   ],
   "briefing": {
-    "text": "今日三篇沿“场景表示—视觉检索—通用策略”覆盖具身导航全链路。首推 Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies，其跨六域的评测给出“任务决策可用、物理控制不可靠且延迟高”的明确结论，为通用模型落地划出边界；其次 Yggdrasil: a Layer-First 3D Scene Graph for Real-Time Querying 将场景图查询压至2-127微秒、较DSG基线快121倍，且已接入目标导航等三条管线，工程可用性强；Learning to Route in Visual Space via Multi-Step Embedding Retrieval 则经SFT与强化学习把嵌入模型改造成视觉潜空间自回归检索器，单次调用取回链式图像，降低搜索开销。趋势上，“微秒级场景查询+通用模型负责决策”的分层架构正在导航系统中成形。",
+    "text": "本批工作主线是基础模型在机器人任务中的评测与接地。首推Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena，它以32个来源的千例任务和GeoProbe几何评测横向检验七个前沿VLM，把协调的目标导向动作锁定为通用化关键缺口，等于划出下一步研究靶点；Measuring Asset and Scene Reconstruction Effects in Real-to-Sim Robot Evaluation则回答仿真评测可信度问题，十组任务-策略显示自建高保真重建将仿真与真实得分的相关系数从0.51提升至0.90，做仿真评测的团队应据此重审资产管线。趋势上看，基准与仿真保真这类评测基础设施，正成为具身智能竞争的前置战场。",
     "added": 3,
-    "at": "2026-10-02T21:12:29.494525+00:00",
+    "at": "2026-10-03T14:36:38.483652+00:00",
     "new": [
       {
-        "t": "Yggdrasil: a Layer-First 3D Scene Graph for Real-Time Querying",
-        "u": "https://arxiv.org/abs/2609.38640",
+        "t": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
+        "u": "https://arxiv.org/abs/2610.00854",
         "r": 8,
-        "g": 8,
-        "s": "Yggdrasil提出首个兼顾生成与消费效率的层优先3D场景图，原生回答下游位置与语义查询，查询仅2-127微秒、较DSG基线快121倍，已集成到目标导航等三条管线。",
+        "g": 7,
+        "s": "提出Embodied Agent Arena基准，汇集32个来源的1000个案例与新GeoProbe几何评测，从几何、空间推理、可供性、规划与操作五维评测七个前沿VLM，发现协调的目标导向动作仍是机器人通用化的关键缺口。",
         "c": ""
       },
       {
-        "t": "Learning to Route in Visual Space via Multi-Step Embedding Retrieval",
-        "u": "https://arxiv.org/abs/2609.38743",
+        "t": "Measuring Asset and Scene Reconstruction Effects in Real-to-Sim Robot Evaluation",
+        "u": "https://arxiv.org/abs/2610.00731",
         "r": 7,
         "g": 7,
-        "s": "提出VHOP基准与VHOP-Router，经SFT、在线模仿与强化学习将嵌入模型变为视觉潜空间自回归多步检索器，单次调用取回链式图像，使智能体视觉搜索成功率与开销显著改善。",
+        "s": "本文在双臂机器人单元上对照自建高保真重建与默认开源配方对仿真评测的影响，十组任务-策略得分显示自建重建与真实结果的相关系数达0.90（默认0.51），显著缩小仿真-真实差距。",
         "c": ""
       },
       {
-        "t": "Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies",
-        "u": "https://arxiv.org/abs/2609.38537",
-        "r": 9,
-        "g": 8,
-        "s": "本文系统性评测GPT-6 Astra作为通用具身策略的能力，覆盖抓取、灵巧手、移动操作、导航、运动与人形操控六域，发现其任务决策有用但物理控制不可靠且延迟高。",
+        "t": "OrbitTAMP: Grounding Language Models for Task and Motion Planning in Spacecraft Rendezvous",
+        "u": "https://arxiv.org/abs/2610.01093",
+        "r": 7,
+        "g": 7,
+        "s": "提出OrbitTAMP分层框架，把LLM语义推理经可复用行为图与领域规划模块接地到航天器交会任务与运动规划：LLM输出部分任务规范，规划器补全决策，轨迹优化生成动力学可行轨迹，任务规范精确恢复率达98%。",
         "c": ""
       }
     ]
