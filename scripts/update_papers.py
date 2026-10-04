@@ -153,6 +153,22 @@ def llm_review(p):
     except Exception as e:
         print("LLM fallback:",type(e).__name__);return fallback_review(p)
 
+def deep_review(p):
+    """Second-pass read for featured papers (relevance>=8 only): the 6-field brief
+    (venue comes from S2 enrich, LLM fills the other five). Featured-only keeps the
+    token growth negligible vs reviewing every paper."""
+    if not os.getenv("OPENAI_API_KEY"):return {}
+    try:
+        from openai import OpenAI
+        client=OpenAI(); prompt=f'''只依据题目和摘要，用中文为这篇论文输出JSON，不得补造事实，摘要未提及的信息对应字段写"未提及"。字段：keywords_zh（3-6个关键词，中文或通用英文术语，逗号分隔），question_zh（30-60字，用一句话概括研究问题），innovation_zh（50-90字，核心创新点，说清相对已有方法新在哪），dataset_zh（使用的数据集、仿真环境或真机平台），results_zh（50-100字，实验结果要点，优先引用摘要中的关键数字）。\n题目：{p['title']}\n摘要：{p['abstract']}'''
+        r=client.chat.completions.create(model=os.getenv("OPENAI_MODEL","gpt-4.1-mini"),messages=[{"role":"user","content":prompt}],response_format={"type":"json_object"},temperature=.1)
+        txt=re.sub(r"^```(?:json)?\s*|\s*```$","",r.choices[0].message.content.strip())
+        m=re.search(r"\{.*\}",txt,re.S)
+        d=json.loads(m.group(0) if m else txt)
+        return {k:str(v).strip() for k,v in d.items() if isinstance(v,str) and v.strip() and v.strip()!="未提及"}
+    except Exception as e:
+        print("deep-review skipped:",type(e).__name__);return {}
+
 def main():
     old=json.loads(DATA.read_text(encoding="utf-8")) if DATA.exists() else {"papers":[]}
     existing={p["id"]:p for p in old.get("papers",[]) if not p.get("is_demo")}
@@ -186,6 +202,8 @@ def main():
                 if rev.get(k):p[k]=rev[k]
             if "relevance" in rev:
                 p["relevance_rating"]=rev["relevance"];p["rigor_rating"]=rev["rigor"]
+                if rev["relevance"]>=8:
+                    for k,v in deep_review(p).items():p[k]=v
                 if rev.get("primary_topic"):p["topics"]=[rev["primary_topic"]]
                 p["venue_verified"]=venue_verified(p)
                 p["score"]=rev["relevance"]*2+rev["rigor"]+(2 if p["venue_verified"] else 0)+(1 if code_signal(p) else 0)

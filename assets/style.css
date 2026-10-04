@@ -18,3 +18,12 @@
 .briefing[hidden]{display:none}
 .briefing-tag{flex:none;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--green);background:#e9f0c9;border-radius:99px;padding:5px 10px;margin-top:3px}
 .briefing p{margin:0;font-size:13.5px;line-height:1.85;color:#33413c}
+
+/* featured deep-read block (6-field brief, relevance>=8 papers only) */
+.deep{margin-top:14px;border:1px dashed #cad2cd;background:#fbfaf6;padding:14px 16px}
+.deep-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--orange);margin-bottom:8px}
+.deep dl{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 20px;margin:0}
+.deep dl>div{display:flex;gap:9px;align-items:baseline}
+.deep dt{flex:none;font-size:11px;font-weight:700;color:var(--green)}
+.deep dd{margin:0;font-size:12.5px;line-height:1.6;color:#46534f}
+@media(max-width:800px){.deep dl{grid-template-columns:1fr}}
