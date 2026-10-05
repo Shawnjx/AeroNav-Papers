@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T14:35:35.282273+00:00",
+  "updated_at": "2026-10-05T11:18:19.818707+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -975,6 +975,56 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.02697",
+      "arxiv_id": "2610.02697",
+      "title": "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation",
+      "authors": [
+        "Yixuan Jiang",
+        "Wentong Li",
+        "An Liu",
+        "Zihao Xin",
+        "Fulin Tang",
+        "Cong Leng",
+        "Yang Gao",
+        "Jian Cheng"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.02697",
+      "pdf_url": "https://arxiv.org/pdf/2610.02697",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GeoScaffold训练时用几何查询token重建深度、连通性与可通行性，把3D几何内化进Video-LLM导航主干，推理零额外开销，在连续VLN基准上超越纯视觉方法。",
+      "change_zh": "常见路线靠深度传感器、3D编码器或逐步调用感知工具来补几何，推理时持续付费；本文改为只在训练期通过重建监督把几何内化进策略权重，训练后丢弃脚手架，主干与动作接口不变，推理零开销，利于边缘部署。",
+      "why_it_matters": "对地面VLN直接提升几何推理与部署效率；其训练期一次性内化几何、推理零开销的范式可迁移至UAV主动目标搜索与ObjectNav，两者同样受限于机载/边缘算力且依赖可通行性等几何线索，具参考价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航,几何潜在表示,深度重建,Video-LLM,几何先验,具身导航",
+      "question_zh": "如何在不增加推理时几何感知开销的前提下，将3D几何先验内化到基于RGB的Video-LLM导航策略中？",
+      "innovation_zh": "区别于推理时依赖深度传感器或3D编码器的已有方法，本方法仅在训练时用冻结深度tokenizer和可学习几何查询token，以重建深度、连通性、可通行性为监督，将几何内化为紧凑潜在表示并融入骨干；训练后丢弃全部脚手架，推理零额外开销。",
+      "dataset_zh": "未提及具体数据集或仿真平台名称；摘要仅说明在连续VLN基准上评测，深度tokenizer的训练数据来自训练轨迹的深度图",
+      "results_zh": "摘要未给出具体数字；实验显示GeoScaffold在连续VLN基准上一致优于领先的纯视觉导航方法，且训练后骨干与动作接口保持不变，为空间感知具身导航模型的轻量级边缘部署提供了实用范式。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "geometry",
+        "instruction"
+      ],
+      "added_at": "2026-10-05T11:12:32.064740+00:00"
+    },
+    {
       "id": "2610.01067",
       "arxiv_id": "2610.01067",
       "title": "Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability",
@@ -1501,6 +1551,49 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.03137",
+      "arxiv_id": "2610.03137",
+      "title": "Keeping JEPA World Models Plannable When Little of the Frame Moves",
+      "authors": [
+        "Florian Strohm",
+        "Patrick Wagner",
+        "Jannik Schwab",
+        "Marco Huber"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.03137",
+      "pdf_url": "https://arxiv.org/pdf/2610.03137",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文构建SLIM推动基准，诊断出JEPA式世界模型的编码器潜变量对动作几乎不敏感导致无法规划，用逆动力学辅助损失修复编码器使成功率从0.003升至0.35，并让小型语言目标头免重训世界模型即可从句子规划导航与多阶段推动。",
+      "change_zh": "不同于直接换架构或加大模型容量的常见路线，本文把世界模型失灵定位到编码器信息瓶颈——潜变量动作不敏感、位置不可解码，仅用一条测试时丢弃的逆动力学辅助损失即修复编码器本身；并提出无需环境访问的廉价动作敏感度探针，作为潜变量世界模型可规划的实证必要条件。",
+      "why_it_matters": "世界模型是UAV主动目标搜索与ObjectNav策略学习的基础组件，本文给出可规划性的诊断探针与最小修复手段，可作为训练世界模型时的通用质检与纠错流程；语言目标头免重训接入并支持分阶段句子规划，直接对应目标条件导航中以自然语言指定目标并长程规划的接口需求。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "JEPA世界模型, 逆动力学辅助损失, 语言目标规划, 动作敏感性探针, 推送基准SLIM, 可规划性",
+      "question_zh": "当画面中仅少量物体移动时JEPA世界模型潜变量失去动作敏感性而难以规划，如何修复并支持语言目标接口？",
+      "innovation_zh": "提出作用于编码器潜变量与预测潜变量的逆动力学辅助损失（共享头测试时丢弃），恢复JEPA潜变量的动作敏感性使规划可行；并提出无需环境访问的动作敏感性探针，作为模型能否规划的经验必要条件。",
+      "dataset_zh": "自建SLIM推送基准（含多个小物体、同场景配对视觉与语言目标）及PushT任务；具体仿真器或真机平台未提及",
+      "results_zh": "原LeWM模型在SLIM成功率仅0.003；加逆动力学辅助损失后升至0.35（难级0.16，目标无关策略为0），PushT在两倍训练时域亦改善。语言目标头导航达0.84（视觉目标oracle为1.00）；阶段化句子使中难级推送从0.04升至0.25，与目标帧oracle持平。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "world model"
+      ],
+      "added_at": "2026-10-05T11:16:27.848115+00:00"
     },
     {
       "id": "2610.01219",
@@ -5394,6 +5487,55 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.03123",
+      "arxiv_id": "2610.03123",
+      "title": "Foresight: planning future perception in streaming VLMs without retraining",
+      "authors": [
+        "Ashok Prasad Neupane",
+        "Dipan Bartaula",
+        "Ankit Belbase",
+        "Saugat Adhikari",
+        "Samip Ghimire",
+        "Saroj Poudel",
+        "Binod Bhattarai",
+        "Danda Pani Paudel"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.03123",
+      "pdf_url": "https://arxiv.org/pdf/2610.03123",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出免训练双孪生流式VLM架构FORESIGHT：一个LLM持续处理视频流，另一个共享权重与KV缓存的LLM提前预演未来并在线规划感知计算，经轻量重配置低开销执行，在OmniPro Online、StreamingBench、OVO-Bench上显著超越已训练基线。",
+      "change_zh": "常见自适应计算需重训练或中断在线推理；本文证明流式VLM自身可预判近期未来，用共享KV缓存的孪生LLM在推理同时预演并规划未来计算，把瞬时证据与持久控制分离，免训练地按未来事件动态配置算力。",
+      "why_it_matters": "对机载实时感知的UAV目标搜索与ObjectNav智能体有参考价值：其「预演未来并规划下一步感知」与主动感知决策同构，免训练低开销，可迁移至冻结开源VLM的导航感知后端，提升证据延迟到达时的鲁棒性。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "流式视觉语言模型, 免训练, 未来感知规划, 双流架构, 孪生LLM, 动态计算配置",
+      "question_zh": "如何在不重新训练的前提下，让流式视觉语言模型根据演变的场景动态规划未来感知与计算？",
+      "innovation_zh": "提出FORESIGHT双流架构：由共享权重、编码器与KV缓存的孪生LLM组成，一个持续处理输入流，另一个超前预测未来并生成计算计划（何时推理、检查什么、采样密度），经模式引导解码与轻量差分更新在线低开销执行，免训练实现计算自适应。",
+      "dataset_zh": "评测基准：OmniPro Online、StreamingBench、OVO-Bench；基座模型：冻结的Qwen3-VL-8B",
+      "results_zh": "在冻结Qwen3-VL-8B上，OmniPro Online平均联合F1达23.0，超最强有训练基线9.5%；StreamingBench与OVO-Bench分别较骨干提升6.7和15.4分，当证据在视频流中较晚出现时最大增益达18.7。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "scene dynamics",
+        "vlm"
+      ],
+      "added_at": "2026-10-05T11:13:22.880844+00:00"
+    },
+    {
       "id": "2610.01569",
       "arxiv_id": "2610.01569",
       "title": "Managing Context and Communication in Distributed Agentic UAV Swarms",
@@ -8488,6 +8630,51 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.03717",
+      "arxiv_id": "2610.03717",
+      "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+      "authors": [
+        "Keerthi Kaashyap",
+        "Dennis Anthony",
+        "Akshay Krishnan",
+        "Nhi Ngoc Nguyen",
+        "Jeremy Collins",
+        "James Hays",
+        "Shreyas Kousik",
+        "Animesh Garg"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.03717",
+      "pdf_url": "https://arxiv.org/pdf/2610.03717",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出SNAP：以位姿条件局部解码器与潜空间重建目标做自监督新视角合成，学习可迁移几何表征，在定位、位姿估计、深度估计等任务上媲美几何监督方法。",
+      "change_zh": "与依赖深度、位姿等几何监督的常见预训练不同，本文发现NVS表征不佳的根因在于解码器空间表达力过强与像素级目标，遂用位姿条件局部解码器加潜空间重建，自监督即得视角不变几何表征。",
+      "why_it_matters": "视角鲁棒且任务无关的几何骨干可直接服务无人机目标搜索与ObjectNav感知前端：相机位姿剧变下特征退化更平缓，利于重定位与深度感知；无需几何标注的自监督预训练也为导航系统提供通用3D表征基础。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "3d scene",
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-10-05T11:14:20.788793+00:00"
     },
     {
       "id": "2610.01959",
@@ -11764,6 +11951,44 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.03283",
+      "arxiv_id": "2610.03283",
+      "title": "HexVIO: Towards All-Day Stereo-Inertial Tracking Through Commodity DSPs",
+      "authors": [
+        "Patrick Wolf",
+        "Mateo de Mayo",
+        "Daniel Cremers"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.03283",
+      "pdf_url": "https://arxiv.org/pdf/2610.03283",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "HexVIO将双目视觉惯性里程计的视觉前端卸载至智能手机与XR设备常见的Hexagon DSP上，后端保留在CPU，并针对DSP架构优化实现；在商用手机上功耗降低67%或吞吐提升86%，以0.83瓦维持30fps实时跟踪约18小时。",
+      "change_zh": "相比依赖CPU/GPU运行VIO或定制专用加速硬件的常见路线，该工作把视觉前端整体卸载到商用设备中普遍存在但常被闲置的Hexagon DSP并做架构级优化，后端留在CPU，用现成芯片实现全天候低功耗跟踪；摘要未说明定位精度是否受损。",
+      "why_it_matters": "低功耗VIO是小型无人机与移动机器人自主的核心瓶颈：机载电池与算力有限，能否长时间稳定定位直接决定UAV搜救侦察等长时间任务及目标搜索导航在嵌入式平台的可行性。HexVIO以0.83瓦实现30fps跟踪，为轻量无人机与穿戴设备提供不牺牲续航的定位方案，落地价值明确。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "drone",
+        "odometry"
+      ],
+      "added_at": "2026-10-05T11:17:02.903333+00:00"
+    },
+    {
       "id": "2610.01573",
       "arxiv_id": "2610.01573",
       "title": "LiDARFlow: Real-Time Panel-Based MAV Guidance in Unknown Environments",
@@ -13976,6 +14201,48 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.03400",
+      "arxiv_id": "2610.03400",
+      "title": "Beyond Entropy: Self-Diagnostic Multi-Role Token Optimization for Video Reasoning",
+      "authors": [
+        "Yudong Han",
+        "Yong Wang",
+        "Zaiquan Yang",
+        "Liang Lin",
+        "Chongyang Tao",
+        "Xiangxiang Chu",
+        "Liyuan Pan"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.03400",
+      "pdf_url": "https://arxiv.org/pdf/2610.03400",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DyCPO针对视频推理RL中token信用分配模糊的问题，提出共进化框架：用多角色依赖度量平衡视觉探索与答案线索挖掘，并从模型自身成败rollout动态导出反事实信号，实现自诊断式的token优化。",
+      "change_zh": "相比高熵token启发式（视频下易诱发冗长推理）与静态反事实token定位（受虚假视觉干扰且不随策略更新），DyCPO改用多角色依赖度量平衡探索与答案相关性，反事实信号由自身成败rollout动态导出，与策略共进化。",
+      "why_it_matters": "对UAV主动搜索与ObjectNav无直接实验关联，价值偏间接：其token级信用分配与反事实干预方法可为RLVR训练的视频VLM导航/搜索策略提供借鉴，抑制视频流中虚假视觉token干扰，提升多模态具身策略训练效率。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "localization"
+      ],
+      "added_at": "2026-10-05T11:18:16.818273+00:00"
+    },
+    {
       "id": "2609.37666",
       "arxiv_id": "2609.37666",
       "title": "Semantic Map Sharing and Capability-Aware Coverage Planning for AI-Native 6G Robotic Coordination",
@@ -14429,32 +14696,56 @@
     }
   ],
   "briefing": {
-    "text": "本批工作主线是基础模型在机器人任务中的评测与接地。首推Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena，它以32个来源的千例任务和GeoProbe几何评测横向检验七个前沿VLM，把协调的目标导向动作锁定为通用化关键缺口，等于划出下一步研究靶点；Measuring Asset and Scene Reconstruction Effects in Real-to-Sim Robot Evaluation则回答仿真评测可信度问题，十组任务-策略显示自建高保真重建将仿真与真实得分的相关系数从0.51提升至0.90，做仿真评测的团队应据此重审资产管线。趋势上看，基准与仿真保真这类评测基础设施，正成为具身智能竞争的前置战场。",
-    "added": 3,
-    "at": "2026-10-03T14:36:38.483652+00:00",
+    "text": "今日入库围绕高效具身感知与导航展开，主线是把几何先验、世界模型与流式推理以更低计算开销嵌入系统。首推GeoScaffold：训练时用几何token重建深度、连通性与可通行性，把3D结构内化进Video-LLM，推理零额外开销即在连续VLN上超越纯视觉方法；Keeping JEPA World Models Plannable诊断出JEPA潜变量对动作不敏感导致无法规划，仅加逆动力学辅助损失便把成功率从0.003升至0.35；Foresight免训练用双孪生流式VLM预演未来并在线规划感知计算，持续超越已训练基线。趋势：能力提升正从堆算力转向训练期内化先验与轻量修补。",
+    "added": 6,
+    "at": "2026-10-05T11:18:41.689708+00:00",
     "new": [
       {
-        "t": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
-        "u": "https://arxiv.org/abs/2610.00854",
+        "t": "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.02697",
+        "r": 10,
+        "g": 7,
+        "s": "GeoScaffold训练时用几何查询token重建深度、连通性与可通行性，把3D几何内化进Video-LLM导航主干，推理零额外开销，在连续VLN基准上超越纯视觉方法。",
+        "c": ""
+      },
+      {
+        "t": "Foresight: planning future perception in streaming VLMs without retraining",
+        "u": "https://arxiv.org/abs/2610.03123",
         "r": 8,
         "g": 7,
-        "s": "提出Embodied Agent Arena基准，汇集32个来源的1000个案例与新GeoProbe几何评测，从几何、空间推理、可供性、规划与操作五维评测七个前沿VLM，发现协调的目标导向动作仍是机器人通用化的关键缺口。",
+        "s": "提出免训练双孪生流式VLM架构FORESIGHT：一个LLM持续处理视频流，另一个共享权重与KV缓存的LLM提前预演未来并在线规划感知计算，经轻量重配置低开销执行，在OmniPro Online、StreamingBench、OVO-Bench上显著超越已训练基线。",
         "c": ""
       },
       {
-        "t": "Measuring Asset and Scene Reconstruction Effects in Real-to-Sim Robot Evaluation",
-        "u": "https://arxiv.org/abs/2610.00731",
+        "t": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+        "u": "https://arxiv.org/abs/2610.03717",
         "r": 7,
         "g": 7,
-        "s": "本文在双臂机器人单元上对照自建高保真重建与默认开源配方对仿真评测的影响，十组任务-策略得分显示自建重建与真实结果的相关系数达0.90（默认0.51），显著缩小仿真-真实差距。",
+        "s": "提出SNAP：以位姿条件局部解码器与潜空间重建目标做自监督新视角合成，学习可迁移几何表征，在定位、位姿估计、深度估计等任务上媲美几何监督方法。",
         "c": ""
       },
       {
-        "t": "OrbitTAMP: Grounding Language Models for Task and Motion Planning in Spacecraft Rendezvous",
-        "u": "https://arxiv.org/abs/2610.01093",
+        "t": "Keeping JEPA World Models Plannable When Little of the Frame Moves",
+        "u": "https://arxiv.org/abs/2610.03137",
+        "r": 9,
+        "g": 8,
+        "s": "本文构建SLIM推动基准，诊断出JEPA式世界模型的编码器潜变量对动作几乎不敏感导致无法规划，用逆动力学辅助损失修复编码器使成功率从0.003升至0.35，并让小型语言目标头免重训世界模型即可从句子规划导航与多阶段推动。",
+        "c": ""
+      },
+      {
+        "t": "HexVIO: Towards All-Day Stereo-Inertial Tracking Through Commodity DSPs",
+        "u": "https://arxiv.org/abs/2610.03283",
         "r": 7,
-        "g": 7,
-        "s": "提出OrbitTAMP分层框架，把LLM语义推理经可复用行为图与领域规划模块接地到航天器交会任务与运动规划：LLM输出部分任务规范，规划器补全决策，轨迹优化生成动力学可行轨迹，任务规范精确恢复率达98%。",
+        "g": 6,
+        "s": "HexVIO将双目视觉惯性里程计的视觉前端卸载至智能手机与XR设备常见的Hexagon DSP上，后端保留在CPU，并针对DSP架构优化实现；在商用手机上功耗降低67%或吞吐提升86%，以0.83瓦维持30fps实时跟踪约18小时。",
+        "c": ""
+      },
+      {
+        "t": "Beyond Entropy: Self-Diagnostic Multi-Role Token Optimization for Video Reasoning",
+        "u": "https://arxiv.org/abs/2610.03400",
+        "r": 6,
+        "g": 6,
+        "s": "DyCPO针对视频推理RL中token信用分配模糊的问题，提出共进化框架：用多角色依赖度量平衡视觉探索与答案线索挖掘，并从模型自身成败rollout动态导出反事实信号，实现自诊断式的token优化。",
         "c": ""
       }
     ]

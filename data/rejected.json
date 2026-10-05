@@ -1958,5 +1958,21 @@
     "reason": "论文属于以自我为中心的操作类视频生成评测，贴近被排除的文生视频与纯操作方向，虽以世界模拟器为框架但任务全为手部操作、无导航决策或空间探索成分，仅术语与范围擦边。",
     "rejected_at": "2026-10-03",
     "url": "https://arxiv.org/abs/2610.01092"
+  },
+  "2610.03639": {
+    "title": "Do Large Language Models Know Colombian Law? A Reliability Benchmark for the Colombian Legal System",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "该文为法律垂直领域的LLM评测基准，与空间智能、导航、机器人均无关，属范围明确排除的金融/法律类应用。",
+    "rejected_at": "2026-10-05",
+    "url": "https://arxiv.org/abs/2610.03639"
+  },
+  "2610.03585": {
+    "title": "Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该文聚焦LLM智能体安全基准的表示敏感性问题，属安全评测垂直方向，与空间、导航、机器人及收录的具身技术线均无实质关联，属范围外。",
+    "rejected_at": "2026-10-05",
+    "url": "https://arxiv.org/abs/2610.03585"
   }
 }
