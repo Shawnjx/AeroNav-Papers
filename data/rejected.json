@@ -1974,5 +1974,85 @@
     "reason": "该文聚焦LLM智能体安全基准的表示敏感性问题，属安全评测垂直方向，与空间、导航、机器人及收录的具身技术线均无实质关联，属范围外。",
     "rejected_at": "2026-10-05",
     "url": "https://arxiv.org/abs/2610.03585"
+  },
+  "2610.06121": {
+    "title": "Radar2Plan: Benchmarking 4D Radar for End-to-End Open-Loop Ego-Trajectory Planning",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向自动驾驶道路场景的4D雷达开环自车轨迹规划基准，与UAV目标搜索、空域/地面VLN、ObjectNav等收录核心线无实质关联，仅与轨迹规划及评测方法论边缘相关。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06121"
+  },
+  "2610.06597": {
+    "title": "Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属LLM推理serving系统基础设施（harness-引擎接口协议、KV缓存调度与吞吐/延迟优化），与导航、空间智能、机器人自主均无关，也非模型/智能体能力本身的显著进展，超出收录范围。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06597"
+  },
+  "2610.06394": {
+    "title": "Harnessing Multimodal Large Language Models for Training-Free Human-Object Interaction Detection",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "该工作将现成MLLM免训练套用于HOI检测这一二维图像理解的垂直应用，与空间、导航、机器人无关，属研究范围外的应用类论文。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06394"
+  },
+  "2610.06427": {
+    "title": "A Taxonomy on Collective Awareness",
+    "relevance": 5,
+    "rigor": 3,
+    "reason": "纯概念分类论文，无方法、无实验与量化评估，仅以搜救案例作说明性联系；多机团队意识概念辨析不属于收录的十一条技术线，与UAV搜救仅为边缘相关。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06427"
+  },
+  "2610.06400": {
+    "title": "Visual Swarm Navigation via Deep Reinforcement Learning and Evolutionary Hybrid Design",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "群体机器人分布式控制器合成研究，仅高保真仿真验证，属多智能体强化学习与进化策略的常规组合改进，与收录的各技术线仅边缘相关。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06400"
+  },
+  "2610.06843": {
+    "title": "Recursive Video In-Context Learning for Agentic Robot",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "核心场景是机械臂操作与VLA策略编排（LIBERO抓放任务、抓取/释放子事件），不含任何导航决策成分，属范围明确排除的机械臂操作与VLA控制；其层级视频记忆虽是agentic设计，但为操作垂直应用而非通用智能体能力的显著进展。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06843"
+  },
+  "2610.05771": {
+    "title": "Controllable Road Marking Generation",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "属于掩码+文本条件的BEV道路标线生成，本质是面向自动驾驶仿真与地图补全的文生图式垂直应用，不涉及具身导航、智能体能力或机器人自主核心技术线。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.05771"
+  },
+  "2610.06571": {
+    "title": "BrainTRACE: Tracing Longitudinal, Multimodal, and Volumetric Evidence in Brain MRI Clinical Reasoning",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "医疗影像VQA基准属垂直领域应用评测，与空间智能、导航、机器人及具身能力无关，属明确排除范围。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06571"
+  },
+  "2610.06318": {
+    "title": "Wiring Matters: Injection Topology and Initialization of Affordance Heads in Vision-Language-Action Policies",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "研究VLA策略affordance辅助头的接线方式，属机械臂操作与VLA控制范畴，在LIBERO操作基准上评测且无导航决策成分，超出收录范围。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06318"
+  },
+  "2610.06782": {
+    "title": "T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "面向纯文本多步信息检索/RAG的专用检索智能体，与空间智能、具身导航、机器人自主均无关，属将大模型套用于收录范围外垂直领域的应用，故拒绝。",
+    "rejected_at": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.06782"
   }
 }

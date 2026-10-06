@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T11:18:19.818707+00:00",
+  "updated_at": "2026-10-06T11:28:30.801047+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -237,6 +237,99 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2610.06510",
+      "arxiv_id": "2610.06510",
+      "title": "MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation",
+      "authors": [
+        "Jincheng Wang",
+        "Chi Pui Chan",
+        "Wei Zeng",
+        "Shuyang Zhang",
+        "Jianhao Jiao",
+        "Dimitrios Kanoulas"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06510",
+      "pdf_url": "https://arxiv.org/pdf/2610.06510",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MarvisNav将探索记忆可视化为路线选择：把拓扑图候选节点与探索状态投影到第一人称视图，VLM无需事后融合即可联合评估目标相关性与探索史，在HM3D达SOTA并通过真机验证。",
+      "change_zh": "常见做法把探索历史存为文本或地图，再与VLM视觉推断融合重排；该文将候选节点及探索状态直接投影进第一人称视图，使记忆与路线选择在图像中显式绑定，VLM单次调用即可联合评估，无需事后融合。",
+      "why_it_matters": "对ObjectNav直接有价值：零训练HM3D SOTA、VLM调用大减且真机可部署；并揭示记忆的表示方式而非有无决定VLM决策，该思路可迁移至UAV搜救等需权衡目标线索与已探区域的主动目标搜索。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "零样本目标导航, 视觉语言模型, 探索记忆, 拓扑图, 视觉路径选择, 真实机器人",
+      "question_zh": "如何在零样本目标导航中让视觉语言模型直接在视觉路径选择上联合评估目标相关性与探索历史，而无需将记忆与图像分离表示及额外融合步骤。",
+      "innovation_zh": "区别于以往将探索历史以文本或地图形式与自我中心图像分离表示的方法，MarvisNav维护拓扑图，并将候选节点及其探索状态（超越二元到访记录）直接投影到自我中心视图上，形成承载记忆的视觉路径选择，使VLM无需事后融合或重排序即可联合评估目标相关性与探索状态，且无需策略训练。",
+      "dataset_zh": "HM3D和MP3D基准数据集，以及多场景真实机器人实验（具体真机平台未提及）",
+      "results_zh": "无需策略训练，MarvisNav在HM3D上取得SOTA性能（SR 81.2%，SPL 42.5%），在MP3D上保持竞争力；VLM调用次数远少于代表性方法（仅为WMNav的7.5%）；多场景真机实验进一步验证了其实际可部署性，并表明记忆表示方式会影响VLM决策与导航性能。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "exploration",
+        "object navigation",
+        "vlm"
+      ],
+      "added_at": "2026-10-06T11:08:06.272204+00:00"
+    },
+    {
+      "id": "2610.05024",
+      "arxiv_id": "2610.05024",
+      "title": "LightVLN: Efficient Aerial Vision-and-Language Navigation with Compact Memory and History-Guided Local Aggregation",
+      "authors": [
+        "Yiming Zhao",
+        "Tianshun Li",
+        "Jingle He",
+        "Ruonan Chai",
+        "Xinhu Zheng"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.05024",
+      "pdf_url": "https://arxiv.org/pdf/2610.05024",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LightVLN面向无人机空域VLN提出轻量框架：0.5B语言骨干配合紧凑记忆，历史帧压缩为单token、当前观测经局部聚合从256降至32 token，在OpenFly上超越7B基线，并在DJI无人机上实现机载实时闭环评估。",
+      "change_zh": "常见空域VLN依赖7B级大骨干与稠密视觉历史，算力显存开销大；本文反向而行，用0.5B小骨干加极致token压缩（历史帧单token、当前观测32token），靠历史与指令引导的局部聚合保留空间信息，以小胜大，并补上真机机载闭环这一常缺环节。",
+      "why_it_matters": "空域VLN是核心收录线，轻量化直接关系无人机搜救侦察等主动目标搜索任务的机载落地；其历史/当前观测token压缩与小骨干超越大模型的思路可迁移至地面ObjectNav的历史建模，真机HIL机载实时结果也为Sim2Real提供实证参考。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "空中视觉语言导航, 无人机, 轻量化模型, 历史信息压缩, 局部聚合, 机载部署",
+      "question_zh": "如何降低空中视觉语言导航模型对大规模视觉语言骨干和稠密视觉历史的计算与内存开销，实现无人机机载高效部署与实时导航？",
+      "innovation_zh": "LightVLN采用0.5B轻量语言骨干，将每帧历史观测压缩为单个令牌（复用策略已计算的视觉特征），并通过历史与指令条件化的局部聚合把当前观测从256降至32个视觉令牌、保留导航相关空间信息，相比依赖大骨干与稠密历史的已有方法大幅降低计算与内存开销。",
+      "dataset_zh": "OpenFly公开数据集、AerialVLN-S数据集（Val-Seen）；真机平台为DJI M350 RTK无人机搭载Jetson Orin NX 16GB，在重建的未见校园环境中进行硬件在环（HIL）评估",
+      "results_zh": "在OpenFly上取得50.93%（Test-Seen）和36.14%（Test-Unseen）成功率，多数指标超越所评估的7B语言骨干基线；在AerialVLN-S Val-Seen上成功率达25.83%；真机HIL评估中实现14.61 Hz模型推理和11.13 Hz端到端决策更新。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "evaluation",
+        "instruction"
+      ],
+      "added_at": "2026-10-06T11:05:51.532779+00:00"
     },
     {
       "id": "2609.36066",
@@ -2943,6 +3036,147 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.06413",
+      "arxiv_id": "2610.06413",
+      "title": "SpatialChain: A Benchmark for Auditing Spatial Reasoning Faithfulness in VLMs",
+      "authors": [
+        "Rafael Teixeira Sousa",
+        "Vinícius Paulo Lopes de Oliveira",
+        "Elisa Ayumi Masasi de Oliveira",
+        "Luiza Martins de Freitas Cintra",
+        "Fernanda Bufon Färber",
+        "Igor Dias Aguiar",
+        "Julia Yasmim de Almeida Nobre",
+        "Arlindo Rodrigues Galvão Filho"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06413",
+      "pdf_url": "https://arxiv.org/pdf/2610.06413",
+      "code_url": "https://github.com/spatialchain/SpatialChainBenchmark",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SpatialChain构建2.8万例配场景图推理链的空间VQA基准，用链重叠与场景图LLM裁判双轴审计九个思维型VLM，发现部分模型捷径率超39%，SFT可缓解。",
+      "change_zh": "常见空间基准只看最终答案准确率，该工作把评测对象从答案转向推理过程：仅保留与符号真值一致的推理链，并以链重叠与场景图感知裁判独立审计忠实度，从而量化和缓解高分捷径现象。",
+      "why_it_matters": "UAV目标搜索与ObjectNav日益依赖VLM做空间语义判断，该基准揭示高准确率可能源于语言捷径而非真实空间推理，提示导航系统选型须审计推理忠实度；其场景图接地数据亦可增强导航模型的空间推理。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "空间推理, 视觉语言模型, 推理忠实性, 基准测试, 推理链, 场景图",
+      "question_zh": "如何审计具备思考能力的视觉语言模型的空间推理是否忠实，而非依赖语言捷径得到正确答案？",
+      "innovation_zh": "相对仅依赖最终答案准确率的评估，SpatialChain将空间GQA问题与场景图接地的推理链配对，并采用链重叠客观指标加场景图感知LLM裁判的双轴评估，独立于最终答案评分忠实性与完整性，可揭示准确率不可见的捷径行为。",
+      "dataset_zh": "SpatialChain数据集：28,350个训练样本与899个测试样本，将空间导向的GQA问题与场景图接地推理链配对，仅保留生成答案与符号真值匹配的样本；忠实性裁判经198条人工标注项验证",
+      "results_zh": "九个思考型VLM中四个模型准确率≥79%但捷径率超39%；链质量显著预测七模型答案正确性，例外两模型（Claude Sonnet 4.6、InternVL3.5-8B）呈简洁与冗饰两类失败模式；SFT使Qwen3-VL-8B域内提升6.2个百分点、捷径率降至22%；裁判与人工一致性相当，跨裁判排名保持ρ=0.88。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-06T11:05:02.795572+00:00"
+    },
+    {
+      "id": "2610.05996",
+      "arxiv_id": "2610.05996",
+      "title": "EpicWorldModel: Exploration-driven Planning with Latent World Models",
+      "authors": [
+        "Bowen Feng",
+        "Julian Ost",
+        "May Mei",
+        "Anirudha Majumdar",
+        "Felix Heide"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.05996",
+      "pdf_url": "https://arxiv.org/pdf/2610.05996",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EpicWorldModel用流匹配训练随机JEPA世界模型，预测部分可观测下多个潜在未来，以流预测方差引导CEM规划，兼顾目标达成与遮挡区探索，最高提升22%成功率。",
+      "change_zh": "常见JEPA潜在世界模型是确定性预测，在遮挡等部分可观测场景失效。本文用流匹配目标联合训练表征与预测器，直接预测多个可能未来，并将流预测方差（与预测熵上界相关）作为探索信号融入CEM规划。",
+      "why_it_matters": "对目标搜索任务价值明显：ObjectNav与UAV搜救中目标常被遮挡或不在视野，该不确定性引导探索“最可能藏目标区域”的机制正契合主动搜索核心难题，为世界模型规划提供了内在探索信号。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "潜在世界模型, JEPA, 流匹配, 部分可观测, 探索驱动规划, 交叉熵方法",
+      "question_zh": "如何在部分可观测、未来存在多种可能性的不确定环境中训练随机JEPA世界模型，并将其不确定性用于探索驱动的规划？",
+      "innovation_zh": "不同于确定性JEPA，联合训练预测器与潜在表示空间，以流匹配目标直接预测多个可能未来状态；将与预测熵上界相关的流预测方差作为探索信号融入CEM规划，平衡目标达成与不确定区域探索。",
+      "results_zh": "在一系列潜在规划实验中，该方法在各任务上取得最优或持平的性能，相较LeWorldModel成功率最高提升22%，验证了随机JEPA与不确定性引导探索规划的有效性。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "exploration",
+        "world model"
+      ],
+      "added_at": "2026-10-06T11:09:33.775546+00:00"
+    },
+    {
+      "id": "2610.04013",
+      "arxiv_id": "2610.04013",
+      "title": "Return-to-Home Feasible Micro-Aerial Vehicle Exploration for 3D Gaussian Splatting Reconstruction",
+      "authors": [
+        "Prajit Krisshnakumar",
+        "Fan Yang",
+        "Koichiro Niinuma"
+      ],
+      "published": "2026-10-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.04013",
+      "pdf_url": "https://arxiv.org/pdf/2610.04013",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出拓扑优先的MAV室内主动重建框架：以3DGS为重建目标、TSDF为碰撞检查与规划支架，在线构建并校验Voronoi骨架路标，在飞行时间预算与返航安全约束下选择视点完成探索式重建。",
+      "change_zh": "相比在单一表征上直接做NBV的常见做法，该文把3DGS高保真渲染与导航规划解耦，用轻量TSDF支架与经自由空间一致性、可见性校验的Voronoi骨架路标稳定规划，并将返航可行性和飞行时间预算显式纳入视点选择目标。",
+      "why_it_matters": "对UAV主动搜索与探索任务有直接价值：返航可行性与飞行时间预算的显式建模、轻量拓扑路标加保守碰撞检查可直接迁移到搜救侦察等时间受限任务；重建与导航解耦的双表征设计也为机载自主和主动感知社区提供可复用范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "微型飞行器, 3D高斯泼溅, 返航可行性, 主动重建, Voronoi骨架路图, 视点规划",
+      "question_zh": "如何在严格飞行时间预算与安全约束下，让微型飞行器实现满足返航可行性的室内3D高斯泼溅主动重建探索？",
+      "innovation_zh": "提出拓扑优先的主动重建框架，将高保真3DGS渲染与导航解耦，用轻量TSDF/占据栅格在线构建稀疏Voronoi骨架路图，并以自由空间一致性与密集可见性校验抑制穿墙幻影结构；结合飞行时间预算感知视点选择与滚动时域前瞻实现非短视探索并保证返航可行性。",
+      "dataset_zh": "光真实性室内仿真基准：ReplicaCAD、Gibson和HM3D；摘要未提及真机实验",
+      "results_zh": "在相同飞行时间预算下，该方法在ReplicaCAD、Gibson和HM3D上的重建覆盖率/误差、返航成功率及计算成本指标相对近期基于GS的基线方法取得改进或具竞争力的表现；摘要未给出具体数值。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "active reconstruction",
+        "aerial",
+        "benchmark",
+        "exploration",
+        "geometry"
+      ],
+      "added_at": "2026-10-06T11:03:17.648859+00:00"
+    },
+    {
       "id": "2610.02162",
       "arxiv_id": "2610.02162",
       "title": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
@@ -4364,6 +4598,51 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.06813",
+      "arxiv_id": "2610.06813",
+      "title": "Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models",
+      "authors": [
+        "Zhimin Shao",
+        "Xijun Liu",
+        "Zhaoliang Zhang",
+        "Yutao Tang",
+        "Abhay Yadav",
+        "Rama Chellappa",
+        "Cheng Peng"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06813",
+      "pdf_url": "https://arxiv.org/pdf/2610.06813",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出掩码几何编码器MGE，训练时从全局注意力中丢弃部分帧token并向全上下文教师模型蒸馏，学到更鲁棒的逐帧几何表征，在遮挡与相似歧义视图下表现更强，并以锚点引导的自适应token合并加速推理。",
+      "change_zh": "常见3D基础模型依赖全对全全局注意力，推理期简单削减token易掉点。MGE把「上下文缺失」从推理技巧前移为训练策略：随机丢帧加教师蒸馏，使逐帧表征不依赖完整跨视图上下文，遮挡与Doppelganger视图更稳，也让保留锚帧的token合并更有效。",
+      "why_it_matters": "鲁棒的稀疏视角重建与相机标定是无人机建图定位、主动感知与ObjectNav场景理解的基础能力。遮挡和歧义视图下的稳定性、以及保持重建质量的token压缩，直接利好机载算力受限下的实时3D推理与快速环境感知，属空间智能核心收录。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "3D基础模型,掩码几何编码器,三维重建,遮挡鲁棒性,知识蒸馏,自适应token合并",
+      "question_zh": "如何使3D基础模型在遮挡和视觉相似但几何相远的视角下学习更鲁棒的几何表征，同时降低推理复杂度？",
+      "innovation_zh": "提出掩码几何编码器MGE，训练时从全局注意力中策略性丢弃帧token并向全上下文教师模型蒸馏，学习更丰富的单帧几何表征；并设计锚点引导的自适应token合并方法，保留代表性锚帧、合并冗余token以加速推理。",
+      "results_zh": "摘要未给出具体数字。实验表明MGE在遮挡及视觉相似但几何相异视角下性能显著更强，同时在标准基准上保持高性能；相比其他高效推理方法，可实现推理加速并持续保持更高的重建质量，尤其在视角受限设置下优势明显。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "geometry"
+      ],
+      "added_at": "2026-10-06T11:21:03.922068+00:00"
+    },
+    {
       "id": "2609.40325",
       "arxiv_id": "2609.40325",
       "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
@@ -5485,6 +5764,98 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.06327",
+      "arxiv_id": "2610.06327",
+      "title": "Dual Variational Autoencoders for Efficient Sim-to-Real Transfer in Low-Cost Robotic Navigation",
+      "authors": [
+        "Álvaro Díez",
+        "Fidel Aznar"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06327",
+      "pdf_url": "https://arxiv.org/pdf/2610.06327",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "topics": [
+        "具身基准与评测",
+        "真机与 Sim2Real",
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出双卷积VAE共享解码器架构，结合域随机化与特征级域适配，对齐仿真与真实图像分布，实现低成本机器人导航策略的高效Sim2Real迁移，并在树莓派等嵌入式平台真机验证。",
+      "change_zh": "相比端到端策略直接迁移或只用真实数据训练，在特征层面对齐两域：双编码器加共享解码器学习公共紧凑隐空间，配合两种数据增强扩充稀缺真实样本，让约4.5k真实图像即可接近91%成功率。",
+      "why_it_matters": "直接命中真机与Sim2Real技术线：以极少真实数据弥合仿真到现实差距并兼顾嵌入式算力，为低成本地面机器人导航部署提供可行范式，对ObjectNav类真实目标搜索落地亦有参考价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "仿真到现实迁移, 变分自编码器, 域适应, 域随机化, 机器人导航, 低成本机器人",
+      "question_zh": "如何弥合低成本机器人视觉导航中仿真环境与真实环境的差距，实现高效的仿真到现实策略迁移？",
+      "innovation_zh": "提出结合域随机化与特征级域适应的混合迁移学习框架，采用共享解码器的双卷积变分自编码器学习对齐两域分布的紧凑公共潜在表示空间，并辅以两种互补的数据增强技术扩充有限的真实世界数据。",
+      "dataset_zh": "45225张仿真图像和仅4556张真实世界图像样本；在低成本机器人上进行真实世界部署，并通过计算评估验证其在Raspberry Pi 4和NVIDIA Jetson Nano嵌入式平台上的适用性。",
+      "results_zh": "该方法在真实室内导航图像分类任务上平均成功率达近91%，显著优于仅仿真训练和仅真实训练两种基线；真机部署中策略成功引导低成本机器人完成反应式探索任务；严格计算评估证实其适合Raspberry Pi 4和NVIDIA Jetson Nano等资源受限嵌入式平台。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "deployment",
+        "evaluation",
+        "exploration"
+      ],
+      "added_at": "2026-10-06T11:18:59.785022+00:00"
+    },
+    {
+      "id": "2610.06611",
+      "arxiv_id": "2610.06611",
+      "title": "Lens3D: Target-Conditioned Visual Foveation for Fine-Grained 3D Understanding",
+      "authors": [
+        "Junming Huang",
+        "Zini Chen",
+        "Shuaiying Hou",
+        "Chi Wang",
+        "Qiang Dai",
+        "Weiwei Xu"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06611",
+      "pdf_url": "https://arxiv.org/pdf/2610.06611",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Lens3D通过3D定位选择互补视角交给外部2D视觉语言模型获取细粒度描述，再以描述监督将知识蒸馏进3D大模型，使其无需外部调用即可细粒度理解物体，并构建2068个物体的评测集验证效果。",
+      "change_zh": "常见3D大模型直接以原生输入整体理解场景，易丢失细粒度与小物体信息；该工作改为目标条件化的3D定位挑互补视角外呼2D VLM补足细节，再把外部知识蒸馏回3D LLM，推理期零额外调用，兼顾细节与效率。",
+      "why_it_matters": "属空间智能核心的3D细粒度理解：小目标grounding与细粒度属性描述直接支撑ObjectNav开放词汇目标的发现与识别；其基于3D定位的互补视角选择与主动感知next-best-view思路相通，可启发UAV小目标搜索中的视角优化策略。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "3D大语言模型, 细粒度3D理解, 知识蒸馏, 视觉注视, 3D定位, 物体描述生成",
+      "question_zh": "如何通过外部视觉辅助与知识迁移，提升3D大语言模型对细粒度物体属性及不显著物体的理解能力？",
+      "innovation_zh": "不同于直接使用3D LLM易忽略细粒度属性，LensUnd利用3D定位挑选互补视角交由外部2D VLM完成细粒度描述、小物体定位与问答；LensDistill再通过详细字幕监督将细粒度知识蒸馏入3D LLM，使其无需调用外部VLM即可原生生成细粒度描述。",
+      "dataset_zh": "自建LensBench评测集：包含2,068个物体、每个物体配三条银标准参考描述；实验在Video-3D LLM与3DRS两个3D大语言模型上进行；训练数据集未提及",
+      "results_zh": "基于Video-3D LLM与3DRS的实验表明，LensDistill显著提升细粒度物体描述质量，同时保持既有的定位与场景级问答性能，验证了将外部获取的细粒度知识迁移到原生3D LLM的可行性；评测依托含2,068个物体的LensBench。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "vlm"
+      ],
+      "added_at": "2026-10-06T11:22:08.993254+00:00"
     },
     {
       "id": "2610.03123",
@@ -8630,6 +9001,92 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.06215",
+      "arxiv_id": "2610.06215",
+      "title": "Towards Quadruped-Provided Localization and Active Tracking for Micro-UAVs",
+      "authors": [
+        "Alejandro Lorite Mora",
+        "Andrés Faíña"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06215",
+      "pdf_url": "https://arxiv.org/pdf/2610.06215",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 10,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该论文把微型无人机的定位栈整体移至带7自由度臂的四足机器人，由臂端相机检测机上AprilTag并融合四足自定位提供全局位姿，臂主动移动保持目标在视野内，使仅载IMU的微型无人机实现自主飞行。",
+      "change_zh": "常规做法要么在无人机上装机载感知定位（微型平台做不到），要么依赖固定动捕或静态外部相机；本文让四足加机械臂成为可移动定位基础设施，输出共享地图系绝对位姿而非仅相机相对跟踪，臂主动调姿维持近距离高精度观测。",
+      "why_it_matters": "使微型无人机能在大型机器人无法抵达的狭窄空间自主飞行，直接支撑受限空间搜救侦察等UAV主动目标搜索场景；四足-无人机异构协同与臂主动观测也是主动感知范例，该外部定位框架可被后续微型平台的目标搜索任务复用。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "drone",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-10-06T11:02:14.381515+00:00"
+    },
+    {
+      "id": "2610.06830",
+      "arxiv_id": "2610.06830",
+      "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+      "authors": [
+        "Haozhen Zhang",
+        "Haodong Yue",
+        "Quanyu Long",
+        "Jianzhu Bao",
+        "Qingyuan Liu",
+        "Tao Feng",
+        "Bohan Liu",
+        "Weida Liang",
+        "Wenya Wang"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06830",
+      "pdf_url": "https://arxiv.org/pdf/2610.06830",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MemPilot用强化学习训练多步LLM策略，在检索现成记忆与调用异构LLM/VLM按需整理多模态历史之间调度，联合控制证据量、整理指令、模型选择与视觉访问，优化性能-成本-延迟权衡。",
+      "change_zh": "常见做法是查询无关地构建记忆或采用固定运行时处理；本文改为按需调度：RL策略在运行时决定检索现成记忆还是委派异构模型做查询定制整理，并将证据量、指令、模型选择与视觉访问纳入统一控制，实现细粒度运行时算力分配。",
+      "why_it_matters": "属智能体记忆能力的核心进展：为多模态智能体提供性能-成本-延迟可控的记忆管线；对UAV主动搜索与ObjectNav等需复用历史观测的具身任务，其按需整理多模态历史的思路有望降低记忆开销并保留关键细节，间接支撑长程导航记忆设计。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "llm agent",
+        "multimodal agent",
+        "vlm"
+      ],
+      "added_at": "2026-10-06T11:06:41.165232+00:00"
     },
     {
       "id": "2610.03717",
@@ -12912,6 +13369,132 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.06469",
+      "arxiv_id": "2610.06469",
+      "title": "Odyssey: A Closed-Loop Benchmark for Long-Horizon Real-World Driving with Explicit Navigation Routes",
+      "authors": [
+        "Jungho Kim",
+        "Hongjae Shin",
+        "Seunghoon Yu",
+        "Heecheol Yoo",
+        "Myeongjun Kim",
+        "Jiyong Oh",
+        "Donghyuk Kwak",
+        "Seunghyeop Nam",
+        "Haesung Oh",
+        "Hyunju Kim",
+        "Hyungchan Cho",
+        "Jaehyun Park",
+        "Soo Won Seo",
+        "Jun Won Choi"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06469",
+      "pdf_url": "https://arxiv.org/pdf/2610.06469",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Odyssey基于nuPlan日志重建100个100秒长时程场景构成闭环驾驶基准，用显式SD地图路线取代模糊方向指令作为导航目标，提出路线合规、换道准备等指标，并评测含VLA在内的先进规划器。",
+      "change_zh": "相比常见短片段、方向指令驱动的闭环驾驶评测，该工作把闭环回放拉长到100秒以暴露先前决策的滞后后果，并以显式SD地图路线替代模糊转向指令，将全局导航目标与局部传感器规划解耦衔接，另用扩散修正3DGS渲染伪影。",
+      "why_it_matters": "对收录范围直接价值有限：其显式导航目标规格、长时程闭环评测揭示决策延迟后果、以及VLA路线跟随能力的系统评测思路，可为地面VLN与具身基准设计提供方法论借鉴，但主要服务自动驾驶社区，与UAV目标搜索和ObjectNav无直接关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "added_at": "2026-10-06T11:17:56.957393+00:00"
+    },
+    {
+      "id": "2610.06008",
+      "arxiv_id": "2610.06008",
+      "title": "Ultrasound Operator Guidance Using World Modeling and Retrieval Based Action Planning",
+      "authors": [
+        "Noortje I. P. Schueler",
+        "Hans van Gorp",
+        "Ruud J. G. van Sloun"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06008",
+      "pdf_url": "https://arxiv.org/pdf/2610.06008",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "将超声探头引导形式化为潜空间世界模型中的多步规划与检索，用V-JEPA 2.1编码与检索数据库构建非参数转移模型，在CPU上实时滚动时域规划且无需探头追踪，颈动脉回瞻与前瞻到达率86%/83%。",
+      "change_zh": "相比参数化动力学学习或依赖探头追踪的路线，核心变化是不学转移函数，直接从参考库检索物理执行过的转移作为非参数世界模型做滚动时域规划；且规划由与任意可编码目标的潜距离驱动，部署仅需实时超声图像。",
+      "why_it_matters": "价值在方法迁移：以检索替代参数化转移模型降低世界模型构建成本，目标潜距离驱动的规划天然支持到达任意指定目标图像/视角类任务，对UAV主动目标搜索与目标条件ObjectNav有参考意义，CPU实时实验也验证了可部署性。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "deployment",
+        "world model"
+      ],
+      "added_at": "2026-10-06T11:25:44.025973+00:00"
+    },
+    {
+      "id": "2610.05505",
+      "arxiv_id": "2610.05505",
+      "title": "Robust 2D Traversability Mapping for Construction AMRs via Failure-Mode-Aware Fusion of LiDAR Geometry and Monocular Semantics",
+      "authors": [
+        "Manoj Karnekar",
+        "Om Mandhane",
+        "Gautham Ramkumar"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.05505",
+      "pdf_url": "https://arxiv.org/pdf/2610.05505",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能",
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对建筑工地AMR的可通行性建图难题，提出以LiDAR几何为主、单目语义按类别与置信度门控修正的失效模式感知融合管线，在Jetson AGX Orin上实时运行，并发布两个真实工地的多模态数据集。",
+      "change_zh": "相比纯几何建图或对称多模态融合的常见路线，该文采用非对称设计：LiDAR为主安全估计，语义仅在特定失效模式下门控介入，同时纠正湿泥积水等平坦隐患与减速带等虚假障碍，并保留细分可通行类别而非二值化通行性。",
+      "why_it_matters": "对真机部署与在线建图技术线有直接价值：失效模式感知的几何-语义融合与嵌入式实时代价地图方案，可迁移到复杂非结构化环境的地面导航；发布的多传感器工地数据集有助于感知与导航研究，但与UAV目标搜索和ObjectNav的直接关联较弱。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "geometry",
+        "odometry"
+      ],
+      "added_at": "2026-10-06T11:28:27.800642+00:00"
+    },
+    {
       "id": "2609.40085",
       "arxiv_id": "2609.40085",
       "title": "BatSLAM 2.0: Sequence-Verified Sonar Place Recognition in a Robust Pose Graph",
@@ -14696,56 +15279,112 @@
     }
   ],
   "briefing": {
-    "text": "今日入库围绕高效具身感知与导航展开，主线是把几何先验、世界模型与流式推理以更低计算开销嵌入系统。首推GeoScaffold：训练时用几何token重建深度、连通性与可通行性，把3D结构内化进Video-LLM，推理零额外开销即在连续VLN上超越纯视觉方法；Keeping JEPA World Models Plannable诊断出JEPA潜变量对动作不敏感导致无法规划，仅加逆动力学辅助损失便把成功率从0.003升至0.35；Foresight免训练用双孪生流式VLM预演未来并在线规划感知计算，持续超越已训练基线。趋势：能力提升正从堆算力转向训练期内化先验与轻量修补。",
-    "added": 6,
-    "at": "2026-10-05T11:18:41.689708+00:00",
+    "text": "本批论文主线是导航智能体的轻量化与记忆化，兼及主动重建、世界模型规划与VLM空间推理审计。最值得读LightVLN：仅0.5B语言骨干加单token历史压缩，在OpenFly反超7B基线并完成DJI机载实时闭环，效率与落地性兼备；MarvisNav把拓扑记忆投影为第一人称路线选择，VLM无需事后融合即可联合评估目标与探索史，拿下HM3D零样本SOTA并通过真机；EpicWorldModel用流匹配JEPA的预测方差引导CEM规划，把目标达成与遮挡区探索统一到同一目标下，成功率最高提升22%。趋势上，记忆的显式管理与小模型机载闭环正合力把导航研究从刷基准推向真机落地。",
+    "added": 13,
+    "at": "2026-10-06T11:29:36.603047+00:00",
     "new": [
       {
-        "t": "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.02697",
-        "r": 10,
+        "t": "Towards Quadruped-Provided Localization and Active Tracking for Micro-UAVs",
+        "u": "https://arxiv.org/abs/2610.06215",
+        "r": 7,
         "g": 7,
-        "s": "GeoScaffold训练时用几何查询token重建深度、连通性与可通行性，把3D几何内化进Video-LLM导航主干，推理零额外开销，在连续VLN基准上超越纯视觉方法。",
+        "s": "该论文把微型无人机的定位栈整体移至带7自由度臂的四足机器人，由臂端相机检测机上AprilTag并融合四足自定位提供全局位姿，臂主动移动保持目标在视野内，使仅载IMU的微型无人机实现自主飞行。",
         "c": ""
       },
       {
-        "t": "Foresight: planning future perception in streaming VLMs without retraining",
-        "u": "https://arxiv.org/abs/2610.03123",
+        "t": "Return-to-Home Feasible Micro-Aerial Vehicle Exploration for 3D Gaussian Splatting Reconstruction",
+        "u": "https://arxiv.org/abs/2610.04013",
+        "r": 9,
+        "g": 7,
+        "s": "该文提出拓扑优先的MAV室内主动重建框架：以3DGS为重建目标、TSDF为碰撞检查与规划支架，在线构建并校验Voronoi骨架路标，在飞行时间预算与返航安全约束下选择视点完成探索式重建。",
+        "c": ""
+      },
+      {
+        "t": "SpatialChain: A Benchmark for Auditing Spatial Reasoning Faithfulness in VLMs",
+        "u": "https://arxiv.org/abs/2610.06413",
+        "r": 8,
+        "g": 8,
+        "s": "SpatialChain构建2.8万例配场景图推理链的空间VQA基准，用链重叠与场景图LLM裁判双轴审计九个思维型VLM，发现部分模型捷径率超39%，SFT可缓解。",
+        "c": "https://github.com/spatialchain/SpatialChainBenchmark"
+      },
+      {
+        "t": "LightVLN: Efficient Aerial Vision-and-Language Navigation with Compact Memory and History-Guided Local Aggregation",
+        "u": "https://arxiv.org/abs/2610.05024",
+        "r": 10,
+        "g": 8,
+        "s": "LightVLN面向无人机空域VLN提出轻量框架：0.5B语言骨干配合紧凑记忆，历史帧压缩为单token、当前观测经局部聚合从256降至32 token，在OpenFly上超越7B基线，并在DJI无人机上实现机载实时闭环评估。",
+        "c": ""
+      },
+      {
+        "t": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+        "u": "https://arxiv.org/abs/2610.06830",
+        "r": 7,
+        "g": 7,
+        "s": "MemPilot用强化学习训练多步LLM策略，在检索现成记忆与调用异构LLM/VLM按需整理多模态历史之间调度，联合控制证据量、整理指令、模型选择与视觉访问，优化性能-成本-延迟权衡。",
+        "c": ""
+      },
+      {
+        "t": "MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation",
+        "u": "https://arxiv.org/abs/2610.06510",
+        "r": 10,
+        "g": 8,
+        "s": "MarvisNav将探索记忆可视化为路线选择：把拓扑图候选节点与探索状态投影到第一人称视图，VLM无需事后融合即可联合评估目标相关性与探索史，在HM3D达SOTA并通过真机验证。",
+        "c": ""
+      },
+      {
+        "t": "EpicWorldModel: Exploration-driven Planning with Latent World Models",
+        "u": "https://arxiv.org/abs/2610.05996",
+        "r": 9,
+        "g": 7,
+        "s": "EpicWorldModel用流匹配训练随机JEPA世界模型，预测部分可观测下多个潜在未来，以流预测方差引导CEM规划，兼顾目标达成与遮挡区探索，最高提升22%成功率。",
+        "c": ""
+      },
+      {
+        "t": "Odyssey: A Closed-Loop Benchmark for Long-Horizon Real-World Driving with Explicit Navigation Routes",
+        "u": "https://arxiv.org/abs/2610.06469",
+        "r": 6,
+        "g": 7,
+        "s": "Odyssey基于nuPlan日志重建100个100秒长时程场景构成闭环驾驶基准，用显式SD地图路线取代模糊方向指令作为导航目标，提出路线合规、换道准备等指标，并评测含VLA在内的先进规划器。",
+        "c": ""
+      },
+      {
+        "t": "Dual Variational Autoencoders for Efficient Sim-to-Real Transfer in Low-Cost Robotic Navigation",
+        "u": "https://arxiv.org/abs/2610.06327",
         "r": 8,
         "g": 7,
-        "s": "提出免训练双孪生流式VLM架构FORESIGHT：一个LLM持续处理视频流，另一个共享权重与KV缓存的LLM提前预演未来并在线规划感知计算，经轻量重配置低开销执行，在OmniPro Online、StreamingBench、OVO-Bench上显著超越已训练基线。",
+        "s": "提出双卷积VAE共享解码器架构，结合域随机化与特征级域适配，对齐仿真与真实图像分布，实现低成本机器人导航策略的高效Sim2Real迁移，并在树莓派等嵌入式平台真机验证。",
         "c": ""
       },
       {
-        "t": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
-        "u": "https://arxiv.org/abs/2610.03717",
-        "r": 7,
-        "g": 7,
-        "s": "提出SNAP：以位姿条件局部解码器与潜空间重建目标做自监督新视角合成，学习可迁移几何表征，在定位、位姿估计、深度估计等任务上媲美几何监督方法。",
-        "c": ""
-      },
-      {
-        "t": "Keeping JEPA World Models Plannable When Little of the Frame Moves",
-        "u": "https://arxiv.org/abs/2610.03137",
-        "r": 9,
+        "t": "Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models",
+        "u": "https://arxiv.org/abs/2610.06813",
+        "r": 8,
         "g": 8,
-        "s": "本文构建SLIM推动基准，诊断出JEPA式世界模型的编码器潜变量对动作几乎不敏感导致无法规划，用逆动力学辅助损失修复编码器使成功率从0.003升至0.35，并让小型语言目标头免重训世界模型即可从句子规划导航与多阶段推动。",
+        "s": "提出掩码几何编码器MGE，训练时从全局注意力中丢弃部分帧token并向全上下文教师模型蒸馏，学到更鲁棒的逐帧几何表征，在遮挡与相似歧义视图下表现更强，并以锚点引导的自适应token合并加速推理。",
         "c": ""
       },
       {
-        "t": "HexVIO: Towards All-Day Stereo-Inertial Tracking Through Commodity DSPs",
-        "u": "https://arxiv.org/abs/2610.03283",
-        "r": 7,
-        "g": 6,
-        "s": "HexVIO将双目视觉惯性里程计的视觉前端卸载至智能手机与XR设备常见的Hexagon DSP上，后端保留在CPU，并针对DSP架构优化实现；在商用手机上功耗降低67%或吞吐提升86%，以0.83瓦维持30fps实时跟踪约18小时。",
+        "t": "Lens3D: Target-Conditioned Visual Foveation for Fine-Grained 3D Understanding",
+        "u": "https://arxiv.org/abs/2610.06611",
+        "r": 8,
+        "g": 7,
+        "s": "Lens3D通过3D定位选择互补视角交给外部2D视觉语言模型获取细粒度描述，再以描述监督将知识蒸馏进3D大模型，使其无需外部调用即可细粒度理解物体，并构建2068个物体的评测集验证效果。",
         "c": ""
       },
       {
-        "t": "Beyond Entropy: Self-Diagnostic Multi-Role Token Optimization for Video Reasoning",
-        "u": "https://arxiv.org/abs/2610.03400",
+        "t": "Ultrasound Operator Guidance Using World Modeling and Retrieval Based Action Planning",
+        "u": "https://arxiv.org/abs/2610.06008",
         "r": 6,
-        "g": 6,
-        "s": "DyCPO针对视频推理RL中token信用分配模糊的问题，提出共进化框架：用多角色依赖度量平衡视觉探索与答案线索挖掘，并从模型自身成败rollout动态导出反事实信号，实现自诊断式的token优化。",
+        "g": 7,
+        "s": "将超声探头引导形式化为潜空间世界模型中的多步规划与检索，用V-JEPA 2.1编码与检索数据库构建非参数转移模型，在CPU上实时滚动时域规划且无需探头追踪，颈动脉回瞻与前瞻到达率86%/83%。",
+        "c": ""
+      },
+      {
+        "t": "Robust 2D Traversability Mapping for Construction AMRs via Failure-Mode-Aware Fusion of LiDAR Geometry and Monocular Semantics",
+        "u": "https://arxiv.org/abs/2610.05505",
+        "r": 7,
+        "g": 5,
+        "s": "针对建筑工地AMR的可通行性建图难题，提出以LiDAR几何为主、单目语义按类别与置信度门控修正的失效模式感知融合管线，在Jetson AGX Orin上实时运行，并发布两个真实工地的多模态数据集。",
         "c": ""
       }
     ]
