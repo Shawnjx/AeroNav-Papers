@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T11:28:30.801047+00:00",
+  "updated_at": "2026-10-06T16:30:19.352665+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6042,6 +6042,55 @@
         "vlm"
       ],
       "added_at": "2026-10-03T14:32:50.799997+00:00"
+    },
+    {
+      "id": "2610.02521",
+      "arxiv_id": "2610.02521",
+      "title": "Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory",
+      "authors": [
+        "Ying Yang",
+        "Guiyu Zhang",
+        "Lianghua Huang",
+        "Chang Nie",
+        "Chenyang Si",
+        "Haofan Wang",
+        "Shaoshuai Shi",
+        "Li Jiang"
+      ],
+      "published": "2026-10-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.02521",
+      "pdf_url": "https://arxiv.org/pdf/2610.02521",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出SMI框架，首次用多模态大模型的理解能力管理长视频世界模型的空间记忆，通过空间聚类、簇内稀疏化、动作感知检索与可靠性过滤四个原子操作，提升记忆稀疏度、生成稳定性与空间一致性。",
+      "change_zh": "改变在于把长视频世界模型的记忆维护从常规方式升级为理解模型驱动的主动管理：用MLLM执行空间聚类、簇内稀疏化、动作感知检索与可靠性过滤，系统取舍长程空间上下文，维持稀疏、稳定且空间一致的生成。",
+      "why_it_matters": "长程空间记忆与空间一致性是导航级世界模型的关键瓶颈；SMI的聚类、稀疏化、动作感知检索与可靠性过滤思路，可迁移到UAV目标搜索与ObjectNav的长时程空间记忆构建，并提升具身仿真世界模型的可用性。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "世界模型,长视频生成,空间记忆管理,多模态大语言模型,空间一致性",
+      "question_zh": "如何在长视频世界模型中智能且系统化地管理不断增长的长期空间记忆，以解决长程空间上下文管理难题？",
+      "innovation_zh": "首次系统性地利用理解模型（多模态大语言模型）管理长视频世界模型的空间记忆，提出SMI框架，包含空间聚类、簇内稀疏化、动作感知检索和可靠性感知过滤四个协同原子操作。",
+      "dataset_zh": "摘要仅提及在多个基线、基准和世界模型骨干上进行实验，具体数据集或仿真环境名称未提及",
+      "results_zh": "在多个基线、基准和世界模型骨干上的大量实验证明SMI的有效性与泛化性，在记忆稀疏性、生成稳定性和空间一致性三方面取得全面提升；摘要未给出具体量化数字",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model",
+        "spatial memory",
+        "spatial reasoning",
+        "world model"
+      ],
+      "added_at": "2026-10-06T16:30:16.351264+00:00"
     },
     {
       "id": "2609.40208",
@@ -15279,112 +15328,16 @@
     }
   ],
   "briefing": {
-    "text": "本批论文主线是导航智能体的轻量化与记忆化，兼及主动重建、世界模型规划与VLM空间推理审计。最值得读LightVLN：仅0.5B语言骨干加单token历史压缩，在OpenFly反超7B基线并完成DJI机载实时闭环，效率与落地性兼备；MarvisNav把拓扑记忆投影为第一人称路线选择，VLM无需事后融合即可联合评估目标与探索史，拿下HM3D零样本SOTA并通过真机；EpicWorldModel用流匹配JEPA的预测方差引导CEM规划，把目标达成与遮挡区探索统一到同一目标下，成功率最高提升22%。趋势上，记忆的显式管理与小模型机载闭环正合力把导航研究从刷基准推向真机落地。",
-    "added": 13,
-    "at": "2026-10-06T11:29:36.603047+00:00",
+    "text": "今日入库仅一篇，主线落在世界模型的长期空间记忆：Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory 提出SMI框架，首次用多模态大模型的理解能力管理长视频世界模型的空间记忆，通过空间聚类、簇内稀疏化、动作感知检索与可靠性过滤四个原子操作，同时改善记忆稀疏度、生成稳定性与空间一致性。这篇是今日必读：它把记忆管理从启发式压缩推向理解驱动的语义组织，可直接迁移到具身导航的长程记忆设计。趋势上，空间记忆正成为多模态大模型与世界模型融合的关键接口。",
+    "added": 1,
+    "at": "2026-10-06T16:31:07.048908+00:00",
     "new": [
       {
-        "t": "Towards Quadruped-Provided Localization and Active Tracking for Micro-UAVs",
-        "u": "https://arxiv.org/abs/2610.06215",
-        "r": 7,
-        "g": 7,
-        "s": "该论文把微型无人机的定位栈整体移至带7自由度臂的四足机器人，由臂端相机检测机上AprilTag并融合四足自定位提供全局位姿，臂主动移动保持目标在视野内，使仅载IMU的微型无人机实现自主飞行。",
-        "c": ""
-      },
-      {
-        "t": "Return-to-Home Feasible Micro-Aerial Vehicle Exploration for 3D Gaussian Splatting Reconstruction",
-        "u": "https://arxiv.org/abs/2610.04013",
-        "r": 9,
-        "g": 7,
-        "s": "该文提出拓扑优先的MAV室内主动重建框架：以3DGS为重建目标、TSDF为碰撞检查与规划支架，在线构建并校验Voronoi骨架路标，在飞行时间预算与返航安全约束下选择视点完成探索式重建。",
-        "c": ""
-      },
-      {
-        "t": "SpatialChain: A Benchmark for Auditing Spatial Reasoning Faithfulness in VLMs",
-        "u": "https://arxiv.org/abs/2610.06413",
-        "r": 8,
-        "g": 8,
-        "s": "SpatialChain构建2.8万例配场景图推理链的空间VQA基准，用链重叠与场景图LLM裁判双轴审计九个思维型VLM，发现部分模型捷径率超39%，SFT可缓解。",
-        "c": "https://github.com/spatialchain/SpatialChainBenchmark"
-      },
-      {
-        "t": "LightVLN: Efficient Aerial Vision-and-Language Navigation with Compact Memory and History-Guided Local Aggregation",
-        "u": "https://arxiv.org/abs/2610.05024",
-        "r": 10,
-        "g": 8,
-        "s": "LightVLN面向无人机空域VLN提出轻量框架：0.5B语言骨干配合紧凑记忆，历史帧压缩为单token、当前观测经局部聚合从256降至32 token，在OpenFly上超越7B基线，并在DJI无人机上实现机载实时闭环评估。",
-        "c": ""
-      },
-      {
-        "t": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
-        "u": "https://arxiv.org/abs/2610.06830",
-        "r": 7,
-        "g": 7,
-        "s": "MemPilot用强化学习训练多步LLM策略，在检索现成记忆与调用异构LLM/VLM按需整理多模态历史之间调度，联合控制证据量、整理指令、模型选择与视觉访问，优化性能-成本-延迟权衡。",
-        "c": ""
-      },
-      {
-        "t": "MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation",
-        "u": "https://arxiv.org/abs/2610.06510",
-        "r": 10,
-        "g": 8,
-        "s": "MarvisNav将探索记忆可视化为路线选择：把拓扑图候选节点与探索状态投影到第一人称视图，VLM无需事后融合即可联合评估目标相关性与探索史，在HM3D达SOTA并通过真机验证。",
-        "c": ""
-      },
-      {
-        "t": "EpicWorldModel: Exploration-driven Planning with Latent World Models",
-        "u": "https://arxiv.org/abs/2610.05996",
-        "r": 9,
-        "g": 7,
-        "s": "EpicWorldModel用流匹配训练随机JEPA世界模型，预测部分可观测下多个潜在未来，以流预测方差引导CEM规划，兼顾目标达成与遮挡区探索，最高提升22%成功率。",
-        "c": ""
-      },
-      {
-        "t": "Odyssey: A Closed-Loop Benchmark for Long-Horizon Real-World Driving with Explicit Navigation Routes",
-        "u": "https://arxiv.org/abs/2610.06469",
-        "r": 6,
-        "g": 7,
-        "s": "Odyssey基于nuPlan日志重建100个100秒长时程场景构成闭环驾驶基准，用显式SD地图路线取代模糊方向指令作为导航目标，提出路线合规、换道准备等指标，并评测含VLA在内的先进规划器。",
-        "c": ""
-      },
-      {
-        "t": "Dual Variational Autoencoders for Efficient Sim-to-Real Transfer in Low-Cost Robotic Navigation",
-        "u": "https://arxiv.org/abs/2610.06327",
+        "t": "Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory",
+        "u": "https://arxiv.org/abs/2610.02521",
         "r": 8,
         "g": 7,
-        "s": "提出双卷积VAE共享解码器架构，结合域随机化与特征级域适配，对齐仿真与真实图像分布，实现低成本机器人导航策略的高效Sim2Real迁移，并在树莓派等嵌入式平台真机验证。",
-        "c": ""
-      },
-      {
-        "t": "Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models",
-        "u": "https://arxiv.org/abs/2610.06813",
-        "r": 8,
-        "g": 8,
-        "s": "提出掩码几何编码器MGE，训练时从全局注意力中丢弃部分帧token并向全上下文教师模型蒸馏，学到更鲁棒的逐帧几何表征，在遮挡与相似歧义视图下表现更强，并以锚点引导的自适应token合并加速推理。",
-        "c": ""
-      },
-      {
-        "t": "Lens3D: Target-Conditioned Visual Foveation for Fine-Grained 3D Understanding",
-        "u": "https://arxiv.org/abs/2610.06611",
-        "r": 8,
-        "g": 7,
-        "s": "Lens3D通过3D定位选择互补视角交给外部2D视觉语言模型获取细粒度描述，再以描述监督将知识蒸馏进3D大模型，使其无需外部调用即可细粒度理解物体，并构建2068个物体的评测集验证效果。",
-        "c": ""
-      },
-      {
-        "t": "Ultrasound Operator Guidance Using World Modeling and Retrieval Based Action Planning",
-        "u": "https://arxiv.org/abs/2610.06008",
-        "r": 6,
-        "g": 7,
-        "s": "将超声探头引导形式化为潜空间世界模型中的多步规划与检索，用V-JEPA 2.1编码与检索数据库构建非参数转移模型，在CPU上实时滚动时域规划且无需探头追踪，颈动脉回瞻与前瞻到达率86%/83%。",
-        "c": ""
-      },
-      {
-        "t": "Robust 2D Traversability Mapping for Construction AMRs via Failure-Mode-Aware Fusion of LiDAR Geometry and Monocular Semantics",
-        "u": "https://arxiv.org/abs/2610.05505",
-        "r": 7,
-        "g": 5,
-        "s": "针对建筑工地AMR的可通行性建图难题，提出以LiDAR几何为主、单目语义按类别与置信度门控修正的失效模式感知融合管线，在Jetson AGX Orin上实时运行，并发布两个真实工地的多模态数据集。",
+        "s": "提出SMI框架，首次用多模态大模型的理解能力管理长视频世界模型的空间记忆，通过空间聚类、簇内稀疏化、动作感知检索与可靠性过滤四个原子操作，提升记忆稀疏度、生成稳定性与空间一致性。",
         "c": ""
       }
     ]
