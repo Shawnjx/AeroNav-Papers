@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T15:08:48.337662+00:00",
+  "updated_at": "2026-10-06T16:31:52.462927+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -687,7 +687,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 2485,
+      "citation_count": 2494,
       "url": "https://arxiv.org/abs/2308.12966",
       "pdf_url": "https://arxiv.org/pdf/2308.12966",
       "code_url": "https://github.com/QwenLM/Qwen-VL",
@@ -1005,7 +1005,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 1766,
+      "citation_count": 1778,
       "url": "https://arxiv.org/abs/2303.17580",
       "pdf_url": "https://arxiv.org/pdf/2303.17580",
       "code_url": "",
@@ -1704,7 +1704,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 1008,
+      "citation_count": 1011,
       "url": "https://arxiv.org/abs/2309.17421",
       "pdf_url": "https://arxiv.org/pdf/2309.17421",
       "code_url": "",
@@ -2434,7 +2434,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 576,
+      "citation_count": 577,
       "url": "https://doi.org/10.1109/icra48506.2021.9561996",
       "pdf_url": "",
       "code_url": "",
@@ -2552,7 +2552,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "ACM Transactions on Software Engineering and Methodology",
-      "citation_count": 561,
+      "citation_count": 564,
       "url": "https://doi.org/10.1145/3672459",
       "pdf_url": "",
       "code_url": "",
@@ -3514,6 +3514,45 @@
       "added_at": "2026-09-03T19:57:56Z"
     },
     {
+      "id": "2503.03751",
+      "arxiv_id": "2503.03751",
+      "title": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
+      "authors": [
+        "Xuanchi Ren",
+        "Tianchang Shen",
+        "Jiahui Huang",
+        "Huan Ling",
+        "Yifan Lu",
+        "Merlin Nimier-David",
+        "Thomas J. Muller",
+        "Alexander Keller",
+        "Sanja Fidler",
+        "Jun Gao"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "预印本",
+      "citation_count": 369,
+      "url": "https://arxiv.org/abs/2503.03751",
+      "pdf_url": "https://arxiv.org/pdf/2503.03751",
+      "code_url": "",
+      "topics": [
+        "世界模型"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Gen3C利用种子图像深度构建3D点云缓存，生成时以新相机轨迹下的2D渲染为条件，实现精确相机控制与时序3D一致的视频生成，并在稀疏视角新视角合成上达到SOTA。",
+      "change_zh": "常见做法仅把相机参数当网络输入，让模型自行学习视角依赖；Gen3C先用预测深度构建3D点云缓存，再按相机轨迹渲染2D图像作为生成条件，模型无需记忆已生成内容或从位姿推断结构，专注补全未见区域。",
+      "why_it_matters": "相机可控且3D一致的视频生成是世界模型线核心能力：可模拟给定位姿下的未来观测，为UAV目标搜索与ObjectNav提供策略前瞻、探索想象与数据增广，其稀疏视角新视角合成也可服务侦察与重建。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-09-26T14:03:39.635862+00:00"
+    },
+    {
       "id": "https://openalex.org/W4413146013",
       "arxiv_id": "2503.03751",
       "title": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
@@ -3551,45 +3590,6 @@
       "keywords": [],
       "is_classic": true,
       "added_at": "2026-09-23T08:29:23.578165+00:00"
-    },
-    {
-      "id": "2503.03751",
-      "arxiv_id": "2503.03751",
-      "title": "Gen3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
-      "authors": [
-        "Xuanchi Ren",
-        "Tianchang Shen",
-        "Jiahui Huang",
-        "Huan Ling",
-        "Yifan Lu",
-        "Merlin Nimier-David",
-        "Thomas J. Muller",
-        "Alexander Keller",
-        "Sanja Fidler",
-        "Jun Gao"
-      ],
-      "published": "2025",
-      "source": "OpenAlex",
-      "venue": "预印本",
-      "citation_count": 362,
-      "url": "https://arxiv.org/abs/2503.03751",
-      "pdf_url": "https://arxiv.org/pdf/2503.03751",
-      "code_url": "",
-      "topics": [
-        "世界模型"
-      ],
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "Gen3C利用种子图像深度构建3D点云缓存，生成时以新相机轨迹下的2D渲染为条件，实现精确相机控制与时序3D一致的视频生成，并在稀疏视角新视角合成上达到SOTA。",
-      "change_zh": "常见做法仅把相机参数当网络输入，让模型自行学习视角依赖；Gen3C先用预测深度构建3D点云缓存，再按相机轨迹渲染2D图像作为生成条件，模型无需记忆已生成内容或从位姿推断结构，专注补全未见区域。",
-      "why_it_matters": "相机可控且3D一致的视频生成是世界模型线核心能力：可模拟给定位姿下的未来观测，为UAV目标搜索与ObjectNav提供策略前瞻、探索想象与数据增广，其稀疏视角新视角合成也可服务侦察与重建。",
-      "relevance_rating": 7,
-      "rigor_rating": 7,
-      "venue_verified": false,
-      "score": 21,
-      "keywords": [],
-      "is_classic": true,
-      "added_at": "2026-09-26T14:03:39.635862+00:00"
     },
     {
       "id": "https://openalex.org/W4327662982",
@@ -3683,7 +3683,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 343,
+      "citation_count": 347,
       "url": "https://arxiv.org/abs/2403.17846",
       "pdf_url": "https://arxiv.org/pdf/2403.17846",
       "code_url": "",
@@ -3745,6 +3745,42 @@
       "added_at": "2026-09-02T06:48:10Z"
     },
     {
+      "id": "https://openalex.org/W4386718967",
+      "arxiv_id": "2310.10943",
+      "title": "Reaching the limit in autonomous racing: Optimal control versus reinforcement learning",
+      "authors": [
+        "Yunlong Song",
+        "Ángel Romero",
+        "Matthias M. Müller",
+        "Vladlen Koltun",
+        "Davide Scaramuzza"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "Science Robotics",
+      "citation_count": 338,
+      "url": "https://doi.org/10.1126/scirobotics.adg1462",
+      "pdf_url": "https://www.zora.uzh.ch/id/eprint/257394/1/2310.10943.pdf",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作在无人机竞速任务中系统对比强化学习与最优控制，发现RL胜在直接优化任务级目标并以域随机化应对模型误差，最终实现超越人类冠军的极速飞行控制。",
+      "change_zh": "常见路线将竞速分解为轨迹规划与跟踪控制并以显式轨迹为接口，本方法改为RL端到端直接优化任务级目标，用域随机化吸收未建模效应，并通过对照实验证明优势来自目标函数更优而非求解更优。",
+      "why_it_matters": "属状态估计与控制线的高影响力系统工作：把UAV飞行控制推向平台物理极限（>12g、108km/h），其RL+域随机化的Sim2Real范式可迁移到UAV主动目标搜索的快速抵近与高机动飞行，提升底层能力上限。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "drone"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-05T04:46:08Z"
+    },
+    {
       "id": "2010.07820",
       "arxiv_id": "2010.07820",
       "title": "DynaSLAM II: Tightly-Coupled Multi-Object Tracking and SLAM",
@@ -3778,42 +3814,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-26T14:03:39.635862+00:00"
-    },
-    {
-      "id": "https://openalex.org/W4386718967",
-      "arxiv_id": "2310.10943",
-      "title": "Reaching the limit in autonomous racing: Optimal control versus reinforcement learning",
-      "authors": [
-        "Yunlong Song",
-        "Ángel Romero",
-        "Matthias M. Müller",
-        "Vladlen Koltun",
-        "Davide Scaramuzza"
-      ],
-      "published": "2023",
-      "source": "OpenAlex",
-      "venue": "Science Robotics",
-      "citation_count": 336,
-      "url": "https://doi.org/10.1126/scirobotics.adg1462",
-      "pdf_url": "https://www.zora.uzh.ch/id/eprint/257394/1/2310.10943.pdf",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "该工作在无人机竞速任务中系统对比强化学习与最优控制，发现RL胜在直接优化任务级目标并以域随机化应对模型误差，最终实现超越人类冠军的极速飞行控制。",
-      "change_zh": "常见路线将竞速分解为轨迹规划与跟踪控制并以显式轨迹为接口，本方法改为RL端到端直接优化任务级目标，用域随机化吸收未建模效应，并通过对照实验证明优势来自目标函数更优而非求解更优。",
-      "why_it_matters": "属状态估计与控制线的高影响力系统工作：把UAV飞行控制推向平台物理极限（>12g、108km/h），其RL+域随机化的Sim2Real范式可迁移到UAV主动目标搜索的快速抵近与高机动飞行，提升底层能力上限。",
-      "relevance_rating": 9,
-      "rigor_rating": 9,
-      "venue_verified": false,
-      "score": 27,
-      "keywords": [
-        "drone"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-05T04:46:08Z"
     },
     {
       "id": "https://openalex.org/W3120564201",
@@ -3899,7 +3899,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "IEEE Transactions on Robotics",
-      "citation_count": 322,
+      "citation_count": 325,
       "url": "https://doi.org/10.1109/tro.2021.3071527",
       "pdf_url": "",
       "code_url": "",
@@ -4355,7 +4355,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "预印本",
-      "citation_count": 301,
+      "citation_count": 304,
       "url": "https://doi.org/10.1109/icra57147.2024.10610855",
       "pdf_url": "",
       "code_url": "",
@@ -4394,7 +4394,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "Science Robotics",
-      "citation_count": 293,
+      "citation_count": 294,
       "url": "https://doi.org/10.1126/scirobotics.abh1221",
       "pdf_url": "https://www.zora.uzh.ch/id/eprint/207837/1/ScienceRobotics21_Foehn.pdf",
       "code_url": "",
@@ -4791,6 +4791,53 @@
       "added_at": "2026-09-08T06:11:06.415511+00:00"
     },
     {
+      "id": "https://openalex.org/W4404520519",
+      "arxiv_id": "2408.14035",
+      "title": "FAST-LIVO2: Fast, Direct LiDAR–Inertial–Visual Odometry",
+      "authors": [
+        "Chunran Zheng",
+        "Wei Xu",
+        "Zuhao Zou",
+        "Tan Hua",
+        "Chongjian Yuan",
+        "Dongjiao He",
+        "Bingyang Zhou",
+        "Zheng Liu",
+        "Jiarong Lin",
+        "Fangcheng Zhu",
+        "Yunfan Ren",
+        "Rong Wang"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 271,
+      "url": "https://doi.org/10.1109/tro.2024.3502198",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FAST-LIVO2是快速直接式激光-惯性-视觉里程计，用误差状态迭代卡尔曼滤波顺序融合IMU、LiDAR与图像，直接法配准原始点云并最小化光度误差，统一体素地图融合，在精度、鲁棒性与效率上超越SOTA并开源。",
+      "change_zh": "相比特征点法融合里程计（如LVI-SAM、R3LIVE），改用直接法：LiDAR直接配准原始点云、视觉最小化光度误差，ESIKF顺序更新解决维度不匹配，统一体素地图并以平面先验辅助图像对齐，兼顾实时性与高精度。",
+      "why_it_matters": "它是UAV自主的核心定位底座：论文直接展示实时无人机导航与机载建图应用，GPS拒止下的高精度里程计是搜救、侦察等UAV主动目标搜索与自主飞行的前提；统一体素地图与稠密重建（含NeRF/网格渲染）也为场景理解与后续导航决策提供可靠空间数据。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "odometry",
+        "slam",
+        "state estimation",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
       "id": "https://openalex.org/W3168086592",
       "arxiv_id": "2103.05056",
       "title": "LCDNet: Deep Loop Closure Detection and Point Cloud Registration for LiDAR SLAM",
@@ -4827,53 +4874,6 @@
       "added_at": "2026-09-03T19:57:56Z"
     },
     {
-      "id": "https://openalex.org/W4404520519",
-      "arxiv_id": "2408.14035",
-      "title": "FAST-LIVO2: Fast, Direct LiDAR–Inertial–Visual Odometry",
-      "authors": [
-        "Chunran Zheng",
-        "Wei Xu",
-        "Zuhao Zou",
-        "Tan Hua",
-        "Chongjian Yuan",
-        "Dongjiao He",
-        "Bingyang Zhou",
-        "Zheng Liu",
-        "Jiarong Lin",
-        "Fangcheng Zhu",
-        "Yunfan Ren",
-        "Rong Wang"
-      ],
-      "published": "2024",
-      "source": "OpenAlex",
-      "venue": "IEEE Transactions on Robotics",
-      "citation_count": 269,
-      "url": "https://doi.org/10.1109/tro.2024.3502198",
-      "pdf_url": "",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "FAST-LIVO2是快速直接式激光-惯性-视觉里程计，用误差状态迭代卡尔曼滤波顺序融合IMU、LiDAR与图像，直接法配准原始点云并最小化光度误差，统一体素地图融合，在精度、鲁棒性与效率上超越SOTA并开源。",
-      "change_zh": "相比特征点法融合里程计（如LVI-SAM、R3LIVE），改用直接法：LiDAR直接配准原始点云、视觉最小化光度误差，ESIKF顺序更新解决维度不匹配，统一体素地图并以平面先验辅助图像对齐，兼顾实时性与高精度。",
-      "why_it_matters": "它是UAV自主的核心定位底座：论文直接展示实时无人机导航与机载建图应用，GPS拒止下的高精度里程计是搜救、侦察等UAV主动目标搜索与自主飞行的前提；统一体素地图与稠密重建（含NeRF/网格渲染）也为场景理解与后续导航决策提供可靠空间数据。",
-      "relevance_rating": 9,
-      "rigor_rating": 9,
-      "venue_verified": false,
-      "score": 27,
-      "keywords": [
-        "benchmark",
-        "odometry",
-        "slam",
-        "state estimation",
-        "uav"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-05T18:45:24.442900+00:00"
-    },
-    {
       "id": "https://openalex.org/W4362698359",
       "arxiv_id": "",
       "title": "Point‐LIO: Robust High‐Bandwidth Light Detection and Ranging Inertial Odometry",
@@ -4888,7 +4888,7 @@
       "published": "2023",
       "source": "OpenAlex",
       "venue": "Advanced Intelligent Systems",
-      "citation_count": 263,
+      "citation_count": 264,
       "url": "https://doi.org/10.1002/aisy.202200459",
       "pdf_url": "",
       "code_url": "",
@@ -5150,6 +5150,42 @@
       "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
+      "id": "https://openalex.org/W4285163488",
+      "arxiv_id": "2108.13205",
+      "title": "Model Predictive Contouring Control for Time-Optimal Quadrotor Flight",
+      "authors": [
+        "Ángel Romero",
+        "Sihao Sun",
+        "Philipp Foehn",
+        "Davide Scaramuzza"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 249,
+      "url": "https://doi.org/10.1109/tro.2022.3173711",
+      "pdf_url": "https://www.zora.uzh.ch/id/eprint/257383/1/TRO22_MPCC_Romero.pdf",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "针对四旋翼穿多点航迹的时间最优飞行问题，提出模型预测轮廓控制（MPCC），在运行时同时求解时间分配与控制，实时生成接近真实时间最优的轨迹，真机圈速超越现有方法与顶级人类飞手。",
+      "change_zh": "主流路线先离线求解计算量极大的全局时间最优轨迹再跟踪，扰动下重规划代价高昂；本文改为用MPCC在运行时并行完成时间分配与控制，沿简化参考路径最大化进度并最小化偏差，从而实时逼近真实时间最优轨迹。",
+      "why_it_matters": "该工作是四旋翼敏捷飞行控制的标志性成果，真机达60km/h并超越人类飞手，属状态估计与控制线的高影响力核心收录；其运行时时间最优与实时重规划能力，可作为UAV主动目标搜索中快速接近目标、抗扰重规划的运动控制底座。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "real world",
+        "waypoint"
+      ],
+      "is_classic": true,
+      "added_at": "2026-09-06T09:25:45.515854+00:00"
+    },
+    {
       "id": "2010.11061",
       "arxiv_id": "2010.11061",
       "title": "MADER: Trajectory Planner in Multiagent and Dynamic Environments",
@@ -5181,42 +5217,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-26T14:03:39.635862+00:00"
-    },
-    {
-      "id": "https://openalex.org/W4285163488",
-      "arxiv_id": "2108.13205",
-      "title": "Model Predictive Contouring Control for Time-Optimal Quadrotor Flight",
-      "authors": [
-        "Ángel Romero",
-        "Sihao Sun",
-        "Philipp Foehn",
-        "Davide Scaramuzza"
-      ],
-      "published": "2022",
-      "source": "OpenAlex",
-      "venue": "IEEE Transactions on Robotics",
-      "citation_count": 247,
-      "url": "https://doi.org/10.1109/tro.2022.3173711",
-      "pdf_url": "https://www.zora.uzh.ch/id/eprint/257383/1/TRO22_MPCC_Romero.pdf",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "初步",
-      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
-      "summary_zh": "针对四旋翼穿多点航迹的时间最优飞行问题，提出模型预测轮廓控制（MPCC），在运行时同时求解时间分配与控制，实时生成接近真实时间最优的轨迹，真机圈速超越现有方法与顶级人类飞手。",
-      "change_zh": "主流路线先离线求解计算量极大的全局时间最优轨迹再跟踪，扰动下重规划代价高昂；本文改为用MPCC在运行时并行完成时间分配与控制，沿简化参考路径最大化进度并最小化偏差，从而实时逼近真实时间最优轨迹。",
-      "why_it_matters": "该工作是四旋翼敏捷飞行控制的标志性成果，真机达60km/h并超越人类飞手，属状态估计与控制线的高影响力核心收录；其运行时时间最优与实时重规划能力，可作为UAV主动目标搜索中快速接近目标、抗扰重规划的运动控制底座。",
-      "relevance_rating": 8,
-      "rigor_rating": 9,
-      "venue_verified": false,
-      "score": 25,
-      "keywords": [
-        "real world",
-        "waypoint"
-      ],
-      "is_classic": true,
-      "added_at": "2026-09-06T09:25:45.515854+00:00"
     },
     {
       "id": "https://openalex.org/W3207826836",
@@ -5254,6 +5254,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-04T19:37:49Z"
+    },
+    {
+      "id": "2203.03397",
+      "arxiv_id": "2203.03397",
+      "title": "OverlapTransformer: An Efficient and Yaw-Angle-Invariant Transformer Network for LiDAR-Based Place Recognition",
+      "authors": [
+        "Junyi Ma",
+        "Jun Zhang",
+        "Jintao Xu",
+        "Rui Ai",
+        "Weihao Gu",
+        "Xieyuanli Chen"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 238,
+      "url": "https://arxiv.org/abs/2203.03397",
+      "pdf_url": "https://arxiv.org/pdf/2203.03397",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出OverlapTransformer，基于LiDAR距离图像的轻量偏航角不变Transformer网络，单帧耗时不足2ms，用于位置识别与SLAM回环检测和全局定位，在KITTI与Ford Campus上对比SOTA验证泛化性，并发布长期场景新数据集。",
+      "change_zh": "相比Scan Context等点云全局描述子或PointNet式编码的常见路线，该方法沿用距离图像表示但引入注意力结构，并借助网络设计天然获得偏航角不变性，无需旋转增广或多视角查询，同时保持毫秒级推理速度并补充长期重复场景数据集。",
+      "why_it_matters": "作为SLAM回环与全局定位的高效方案，直接服务状态估计与控制线，是社区常用的开源基线；对UAV搜救与ObjectNav等长程任务可间接支撑重定位与空间记忆，但论文本身不含导航决策成分，价值以底层自主能力为主。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 21,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-03T14:37:08.081160+00:00"
     },
     {
       "id": "https://openalex.org/W4285147600",
@@ -5373,44 +5411,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T06:35:42Z"
-    },
-    {
-      "id": "2203.03397",
-      "arxiv_id": "2203.03397",
-      "title": "OverlapTransformer: An Efficient and Yaw-Angle-Invariant Transformer Network for LiDAR-Based Place Recognition",
-      "authors": [
-        "Junyi Ma",
-        "Jun Zhang",
-        "Jintao Xu",
-        "Rui Ai",
-        "Weihao Gu",
-        "Xieyuanli Chen"
-      ],
-      "published": "2022",
-      "source": "OpenAlex",
-      "venue": "IEEE Robotics and Automation Letters",
-      "citation_count": 236,
-      "url": "https://arxiv.org/abs/2203.03397",
-      "pdf_url": "https://arxiv.org/pdf/2203.03397",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "强",
-      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
-      "summary_zh": "提出OverlapTransformer，基于LiDAR距离图像的轻量偏航角不变Transformer网络，单帧耗时不足2ms，用于位置识别与SLAM回环检测和全局定位，在KITTI与Ford Campus上对比SOTA验证泛化性，并发布长期场景新数据集。",
-      "change_zh": "相比Scan Context等点云全局描述子或PointNet式编码的常见路线，该方法沿用距离图像表示但引入注意力结构，并借助网络设计天然获得偏航角不变性，无需旋转增广或多视角查询，同时保持毫秒级推理速度并补充长期重复场景数据集。",
-      "why_it_matters": "作为SLAM回环与全局定位的高效方案，直接服务状态估计与控制线，是社区常用的开源基线；对UAV搜救与ObjectNav等长程任务可间接支撑重定位与空间记忆，但论文本身不含导航决策成分，价值以底层自主能力为主。",
-      "relevance_rating": 6,
-      "rigor_rating": 7,
-      "venue_verified": true,
-      "score": 21,
-      "keywords": [
-        "localization",
-        "slam"
-      ],
-      "is_classic": true,
-      "added_at": "2026-10-03T14:37:08.081160+00:00"
     },
     {
       "id": "https://openalex.org/W4385482704",
@@ -5974,6 +5974,48 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2103.04131",
+      "arxiv_id": "2103.04131",
+      "title": "Omni-Swarm: A Decentralized Omnidirectional Visual–Inertial–UWB State Estimation System for Aerial Swarms",
+      "authors": [
+        "Hao Xu",
+        "Yichen Zhang",
+        "Boyu Zhou",
+        "Luqi Wang",
+        "Xinjie Yao",
+        "Guotao Meng",
+        "Shaojie Shen"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 188,
+      "url": "https://arxiv.org/abs/2103.04131",
+      "pdf_url": "https://arxiv.org/pdf/2103.04131",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出面向GPS拒止环境的无人机集群去中心化全向视觉-惯性-UWB状态估计系统，前端融合宽视场相机、UWB测距、VIO、地图定位与机间视觉跟踪，后端图优化融合，实现厘米级相对定位与全局一致性。",
+      "change_zh": "相比依赖动作捕捉或中心化处理的常见方案，该工作以全向感知前端加图优化后端的去中心化架构，直接解决集群相对状态的能观性、初始化复杂与全局一致性缺失问题，使机间避障无需任何外部设备即可完成。",
+      "why_it_matters": "为GPS拒止环境下无人机集群自主飞行提供核心定位与相对状态估计能力，是多机搜救、侦察与UAV主动目标搜索等上层任务的基础设施；作为社区公认的高影响力系统工作，对机器人自主落地与集群导航研究均有重要参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "drone",
+        "localization",
+        "odometry",
+        "state estimation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-03T14:37:08.081160+00:00"
+    },
+    {
       "id": "https://openalex.org/W4220849261",
       "arxiv_id": "",
       "title": "Fault-tolerant cooperative navigation of networked UAV swarms for forest fire monitoring",
@@ -6312,48 +6354,6 @@
       "added_at": "2026-09-06T18:49:29.317136+00:00"
     },
     {
-      "id": "2103.04131",
-      "arxiv_id": "2103.04131",
-      "title": "Omni-Swarm: A Decentralized Omnidirectional Visual–Inertial–UWB State Estimation System for Aerial Swarms",
-      "authors": [
-        "Hao Xu",
-        "Yichen Zhang",
-        "Boyu Zhou",
-        "Luqi Wang",
-        "Xinjie Yao",
-        "Guotao Meng",
-        "Shaojie Shen"
-      ],
-      "published": "2022",
-      "source": "OpenAlex",
-      "venue": "IEEE Transactions on Robotics",
-      "citation_count": 160,
-      "url": "https://arxiv.org/abs/2103.04131",
-      "pdf_url": "https://arxiv.org/pdf/2103.04131",
-      "code_url": "",
-      "topics": [
-        "状态估计与控制"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "提出面向GPS拒止环境的无人机集群去中心化全向视觉-惯性-UWB状态估计系统，前端融合宽视场相机、UWB测距、VIO、地图定位与机间视觉跟踪，后端图优化融合，实现厘米级相对定位与全局一致性。",
-      "change_zh": "相比依赖动作捕捉或中心化处理的常见方案，该工作以全向感知前端加图优化后端的去中心化架构，直接解决集群相对状态的能观性、初始化复杂与全局一致性缺失问题，使机间避障无需任何外部设备即可完成。",
-      "why_it_matters": "为GPS拒止环境下无人机集群自主飞行提供核心定位与相对状态估计能力，是多机搜救、侦察与UAV主动目标搜索等上层任务的基础设施；作为社区公认的高影响力系统工作，对机器人自主落地与集群导航研究均有重要参考价值。",
-      "relevance_rating": 9,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 26,
-      "keywords": [
-        "aerial",
-        "drone",
-        "localization",
-        "odometry",
-        "state estimation"
-      ],
-      "is_classic": true,
-      "added_at": "2026-10-03T14:37:08.081160+00:00"
-    },
-    {
       "id": "https://openalex.org/W4391676180",
       "arxiv_id": "2312.17487",
       "title": "LiDAR odometry survey: recent advancements and remaining challenges",
@@ -6605,7 +6605,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "Science Robotics",
-      "citation_count": 116,
+      "citation_count": 117,
       "url": "https://doi.org/10.1126/scirobotics.adi0591",
       "pdf_url": "",
       "code_url": "",
@@ -6751,7 +6751,7 @@
       "published": "2025",
       "source": "OpenAlex",
       "venue": "IEEE Robotics and Automation Letters",
-      "citation_count": 99,
+      "citation_count": 100,
       "url": "https://doi.org/10.1109/lra.2025.3546069",
       "pdf_url": "",
       "code_url": "",
@@ -9527,6 +9527,7 @@
       "excluded_at": "2026-10-03"
     }
   },
+  "last_citation_refresh": "2026-10-06T16:31:52.462927+00:00",
   "briefing": {
     "text": "本轮两篇高被引工作都指向具身导航的底层定位能力：在效率、泛化与GPS拒止等约束下完成位置识别与状态估计。OverlapTransformer以LiDAR距离图像构建偏航角不变的轻量Transformer，单帧耗时不足2ms，跨KITTI与Ford Campus验证泛化并附带长期场景数据集，适合作为回环检测与全局定位的强基线。Omni-Swarm面向GPS拒止环境的无人机集群，将全向视觉、UWB测距与VIO经图优化后端融合，实现厘米级去中心化相对定位，是从单体SLAM走向多机协同估计的代表。整体看，定位栈正沿轻量学习化与集群去中心化两条线索并行演进。",
     "added": 2,
