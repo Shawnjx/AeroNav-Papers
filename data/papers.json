@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T16:30:19.352665+00:00",
+  "updated_at": "2026-10-07T11:03:51.828091+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1644,6 +1644,55 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.08526",
+      "arxiv_id": "2610.08526",
+      "title": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
+      "authors": [
+        "Thinh D. Le",
+        "Son T. Nguyen",
+        "Duong Q. Nguyen",
+        "Dung D. Le",
+        "Ngo Anh Vien",
+        "H. Nguyen-Xuan"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08526",
+      "pdf_url": "https://arxiv.org/pdf/2610.08526",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "面向智能仓库无人机，构建光真实VLA框架与数据集：507条遥操作飞行片段、8504帧RGB转移，覆盖语言引导人体搜索、定位与跟踪两类任务，并系统评测四种开源VLA基线，揭示空域语言条件控制远未解决。",
+      "change_zh": "常见VLA聚焦机械臂操作与地面导航；本工作扩展到仓库无人机的四自由度连续低层控制，联合提供连续动作、细粒度语言目标描述与工业环境基准，并以无泄漏协议对比，发现连续动作建模优于离散token化、跨具身迁移差。",
+      "why_it_matters": "为UAV主动目标搜索提供语言条件人体搜索、目标接近与人员跟随的仓库级基准与四种基线，其发现——严格泛化下性能骤降、地面/人形模型向空域迁移差——直接指导无人机目标搜索与空域VLN的模型设计，数据还可支撑世界模型研究。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉-语言-动作模型（VLA）, 无人机导航, 人体跟踪, 智能仓库, 语言引导控制, 基准数据集",
+      "question_zh": "无人机能否依据自然语言指令在智能仓库环境中实现人员搜索、定位与跟踪的连续低层飞行控制？",
+      "innovation_zh": "提出首个面向智能仓库语言引导无人机搜人、定位与跟踪的VLA框架与数据集，联合提供连续低层飞行动作、细粒度自然语言目标描述与真实感工业环境，并基于四种开源VLA架构建立无数据泄漏的统一基准评测协议。",
+      "dataset_zh": "在NVIDIA Isaac Sim仿真环境中构建的WareFly-VLA数据集，包含507条人类遥操作飞行片段和8504张高分辨率RGB转移数据，每条样本配有人工撰写的目标工人外观描述及同步的四自由度控制指令。",
+      "results_zh": "实验表明智能仓库中的语言条件飞行控制远未解决：在严格泛化设定下各模型性能大幅下降；连续动作建模一致优于离散动作分词；单帧输入下仅前向控制通道可被可靠学习；现有基础模型接口从地面和人形体型向空中平台迁移效果不佳。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-10-07T10:52:18.008100+00:00"
     },
     {
       "id": "2610.03137",
@@ -5766,6 +5815,91 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.08720",
+      "arxiv_id": "2610.08720",
+      "title": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+      "authors": [
+        "Siru Jiang",
+        "Yongzhe Lyu",
+        "Shuo Lu",
+        "Yubin Wang",
+        "Yuxiang Zhang",
+        "Yue Liao",
+        "Bin Wang",
+        "Jian Liang",
+        "Tieniu Tan"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08720",
+      "pdf_url": "https://arxiv.org/pdf/2610.08720",
+      "code_url": "https://github.com/sirujiang/WorldSolver",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "WorldSolver基于61篇经典图形学论文构建168个物理仿真任务基准，要求LLM智能体在代码脚手架中补全求解器实现，从执行检查、视觉保真、物理合理三维度评测，最强智能体仅得约48.7分。",
+      "change_zh": "常见世界模型路线用神经网络端到端隐式学习环境动态；该工作改为评测智能体显式生成可执行物理求解器代码的能力，任务源自图形学经典物理现象并固定仿真环境，用三维指标系统量化前沿模型在物理仿真上的差距。",
+      "why_it_matters": "该基准系统量化了智能体物理理解、数学推理与工程实现的综合能力，其求解器生成可望为导航与世界模型提供物理先验和仿真数据引擎，为UAV目标搜索与ObjectNav的仿真训练与评测供能，但与具体导航任务尚无直接耦合。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "llm agent"
+      ],
+      "added_at": "2026-10-07T11:00:49.227075+00:00"
+    },
+    {
+      "id": "2610.08306",
+      "arxiv_id": "2610.08306",
+      "title": "Sensor-Layout-Agnostic Navigation via Geometric Observation Canonicalization",
+      "authors": [
+        "Welf Rehberg",
+        "Kostas Alexis"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08306",
+      "pdf_url": "https://arxiv.org/pdf/2610.08306",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "将任意数量、内外参各异的深度测量反投影拼接为统一球面距离图与有效掩码，结合强化学习与相机随机化训练无人机导航策略，实现跨传感器布局零样本迁移并在真实四旋翼上验证。",
+      "change_zh": "常见做法让策略隐式记忆固定相机布局；本文改为显式几何规范化：把异构深度反投影到机体系并合成球面距离图与观测掩码，使策略与传感器数量、内外参解耦，经相机随机化训练获得零样本泛化与在线掉线鲁棒性。",
+      "why_it_matters": "对UAV主动目标搜索价值显著：单一策略可直接部署到异构载荷平台，免逐机重训；观测掩码显式区分已覆盖与盲区，可支撑探索式目标接近，也为多传感器ObjectNav提供观测规范化范式。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉导航, 深度传感器布局, 强化学习, 四旋翼无人机, 球面距离图像, 零样本泛化",
+      "question_zh": "如何使视觉导航策略摆脱对固定相机配置的依赖，实现跨异构深度传感器布局的零样本部署？",
+      "innovation_zh": "不同于隐式学习空间对齐，该方法显式将任意数量、内外参各异的深度测量反投影至共享机体中心坐标系，拼接成统一球面距离图像与二值有效掩码以标识盲区，并用激进相机随机化的强化学习训练实现零样本泛化。",
+      "dataset_zh": "真机平台为物理四旋翼无人机，在充满障碍的走廊和室外森林中开展飞行测试；训练所用仿真环境的具体名称摘要未提及",
+      "results_zh": "该策略零样本泛化到含最多七台相机的未见布局，成功率随空间感知覆盖增加从78%提升至95%；在物理四旋翼上的真实飞行（障碍走廊与室外森林）验证了跨相机配置的零样本迁移，并对突发在线传感器掉线具有鲁棒性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "deployment"
+      ],
+      "added_at": "2026-10-07T11:03:05.471558+00:00"
+    },
+    {
       "id": "2610.06327",
       "arxiv_id": "2610.06327",
       "title": "Dual Variational Autoencoders for Efficient Sim-to-Real Transfer in Low-Cost Robotic Navigation",
@@ -7555,6 +7689,90 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.08791",
+      "arxiv_id": "2610.08791",
+      "title": "World Models' Last Exam in Physics",
+      "authors": [
+        "Mingju Gao",
+        "Qingle Liu",
+        "Yuzhao Peng",
+        "Xinjie Lin",
+        "Ziming Qin",
+        "Zheng Jiang",
+        "Wenyi Li",
+        "Calvin Xiao",
+        "Youjie Zheng",
+        "Kaisen Yang",
+        "Qinhuai Na"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08791",
+      "pdf_url": "https://arxiv.org/pdf/2610.08791",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出基于测量的视频世界模型物理一致性基准：40个受控任务覆盖力学、光学、流体、热与相变、电磁、表面张力，配以可观测性筛查与任务级量化测量，在8个模型1280段视频上揭示持续的物理不一致。",
+      "change_zh": "常见评测依赖模型打分或参考视频，且物理直测多限于力学；本文改为免参考的测量式评测：先筛查任务可观测性，再做任务级定量物理测量，扩展至光学、流体、电磁、表面张力等多域，并用已知物理关系的合成视频验证测量模块。",
+      "why_it_matters": "世界模型是具身导航预测与规划的关键能力，其物理一致性直接决定UAV目标搜索与ObjectNav中基于模型的想象与规划是否可靠；该基准提供可解释、可测量的诊断工具，为筛选拟真可靠的生成式世界模型用于导航规划提供依据。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-07T10:58:49.917261+00:00"
+    },
+    {
+      "id": "2610.07278",
+      "arxiv_id": "2610.07278",
+      "title": "Embedded Bare-Metal Radar-Inertial Odometry",
+      "authors": [
+        "Nicolai Adil Øyen Aatif",
+        "Morten Nissov",
+        "Kostas Alexis"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.07278",
+      "pdf_url": "https://arxiv.org/pdf/2610.07278",
+      "code_url": "https://github.com/ntnu-arl/embedded_rio",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出面向低算力平台的嵌入式雷达-惯性里程计，在单核微控制器上完成全部数据处理与辅助惯性导航；飞行实验测得平移APE 0.51–0.82m、RPE<3%，经PX4闭环飞行验证，固件与PCB设计开源。",
+      "change_zh": "常见里程计依赖视觉/激光并在机载电脑上运行；本文改用FMCW雷达+IMU，把传感驱动、数据处理与滤波估计全部搬到单核微控制器裸机上，算力占用极低，并开源固件与PCB硬件设计，便于微型平台直接复用。",
+      "why_it_matters": "为微型无人机在烟雾、黑暗、沙尘等感知退化且无GPS环境下提供轻量鲁棒的状态估计底座，这正是UAV搜救/侦察类主动目标搜索在极端环境中自主飞行的前提；开源硬件与固件降低复现门槛，可支撑小型平台长时间自主任务。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "odometry",
+        "state estimation"
+      ],
+      "added_at": "2026-10-07T10:57:31.274448+00:00"
+    },
+    {
       "id": "2610.02117",
       "arxiv_id": "2610.02117",
       "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
@@ -9050,6 +9268,46 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.08225",
+      "arxiv_id": "2610.08225",
+      "title": "UWB Meets Crazyflow: Simulating Degraded Feedback at Scale for Aerial Robotics",
+      "authors": [
+        "Martin Schuck",
+        "Marcel P. Rath",
+        "Yufei Hua",
+        "Abhishek Goudar",
+        "SiQi Zhou",
+        "Angela P. Schoellig"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08225",
+      "pdf_url": "https://arxiv.org/pdf/2610.08225",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出基于JAX的可微分无人机仿真器Crazyflow，将物理与控制统一进单一计算图实现GPU大规模并行，速度较基线提升数量级，可秒级训练RL智能体，并集成UWB/IMU仿真与全状态EKF，支持退化反馈下大规模并行控制器评估。",
+      "change_zh": "常见无人机仿真多在CPU上串行运行或依赖理想状态反馈；Crazyflow把物理、控制与传感链路（UWB/IMU+EKF）统一进单一可微计算图，经XLA jit编译在加速硬件上大规模并行，既保精度又能模拟真实退化反馈，使仿真训练评估更贴近实机部署条件。",
+      "why_it_matters": "为无人机自主提供高速可微分仿真底座：秒级训练可部署RL控制器、在真实退化反馈下并行评估状态估计与控制栈，可加速UAV搜救侦察等主动搜索任务的sim2real闭环开发；对地面ObjectNav直接价值有限，但仿真方法论可借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "evaluation"
+      ],
+      "added_at": "2026-10-07T10:57:01.527524+00:00"
     },
     {
       "id": "2610.06215",
@@ -15328,16 +15586,56 @@
     }
   ],
   "briefing": {
-    "text": "今日入库仅一篇，主线落在世界模型的长期空间记忆：Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory 提出SMI框架，首次用多模态大模型的理解能力管理长视频世界模型的空间记忆，通过空间聚类、簇内稀疏化、动作感知检索与可靠性过滤四个原子操作，同时改善记忆稀疏度、生成稳定性与空间一致性。这篇是今日必读：它把记忆管理从启发式压缩推向理解驱动的语义组织，可直接迁移到具身导航的长程记忆设计。趋势上，空间记忆正成为多模态大模型与世界模型融合的关键接口。",
-    "added": 1,
-    "at": "2026-10-06T16:31:07.048908+00:00",
+    "text": "本批论文以无人机具身导航为主线，兼及世界模型物理评测与仿真、状态估计等基础设施。首推 WareFly-VLA：以507条遥操作片段构建仓库无人机语言引导搜索与人体跟踪基准，四种开源VLA基线的系统评测暴露出空域语言条件控制远未解决；Sensor-Layout-Agnostic Navigation 将异构深度反投影为统一球面距离图训练导航策略，实现跨传感器布局零样本迁移并经真机四旋翼验证；World Models' Last Exam in Physics 用40个受控物理任务量化八个视频世界模型的一致性缺陷，其测量式评测协议可直接复用于导航世界模型检验。趋势上，社区的关注点正从任务级指标下沉到传感器异构与物理一致性层面。",
+    "added": 6,
+    "at": "2026-10-07T11:04:37.078117+00:00",
     "new": [
       {
-        "t": "Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory",
-        "u": "https://arxiv.org/abs/2610.02521",
+        "t": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
+        "u": "https://arxiv.org/abs/2610.08526",
+        "r": 9,
+        "g": 8,
+        "s": "面向智能仓库无人机，构建光真实VLA框架与数据集：507条遥操作飞行片段、8504帧RGB转移，覆盖语言引导人体搜索、定位与跟踪两类任务，并系统评测四种开源VLA基线，揭示空域语言条件控制远未解决。",
+        "c": ""
+      },
+      {
+        "t": "UWB Meets Crazyflow: Simulating Degraded Feedback at Scale for Aerial Robotics",
+        "u": "https://arxiv.org/abs/2610.08225",
+        "r": 7,
+        "g": 7,
+        "s": "提出基于JAX的可微分无人机仿真器Crazyflow，将物理与控制统一进单一计算图实现GPU大规模并行，速度较基线提升数量级，可秒级训练RL智能体，并集成UWB/IMU仿真与全状态EKF，支持退化反馈下大规模并行控制器评估。",
+        "c": ""
+      },
+      {
+        "t": "Embedded Bare-Metal Radar-Inertial Odometry",
+        "u": "https://arxiv.org/abs/2610.07278",
+        "r": 7,
+        "g": 7,
+        "s": "提出面向低算力平台的嵌入式雷达-惯性里程计，在单核微控制器上完成全部数据处理与辅助惯性导航；飞行实验测得平移APE 0.51–0.82m、RPE<3%，经PX4闭环飞行验证，固件与PCB设计开源。",
+        "c": "https://github.com/ntnu-arl/embedded_rio"
+      },
+      {
+        "t": "World Models' Last Exam in Physics",
+        "u": "https://arxiv.org/abs/2610.08791",
+        "r": 7,
+        "g": 8,
+        "s": "提出基于测量的视频世界模型物理一致性基准：40个受控任务覆盖力学、光学、流体、热与相变、电磁、表面张力，配以可观测性筛查与任务级量化测量，在8个模型1280段视频上揭示持续的物理不一致。",
+        "c": ""
+      },
+      {
+        "t": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+        "u": "https://arxiv.org/abs/2610.08720",
+        "r": 7,
+        "g": 8,
+        "s": "WorldSolver基于61篇经典图形学论文构建168个物理仿真任务基准，要求LLM智能体在代码脚手架中补全求解器实现，从执行检查、视觉保真、物理合理三维度评测，最强智能体仅得约48.7分。",
+        "c": "https://github.com/sirujiang/WorldSolver"
+      },
+      {
+        "t": "Sensor-Layout-Agnostic Navigation via Geometric Observation Canonicalization",
+        "u": "https://arxiv.org/abs/2610.08306",
         "r": 8,
         "g": 7,
-        "s": "提出SMI框架，首次用多模态大模型的理解能力管理长视频世界模型的空间记忆，通过空间聚类、簇内稀疏化、动作感知检索与可靠性过滤四个原子操作，提升记忆稀疏度、生成稳定性与空间一致性。",
+        "s": "将任意数量、内外参各异的深度测量反投影拼接为统一球面距离图与有效掩码，结合强化学习与相机随机化训练无人机导航策略，实现跨传感器布局零样本迁移并在真实四旋翼上验证。",
         "c": ""
       }
     ]

@@ -2054,5 +2054,69 @@
     "reason": "面向纯文本多步信息检索/RAG的专用检索智能体，与空间智能、具身导航、机器人自主均无关，属将大模型套用于收录范围外垂直领域的应用，故拒绝。",
     "rejected_at": "2026-10-06",
     "url": "https://arxiv.org/abs/2610.06782"
+  },
+  "2610.08259": {
+    "title": "HexaGripper: A Single-Actuator, Winch-Deployed Gripper for Autonomous Aerial Parcel Collection",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该文核心是无人机空中抓取/末端执行器机构设计（机械操作类），不含目标搜索、导航决策或空间感知成分，超出收录范围。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08259"
+  },
+  "2610.08364": {
+    "title": "Transect: Retaining Observability for Long-Horizon LLM Agent Evaluations",
+    "relevance": 5,
+    "rigor": 4,
+    "reason": "该工作是面向前沿AI安全的LLM智能体评测观测工具：非具身基准、与空间/导航/机器人无关，也未推进智能体能力本身；且仅单一案例演示，无基线对比与评判标签可靠性验证。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08364"
+  },
+  "2610.08123": {
+    "title": "Beyond Waypoint Regression: Query-Based Cost Learning over Reachable Ego Futures for End-to-End Driving",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "本文属端到端自动驾驶轨迹规划研究，评测集中在nuScenes与驾驶日志，与收录的UAV目标搜索、ObjectNav/VLN及各基础能力技术线仅轨迹规划术语擦边，属范围外。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08123"
+  },
+  "2610.07616": {
+    "title": "Nine Trials to Recover: A Reproducible Benchmark for Repertoire-Free Soft-Robot Damage Adaptation",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "软体机器人损伤自适应属于机器人学习/进化计算基准，与导航、空间智能、智能体等收录技术线无实质关联，仅具身术语擦边。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.07616"
+  },
+  "2610.08684": {
+    "title": "RenderBench: Benchmarking Render-to-Real Video Transfer with Reconstructed Digital Twins",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心是为视频生成模型的render-to-real保真度构建评测基准，不含导航、智能体或机器人成分，数字孪生仅是数据构建手段，本质近于文生视频类评测，属范围外。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08684"
+  },
+  "2610.08622": {
+    "title": "Agentic RCA for Internet-Scale Services Using Constrained Creativity",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作将LLM智能体套用于互联网服务故障根因分析（AIOps）这一垂直领域，与空间、导航、机器人均无关，属范围明确排除的应用类论文。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08622"
+  },
+  "2610.07681": {
+    "title": "EigenDEXplore: Structured Exploration for Dexterous Manipulation with Human Priors",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "论文核心是灵巧手操作的高维动作探索，属研究范围明确排除的机械臂/操作方向，不含任何导航决策或空间导航相关成分，仅sim2real部署与具身学习有间接联系，判定为范围外。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.07681"
+  },
+  "2610.08642": {
+    "title": "HygieneRoboBench: Benchmarking Hygiene-Aware Planning for Household Robots",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向家用机器人双夹爪操作任务的卫生感知规划基准，属机械臂操作范畴，无导航决策或空间搜索成分，仅与LLM任务规划评测擦边。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.08642"
   }
 }
