@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T11:03:51.828091+00:00",
+  "updated_at": "2026-10-07T17:19:42.421874+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1695,6 +1695,46 @@
       "added_at": "2026-10-07T10:52:18.008100+00:00"
     },
     {
+      "id": "2610.04988",
+      "arxiv_id": "2610.04988",
+      "title": "How Long, Not How Close: A Learned Temporal Metric for Planning in Latent World Models",
+      "authors": [
+        "Lama Moukheiber",
+        "Haotian Xue",
+        "Yongxin Chen"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.04988",
+      "pdf_url": "https://arxiv.org/pdf/2610.04988",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "TEMPO在冻结世界模型的潜空间中学习时序距离度量，以状态间所需环境步数替代潜相似度来排序候选动作序列，无需奖励或标签，在11个仿真环境的导航与操作任务上提升LeWM与PLDM规划器表现。",
+      "change_zh": "常见潜空间规划按想象终态与目标的潜距离（像不像目标）排序候选，远目标时会失效；本工作改为学习一个反映状态间实际环境步数的时序度量（还差多远到达），不动世界模型、不需奖励或成功标签，以极小MLP开销插入现有距离型规划器。",
+      "why_it_matters": "对ObjectNav与UAV目标搜索这类目标远、需多段规划的长程任务，潜距离排序易混淆'像目标'与'接近目标'，TEMPO提供可学习的步数式进度信号，可作为世界模型导航规划器的即插即用代价项，有望提升远目标、多阶段接近场景下的规划成功率。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "潜在世界模型, 时间距离度量, 规划, 演示学习, 机器人导航与操作",
+      "question_zh": "潜在世界模型规划中，潜空间距离仅衡量状态与目标的相似度而非到达距离，目标较远时规划排序失效，如何解决？",
+      "innovation_zh": "提出TEMPO时间距离规划目标：在冻结世界模型上仅用已有演示学习小型潜状态映射，使状态间距离反映环境步数并融入规划代价；无需奖励、策略或成功标签，几乎不增加搜索开销。",
+      "dataset_zh": "十一个仿真环境（迷宫导航、桌面推动、机械臂控制、三维操作等），使用训练世界模型所需的演示数据，配合LeWM与PLDM规划器评估；未提及具体公开数据集名称和真机平台。",
+      "results_zh": "小型MLP至多增加规划运算量0.3%，在所有目标距离上均提升两种规划器；在距目标三个规划的TwoRoom任务上，LeWM成功率从36%提升至99%；在广泛的2D/3D导航、到达与操作任务中保持竞争力。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-07T17:19:04.416167+00:00"
+    },
+    {
       "id": "2610.03137",
       "arxiv_id": "2610.03137",
       "title": "Keeping JEPA World Models Plannable When Little of the Frame Moves",
@@ -3179,6 +3219,54 @@
         "world model"
       ],
       "added_at": "2026-10-06T11:09:33.775546+00:00"
+    },
+    {
+      "id": "2610.05664",
+      "arxiv_id": "2610.05664",
+      "title": "StageVLN: Spatial and Trajectory Auxiliary Guidance for Efficient Vision-Language Navigation",
+      "authors": [
+        "Anh Dao",
+        "Quan-Dung Pham",
+        "Le Danh Vinh",
+        "The Anh Nguyen",
+        "Nguyen Viet Tri Pham",
+        "Yiyu Chen",
+        "Pham Tuyen Le",
+        "Van‐Truong Nguyen",
+        "Quan Nguyen"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.05664",
+      "pdf_url": "https://arxiv.org/pdf/2610.05664",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "StageVLN提出VLN训练框架，训练时用冻结几何基础模型的多级空间引导与相对朝向、专家路径进度等轨迹监督塑造分层导航器表征，部署时移除全部辅助模块，在R2R-CE与RxR-CE上以4B骨干取得56.3%与54.3%成功率。",
+      "change_zh": "常见路线在推理期引入深度估计、显式地图或几何基础模型来注入结构信息，带来额外计算与架构依赖；本文改为训练期特权监督，把空间引导与轨迹状态目标蒸馏进分层导航表征，推理路径完全保持原样、零额外开销，并补充路线进度这一被忽视的监督信号。",
+      "why_it_matters": "直接推进地面VLN（R2R-CE/RxR-CE）这一核心技术线；其'训练期特权引导、推理零开销'的蒸馏范式对算力受限的平台价值突出，可为UAV主动目标搜索与ObjectNav提供不增加机载负担的几何与轨迹监督思路，利于轻量化真机部署。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航, 空间辅助引导, 轨迹监督, 几何基础模型, 特权信息蒸馏, 高效推理",
+      "question_zh": "如何在保持原始推理路径不变、不增加部署期计算与内存开销的前提下，利用空间与轨迹辅助引导增强VLN模型的导航表征？",
+      "innovation_zh": "提出StageVLN训练框架，用冻结几何基础模型为分层导航器状态提供多级空间引导，辅以相对朝向与专家路径进度两类轨迹目标；所有辅助模块仅在训练期使用、部署时移除，不同于已有方法，推理时无需深度估计器、地图或几何编码器等额外组件。",
+      "dataset_zh": "R2R-CE（validation-unseen划分）与RxR-CE数据集，主干为4B参数的模型",
+      "results_zh": "在R2R-CE validation-unseen上取得56.3% SR和51.4% SPL（4B参数主干，推理时无额外几何编码器）；在RxR-CE上达到54.3% SR，且无需额外导航训练数据或推理期几何编码器。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "deployment",
+        "geometry",
+        "r2r",
+        "vlm"
+      ],
+      "added_at": "2026-10-07T17:15:08.999035+00:00"
     },
     {
       "id": "2610.04013",
@@ -4692,6 +4780,55 @@
       "added_at": "2026-10-06T11:21:03.922068+00:00"
     },
     {
+      "id": "2610.04432",
+      "arxiv_id": "2610.04432",
+      "title": "Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos",
+      "authors": [
+        "Jinzhou Tang",
+        "Zijun Zhang",
+        "Jing Yang",
+        "Yuchen Yan",
+        "Kun Zhou",
+        "Lingjun Mao",
+        "Ruobing Han",
+        "Jinglin Cao",
+        "Wenpeng Xu",
+        "Lukun He",
+        "Minghao Fu",
+        "Fan Feng"
+      ],
+      "published": "2026-10-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.04432",
+      "pdf_url": "https://arxiv.org/pdf/2610.04432",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "将具身视频到交互仿真重建建模为软件工程任务，提出222个重建实例的Video2World基准，从几何、动态与功能正确性评测9个前沿编码智能体，发现视觉更逼真未必任务成功率更高。",
+      "change_zh": "不同于生成式视频预测世界模型或人工搭建仿真环境，本文把视频到仿真重构为编码智能体的软件工程任务，靠执行反馈迭代改进，并以功能正确性而非仅视觉保真评价世界，揭示感知真实感与可用性解耦。",
+      "why_it_matters": "若智能体能从真实视频自动生成可交互仿真，可低成本扩充UAV目标搜索与ObjectNav的训练评测环境，缓解人工构建环境瓶颈；其保真度不等于功能性的发现对世界模型评估与sim2real亦有警示意义。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "具身视频,编码智能体,交互式世界建模,视频到仿真,基准测试",
+      "question_zh": "前沿基础模型与编码智能体能否端到端自动化完成从具身视频构建交互式仿真环境的任务？",
+      "innovation_zh": "将自主视频到仿真定义为软件工程任务，由智能体观察具身视频后构建仿真环境与机器人行为，并通过执行反馈迭代改进；同时提出Video2World基准，从几何保真度、动态保真度与功能正确性三个维度系统评估该能力，摆脱了以往依赖人工构建与校准环境的流程。",
+      "dataset_zh": "自建的Video2World基准，包含由189个机器人与人类演示视频派生的222个重建实例；具体仿真器或真机平台未提及",
+      "results_zh": "对9个前沿编码智能体系统的评测显示，自Claude Opus 5起任务成功率显著跃升，由低于5%升至超过15%，但与人工辅助重建仍有较大差距；此外发现视觉保真度更好的世界任务成功率未必更高，呼应了生成模型中感知真实性与事实正确性之间的鸿沟。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "world model"
+      ],
+      "added_at": "2026-10-07T17:18:10.934928+00:00"
+    },
+    {
       "id": "2609.40325",
       "arxiv_id": "2609.40325",
       "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
@@ -5990,6 +6127,141 @@
         "vlm"
       ],
       "added_at": "2026-10-06T11:22:08.993254+00:00"
+    },
+    {
+      "id": "2610.05414",
+      "arxiv_id": "2610.05414",
+      "title": "RMMBench: A Comprehensive Benchmark for Robotic Mobile Manipulation",
+      "authors": [
+        "H. Li",
+        "Fuxiang Feng",
+        "范金秋",
+        "Shuo Yang",
+        "Fengjiao Chen",
+        "Xuezhi Cao",
+        "Ran Song",
+        "Wei Emma Zhang"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.05414",
+      "pdf_url": "https://arxiv.org/pdf/2610.05414",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RMMBench是机器人移动操作基准，在连续空间统一高低层具身任务，构建70个从局部操作到长程组合导航的场景，评测VLM指令理解与空间定位，发现其空间感知仍是短板。",
+      "change_zh": "相比将导航与操作分别评测、指标单一的常见做法，该工作把局部操作到长程导航操作纳入统一连续空间任务套件并扩展评测维度，以更细粒度方式系统评估VLM的具身能力。",
+      "why_it_matters": "为具身基准与评测线提供导航-操作联合的长程评测框架；其揭示VLM空间定位薄弱的结论，对ObjectNav与UAV目标搜索中依赖VLM理解指令、定位目标的空间感知路线有直接警示与模型选型价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言模型，移动操作，基准测试，具身智能，长时序任务，空间定位",
+      "question_zh": "如何构建统一框架以全面、细粒度地评估视觉语言模型在机器人导航与移动操作等长时序具身任务中的能力？",
+      "innovation_zh": "RMMBench将高层与低层具身任务无缝整合到统一框架中，构建包含70个典型场景的\"导航-操作\"任务套件，覆盖从局部操作到长时序复合导航的连续空间任务，弥补了现有基准评测任务不全面、指标受限的不足。",
+      "dataset_zh": "未提及具体仿真平台或真机平台；基准本身包含70个典型任务场景，涵盖局部操作至长时序复合导航任务",
+      "results_zh": "实验结果表明，领先的视觉语言模型在执行移动操作任务时仍面临空间定位方面的重大挑战；结果同时凸显了在长时序交互过程中增强机器人空间感知能力的必要性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "localization",
+        "vlm"
+      ],
+      "added_at": "2026-10-07T17:12:21.051833+00:00"
+    },
+    {
+      "id": "2610.04916",
+      "arxiv_id": "2610.04916",
+      "title": "PreAct-Nav: Agentic Reasoning Before Action for Urban Navigation",
+      "authors": [
+        "Jing Xie",
+        "Shouwei Ruan",
+        "Yubin Wang",
+        "Yuxiang Zhang",
+        "Junwei Yang",
+        "Songchang Jin",
+        "Dianxi Shi"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.04916",
+      "pdf_url": "https://arxiv.org/pdf/2610.04916",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出PreAct-Nav城市导航智能体框架：在冻结策略上叠加前瞻推理，记忆模块维护中期子目标，动作条件世界模型预测候选动作后果，VLM推理决定保留或修改动作，并用真实观测更新记忆。",
+      "change_zh": "常见路线用LLM/VLM对瞬时观测或有限历史做语言推理后直接出动作；本文改为闭环：持久中期子目标锚定局部决策，先用动作条件世界模型预测候选动作后果再决定保留或修改，执行后以真实观测校正假设并更新记忆。",
+      "why_it_matters": "其子目标记忆、动作预演与闭环修正范式，对UAV目标搜索和ObjectNav均有借鉴：两者都要分解远目标为中间目标并预判行动后果；动作条件世界模型与VLM推理结合，也推进世界模型与规划智能体技术线。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "城市导航, 具身智能体, 预期推理, 动作条件世界模型, 视觉语言模型, 子目标记忆",
+      "question_zh": "如何让具身智能体在大规模城市环境中将远距离目标转化为连贯且具有前瞻性的局部导航决策？",
+      "innovation_zh": "相比依赖瞬时观测语言推理的已有方法，PreAct-Nav为冻结策略引入动作前预期推理：以持久中期子目标锚定局部决策，用动作条件世界模型（AC-WM）预测候选动作的世界动态，经VLM推理决定保留或修改动作，并据真实结果更新记忆。",
+      "results_zh": "大量评估表明，PreAct-Nav通过记忆更新与视觉预测提升了动作选择质量，且在更长路线和转弯更多的路线上收益更为显著；摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "vlm",
+        "world model"
+      ],
+      "added_at": "2026-10-07T17:13:59.375937+00:00"
+    },
+    {
+      "id": "2610.04301",
+      "arxiv_id": "2610.04301",
+      "title": "EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI",
+      "authors": [
+        "Kabir Swain",
+        "Sijie Han",
+        "Antonio B. Torralba"
+      ],
+      "published": "2026-10-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.04301",
+      "pdf_url": "https://arxiv.org/pdf/2610.04301",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EnvDreamer利用大语言与视觉语言模型自动生成UE5交互式环境，用于导航、重排与操作任务的训练与评测，并开源2万个带任务程序、场景图与轨迹的校验环境数据集。",
+      "change_zh": "常见做法依赖人工搭建仿真场景或学习型视频世界模型，规模与多样性受限；EnvDreamer改用LLM/VLM自动生成经校验器检查的UE5交互环境，可定制可扩展，附任务程序与轨迹，并支持图像条件real-to-sim重建。",
+      "why_it_matters": "为ObjectNav等导航任务提供可规模化、多样化的训练环境与校验数据，缓解真实场景稀缺问题；其环境与轨迹资源可直接支撑具身基准评测与sim2real研究，未来也可能为无人机主动目标搜索提供低成本仿真数据来源。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "具身智能, 环境生成, 大语言模型, 虚拟环境, 机器人学习, 真到仿真",
+      "question_zh": "如何大规模自动生成多样化、可交互的虚拟环境，以支持具身智能与机器人任务的训练和评估？",
+      "innovation_zh": "利用大语言模型与视觉语言模型自动生成Unreal Engine 5虚拟环境，可大规模采样多样化、可交互且通过验证器的环境；相比已有方法，训练策略无需显式建图或人工任务监督即可迁移至多个具身基准，并支持图像条件的真实到仿真重建。",
+      "dataset_zh": "Unreal Engine 5仿真平台；发布EnvDreamer-20k数据集（20,000个通过验证器的环境，含任务程序、场景图、轨迹和元数据）；评测所用具体基准名称未提及",
+      "results_zh": "在EnvDreamer生成环境中训练的策略，无需显式建图或人工任务监督，在涵盖导航、重排与操作的多个具身基准上取得有竞争力的结果；同时发布EnvDreamer-20k数据集，包含20,000个通过验证器的环境及任务程序、场景图、轨迹与元数据，支持可复现基准测试。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "vision language model",
+        "world model"
+      ],
+      "added_at": "2026-10-07T17:17:03.979719+00:00"
     },
     {
       "id": "2610.03123",
@@ -12715,6 +12987,49 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.05610",
+      "arxiv_id": "2610.05610",
+      "title": "SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays",
+      "authors": [
+        "Sonal Kumar",
+        "Sinan Hersek",
+        "Artem Dementyev",
+        "Mengzhen Pan",
+        "Ishan Chatterjee",
+        "Anurag Kumar",
+        "Ramani Duraiswami",
+        "Dinesh Manocha",
+        "Andrea Colaço"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.05610",
+      "pdf_url": "https://arxiv.org/pdf/2610.05610",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "SEA-LM面向智能眼镜麦克风阵列，用FOACODER空间音频编码器将可变阵型波束合成的一阶Ambisonics注入多模态大模型，经两阶段课程训练实现声源定位与空间选择性转录。",
+      "change_zh": "常见音频语言大模型仅做单声道推理并丢弃空间线索；本文将可变阵型波束合成的一阶Ambisonics编码进MLLM，并用时空加权交叉熵防止转录输出主导损失，使模型具备方位俯仰感知与重叠声源分离能力。",
+      "why_it_matters": "为具身智能体补上视觉之外的听觉空间感知：在搜救式UAV目标搜索与ObjectNav中，声源方位线索可在遮挡、夜间等视觉失效场景引导目标发现与接近；阵列自适应编码方法亦可迁移到穿戴式导航助手。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-07T17:16:10.667119+00:00"
+    },
+    {
       "id": "2610.03283",
       "arxiv_id": "2610.03283",
       "title": "HexVIO: Towards All-Day Stereo-Inertial Tracking Through Commodity DSPs",
@@ -15586,56 +15901,64 @@
     }
   ],
   "briefing": {
-    "text": "本批论文以无人机具身导航为主线，兼及世界模型物理评测与仿真、状态估计等基础设施。首推 WareFly-VLA：以507条遥操作片段构建仓库无人机语言引导搜索与人体跟踪基准，四种开源VLA基线的系统评测暴露出空域语言条件控制远未解决；Sensor-Layout-Agnostic Navigation 将异构深度反投影为统一球面距离图训练导航策略，实现跨传感器布局零样本迁移并经真机四旋翼验证；World Models' Last Exam in Physics 用40个受控物理任务量化八个视频世界模型的一致性缺陷，其测量式评测协议可直接复用于导航世界模型检验。趋势上，社区的关注点正从任务级指标下沉到传感器异构与物理一致性层面。",
-    "added": 6,
-    "at": "2026-10-07T11:04:37.078117+00:00",
+    "text": "今日七篇的主线，是具身导航与移动操作由基准评测转向推理、表征与世界模型规划，并延伸到环境生成与仿真重建的数据侧。首推StageVLN：训练期借冻结几何模型的空间引导与轨迹监督塑造表征，部署时移除全部辅助模块，4B骨干在R2R-CE取得56.3%成功率；TEMPO在潜空间学习以环境步数计的时序距离排序候选动作，免奖励免标签即提升多个规划器；RMMBench将长程导航与局部操作统一进连续空间评测，实证VLM空间感知仍是短板。趋势：训练借外力、部署做减法，再辅以世界模型前瞻，正成为导航效率研究的共同解法。",
+    "added": 7,
+    "at": "2026-10-07T17:20:48.680214+00:00",
     "new": [
       {
-        "t": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
-        "u": "https://arxiv.org/abs/2610.08526",
-        "r": 9,
-        "g": 8,
-        "s": "面向智能仓库无人机，构建光真实VLA框架与数据集：507条遥操作飞行片段、8504帧RGB转移，覆盖语言引导人体搜索、定位与跟踪两类任务，并系统评测四种开源VLA基线，揭示空域语言条件控制远未解决。",
-        "c": ""
-      },
-      {
-        "t": "UWB Meets Crazyflow: Simulating Degraded Feedback at Scale for Aerial Robotics",
-        "u": "https://arxiv.org/abs/2610.08225",
-        "r": 7,
-        "g": 7,
-        "s": "提出基于JAX的可微分无人机仿真器Crazyflow，将物理与控制统一进单一计算图实现GPU大规模并行，速度较基线提升数量级，可秒级训练RL智能体，并集成UWB/IMU仿真与全状态EKF，支持退化反馈下大规模并行控制器评估。",
-        "c": ""
-      },
-      {
-        "t": "Embedded Bare-Metal Radar-Inertial Odometry",
-        "u": "https://arxiv.org/abs/2610.07278",
-        "r": 7,
-        "g": 7,
-        "s": "提出面向低算力平台的嵌入式雷达-惯性里程计，在单核微控制器上完成全部数据处理与辅助惯性导航；飞行实验测得平移APE 0.51–0.82m、RPE<3%，经PX4闭环飞行验证，固件与PCB设计开源。",
-        "c": "https://github.com/ntnu-arl/embedded_rio"
-      },
-      {
-        "t": "World Models' Last Exam in Physics",
-        "u": "https://arxiv.org/abs/2610.08791",
-        "r": 7,
-        "g": 8,
-        "s": "提出基于测量的视频世界模型物理一致性基准：40个受控任务覆盖力学、光学、流体、热与相变、电磁、表面张力，配以可观测性筛查与任务级量化测量，在8个模型1280段视频上揭示持续的物理不一致。",
-        "c": ""
-      },
-      {
-        "t": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
-        "u": "https://arxiv.org/abs/2610.08720",
-        "r": 7,
-        "g": 8,
-        "s": "WorldSolver基于61篇经典图形学论文构建168个物理仿真任务基准，要求LLM智能体在代码脚手架中补全求解器实现，从执行检查、视觉保真、物理合理三维度评测，最强智能体仅得约48.7分。",
-        "c": "https://github.com/sirujiang/WorldSolver"
-      },
-      {
-        "t": "Sensor-Layout-Agnostic Navigation via Geometric Observation Canonicalization",
-        "u": "https://arxiv.org/abs/2610.08306",
+        "t": "RMMBench: A Comprehensive Benchmark for Robotic Mobile Manipulation",
+        "u": "https://arxiv.org/abs/2610.05414",
         "r": 8,
         "g": 7,
-        "s": "将任意数量、内外参各异的深度测量反投影拼接为统一球面距离图与有效掩码，结合强化学习与相机随机化训练无人机导航策略，实现跨传感器布局零样本迁移并在真实四旋翼上验证。",
+        "s": "RMMBench是机器人移动操作基准，在连续空间统一高低层具身任务，构建70个从局部操作到长程组合导航的场景，评测VLM指令理解与空间定位，发现其空间感知仍是短板。",
+        "c": ""
+      },
+      {
+        "t": "PreAct-Nav: Agentic Reasoning Before Action for Urban Navigation",
+        "u": "https://arxiv.org/abs/2610.04916",
+        "r": 8,
+        "g": 7,
+        "s": "提出PreAct-Nav城市导航智能体框架：在冻结策略上叠加前瞻推理，记忆模块维护中期子目标，动作条件世界模型预测候选动作后果，VLM推理决定保留或修改动作，并用真实观测更新记忆。",
+        "c": ""
+      },
+      {
+        "t": "StageVLN: Spatial and Trajectory Auxiliary Guidance for Efficient Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.05664",
+        "r": 9,
+        "g": 7,
+        "s": "StageVLN提出VLN训练框架，训练时用冻结几何基础模型的多级空间引导与相对朝向、专家路径进度等轨迹监督塑造分层导航器表征，部署时移除全部辅助模块，在R2R-CE与RxR-CE上以4B骨干取得56.3%与54.3%成功率。",
+        "c": ""
+      },
+      {
+        "t": "SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays",
+        "u": "https://arxiv.org/abs/2610.05610",
+        "r": 7,
+        "g": 6,
+        "s": "SEA-LM面向智能眼镜麦克风阵列，用FOACODER空间音频编码器将可变阵型波束合成的一阶Ambisonics注入多模态大模型，经两阶段课程训练实现声源定位与空间选择性转录。",
+        "c": ""
+      },
+      {
+        "t": "EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI",
+        "u": "https://arxiv.org/abs/2610.04301",
+        "r": 8,
+        "g": 7,
+        "s": "EnvDreamer利用大语言与视觉语言模型自动生成UE5交互式环境，用于导航、重排与操作任务的训练与评测，并开源2万个带任务程序、场景图与轨迹的校验环境数据集。",
+        "c": ""
+      },
+      {
+        "t": "Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos",
+        "u": "https://arxiv.org/abs/2610.04432",
+        "r": 8,
+        "g": 8,
+        "s": "将具身视频到交互仿真重建建模为软件工程任务，提出222个重建实例的Video2World基准，从几何、动态与功能正确性评测9个前沿编码智能体，发现视觉更逼真未必任务成功率更高。",
+        "c": ""
+      },
+      {
+        "t": "How Long, Not How Close: A Learned Temporal Metric for Planning in Latent World Models",
+        "u": "https://arxiv.org/abs/2610.04988",
+        "r": 9,
+        "g": 8,
+        "s": "TEMPO在冻结世界模型的潜空间中学习时序距离度量，以状态间所需环境步数替代潜相似度来排序候选动作序列，无需奖励或标签，在11个仿真环境的导航与操作任务上提升LeWM与PLDM规划器表现。",
         "c": ""
       }
     ]

@@ -2118,5 +2118,29 @@
     "reason": "面向家用机器人双夹爪操作任务的卫生感知规划基准，属机械臂操作范畴，无导航决策或空间搜索成分，仅与LLM任务规划评测擦边。",
     "rejected_at": "2026-10-07",
     "url": "https://arxiv.org/abs/2610.08642"
+  },
+  "2610.04168": {
+    "title": "Agentic Cognitive Depth: Operational Criteria for Evaluating LLM Agents",
+    "relevance": 6,
+    "rigor": 3,
+    "reason": "属概念性立场论文，仅提出评测准则与扰动流程，摘要未见任何实验、基准实测或可复现细节，无法验证准则有效性。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.04168"
+  },
+  "2610.05387": {
+    "title": "GNN-CB: A Graph Neural Network Competition Benchmark for Human and LLM Evaluation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该论文是面向图机器学习竞赛编程任务的LLM评测基准，与空间智能、具身导航、机器人及通用智能体能力核心进展均无关联，属范围外的垂直领域评测工作。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.05387"
+  },
+  "2610.05249": {
+    "title": "ArticuTable: Generating Instance-Level Interactive Rigid-Articulated 3D Tabletop Scenes from a Single Image",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "面向桌面铰接物体的单图像三维资产生成，主要服务操作类仿真场景构建，与导航、目标搜索、空域自主等收录主线仅边缘相关。",
+    "rejected_at": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.05249"
   }
 }
