@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T16:31:52.462927+00:00",
+  "updated_at": "2026-10-07T10:08:36.174662+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6591,6 +6591,41 @@
       "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
+      "id": "https://openalex.org/W4386920567",
+      "arxiv_id": "",
+      "title": "Camera, LiDAR, and IMU Based Multi-Sensor Fusion SLAM: A Survey",
+      "authors": [
+        "Jun Zhu",
+        "Hongyi Li",
+        "Tao Zhang"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "Tsinghua Science & Technology",
+      "citation_count": 120,
+      "url": "https://doi.org/10.26599/tst.2023.9010010",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文是一篇多传感器融合SLAM综述，系统梳理基于相机、激光雷达与IMU的融合定位建图研究，介绍状态估计器的一般形式、代表性融合算法，分析现有方法缺陷并展望未来方向。",
+      "change_zh": "相比聚焦单一模态（纯视觉或纯激光）的SLAM综述，本文以相机-激光-IMU三类主流传感器的互补融合为主线组织文献，强调克服单传感器精度低与长期漂移问题；但作为综述未提出新方法，其贡献在于知识组织与问题梳理而非技术突破。",
+      "why_it_matters": "SLAM是机器人自主的核心能力，也是UAV主动目标搜索、地面ObjectNav等具身任务在真实环境中实现自主运动与导航的定位建图底座；该综述为无人机与地面具身系统的传感器配置与多模态里程计选型提供系统参考，对真机与Sim2Real落地有辅助价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-07T10:08:36.174662+00:00"
+    },
+    {
       "id": "https://openalex.org/W4396917670",
       "arxiv_id": "2303.08778",
       "title": "Fully neuromorphic vision and control for autonomous drone flight",
@@ -9525,31 +9560,28 @@
       "rigor": 2,
       "reason": "本文是语言教育学视角文章，仅讨论ChatGPT、机器翻译等现成生成式AI工具对语言教学的冲击与应对，不涉及模型或智能体能力本身的进展，也无具身导航、空间智能、机器人相关内容，属范围外应用与评论文。",
       "excluded_at": "2026-10-03"
+    },
+    "https://openalex.org/W4406711794": {
+      "title": "Vision-language model-based human-robot collaboration for smart manufacturing: A state-of-the-art survey",
+      "relevance": 3,
+      "rigor": 3,
+      "reason": "该文是将现成VLM/LLM套用于智能制造人机协作这一垂直领域的综述，主体为工业任务规划与机械臂操作，并非模型与智能体能力本身的显著进展，且仅术语层面提及导航，属收录范围外且无实验支撑。",
+      "excluded_at": "2026-10-07"
     }
   },
-  "last_citation_refresh": "2026-10-06T16:31:52.462927+00:00",
   "briefing": {
-    "text": "本轮两篇高被引工作都指向具身导航的底层定位能力：在效率、泛化与GPS拒止等约束下完成位置识别与状态估计。OverlapTransformer以LiDAR距离图像构建偏航角不变的轻量Transformer，单帧耗时不足2ms，跨KITTI与Ford Campus验证泛化并附带长期场景数据集，适合作为回环检测与全局定位的强基线。Omni-Swarm面向GPS拒止环境的无人机集群，将全向视觉、UWB测距与VIO经图优化后端融合，实现厘米级去中心化相对定位，是从单体SLAM走向多机协同估计的代表。整体看，定位栈正沿轻量学习化与集群去中心化两条线索并行演进。",
-    "added": 2,
-    "at": "2026-10-03T14:37:08.081160+00:00",
+    "text": "本轮入库集中于多传感器融合SLAM这一主线，最值得读的是 Camera, LiDAR, and IMU Based Multi-Sensor Fusion SLAM: A Survey：它统一给出状态估计器的一般形式，梳理相机、激光雷达与IMU的代表性融合算法，并分析现有方法缺陷、展望未来方向，既是新人搭建领域地图的入口，也便于老手按图索骥回溯各算法原文，120次被引可佐证其引用价值。趋势上，融合SLAM正从紧耦合精度竞赛转向退化场景鲁棒性与学习化模块的结合，为具身导航的长时程定位提供底座。 （编者注：本轮实际仅收录一篇，故只推荐该篇；后续批次补充条目后可扩展为2-3篇推荐。）",
+    "added": 1,
+    "at": "2026-10-07T10:08:36.174662+00:00",
     "new": [
       {
-        "t": "OverlapTransformer: An Efficient and Yaw-Angle-Invariant Transformer Network for LiDAR-Based Place Recognition",
-        "u": "https://arxiv.org/abs/2203.03397",
-        "r": 6,
-        "g": 7,
-        "s": "提出OverlapTransformer，基于LiDAR距离图像的轻量偏航角不变Transformer网络，单帧耗时不足2ms，用于位置识别与SLAM回环检测和全局定位，在KITTI与Ford Campus上对比SOTA验证泛化性，并发布长期场景新数据集。",
+        "t": "Camera, LiDAR, and IMU Based Multi-Sensor Fusion SLAM: A Survey",
+        "u": "https://doi.org/10.26599/tst.2023.9010010",
+        "r": 7,
+        "g": 5,
+        "s": "本文是一篇多传感器融合SLAM综述，系统梳理基于相机、激光雷达与IMU的融合定位建图研究，介绍状态估计器的一般形式、代表性融合算法，分析现有方法缺陷并展望未来方向。",
         "c": "",
-        "cit": 236
-      },
-      {
-        "t": "Omni-Swarm: A Decentralized Omnidirectional Visual–Inertial–UWB State Estimation System for Aerial Swarms",
-        "u": "https://arxiv.org/abs/2103.04131",
-        "r": 9,
-        "g": 8,
-        "s": "提出面向GPS拒止环境的无人机集群去中心化全向视觉-惯性-UWB状态估计系统，前端融合宽视场相机、UWB测距、VIO、地图定位与机间视觉跟踪，后端图优化融合，实现厘米级相对定位与全局一致性。",
-        "c": "",
-        "cit": 160
+        "cit": 120
       }
     ]
   }
