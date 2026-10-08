@@ -2142,5 +2142,109 @@
     "reason": "面向桌面铰接物体的单图像三维资产生成，主要服务操作类仿真场景构建，与导航、目标搜索、空域自主等收录主线仅边缘相关。",
     "rejected_at": "2026-10-07",
     "url": "https://arxiv.org/abs/2610.05249"
+  },
+  "2610.09398": {
+    "title": "IVG-UAV: An Intelligent Voice-Guided UAV System for Autonomous Ripe Fruit Harvesting with Vision-Based Classification and Adaptive Path Planning",
+    "relevance": 5,
+    "rigor": 4,
+    "reason": "属农业采摘垂直应用：语音与大模型仅作命令接口，视觉分类与路径规划为常规组件集成，无主动搜索或VLN方法贡献，且仅Gazebo仿真演示、无基线与定量结果。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09398"
+  },
+  "2610.09857": {
+    "title": "Towards Accurate End-Effector Localization for UMI-Style Robotic Manipulation Teaching",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "应用域是UMI式机械臂操作示教的末端定位与配套数据集，属机械臂操作范畴且无任何导航决策成分；方法上为鱼眼VIO与AprilTag的常规融合增量，未见社区级落地影响力证据，按收录规则应拒。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09857"
+  },
+  "2610.10374": {
+    "title": "TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该基准评测MLLM在工业UI设计转代码这一垂直任务上的能力，与空间智能、导航、机器人自主均无关，属范围外的垂直应用评测。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10374"
+  },
+  "2610.10047": {
+    "title": "AdSpark: A Large-Scale Dataset and Benchmark for Product-Centric Advertisement Video Generation",
+    "relevance": 1,
+    "rigor": 6,
+    "reason": "该论文为电商广告视频生成构建数据集与基准，属于文生视频及与空间、导航、机器人无关的垂直广告应用，明确落在收录范围外。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10047"
+  },
+  "2610.09718": {
+    "title": "YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属于机械臂操作与VLA控制范畴：核心是双臂操作演示的细粒度语义标注与VLA后训练对齐，不含任何导航决策成分，超出收录范围。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09718"
+  },
+  "2610.09283": {
+    "title": "LACE-CRAFT: Robot Co-Design with Actor Inheritance and Blackboard Collaboration",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "机器人形态-策略协同设计属设计自动化问题，核心不涉及收录的导航、空间智能、智能体基础或状态估计/控制主线，实物步行与网格转硬件仅为附带演示，判为范围外。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.09283"
+  },
+  "2610.10479": {
+    "title": "Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "论文核心是面向机械臂操作任务的Real-to-Sim-to-Real与场景重建，不含导航决策成分，属研究范围明确排除的机械臂操作类别。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10479"
+  },
+  "2610.10526": {
+    "title": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "研究对象是机械臂VLA策略（π0/π0.5在LIBERO上）的指令措辞敏感性，属明确排除的VLA控制范畴且不含导航决策成分，仅语言鲁棒性术语与导航指令跟随擦边。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10526"
+  },
+  "2610.10510": {
+    "title": "Factorized Tactile Representation and Control for Sim-to-Real Manipulation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "研究对象为机械臂接触操作与触觉传感的sim-to-real迁移（力调控、轴孔装配），不含任何导航决策成分，属明确排除范围，仅与sim2real技术术语擦边。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10510"
+  },
+  "2610.10498": {
+    "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "论文核心是用自进化agentic框架提升机器人基础模型的操作性能，全部基准（RoboCasa365、LIBERO-Pro）与真机实验均为机械臂操作任务，不含导航决策成分，属收录范围明确排除的机械臂操作与VLA控制范畴，agentic机制也未在导航或通用智能体任务上验证。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10498"
+  },
+  "2610.10478": {
+    "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "研究对象为SWE-bench编码智能体的基座模型评估方法，属纯软件工程域的LLM评测，与空间、导航、机器人及具身任务无实质关联，仅'智能体/工具使用'概念与收录线擦边。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10478"
+  },
+  "2610.10198": {
+    "title": "Benchmarking Behavioral Steerability in Behavior Foundation Models",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "该基准评测对象为人形行为基础模型的行为生成与意图可控性，属操作/VLA控制范畴且未含导航决策成分，超出收录范围。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10198"
+  },
+  "2610.10184": {
+    "title": "Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "将现成LLM智能体（多智能体编排+MCP文档检索）套用于生产排产的约束规划建模这一垂直领域，与空间、导航、机器人均无关，属范围中明确排除的应用类工作。",
+    "rejected_at": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.10184"
   }
 }

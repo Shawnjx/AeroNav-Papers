@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T17:19:42.421874+00:00",
+  "updated_at": "2026-10-08T11:33:52.002043+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -237,6 +237,55 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2610.10421",
+      "arxiv_id": "2610.10421",
+      "title": "AirGroundVLN: A Large-Scale Benchmark for Goal-Oriented Air-Ground Collaborative Vision-and-Language Navigation",
+      "authors": [
+        "Zhenxuan Zeng",
+        "Qingle Wu",
+        "Wei Suo",
+        "Maojia Wu",
+        "Bairong Zhang",
+        "Hangzheng Yu",
+        "Peng Wang"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10421",
+      "pdf_url": "https://arxiv.org/pdf/2610.10421",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出大规模空地协同目标导向VLN基准AirGroundVLN，覆盖19个虚幻环境共10281条导航片段与955个目标实例，并给出AG-CoNAV参考框架，以跨平台时空锚定记忆与空中引导规划实现协同导航。",
+      "change_zh": "常见路线是单平台的空中或地面VLN，本文转向空地协同：以时空锚定记忆在平台间与时间上维持空间一致上下文，以空中区域引导加地面局部细导航的分层规划，把观测不对称性转为互补，而非依赖单一平台规划。",
+      "why_it_matters": "该基准直接连接UAV主动目标搜索与地面目标导航：无人机提供广域搜索引导、地面智能体完成细粒度定位与接近，正是搜救与侦察的现实分工；其跨平台记忆机制与系统评测协议也为空间记忆和协同规划研究提供可复现实验场。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言导航，空地协同，导航基准，协同记忆，导航规划，目标导向导航",
+      "question_zh": "如何构建大规模空地协同的目标导向视觉语言导航基准，并解决跨平台时空上下文一致性与观测不对称性下的可靠导航规划问题。",
+      "innovation_zh": "针对单平台VLN局限，提出大规模空地协同基准AirGroundVLN与可训练框架AG-CoNAV：SACM跨空地观测维护并检索空间一致的历史上下文，AGRLP融合空中区域引导与地面精细导航，缓解观测不对称导致的规划不可靠问题。",
+      "dataset_zh": "自建的AirGroundVLN基准：基于19个Unreal Engine环境，含10,281条导航轨迹和955个目标实例，设已见/未见划分及空中可见性评估协议",
+      "results_zh": "大量实验验证了AG-CoNAV框架的有效性，其中SACM与AGRLP两个组件支撑了空地协同导航，并确立了AirGroundVLN作为综合性基准的地位；摘要中未给出具体性能数字。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "localization"
+      ],
+      "added_at": "2026-10-08T11:13:07.532787+00:00"
     },
     {
       "id": "2610.06510",
@@ -3125,6 +3174,101 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.10125",
+      "arxiv_id": "2610.10125",
+      "title": "Lifelong small-object navigation in changing object layouts: a benchmark and method",
+      "authors": [
+        "Jiagan Huang",
+        "Zikun Zhou",
+        "Zijian Ni",
+        "Hongpeng Wang",
+        "Guangming Lu",
+        "Jun Yu",
+        "Wenjie Pei"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10125",
+      "pdf_url": "https://arxiv.org/pdf/2610.10125",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文将小物体在布局变化中的终身导航形式化为LiSoNav-COL任务，构建28场景、45类小物体基准LiSoNav-Eval，并提出IVAM-Nav：以多视角巡检获得可靠观测，用视点锚定记忆支持复用与重验证。",
+      "change_zh": "常见ObjectNav假设静态布局、单轮导航、目标多为大件家具；本文转向可移动小物体与终身设定：空记忆起步、无需预扫描，以互补视点主动巡检保障小目标可靠感知，并把记忆锚定到观测视点，支持相似视角下的复用与对搬移目标的重验证。",
+      "why_it_matters": "对ObjectNav直接贡献小目标与布局变化的终身导航基准与方法，弥补静态单轮设定的空白；其主动寻点观测、视点锚定记忆与搬移后记忆更新思路，对UAV主动目标搜索中的小目标探测、重访确认与动态场景记忆维护同样具有借鉴意义。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "具身导航, 小物体导航, 终身导航, 基准测试, 记忆重用, 视角锚定记忆",
+      "question_zh": "家庭机器人如何在物体布局变化的同一环境中，从空白场景记忆出发持续导航到小物体，并高效重用场景知识、在物体被移动后更新过时记忆？",
+      "innovation_zh": "提出LiSoNav-COL任务定义及首个专属基准LiSoNav-Eval；提出IVAM-Nav方法，相对已有方法新在：以互补视角主动观测支撑面实现小物体可靠感知，并将记忆锚定于观测视角，支持相似视角条件下的关系记忆重用与重验证，且无需预先扫描场景。",
+      "dataset_zh": "自建的LiSoNav-Eval基准，涵盖28个室内场景、45个小物体类别；其终身导航序列同时包含未变化目标与被重新放置的目标，用于评估记忆重用与对物体移动的适应能力",
+      "results_zh": "在LiSoNav-Eval上的大量实验表明，IVAM-Nav相较代表性方法取得更优性能；基准分析进一步显示，更小的物体、更大的环境以及更长的物体移动距离会带来更大的导航挑战。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "object navigation"
+      ],
+      "added_at": "2026-10-08T11:18:40.288087+00:00"
+    },
+    {
+      "id": "2610.09518",
+      "arxiv_id": "2610.09518",
+      "title": "ActiveLang: Active Open-Vocabulary 3D Mapping with Semantic-Uncertainty-Guided Exploration",
+      "authors": [
+        "Liyan Chen",
+        "Hairong Yin",
+        "Huangying Zhan",
+        "Yi Xu",
+        "Raymond A. Yeh",
+        "Philippos Mordohai"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.09518",
+      "pdf_url": "https://arxiv.org/pdf/2610.09518",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/5a1d8b1ffa7bbb25673e3769d5cb6705fbfbaaef",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ActiveLang提出语义不确定性引导的主动探索系统，在线构建开放词汇3D语言地图：以紧凑双高斯表示联合重建几何、外观与语义，并用规划器选取信息量大的视点，以更少观测与更低算力完成建图，在Replica与ScanNet++上超越在线与离线基线。",
+      "change_zh": "常见路线多是被动的离线语言特征嵌入或沿固定/穷尽轨迹采集后再建语义图；该工作把语义不确定性显式引入主动视点选择，并在紧凑双高斯表示上做在线语言特征自适应，改变了'先采数据、后建语义图'的分离式流程。摘要未详述消融与计算细节。",
+      "why_it_matters": "直接命中主动感知与空间智能技术线：语义不确定性驱动的探索与紧凑开放词汇3D地图，可迁移到UAV主动目标搜索与ObjectNav的语义建图与目标发现，为语言条件导航提供可复用的空间语义记忆，减少冗余观测提升探索效率。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "开放词汇3D建图, 主动探索, 语义不确定性, 双高斯表示, 视点规划, 开放词汇分割",
+      "question_zh": "机器人如何在未知环境中通过主动探索，高效构建支持开放词汇场景理解与高效人机交互的语言标注3D地图？",
+      "innovation_zh": "提出ActiveLang自主系统，在紧凑的双高斯表示上进行在线语言特征自适应，联合重建场景几何、外观与开放词汇语义且内存开销小；其规划器基于语义不确定性高效选择信息量大的视点，以更少观测和更低计算成本完成建图。",
+      "dataset_zh": "Replica和ScanNet++数据集",
+      "results_zh": "在Replica和ScanNet++上的实验表明，ActiveLang在2D和3D开放词汇分割任务中相较在线与离线基线均取得显著提升，验证了语义不确定性引导的主动探索能以更少观测和更低计算成本更高效地构建语言标注3D地图（摘要未提供具体数字）。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "exploration",
+        "geometry"
+      ],
+      "added_at": "2026-10-08T11:21:47.065521+00:00"
+    },
+    {
       "id": "2610.06413",
       "arxiv_id": "2610.06413",
       "title": "SpatialChain: A Benchmark for Auditing Spatial Reasoning Faithfulness in VLMs",
@@ -4735,6 +4879,81 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.10409",
+      "arxiv_id": "2610.10409",
+      "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+      "authors": [
+        "Zhiqin Yang",
+        "Chenxin Li",
+        "Xiaomeng Hu",
+        "Yibin Liu",
+        "Weidong Huang",
+        "Jiankai Sun",
+        "Haitao Li",
+        "Zijian Wu",
+        "Yuzhi Huang",
+        "Fanding Huang",
+        "Hanwen Sun",
+        "Jiashun Liu",
+        "Jingqi Tong",
+        "Mingxin Huang",
+        "Shaoli Hu",
+        "Shijue Huang",
+        "Tianyi Bai",
+        "Xinyuan Wang",
+        "Yunlong Lin",
+        "Zhengyang Tang",
+        "Zhexin Zhang",
+        "Zhuo Chen",
+        "Xierui Song",
+        "Juntao Dai",
+        "Boyuan Chen",
+        "Jiaming Ji",
+        "Fangneng Zhan",
+        "Mengkang Hu",
+        "Wei Xue",
+        "Yonggang Zhang",
+        "Han Hu",
+        "Tsung-Yi Ho",
+        "Yike Guo"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10409",
+      "pdf_url": "https://arxiv.org/pdf/2610.10409",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RobotWorld是一个涵盖操作、移动操作、运动、驾驶与空中控制的84任务仿真基准，评测多模态智能体将指令与观测转化为物理任务执行的能力，并基于执行轨迹分析各模型的能力迁移与失效模式。",
+      "change_zh": "常见具身基准多聚焦单一形态或训练好的专用策略，RobotWorld跨五种具身形态统一评测通用代码/工具智能体，以交互预算与可执行成功判定保证评测严格性，并通过执行轨迹把失效模式与模型间能力差异关联起来。",
+      "why_it_matters": "为具身智能体评测提供跨形态统一基准，其中空中控制任务直接检验智能体的空间估计与感知控制能力，可为无人机与目标导航引入通用智能体提供能力边界与失效参考；对多模型能力差异的实证亦具方法学价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "具身智能,多模态智能体,基准测试,机器人仿真,任务执行",
+      "question_zh": "通用智能体编写代码与使用工具等数字能力能否迁移到物理世界，通过机器人接口将指令和观察转化为任务执行？",
+      "innovation_zh": "提出RobotWorld仿真测试床，含84项覆盖操作、移动操作、运动、驾驶与空中控制的任务，配以明确交互预算和可执行成功检查，并结合执行轨迹分析智能体能力迁移与不足。",
+      "dataset_zh": "RobotWorld自建仿真测试平台（含84项任务）；未提及具体外部数据集或真机平台",
+      "results_zh": "当前智能体可构建图像分割、相机标定、空间估计等感知控制流程，但难以组合成成功行为：丢失物体状态、未纠正无效动作、恢复过晚、误判完成；Astra更擅长空间与受限接触目标，Opus 5.5更擅长连续平衡与定时交互目标。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "instruction",
+        "multimodal agent"
+      ],
+      "added_at": "2026-10-08T11:14:31.828580+00:00"
+    },
+    {
       "id": "2610.06813",
       "arxiv_id": "2610.06813",
       "title": "Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models",
@@ -5950,6 +6169,149 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.09967",
+      "arxiv_id": "2610.09967",
+      "title": "Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer",
+      "authors": [
+        "Alejandro Lorite Mora",
+        "Dimitrios Arapis",
+        "Andrés Faíña"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.09967",
+      "pdf_url": "https://arxiv.org/pdf/2610.09967",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 10,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出用带机械臂相机的四足机器人对外部无标记纳米无人机进行视觉定位，感知优先NMPC动态调整机身与臂以保持视线，无人机仅靠该外部定位实现起飞到降落的预设轨迹飞行，中位三维误差59毫米。",
+      "change_zh": "常见路线是机载轻量VIO或依赖室内动捕，本文将纳米无人机的定位负担整体卸载给外部主动观察的四足机器人，采用无标记分割加深度定位，并把观测可靠性作为NMPC的首要控制目标，形成空地协同的观察-控制闭环。",
+      "why_it_matters": "让受载荷限制难以自定位的纳米无人机在GNSS拒止狭窄空间获得厘米级外部定位，扩展微型平台在废墟搜救、密闭空间侦察等UAV目标搜索场景的可用性；其把主动观测纳入控制目标的空地协同范式，也为无人机搜索与接近任务提供新思路。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "纳米无人机, 四足机器人, 无标记定位, 感知感知非线性模型预测控制, GNSS拒止环境, 外部定位",
+      "question_zh": "如何在GNSS拒止环境中，利用带臂载相机的四足机器人为载荷受限、无法自主定位的纳米无人机提供外部视觉定位并支持其飞行？",
+      "innovation_zh": "不同于依赖机载传感器的方案，该系统将纳米无人机的定位负担完全卸载给配备臂载相机的四足机器人，利用分割掩码与深度无标记估计无人机位置并经实时无线链路回传；提出感知感知NMPC，将观测可靠性作为首要控制目标，动态调整四足身体与机械臂以最大化无人机可见性。",
+      "dataset_zh": "摘要仅提及真机平台：配备臂载相机的四足机器人、纳米无人机及实时无线链路；未提及具体数据集或仿真环境。",
+      "results_zh": "仅依赖外部位置估计，纳米无人机完成了从起飞到降落的预定义轨迹飞行，三维定位误差中位数为59 mm；当视线短暂遮挡时，系统平滑切换至机载惯性飞行，对短时视觉遮挡表现出鲁棒性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "drone",
+        "localization",
+        "model predictive control",
+        "uav"
+      ],
+      "added_at": "2026-10-08T11:10:28.581696+00:00"
+    },
+    {
+      "id": "2610.09764",
+      "arxiv_id": "2610.09764",
+      "title": "AeroEval: Staged Program and Execution Validation for AI-Generated Drone Missions",
+      "authors": [
+        "Kautuk Astu",
+        "Naina Rabha",
+        "Yogesh Simmhan"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.09764",
+      "pdf_url": "https://arxiv.org/pdf/2610.09764",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.DC"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 9,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "AeroEval是面向LLM生成无人机程序的分层验证中间件，结合确定性程序分析与LLM智能体，先验语法、API与任务意图，再依据执行轨迹评估实际行为并引导迭代重生成。",
+      "change_zh": "相比仅靠提示护栏或单看仿真结果的做法，AeroEval将验证分为程序级（语法/API/意图）与执行级（轨迹与环境上下文）两阶段，用LLM智能体输出结构化失败定位驱动重生成，实现互补的失败检测与修复。",
+      "why_it_matters": "对UAV自主颇具价值：为LLM生成无人机任务提供程序级加轨迹级验证修复闭环，其避障、高度、覆盖与事件检测是UAV搜索侦察任务的关键维度；分阶段失败定位可迁移至ObjectNav/VLN智能体评测。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "无人机任务验证, 大语言模型, 代码生成, 程序分析, 执行轨迹验证, LLM智能体",
+      "question_zh": "如何验证语法正确却可能违背用户意图、环境约束与任务级行为的AI生成无人机程序，并定位失败以指导修复？",
+      "innovation_zh": "AeroEval将确定性程序分析与上下文感知LLM智能体结合，先校验程序语法、平台API用法与任务意图，再基于执行轨迹和环境上下文评估实际行为，各阶段返回结构化失败信息支持迭代再生成，弥补现有系统仅靠提示护栏或仿真结果、失败定位不足的局限。",
+      "dataset_zh": "AirSim与Gazebo仿真器，包含20个导航任务和五类分析型任务；未提及真机平台",
+      "results_zh": "在20个导航任务上，AeroEval将导航成功率从55%提升至95%；消融实验中，代码验证器与轨迹验证器单独的运行级成功率分别为44%和56%，完整流水线达88%；分析型任务的总运行级成功率从单次生成AeroGen的34%提升至再生成预算内的88%，可检测程序结构、API用法、避障、高度、覆盖及事件驱动转换等互补性失败。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "agentic",
+        "drone",
+        "evaluation",
+        "geometry",
+        "llm agent",
+        "localization"
+      ],
+      "added_at": "2026-10-08T11:12:08.701406+00:00"
+    },
+    {
+      "id": "2610.10359",
+      "arxiv_id": "2610.10359",
+      "title": "MultiFly: A Real-World Multimodal Aerial Dataset with Annotation-Efficient Label Transfer and Cross-Modal Semantic Consistency",
+      "authors": [
+        "Markus Gross",
+        "Andreas Greiner",
+        "Taehyoung Kim",
+        "Sivasubiramaniam Subbiah",
+        "Tomaž Cotič",
+        "Sai Bharadwaj Matha",
+        "Conrad Christoph",
+        "Oussema Dhaouadi",
+        "Simon Zieher",
+        "Surya Vijaya Kumar",
+        "Gordon Elger",
+        "Henri Meeß",
+        "Olaf Wysocki",
+        "Paul Spannaus",
+        "Daniel Cremers"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10359",
+      "pdf_url": "https://arxiv.org/pdf/2610.10359",
+      "code_url": "https://github.com/markus-42/multifly",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MultiFly是真实低空无人机多模态数据集，覆盖RGB、热成像、激光雷达与雷达四模态共17272个同步样本，通过共享几何表征从115张RGB标注高效迁移标签，并建立四模态语义分割基准。",
+      "change_zh": "常见多模态数据集需逐模态人工标注、且雷达等模态语义标注稀缺；本文改用共享几何表征做跨模态标签迁移，仅115张RGB人工标注即覆盖全部模态，量化跨模态语义一致性（90.94%），并首次实现四模态帧级一致语义标注的真机基准。",
+      "why_it_matters": "为UAV低空自主与主动目标搜索提供感知基础：热成像与雷达利于夜间及恶劣条件下的目标发现，跨模态一致标注配合标定与GNSS-RTK/IMU真值可支撑语义建图、空间智能与多模态3D场景理解研究，也充实具身感知基准评测资源。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "uav"
+      ],
+      "added_at": "2026-10-08T11:15:08.481743+00:00"
     },
     {
       "id": "2610.08720",
@@ -7961,6 +8323,47 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.10388",
+      "arxiv_id": "2610.10388",
+      "title": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
+      "authors": [
+        "Liu Renhang",
+        "Navonil Majumder",
+        "Tej Deep Pala",
+        "Soujanya Poria"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10388",
+      "pdf_url": "https://arxiv.org/pdf/2610.10388",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出RoboQuest面向目标导向具身探索的基准：十个移动操作任务覆盖搜索、操作式检查与交互测试三类不确定性，评测五个前沿多模态智能体与微调π0.5策略，最佳成功率仅23%，失败多因过早停止探索。",
+      "change_zh": "与常见被动观测式基准不同，该基准要求智能体通过物理交互主动获取任务相关信息，并自主决定何时停止探索、提交任务；其「补全隐藏信息后单独测执行技能」的设计，把探索决策失败与底层执行失败解耦归因。",
+      "why_it_matters": "其「主动搜寻—证据积累—自主决定何时停止」的范式与UAV主动目标搜索及ObjectNav中的探索与终止决策高度同构；解耦执行与决策失败的评测方法，也为具身搜索导航与多模态智能体的失败归因和系统性评测提供可借鉴范式。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "multimodal agent"
+      ],
+      "added_at": "2026-10-08T11:24:40.847287+00:00"
+    },
+    {
       "id": "2610.08791",
       "arxiv_id": "2610.08791",
       "title": "World Models' Last Exam in Physics",
@@ -9540,6 +9943,46 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.10181",
+      "arxiv_id": "2610.10181",
+      "title": "Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection",
+      "authors": [
+        "Ruihan Xu",
+        "Jiae Yoon",
+        "Kaichen Zhou",
+        "Ue-Hwan Kim",
+        "Luca Carlone"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10181",
+      "pdf_url": "https://arxiv.org/pdf/2610.10181",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Argos将几何基础模型的隐式3D特征适配于在线场景变化检测与3D重建，发布含合成与真实数据的大规模基准并跨数据集联合训练，同时提出实时系统Argos-SLAM实现变化感知4D建图。",
+      "change_zh": "相比依赖成对2D图像特征（视角变化敏感、跨域泛化差）或需昂贵离线优化的显式3D路线，该工作改用几何基础模型的隐式3D先验联合做变化检测与重建，并以多数据集联合训练提升跨域泛化，支持在线实时运行。",
+      "why_it_matters": "在线变化检测与变化感知4D建图是长时程机器人自主的核心能力，可为UAV在动态环境中持续搜索目标、ObjectNav在环境变动下更新场景记忆提供更可靠空间底座，属状态估计与在线建图方向的系统级进展。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "slam"
+      ],
+      "added_at": "2026-10-08T11:32:49.099986+00:00"
     },
     {
       "id": "2610.08225",
@@ -13991,6 +14434,120 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.10382",
+      "arxiv_id": "2610.10382",
+      "title": "Semantic-Aware Predictive Mapping for Exploration and Navigation",
+      "authors": [
+        "Kenneth J. K. Ong",
+        "William W. J. Teo"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10382",
+      "pdf_url": "https://arxiv.org/pdf/2610.10382",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作在预测式占据建图中引入门语义通道，在改造的CogniPlan子集上注入门致几何歧义，对比纯几何与语义增强模型：全图性能基本持平，门区域L1、F1、IoU大幅提升，表明语义线索有助歧义区域补全。",
+      "change_zh": "相比纯几何占据补全路线，改变在于给预测建图模型额外输入门语义通道，把'门在几何上似墙但语义上预示连通空间'的歧义显式建模。但属增量验证：仅单一改造数据、对照仅为自设基线，门区F1/IoU达1.0疑似语义通道泄露答案，且未接入探索/导航闭环验证。",
+      "why_it_matters": "预测不可见布局是主动探索决策的核心前提，对在线建图、空间智能与世界模型技术线有参考价值；对UAV目标搜索与ObjectNav而言，识别'门后可能连通'可减少无效探索路径。但本工作仅为小规模离线验证，价值偏概念性，尚需导航下游任务与更严格评测支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "evaluation",
+        "exploration",
+        "geometry"
+      ],
+      "added_at": "2026-10-08T11:19:26.672004+00:00"
+    },
+    {
+      "id": "2610.10539",
+      "arxiv_id": "2610.10539",
+      "title": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+      "authors": [
+        "Jaeyeong Kim",
+        "Jinhyuk Jang",
+        "Jongmin Lee",
+        "Kyehong Park",
+        "Seungryong Kim"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10539",
+      "pdf_url": "https://arxiv.org/pdf/2610.10539",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Tetris3D从单张图像重建几何与物理一致的3D场景，以邻接物体几何及成对物理关系为条件生成各物体形状与位姿，并发布120万场景的ComOb物理仿真数据集，生成质量与物理稳定性达SOTA。",
+      "change_zh": "常见单图3D场景重建独立生成物体或仅隐式耦合，缺乏邻接物体间细粒度空间兼容约束；Tetris3D显式以周围物体几何与成对物理关系为条件引导形状和位姿生成，被遮挡的交互区域仍保持几何物理合理，并配套120万场景物理仿真数据集。",
+      "why_it_matters": "物体级几何与物理关系一致的重建可作为ObjectNav与UAV目标搜索的场景先验：在遮挡下补全目标形状与位姿、辅助开放词汇目标的3D理解与世界模型训练；ComOb数据集也为物理合理的空间理解与仿真提供资源，但属被动单图生成，价值较间接。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "3d scene",
+        "geometry"
+      ],
+      "added_at": "2026-10-08T11:25:15.364562+00:00"
+    },
+    {
+      "id": "2610.10536",
+      "arxiv_id": "2610.10536",
+      "title": "Decoupling Exploration from Optimization in RLVR",
+      "authors": [
+        "Saif Punjwani",
+        "Micah Goldblum"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10536",
+      "pdf_url": "https://arxiv.org/pdf/2610.10536",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出ExpDis框架，把RLVR中探索与优化解耦：带新颖性奖励的探索器生成轨迹，过滤后蒸馏给学生策略，多轮交替进行；在七个数学基准、两个模型族上以同等时间预算超过DAPO。",
+      "change_zh": "常见路线在单一策略上直接加新颖性奖励，易降低模型质量且难恢复；本文改为探索与优化分离，探索器承担激进探索、学生只蒸馏过滤后的正确轨迹，从而可大幅加强探索而不损伤学生策略质量。",
+      "why_it_matters": "RLVR是当前LLM推理训练的主流范式，本文的探索-蒸馏解耦思路对具身智能体的策略强化学习有方法借鉴意义，可为UAV目标搜索与ObjectNav中的探索奖励设计、策略多样性优化提供参考，但与导航本体无直接关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "exploration"
+      ],
+      "added_at": "2026-10-08T11:27:22.561109+00:00"
+    },
+    {
       "id": "2610.06469",
       "arxiv_id": "2610.06469",
       "title": "Odyssey: A Closed-Loop Benchmark for Long-Horizon Real-World Driving with Explicit Navigation Routes",
@@ -15901,64 +16458,104 @@
     }
   ],
   "briefing": {
-    "text": "今日七篇的主线，是具身导航与移动操作由基准评测转向推理、表征与世界模型规划，并延伸到环境生成与仿真重建的数据侧。首推StageVLN：训练期借冻结几何模型的空间引导与轨迹监督塑造表征，部署时移除全部辅助模块，4B骨干在R2R-CE取得56.3%成功率；TEMPO在潜空间学习以环境步数计的时序距离排序候选动作，免奖励免标签即提升多个规划器；RMMBench将长程导航与局部操作统一进连续空间评测，实证VLM空间感知仍是短板。趋势：训练借外力、部署做减法，再辅以世界模型前瞻，正成为导航效率研究的共同解法。",
-    "added": 7,
-    "at": "2026-10-07T17:20:48.680214+00:00",
+    "text": "主线是基准密集上新：空地协同、跨本体与终身小物体等新设定均有覆盖，方法上则聚焦语义引导的主动建图。首推AirGroundVLN，万条级空地协同VLN数据加AG-CoNAV框架，直接定义了跨平台协同导航的评测范式；ActiveLang以语义不确定性选取视点，用更少观测在线构建开放词汇地图并超过离线基线；IVAM-Nav将布局变化下的终身小物体导航形式化，视点锚定记忆兼顾复用与重验证，直指长期记忆痛点。趋势观察：导航评测正从静态室内走向动态、多平台与开放世界，记忆与不确定性已成为方法设计的核心抓手。",
+    "added": 12,
+    "at": "2026-10-08T11:35:33.088423+00:00",
     "new": [
       {
-        "t": "RMMBench: A Comprehensive Benchmark for Robotic Mobile Manipulation",
-        "u": "https://arxiv.org/abs/2610.05414",
+        "t": "Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer",
+        "u": "https://arxiv.org/abs/2610.09967",
         "r": 8,
         "g": 7,
-        "s": "RMMBench是机器人移动操作基准，在连续空间统一高低层具身任务，构建70个从局部操作到长程组合导航的场景，评测VLM指令理解与空间定位，发现其空间感知仍是短板。",
+        "s": "提出用带机械臂相机的四足机器人对外部无标记纳米无人机进行视觉定位，感知优先NMPC动态调整机身与臂以保持视线，无人机仅靠该外部定位实现起飞到降落的预设轨迹飞行，中位三维误差59毫米。",
         "c": ""
       },
       {
-        "t": "PreAct-Nav: Agentic Reasoning Before Action for Urban Navigation",
-        "u": "https://arxiv.org/abs/2610.04916",
+        "t": "AeroEval: Staged Program and Execution Validation for AI-Generated Drone Missions",
+        "u": "https://arxiv.org/abs/2610.09764",
         "r": 8,
         "g": 7,
-        "s": "提出PreAct-Nav城市导航智能体框架：在冻结策略上叠加前瞻推理，记忆模块维护中期子目标，动作条件世界模型预测候选动作后果，VLM推理决定保留或修改动作，并用真实观测更新记忆。",
+        "s": "AeroEval是面向LLM生成无人机程序的分层验证中间件，结合确定性程序分析与LLM智能体，先验语法、API与任务意图，再依据执行轨迹评估实际行为并引导迭代重生成。",
         "c": ""
       },
       {
-        "t": "StageVLN: Spatial and Trajectory Auxiliary Guidance for Efficient Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.05664",
-        "r": 9,
-        "g": 7,
-        "s": "StageVLN提出VLN训练框架，训练时用冻结几何基础模型的多级空间引导与相对朝向、专家路径进度等轨迹监督塑造分层导航器表征，部署时移除全部辅助模块，在R2R-CE与RxR-CE上以4B骨干取得56.3%与54.3%成功率。",
+        "t": "AirGroundVLN: A Large-Scale Benchmark for Goal-Oriented Air-Ground Collaborative Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.10421",
+        "r": 10,
+        "g": 8,
+        "s": "提出大规模空地协同目标导向VLN基准AirGroundVLN，覆盖19个虚幻环境共10281条导航片段与955个目标实例，并给出AG-CoNAV参考框架，以跨平台时空锚定记忆与空中引导规划实现协同导航。",
         "c": ""
       },
       {
-        "t": "SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays",
-        "u": "https://arxiv.org/abs/2610.05610",
+        "t": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+        "u": "https://arxiv.org/abs/2610.10409",
+        "r": 8,
+        "g": 8,
+        "s": "RobotWorld是一个涵盖操作、移动操作、运动、驾驶与空中控制的84任务仿真基准，评测多模态智能体将指令与观测转化为物理任务执行的能力，并基于执行轨迹分析各模型的能力迁移与失效模式。",
+        "c": ""
+      },
+      {
+        "t": "MultiFly: A Real-World Multimodal Aerial Dataset with Annotation-Efficient Label Transfer and Cross-Modal Semantic Consistency",
+        "u": "https://arxiv.org/abs/2610.10359",
         "r": 7,
-        "g": 6,
-        "s": "SEA-LM面向智能眼镜麦克风阵列，用FOACODER空间音频编码器将可变阵型波束合成的一阶Ambisonics注入多模态大模型，经两阶段课程训练实现声源定位与空间选择性转录。",
-        "c": ""
-      },
-      {
-        "t": "EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI",
-        "u": "https://arxiv.org/abs/2610.04301",
-        "r": 8,
-        "g": 7,
-        "s": "EnvDreamer利用大语言与视觉语言模型自动生成UE5交互式环境，用于导航、重排与操作任务的训练与评测，并开源2万个带任务程序、场景图与轨迹的校验环境数据集。",
-        "c": ""
-      },
-      {
-        "t": "Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos",
-        "u": "https://arxiv.org/abs/2610.04432",
-        "r": 8,
         "g": 8,
-        "s": "将具身视频到交互仿真重建建模为软件工程任务，提出222个重建实例的Video2World基准，从几何、动态与功能正确性评测9个前沿编码智能体，发现视觉更逼真未必任务成功率更高。",
-        "c": ""
+        "s": "MultiFly是真实低空无人机多模态数据集，覆盖RGB、热成像、激光雷达与雷达四模态共17272个同步样本，通过共享几何表征从115张RGB标注高效迁移标签，并建立四模态语义分割基准。",
+        "c": "https://github.com/markus-42/multifly"
       },
       {
-        "t": "How Long, Not How Close: A Learned Temporal Metric for Planning in Latent World Models",
-        "u": "https://arxiv.org/abs/2610.04988",
+        "t": "Lifelong small-object navigation in changing object layouts: a benchmark and method",
+        "u": "https://arxiv.org/abs/2610.10125",
         "r": 9,
+        "g": 7,
+        "s": "该文将小物体在布局变化中的终身导航形式化为LiSoNav-COL任务，构建28场景、45类小物体基准LiSoNav-Eval，并提出IVAM-Nav：以多视角巡检获得可靠观测，用视点锚定记忆支持复用与重验证。",
+        "c": ""
+      },
+      {
+        "t": "Semantic-Aware Predictive Mapping for Exploration and Navigation",
+        "u": "https://arxiv.org/abs/2610.10382",
+        "r": 7,
+        "g": 5,
+        "s": "该工作在预测式占据建图中引入门语义通道，在改造的CogniPlan子集上注入门致几何歧义，对比纯几何与语义增强模型：全图性能基本持平，门区域L1、F1、IoU大幅提升，表明语义线索有助歧义区域补全。",
+        "c": ""
+      },
+      {
+        "t": "ActiveLang: Active Open-Vocabulary 3D Mapping with Semantic-Uncertainty-Guided Exploration",
+        "u": "https://arxiv.org/abs/2610.09518",
+        "r": 9,
+        "g": 7,
+        "s": "ActiveLang提出语义不确定性引导的主动探索系统，在线构建开放词汇3D语言地图：以紧凑双高斯表示联合重建几何、外观与语义，并用规划器选取信息量大的视点，以更少观测与更低算力完成建图，在Replica与ScanNet++上超越在线与离线基线。",
+        "c": ""
+      },
+      {
+        "t": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
+        "u": "https://arxiv.org/abs/2610.10388",
+        "r": 7,
         "g": 8,
-        "s": "TEMPO在冻结世界模型的潜空间中学习时序距离度量，以状态间所需环境步数替代潜相似度来排序候选动作序列，无需奖励或标签，在11个仿真环境的导航与操作任务上提升LeWM与PLDM规划器表现。",
+        "s": "提出RoboQuest面向目标导向具身探索的基准：十个移动操作任务覆盖搜索、操作式检查与交互测试三类不确定性，评测五个前沿多模态智能体与微调π0.5策略，最佳成功率仅23%，失败多因过早停止探索。",
+        "c": ""
+      },
+      {
+        "t": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+        "u": "https://arxiv.org/abs/2610.10539",
+        "r": 6,
+        "g": 7,
+        "s": "Tetris3D从单张图像重建几何与物理一致的3D场景，以邻接物体几何及成对物理关系为条件生成各物体形状与位姿，并发布120万场景的ComOb物理仿真数据集，生成质量与物理稳定性达SOTA。",
+        "c": ""
+      },
+      {
+        "t": "Decoupling Exploration from Optimization in RLVR",
+        "u": "https://arxiv.org/abs/2610.10536",
+        "r": 6,
+        "g": 7,
+        "s": "提出ExpDis框架，把RLVR中探索与优化解耦：带新颖性奖励的探索器生成轨迹，过滤后蒸馏给学生策略，多轮交替进行；在七个数学基准、两个模型族上以同等时间预算超过DAPO。",
+        "c": ""
+      },
+      {
+        "t": "Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection",
+        "u": "https://arxiv.org/abs/2610.10181",
+        "r": 7,
+        "g": 7,
+        "s": "Argos将几何基础模型的隐式3D特征适配于在线场景变化检测与3D重建，发布含合成与真实数据的大规模基准并跨数据集联合训练，同时提出实时系统Argos-SLAM实现变化感知4D建图。",
         "c": ""
       }
     ]
