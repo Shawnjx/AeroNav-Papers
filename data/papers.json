@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T11:29:40.642298+00:00",
+  "updated_at": "2026-10-09T16:52:31.933283+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6360,6 +6360,217 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.11220",
+      "arxiv_id": "2610.11220",
+      "title": "Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation",
+      "authors": [
+        "Volodymyr Shcherbyna",
+        "Linh Kästner",
+        "Duc Anh Do",
+        "Hoang Tung",
+        "Huu Giang Nguyen",
+        "Maximilian Ho-Kyoung Schreff",
+        "Tim Seeger",
+        "Eva Wiese",
+        "Ahmed Martban",
+        "Huajian Zeng",
+        "An Tran",
+        "Nguyen Quoc Hung",
+        "Jonas Kreutz",
+        "Vu Thanh Lam",
+        "Ton Manh Kien",
+        "Harold Soh"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "Robotics",
+      "url": "https://arxiv.org/abs/2610.11220",
+      "pdf_url": "https://arxiv.org/pdf/2610.11220",
+      "code_url": "https://github.com/Arena-Rosnav",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "citation_count": 5,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/8319373d03cb9e4ed11d1eea085859e258ef0f18",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Arena 5.0 是面向社交导航开发与评测的第五代开源 ROS2 仿真框架，集成 Isaac Gym 实现照片级渲染与高效训练，提供随机化场景生成、任务规划模块，并对多种先进社交导航策略在多难度世界中做了系统性基准评测与用户研究。",
+      "change_zh": "相比 Habitat 等偏纯仿真的导航评测平台，它把 Isaac Gym 照片级渲染接入 ROS2 生态，让规划器能在贴近真机部署的软件栈中训练与验证；并以难度分级的随机化世界与社交导航指标，系统评测了先进社交导航策略。",
+      "why_it_matters": "属具身基准与评测核心线：为地面社交导航提供了可复现的开源基准与仿真栈。其随机化环境生成与应急搜救类场景设计，可为 UAV 搜救仿真与 ObjectNav 评测平台建设提供参考，但本身不直接解决目标搜索或导航决策问题。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "社交导航, ROS2仿真, NVIDIA Isaac Gym, 基准测试, 场景生成, 光真实感仿真",
+      "question_zh": "如何构建一个支持光真实感仿真、场景生成与综合基准评测的ROS2社交导航开发平台？",
+      "innovation_zh": "Arena 5.0将NVIDIA Isaac Gym完整集成到Arena平台，实现光真实感仿真与更高效训练，并复用随机环境生成、评估工具、ROS2支持及规划器、机器人模型与API集成等既有模块；同时新增可定制的场景生成与任务规划模块（如紧急救援场景），并提供最先进社交导航策略的综合基准。",
+      "dataset_zh": "基于NVIDIA Isaac Gym的光真实感仿真环境，采用随机生成及自定义的多种难度世界与社交导航场景",
+      "results_zh": "平台在随机生成与自定义的多种难度世界和场景上对最先进社交导航策略进行了综合基准评测，基于多种社交导航指标给出详细评估；综合用户研究显示，相较以往版本，平台在可用性和效率上均有显著提升。摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "task planning"
+      ],
+      "added_at": "2026-10-09T16:49:22.500908+00:00"
+    },
+    {
+      "id": "2610.12069",
+      "arxiv_id": "2610.12069",
+      "title": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
+      "authors": [
+        "Peijun Xu",
+        "Chuansen Nie",
+        "Yiyang He",
+        "Yinuo Bai",
+        "Jingyang Liu",
+        "Kuixiang Shao",
+        "Yuyang Jiao",
+        "Kuanhao Xia",
+        "Jiayi Zhu",
+        "Zitian Yang",
+        "Yanqi Zhang",
+        "Tianye Tan",
+        "Shuwei Di",
+        "Junyi Xu",
+        "Jingyi Yu",
+        "Jiayuan Gu"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12069",
+      "pdf_url": "https://arxiv.org/pdf/2610.12069",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LIVIN基于30套真实居住住宅的数字孪生构建具身智能基准，用人机协同流程还原真实房间布局、家具与日常物品摆放，并评测3D检测、重建、导航与移动操作四类任务，发现现有方法受密集摆放、遮挡与空间受限制约。",
+      "change_zh": "不同于常见以扫描或程序化生成场景为主的大规模基准，LIVIN主打真实生活痕迹：以分阶段人工校验的数字孪生再现有人居住家庭的密集物品与狭窄自由空间，并把空间理解、导航与移动操作统一到同一批高保真住宅上评测。",
+      "why_it_matters": "为具身基准与评测这条核心线补充高保真居住场景，其中导航评测直接对应ObjectNav在真实杂乱家庭环境下的难点（遮挡、密集摆放、自由空间受限），也为空间智能与重建方法提供贴近部署条件的测试床，助推向真实家庭sim2real迁移。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "数字孪生, 具身智能, 空间智能, 基准测试, 机器人导航, 移动操作（loco-manipulation）",
+      "question_zh": "如何在忠实保留真实家庭布局、家具配置与日常物品摆放的数字孪生上，评估机器人的空间与具身智能？",
+      "innovation_zh": "提出基于30个真实'居住过的'家庭数字孪生的基准LIVIN，通过人机协同流程（实例识别、建筑重建、物体生成与摆放，各阶段由人工对照原始观测校验）忠实还原真实家居，弥补现有资源在规模、真实对应性与交互就绪度之间的取舍。",
+      "dataset_zh": "LIVIN基准：30个多样化真实居住家庭的数字孪生，保留观测到的房间布局、家具配置和日常物品；未提及具体仿真平台或真机平台",
+      "results_zh": "在3D检测、3D重建、导航和移动操作（loco-manipulation）四项任务上评估发现，现有方法在真实居住家庭常见的密集物品摆放、遮挡、有限自由空间和受限交互区域等条件下仍面临挑战；摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "spatial understanding"
+      ],
+      "added_at": "2026-10-09T16:49:55.327237+00:00"
+    },
+    {
+      "id": "2610.11622",
+      "arxiv_id": "2610.11622",
+      "title": "Learning Language-Conditioned Traversability Representations for Adaptive Visual Navigation",
+      "authors": [
+        "Senda Chen",
+        "Changxu Cheng",
+        "Fangdi Li",
+        "Tao Wang",
+        "Wuyue Zhao"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.11622",
+      "pdf_url": "https://arxiv.org/pdf/2610.11622",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出LaTraNav框架，用慢速视觉语言模型生成语言条件可通行性与导航目标的隐式表征，由快速流匹配规划器在像素空间异步规划路径，并借助可控轨迹的仿真数据管线与照片级图像翻译训练，实现自适应视觉导航。",
+      "change_zh": "相比依赖手工规则构建显式代价图或分割掩码的常见路线，该工作改用VLM学习语言条件的隐式通行性表征，以编码机器人能力与用户偏好，并以慢快异步架构解耦语义更新与路径规划，使路径更新率提升6.05倍。",
+      "why_it_matters": "语言条件通行性表征将用户指令与地形可行性统一到隐空间，可迁移至地面VLN与ObjectNav的目标定位环节；慢快异步规划在感知延迟下维持高频路径更新，对算力受限、需低空贴近目标飞行的UAV搜救与目标接近导航亦有直接借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "语言条件化可通行性表示, 视觉导航, 视觉-语言模型(VLM), 流匹配规划器, 异步架构",
+      "question_zh": "如何学习语言条件化的可通行性表示，使机器人能根据用户偏好与自身能力自适应地完成视觉导航与路径规划？",
+      "innovation_zh": "不同于依赖手工规则与显式代价图/分割掩码的传统方法，LaTraNav用慢速VLM生成语言条件化的可通行性与目标潜在表示，由快速流匹配规划器异步进行像素空间规划，潜在条件化优于显式分割掩码。",
+      "dataset_zh": "使用自建的基于仿真的数据生成管线（可控轨迹+照片级图像转换）构建配对数据；评估采用多个来源的数据集，具体名称未提及；真机平台未提及。",
+      "results_zh": "多来源数据集评估显示：慢速VLM有效实现语言引导的可通行性分割与目标定位，快速规划器实现自适应像素空间路径规划；潜在条件化优于显式分割掩码，异步调度使路径更新率在相同语义更新率下提升6.05倍。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "localization",
+        "vlm"
+      ],
+      "added_at": "2026-10-09T16:51:12.482612+00:00"
+    },
+    {
+      "id": "2610.11794",
+      "arxiv_id": "2610.11794",
+      "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+      "authors": [
+        "Haoyu Zhao",
+        "Zhengxu Yu",
+        "Zhiyuan He",
+        "Meng Fang",
+        "Rasul Tutunov",
+        "Haitham Bou-Ammar",
+        "Weilin Luo",
+        "Jun Wang"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.11794",
+      "pdf_url": "https://arxiv.org/pdf/2610.11794",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文让冻结LLM智能体以自然语言规则库持续学习显式世界模型，并编译为可执行代码做预测与规划，经观察-反思-验证循环自我改进，在ARC-AGI-3全部25个公开游戏通关且RHAE达100。",
+      "change_zh": "与微调模型或隐式潜在世界模型不同，该方法冻结LLM，将世界模型外化为可修订的自然语言规则库（未知处留白），再编译为代码，仅当LLM判定忠实且逐格重放复现转移时才接受更新，实现不改参数的递归自我改进。",
+      "why_it_matters": "对LLM智能体与世界模型线是重要进展：经验证的规则库记忆让冻结大模型持续积累环境动力学知识；其探索-修订-验证范式可启发UAV目标搜索与ObjectNav在未知环境的在线建模与自主试错，但摘要未涉及导航与真机，价值以方法启发为主。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "递归自我改进, 世界模型, 冻结LLM智能体, 自然语言规则手册, 外部记忆, 持续学习",
+      "question_zh": "如何让冻结LLM智能体在不熟悉环境中通过外部记忆持续学习并自我改进显式世界模型，以实现基于模型的递归自我改进？",
+      "innovation_zh": "Memento 3让冻结LLM智能体维护自然语言规则手册作为持久语义记忆，记录可修正的环境动态假设并编译为可执行代码用于预测与规划；通过观察-反思-修订-编译-验证的持续循环，仅接受经LLM忠实性判断与单元级精确重放验证的更新，从而自主改进世界模型而无需更新底层LLM，还提出并行维护多世界模型的种群扩展。",
+      "dataset_zh": "ARC-AGI-3（全部25个公开游戏）；Atari Pong案例研究",
+      "results_zh": "在ARC-AGI-3上，单模型智能体通关全部25个公开游戏的每一关卡，平均相对人类动作效率（RHAE）达100.0，动作数仅为人类的44%；Atari Pong案例中，学习到的反馈控制器在三局不同开局下均以21:0获胜，且无需进一步调用LLM。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "exploration",
+        "llm agent",
+        "world model"
+      ],
+      "added_at": "2026-10-09T16:52:28.932793+00:00"
+    },
+    {
       "id": "2610.09967",
       "arxiv_id": "2610.09967",
       "title": "Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer",
@@ -6501,6 +6712,58 @@
         "uav"
       ],
       "added_at": "2026-10-08T11:15:08.481743+00:00"
+    },
+    {
+      "id": "2610.10748",
+      "arxiv_id": "2610.10748",
+      "title": "TAPNAV: Humanoid Navigation through Tactile Active Perception",
+      "authors": [
+        "Huaze Liu",
+        "Zhenyu Wu",
+        "Jaehwi Jang",
+        "Junjie Sheng",
+        "Andrew Collins",
+        "Aaron Xie",
+        "Zhaoyuan Gu",
+        "Kaijie Zhu",
+        "Ding Jiang",
+        "Kevin Cai",
+        "Ye Zhao"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10748",
+      "pdf_url": "https://arxiv.org/pdf/2610.10748",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TAPNAV让人形机器人在无视觉环境中靠主动触觉探测导航：融合里程计、IMU与触觉接触维护位姿置信，全局规划约束定位不确定度，局部探测最大化信息增益，并在真机Unitree G1上验证。",
+      "change_zh": "常见导航依赖视觉或激光建图定位，本工作改以触觉为主动信息源：主动规划与环境接触的探测动作以获取定位修正，且全局路径以保证定位不确定度有界为准则，把物理交互转化为导航的信息增益。",
+      "why_it_matters": "主动触觉感知为烟尘、黑暗等视觉失效场景提供定位新途径；其不确定度有界规划与信息增益驱动的探测思路可迁移到UAV搜救主动信息采集与ObjectNav遮挡目标搜索，真机人形验证亦具sim2real参考价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "人形机器人导航, 触觉主动感知, 无视觉导航, 定位不确定性, 信息增益, 全身控制",
+      "question_zh": "在视觉缺失环境中，人形机器人本体里程计漂移且定位不确定性快速累积，如何通过主动触觉探测实现可靠导航？",
+      "innovation_zh": "不同于依赖视觉的方法，TAPNAV主动触碰周围结构以获取定位线索：全局规划利用触觉校正机会约束定位不确定性，局部规划选取最大化期望信息增益的探测动作，并由全身控制器协调行走与末端接触。",
+      "dataset_zh": "在仿真环境（具体仿真平台未提及）及Unitree G1人形机器人真机上进行评估，涵盖不同楼层平面（floor plans）与障碍物几何形状",
+      "results_zh": "在多种楼层平面与障碍几何下，TAPNAV相比基线方法取得更低的状态估计误差和更高的任务完成率，证明主动规划与环境的物理交互可为无视觉条件下的人形机器人导航提供定位线索。摘要未给出具体数值。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "active perception",
+        "localization",
+        "odometry",
+        "state estimation"
+      ],
+      "added_at": "2026-10-09T16:48:01.226085+00:00"
     },
     {
       "id": "2610.08720",
@@ -13742,6 +14005,46 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.11308",
+      "arxiv_id": "2610.11308",
+      "title": "Distributed Relative Localization for Homogeneous Multi-Robot Systems through UWB Ranging and Limited Communications",
+      "authors": [
+        "Zhiqiang Cao",
+        "Ran Liu",
+        "Billy Pik Lik Lau",
+        "Chau Yuen",
+        "U-Xuan Tan"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.11308",
+      "pdf_url": "https://arxiv.org/pdf/2610.11308",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出全分布式多机器人相对定位方法，融合LiDAR、UWB与里程计，用动态跟踪与联合匹配从匿名点云簇中识别同构队友，仅需UWB交换里程计即可连续相对定位，仿真与实物实验验证有效。",
+      "change_zh": "常见多机器人相对定位依赖外部通信设施或大量数据交换，且难以区分外观相同的同构机器人。该工作用联合匹配解决同构机器人的匿名数据关联，仅需UWB传里程计即可全分布式运行，摆脱WiFi等基础设施依赖。",
+      "why_it_matters": "多机协同的UAV目标搜索、搜救侦察与集群探索都依赖准确的队友相对定位；该工作免外部通信基础设施、可区分同构机体，为无GNSS/无网络环境下集群协同搜索与建图提供了关键的自主状态估计支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "exploration",
+        "localization",
+        "odometry"
+      ],
+      "added_at": "2026-10-09T16:48:37.460033+00:00"
+    },
+    {
       "id": "2610.05610",
       "arxiv_id": "2610.05610",
       "title": "SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays",
@@ -16819,72 +17122,56 @@
     }
   ],
   "briefing": {
-    "text": "本批主线是导航的世界模型化与任务智能体化。首推ALONE：贝叶斯空间信念仅在可靠度不足时请求深度观测，把“何时看”变成显式决策，仿真闭环约98%、真机十次全成；LiteNWM：潜空间世界模型跨候选轨迹共享编码并联合预测未来表征，直指机载算力约束，实现真机闭环；SuperNav：不微调MLLM，以智能体框架和视觉点接口连接决策与运动，在三类任务上超四个基线并部署四足。其余覆盖流式重建、token压缩、评测基准与融合定位。趋势：按需感知的世界模型正取代感知模块堆叠，边缘实时与真机验证成标配。",
-    "added": 8,
-    "at": "2026-10-09T11:31:37.116041+00:00",
+    "text": "本批论文覆盖具身导航的感知与定位、仿真与真实基准及语言条件规划。首推 LIVIN：以30套真实居住房屋构建数字孪生基准，密集摆放与遮挡下现有方法明显失效；LaTraNav 用慢速VLM生成可通行表征、流匹配规划器快速执行，快慢解耦是亮点；Memento 3 让冻结LLM借规则库自建可执行世界模型，通关ARC-AGI-3全部25局。趋势上，评测正从理想仿真走向真实生活场景，慢推理配快控制渐成主流。",
+    "added": 6,
+    "at": "2026-10-09T16:54:19.124686+00:00",
     "new": [
       {
-        "t": "GLIO2: A GPU-Parallelized Tightly-Coupled LiDAR-Inertial-GNSS System for Robust and Real-Time Global Localization and Mapping",
-        "u": "https://arxiv.org/abs/2610.12411",
+        "t": "TAPNAV: Humanoid Navigation through Tactile Active Perception",
+        "u": "https://arxiv.org/abs/2610.10748",
         "r": 8,
-        "g": 8,
-        "s": "GLIO2是GPU并行紧耦合LiDAR-惯性-GNSS系统，在滑动窗口因子图中联合优化多扫描配准、IMU预积分与原始GNSS观测，边缘端实时运行，离线后端复用缓存因子批量精化全局轨迹。",
-        "c": ""
-      },
-      {
-        "t": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
-        "u": "https://arxiv.org/abs/2610.12126",
-        "r": 9,
         "g": 7,
-        "s": "该文提出SuperNav：不微调MLLM，以智能体框架集成导航技能、工具与上下文管理，用视觉点接口连接决策与运动，在实例级、多物体与需求驱动任务上超越四个基线，并部署于四足机器人。",
+        "s": "TAPNAV让人形机器人在无视觉环境中靠主动触觉探测导航：融合里程计、IMU与触觉接触维护位姿置信，全局规划约束定位不确定度，局部探测最大化信息增益，并在真机Unitree G1上验证。",
         "c": ""
       },
       {
-        "t": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
-        "u": "https://arxiv.org/abs/2610.12458",
-        "r": 6,
-        "g": 7,
-        "s": "OmniCapBench将音视频描述评测重构为实体指涉、视觉镜头、音频事件三轨道的原子可验证单元，结合确定性约束检查与局部LLM语义比较，基于786条密集标注视频细粒度诊断MLLM的感知与长时程音视频推理缺陷。",
-        "c": ""
-      },
-      {
-        "t": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
-        "u": "https://arxiv.org/abs/2610.12266",
+        "t": "Distributed Relative Localization for Homogeneous Multi-Robot Systems through UWB Ranging and Limited Communications",
+        "u": "https://arxiv.org/abs/2610.11308",
         "r": 7,
-        "g": 7,
-        "s": "DVD提出动态向量解码，将2D/3D感知表示（框、掩码）统一为紧凑离散token，经轻量解码器还原，让MLLM高效完成2D与3D感知，降低token开销与推理延时。",
+        "g": 6,
+        "s": "提出全分布式多机器人相对定位方法，融合LiDAR、UWB与里程计，用动态跟踪与联合匹配从匿名点云簇中识别同构队友，仅需UWB交换里程计即可连续相对定位，仿真与实物实验验证有效。",
         "c": ""
       },
       {
-        "t": "Pumpire: Unified Benchmark for Metric Distance Estimation",
-        "u": "https://arxiv.org/abs/2610.12423",
-        "r": 7,
+        "t": "Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation",
+        "u": "https://arxiv.org/abs/2610.11220",
+        "r": 8,
         "g": 7,
-        "s": "Pumpire是评估图像与视频级3D基础模型度量距离估计能力的统一基准，构建含100个真实场景、6400帧、带实测点对距离标注的pumpire-6k数据集，并对29种基线配置开展系统评测与分析。",
+        "s": "Arena 5.0 是面向社交导航开发与评测的第五代开源 ROS2 仿真框架，集成 Isaac Gym 实现照片级渲染与高效训练，提供随机化场景生成、任务规划模块，并对多种先进社交导航策略在多难度世界中做了系统性基准评测与用户研究。",
+        "c": "https://github.com/Arena-Rosnav"
+      },
+      {
+        "t": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
+        "u": "https://arxiv.org/abs/2610.12069",
+        "r": 8,
+        "g": 7,
+        "s": "LIVIN基于30套真实居住住宅的数字孪生构建具身智能基准，用人机协同流程还原真实房间布局、家具与日常物品摆放，并评测3D检测、重建、导航与移动操作四类任务，发现现有方法受密集摆放、遮挡与空间受限制约。",
         "c": ""
       },
       {
-        "t": "Acting from Belief, Looking When Needed: A Bayesian Spatial World Model for Navigation under Intermittent Perception",
-        "u": "https://arxiv.org/abs/2610.11591",
-        "r": 9,
+        "t": "Learning Language-Conditioned Traversability Representations for Adaptive Visual Navigation",
+        "u": "https://arxiv.org/abs/2610.11622",
+        "r": 8,
         "g": 7,
-        "s": "ALONE提出贝叶斯空间世界模型，以执行动作传播结构化空间信念、用几何先验补全未观测区域，仅在可靠性不足时请求深度观测，实现间歇感知下无人机导航，仿真闭环成功率约98%，真机10次飞行全部成功。",
+        "s": "本文提出LaTraNav框架，用慢速视觉语言模型生成语言条件可通行性与导航目标的隐式表征，由快速流匹配规划器在像素空间异步规划路径，并借助可控轨迹的仿真数据管线与照片级图像翻译训练，实现自适应视觉导航。",
         "c": ""
       },
       {
-        "t": "LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild",
-        "u": "https://arxiv.org/abs/2610.12368",
-        "r": 9,
-        "g": 8,
-        "s": "LiteNWM 是一个轻量潜空间导航世界模型，跨候选轨迹共享视觉编码并联合预测多视野动作条件未来表征，由学习打分器选轨迹，实现机载前瞻规划与真机闭环导航。",
-        "c": ""
-      },
-      {
-        "t": "Slot3R: Set-Associative Spatial Memory for Streaming 3D Reconstruction",
-        "u": "https://arxiv.org/abs/2610.12282",
-        "r": 7,
+        "t": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+        "u": "https://arxiv.org/abs/2610.11794",
+        "r": 8,
         "g": 7,
-        "s": "提出免训练的组相联空间记忆Slot3R：空间位置仅决定寻址而非强制融合，多状态可共存于同一地址，配合有界稀疏读出，在7Scenes等基准上大幅降低点云与位姿误差并支持千帧实时重建。",
+        "s": "该文让冻结LLM智能体以自然语言规则库持续学习显式世界模型，并编译为可执行代码做预测与规划，经观察-反思-验证循环自我改进，在ARC-AGI-3全部25个公开游戏通关且RHAE达100。",
         "c": ""
       }
     ]
