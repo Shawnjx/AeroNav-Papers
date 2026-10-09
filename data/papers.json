@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T11:33:52.002043+00:00",
+  "updated_at": "2026-10-09T11:29:40.642298+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1695,6 +1695,53 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.12368",
+      "arxiv_id": "2610.12368",
+      "title": "LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild",
+      "authors": [
+        "Linkai Liu",
+        "Yuntian Zhang",
+        "Zhenshan Bing",
+        "Chen Chen",
+        "Lingjuan Lyu",
+        "Shangguang Wang",
+        "Mengwei Xu",
+        "Dongqi Cai"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12368",
+      "pdf_url": "https://arxiv.org/pdf/2610.12368",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LiteNWM 是一个轻量潜空间导航世界模型，跨候选轨迹共享视觉编码并联合预测多视野动作条件未来表征，由学习打分器选轨迹，实现机载前瞻规划与真机闭环导航。",
+      "change_zh": "相比逐条候选做昂贵视觉 rollout 的生成式导航世界模型，LiteNWM 在潜空间跨候选共享编码并一次联合预测多视野未来，用学习打分器替代逐条生成评估，且打分器与 proposer 解耦可跨策略迁移（NoMaD→MBRA），从而可机载部署。",
+      "why_it_matters": "该工作把前瞻式世界模型压到机载算力可承受量级（128×加速），对 UAV 主动目标搜索中实时评估多条候选轨迹的场景价值明显，也可为 ObjectNav 提供与策略解耦的轨迹打分器，真机未见环境闭环结果进一步验证 sim2real 可行性。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉导航, 世界模型, 潜在表征, 轨迹打分, 闭环导航, 机器人",
+      "question_zh": "如何在机载视觉导航中高效评估多条候选轨迹的未来后果，实现具备前瞻性的轨迹选择与闭环导航？",
+      "innovation_zh": "与逐候选生成视觉rollout的生成式世界模型不同，LiteNWM在候选轨迹间共享视觉编码，联合预测多条候选在多时间视野下动作条件化的未来潜在表征，由学习到的打分器选择轨迹，且评估器无需针对轨迹生成器重新训练即可迁移。",
+      "dataset_zh": "离线数据集：RECON、SCAND、SACSoN；硬件平台：RTX 5090；真机实验：未见过的室内外环境",
+      "results_zh": "离线评估中相比NoMaD+NWM-XL宏平均轨迹误差降低17.56%，RTX 5090上端到端加速128.00倍；评估器可从NoMaD迁移至MBRA且无需重训练，误差降低16.2%；真机实验在未见室内外环境中导航成功率从43.3%提升至83.3%。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-09T11:28:22.574861+00:00"
+    },
+    {
       "id": "2610.08526",
       "arxiv_id": "2610.08526",
       "title": "WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses",
@@ -3172,6 +3219,98 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.12126",
+      "arxiv_id": "2610.12126",
+      "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+      "authors": [
+        "Jinkai Zhang",
+        "Jingyi Xu",
+        "Yuanhong Yu",
+        "Jiarui Guo",
+        "Ruizhen Hu",
+        "Hujun Bao",
+        "Xiaowei Zhou",
+        "Sida Peng"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12126",
+      "pdf_url": "https://arxiv.org/pdf/2610.12126",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 6,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文提出SuperNav：不微调MLLM，以智能体框架集成导航技能、工具与上下文管理，用视觉点接口连接决策与运动，在实例级、多物体与需求驱动任务上超越四个基线，并部署于四足机器人。",
+      "change_zh": "常见路线微调MLLM直接输出导航动作，泛化受训练数据限制；该文改为冻结预训练模型，让其专注请求理解、场景理解与决策，运动执行交给导航技能与工具，并以图像上的视觉点接口实现决策—运动闭环与执行反馈修正。",
+      "why_it_matters": "为ObjectNav从类别级迈向实例级、多物体与需求驱动任务提供免微调的智能体方案；该范式对数据稀缺的UAV主动目标搜索同样有价值——靠预训练模型决策、工具执行运动更易泛化，四足真机部署也显示了sim2real可行性。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "具身导航, 多模态大语言模型（MLLM）, 智能体框架, 视觉点接口, 服务机器人, 任务与场景泛化",
+      "question_zh": "如何让通用服务机器人在陌生环境中处理多样化的人类导航请求，同时兼顾任务通用性与场景通用性？",
+      "innovation_zh": "不同于微调MLLM预测动作，SuperNav无需导航微调，用智能体框架（导航技能、交互工具、上下文管理）让MLLM专注决策，以视觉点接口在图像中指定目标并依反馈修正，运动交给工具。",
+      "dataset_zh": "HM3D数据集（类别级评测）及真实四足机器人平台；实例级、多目标、需求驱动任务的评测环境未提及",
+      "results_zh": "在实例级、多目标和需求驱动三类任务上，SuperNav优于四个评估基线方法；在HM3D上的类别级评测以及真实四足机器人上的部署进一步验证了其跨环境适用性。摘要未提及具体数字。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "deployment",
+        "evaluation",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-09T11:22:15.520625+00:00"
+    },
+    {
+      "id": "2610.11591",
+      "arxiv_id": "2610.11591",
+      "title": "Acting from Belief, Looking When Needed: A Bayesian Spatial World Model for Navigation under Intermittent Perception",
+      "authors": [
+        "Feihong Yang",
+        "Xiang Long",
+        "Jincheng Yu",
+        "Jianfei Zhang",
+        "Guangjun Ge",
+        "Chao Wang",
+        "Yu Wang"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.11591",
+      "pdf_url": "https://arxiv.org/pdf/2610.11591",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ALONE提出贝叶斯空间世界模型，以执行动作传播结构化空间信念、用几何先验补全未观测区域，仅在可靠性不足时请求深度观测，实现间歇感知下无人机导航，仿真闭环成功率约98%，真机10次飞行全部成功。",
+      "change_zh": "常见导航路线依赖高频连续感知缓解部分可观测性，本文改为以内部信念传播为主、按可靠性地图按需观测，把感知需求从导航决策中解耦，仅在信念不足且新证据有望提升相关区域可靠性时才看，大幅减少观测占比。",
+      "why_it_matters": "对无人机主动目标搜索价值直接：搜索任务中相机常需在导航与目标探测间分时复用，按需观测可释放绝大部分时刻的传感器给目标发现；其可靠性地图与选择性观测策略也为ObjectNav等主动感知提供了何时看、何时凭信念行动的新范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "drone",
+        "world model"
+      ],
+      "added_at": "2026-10-09T11:27:36.128297+00:00"
     },
     {
       "id": "2610.10125",
@@ -4877,6 +5016,56 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.12411",
+      "arxiv_id": "2610.12411",
+      "title": "GLIO2: A GPU-Parallelized Tightly-Coupled LiDAR-Inertial-GNSS System for Robust and Real-Time Global Localization and Mapping",
+      "authors": [
+        "Qi Zhang",
+        "Xikun Liu",
+        "Qijun Qin",
+        "Xiangru Wang",
+        "Junzhe Wang",
+        "Naigui Xiao",
+        "Jianhao Jiao",
+        "Weisong Wen"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12411",
+      "pdf_url": "https://arxiv.org/pdf/2610.12411",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GLIO2是GPU并行紧耦合LiDAR-惯性-GNSS系统，在滑动窗口因子图中联合优化多扫描配准、IMU预积分与原始GNSS观测，边缘端实时运行，离线后端复用缓存因子批量精化全局轨迹。",
+      "change_zh": "改变scan-to-map前端退化即不可恢复、偏差以过自信位姿约束传播且GNSS无法重加权的模式：改为GPU并行滑动窗口内联合优化多扫描配准、IMU预积分与原始GNSS，离线后端复用因子精化全轨迹。",
+      "why_it_matters": "鲁棒全局定位是无人机搜救侦察等目标搜索与户外大规模导航的底层前提：系统在LiDAR退化与动态干扰下仍边缘端实时保持精度，含自采UAV数据，为空域自主和真机部署提供可靠里程计与全局地图基础。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "激光雷达-惯性-GNSS紧耦合, GPU并行, 因子图优化, 滑动窗口, 全局定位与建图, 边缘计算",
+      "question_zh": "如何在感知退化的大规模环境中融合LiDAR、惯性与GNSS测量，实现鲁棒、实时且全局一致的状态估计与建图？",
+      "innovation_zh": "针对现有scan-to-map前端在退化下发散不可恢复、且位姿约束过度自信导致GNSS无法重加权的问题，GLIO2提出GPU并行前端，在单一滑动窗口因子图中联合优化scan-to-multiscan LiDAR、IMU预积分与原始GNSS测量；离线后端复用缓存因子批量精化全轨迹，实现边缘设备实时运行。",
+      "dataset_zh": "三个公开基准数据集：UrbanNav、MARS-LVIG、M3DGR，以及自采集的无人机和车辆数据；实机平台为NVIDIA Jetson Orin NX边缘计算设备。",
+      "results_zh": "在三个公开基准及自采数据上GLIO2取得评估系统中最优整体精度；30分钟、4.51公里的UrbanNav Whampoa序列离线精化仅需约24秒；在5.66公里、最高96 km/h的桥梁场景中，所有对比基线因LiDAR退化发散，GLIO2保持1.6米水平精度；Jetson Orin NX上全流程约25 Hz（每帧39.60 ms）。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "localization",
+        "state estimation",
+        "uav"
+      ],
+      "added_at": "2026-10-09T11:20:34.004120+00:00"
     },
     {
       "id": "2610.10409",
@@ -9945,6 +10134,129 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.12266",
+      "arxiv_id": "2610.12266",
+      "title": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
+      "authors": [
+        "Jinghua Hou",
+        "Zhe Liu",
+        "Hengshuang Zhao"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12266",
+      "pdf_url": "https://arxiv.org/pdf/2610.12266",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DVD提出动态向量解码，将2D/3D感知表示（框、掩码）统一为紧凑离散token，经轻量解码器还原，让MLLM高效完成2D与3D感知，降低token开销与推理延时。",
+      "change_zh": "常见路线让MLLM以文本输出坐标或用固定范围量化，token开销大且受范围精度限制；DVD改为将框与掩码编为1D向量映射为紧凑离散token，并以学习的de-tokenizer解码，摆脱无界范围与精度约束并统一2D/3D。",
+      "why_it_matters": "MLLM日益成为UAV搜索与ObjectNav的目标感知与决策环节；DVD降低其输出2D/3D定位的token与延时，KITTI/nuScenes验证的3D框能力可为具身智能体提供开放词汇目标检测与空间定位，支持实时部署。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "localization",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-09T11:24:21.428494+00:00"
+    },
+    {
+      "id": "2610.12423",
+      "arxiv_id": "2610.12423",
+      "title": "Pumpire: Unified Benchmark for Metric Distance Estimation",
+      "authors": [
+        "Siyu Chen",
+        "Zehan Wang",
+        "Jiayang Xu",
+        "Yihan Wu",
+        "Jialei Wang",
+        "Junming Chen",
+        "Ziang Zhang",
+        "Yutong Ying",
+        "Zhou Zhao"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12423",
+      "pdf_url": "https://arxiv.org/pdf/2610.12423",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Pumpire是评估图像与视频级3D基础模型度量距离估计能力的统一基准，构建含100个真实场景、6400帧、带实测点对距离标注的pumpire-6k数据集，并对29种基线配置开展系统评测与分析。",
+      "change_zh": "以往评测要么分别评估深度与相机内参，要么用几何相似度指标评估点云，无法直接反映点对距离估计能力；Pumpire改为直接在重建几何上测量实测点对距离误差，并统一覆盖图像级与视频级、有无深度先验的跨设定比较。",
+      "why_it_matters": "度量尺度感知是UAV目标搜索中估计目标距离、ObjectNav中判断目标尺寸与可达性的基础能力，该基准为导航所依赖的3D基础模型提供物理尺度层面的标准化评测，有助于筛选和改进可用于具身导航的度量重建模型。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry"
+      ],
+      "added_at": "2026-10-09T11:26:54.159561+00:00"
+    },
+    {
+      "id": "2610.12282",
+      "arxiv_id": "2610.12282",
+      "title": "Slot3R: Set-Associative Spatial Memory for Streaming 3D Reconstruction",
+      "authors": [
+        "Xiyuan Zhang",
+        "Yanming Yang",
+        "Kaiyuan Xu",
+        "Ruibo Li",
+        "Chi Zhang"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12282",
+      "pdf_url": "https://arxiv.org/pdf/2610.12282",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免训练的组相联空间记忆Slot3R：空间位置仅决定寻址而非强制融合，多状态可共存于同一地址，配合有界稀疏读出，在7Scenes等基准上大幅降低点云与位姿误差并支持千帧实时重建。",
+      "change_zh": "Point3R等用空间邻近度同时决定记忆挂靠与是否融合，混淆共址与状态同一性，平均邻近指针会提前抹掉互补证据。Slot3R改为位置只管寻址、多状态共存同址，加有界稀疏读出，并冻结主干免训练。",
+      "why_it_matters": "流式重建与在线位姿估计是UAV目标搜索与ObjectNav空间记忆的基础前端；Slot3R免训练、低显存、约19FPS支持千帧长序列，让长时大规模探索中的在线建图更准更稳，直接增强主动感知能力。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "spatial memory"
+      ],
+      "added_at": "2026-10-09T11:29:37.641877+00:00"
+    },
+    {
       "id": "2610.10181",
       "arxiv_id": "2610.10181",
       "title": "Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection",
@@ -14434,6 +14746,55 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.12458",
+      "arxiv_id": "2610.12458",
+      "title": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
+      "authors": [
+        "Zhongyu Yang",
+        "Jiale Tao",
+        "Ruitao Chen",
+        "Zuhao Yang",
+        "Yingfang Yuan",
+        "Xueliang Zhao",
+        "Auden",
+        "Kai Wang",
+        "Shuai Shao",
+        "Biao Wang",
+        "Steve Yves",
+        "Qinglin Lu"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12458",
+      "pdf_url": "https://arxiv.org/pdf/2610.12458",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OmniCapBench将音视频描述评测重构为实体指涉、视觉镜头、音频事件三轨道的原子可验证单元，结合确定性约束检查与局部LLM语义比较，基于786条密集标注视频细粒度诊断MLLM的感知与长时程音视频推理缺陷。",
+      "change_zh": "不同于整句指标或整段LLM裁判的描述评测，它把预测目标重定义为原子可验证评测单元，用确定性约束检查加局部语义比较，化解了覆盖性与局部化耦合的取舍及LLM裁判不稳定，使身份漂移、跨模态错位等错误可被细粒度诊断。",
+      "why_it_matters": "为全模态MLLM提供细粒度能力诊断方法论：其身份漂移、跨模态错位等错误类型诊断与原子可验证单元评测范式，可迁移到UAV音视频目标搜索、ObjectNav等导航智能体的感知可靠性与指令执行评测，但与导航任务本身直接关联较弱。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "localization",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-09T11:23:31.799141+00:00"
+    },
+    {
       "id": "2610.10382",
       "arxiv_id": "2610.10382",
       "title": "Semantic-Aware Predictive Mapping for Exploration and Navigation",
@@ -16458,104 +16819,72 @@
     }
   ],
   "briefing": {
-    "text": "主线是基准密集上新：空地协同、跨本体与终身小物体等新设定均有覆盖，方法上则聚焦语义引导的主动建图。首推AirGroundVLN，万条级空地协同VLN数据加AG-CoNAV框架，直接定义了跨平台协同导航的评测范式；ActiveLang以语义不确定性选取视点，用更少观测在线构建开放词汇地图并超过离线基线；IVAM-Nav将布局变化下的终身小物体导航形式化，视点锚定记忆兼顾复用与重验证，直指长期记忆痛点。趋势观察：导航评测正从静态室内走向动态、多平台与开放世界，记忆与不确定性已成为方法设计的核心抓手。",
-    "added": 12,
-    "at": "2026-10-08T11:35:33.088423+00:00",
+    "text": "本批主线是导航的世界模型化与任务智能体化。首推ALONE：贝叶斯空间信念仅在可靠度不足时请求深度观测，把“何时看”变成显式决策，仿真闭环约98%、真机十次全成；LiteNWM：潜空间世界模型跨候选轨迹共享编码并联合预测未来表征，直指机载算力约束，实现真机闭环；SuperNav：不微调MLLM，以智能体框架和视觉点接口连接决策与运动，在三类任务上超四个基线并部署四足。其余覆盖流式重建、token压缩、评测基准与融合定位。趋势：按需感知的世界模型正取代感知模块堆叠，边缘实时与真机验证成标配。",
+    "added": 8,
+    "at": "2026-10-09T11:31:37.116041+00:00",
     "new": [
       {
-        "t": "Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer",
-        "u": "https://arxiv.org/abs/2610.09967",
-        "r": 8,
-        "g": 7,
-        "s": "提出用带机械臂相机的四足机器人对外部无标记纳米无人机进行视觉定位，感知优先NMPC动态调整机身与臂以保持视线，无人机仅靠该外部定位实现起飞到降落的预设轨迹飞行，中位三维误差59毫米。",
-        "c": ""
-      },
-      {
-        "t": "AeroEval: Staged Program and Execution Validation for AI-Generated Drone Missions",
-        "u": "https://arxiv.org/abs/2610.09764",
-        "r": 8,
-        "g": 7,
-        "s": "AeroEval是面向LLM生成无人机程序的分层验证中间件，结合确定性程序分析与LLM智能体，先验语法、API与任务意图，再依据执行轨迹评估实际行为并引导迭代重生成。",
-        "c": ""
-      },
-      {
-        "t": "AirGroundVLN: A Large-Scale Benchmark for Goal-Oriented Air-Ground Collaborative Vision-and-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.10421",
-        "r": 10,
-        "g": 8,
-        "s": "提出大规模空地协同目标导向VLN基准AirGroundVLN，覆盖19个虚幻环境共10281条导航片段与955个目标实例，并给出AG-CoNAV参考框架，以跨平台时空锚定记忆与空中引导规划实现协同导航。",
-        "c": ""
-      },
-      {
-        "t": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
-        "u": "https://arxiv.org/abs/2610.10409",
+        "t": "GLIO2: A GPU-Parallelized Tightly-Coupled LiDAR-Inertial-GNSS System for Robust and Real-Time Global Localization and Mapping",
+        "u": "https://arxiv.org/abs/2610.12411",
         "r": 8,
         "g": 8,
-        "s": "RobotWorld是一个涵盖操作、移动操作、运动、驾驶与空中控制的84任务仿真基准，评测多模态智能体将指令与观测转化为物理任务执行的能力，并基于执行轨迹分析各模型的能力迁移与失效模式。",
+        "s": "GLIO2是GPU并行紧耦合LiDAR-惯性-GNSS系统，在滑动窗口因子图中联合优化多扫描配准、IMU预积分与原始GNSS观测，边缘端实时运行，离线后端复用缓存因子批量精化全局轨迹。",
         "c": ""
       },
       {
-        "t": "MultiFly: A Real-World Multimodal Aerial Dataset with Annotation-Efficient Label Transfer and Cross-Modal Semantic Consistency",
-        "u": "https://arxiv.org/abs/2610.10359",
-        "r": 7,
-        "g": 8,
-        "s": "MultiFly是真实低空无人机多模态数据集，覆盖RGB、热成像、激光雷达与雷达四模态共17272个同步样本，通过共享几何表征从115张RGB标注高效迁移标签，并建立四模态语义分割基准。",
-        "c": "https://github.com/markus-42/multifly"
-      },
-      {
-        "t": "Lifelong small-object navigation in changing object layouts: a benchmark and method",
-        "u": "https://arxiv.org/abs/2610.10125",
+        "t": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+        "u": "https://arxiv.org/abs/2610.12126",
         "r": 9,
         "g": 7,
-        "s": "该文将小物体在布局变化中的终身导航形式化为LiSoNav-COL任务，构建28场景、45类小物体基准LiSoNav-Eval，并提出IVAM-Nav：以多视角巡检获得可靠观测，用视点锚定记忆支持复用与重验证。",
+        "s": "该文提出SuperNav：不微调MLLM，以智能体框架集成导航技能、工具与上下文管理，用视觉点接口连接决策与运动，在实例级、多物体与需求驱动任务上超越四个基线，并部署于四足机器人。",
         "c": ""
       },
       {
-        "t": "Semantic-Aware Predictive Mapping for Exploration and Navigation",
-        "u": "https://arxiv.org/abs/2610.10382",
+        "t": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
+        "u": "https://arxiv.org/abs/2610.12458",
+        "r": 6,
+        "g": 7,
+        "s": "OmniCapBench将音视频描述评测重构为实体指涉、视觉镜头、音频事件三轨道的原子可验证单元，结合确定性约束检查与局部LLM语义比较，基于786条密集标注视频细粒度诊断MLLM的感知与长时程音视频推理缺陷。",
+        "c": ""
+      },
+      {
+        "t": "DVD: Dynamic Vector Decoding for Efficient MLLM-based Perception",
+        "u": "https://arxiv.org/abs/2610.12266",
         "r": 7,
-        "g": 5,
-        "s": "该工作在预测式占据建图中引入门语义通道，在改造的CogniPlan子集上注入门致几何歧义，对比纯几何与语义增强模型：全图性能基本持平，门区域L1、F1、IoU大幅提升，表明语义线索有助歧义区域补全。",
+        "g": 7,
+        "s": "DVD提出动态向量解码，将2D/3D感知表示（框、掩码）统一为紧凑离散token，经轻量解码器还原，让MLLM高效完成2D与3D感知，降低token开销与推理延时。",
         "c": ""
       },
       {
-        "t": "ActiveLang: Active Open-Vocabulary 3D Mapping with Semantic-Uncertainty-Guided Exploration",
-        "u": "https://arxiv.org/abs/2610.09518",
+        "t": "Pumpire: Unified Benchmark for Metric Distance Estimation",
+        "u": "https://arxiv.org/abs/2610.12423",
+        "r": 7,
+        "g": 7,
+        "s": "Pumpire是评估图像与视频级3D基础模型度量距离估计能力的统一基准，构建含100个真实场景、6400帧、带实测点对距离标注的pumpire-6k数据集，并对29种基线配置开展系统评测与分析。",
+        "c": ""
+      },
+      {
+        "t": "Acting from Belief, Looking When Needed: A Bayesian Spatial World Model for Navigation under Intermittent Perception",
+        "u": "https://arxiv.org/abs/2610.11591",
         "r": 9,
         "g": 7,
-        "s": "ActiveLang提出语义不确定性引导的主动探索系统，在线构建开放词汇3D语言地图：以紧凑双高斯表示联合重建几何、外观与语义，并用规划器选取信息量大的视点，以更少观测与更低算力完成建图，在Replica与ScanNet++上超越在线与离线基线。",
+        "s": "ALONE提出贝叶斯空间世界模型，以执行动作传播结构化空间信念、用几何先验补全未观测区域，仅在可靠性不足时请求深度观测，实现间歇感知下无人机导航，仿真闭环成功率约98%，真机10次飞行全部成功。",
         "c": ""
       },
       {
-        "t": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
-        "u": "https://arxiv.org/abs/2610.10388",
-        "r": 7,
+        "t": "LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild",
+        "u": "https://arxiv.org/abs/2610.12368",
+        "r": 9,
         "g": 8,
-        "s": "提出RoboQuest面向目标导向具身探索的基准：十个移动操作任务覆盖搜索、操作式检查与交互测试三类不确定性，评测五个前沿多模态智能体与微调π0.5策略，最佳成功率仅23%，失败多因过早停止探索。",
+        "s": "LiteNWM 是一个轻量潜空间导航世界模型，跨候选轨迹共享视觉编码并联合预测多视野动作条件未来表征，由学习打分器选轨迹，实现机载前瞻规划与真机闭环导航。",
         "c": ""
       },
       {
-        "t": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
-        "u": "https://arxiv.org/abs/2610.10539",
-        "r": 6,
-        "g": 7,
-        "s": "Tetris3D从单张图像重建几何与物理一致的3D场景，以邻接物体几何及成对物理关系为条件生成各物体形状与位姿，并发布120万场景的ComOb物理仿真数据集，生成质量与物理稳定性达SOTA。",
-        "c": ""
-      },
-      {
-        "t": "Decoupling Exploration from Optimization in RLVR",
-        "u": "https://arxiv.org/abs/2610.10536",
-        "r": 6,
-        "g": 7,
-        "s": "提出ExpDis框架，把RLVR中探索与优化解耦：带新颖性奖励的探索器生成轨迹，过滤后蒸馏给学生策略，多轮交替进行；在七个数学基准、两个模型族上以同等时间预算超过DAPO。",
-        "c": ""
-      },
-      {
-        "t": "Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection",
-        "u": "https://arxiv.org/abs/2610.10181",
+        "t": "Slot3R: Set-Associative Spatial Memory for Streaming 3D Reconstruction",
+        "u": "https://arxiv.org/abs/2610.12282",
         "r": 7,
         "g": 7,
-        "s": "Argos将几何基础模型的隐式3D特征适配于在线场景变化检测与3D重建，发布含合成与真实数据的大规模基准并跨数据集联合训练，同时提出实时系统Argos-SLAM实现变化感知4D建图。",
+        "s": "提出免训练的组相联空间记忆Slot3R：空间位置仅决定寻址而非强制融合，多状态可共存于同一地址，配合有界稀疏读出，在7Scenes等基准上大幅降低点云与位姿误差并支持千帧实时重建。",
         "c": ""
       }
     ]

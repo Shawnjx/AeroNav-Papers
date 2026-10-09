@@ -2246,5 +2246,29 @@
     "reason": "将现成LLM智能体（多智能体编排+MCP文档检索）套用于生产排产的约束规划建模这一垂直领域，与空间、导航、机器人均无关，属范围中明确排除的应用类工作。",
     "rejected_at": "2026-10-08",
     "url": "https://arxiv.org/abs/2610.10184"
+  },
+  "2610.12310": {
+    "title": "Is In-Domain Training Enough for Fine-Grained Industrial Anomaly Understanding?",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作将现成MLLM与多智能体框架套用于工业缺陷异常理解这一垂直应用，与空间、导航、机器人均无关，属研究范围中明确排除的情形。",
+    "rejected_at": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.12310"
+  },
+  "2610.12089": {
+    "title": "ManiUnit: A Manipulation Skill Dataset and Benchmark for Long-Horizon Tasks",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心贡献是机械臂操作技能切分数据集与VLA操控评测基准，多房间导航仅为长时程任务背景且在逐技能评测中被恢复仿真中间态绕开，属机械臂操作与VLA控制范畴。",
+    "rejected_at": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.12089"
+  },
+  "2610.12281": {
+    "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "属范围明确拒绝类别：将LLM智能体套用于基因组医学变异解读这一垂直领域，与空间、导航、机器人均无关，仅'agentic/planner'术语擦边。",
+    "rejected_at": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.12281"
   }
 }
