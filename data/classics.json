@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T17:10:03.294651+00:00",
+  "updated_at": "2026-10-09T10:23:47.001862+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -7206,6 +7206,41 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T02:36:58Z"
+    },
+    {
+      "id": "https://openalex.org/W4416982487",
+      "arxiv_id": "",
+      "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
+      "authors": [
+        "Mohamed Amine Ferrag",
+        "Norbert Tihanyi",
+        "Merouane Abdelkader Debbah"
+      ],
+      "published": "2026",
+      "source": "OpenAlex",
+      "venue": "IEEE Access",
+      "citation_count": 42,
+      "url": "https://doi.org/10.1109/access.2026.3698694",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该综述系统梳理2019—2025年LLM推理与智能体评测基准，提出约60个基准的统一分类体系，涵盖数学、代码、多模态与具身任务等，并回顾2023—2025年智能体框架、ACP/MCP/A2A协作协议及多领域应用与未来方向。",
+      "change_zh": "与零散的单领域综述不同，它把约60个基准、智能体框架与ACP/MCP/A2A协作协议整合为统一分类与并排比较，并覆盖科研、医疗、金融等多领域落地；作为综述不提出新方法或新基准，信息增量主要体现在整合视角与统一地图。",
+      "why_it_matters": "其智能体框架、工具使用与多智能体协作协议的梳理，可为LLM驱动的UAV目标搜索与ObjectNav智能体的任务编排、工具集成及评测选型提供参考；基准分类含多模态与具身任务，利于具身导航评测选型，但对UAV主动目标搜索与地面导航本身无直接方法贡献。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-09T10:23:47.001862+00:00"
     }
   ],
   "excluded": {
@@ -9567,22 +9602,49 @@
       "rigor": 3,
       "reason": "该文是将现成VLM/LLM套用于智能制造人机协作这一垂直领域的综述，主体为工业任务规划与机械臂操作，并非模型与智能体能力本身的显著进展，且仅术语层面提及导航，属收录范围外且无实验支撑。",
       "excluded_at": "2026-10-07"
+    },
+    "https://openalex.org/W4412759774": {
+      "title": "CRISPR-GPT for agentic automation of gene-editing experiments",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "将LLM智能体套用于基因编辑这一与空间、导航、机器人无关的垂直生物领域，属于范围中明确拒绝的垂直应用类别。",
+      "excluded_at": "2026-10-09"
+    },
+    "https://openalex.org/W4411551762": {
+      "title": "RepairAgent: An Autonomous, LLM-Based Agent for Program Repair",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "LLM智能体被套用于程序修复这一软件工程垂直任务，与空间、导航、机器人均无关，属明确拒绝范围。",
+      "excluded_at": "2026-10-09"
+    },
+    "https://openalex.org/W4400357656": {
+      "title": "Transformer in reinforcement learning for decision-making: a survey",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "通用Transformer+RL决策综述，导航/机器人仅为其众多应用举例之一，未聚焦具身导航、空间智能等收录技术线，属边缘相关而非核心贡献。",
+      "excluded_at": "2026-10-09"
+    },
+    "https://openalex.org/W4412395431": {
+      "title": "Evaluating the representational power of pre-trained DNA language models for regulatory genomics",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "研究对象为DNA/基因组学语言模型的评测，属与空间智能、导航、机器人及通用多模态大模型无关的垂直领域应用，范围外。",
+      "excluded_at": "2026-10-09"
     }
   },
-  "last_citation_refresh": "2026-10-08T17:10:03.294651+00:00",
   "briefing": {
-    "text": "本轮入库集中于多传感器融合SLAM这一主线，最值得读的是 Camera, LiDAR, and IMU Based Multi-Sensor Fusion SLAM: A Survey：它统一给出状态估计器的一般形式，梳理相机、激光雷达与IMU的代表性融合算法，并分析现有方法缺陷、展望未来方向，既是新人搭建领域地图的入口，也便于老手按图索骥回溯各算法原文，120次被引可佐证其引用价值。趋势上，融合SLAM正从紧耦合精度竞赛转向退化场景鲁棒性与学习化模块的结合，为具身导航的长时程定位提供底座。 （编者注：本轮实际仅收录一篇，故只推荐该篇；后续批次补充条目后可扩展为2-3篇推荐。）",
+    "text": "本轮入库聚焦大模型推理能力向自主智能体演进这一主线。最值得读的是From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review：它把2019—2025年约60个推理与智能体基准纳入统一分类，覆盖数学、代码、多模态与具身任务，并梳理ACP/MCP/A2A等协作协议与近两年智能体框架，可直接当作具身导航评测选型与框架设计的检索地图，42次被引也印证其参考价值。趋势上，评测重心正从静态单任务基准转向多智能体协作与具身落地，协议标准化将是下一阶段的关键变量。",
     "added": 1,
-    "at": "2026-10-07T10:08:36.174662+00:00",
+    "at": "2026-10-09T10:23:47.001862+00:00",
     "new": [
       {
-        "t": "Camera, LiDAR, and IMU Based Multi-Sensor Fusion SLAM: A Survey",
-        "u": "https://doi.org/10.26599/tst.2023.9010010",
+        "t": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
+        "u": "https://doi.org/10.1109/access.2026.3698694",
         "r": 7,
-        "g": 5,
-        "s": "本文是一篇多传感器融合SLAM综述，系统梳理基于相机、激光雷达与IMU的融合定位建图研究，介绍状态估计器的一般形式、代表性融合算法，分析现有方法缺陷并展望未来方向。",
+        "g": 6,
+        "s": "该综述系统梳理2019—2025年LLM推理与智能体评测基准，提出约60个基准的统一分类体系，涵盖数学、代码、多模态与具身任务等，并回顾2023—2025年智能体框架、ACP/MCP/A2A协作协议及多领域应用与未来方向。",
         "c": "",
-        "cit": 120
+        "cit": 42
       }
     ]
   }
