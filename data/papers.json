@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T16:52:31.933283+00:00",
+  "updated_at": "2026-10-09T21:31:06.004024+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -286,6 +286,56 @@
         "localization"
       ],
       "added_at": "2026-10-08T11:13:07.532787+00:00"
+    },
+    {
+      "id": "2610.09335",
+      "arxiv_id": "2610.09335",
+      "title": "SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models",
+      "authors": [
+        "Yatai Ji",
+        "Zhengqiu Zhu",
+        "Yong Zhao",
+        "Yue Hu",
+        "Fanglong Yao",
+        "Chen Gao",
+        "Pengfei Zhu",
+        "Quanjun Yin"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.09335",
+      "pdf_url": "https://arxiv.org/pdf/2610.09335",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 12,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "SearchWorld面向无人机目标搜索提出循环状态空间世界模型，融合BEV空间记忆与价值引导想象，解码空间价值层指导想象推演，在UAV-ON上把成功率提升到23.8%。",
+      "change_zh": "既有方法多靠显式地图/记忆被动反应，图像生成式世界模型延迟高，隐空间模型又难空间落地。本文改用循环状态空间模型，将BEV空间记忆与价值引导想象结合，以学到的空间价值先验替代独立critic，实现前瞻式搜索规划。",
+      "why_it_matters": "直接推进UAV主动目标搜索：在UAV-ON上超越此前最强智能体（23.8%对19.5%），未见场景仍稳健。其显式空间价值先验加隐空间想象的前瞻规划范式，也为ObjectNav等目标条件导航提供低延迟、可空间落地的世界模型设计思路。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "无人机目标搜索, 世界模型, 空间记忆, 价值引导想象, 循环状态空间模型, BEV鸟瞰图",
+      "question_zh": "如何在部分可观测的城市环境中，让无人机利用连接显式空间记忆与价值引导想象的世界模型，实现前瞻性而非被动反应式的目标搜索？",
+      "innovation_zh": "提出SearchWorld循环状态空间世界模型，将显式BEV探索与障碍记忆同价值引导想象相结合，解码任务感知的空间价值层引导搜索；认知-动作网络利用该空间价值先验通过想象rollout改进策略，无需训练单独的标量critic，克服了图像生成世界模型推理延迟高、潜在世界模型空间接地规划困难的问题。",
+      "dataset_zh": "UAV-ON数据集",
+      "results_zh": "在UAV-ON上，SearchWorld将目标搜索成功率提升至23.8%（此前最强已发表agent为19.5%），oracle成功率达35.5%；在未见场景上仍保持鲁棒，成功率为19.9%。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "geometry",
+        "instruction",
+        "spatial memory",
+        "uav",
+        "world model"
+      ],
+      "added_at": "2026-10-09T21:26:47.240407+00:00"
     },
     {
       "id": "2610.06510",
@@ -1117,6 +1167,48 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.06958",
+      "arxiv_id": "2610.06958",
+      "title": "Learning Modular Policy for Multi-Floor Object Navigation:A Factorized Framework for Diagnostic Study",
+      "authors": [
+        "Shichao Zhai",
+        "Shuhao Ye",
+        "Rong Xiong",
+        "Yue Wang"
+      ],
+      "published": "2026-10-03",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.06958",
+      "pdf_url": "https://arxiv.org/pdf/2610.06958",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对多层建筑ObjectNav稀疏奖励难题，提出将全局策略因子化为层内探索与层间切换的分层模块化框架，层内策略经VLM探索逻辑蒸馏初始化用于RL，理想假设下理论等价于全局策略，诊断出感知与爬楼稳定性为主要瓶颈。",
+      "change_zh": "不同于常规端到端全局策略或仅换模型刷榜的路线，本文以可诊断性为目标，按楼层维度将长视野策略分解为层内探索与层间切换两个可分离模块，使多层导航的失败归因可定位；并以VLM蒸馏初始化轻量RL，缓解稀疏奖励下的冷启动困难。",
+      "why_it_matters": "直接拓展ObjectNav到含楼梯的多层场景，其因子化诊断方法揭示感知与爬楼稳定性瓶颈，为长视野导航的策略分解、VLM知识注入与失败归因提供范式；对UAV在多层建筑等复杂结构中的主动目标搜索，层间/层内分层分解思路同样可借鉴。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "目标物体导航, 多楼层导航, 模块化策略, 层级因子化, 视觉语言模型蒸馏, 强化学习",
+      "question_zh": "在多楼层长时序目标导航中，如何通过模块化因子化策略框架有效诊断导致导航失败的主要因素？",
+      "innovation_zh": "提出层级因子化策略，将单一全局策略分解为楼层内探索策略与楼层间切换策略；通过蒸馏视觉语言模型的探索逻辑为强化学习提供轻量有效初始化；并在理想化假设下理论证明该因子化策略在策略表示层面等价于单一全局策略。",
+      "results_zh": "实验结果表明，感知性能和爬楼梯稳定性是多楼层目标导航中的两大主要瓶颈；摘要中未提供成功率、导航效率等具体量化数字。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "exploration",
+        "object navigation",
+        "objectnav",
+        "vlm"
+      ],
+      "added_at": "2026-10-09T21:29:40.900266+00:00"
+    },
+    {
       "id": "2610.02697",
       "arxiv_id": "2610.02697",
       "title": "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation",
@@ -1740,6 +1832,49 @@
         "world model"
       ],
       "added_at": "2026-10-09T11:28:22.574861+00:00"
+    },
+    {
+      "id": "2610.09294",
+      "arxiv_id": "2610.09294",
+      "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+      "authors": [
+        "Tianruo Rose Xu",
+        "Jiawei Ren",
+        "Yichi Yang",
+        "Zhaoxu Zheng",
+        "Lianhui Qin"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.09294",
+      "pdf_url": "https://arxiv.org/pdf/2610.09294",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RT-SAFE提出模拟城市环境下的实时具身安全基准，结合导航任务、移动行人、环境危险与交通规则，让世界在智能体推理与执行期间持续演化，评测八个VLM智能体，发现高任务成功率下安全完成率极低。",
+      "change_zh": "相比仅评决策质量或静态安全判定的常见基准，本文让环境在推理与动作执行期间继续演化，首次将决策延迟本身显式纳入安全评测维度，并用静态与实时配对实验证明延迟会放大约12倍的碰撞风险，还验证离线RL可缓解。",
+      "why_it_matters": "对ObjectNav与UAV主动目标搜索极具警示意义：动态目标与障碍下，观察时安全的行为可能因推理延迟在执行时变得危险。该基准为导航智能体提供了安全性与实时性并重的系统评测范式，并给出可复用的离线RL改进路径。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "具身智能体安全, 实时约束, 城市仿真基准, 决策延迟, 视觉语言模型, 离线强化学习",
+      "question_zh": "在物理世界持续演化的实时约束下，如何评估具身智能体的安全性，并量化决策延迟本身带来的物理风险？",
+      "innovation_zh": "提出RT-SAFE模拟城市基准，区别于会暂停等待推理的数字环境评估，让世界在推理与动作执行期间持续演化，将决策质量与决策延迟同时纳入安全评估，结合导航任务、移动行为体、环境危害与交通规则，并支持离线RL训练。",
+      "dataset_zh": "RT-SAFE仿真城市环境（含导航任务、移动行为体、环境危害与交通规则），评估了8个VLM；未使用真机平台",
+      "results_zh": "8个VLM任务完成率高但几乎无法安全完成，最难设置下仅0.7%的回合无安全事件；静态与实时评估的任务完成率分别为91.3%和94.1%，实时执行使碰撞增加12.3倍；离线RL训练可大幅降低碰撞率并保持较高任务完成率。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "vlm"
+      ],
+      "added_at": "2026-10-09T21:30:05.674313+00:00"
     },
     {
       "id": "2610.08526",
@@ -5143,6 +5278,52 @@
       "added_at": "2026-10-08T11:14:31.828580+00:00"
     },
     {
+      "id": "2610.07649",
+      "arxiv_id": "2610.07649",
+      "title": "OntoPlan: An Ontology-Grounded Scene Representation and Agentic Framework for Scalable Robot Task Planning",
+      "authors": [
+        "Hyeongwoo Nam",
+        "Woongje Cho",
+        "Juwon Kim",
+        "Jongeun Choi"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.07649",
+      "pdf_url": "https://arxiv.org/pdf/2610.07649",
+      "code_url": "https://github.com/namhyeongwoo/OntoPlan",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 7,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/faf126b6e99d655c3be02f02c4525a872a56eb78",
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "OntoPlan以本体统一物体、空间、关系与状态的符号词汇，用智能体框架解析指令、按需检索并生成可执行规划，在五个室内环境150个任务上成功率0.89、token开销远低于基线。",
+      "change_zh": "相比把场景文本直接喂给LLM并一步生成动作序列的常见做法，本文改用本体符号词汇承载空间语义，按需检索任务相关信息、形式化目标与约束后再规划，抑制token随场景膨胀，并对模糊或不可行指令主动提问。",
+      "why_it_matters": "直接推进规划智能体线：本体场景表示与按需检索使LLM在大场景长程任务兼顾成功率与token效率；其空间关系形式化可迁移至ObjectNav的空间记忆与目标推理，对UAV大范围搜索任务分解亦有参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "本体论,场景表示,机器人任务规划,大语言模型,智能体框架",
+      "question_zh": "如何解决基于LLM的机器人任务规划在大环境长时程任务中性能退化、token成本随环境规模增长的问题？",
+      "innovation_zh": "提出本体论接地的场景表示，将物体、空间、关系与状态对齐到共享符号词汇表，并构建OntoPlan智能体框架，解释指令、选择性检索相关信息、形式化目标约束并生成可执行规划，克服LLM直接生成动作难以满足世界状态与前置条件的问题。",
+      "dataset_zh": "150个通用任务，覆盖五个室内环境和三种场景规模（摘要未提及具体数据集名称及仿真或真机平台）",
+      "results_zh": "在150个任务上平均成功率0.89，最强基线仅0.27；每任务平均使用18.1k tokens，比最高效基线少约5.6倍；随场景规模增大优势保持，且能对模糊或不可行指令追问或报告信息不足而非给出无效规划。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "agentic",
+        "instruction",
+        "instruction following",
+        "spatial reasoning",
+        "task planning"
+      ],
+      "added_at": "2026-10-09T21:28:07.096165+00:00"
+    },
+    {
       "id": "2610.06813",
       "arxiv_id": "2610.06813",
       "title": "Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models",
@@ -5186,6 +5367,52 @@
         "geometry"
       ],
       "added_at": "2026-10-06T11:21:03.922068+00:00"
+    },
+    {
+      "id": "2610.08862",
+      "arxiv_id": "2610.08862",
+      "title": "CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks",
+      "authors": [
+        "Zhang Ci",
+        "Enfu Nan",
+        "Arman Akbari",
+        "Lin Zhao",
+        "Li Wang",
+        "Chen Wang",
+        "Weiwei Chen",
+        "Yanzhi Wang",
+        "Geng Yuan"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08862",
+      "pdf_url": "https://arxiv.org/pdf/2610.08862",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CIRRA提出双层持续指令调和框架，用LLM语义推理加规则结构整合，把新子任务局部插入位置匹配的执行主干，减少歧义与冗余执行，并在CHIRP基准与Unitree G1真机验证。",
+      "change_zh": "常见做法是重规划或大幅修改剩余任务，易引入歧义、不一致与冗余；CIRRA改为保留执行中的子任务序列作为主干，仅在位置匹配片段生成局部插入候选并评估依赖与冲突，选择最连贯的局部整合并复用共享子任务。",
+      "why_it_matters": "对规划智能体线，提供了执行中指令调和的结构保持范式与CHIRP基准；其『不重排全局计划、局部插入新目标』的思路可迁移到ObjectNav/VLN中执行中动态更新目标与指令的场景，真机人形验证也增强可信度。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "持续指令调和, 具身机器人智能体, 大语言模型, 任务规划与整合, 家用机器人, 人机交互",
+      "question_zh": "家用机器人在执行任务过程中如何接纳新用户指令，并将其局部且一致地整合进正在执行的子任务序列，避免歧义、逻辑冲突与冗余执行？",
+      "innovation_zh": "不同于重新生成或大幅修改剩余任务序列的已有方法，CIRRA提出双层框架，以进行中的子任务序列为执行主干，仅将新指令落地后的子任务局部插入位置匹配片段，并用LLM语义推理只评估被修改片段、选择逻辑最连贯的整合，从而减少歧义、冲突并复用共享子任务以降低冗余执行。",
+      "dataset_zh": "自建文本基准CHIRP（120个情节，覆盖8种家庭环境、6类日常活动）以及Unitree G1人形机器人真机平台",
+      "results_zh": "在CHIRP基准上，CIRRA达到74.2%的决策一致率，超过最强重规划基线30个百分点；每次正确的融合决策均生成位置正确且无冲突的日程。在Unitree G1真机上，CIRRA在每次试验中都能在正确时机中断正在执行的技能，并在所有指标上显著优于全部基线。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "instruction"
+      ],
+      "added_at": "2026-10-09T21:31:03.003618+00:00"
     },
     {
       "id": "2610.04432",
@@ -14045,6 +14272,50 @@
       "added_at": "2026-10-09T16:48:37.460033+00:00"
     },
     {
+      "id": "2610.08941",
+      "arxiv_id": "2610.08941",
+      "title": "SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation",
+      "authors": [
+        "Yunheng Liu",
+        "Ziqi Cai",
+        "Siqi Yang",
+        "Yimu Wang",
+        "Minggui Teng",
+        "Jiaming Tan",
+        "Shuchen Weng",
+        "Erwin Wu",
+        "Kaipeng Zhang",
+        "Boxin Shi"
+      ],
+      "published": "2026-10-06",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.08941",
+      "pdf_url": "https://arxiv.org/pdf/2610.08941",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 5,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "SPW-Nav是流式全景世界模型，从单张全景图出发，实时理解移动指令并流式生成一分钟2K360度视频，支持指令即时切换，并构建了带相机轨迹与人工验证指令的数据集SPW-NavSet。",
+      "change_zh": "现有全景生成器只能沿预设轨迹生成，交互式世界模型多在透视视角用低层动作控制；本文改为用语言移动指令直接驱动球面相机运动，以球面旋转解耦、位姿对齐条件与少步生成记忆，实现长时实时流式输出与指令即时切换。",
+      "why_it_matters": "它把语言指令与全景视频生成耦合为可控世界模型，可为具身智能体训练与交互式场景探索提供指令可控的仿真环境；对空域VLN与ObjectNav是低成本合成带相机轨迹与指令数据、扩展训练场景的潜在工具，但尚未在真实导航任务中验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "3d scene",
+        "exploration",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-10-09T21:29:09.516351+00:00"
+    },
+    {
       "id": "2610.05610",
       "arxiv_id": "2610.05610",
       "title": "SEA-LM: Egocentric Spatial Audio Understanding for Wearable Microphone Arrays",
@@ -17122,56 +17393,56 @@
     }
   ],
   "briefing": {
-    "text": "本批论文覆盖具身导航的感知与定位、仿真与真实基准及语言条件规划。首推 LIVIN：以30套真实居住房屋构建数字孪生基准，密集摆放与遮挡下现有方法明显失效；LaTraNav 用慢速VLM生成可通行表征、流匹配规划器快速执行，快慢解耦是亮点；Memento 3 让冻结LLM借规则库自建可执行世界模型，通关ARC-AGI-3全部25局。趋势上，评测正从理想仿真走向真实生活场景，慢推理配快控制渐成主流。",
+    "text": "本批主线：世界模型与结构化表征正承接导航中的想象、规划与安全评测。首推SearchWorld，以BEV空间记忆叠加价值引导想象驱动无人机目标搜索，把UAV-ON成功率提至23.8%，示范了世界模型从预测走向决策；其次，Learning Modular Policy for Multi-Floor Object Navigation把全局策略拆为层内探索与层间切换，理想假设下理论等价，并诊断出感知与爬楼稳定性才是多层导航的主要瓶颈，分析范式可复用；RT-Safe则让城市环境在智能体推理期间持续演化，八个VLM智能体高任务成功率下安全完成率极低，直指实时安全盲区。趋势：评测重心正从静态成功率转向演化世界中的实时安全。",
     "added": 6,
-    "at": "2026-10-09T16:54:19.124686+00:00",
+    "at": "2026-10-09T21:32:20.614824+00:00",
     "new": [
       {
-        "t": "TAPNAV: Humanoid Navigation through Tactile Active Perception",
-        "u": "https://arxiv.org/abs/2610.10748",
-        "r": 8,
-        "g": 7,
-        "s": "TAPNAV让人形机器人在无视觉环境中靠主动触觉探测导航：融合里程计、IMU与触觉接触维护位姿置信，全局规划约束定位不确定度，局部探测最大化信息增益，并在真机Unitree G1上验证。",
+        "t": "SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models",
+        "u": "https://arxiv.org/abs/2610.09335",
+        "r": 10,
+        "g": 8,
+        "s": "SearchWorld面向无人机目标搜索提出循环状态空间世界模型，融合BEV空间记忆与价值引导想象，解码空间价值层指导想象推演，在UAV-ON上把成功率提升到23.8%。",
         "c": ""
       },
       {
-        "t": "Distributed Relative Localization for Homogeneous Multi-Robot Systems through UWB Ranging and Limited Communications",
-        "u": "https://arxiv.org/abs/2610.11308",
+        "t": "OntoPlan: An Ontology-Grounded Scene Representation and Agentic Framework for Scalable Robot Task Planning",
+        "u": "https://arxiv.org/abs/2610.07649",
+        "r": 8,
+        "g": 7,
+        "s": "OntoPlan以本体统一物体、空间、关系与状态的符号词汇，用智能体框架解析指令、按需检索并生成可执行规划，在五个室内环境150个任务上成功率0.89、token开销远低于基线。",
+        "c": "https://github.com/namhyeongwoo/OntoPlan"
+      },
+      {
+        "t": "SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation",
+        "u": "https://arxiv.org/abs/2610.08941",
         "r": 7,
         "g": 6,
-        "s": "提出全分布式多机器人相对定位方法，融合LiDAR、UWB与里程计，用动态跟踪与联合匹配从匿名点云簇中识别同构队友，仅需UWB交换里程计即可连续相对定位，仿真与实物实验验证有效。",
+        "s": "SPW-Nav是流式全景世界模型，从单张全景图出发，实时理解移动指令并流式生成一分钟2K360度视频，支持指令即时切换，并构建了带相机轨迹与人工验证指令的数据集SPW-NavSet。",
         "c": ""
       },
       {
-        "t": "Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation",
-        "u": "https://arxiv.org/abs/2610.11220",
-        "r": 8,
+        "t": "Learning Modular Policy for Multi-Floor Object Navigation:A Factorized Framework for Diagnostic Study",
+        "u": "https://arxiv.org/abs/2610.06958",
+        "r": 10,
         "g": 7,
-        "s": "Arena 5.0 是面向社交导航开发与评测的第五代开源 ROS2 仿真框架，集成 Isaac Gym 实现照片级渲染与高效训练，提供随机化场景生成、任务规划模块，并对多种先进社交导航策略在多难度世界中做了系统性基准评测与用户研究。",
-        "c": "https://github.com/Arena-Rosnav"
-      },
-      {
-        "t": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
-        "u": "https://arxiv.org/abs/2610.12069",
-        "r": 8,
-        "g": 7,
-        "s": "LIVIN基于30套真实居住住宅的数字孪生构建具身智能基准，用人机协同流程还原真实房间布局、家具与日常物品摆放，并评测3D检测、重建、导航与移动操作四类任务，发现现有方法受密集摆放、遮挡与空间受限制约。",
+        "s": "针对多层建筑ObjectNav稀疏奖励难题，提出将全局策略因子化为层内探索与层间切换的分层模块化框架，层内策略经VLM探索逻辑蒸馏初始化用于RL，理想假设下理论等价于全局策略，诊断出感知与爬楼稳定性为主要瓶颈。",
         "c": ""
       },
       {
-        "t": "Learning Language-Conditioned Traversability Representations for Adaptive Visual Navigation",
-        "u": "https://arxiv.org/abs/2610.11622",
-        "r": 8,
-        "g": 7,
-        "s": "本文提出LaTraNav框架，用慢速视觉语言模型生成语言条件可通行性与导航目标的隐式表征，由快速流匹配规划器在像素空间异步规划路径，并借助可控轨迹的仿真数据管线与照片级图像翻译训练，实现自适应视觉导航。",
+        "t": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+        "u": "https://arxiv.org/abs/2610.09294",
+        "r": 9,
+        "g": 8,
+        "s": "RT-SAFE提出模拟城市环境下的实时具身安全基准，结合导航任务、移动行人、环境危险与交通规则，让世界在智能体推理与执行期间持续演化，评测八个VLM智能体，发现高任务成功率下安全完成率极低。",
         "c": ""
       },
       {
-        "t": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
-        "u": "https://arxiv.org/abs/2610.11794",
+        "t": "CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks",
+        "u": "https://arxiv.org/abs/2610.08862",
         "r": 8,
-        "g": 7,
-        "s": "该文让冻结LLM智能体以自然语言规则库持续学习显式世界模型，并编译为可执行代码做预测与规划，经观察-反思-验证循环自我改进，在ARC-AGI-3全部25个公开游戏通关且RHAE达100。",
+        "g": 8,
+        "s": "CIRRA提出双层持续指令调和框架，用LLM语义推理加规则结构整合，把新子任务局部插入位置匹配的执行主干，减少歧义与冗余执行，并在CHIRP基准与Unitree G1真机验证。",
         "c": ""
       }
     ]

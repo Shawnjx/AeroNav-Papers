@@ -2270,5 +2270,13 @@
     "reason": "属范围明确拒绝类别：将LLM智能体套用于基因组医学变异解读这一垂直领域，与空间、导航、机器人均无关，仅'agentic/planner'术语擦边。",
     "rejected_at": "2026-10-09",
     "url": "https://arxiv.org/abs/2610.12281"
+  },
+  "2610.09374": {
+    "title": "DUDA-Bench: Benchmarking LLM Agents on Multimodal Data-Driven Urban Diagnosis",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作是将LLM智能体套用于城市诊断与规划这一垂直领域的应用型评测，与空间智能、导航、机器人无关，属范围外拒绝类别。",
+    "rejected_at": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.09374"
   }
 }
