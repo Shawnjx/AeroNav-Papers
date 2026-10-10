@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T21:31:06.004024+00:00",
+  "updated_at": "2026-10-10T10:32:21.236297+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -63,6 +63,56 @@
     }
   ],
   "papers": [
+    {
+      "id": "2610.10787",
+      "arxiv_id": "2610.10787",
+      "title": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
+      "authors": [
+        "Gengze Zhou",
+        "Yicong Hong",
+        "Jiazhao Zhang",
+        "Xunyi Zhao",
+        "Jian Zhou",
+        "Zixing Lei",
+        "Zun Wang",
+        "Chongyang Zhao",
+        "Xionghui Chen",
+        "Stephen Gould",
+        "Anton van den Hengel",
+        "Qi Wu"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10787",
+      "pdf_url": "https://arxiv.org/pdf/2610.10787",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "NavGPT-3提出类OS分层导航运行时，以线程化推理、行动与监控调度LLM与VLA动作策略，支持中断切换与快速反应，在R2R-CE/RxR-CE上刷新SOTA并首次媲美人类。",
+      "change_zh": "相比端到端单模型或纯LLM导航路线，该工作解耦高层推理与低层控制，把创新点放在二者接口：类OS运行时以线程管理推理、行动与监控，靠调度与中断实现亚秒级反应；VLA侧按场景变化分配视觉token。",
+      "why_it_matters": "对地面VLN直接刷新R2R-CE/RxR-CE上限；其分层运行时把秒级LLM推理与0.5-1秒动作策略解耦并可中断切换，正是UAV目标搜索等需快速反应场景渴望的架构，也为ObjectNav的推理-控制分层提供可迁移范式。",
+      "relevance_rating": 10,
+      "rigor_rating": 9,
+      "keywords_zh": "具身导航, 视觉语言导航, 分层运行时, 语言模型推理, 视觉-语言-动作模型",
+      "question_zh": "如何将长程语言模型推理与低延迟动作策略连接，使具身智能体能精准控制运动并对突发真实事件快速反应？",
+      "innovation_zh": "提出类操作系统的分层导航运行时NavGPT-3，将推理、行动、监控作为各自拥有上下文、工具和权限的线程，由运行时调度并通过中断与线程切换实现快速反应；底层NavGPT VLA动作策略按场景变化比例分配视觉token。",
+      "dataset_zh": "R2R-CE和RxR-CE评测基准；动作策略NavGPT VLA基于19.28M训练样本；真机平台：未提及。",
+      "results_zh": "完整系统在R2R-CE创SOTA（81.51 SR），并在RxR-CE上首次达人类水平：SR 90.43对90.4、nDTW 78.47对77.7，单任务1分22秒快于人类约3分钟；8B VLA单独达R2R-CE 74.51 SR、RxR-CE 78.19 SR；最小反应时间由每次决策3-19秒降至每步0.5-1秒（1-2 Hz）。",
+      "venue_verified": false,
+      "score": 29,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "r2r"
+      ],
+      "added_at": "2026-10-10T10:32:18.235791+00:00"
+    },
     {
       "id": "2609.34707",
       "arxiv_id": "2609.34707",
@@ -336,6 +386,54 @@
         "world model"
       ],
       "added_at": "2026-10-09T21:26:47.240407+00:00"
+    },
+    {
+      "id": "2610.10635",
+      "arxiv_id": "2610.10635",
+      "title": "Speaking the Navigator's Language: Trajectory-Grounded Instruction Translation for Frozen Aerial VLN Agents",
+      "authors": [
+        "Xi Chen",
+        "Zhe Liu",
+        "Xiaogang Xu",
+        "Jiafei Xu",
+        "Chunyi Zhou",
+        "Yuan Su",
+        "Rui Zeng",
+        "Tianyu Du",
+        "Kelu Yao",
+        "Chao Li",
+        "Shouling Ji"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10635",
+      "pdf_url": "https://arxiv.org/pdf/2610.10635",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "针对空域VLN中简短意图式指令导致成功率骤降的问题，提出轨迹接地的指令翻译器TGIT：冻结导航器，依据轨迹结果将弱指令译为可执行命令，真人指令SR从11.33%升至32.51%。",
+      "change_zh": "常见做法是微调导航器或统一指令风格以弥合差距；本文改为冻结导航器，仅在前端学习一个以轨迹执行结果为监督的翻译器，并借LM风格示例批量合成弱指令做训练数据，实现免重训适配与跨数据集迁移。",
+      "why_it_matters": "直接服务空域VLN：以轻量前端弥合训练指令与真人简短指令的鸿沟，让冻结导航器在OpenFly、CityNav、AirVLN上显著回升，为无人机意图式人机交互及搜救侦察中的目标搜索提供低成本适配范式。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言导航（VLN）, 空中导航, 指令翻译, 轨迹落地, 冻结智能体, 弱指令",
+      "question_zh": "如何弥合冻结的空中视觉语言导航智能体中，用户简短意图指令与详细轨迹对齐训练指令之间的指令鸿沟？",
+      "innovation_zh": "提出轨迹落地指令翻译器TGIT：作为前端保持导航器完全冻结，通过学习导航器轨迹执行结果，将简短意图指令翻译为智能体可执行指令；并用语言模型结合人工风格示例生成弱指令对，以低成本扩展训练数据。",
+      "dataset_zh": "冻结的OpenFly导航器与OpenFly数据集；弱指令训练数据由语言模型结合人工风格示例从原始指令生成；迁移评测还涉及CityNav与AirVLN数据集",
+      "results_zh": "Weak训练的翻译器将弱指令输入成功率提升至37.93%；零样本迁移到真实人类指令，SR从11.33%升至32.51%；held-out OpenFly上SR从4.95%升至20.79%；并在CityNav与AirVLN上实现性能恢复。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "instruction"
+      ],
+      "added_at": "2026-10-10T10:28:23.931588+00:00"
     },
     {
       "id": "2610.06510",
@@ -6798,6 +6896,51 @@
       "added_at": "2026-10-09T16:52:28.932793+00:00"
     },
     {
+      "id": "2610.11328",
+      "arxiv_id": "2610.11328",
+      "title": "Mine Odyssey: Benchmarking Spatial Agentic Intelligence in the Wild",
+      "authors": [
+        "Yuxuan Cao",
+        "Junlong Li",
+        "Hao Li",
+        "Junxian He"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.11328",
+      "pdf_url": "https://arxiv.org/pdf/2610.11328",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "在Minecraft重建的30处全球真实地点上构建180个任务的空间智能体基准，要求智能体按自然语言指令顺序到达航点、开门爬梯并从导航错误中恢复，评测了8个前沿模型，最高成功率85.6%。",
+      "change_zh": "相比常见导航基准局限于有限的布局、尺度与通行要求，该工作用Minecraft重建五大洲真实地点，覆盖多样地形与连通性并人工验证航点可达性，强调多目标序列访问、跨楼层通行与错误恢复等真实遍历挑战。",
+      "why_it_matters": "为具身基准与评测及空间智能技术线提供大规模多样化测试床，其航点序列跟随、进度监控与错误恢复的评测范式可迁移至ObjectNav与UAV主动目标搜索的智能体评估，并揭示当前MLLM在空间探索与长程导航上的短板。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "智能体空间智能, 基准测试, Minecraft, 导航, 基础模型, 任务规划",
+      "question_zh": "如何评估基础模型智能体在陌生真实世界环境中的空间探索、理解更新与导航适应能力？",
+      "innovation_zh": "提出Mine Odyssey基准，用Minecraft重建30个真实世界地点构建180个任务，覆盖五大洲20个国家和地区的多样空间尺度、布局、地形与连通性；相比空间布局与遍历需求覆盖有限的已有基准，要求智能体寻找可通行路线与入口、开门、借助楼梯梯子移动并从导航错误中恢复。",
+      "dataset_zh": "基于Minecraft重建的真实世界地点构建的基准：180个任务、30个地点（20个室外、10个室内），横跨五大洲20个国家和地区，含曼哈顿中城、圣露西亚山、白金汉宫等场景，途经点可达性经人工验证",
+      "results_zh": "评估8个最先进模型，GPT-6 Astra成功率最高达85.6%，第二名Claude Opus 5.5完成73.9%，最强开源权重模型DeepSeek-V4.1-Flash仅达23.9%，表明当前模型的智能体空间智能仍有大幅提升空间；综合分析与消融研究揭示了现有模型的局限性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "instruction",
+        "spatial intelligence",
+        "spatial understanding",
+        "waypoint"
+      ],
+      "added_at": "2026-10-10T10:26:57.072057+00:00"
+    },
+    {
       "id": "2610.09967",
       "arxiv_id": "2610.09967",
       "title": "Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer",
@@ -10747,6 +10890,44 @@
       "added_at": "2026-10-09T11:29:37.641877+00:00"
     },
     {
+      "id": "2610.11171",
+      "arxiv_id": "2610.11171",
+      "title": "VAMR: Multi-Question Agentic Reasoning for Efficient Long-Form Video Understanding",
+      "authors": [
+        "Runquan Gui",
+        "Hanzhu Chen",
+        "Zehao Wang",
+        "Hanxin Zhu",
+        "Xin Li",
+        "Zhibo Chen"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.11171",
+      "pdf_url": "https://arxiv.org/pdf/2610.11171",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "VAMR是面向长视频多问题理解的智能体，用一条共享工具调用轨迹协同处理全部问题，结合分层多问题记忆与问题视野策略优化QHPO，在LVBench等基准上以最少推理轮数取得最高准确率。",
+      "change_zh": "常见视频智能体对每个问题独立跑工具轨迹、反复重启探索与记忆构建；VAMR改为所有问题共享一条轨迹联合取证，用共享视频故事加问题专属证据的分层记忆沉淀，并以问题级评论家与轮对齐的QHPO优化多问题异步完成的共享策略，显著降低轮数与帧数开销。",
+      "why_it_matters": "对多模态智能体线是记忆、工具使用与强化学习策略优化的方法学推进；其多目标共享轨迹与效率导向优化可迁移到UAV多目标搜索、ObjectNav等预算受限场景，启发用一次探索同时服务多个导航或搜索目标的高效智能体设计。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "exploration"
+      ],
+      "added_at": "2026-10-10T10:29:56.314963+00:00"
+    },
+    {
       "id": "2610.10181",
       "arxiv_id": "2610.10181",
       "title": "Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection",
@@ -14272,6 +14453,42 @@
       "added_at": "2026-10-09T16:48:37.460033+00:00"
     },
     {
+      "id": "2610.10962",
+      "arxiv_id": "2610.10962",
+      "title": "iAm.md: Robot Skill Self-Assessment through Agentic Introspection for Unknown Open-Vocabulary Domains",
+      "authors": [
+        "Vincenzo Guarino",
+        "Emanuele Musumeci",
+        "Vincenzo Suriani",
+        "Daniele Nardi"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.10962",
+      "pdf_url": "https://arxiv.org/pdf/2610.10962",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出iAm.md标准与生成框架，将开放词汇语义地图的检测与分割结果锚定到持久物体记录，支撑LLM智能体内省式技能自评估，在仿真TIAGo导航-操作任务上缓解接地失败并支持任务泛化。",
+      "change_zh": "相比让LLM直接生成计划、易因幻觉忽略环境与机器人约束的常见路线，该工作把行为生成重构为代码生成，并用iAm.md标准化中间表示关联开放词汇检测、分割与持久物体记录，让智能体基于部署证据自评技能可行性，而非凭空臆断。",
+      "why_it_matters": "对ObjectNav开放词汇目标搜索有直接借鉴：开放词汇语义地图与持久物体记录可支撑目标存在性与操作可行性判断；对UAV主动目标搜索价值间接，其防幻觉接地与技能自评估思路可迁移至无人机任务可行性校验。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "agentic",
+        "deployment"
+      ],
+      "added_at": "2026-10-10T10:31:32.278927+00:00"
+    },
+    {
       "id": "2610.08941",
       "arxiv_id": "2610.08941",
       "title": "SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation",
@@ -17393,56 +17610,48 @@
     }
   ],
   "briefing": {
-    "text": "本批主线：世界模型与结构化表征正承接导航中的想象、规划与安全评测。首推SearchWorld，以BEV空间记忆叠加价值引导想象驱动无人机目标搜索，把UAV-ON成功率提至23.8%，示范了世界模型从预测走向决策；其次，Learning Modular Policy for Multi-Floor Object Navigation把全局策略拆为层内探索与层间切换，理想假设下理论等价，并诊断出感知与爬楼稳定性才是多层导航的主要瓶颈，分析范式可复用；RT-Safe则让城市环境在智能体推理期间持续演化，八个VLM智能体高任务成功率下安全完成率极低，直指实时安全盲区。趋势：评测重心正从静态成功率转向演化世界中的实时安全。",
-    "added": 6,
-    "at": "2026-10-09T21:32:20.614824+00:00",
+    "text": "本批五篇主线清晰：用LLM的推理、调度与自评估能力重构导航从指令接收到执行监控的整条链路。最值得读NavGPT-3，它把导航做成类OS的分层运行时，以线程化调度协调LLM推理与VLA动作策略、支持中断切换，在R2R-CE与RxR-CE上刷新SOTA并首次媲美人类；Speaking the Navigator's Language的TGIT则完全冻结导航器，仅以轨迹接地的指令翻译把真人指令SR从11.33%拉至32.51%，为存量智能体提供了低成本修复路径。Mine Odyssey用Minecraft重建的30处真实地点与180个含错误恢复的任务补上基准缺口，85.6%的头部成功率仍留有判别空间。整体看，LLM调度、VLA执行、语言层修复的分层组装，正成为具身导航系统的主流范式。",
+    "added": 5,
+    "at": "2026-10-10T10:33:27.306957+00:00",
     "new": [
       {
-        "t": "SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models",
-        "u": "https://arxiv.org/abs/2610.09335",
-        "r": 10,
-        "g": 8,
-        "s": "SearchWorld面向无人机目标搜索提出循环状态空间世界模型，融合BEV空间记忆与价值引导想象，解码空间价值层指导想象推演，在UAV-ON上把成功率提升到23.8%。",
+        "t": "Mine Odyssey: Benchmarking Spatial Agentic Intelligence in the Wild",
+        "u": "https://arxiv.org/abs/2610.11328",
+        "r": 8,
+        "g": 7,
+        "s": "在Minecraft重建的30处全球真实地点上构建180个任务的空间智能体基准，要求智能体按自然语言指令顺序到达航点、开门爬梯并从导航错误中恢复，评测了8个前沿模型，最高成功率85.6%。",
         "c": ""
       },
       {
-        "t": "OntoPlan: An Ontology-Grounded Scene Representation and Agentic Framework for Scalable Robot Task Planning",
-        "u": "https://arxiv.org/abs/2610.07649",
-        "r": 8,
-        "g": 7,
-        "s": "OntoPlan以本体统一物体、空间、关系与状态的符号词汇，用智能体框架解析指令、按需检索并生成可执行规划，在五个室内环境150个任务上成功率0.89、token开销远低于基线。",
-        "c": "https://github.com/namhyeongwoo/OntoPlan"
+        "t": "Speaking the Navigator's Language: Trajectory-Grounded Instruction Translation for Frozen Aerial VLN Agents",
+        "u": "https://arxiv.org/abs/2610.10635",
+        "r": 10,
+        "g": 8,
+        "s": "针对空域VLN中简短意图式指令导致成功率骤降的问题，提出轨迹接地的指令翻译器TGIT：冻结导航器，依据轨迹结果将弱指令译为可执行命令，真人指令SR从11.33%升至32.51%。",
+        "c": ""
       },
       {
-        "t": "SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation",
-        "u": "https://arxiv.org/abs/2610.08941",
+        "t": "VAMR: Multi-Question Agentic Reasoning for Efficient Long-Form Video Understanding",
+        "u": "https://arxiv.org/abs/2610.11171",
+        "r": 7,
+        "g": 7,
+        "s": "VAMR是面向长视频多问题理解的智能体，用一条共享工具调用轨迹协同处理全部问题，结合分层多问题记忆与问题视野策略优化QHPO，在LVBench等基准上以最少推理轮数取得最高准确率。",
+        "c": ""
+      },
+      {
+        "t": "iAm.md: Robot Skill Self-Assessment through Agentic Introspection for Unknown Open-Vocabulary Domains",
+        "u": "https://arxiv.org/abs/2610.10962",
         "r": 7,
         "g": 6,
-        "s": "SPW-Nav是流式全景世界模型，从单张全景图出发，实时理解移动指令并流式生成一分钟2K360度视频，支持指令即时切换，并构建了带相机轨迹与人工验证指令的数据集SPW-NavSet。",
+        "s": "提出iAm.md标准与生成框架，将开放词汇语义地图的检测与分割结果锚定到持久物体记录，支撑LLM智能体内省式技能自评估，在仿真TIAGo导航-操作任务上缓解接地失败并支持任务泛化。",
         "c": ""
       },
       {
-        "t": "Learning Modular Policy for Multi-Floor Object Navigation:A Factorized Framework for Diagnostic Study",
-        "u": "https://arxiv.org/abs/2610.06958",
+        "t": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
+        "u": "https://arxiv.org/abs/2610.10787",
         "r": 10,
-        "g": 7,
-        "s": "针对多层建筑ObjectNav稀疏奖励难题，提出将全局策略因子化为层内探索与层间切换的分层模块化框架，层内策略经VLM探索逻辑蒸馏初始化用于RL，理想假设下理论等价于全局策略，诊断出感知与爬楼稳定性为主要瓶颈。",
-        "c": ""
-      },
-      {
-        "t": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
-        "u": "https://arxiv.org/abs/2610.09294",
-        "r": 9,
-        "g": 8,
-        "s": "RT-SAFE提出模拟城市环境下的实时具身安全基准，结合导航任务、移动行人、环境危险与交通规则，让世界在智能体推理与执行期间持续演化，评测八个VLM智能体，发现高任务成功率下安全完成率极低。",
-        "c": ""
-      },
-      {
-        "t": "CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks",
-        "u": "https://arxiv.org/abs/2610.08862",
-        "r": 8,
-        "g": 8,
-        "s": "CIRRA提出双层持续指令调和框架，用LLM语义推理加规则结构整合，把新子任务局部插入位置匹配的执行主干，减少歧义与冗余执行，并在CHIRP基准与Unitree G1真机验证。",
+        "g": 9,
+        "s": "NavGPT-3提出类OS分层导航运行时，以线程化推理、行动与监控调度LLM与VLA动作策略，支持中断切换与快速反应，在R2R-CE/RxR-CE上刷新SOTA并首次媲美人类。",
         "c": ""
       }
     ]

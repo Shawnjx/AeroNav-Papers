@@ -2278,5 +2278,13 @@
     "reason": "该工作是将LLM智能体套用于城市诊断与规划这一垂直领域的应用型评测，与空间智能、导航、机器人无关，属范围外拒绝类别。",
     "rejected_at": "2026-10-09",
     "url": "https://arxiv.org/abs/2610.09374"
+  },
+  "2610.11322": {
+    "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "面向机械臂操作的real-to-sim仿真资产构建，核心动机与验证均为操作任务且无导航决策成分，属范围排除项。",
+    "rejected_at": "2026-10-10",
+    "url": "https://arxiv.org/abs/2610.11322"
   }
 }
