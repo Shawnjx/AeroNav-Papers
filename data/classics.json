@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T15:41:45.165175+00:00",
+  "updated_at": "2026-10-11T16:13:19.086866+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -7032,6 +7032,51 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "https://openalex.org/W4402733575",
+      "arxiv_id": "",
+      "title": "EmbodiedScan: A Holistic Multi-Modal 3D Perception Suite Towards Embodied AI",
+      "authors": [
+        "Tai Wang",
+        "Xiaohan Mao",
+        "Chenming Zhu",
+        "Runsen Xu",
+        "Ruiyuan Lyu",
+        "Peisen Li",
+        "Xiao Chen",
+        "Wenwei Zhang",
+        "Kai Chen",
+        "Tianfan Xue",
+        "Xihui Liu",
+        "Cewu Lu"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 80,
+      "url": "https://doi.org/10.1109/cvpr52733.2024.01868",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "EmbodiedScan构建多模态第一人称3D感知数据集与基准，含5k扫描、100万自中心RGB-D视图与语言描述，覆盖基础3D感知与语言接地两类任务，并提出基线框架Embodied Perceptron。",
+      "change_zh": "传统3D感知多从全局完整场景视角做单一任务；该工作转向自中心多模态输入，把3D检测、语义占用与语言接地任务统一在一套基准与可变输入基线中，推动整体性3D场景理解而非孤立任务研究。",
+      "why_it_matters": "为空间智能与具身评测技术线提供大规模统一数据和评测标准；其语言接地的3D检测与占用感知正是ObjectNav和UAV目标搜索所需的目标发现与场景理解基础能力，可支撑开放词汇目标导航的感知模块研发。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-11T16:13:19.086866+00:00"
+    },
+    {
       "id": "s2:22cb569525194d67e964f61fa102506429cf85f4",
       "arxiv_id": "",
       "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
@@ -9630,22 +9675,35 @@
       "rigor": 7,
       "reason": "研究对象为DNA/基因组学语言模型的评测，属与空间智能、导航、机器人及通用多模态大模型无关的垂直领域应用，范围外。",
       "excluded_at": "2026-10-09"
+    },
+    "https://openalex.org/W4213209987": {
+      "title": "Trajectory Tracking of Autonomous Vehicle Based on Model Predictive Control With PID Feedback",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "属运动控制线的常规增量改进（在简化模型MPC上叠加PID反馈消除稳态误差并配人工势场轨迹规划），无导航决策、感知或空间智能成分，非高影响力系统工作。",
+      "excluded_at": "2026-10-11"
+    },
+    "https://openalex.org/W4405624835": {
+      "title": "Advances in UAV avionics systems architecture, classification and integration: A comprehensive review and future perspectives",
+      "relevance": 3,
+      "rigor": 4,
+      "reason": "主体为航电系统（通信、识别、电源、电子战、监管认证、数据总线）综述，导航、感知与规划仅为泛述章节且无实验或系统评测，与UAV主动目标搜索、VLN、ObjectNav等核心收录问题仅术语擦边。",
+      "excluded_at": "2026-10-11"
     }
   },
-  "last_citation_refresh": "2026-10-10T15:41:45.165175+00:00",
   "briefing": {
-    "text": "本轮入库聚焦大模型推理能力向自主智能体演进这一主线。最值得读的是From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review：它把2019—2025年约60个推理与智能体基准纳入统一分类，覆盖数学、代码、多模态与具身任务，并梳理ACP/MCP/A2A等协作协议与近两年智能体框架，可直接当作具身导航评测选型与框架设计的检索地图，42次被引也印证其参考价值。趋势上，评测重心正从静态单任务基准转向多智能体协作与具身落地，协议标准化将是下一阶段的关键变量。",
+    "text": "本批工作主线是为具身智能搭建可复用的第一人称多模态3D感知基础设施，核心是EmbodiedScan。它把5k扫描、100万自中心RGB-D视图与语言描述整合为统一数据集和基准，同时覆盖基础3D感知与语言接地两类任务，直接缓解了该方向数据碎片化、评测不可比的痛点；配套基线Embodied Perceptron还给出多模态融合的参考实现，便于后续方法在同一标尺上比较与改进。可以看到，数据、基准、基线一体化供给正成为具身导航研究的入场券。",
     "added": 1,
-    "at": "2026-10-09T10:23:47.001862+00:00",
+    "at": "2026-10-11T16:13:19.086866+00:00",
     "new": [
       {
-        "t": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
-        "u": "https://doi.org/10.1109/access.2026.3698694",
-        "r": 7,
-        "g": 6,
-        "s": "该综述系统梳理2019—2025年LLM推理与智能体评测基准，提出约60个基准的统一分类体系，涵盖数学、代码、多模态与具身任务等，并回顾2023—2025年智能体框架、ACP/MCP/A2A协作协议及多领域应用与未来方向。",
+        "t": "EmbodiedScan: A Holistic Multi-Modal 3D Perception Suite Towards Embodied AI",
+        "u": "https://doi.org/10.1109/cvpr52733.2024.01868",
+        "r": 8,
+        "g": 8,
+        "s": "EmbodiedScan构建多模态第一人称3D感知数据集与基准，含5k扫描、100万自中心RGB-D视图与语言描述，覆盖基础3D感知与语言接地两类任务，并提出基线框架Embodied Perceptron。",
         "c": "",
-        "cit": 42
+        "cit": 80
       }
     ]
   }
