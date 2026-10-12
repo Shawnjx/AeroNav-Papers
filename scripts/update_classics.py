@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Curate classic papers: last-5-years works above a citation threshold.
+"""Curate classic papers: works within the configured year window above a
+year-scaled citation threshold.
 Discovery uses OpenAlex (no API key, generous limits) with citation-count-only
 filtering — zero LLM cost. GLM writes the Chinese digest once per paper, never again."""
 import json, os, re, time
@@ -22,7 +23,7 @@ def threshold(year):return CC.get("base_citations",40)*max(1,YEAR-year)
 def search():
     out={}
     for q in CC.get("queries",[]):
-        hits=oa_get(f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}",per_page=100)
+        hits=oa_get(f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}",per_page=200)
         over=0
         for w in hits:
             y=w.get("publication_year") or 0
