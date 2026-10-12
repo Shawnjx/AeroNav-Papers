@@ -23,7 +23,8 @@ def threshold(year):return CC.get("base_citations",40)*max(1,YEAR-year)
 def search():
     out={}
     for q in CC.get("queries",[]):
-        hits=oa_get(f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}",per_page=200)
+        fltr=f"publication_year:{YEAR-MAXAGE}-{YEAR},cited_by_count:>40,title_and_abstract.search:{q}"
+        hits=oa_get(fltr,per_page=100,page=1)+oa_get(fltr,per_page=100,page=2)
         over=0
         for w in hits:
             y=w.get("publication_year") or 0
@@ -98,7 +99,9 @@ def refresh_citations(old,keep):
     updated=0
     for p in papers:
         row=s2.get(s2_id_of(p)) or (0,"")
-        if not row[0]:
+        if not row[0] and s2:
+            # only when the batch lookup worked at all — if S2 rate-limited the batch,
+            # falling back to 188 title searches turns a refresh into an hour-long crawl
             c,a=s2_search_citations(p)
             if c:row=(c,a or row[1])
             time.sleep(1.5)
@@ -162,6 +165,7 @@ def main():
     changed=(added+reused)>0 or updated>0 or len(old.get("papers",[]))!=len(papers)
     payload={"updated_at":NOW.isoformat() if changed else old.get("updated_at"),"catalog":CFG.get("topics_catalog"),"papers":papers,"excluded":excl}
     if refreshed:payload["last_citation_refresh"]=NOW.isoformat()
+    elif old.get("last_citation_refresh"):payload["last_citation_refresh"]=old["last_citation_refresh"]
     if added+reused:payload["briefing"]={"text":write_briefing("classic",new_batch),"added":added+reused,"at":NOW.isoformat(),"new":new_batch}
     elif old.get("briefing"):payload["briefing"]=old["briefing"]
     CLASSICS.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

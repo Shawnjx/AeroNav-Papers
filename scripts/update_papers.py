@@ -30,10 +30,13 @@ def fetch(url,tries=3):
             if i==tries-1:raise
             time.sleep(6*(i+1))
 
-def oa_get(fltr,sort="cited_by_count:desc",per_page=50,tries=3):
+def oa_get(fltr,sort="cited_by_count:desc",per_page=50,tries=3,page=1):
+    # OpenAlex: per-page>100 is rejected with HTTP 400 unless cursor paging is used,
+    # so cap here and let callers loop pages; api_key escapes the shared-IP daily budget.
+    key=os.getenv("OPENALEX_API_KEY","")
     for i in range(tries):
         try:
-            r=requests.get("https://api.openalex.org/works",params={"filter":fltr,"sort":sort,"per-page":per_page,"select":"display_name,publication_date,publication_year,cited_by_count,ids,authorships,primary_location,best_oa_location,abstract_inverted_index","mailto":CFG.get("oa_email","23427669+Shawnjx@users.noreply.github.com")},headers=UA,timeout=30)
+            r=requests.get("https://api.openalex.org/works",params={"filter":fltr,"sort":sort,"per-page":min(per_page,100),"page":page,"select":"display_name,publication_date,publication_year,cited_by_count,ids,authorships,primary_location,best_oa_location,abstract_inverted_index","mailto":CFG.get("oa_email","23427669+Shawnjx@users.noreply.github.com"),**({"api_key":key} if key else {})},headers=UA,timeout=30)
             if r.status_code==200:return r.json().get("results") or []
             if r.status_code==429:time.sleep(6*(i+1));continue
             print(f"OpenAlex status {r.status_code}");return []
@@ -142,7 +145,7 @@ def llm_review(p):
         if not os.getenv(k,"").strip():os.environ.pop(k,None)
     try:
         from openai import OpenAI
-        client=OpenAI(); prompt=f'''你是具身导航领域的论文评审与情报分析师。先对照研究范围判断该论文是否属于收录范围，再评估方法严谨度，然后只依据题目和摘要用中文输出JSON，不得补造事实。字段：primary_topic（从枚举中选一个最贴切的技术线：{"、".join(CATALOG)}；都不贴切时选最接近的），relevance（0-10整数，与研究范围的相关度：10=直接命中核心问题，7-9=明显相关，5-6=边缘相关，0-4=范围外或仅术语擦边），rigor（0-10整数，方法与实验可信度：有明确实验设置、基线对比、消融与可复现信息=7-10，有实验但描述简略=5-6，纯想法/无实验=0-3），reject_reason（relevance<6或rigor<5时给一句话理由，否则空字符串），summary_zh（60-90字，一句话简介），change_zh（60-100字，相比常见路线真正改变了什么；信息不足就明说），why_it_matters（60-100字，对收录范围内技术线的价值，优先联系UAV主动目标搜索与ObjectNav；范围外写"无直接价值"）。\n研究范围：{CFG.get("scope_note","")}\n题目：{p['title']}\n摘要：{p['abstract']}'''
+        client=OpenAI(timeout=120,max_retries=1); prompt=f'''你是具身导航领域的论文评审与情报分析师。先对照研究范围判断该论文是否属于收录范围，再评估方法严谨度，然后只依据题目和摘要用中文输出JSON，不得补造事实。字段：primary_topic（从枚举中选一个最贴切的技术线：{"、".join(CATALOG)}；都不贴切时选最接近的），relevance（0-10整数，与研究范围的相关度：10=直接命中核心问题，7-9=明显相关，5-6=边缘相关，0-4=范围外或仅术语擦边），rigor（0-10整数，方法与实验可信度：有明确实验设置、基线对比、消融与可复现信息=7-10，有实验但描述简略=5-6，纯想法/无实验=0-3），reject_reason（relevance<6或rigor<5时给一句话理由，否则空字符串），summary_zh（60-90字，一句话简介），change_zh（60-100字，相比常见路线真正改变了什么；信息不足就明说），why_it_matters（60-100字，对收录范围内技术线的价值，优先联系UAV主动目标搜索与ObjectNav；范围外写"无直接价值"）。\n研究范围：{CFG.get("scope_note","")}\n题目：{p['title']}\n摘要：{p['abstract']}'''
         r=client.chat.completions.create(model=os.getenv("OPENAI_MODEL","gpt-4.1-mini"),messages=[{"role":"user","content":prompt}],response_format={"type":"json_object"},temperature=.1)
         txt=re.sub(r"^```(?:json)?\s*|\s*```$","",r.choices[0].message.content.strip())
         m=re.search(r"\{.*\}",txt,re.S)
@@ -160,7 +163,7 @@ def deep_review(p):
     if not os.getenv("OPENAI_API_KEY"):return {}
     try:
         from openai import OpenAI
-        client=OpenAI(); prompt=f'''只依据题目和摘要，用中文为这篇论文输出JSON，不得补造事实，摘要未提及的信息对应字段写"未提及"。字段：keywords_zh（3-6个关键词，中文或通用英文术语，逗号分隔），question_zh（30-60字，用一句话概括研究问题），innovation_zh（50-90字，核心创新点，说清相对已有方法新在哪），dataset_zh（使用的数据集、仿真环境或真机平台），results_zh（50-100字，实验结果要点，优先引用摘要中的关键数字）。\n题目：{p['title']}\n摘要：{p['abstract']}'''
+        client=OpenAI(timeout=120,max_retries=1); prompt=f'''只依据题目和摘要，用中文为这篇论文输出JSON，不得补造事实，摘要未提及的信息对应字段写"未提及"。字段：keywords_zh（3-6个关键词，中文或通用英文术语，逗号分隔），question_zh（30-60字，用一句话概括研究问题），innovation_zh（50-90字，核心创新点，说清相对已有方法新在哪），dataset_zh（使用的数据集、仿真环境或真机平台），results_zh（50-100字，实验结果要点，优先引用摘要中的关键数字）。\n题目：{p['title']}\n摘要：{p['abstract']}'''
         r=client.chat.completions.create(model=os.getenv("OPENAI_MODEL","gpt-4.1-mini"),messages=[{"role":"user","content":prompt}],response_format={"type":"json_object"},temperature=.1)
         txt=re.sub(r"^```(?:json)?\s*|\s*```$","",r.choices[0].message.content.strip())
         m=re.search(r"\{.*\}",txt,re.S)
