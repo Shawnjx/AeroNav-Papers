@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T08:54:18.981295+00:00",
+  "updated_at": "2026-10-12T10:38:37.630471+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -627,6 +627,42 @@
       "added_at": "2026-09-02T02:58:22Z"
     },
     {
+      "id": "1911.11763",
+      "arxiv_id": "1911.11763",
+      "title": "SuperGlue: Learning Feature Matching With Graph Neural Networks",
+      "authors": [
+        "Paul-Edouard Sarlin",
+        "Daniel DeTone",
+        "Tomasz Malisiewicz",
+        "Andrew Rabinovich"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 2854,
+      "url": "https://arxiv.org/abs/1911.11763",
+      "pdf_url": "https://arxiv.org/pdf/1911.11763",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "SuperGlue用图神经网络联合预测两组局部特征的对应关系并剔除不可匹配点，通过求解可微最优传输问题估计分配，结合注意力机制聚合上下文以推理底层3D场景，在室内外位姿估计上达到SOTA且可实时运行。",
+      "change_zh": "相比传统手工启发式的匹配流程，SuperGlue将特征匹配重构为可微最优传输问题，用图神经网络预测匹配代价，经注意力联合推理对应关系与剔除不可匹配点，端到端隐式学习3D几何先验，取代了手工设计的匹配规则。",
+      "why_it_matters": "特征匹配是视觉SLAM、SfM与重定位的底层核心，SuperGlue可直接集成进此类系统，提升无人机搜救、侦察等主动目标搜索任务中的位姿估计与场景对齐鲁棒性，也为具身导航智能体的空间记忆构建与回环检测提供更可靠前端。",
+      "relevance_rating": 7,
+      "rigor_rating": 9,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "3d scene",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
+    },
+    {
       "id": "2308.00352",
       "arxiv_id": "2308.00352",
       "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
@@ -750,6 +786,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-08T05:39:39.759268+00:00"
+    },
+    {
+      "id": "https://openalex.org/W3129245057",
+      "arxiv_id": "",
+      "title": "LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping",
+      "authors": [
+        "Tixiao Shan",
+        "Brendan Englot",
+        "Drew Meyers",
+        "Wei Wang",
+        "Carlo Ratti",
+        "Daniela L. Rus"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 2164,
+      "url": "https://doi.org/10.1109/iros45743.2020.9341176",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "LIO-SAM提出基于因子图的紧耦合激光惯性里程计框架，以IMU预积分去畸变并提供初值，结合关键帧滑窗局部匹配实现高精确实时的机器人轨迹估计与建图。",
+      "change_zh": "相比LOAM类全局地图匹配路线，LIO-SAM将激光惯性里程计重构为因子图，统一融合回环与多种相对/绝对观测，以滑窗关键帧局部配准替代全局匹配并边缘化旧扫描，兼顾精度、实时性与可扩展性。",
+      "why_it_matters": "状态估计与控制线的标杆系统：为无人机搜救、侦察等主动目标搜索提供实时位姿与地图底座，是空域自主与地面导航栈的关键底层能力，开源后被广泛采用，落地影响力显著。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "lidar inertial",
+        "odometry"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
     },
     {
       "id": "2309.07864",
@@ -1147,6 +1221,43 @@
       "added_at": "2026-09-05T06:35:42Z"
     },
     {
+      "id": "2310.03744",
+      "arxiv_id": "2310.03744",
+      "title": "Improved Baselines with Visual Instruction Tuning",
+      "authors": [
+        "Haotian Liu",
+        "Chunyuan Li",
+        "Yuheng Li",
+        "Yong Jae Lee"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 1589,
+      "url": "https://arxiv.org/abs/2310.03744",
+      "pdf_url": "https://arxiv.org/pdf/2310.03744",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "在LLaVA框架下对多模态模型设计选择进行受控系统研究，改用CLIP-ViT-L-336px与MLP投影并补充学术VQA数据，仅用120万公开数据单机8卡约一天训练即在11项基准达到SOTA。",
+      "change_zh": "相比盲目堆数据、堆参数的常见路线，该工作以受控消融证明LLaVA的简单全连接连接器出人意料地高效：仅换更高分辨率视觉编码器、MLP投影与任务导向VQA数据即大幅提升，确立了数据高效、训练成本极低的强基线。",
+      "why_it_matters": "LLaVA-1.5是MLLM社区被广泛采用的开源强基线，其视觉语言对齐能力是空域VLN、ObjectNav等具身任务上层指令理解的基础；其连接器与数据配比的消融结论可直接指导具身智能体的多模态模块选型。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": true,
+      "score": 29,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
+    },
+    {
       "id": "https://openalex.org/W4404782209",
       "arxiv_id": "2305.19118",
       "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
@@ -1378,6 +1489,52 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-18T14:06:56.932809+00:00"
+    },
+    {
+      "id": "1904.01201",
+      "arxiv_id": "1904.01201",
+      "title": "Habitat: A Platform for Embodied AI Research",
+      "authors": [
+        "Manolis Savva",
+        "Abhishek Kadian",
+        "Oleksandr Maksymets",
+        "Yili Zhao",
+        "Erik Wijmans",
+        "Bhavana Jain",
+        "Julian Straub",
+        "Jia Liu",
+        "Vladlen Koltun",
+        "Jitendra Malik",
+        "Devi Parikh",
+        "Dhruv Batra"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "citation_count": 1217,
+      "url": "https://arxiv.org/abs/1904.01201",
+      "pdf_url": "https://arxiv.org/pdf/1904.01201",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE/CVF International Conference on Computer Vision (ICCV)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "本文提出Habitat平台：高性能光真实感模拟器加模块化算法库，支持导航任务训练与评测；基于其重新验证点目标导航中学习与SLAM之争，并首次完成跨数据集泛化实验。",
+      "change_zh": "相比常见低吞吐仿真路线，其渲染速度提升一个数量级（单卡多进程逾万帧），使智能体能积累大规模训练经验；模块化任务/传感器设计将任务定义与仿真解耦，让此前不可行的学习vs SLAM、跨数据集泛化等大规模对比实验变得可行。",
+      "why_it_matters": "它是ObjectNav与点目标导航的事实标准基础设施，后续HM3D/ObjectNav基准多基于此；大规模经验可胜SLAM、深度传感器利于跨场景泛化等结论，直接指导UAV主动目标搜索与ObjectNav的传感器配置和训练预算决策，高吞吐仿真也加速了sim2real迭代。",
+      "relevance_rating": 10,
+      "rigor_rating": 9,
+      "venue_verified": true,
+      "score": 31,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "instruction following",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
     },
     {
       "id": "https://openalex.org/W4389520747",
@@ -2077,6 +2234,41 @@
       "added_at": "2026-09-02T06:05:40Z"
     },
     {
+      "id": "2009.13303",
+      "arxiv_id": "2009.13303",
+      "title": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
+      "authors": [
+        "Wenshuai Zhao",
+        "Jorge Peña Queralta",
+        "Tomi Westerlund"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Symposium Series on Computational Intelligence (SSCI)",
+      "citation_count": 776,
+      "url": "https://arxiv.org/abs/2009.13303",
+      "pdf_url": "https://arxiv.org/pdf/2009.13303",
+      "code_url": "",
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文系统综述机器人深度强化学习中的仿真到现实迁移问题，梳理域随机化、域适应、模仿学习、元学习与知识蒸馏五大类方法，分类相关近期工作与应用场景，并讨论机遇、挑战与方向。",
+      "change_zh": "该综述未提出新算法，其真正贡献在于把此前分散的sim-to-real方法首次统一归类为五大家族并纳入同一语境比较，明确各方法适用场景与局限，为后续迁移研究提供了统一的方法论地图。",
+      "why_it_matters": "sim-to-real是UAV主动目标搜索与ObjectNav策略从仿真训练走向真机部署的核心瓶颈，本综述梳理的域随机化、域适应等方法及挑战分析可直接指导无人机与地面导航智能体的真机迁移与训练范式选择。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "real robot",
+        "real world"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
+    },
+    {
       "id": "2204.00598",
       "arxiv_id": "2204.00598",
       "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
@@ -2118,6 +2310,42 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T09:25:45.515854+00:00"
+    },
+    {
+      "id": "https://openalex.org/W2962787639",
+      "arxiv_id": "",
+      "title": "Robust and Efficient Quadrotor Trajectory Generation for Fast Autonomous Flight",
+      "authors": [
+        "Boyu Zhou",
+        "Fei Gao",
+        "Luqi Wang",
+        "Chuhao Liu",
+        "Shaojie Shen"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 765,
+      "url": "https://doi.org/10.1109/lra.2019.2927938",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出四旋翼快速飞行轨迹生成系统：先在离散控制空间运动动力学搜索出安全最小时间初值轨迹，再经B样条优化提升平滑与安全，最后迭代时间调整保证动力学可行且不保守，仿真与真机验证并开源。",
+      "change_zh": "相比常见『先搜几何路径再补时间分配』的解耦路线，该工作在离散控制空间直接搜索满足动力学的最小时间初值，用B样条凸包性质高效施加约束并融合ESDF梯度，再以非均匀B样条迭代调时，避免过度保守。",
+      "why_it_matters": "为无人机自主飞行提供安全且动力学可行的局部轨迹生成后端，是UAV主动目标搜索、侦察与快速抵近任务的关键运动能力底座；开源实现便于社区复用与集成，直接支撑空域导航研究与真机部署，属状态估计与控制线的高影响力系统工作。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "motion planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
     },
     {
       "id": "https://openalex.org/W4394828156",
@@ -2188,6 +2416,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-05T18:45:24.442900+00:00"
+    },
+    {
+      "id": "1905.02693",
+      "arxiv_id": "1905.02693",
+      "title": "3D Packing for Self-Supervised Monocular Depth Estimation",
+      "authors": [
+        "Vitor Guizilini",
+        "Rareş Ambruş",
+        "Sudeep Pillai",
+        "Allan Raventos",
+        "Adrien Gaidon"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 748,
+      "url": "https://arxiv.org/abs/1905.02693",
+      "pdf_url": "https://arxiv.org/pdf/1905.02693",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出自监督单目深度估计网络PackNet，以对称3D打包/解包块压缩并保留细节表征，仅用无标注视频在KITTI上超越自/半/全监督方法，跨域泛化更好并发布DDAD数据集。",
+      "change_zh": "常见自监督深度估计用2D卷积U型网络加简单上采样，细节易失；本文改用3D卷积对称打包/解包块，将空间信息压入通道再还原，保细节、随分辨率与参数扩展不易过拟合，免ImageNet预训练，并以DDAD强化评测。",
+      "why_it_matters": "轻量无人机常无法搭载LiDAR，PackNet仅凭单目视频自监督获得实时稠密深度，可支撑避障、目标接近与建图，跨域泛化利于真机部署；对RGB-only的ObjectNav智能体也是免标定深度来源。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-12T10:38:37.630471+00:00"
     },
     {
       "id": "https://openalex.org/W4402698355",
@@ -9689,22 +9955,237 @@
       "rigor": 4,
       "reason": "主体为航电系统（通信、识别、电源、电子战、监管认证、数据总线）综述，导航、感知与规划仅为泛述章节且无实验或系统评测，与UAV主动目标搜索、VLN、ObjectNav等核心收录问题仅术语擦边。",
       "excluded_at": "2026-10-11"
+    },
+    "https://openalex.org/W2947264857": {
+      "title": "Progress and Perspectives of Electrochemical CO2 Reduction on Copper in Aqueous Electrolyte",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为电化学CO2还原催化的领域综述，属电化学/催化方向，与具身导航、空间智能、机器人自主等全部收录技术线完全无关，仅因同为综述体裁而勉强归类。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W1938990613": {
+      "title": "Interpretative Phenomenological Analysis",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文为心理学质性研究方法论（IPA解释现象学分析），与具身导航、机器人自主及模型/智能体等技术线完全无关，属范围外；且为方法论叙述，无实验设置与验证。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W4213147678": {
+      "title": "Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges",
+      "relevance": 3,
+      "rigor": 3,
+      "reason": "泛民用无人机应用综述，主体覆盖组网、安全、充电等范围外主题，仅清单式提及搜救与避障，无导航或目标搜索的技术贡献与实验。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2947476638": {
+      "title": "Multimodal Transformer for Unaligned Multimodal Language Sequences",
+      "relevance": 3,
+      "rigor": 8,
+      "reason": "属多模态情感分析方向（文本/表情/语音时序的情感识别），是研究范围明确排除的垂直应用，与空间、导航、机器人无关，仅\"多模态\"术语擦边。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3088154325": {
+      "title": "Applications of Remote Sensing in Precision Agriculture: A Review",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "属精准农业遥感应用领域综述，与具身导航、UAV主动目标搜索、空间智能等收录技术线无实质关联，UAV仅作为被动成像平台提及，属术语擦边。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3015112546": {
+      "title": "2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors",
+      "relevance": 0,
+      "rigor": 4,
+      "reason": "本文是美国ASCCP宫颈癌筛查异常与癌前病变管理的医学临床共识指南，与具身导航、机器人自主、空间智能、大模型智能体等全部收录技术线毫无技术关联，属明显范围外论文。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W1541270497": {
+      "title": "The Physiology of Fishes",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "纯鱼类生理学综述专著，与具身导航、UAV搜索、空间智能、机器人自主等收录技术线完全无关。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2971755171": {
+      "title": "Measuring actual learning versus feeling of learning in response to being actively engaged in the classroom",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "该论文是教育学领域关于主动教学与被动讲授下实际学习与感知学习差异的随机对照研究，与具身导航、UAV搜索、机器人自主及智能体等全部收录技术线完全无关，仅因'active'（主动学习教学法）与'主动感知'术语表面相近而无法纳入。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3048802680": {
+      "title": "Radiomics in medical imaging—“how-to” guide and critical reflection",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "医学影像影像组学方法学综述，属医疗垂直应用，与空间推理、导航、机器人及具身智能各技术线均无关，仅为AI术语擦边。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3023463185": {
+      "title": "Redefining Palliative Care—A New Consensus-Based Definition",
+      "relevance": 0,
+      "rigor": 5,
+      "reason": "属医学领域缓和医疗定义的共识研究，与具身导航及全部收录技术线毫无关联，完全在范围外。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W4214540501": {
+      "title": "Proceedings of the 28th ACM International Conference on Multimedia",
+      "relevance": 1,
+      "rigor": 0,
+      "reason": "该文为ACM Multimedia 2020会议欢迎辞与前言，并非研究论文，无任何具身导航、目标搜索或收录范围内技术线的实质技术内容。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3112159824": {
+      "title": "Trajectories of anxiety and depressive symptoms during enforced isolation due to COVID-19 in England: a longitudinal observational study",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该文为COVID-19封城期间心理健康轨迹的流行病学纵向观察研究，与具身导航、空间智能、机器人自主等全部收录技术线完全无关，属范围外。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2989959769": {
+      "title": "Embodied GHG emissions of buildings – The hidden challenge for effective climate change mitigation",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "该文属于建筑生命周期碳排放评估领域，'embodied'仅指建材隐含碳排放，与具身导航、机器人自主及智能体研究范围完全无关，属术语擦边的范围外论文。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2968914048": {
+      "title": "Global Bathymetry and Topography at 15 Arc Sec: SRTM15+",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "该文属海洋测深与全球地形数据集工作，虽涉及大范围建图但为卫星测高与船测数据融合的地球科学产品，与具身导航、机器人自主及智能体技术线无实质关联，属范围外。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2917364154": {
+      "title": "The Applications of Radiomics in Precision Diagnosis and Treatment of Oncology: Opportunities and Challenges",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "本文为肿瘤医学影像组学的临床应用综述，属于医疗垂直领域，与导航、机器人自主、具身智能等收录技术线均无关联。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3095379573": {
+      "title": "Perceptions of medical students towards online teaching during the COVID-19 pandemic: a national cross-sectional survey of 2721 UK medical students",
+      "relevance": 0,
+      "rigor": 5,
+      "reason": "该文为医学生在线教学感知的全国问卷调查，属于医学教育领域研究，与具身导航、无人机自主、智能体等全部收录技术线完全无关，属范围外。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3003825427": {
+      "title": "The effect of using Kahoot! for learning – A literature review",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文是关于游戏化学习平台Kahoot!的教育技术文献综述，与具身导航、UAV目标搜索、空间智能、大模型智能体等全部收录技术线均无关，属范围外论文。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3032725243": {
+      "title": "Effects of non-pharmaceutical interventions on COVID-19 cases, deaths, and demand for hospital services in the UK: a modelling study",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该论文为新冠传播动力学与公共卫生政策建模研究，不涉及具身导航、机器人自主、空间智能或大模型智能体等任何收录技术线，属范围外。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3037505531": {
+      "title": "Worldwide Effect of COVID-19 on Physical Activity: A Descriptive Study",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "属公共卫生流行病学描述性研究，仅利用智能手机计步数据分析疫情对身体活动的影响，与具身导航、空间智能、机器人自主等收录范围完全无关。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2901790394": {
+      "title": "UAV-Assisted Emergency Networks in Disasters",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "核心内容是无人机辅助应急无线通信网络的轨迹调度、收发机与多跳中继优化，属纯通信与信号处理，仅以搜救为背景，不含目标搜索或导航决策成分。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3011067038": {
+      "title": "Communications in the 6G Era",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "本文属纯通信与信号处理范畴的6G愿景白皮书，虽提及数字孪生、感知与定位一体化等术语，但与具身导航、空间智能或机器人自主无方法或实验层面的实质关联，且为无实验的立场性文章，判定范围外。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W3103726915": {
+      "title": "Sixty-Day Outcomes Among Patients Hospitalized With COVID-19",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "该文为COVID-19住院患者的临床医学观察性队列研究，与具身导航、UAV搜索、VLN、空间智能、机器人自主等全部收录技术线均无关，属范围外文献。",
+      "excluded_at": "2026-10-12"
+    },
+    "https://openalex.org/W2998281665": {
+      "title": "High Speed and High Dynamic Range Video with an Event Camera",
+      "relevance": 5,
+      "rigor": 8,
+      "reason": "核心贡献是事件流到强度视频的图像重建，属传感器低层视觉，与主动感知/在线建图、状态估计及导航决策仅通过分类与VIO下游演示间接相关，不构成收录技术线的直接方法进展。",
+      "excluded_at": "2026-10-12"
     }
   },
   "last_citation_refresh": "2026-10-12T08:54:18.981295+00:00",
   "briefing": {
-    "text": "本批工作主线是为具身智能搭建可复用的第一人称多模态3D感知基础设施，核心是EmbodiedScan。它把5k扫描、100万自中心RGB-D视图与语言描述整合为统一数据集和基准，同时覆盖基础3D感知与语言接地两类任务，直接缓解了该方向数据碎片化、评测不可比的痛点；配套基线Embodied Perceptron还给出多模态融合的参考实现，便于后续方法在同一标尺上比较与改进。可以看到，数据、基准、基线一体化供给正成为具身导航研究的入场券。",
-    "added": 1,
-    "at": "2026-10-11T16:13:19.086866+00:00",
+    "text": "本批高被引工作横跨具身导航的三层主线：几何感知底座（特征匹配、激光惯性里程计、自监督深度估计）、仿真与sim-to-real训练闭环，以及多模态大模型语义层。首推Habitat，其高速光真实感仿真重审了点目标导航中学习与SLAM之争并首次完成跨数据集泛化实验，已是导航评测的事实标准；LIO-SAM以因子图紧耦合IMU预积分与滑窗匹配，为真机部署提供高精度定位建图基线；Improved Baselines with Visual Instruction Tuning仅用120万公开数据、单机一天训练即在11项基准达SOTA，示范了VLM低成本充当导航语义主干的路径。整体看，几何先验与大模型语义正加速合流为统一具身栈。",
+    "added": 7,
+    "at": "2026-10-12T10:38:37.630471+00:00",
     "new": [
       {
-        "t": "EmbodiedScan: A Holistic Multi-Modal 3D Perception Suite Towards Embodied AI",
-        "u": "https://doi.org/10.1109/cvpr52733.2024.01868",
+        "t": "SuperGlue: Learning Feature Matching With Graph Neural Networks",
+        "u": "https://arxiv.org/abs/1911.11763",
+        "r": 7,
+        "g": 9,
+        "s": "SuperGlue用图神经网络联合预测两组局部特征的对应关系并剔除不可匹配点，通过求解可微最优传输问题估计分配，结合注意力机制聚合上下文以推理底层3D场景，在室内外位姿估计上达到SOTA且可实时运行。",
+        "c": "",
+        "cit": 2854
+      },
+      {
+        "t": "LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping",
+        "u": "https://doi.org/10.1109/iros45743.2020.9341176",
         "r": 8,
         "g": 8,
-        "s": "EmbodiedScan构建多模态第一人称3D感知数据集与基准，含5k扫描、100万自中心RGB-D视图与语言描述，覆盖基础3D感知与语言接地两类任务，并提出基线框架Embodied Perceptron。",
+        "s": "LIO-SAM提出基于因子图的紧耦合激光惯性里程计框架，以IMU预积分去畸变并提供初值，结合关键帧滑窗局部匹配实现高精确实时的机器人轨迹估计与建图。",
         "c": "",
-        "cit": 80
+        "cit": 2164
+      },
+      {
+        "t": "Improved Baselines with Visual Instruction Tuning",
+        "u": "https://arxiv.org/abs/2310.03744",
+        "r": 9,
+        "g": 9,
+        "s": "在LLaVA框架下对多模态模型设计选择进行受控系统研究，改用CLIP-ViT-L-336px与MLP投影并补充学术VQA数据，仅用120万公开数据单机8卡约一天训练即在11项基准达到SOTA。",
+        "c": "",
+        "cit": 1589
+      },
+      {
+        "t": "Habitat: A Platform for Embodied AI Research",
+        "u": "https://arxiv.org/abs/1904.01201",
+        "r": 10,
+        "g": 9,
+        "s": "本文提出Habitat平台：高性能光真实感模拟器加模块化算法库，支持导航任务训练与评测；基于其重新验证点目标导航中学习与SLAM之争，并首次完成跨数据集泛化实验。",
+        "c": "",
+        "cit": 1217
+      },
+      {
+        "t": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
+        "u": "https://arxiv.org/abs/2009.13303",
+        "r": 8,
+        "g": 6,
+        "s": "本文系统综述机器人深度强化学习中的仿真到现实迁移问题，梳理域随机化、域适应、模仿学习、元学习与知识蒸馏五大类方法，分类相关近期工作与应用场景，并讨论机遇、挑战与方向。",
+        "c": "",
+        "cit": 776
+      },
+      {
+        "t": "Robust and Efficient Quadrotor Trajectory Generation for Fast Autonomous Flight",
+        "u": "https://doi.org/10.1109/lra.2019.2927938",
+        "r": 8,
+        "g": 8,
+        "s": "提出四旋翼快速飞行轨迹生成系统：先在离散控制空间运动动力学搜索出安全最小时间初值轨迹，再经B样条优化提升平滑与安全，最后迭代时间调整保证动力学可行且不保守，仿真与真机验证并开源。",
+        "c": "",
+        "cit": 765
+      },
+      {
+        "t": "3D Packing for Self-Supervised Monocular Depth Estimation",
+        "u": "https://arxiv.org/abs/1905.02693",
+        "r": 6,
+        "g": 8,
+        "s": "提出自监督单目深度估计网络PackNet，以对称3D打包/解包块压缩并保留细节表征，仅用无标注视频在KITTI上超越自/半/全监督方法，跨域泛化更好并发布DDAD数据集。",
+        "c": "",
+        "cit": 748
       }
     ]
   }
