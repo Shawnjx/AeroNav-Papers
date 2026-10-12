@@ -2286,5 +2286,69 @@
     "reason": "面向机械臂操作的real-to-sim仿真资产构建，核心动机与验证均为操作任务且无导航决策成分，属范围排除项。",
     "rejected_at": "2026-10-10",
     "url": "https://arxiv.org/abs/2610.11322"
+  },
+  "2610.12670": {
+    "title": "Robust and Scalable UAV-UGV Planning for Aerial Monitoring under Energy and Precedence Constraints",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "本质是带续航与优先序约束的UAV-UGV协同路由调度（VRP式组合优化），不属于目标搜索、具身导航、LLM规划或SLAM/控制等核心技术线，且仅有数值仿真对比，落地影响力不明。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.12670"
+  },
+  "2610.13164": {
+    "title": "Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "核心为机械臂操作的数据合成与操作策略学习，无任何导航决策成分，其世界模型仅服务于操作任务而非导航与规划，按范围中机械臂操作除外条款排除。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.13164"
+  },
+  "2610.13409": {
+    "title": "ManeuverFlow: Maneuver Hypothesis Generation with Future Evidence for Trajectory Evaluation and Refinement in End-to-End Autonomous Driving",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属端到端自动驾驶轨迹规划，不落在UAV目标搜索、空域/地面VLN、ObjectNav或机器人自主等收录线内，仅与轨迹规划和世界模型等基础能力边缘相关。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.13409"
+  },
+  "2610.13636": {
+    "title": "Benchmarking Answer-Grounding Consistency in Remote Sensing Visual Question Answering",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作属于遥感垂直领域的接地图文问答（VQA）评测，不涉及导航、UAV目标搜索或机器人任务，仅凭遥感影像与空域术语擦边，按范围条款应拒收。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.13636"
+  },
+  "2610.13643": {
+    "title": "AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "属机械臂灵巧操作仿真基准，不含导航决策成分，按收录规则明确属于拒绝范围。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.13643"
+  },
+  "2610.13466": {
+    "title": "A Real-World CAD Segmentation Benchmark: Comparing Rule-Based and Learning-Based Approaches through Hole Detection",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属工程CAD几何分割与紧固件孔检测的制造领域基准，与导航、机器人自主、空间智能等收录技术线无实质关联，仅与'3D理解/基准'术语擦边。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.13466"
+  },
+  "2610.12826": {
+    "title": "Cubic Spline Interpolation for Smooth Trajectory Generation in Autonomous Motion Systems",
+    "relevance": 5,
+    "rigor": 2,
+    "reason": "仅为教科书级三次样条插值的程序化实现，演示限于曲线绘制与签名数字化，无机器人实验、基线对比与定量评估。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.12826"
+  },
+  "2610.12609": {
+    "title": "Graph-Based Heuristics for Minimum Constraint Removal in Cluttered Robot Motion Planning",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "核心是杂乱环境（含机械臂操纵任务）下最小约束移除MCR的启发式求解，属运动规划算法加速而非导航决策，亦非公认高影响力的系统工作，与收录技术线仅运动规划术语擦边。",
+    "rejected_at": "2026-10-12",
+    "url": "https://arxiv.org/abs/2610.12609"
   }
 }
