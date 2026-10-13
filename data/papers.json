@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T08:53:18.572569+00:00",
+  "updated_at": "2026-10-13T17:21:44.015796+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5486,6 +5486,54 @@
         "evaluation"
       ],
       "added_at": "2026-10-12T08:47:55.330479+00:00"
+    },
+    {
+      "id": "2610.12881",
+      "arxiv_id": "2610.12881",
+      "title": "Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing",
+      "authors": [
+        "Zheng Ren",
+        "Yanning Wang",
+        "Ziheng Huang",
+        "Fei Huang",
+        "Shiqi Wang",
+        "Ziqian Ye",
+        "Yang Yue"
+      ],
+      "published": "2026-10-09",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.12881",
+      "pdf_url": "https://arxiv.org/pdf/2610.12881",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GeoSpatialBench基于六座城市真实地理数据构建，覆盖28类拓扑、方向、度量与顺序关系，在GeoJSON与地图图像两种模态上评测前沿多模态大模型从空间理解、几何推理到受约束空间编辑的能力，发现编辑显著弱于问答。",
+      "change_zh": "相比常见的小规模合成场景静态问答评测，该工作改用真实城市数据与经GIS操作验证的真值约束，把评测从被动空间关系问答升级为须满足显式几何约束的主动空间编辑，并系统对比结构化GeoJSON与地图图像输入的差异。",
+      "why_it_matters": "空间关系理解是多模态大模型支撑UAV主动目标搜索与ObjectNav指令解析的底层能力；该基准量化了模型在度量关系与主动空间编辑上的薄弱环节，为导航智能体中何时可信调用MLLM空间能力、如何引入几何约束校验提供实证依据，属空间智能与具身评测核心参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "多模态大语言模型, 空间推理, 地理空间基准, 约束空间编辑, 空间关系理解, GIS",
+      "question_zh": "多模态大语言模型能否从被动理解空间关系进阶到在满足显式几何约束下主动编辑空间配置？",
+      "innovation_zh": "不同于现有依赖小规模或合成场景静态问答的评测，本基准评估从空间关系理解、几何推理到约束空间编辑的递进式空间认知，覆盖28类拓扑、方向、度量与顺序关系，基于真实城市数据并以GIS操作验证约束。",
+      "dataset_zh": "GeoSpatialBench，基于六个地理分布多样城市的真实城市数据构建，包含结构化GeoJSON与地图图像两种模态，真值参考与约束经GIS操作验证",
+      "results_zh": "前沿MLLM评测揭示明显空间鸿沟：结构化GeoJSON一致优于地图图像，多模态组合无可靠增益；拓扑与顺序等定性关系表现尚可，定量度量关系性能下降；顺序关系编辑性能低于问答，多数失败编辑违反至少一个空间约束。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "mllm",
+        "multimodal large language model",
+        "spatial reasoning",
+        "world model"
+      ],
+      "added_at": "2026-10-13T17:20:57.617666+00:00"
     },
     {
       "id": "2610.12411",
@@ -18249,120 +18297,16 @@
     }
   ],
   "briefing": {
-    "text": "本批入库主线明确：具身导航与空间智能正把结构化引导、世界模型与经典规划器收编进训练和推理管线，覆盖VLN、空间推理、约束规划与多机协同。三篇优先读：GuidedNav以子任务与空间引导在训练期对准动作前注意力，刷新R2R-CE与RxR-CE单目RGB纪录；SpatialASM把视角采择与场景想象内化进LVLM，在七类空间基准、四种骨干上提升且保留通用视觉能力；Sampling-based Kinodynamic Planning with World Models把RRT/KPIECE搬入视觉世界模型潜空间并做GPU批量扩展，以更低耗时匹配或超越CEM/MPPI。趋势观察：训练时注入先验、推理时调用几何与世界模型，正在成为导航智能体的默认配方。",
-    "added": 14,
-    "at": "2026-10-12T08:53:50.956546+00:00",
+    "text": "今日入库仅一条，主线是为多模态大模型的空间认知补上可评测的地基。Mind the Spatial Gap提出的GeoSpatialBench以六座城市真实地理数据覆盖28类拓扑、方向、度量与顺序关系，并在GeoJSON与地图图像两种模态上贯通空间理解、几何推理与受约束编辑三层任务；其“编辑显著弱于问答”的发现表明模型能描述却难执行空间操作，对依赖地图级空间决策的具身导航而言是可直接借用的诊断基准，值得精读实验设计与错误分析部分。趋势上，空间评测正从问答转向带约束的生成与编辑，导航社区宜将此类基准纳入智能体的空间能力检验流程。",
+    "added": 1,
+    "at": "2026-10-13T17:22:31.211278+00:00",
     "new": [
       {
-        "t": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
-        "u": "https://arxiv.org/abs/2610.13832",
-        "r": 9,
-        "g": 7,
-        "s": "本文提出主动空间心智化（ASM）概念及SpatialASM框架，通过训练时空间模拟将视角规划与场景想象内化到LVLM中，利用异我中心新视角生成器合成ASM轨迹与视角采择两类监督，在七类空间基准、四种骨干模型上提升空间推理并保留通用视觉能力。",
-        "c": ""
-      },
-      {
-        "t": "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback",
-        "u": "https://arxiv.org/abs/2610.12549",
-        "r": 6,
-        "g": 7,
-        "s": "针对空中操作中反馈部分可观测、难定因的问题，提出Active Feedback框架，让编码智能体在存疑时合成诊断程序，经主动视角与物理交互取证修正任务程序，并部署到真实飞行机械臂。",
-        "c": ""
-      },
-      {
-        "t": "JoyInside-VLM-Agent: Product-Conditioned Multimodal Policy Learning for Embodied Agents",
-        "u": "https://arxiv.org/abs/2610.12957",
-        "r": 8,
-        "g": 7,
-        "s": "提出ReAct式多模态智能体，以产品条件化轨迹构造、SFT、多教师蒸馏与DPER强化学习分阶段训练，BFCL v4达77.44，真机四足案例展示视觉搜索与失败重规划。",
-        "c": ""
-      },
-      {
-        "t": "Sampling-based Kinodynamic Planning with World Models",
-        "u": "https://arxiv.org/abs/2610.12910",
+        "t": "Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing",
+        "u": "https://arxiv.org/abs/2610.12881",
         "r": 8,
         "g": 8,
-        "s": "本文将视觉世界模型作为潜空间传播器，把采样式运动规划（RRT、KPIECE）引入世界模型规划并做GPU批量扩展，在四个仿真域和真机推块任务上以更低耗时匹配或超越CEM/MPPI。",
-        "c": ""
-      },
-      {
-        "t": "HorizonNav: Geometry-Guided Video Diffusion for Anticipatory 3D Robot Navigation",
-        "u": "https://arxiv.org/abs/2610.13849",
-        "r": 8,
-        "g": 6,
-        "s": "HorizonNav用VLM解析单张RGB图与文本目标，驱动视频扩散生成未来观测，结合ORB-SLAM3位姿与稠密深度做几何对齐，重建想象中的3D环境用于RRT导航规划。",
-        "c": ""
-      },
-      {
-        "t": "Rollout-Time Intervention: Unlocking Agentic Reinforcement Learning Beyond Policy Limits",
-        "u": "https://arxiv.org/abs/2610.13438",
-        "r": 7,
-        "g": 7,
-        "s": "提出采样期干预RTI：在rollout阶段利用奖励侧证据（评估规则）把错误轨迹改造为成功轨迹，为超出策略能力边界的任务提供学习信号，并过滤分布偏移过大的样本，突破LLM智能体RL训练瓶颈。",
-        "c": "https://github.com/Alibaba-NLP/qqr"
-      },
-      {
-        "t": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
-        "u": "https://arxiv.org/abs/2610.13195",
-        "r": 6,
-        "g": 7,
-        "s": "PATACON是GPU并行的双向约束运动规划器，通过在切空间中探索已知约束函数诱导的流形几何来生成候选，避免反复约束投影的开销，在双臂闭链与人形全身约束规划任务上较先前GPU规划器最高提速11.25倍。",
-        "c": ""
-      },
-      {
-        "t": "Web$hell: A Unified Interface for Agentic Web Access",
-        "u": "https://arxiv.org/abs/2610.13416",
-        "r": 6,
-        "g": 6,
-        "s": "提出统一网页访问接口Web$hell：将实时网页编译为可寻址的信息与动作对象并持久缓存，让LLM智能体在单一长程轨迹内同时完成信息搜集、浏览器操作与证据回访，在搜索、导航与深度研究基准上以更低成本取得更强性能。",
-        "c": ""
-      },
-      {
-        "t": "Robust Vision-Language Navigation with Awareness of Instruction-Execution Progress",
-        "u": "https://arxiv.org/abs/2610.13104",
-        "r": 9,
-        "g": 7,
-        "s": "提出VLN-AIEP框架，将指令执行进度估计与导航决策耦合，抑制已执行指令内容的表征并将候选位置与待执行内容匹配，结合地标锚定的轨迹表示，无需显式进度标注即可学习进度估计。",
-        "c": ""
-      },
-      {
-        "t": "Verifier-Mediated Multi-LLM Coordination for Multi-Robot Path Planning",
-        "u": "https://arxiv.org/abs/2610.12761",
-        "r": 8,
-        "g": 7,
-        "s": "提出校验器介导的多LLM协同：各机器人LLM独立提出任务计划，几何校验器将其落地为轨迹、检测机间冲突并转为结构化反馈指导重规划，在CARLA与Crazyflie真机上对比集中式与分布式架构。",
-        "c": ""
-      },
-      {
-        "t": "BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation",
-        "u": "https://arxiv.org/abs/2610.13862",
-        "r": 8,
-        "g": 8,
-        "s": "提出BT-Agent机载架构，LLM负责任务决策，行为树技能执行并返回结构化失败反馈，在四足机器人上以9B模型全机载运行；构建161任务多保真基准，较最强Act/ReAct基线在4B/9B上提升约10和5个百分点。",
-        "c": ""
-      },
-      {
-        "t": "When LiDAR Fades, Radar Takes Over: LiDAR Reliability-Aware Adaptive Localization Under Airborne Obscurants",
-        "u": "https://arxiv.org/abs/2610.13788",
-        "r": 7,
-        "g": 7,
-        "s": "提出单类时序学习框架，用仅在正常数据上训练的LSTM自编码器对多源退化敏感特征建模，检测烟雾粉尘下LiDAR退化，并自适应切换LiDAR惯性里程计与雷达惯性里程计，在GNSS拒止地下隧道实测中保持连续定位。",
-        "c": ""
-      },
-      {
-        "t": "GuidedNav: Shaping Vision-Language Navigation Representations through Pre-action Attention and Spatial Guidance",
-        "u": "https://arxiv.org/abs/2610.13122",
-        "r": 10,
-        "g": 8,
-        "s": "GuidedNav提出训练时引导框架，用子任务与地标引导将动作前注意力对准当前指令片段与相关视觉区域，并用空间引导对齐内部表征与几何特征，在R2R-CE与RxR-CE上刷新单目RGB策略最优成绩。",
-        "c": ""
-      },
-      {
-        "t": "GLIMPSE: Global-Local Indexing with Multi-Precision Spectral Encoding for Explorable Video World Models",
-        "u": "https://arxiv.org/abs/2610.13706",
-        "r": 7,
-        "g": 6,
-        "s": "GLIMPSE面向相机可控视频世界模型，提出全局-局部记忆接口：多精度谱坐标编码与几何条件谱衰减降低投影地址误差敏感，足迹引导检索限定读取预算，在等预算下提升几何对应与光度一致性。",
+        "s": "GeoSpatialBench基于六座城市真实地理数据构建，覆盖28类拓扑、方向、度量与顺序关系，在GeoJSON与地图图像两种模态上评测前沿多模态大模型从空间理解、几何推理到受约束空间编辑的能力，发现编辑显著弱于问答。",
         "c": ""
       }
     ]

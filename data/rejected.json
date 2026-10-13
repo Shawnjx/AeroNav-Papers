@@ -2350,5 +2350,13 @@
     "reason": "核心是杂乱环境（含机械臂操纵任务）下最小约束移除MCR的启发式求解，属运动规划算法加速而非导航决策，亦非公认高影响力的系统工作，与收录技术线仅运动规划术语擦边。",
     "rejected_at": "2026-10-12",
     "url": "https://arxiv.org/abs/2610.12609"
+  },
+  "2610.12975": {
+    "title": "SmartSalesBench: A Resistance-Aware Multi-Turn Benchmark for Evaluating LLM Sales Agents",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作是把LLM智能体套用于销售对话垂直领域的评测基准，与空间感知、导航、机器人及具身任务均无关，按收录范围条款拒绝。",
+    "rejected_at": "2026-10-13",
+    "url": "https://arxiv.org/abs/2610.12975"
   }
 }
