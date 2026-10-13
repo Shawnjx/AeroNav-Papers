@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T19:36:34.117420+00:00",
+  "updated_at": "2026-10-13T17:23:02.911853+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -3371,6 +3371,126 @@
       "added_at": "2026-09-11T07:58:43.618358+00:00"
     },
     {
+      "id": "1912.01734",
+      "arxiv_id": "1912.01734",
+      "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+      "authors": [
+        "Mohit Shridhar",
+        "Jesse Thomason",
+        "Daniel Gordon",
+        "Yonatan Bisk",
+        "Winson Han",
+        "Roozbeh Mottaghi",
+        "Luke Zettlemoyer",
+        "Dieter Fox"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 525,
+      "url": "https://arxiv.org/abs/1912.01734",
+      "pdf_url": "https://arxiv.org/pdf/1912.01734",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "ALFRED是具身指令跟随基准，在交互式视觉环境中提供2.5万条自然语言指令与专家演示，要求智能体结合第一视角视觉，将高层目标与低级指令映射为完成家务任务的动作序列。",
+      "change_zh": "相比以往以被动视觉问答或纯导航为主的视觉-语言数据集，ALFRED将语言、第一视角视觉与交互动作统一到长序列组合任务中，引入不可逆状态变化与更大动作空间，把评测从单步理解推向完整家务任务执行。",
+      "why_it_matters": "作为具身智能经典基准，ALFRED推动了接地语言理解与指令跟随模型的发展，其评测协议与不可逆任务设计为ObjectNav、地面VLN与具身评测提供标准范式；虽与UAV目标搜索无直接关联，但其语言条件任务评测思路可为主动搜索任务设计提供参照。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2105.11320",
+      "arxiv_id": "2105.11320",
+      "title": "SuMa++: Efficient LiDAR-based Semantic SLAM",
+      "authors": [
+        "Xieyuanli Chen",
+        "Andres Milioto",
+        "Emanuele Palazzolo",
+        "Philippe Giguère",
+        "Jens Behley",
+        "Cyrill Stachniss"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 514,
+      "url": "https://arxiv.org/abs/2105.11320",
+      "pdf_url": "https://arxiv.org/pdf/2105.11320",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "SuMa++在基于surfel的激光SLAM中引入逐点语义分割，构建带标签的语义地图，用于滤除动态物体并通过语义约束改进投影扫描匹配，在KITTI高速路段验证优于纯几何方法。",
+      "change_zh": "常见激光SLAM只依赖几何信息，动态车辆易污染建图与定位；SuMa++将语义真正融入SLAM闭环：用球面投影上的逐点语义构建带标签surfel地图，以语义约束加权扫描匹配残差并过滤动态物体，而非仅作建图后处理。",
+      "why_it_matters": "对状态估计与控制线是标志性的语义SLAM系统：语义地图与动态物体过滤提升高动态环境下定位建图鲁棒性，可为UAV搜索与ObjectNav提供带语义、抗动态干扰的空间底图，但论文本身不含导航决策成分。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "1811.10092",
+      "arxiv_id": "1811.10092",
+      "title": "Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation",
+      "authors": [
+        "Xin Eric Wang",
+        "Qiuyuan Huang",
+        "Aslı Çelikyılmaz",
+        "Jianfeng Gao",
+        "Dinghan Shen",
+        "Yuan-Fang Wang",
+        "William Yang Wang",
+        "Lei Zhang"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 511,
+      "url": "https://arxiv.org/abs/1811.10092",
+      "pdf_url": "https://arxiv.org/pdf/1811.10092",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "针对地面VLN的跨模态接地、反馈病态与泛化难题，提出RCM：匹配评论家提供内在奖励实现指令-轨迹全局对齐，SPL提升10%；自监督模仿学习SIL自仿好决策，缩小未见环境性能差距。",
+      "change_zh": "此前VLN主流是监督式序列到序列模仿，缺乏有效反馈信号。本文改用强化学习框架：以匹配评论家的内在奖励替代病态外部反馈，同时约束轨迹级全局匹配与局部视觉接地，并以自监督模仿在未见环境自我改进，直击泛化难题。",
+      "why_it_matters": "在地面VLN中用内在奖励强化跨模态接地，SPL较此前提升10%成为当时SOTA；匹配评论家与自模仿泛化为可借鉴范式，缩小已见/未见差距的思路对UAV目标搜索与ObjectNav的新环境泛化有参考价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 30,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
       "id": "2110.05113",
       "arxiv_id": "2110.05113",
       "title": "Learning high-speed flight in the wild",
@@ -3556,6 +3676,42 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2312.06741",
+      "arxiv_id": "2312.06741",
+      "title": "Gaussian Splatting SLAM",
+      "authors": [
+        "Hidenobu Matsuki",
+        "Riku Murai",
+        "Paul H. J. Kelly",
+        "Andrew J. Davison"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 485,
+      "url": "https://arxiv.org/abs/2312.06741",
+      "pdf_url": "https://arxiv.org/pdf/2312.06741",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "首个将3D高斯溅射用于单目SLAM的工作，以高斯作为唯一三维表示，统一跟踪、建图与高质量渲染，实时运行约3fps，可无缝扩展至RGB-D，并在新视角合成与轨迹估计上达到SOTA。",
+      "change_zh": "相比NeRF隐式表示SLAM及需离线SfM姿态的原始3DGS，本文让高斯成为在线SLAM的唯一表示：直接对高斯做优化以跟踪相机（收敛域宽且鲁棒），并利用显式几何进行验证与正则化，化解增量稠密重建中的歧义，还能重建细小与透明物体。",
+      "why_it_matters": "高斯表示的实时稠密SLAM为机器人自主提供了高质量、可渲染的三维感知底座，其显式地图可直接支撑UAV主动目标搜索与ObjectNav的环境理解与记忆，也促进主动感知与重建、sim2real等下游技术线的发展，是空域与地面具身导航的底层使能能力。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 28,
+      "keywords": [
+        "3d scene",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
       "id": "https://openalex.org/W4402716330",
       "arxiv_id": "2311.06607",
       "title": "Monkey: Image Resolution and Text Label are Important Things for Large Multi-Modal Models",
@@ -3670,6 +3826,118 @@
       "added_at": "2026-09-02T04:03:14Z"
     },
     {
+      "id": "1810.05687",
+      "arxiv_id": "1810.05687",
+      "title": "Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience",
+      "authors": [
+        "Yevgen Chebotar",
+        "Ankur Handa",
+        "Viktor Makoviychuk",
+        "Miles Macklin",
+        "Jan Issac",
+        "Nathan Ratliff",
+        "Dieter Fox"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings",
+      "citation_count": 455,
+      "url": "https://arxiv.org/abs/1810.05687",
+      "pdf_url": "https://arxiv.org/pdf/1810.05687",
+      "code_url": "",
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（Proceedings - IEEE International Conference on Robotics and Automation/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出在策略训练中穿插少量真机交互，自适应调整仿真参数随机化分布，使仿真与真机中的策略行为相匹配，并在摆动插销入孔和开抽屉两个真实任务上验证策略可跨机器人可靠迁移。",
+      "change_zh": "相比人工设定随机化范围的域随机化路线，本方法把仿真参数分布视为可优化对象，用少量真机轨迹在线更新仿真分布以缩小仿真与真机行为差距，实现闭环的自适应域随机化；摘要未给出具体优化算法细节。",
+      "why_it_matters": "该工作是真机与sim2real技术线的代表性方法，虽以操作任务为测试床，但其自适应随机化思想对UAV目标搜索与ObjectNav策略从仿真迁移到实机有直接借鉴价值，可用少量真机数据自动校准仿真分布、降低人工调参成本。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "real world"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "1806.00557",
+      "arxiv_id": "1806.00557",
+      "title": "CubeSLAM: Monocular 3-D Object SLAM",
+      "authors": [
+        "Shichao Yang",
+        "Sebastian Scherer"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 454,
+      "url": "https://arxiv.org/abs/1806.00557",
+      "pdf_url": "https://arxiv.org/pdf/1806.00557",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出单目立方体目标检测与物体SLAM联合优化方法：由2D框和消失点采样生成立方体假设并按边缘对齐打分，多视角BA联合优化相机位姿、物体与点，物体提供长程几何与尺度约束以减少单目漂移，并处理动态场景。",
+      "change_zh": "传统SLAM多将物体区域当外点剔除或仅作语义辅助，本文把立方体物体提升为一等路标，纳入多视角BA与相机位姿、特征点联合优化；动态物体不再抛弃，而以运动模型约束参与位姿估计，使3D检测与SLAM互相增益。",
+      "why_it_matters": "物体级SLAM将语义目标嵌入几何建图，是空间智能与ObjectNav物体级空间记忆的基础能力；对UAV主动目标搜索，立方体目标表示可提供长程几何与尺度约束、辅助远距目标发现，是状态估计与控制线的标志性系统工作。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "localization",
+        "odometry",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2312.02126",
+      "arxiv_id": "2312.02126",
+      "title": "SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM",
+      "authors": [
+        "Nikhil Keetha",
+        "Jay Karhade",
+        "Krishna Murthy Jatavallabhula",
+        "Gengshan Yang",
+        "Sebastian Scherer",
+        "Deva Ramanan",
+        "Jonathon Luiten"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 452,
+      "url": "https://arxiv.org/abs/2312.02126",
+      "pdf_url": "https://arxiv.org/pdf/2312.02126",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "SplaTAM 首次将显式 3D 高斯体积表示引入稠密 RGB-D SLAM，配合在线跟踪与轮廓掩码建模场景密度，在位姿估计、建图与新视角合成上较现有方法最高提升约 2 倍。",
+      "change_zh": "常见稠密 SLAM 多依赖神经隐式表示，优化慢且难以判断区域是否已建图；SplaTAM 改用显式 3D 高斯，带来快速渲染与稠密优化、快速查询已建图区域、地图结构化扩张等优势，提升单相机高保真重建能力。",
+      "why_it_matters": "SLAM 是 UAV 目标搜索与 ObjectNav 的定位建图底座；SplaTAM 的高保真显式高斯地图与快速渲染可支撑主动感知、在线建图与 sim2real 场景重建，为具身导航提供更精细的空间环境表示。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
       "id": "https://openalex.org/W4385431115",
       "arxiv_id": "2302.07241",
       "title": "ConceptFusion: Open-set multimodal 3D mapping",
@@ -3753,6 +4021,77 @@
       "added_at": "2026-09-02T06:05:40Z"
     },
     {
+      "id": "1711.03449",
+      "arxiv_id": "1711.03449",
+      "title": "Optimization-Based Collision Avoidance",
+      "authors": [
+        "Xiaojing Zhang",
+        "Alexander Liniger",
+        "Francesco Borrelli"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Control Systems Technology",
+      "citation_count": 443,
+      "url": "https://arxiv.org/abs/1711.03449",
+      "pdf_url": "https://arxiv.org/pdf/1711.03449",
+      "code_url": "https://github.com/XiaojingGeorgeZhang/OBCA",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "利用凸优化强对偶性，将不可微避碰约束精确重构为光滑可微约束，适用于凸集并集表示的障碍物与受控对象，支持通用梯度类轨迹优化，并在自动泊车中验证实时性与鲁棒性。",
+      "change_zh": "相比以符号距离近似避碰或采样式规划的传统路线，该文通过强对偶重构给出精确无近似的可微避碰约束，使通用梯度/海森类求解器可直接处理避碰轨迹优化，并支持碰撞不可避免时求最小侵入轨迹。",
+      "why_it_matters": "该方法是规划与控制社区广泛采用的避碰建模基础，为UAV目标搜索的目标接近段与ObjectNav的局部运动规划提供硬安全约束，可嵌入MPC实现实时避碰，对真机部署与sim2real亦有直接价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "trajectory planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "https://openalex.org/W2907916537",
+      "arxiv_id": "",
+      "title": "Autonomous Navigation of UAVs in Large-Scale Complex Environments: A Deep Reinforcement Learning Approach",
+      "authors": [
+        "Chao Wang",
+        "Jian Wang",
+        "Yuan Shen",
+        "Xudong Zhang"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "citation_count": 443,
+      "url": "https://doi.org/10.1109/tvt.2018.2890773",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出一种DRL无人机自主导航方法，将导航建模为POMDP，在actor-critic框架下基于两个严格证明的策略梯度定理设计在线算法，直接把原始传感数据映射为控制信号，并在虚拟大规模复杂环境中验证优于现有方法。",
+      "change_zh": "常见路线依赖SLAM或感知-避障的模块化管道，需先定位建图再规划；本文改为端到端学习：用带理论保证（两个策略梯度定理）的在线深度强化学习，将原始传感测量直接映射为导航控制信号，省去显式地图与定位模块。",
+      "why_it_matters": "对UAV空域自主有直接价值：端到端DRL导航控制可作为搜救、侦察等目标搜索任务的底层运动与避障能力，其POMDP建模与策略梯度理论对学习型导航控制器设计具参考意义；但仅点到点导航，未涉及目标语义或指令理解。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "aerial",
+        "localization",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
       "id": "https://openalex.org/W4401417422",
       "arxiv_id": "2310.07896",
       "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
@@ -3825,6 +4164,197 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "2003.01060",
+      "arxiv_id": "2003.01060",
+      "title": "D3VO: Deep Depth, Deep Pose and Deep Uncertainty for Monocular Visual Odometry",
+      "authors": [
+        "Nan Yang",
+        "Lukas von Stumberg",
+        "Rui Wang",
+        "Daniel Cremers"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 434,
+      "url": "https://arxiv.org/abs/2003.01060",
+      "pdf_url": "https://arxiv.org/pdf/2003.01060",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "D3VO在深度、位姿与不确定性三个层面引入深度网络：提出带亮度变换对齐的自监督单目深度网络，并将预测深度、位姿与光度不确定性紧耦合进直接法视觉里程计的前端跟踪与后端优化，在KITTI和EuRoC MAV上大幅超越传统单目VO。",
+      "change_zh": "相比将深度学习与几何VO割裂处理的常见路线，D3VO把网络输出的深度与位姿先验、以及学习到的像素级光度不确定性作为直接法光度残差的加权项，紧耦合进前端跟踪与后端非线性优化，使单相机达到接近双目/激光雷达里程计的精度。",
+      "why_it_matters": "单目位姿估计是UAV自主的核心能力：D3VO仅用单相机即在EuRoC MAV无人机数据集上媲美视觉惯性里程计，可为小型无人机目标搜索与导航提供轻量可靠的定位基础，也是学习与几何方法紧耦合的代表性范式，对状态估计与控制技术线有直接参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "odometry"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2103.00190",
+      "arxiv_id": "2103.00190",
+      "title": "Geometrically Constrained Trajectory Optimization for Multicopters",
+      "authors": [
+        "Zhepei Wang",
+        "Xin Zhou",
+        "Chao Xu",
+        "Fei Gao"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 433,
+      "url": "https://arxiv.org/abs/2103.00190",
+      "pdf_url": "https://arxiv.org/pdf/2103.00190",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "面向多旋翼提出几何与动态约束下的轨迹优化框架，基于控制量最小化的新最优性条件构建轨迹表示，用平滑映射精确消除几何约束，将约束规划转为可高效可靠求解的无约束优化，大量仿真与基准表明解质量高且速度领先。",
+      "change_zh": "区别于常见依赖ESDF梯度或软惩罚约束的规划路线，该工作从最优性条件出发设计可线性复杂度时空形变的新轨迹类，并以平滑映射精确消去几何约束、借助微分平坦逆映射解耦稠密约束评估，把带约束问题整体转为无约束优化，兼顾质量、速度与约束保真度。",
+      "why_it_matters": "高效高质量的多旋翼轨迹规划是UAV自主飞行与目标搜索的底层执行核心，直接决定无人机在复杂空域中接近目标、实时机动与机载算力受限下的性能上限，可为搜救侦察等上层导航决策提供可靠的运动生成层，并支撑真机部署的实时性要求。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "trajectory planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2308.00692",
+      "arxiv_id": "2308.00692",
+      "title": "LISA: Reasoning Segmentation via Large Language Model",
+      "authors": [
+        "Xin Lai",
+        "Zhuotao Tian",
+        "Yukang Chen",
+        "Yanwei Li",
+        "Yuhui Yuan",
+        "Shu Liu",
+        "Jiaya Jia"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 430,
+      "url": "https://arxiv.org/abs/2308.00692",
+      "pdf_url": "https://arxiv.org/pdf/2308.00692",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "LISA提出“推理分割”任务：依据隐式复杂文本输出分割掩码，通过扩展词表与embedding-as-mask范式让多模态大模型兼具语言生成与分割能力，并配套千余样本基准进行评测。",
+      "change_zh": "常见分割依赖显式指令或预定义类别；LISA改为解析隐式意图，让LLM先推理再以特殊token的隐藏嵌入直接解码掩码，把大模型推理与世界知识引入像素级定位，而非外接分割头的简单组合。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav价值间接：其打通LLM推理与像素级grounding，为按隐式语言描述发现并锁定目标提供范式参考；但属单幅2D任务，无空间记忆、动作与3D理解，用于具身导航仍需大量扩展。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2003.14338",
+      "arxiv_id": "2003.14338",
+      "title": "TartanAir: A Dataset to Push the Limits of Visual SLAM",
+      "authors": [
+        "Wenshan Wang",
+        "Delong Zhu",
+        "Xiangwei Wang",
+        "Yaoyu Hu",
+        "Yuheng Qiu",
+        "Chen Wang",
+        "Yafei Hu",
+        "Ashish Kapoor",
+        "Sebastian Scherer"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 427,
+      "url": "https://arxiv.org/abs/2003.14338",
+      "pdf_url": "https://arxiv.org/pdf/2003.14338",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "TartanAir在照片级仿真环境中大规模采集多模态数据，提供双目RGB、深度、光流、分割、位姿与激光点云等精确真值，并配套自动化采集流水线，用于考验视觉SLAM算法极限并为学习方法提供训练数据。",
+      "change_zh": "相比实车实机采集的KITTI等基准，改用照片级仿真加自动流水线，以可控成本获得大规模完美多模态真值，覆盖运动物体、光照天气变化与困难视角运动，并揭示在既有数据集上表现良好的SOTA算法在困难场景中明显退化。",
+      "why_it_matters": "为状态估计与控制线提供高影响力视觉SLAM基准与训练源：完美真值支持深度估计、位姿估计及导航相关学习的预训练，仿真采集天然关联sim2real研究；对UAV主动目标搜索与ObjectNav，可靠里程计建图与大规模训练数据是感知与运动控制的底座，属重要间接支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "real world",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2109.07982",
+      "arxiv_id": "2109.07982",
+      "title": "R 3 LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
+      "authors": [
+        "Jiarong Lin",
+        "Fu Zhang"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings",
+      "citation_count": 422,
+      "url": "https://arxiv.org/abs/2109.07982",
+      "pdf_url": "https://arxiv.org/pdf/2109.07982",
+      "code_url": "https://github.com/hku-mars/r31ive",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（Proceedings - IEEE International Conference on Robotics and Automation/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "R3LIVE提出LiDAR-惯性-视觉紧耦合的状态估计与建图框架，LIO子系统构建几何结构，VIO子系统最小化帧到地图光度误差为点云着色，实时重建精确稠密的RGB彩色三维地图并开源。",
+      "change_zh": "相比常见只恢复位姿的LIO/VIO融合系统，R3LIVE将VIO重构为帧到地图光度误差最小化，直接为几何地图点附加颜色，几何与纹理两子系统解耦并行，实现了实时精确稠密的彩色点云建图。",
+      "why_it_matters": "属于FAST-LIO系列延伸的高影响力状态估计系统，为机器人自主提供可靠位姿与彩色稠密地图这一平台级基础，可直接支撑无人机搜救侦察与目标搜索、主动感知重建及下游导航任务的真机部署。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 27,
+      "keywords": [
+        "odometry",
+        "state estimation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
     },
     {
       "id": "2107.00822",
@@ -3971,6 +4501,43 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T06:05:40Z"
+    },
+    {
+      "id": "2212.04088",
+      "arxiv_id": "2212.04088",
+      "title": "LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models",
+      "authors": [
+        "Chan Hee Song",
+        "Brian M. Sadler",
+        "Jiaman Wu",
+        "Wei‐Lun Chao",
+        "Clayton B. Washington",
+        "Yu Su"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "citation_count": 418,
+      "url": "https://arxiv.org/abs/2212.04088",
+      "pdf_url": "https://arxiv.org/pdf/2212.04088",
+      "code_url": "",
+      "topics": [
+        "规划智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE/CVF International Conference on Computer Vision (ICCV)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出LLM-Planner，利用大语言模型为具身智能体做少样本任务规划，并以物理接地增强LLM生成与更新贴合当前环境的计划；ALFRED上仅用不足0.5%配对数据即达到接近全量训练基线的性能。",
+      "change_zh": "相比依赖海量配对数据端到端训练策略的常见具身指令跟随路线，该方法改用预训练LLM少样本提示生成高层计划，并用简单有效的物理接地将计划绑定到当前视觉环境、支持动态更新，把数据需求压缩到千分之五以下，改变的是规划范式的数据效率。",
+      "why_it_matters": "作为LLM驱动具身任务规划的早期代表作，为规划智能体线提供了少样本规划加物理接地的范式；该思路可迁移到ObjectNav与UAV目标搜索中，用语言模型分解任务、依据环境反馈修正计划，缓解具身数据稀缺问题，虽未提出导航本身的新方法。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-13T17:23:02.911853+00:00"
     },
     {
       "id": "https://openalex.org/W4390494915",
@@ -10692,121 +11259,253 @@
       "rigor": 4,
       "reason": "属于综述论文，无实验设置、基线对比、消融与量化评测，方法严谨度未达收录门槛。",
       "excluded_at": "2026-10-12"
+    },
+    "2009.11277": {
+      "title": "Multi-Agent Deep Reinforcement Learning-Based Trajectory Planning for Multi-UAV Assisted Mobile Edge Computing",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "本质是UAV辅助移动边缘计算的通信网络优化工作，无人机轨迹仅作为提升通信覆盖与卸载性能的手段，不含目标搜索、导航决策或机器人自主核心能力，落入纯通信应用范围外。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W2996514457": {
+      "title": "Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges",
+      "relevance": 5,
+      "rigor": 4,
+      "reason": "综述聚焦机器人持续学习这一通用学习范式，未直接命中导航、空间智能、世界模型或智能体等收录技术线，且摘要层面未提供任何实验设置、基线对比或可复现验证。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W3036646185": {
+      "title": "Connecting Through Technology During the Coronavirus Disease 2019 Pandemic: Avoiding “Zoom Fatigue”",
+      "relevance": 1,
+      "rigor": 1,
+      "reason": "纯网络心理学领域编辑评论，讨论视频会议疲劳与疫情期远程社交连接，与具身导航、机器人自主、智能体与空间智能等收录技术线完全无关，且无实验方法可言。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W2797028887": {
+      "title": "Reinforcement Learning for UAV Attitude Control",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "仅将DDPG/TRPO/PPO等现成强化学习算法套用于四旋翼姿态内环控制并做仿真对比，属常规增量改进，无真机验证或公认系统影响力，未达状态估计与控制线的收录门槛。",
+      "excluded_at": "2026-10-13"
+    },
+    "2308.06767": {
+      "title": "A Survey on Deep Neural Network Pruning: Taxonomy, Comparison, Analysis, and Recommendations",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "神经网络剪枝/模型压缩综述属纯模型效率技术，与空域/地面导航、空间智能、具身智能体等收录技术线无实质关联，仅因提及LLM与多模态模型而术语擦边。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W3022871146": {
+      "title": "The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Treatment of Left-Sided Colonic Diverticulitis",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "属医学临床实践指南（左侧结肠憩室炎治疗），与具身导航、机器人自主、大模型与智能体等所有收录技术线完全无关。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W2997771882": {
+      "title": "Towards Scalable Multi-Domain Conversational Agents: The Schema-Guided Dialogue Dataset",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "这是纯NLP任务型对话数据集与对话状态跟踪工作，标题中的agents指语音助手对话代理而非具身智能体，与空间智能、导航、机器人自主均无关，属范围外。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W3012748253": {
+      "title": "Knowledge and Perceptions of COVID-19 Among the General Public in the United States and the United Kingdom: A Cross-sectional Online Survey",
+      "relevance": 0,
+      "rigor": 7,
+      "reason": "属公共卫生领域的新冠知识横断面在线问卷调查，与具身导航、机器人自主、空间智能或大模型智能体等全部十一条收录技术线完全无关。",
+      "excluded_at": "2026-10-13"
+    },
+    "2307.14334": {
+      "title": "Towards Generalist Biomedical AI",
+      "relevance": 2,
+      "rigor": 8,
+      "reason": "属于多模态大模型套用到医疗垂直领域的应用（医学问答、影像报告、基因变异检测），与空间智能、导航或机器人自主无关，属研究范围明确排除类别。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W2998701638": {
+      "title": "CRISP-DM Twenty Years Later: From Data Mining Processes to Data Science Trajectories",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "范围外：该文是数据科学项目管理与流程方法论研究，与具身导航、智能体或机器人自主各技术线均无实质关联。",
+      "excluded_at": "2026-10-13"
+    },
+    "2211.06687": {
+      "title": "Large-Scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation",
+      "relevance": 4,
+      "rigor": 7,
+      "reason": "研究对象是音频-语言对比预训练（音频检索与分类），不涉及空间、导航或机器人自主，也不属于范围所指的MLLM/VLM视觉-语言大模型主线，属范围外的音频多模态基础模型。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W3104615402": {
+      "title": "What drives FinTech adoption? A multi-method evaluation using an adapted technology acceptance model",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该文是基于TAM/UTAUT问卷与结构方程模型的金融科技用户采纳行为研究，与具身导航、空间智能、机器人自主等所有收录技术线均无关联，属范围外的金融领域应用调研。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W2911846900": {
+      "title": "Understanding autonomous vehicles: A systematic literature review on capability, impact, planning and policy",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该文为面向智慧城市与政策视角的自动驾驶系统性综述，不涉及具身导航、UAV/VLN、空间智能或所列任何技术线的方法与实验贡献。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W3016826426": {
+      "title": "Attention Based Vehicle Trajectory Prediction",
+      "relevance": 3,
+      "rigor": 6,
+      "reason": "属于自动驾驶中对邻车未来轨迹的行为预测任务，不涉及导航决策、空间智能或SLAM/控制等收录技术线，仅与'轨迹'术语相邻，超出研究范围。",
+      "excluded_at": "2026-10-13"
+    },
+    "https://openalex.org/W2938463073": {
+      "title": "Events-To-Video: Bringing Modern Computer Vision to Event Cameras",
+      "relevance": 4,
+      "rigor": 7,
+      "reason": "核心贡献是事件相机视频重建这一传感器图像处理任务，视觉惯性里程计仅为下游演示而非方法主体，与导航及状态估计核心问题仅术语擦边。",
+      "excluded_at": "2026-10-13"
     }
   },
   "last_citation_refresh": "2026-10-12T08:54:18.981295+00:00",
   "briefing": {
-    "text": "本批高被引集中于机器人状态估计与建图主线：紧耦合激光/视觉惯性里程计、语义SLAM与基准数据集构成主体，兼有四旋翼局部规划与LLM策略生成。首推LIO-SAM，因子图加IMU预积分的紧耦合设计使其成为后续里程计研究的标准对比基线；NICE-SLAM以分层神经隐式编码实现可扩展的稠密重建，开启NeRF与SLAM融合方向；Kimera在CPU上实时输出度量-语义3D网格，模块化开源，是语义SLAM研究的可靠起点。趋势上看，经典几何估计体系已趋成熟，增量正转向神经隐式表示与语言模型驱动的具身策略。",
-    "added": 12,
-    "at": "2026-10-12T19:36:34.117420+00:00",
+    "text": "本批经典沿三条主线展开：以语义地图与3D高斯为标志的SLAM表示演进、从指令跟随走向大模型规划的具身语言接地，以及轨迹优化、sim-to-real与深度强化学习支撑的运动决策。首推ALFRED，它以2.5万条自然语言指令与专家演示确立具身指令跟随的评测范式，是后续方法的共同参照；RCM用匹配评论家提供内在奖励并辅以自监督模仿，直指VLN跨模态接地与未见环境泛化难题，SPL提升10%；Gaussian Splatting SLAM则首度以高斯统一跟踪、建图与渲染，点燃了显式三维表示的建图方向。趋势上，大语言模型正由任务规划下沉至感知与地图构建，与可微优化加速融合。",
+    "added": 15,
+    "at": "2026-10-13T17:23:02.911853+00:00",
     "new": [
       {
-        "t": "LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping",
-        "u": "https://arxiv.org/abs/2007.00258",
-        "r": 8,
-        "g": 9,
-        "s": "提出基于因子图的紧耦合激光惯性里程计框架LIO-SAM，利用IMU预积分去畸变并提供初值，结合局部滑窗关键帧匹配实现移动机器人高精度实时的轨迹估计与建图。",
-        "c": "",
-        "cit": 2195
-      },
-      {
-        "t": "NICE-SLAM: Neural Implicit Scalable Encoding for SLAM",
-        "u": "https://arxiv.org/abs/2112.12130",
-        "r": 8,
-        "g": 9,
-        "s": "NICE-SLAM是基于神经隐式表示的稠密SLAM系统，通过分层场景表示融合多级局部信息，并利用预训练几何先验优化，在大规模室内场景实现更精细、可扩展且鲁棒的重建与跟踪。",
-        "c": "",
-        "cit": 821
-      },
-      {
-        "t": "Robust and Efficient Quadrotor Trajectory Generation for Fast Autonomous Flight",
-        "u": "https://arxiv.org/abs/1907.01531",
-        "r": 8,
-        "g": 7,
-        "s": "本文提出面向三维复杂环境快速自主飞行的四旋翼运动规划系统，先以运动动力学搜索得到安全最小时间初始轨迹，再经B样条优化提升平滑与安全裕度，最后用迭代时间调整保证轨迹动力学可行。",
-        "c": "",
-        "cit": 746
-      },
-      {
-        "t": "KITTI-360: A Novel Dataset and Benchmarks for Urban Scene Understanding in 2D and 3D",
-        "u": "https://arxiv.org/abs/2109.13410",
-        "r": 7,
-        "g": 8,
-        "s": "KITTI-360是KITTI继任数据集，含15万余图像和10亿3D点，提供2D/3D一致的语义实例标注与精确定位，并为语义场景理解、新视角合成和语义SLAM等建立基准与基线。",
-        "c": "",
-        "cit": 735
-      },
-      {
-        "t": "Code as Policies: Language Model Programs for Embodied Control",
-        "u": "https://arxiv.org/abs/2209.07753",
-        "r": 7,
-        "g": 7,
-        "s": "本文提出Code as Policies，让代码生成LLM经少样本提示将自然语言指令合成为机器人策略代码，调用感知与控制API实现反应式及航点轨迹式策略，并在多真机平台演示。",
-        "c": "",
-        "cit": 717
-      },
-      {
-        "t": "OpenVINS: A Research Platform for Visual-Inertial Estimation",
-        "u": "https://doi.org/10.1109/icra40945.2020.9196524",
+        "t": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+        "u": "https://arxiv.org/abs/1912.01734",
         "r": 8,
         "g": 8,
-        "s": "本文开源视觉惯性估计平台OpenVINS，集成流形滑窗卡尔曼滤波、在线内外参与时延标定、SLAM路标FEJ处理、模块化状态系统、仿真与评测工具，并经与主流开源算法对比验证性能。",
+        "s": "ALFRED是具身指令跟随基准，在交互式视觉环境中提供2.5万条自然语言指令与专家演示，要求智能体结合第一视角视觉，将高层目标与低级指令映射为完成家务任务的动作序列。",
         "c": "",
-        "cit": 679
+        "cit": 525
       },
       {
-        "t": "BARF: Bundle-Adjusting Neural Radiance Fields",
-        "u": "https://arxiv.org/abs/2104.06405",
+        "t": "SuMa++: Efficient LiDAR-based Semantic SLAM",
+        "u": "https://arxiv.org/abs/2105.11320",
         "r": 7,
-        "g": 7,
-        "s": "BARF在相机位姿不准或未知时联合学习NeRF三维表示并配准相机帧，建立与经典图像对齐的理论联系，证明由粗到细配准适用且位置编码有碍配准，实验显示可同时优化表示并消除大位姿偏差。",
+        "g": 8,
+        "s": "SuMa++在基于surfel的激光SLAM中引入逐点语义分割，构建带标签的语义地图，用于滤除动态物体并通过语义约束改进投影扫描匹配，在KITTI高速路段验证优于纯几何方法。",
         "c": "",
-        "cit": 625
+        "cit": 514
       },
       {
-        "t": "Kimera: an Open-Source Library for Real-Time Metric-Semantic Localization and Mapping",
-        "u": "https://arxiv.org/abs/1910.02490",
+        "t": "Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/1811.10092",
+        "r": 10,
+        "g": 8,
+        "s": "针对地面VLN的跨模态接地、反馈病态与泛化难题，提出RCM：匹配评论家提供内在奖励实现指令-轨迹全局对齐，SPL提升10%；自监督模仿学习SIL自仿好决策，缩小未见环境性能差距。",
+        "c": "",
+        "cit": 511
+      },
+      {
+        "t": "Gaussian Splatting SLAM",
+        "u": "https://arxiv.org/abs/2312.06741",
         "r": 9,
-        "g": 9,
-        "s": "开源C++实时度量-语义视觉惯性SLAM库，模块化设计含VIO、位姿图优化、3D网格重建与稠密度量-语义重建四模块，可在CPU上实时输出语义标注的3D网格。",
+        "g": 8,
+        "s": "首个将3D高斯溅射用于单目SLAM的工作，以高斯作为唯一三维表示，统一跟踪、建图与高质量渲染，实时运行约3fps，可无缝扩展至RGB-D，并在新视角合成与轨迹估计上达到SOTA。",
         "c": "",
-        "cit": 605
+        "cit": 485
       },
       {
-        "t": "LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping",
-        "u": "https://arxiv.org/abs/2104.10831",
+        "t": "Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience",
+        "u": "https://arxiv.org/abs/1810.05687",
+        "r": 7,
+        "g": 7,
+        "s": "提出在策略训练中穿插少量真机交互，自适应调整仿真参数随机化分布，使仿真与真机中的策略行为相匹配，并在摆动插销入孔和开抽屉两个真实任务上验证策略可跨机器人可靠迁移。",
+        "c": "",
+        "cit": 455
+      },
+      {
+        "t": "CubeSLAM: Monocular 3-D Object SLAM",
+        "u": "https://arxiv.org/abs/1806.00557",
+        "r": 8,
+        "g": 9,
+        "s": "提出单目立方体目标检测与物体SLAM联合优化方法：由2D框和消失点采样生成立方体假设并按边缘对齐打分，多视角BA联合优化相机位姿、物体与点，物体提供长程几何与尺度约束以减少单目漂移，并处理动态场景。",
+        "c": "",
+        "cit": 454
+      },
+      {
+        "t": "SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM",
+        "u": "https://arxiv.org/abs/2312.02126",
         "r": 8,
         "g": 8,
-        "s": "LVI-SAM提出基于因子图的紧耦合激光-视觉-惯性里程计，视觉惯性与激光惯性两个子系统相互辅助初始化、深度提取与回环优化，单子系统失效时仍可运行，并在多平台多环境数据集上验证了高精度与鲁棒性。",
+        "s": "SplaTAM 首次将显式 3D 高斯体积表示引入稠密 RGB-D SLAM，配合在线跟踪与轮廓掩码建模场景密度，在位姿估计、建图与新视角合成上较现有方法最高提升约 2 倍。",
         "c": "",
-        "cit": 594
+        "cit": 452
       },
       {
-        "t": "Tightly Coupled 3D Lidar Inertial Odometry and Mapping",
-        "u": "https://arxiv.org/abs/1904.06993",
+        "t": "Optimization-Based Collision Avoidance",
+        "u": "https://arxiv.org/abs/1711.03449",
+        "r": 7,
+        "g": 8,
+        "s": "利用凸优化强对偶性，将不可微避碰约束精确重构为光滑可微约束，适用于凸集并集表示的障碍物与受控对象，支持通用梯度类轨迹优化，并在自动泊车中验证实时性与鲁棒性。",
+        "c": "https://github.com/XiaojingGeorgeZhang/OBCA",
+        "cit": 443
+      },
+      {
+        "t": "Autonomous Navigation of UAVs in Large-Scale Complex Environments: A Deep Reinforcement Learning Approach",
+        "u": "https://doi.org/10.1109/tvt.2018.2890773",
         "r": 7,
         "g": 6,
-        "s": "提出紧耦合激光-IMU里程计，将激光与IMU测量纳入统一代价函数联合优化，在激光退化与快速运动下按IMU频率输出高精度位姿，并以旋转约束精化算法把位姿进一步对齐全局地图。",
+        "s": "本文提出一种DRL无人机自主导航方法，将导航建模为POMDP，在actor-critic框架下基于两个严格证明的策略梯度定理设计在线算法，直接把原始传感数据映射为控制信号，并在虚拟大规模复杂环境中验证优于现有方法。",
         "c": "",
-        "cit": 574
+        "cit": 443
       },
       {
-        "t": "PL-SLAM: A Stereo SLAM System Through the Combination of Points and Line Segments",
-        "u": "https://doi.org/10.1109/tro.2019.2899783",
+        "t": "D3VO: Deep Depth, Deep Pose and Deep Uncertainty for Monocular Visual Odometry",
+        "u": "https://arxiv.org/abs/2003.01060",
         "r": 7,
         "g": 8,
-        "s": "PL-SLAM提出融合点与线段特征的双目视觉SLAM系统，在视觉里程计、关键帧选择、BA与回环检测全流程统一利用两类特征，低纹理场景下更鲁棒，在EuRoC与KITTI上实时运行并开源。",
+        "s": "D3VO在深度、位姿与不确定性三个层面引入深度网络：提出带亮度变换对齐的自监督单目深度网络，并将预测深度、位姿与光度不确定性紧耦合进直接法视觉里程计的前端跟踪与后端优化，在KITTI和EuRoC MAV上大幅超越传统单目VO。",
         "c": "",
-        "cit": 559
+        "cit": 434
       },
       {
-        "t": "EGO-Planner: An ESDF-Free Gradient-Based Local Planner for Quadrotors",
-        "u": "https://arxiv.org/abs/2008.08835",
-        "r": 8,
-        "g": 9,
-        "s": "EGO-Planner提出免ESDF的四旋翼局部规划器，以无碰撞引导路径构造碰撞项，仅提取必要障碍信息以大幅降低计算量，辅以时间重分配与各向异性拟合保证可行性，基准与真机验证有效。",
+        "t": "Geometrically Constrained Trajectory Optimization for Multicopters",
+        "u": "https://arxiv.org/abs/2103.00190",
+        "r": 7,
+        "g": 8,
+        "s": "面向多旋翼提出几何与动态约束下的轨迹优化框架，基于控制量最小化的新最优性条件构建轨迹表示，用平滑映射精确消除几何约束，将约束规划转为可高效可靠求解的无约束优化，大量仿真与基准表明解质量高且速度领先。",
         "c": "",
-        "cit": 545
+        "cit": 433
+      },
+      {
+        "t": "LISA: Reasoning Segmentation via Large Language Model",
+        "u": "https://arxiv.org/abs/2308.00692",
+        "r": 7,
+        "g": 8,
+        "s": "LISA提出“推理分割”任务：依据隐式复杂文本输出分割掩码，通过扩展词表与embedding-as-mask范式让多模态大模型兼具语言生成与分割能力，并配套千余样本基准进行评测。",
+        "c": "",
+        "cit": 430
+      },
+      {
+        "t": "TartanAir: A Dataset to Push the Limits of Visual SLAM",
+        "u": "https://arxiv.org/abs/2003.14338",
+        "r": 7,
+        "g": 8,
+        "s": "TartanAir在照片级仿真环境中大规模采集多模态数据，提供双目RGB、深度、光流、分割、位姿与激光点云等精确真值，并配套自动化采集流水线，用于考验视觉SLAM算法极限并为学习方法提供训练数据。",
+        "c": "",
+        "cit": 427
+      },
+      {
+        "t": "R 3 LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package",
+        "u": "https://arxiv.org/abs/2109.07982",
+        "r": 8,
+        "g": 8,
+        "s": "R3LIVE提出LiDAR-惯性-视觉紧耦合的状态估计与建图框架，LIO子系统构建几何结构，VIO子系统最小化帧到地图光度误差为点云着色，实时重建精确稠密的RGB彩色三维地图并开源。",
+        "c": "https://github.com/hku-mars/r31ive",
+        "cit": 422
+      },
+      {
+        "t": "LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models",
+        "u": "https://arxiv.org/abs/2212.04088",
+        "r": 8,
+        "g": 7,
+        "s": "提出LLM-Planner，利用大语言模型为具身智能体做少样本任务规划，并以物理接地增强LLM生成与更新贴合当前环境的计划；ALFRED上仅用不足0.5%配对数据即达到接近全量训练基线的性能。",
+        "c": "",
+        "cit": 418
       }
     ]
   }
