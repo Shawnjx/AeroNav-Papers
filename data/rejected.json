@@ -1,12 +1,4 @@
 {
-  "2608.09515": {
-    "title": "Tether-Inertial Localization for Planetary Drones",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "核心贡献是系绳无人机的定位与状态估计（解析悬链线建模+高斯过程残差补偿），不属于UAV目标搜索、aerial VLN或所列具身基础能力技术线，仅与UAV术语擦边。",
-    "rejected_at": "2026-09-01",
-    "url": "https://arxiv.org/abs/2608.09515"
-  },
   "2608.26011": {
     "title": "Phantom Navigator: Stealthy and Precise Unmanned Aerial Vehicle Redirection with Real-Time Tracking and GPS Spoofing",
     "relevance": 3,
@@ -2358,5 +2350,53 @@
     "reason": "该工作是把LLM智能体套用于销售对话垂直领域的评测基准，与空间感知、导航、机器人及具身任务均无关，按收录范围条款拒绝。",
     "rejected_at": "2026-10-13",
     "url": "https://arxiv.org/abs/2610.12975"
+  },
+  "2610.18564": {
+    "title": "Observation Quality in DSM-Assisted Aerial Localization: A Benchmark and Base-Anchored Uncertainty Calibration",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属DSM辅助航空定位的观测协方差校准与基准研究，为常规增量改进：增益小幅、仅在已见地点的查询集上验证，导航收益与真实时间累积未测，按状态估计线的落地影响力标准不足以收录。",
+    "rejected_at": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.18564"
+  },
+  "2610.17762": {
+    "title": "Autonomous 3D Visual-Thermal Inspection for Utility-Scale Solar Farms",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "面向光伏电站巡检的垂直应用系统，核心是组合现成LiDAR惯性SLAM、标定RGB-热成像与检测分割模型，未涉及导航决策、主动目标搜索策略或感知算法本身的实质创新，仅与建图/重建术语边缘相关。",
+    "rejected_at": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.17762"
+  },
+  "2610.15122": {
+    "title": "Targeting the Right Situations: Mutation Testing of Fuzzy-Powered Situation Hyperspace",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "核心贡献是UAV软件的变异测试与模糊风险引导场景生成，属软件安全验证方法学，不在导航、空间智能、状态估计等收录技术线内。",
+    "rejected_at": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.15122"
+  },
+  "2610.18123": {
+    "title": "MARTS: A Modular Agricultural Robot for Targeted Spraying of Diseased Tomato Plants in Greenhouses",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "温室农业机械臂精准喷洒系统，核心贡献为末端执行、控制与系统集成，无目标搜索或导航决策成分，属机械臂操作垂直应用，超出收录范围。",
+    "rejected_at": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.18123"
+  },
+  "2610.18822": {
+    "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心是灵巧手操作演示数据的生成（双手操作轨迹、重定向与RL复现），属被明确排除的机械臂操作/VLA范畴且不含导航决策成分，HOI重建仅为实现手段而非主动感知贡献。",
+    "rejected_at": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.18822"
+  },
+  "2610.18688": {
+    "title": "RSIgen: Reciprocal Self-Improvement for Agentic Visual Generation",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "核心任务是智能体化视觉生成（文生图方向），不涉及空间、导航或机器人，属于收录范围明确排除的文生图类别，其'agent'角色只是生成模型内部的理解模块。",
+    "rejected_at": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.18688"
   }
 }

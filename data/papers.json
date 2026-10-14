@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T17:21:44.015796+00:00",
+  "updated_at": "2026-10-14T09:39:46.160779+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -287,6 +287,53 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2610.14702",
+      "arxiv_id": "2610.14702",
+      "title": "BGC-Nav: Cross-Altitude Multi-UAV Collaborative Navigation via Belief-Guided Coupling",
+      "authors": [
+        "Jiuwu Hao",
+        "Yueyang Wu",
+        "Liguo Sun",
+        "Haolin Song",
+        "Zao Zhang",
+        "Pin Lv"
+      ],
+      "published": "2026-10-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.14702",
+      "pdf_url": "https://arxiv.org/pdf/2610.14702",
+      "code_url": "https://github.com/uestchjw/BGC-Nav",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "BGC-Nav提出免训练的跨高度多无人机协作导航框架：高空机维护全局信念记忆，通过局部穷尽记忆、局部吸引增强与方向信念先验，以建议性偏置引导低空机自主决策，在ESARBench上超越SOTA单机与协作方法。",
+      "change_zh": "常见多机协作导航依赖精确目标定位与刚性目标分发，把高空观测当确定指令执行；本文改为将高空信念作为任务条件化先验，仅以建议性软耦合方式注入低空决策，保留低空探索自主性并容忍高空观测不确定性，且完全免训练。",
+      "why_it_matters": "该工作直击户外搜救中单机部分可观测的核心难题，其跨高度信念引导软耦合范式可直接用于UAV主动目标搜索的多机协同（搜救、侦察目标发现与接近），对ObjectNav等目标导航中的分层引导与不确定性建模亦有借鉴，免训练设计利于真机落地。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航, 多无人机协作, 跨高度协作, 信念引导耦合, 免训练框架",
+      "question_zh": "如何在户外搜救场景中克服部分可观测性与高空观测不确定性，实现高低空多无人机在视觉语言导航中的鲁棒协作？",
+      "innovation_zh": "提出免训练的信念引导耦合框架：高空无人机以全局信念记忆编码任务条件先验，低空无人机经LEM、LAA与DBP将其作为咨询性偏置（而非刚性指令）融入决策，兼顾观测不确定性与低空探索自主性。",
+      "dataset_zh": "ESARBench基准",
+      "results_zh": "在ESARBench上的大量实验表明，BGC-Nav持续优于当前最先进的单智能体与协作导航方法；摘要未提及具体量化指标数字。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-10-14T09:22:35.718169+00:00"
     },
     {
       "id": "2610.13122",
@@ -1934,6 +1981,109 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.18093",
+      "arxiv_id": "2610.18093",
+      "title": "LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction",
+      "authors": [
+        "Jun Tian",
+        "Hao Wu",
+        "Ruo Chen",
+        "Yili Liao",
+        "Hongyi Lin",
+        "Jincheng Yu",
+        "Chao Li",
+        "Yingjie Niu"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18093",
+      "pdf_url": "https://arxiv.org/pdf/2610.18093",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LynxScenes是基于LYNX M20轮腿机器人采集的大规模真实数据集，含约10万段导航片段与330万标注帧，覆盖指令轨迹预测、BEV感知、未来场景预测与多视图重建四项任务。",
+      "change_zh": "相比常见单任务孤立数据集路线，它在真实轮腿平台上同时提供感知、导航、想象与重建的稠密监督，将三层导航指令与未来轨迹对齐，并用伪闭环评测在模仿误差之外衡量安全性、进展与指令遵循。",
+      "why_it_matters": "它为地面VLN、世界模型与具身评测提供真机大规模监督，其伪闭环评测思路可迁移至ObjectNav与UAV目标搜索的安全性与任务完成评估；鱼眼+双激光雷达真机数据也助力Sim2Real与主动感知研究。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "轮腿机器人, 大规模真实世界基准, BEV感知, 轨迹预测, 未来场景预测, 场景重建",
+      "question_zh": "如何构建真实世界大规模数据集，以同时支持户外轮腿机器人的感知、导航、未来场景预测与场景重建的联合研究？",
+      "innovation_zh": "相比孤立支持单项能力、缺乏真实轮腿平台稠密监督的已有数据集，本数据集由真实轮腿机器人同步采集，提供稠密3D框、道路结构与三层导航指令标注，支持四项任务，并引入日志回放伪闭环评估器。",
+      "dataset_zh": "自建LynxScenes真实数据集：由LYNX M20轮腿机器人搭载四路鱼眼相机、双激光雷达、IMU、里程计与机器人状态同步采集，含约10万段30秒导航片段",
+      "results_zh": "数据集含约10万段30秒片段，覆盖833.6小时、3294.7公里、300万标注帧；标注含2082万个27类3D框与1389万道路结构标注；评测代表性导航、感知、世界模型与重建方法，显示近距离户外导航仍存显著挑战。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "odometry"
+      ],
+      "added_at": "2026-10-14T09:27:41.634678+00:00"
+    },
+    {
+      "id": "2610.18307",
+      "arxiv_id": "2610.18307",
+      "title": "I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation",
+      "authors": [
+        "Zhengjie Shu",
+        "Wanyu Li",
+        "Di Xiao",
+        "Lingxin Jiang",
+        "Lai Jiang",
+        "Kaidi Hu",
+        "Xincheng Tang",
+        "Wenkang Hu",
+        "Haoran Wang",
+        "Jinchuan Zhang",
+        "Chang Chen",
+        "Wei Li",
+        "Jia Pan",
+        "Ruigang Yang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18307",
+      "pdf_url": "https://arxiv.org/pdf/2610.18307",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "I2O2I-Nav是室内-室外-室内长程导航的物理仿真基准，覆盖20个真实组合场景、超11.5万平方米，含三级评测与阶段条件指标，并提出以完成验证、阶段交接和受限恢复协调冻结策略的MODULAR-Agent。",
+      "change_zh": "常见基准只评测孤立阶段或部分跨域旅程；该工作让每阶段从上一阶段真实终点出发，评测异构导航能力的连续组合执行，并用阶段条件指标定位失败环节；智能体侧以完成验证、交接与受限恢复协调冻结策略，替代固定策略链，使全程成功率从1.15%升至4.02%。",
+      "why_it_matters": "为ObjectNav与长程任务组合提供室内外贯通的连续执行评测场，阶段条件指标能定位组合失败点，并揭示最终目标导航阶段条件成功率仍低的瓶颈，对异构导航策略组合与配送机器人落地有直接评测价值；其阶段化组合评测思路对UAV跨域搜救任务设计亦有借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "具身导航, 长时程导航, 室内外复合导航, 基准测试, 模块化智能体, 3DGS渲染",
+      "question_zh": "如何评估服务机器人在连续执行下跨越室内外环境的长时程复合导航能力？",
+      "innovation_zh": "提出I2O2I-Nav基准，支持从独立原语到完整四阶段I2O2I任务的连续组合评估，各阶段从前一阶段实际终点出发；并提出MODULAR-Agent，通过完成验证、阶段交接与有界恢复来协调冻结导航策略。",
+      "dataset_zh": "自建物理仿真基准I2O2I-Nav：20个真实世界复合场景，覆盖超115,000平方米、多建筑多楼层，含3DGS渲染与对齐碰撞几何；评估基于1,374个episode",
+      "results_zh": "在1,374个episode上，MODULAR-Agent单项原语成功率达40.5-76%，但完整I2O2I任务成功率仍低；相比固定策略链，I2O与O2I成功率翻倍以上，完整任务成功率从1.15%升至4.02%；最终物体导航阶段的条件成功率仍低。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry"
+      ],
+      "added_at": "2026-10-14T09:29:27.246313+00:00"
+    },
+    {
       "id": "2610.12368",
       "arxiv_id": "2610.12368",
       "title": "LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild",
@@ -3501,6 +3651,207 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.18792",
+      "arxiv_id": "2610.18792",
+      "title": "SEAR: Self-Evolving Agentic Robotics",
+      "authors": [
+        "Xinyi Wang",
+        "Bangzheng Li",
+        "Hanyu Wang",
+        "Lin Zhang",
+        "Andrea Yaoyun Cui",
+        "Zhenggang Tang",
+        "Shyamal Buch",
+        "Dejia Xu"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18792",
+      "pdf_url": "https://arxiv.org/pdf/2610.18792",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SEAR提出自进化具身智能体框架与基准，让大模型智能体以代码即策略、在线控制、自动微调VLA三种方式自我改进，并用对照实验区分真实学习与重复尝试，覆盖330个仿真与5个真机任务。",
+      "change_zh": "相比常见只展示智能体成功案例的路线，SEAR把自我进化本身作为测量对象：用对照设计剥离重复尝试、更大预算与运气的影响，量化所学经验能否跨任务、跨仿真器并迁移到真机，并系统比较三种进化模式。",
+      "why_it_matters": "对具身智能体与评测线有直接价值：其区分'真学习'与'多试一次'的对照范式，可检验UAV搜索与ObjectNav智能体的技能记忆是否真有效；控制代码可跨任务迁移的结论，也支持导航智能体积累可复用技能。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "keywords_zh": "自进化智能体机器人, 语言模型智能体, 代码即策略, 具身智能, 基准测试, 视觉-语言-动作模型",
+      "question_zh": "语言模型智能体机器人是否真正从经验中学习而非仅靠多次尝试，所学内容能否迁移到新任务、新仿真器与真机？",
+      "innovation_zh": "提出SEAR框架与基准，涵盖代码即策略、智能体即策略与自动微调VLA模型三种模式，并设计对照实验分离保留经验与重复尝试、熟悉任务、特权仿真状态、更大预算及运气的影响。",
+      "dataset_zh": "自建基准：330个仿真任务与5个真机物理任务，评测7个前沿语言模型，累计超过4年智能体运行时间；具体仿真器与真机平台名称未提及。",
+      "results_zh": "学习曲线取决于总时间预算与任务相对模型能力的难度；控制代码与共享例程可跨任务与仿真器迁移而任务特定方案不能，真机上智能体设计练习与人类新颖场景间存在性能差距；不同模型进化方式各异，纯文本模型可媲美多模态模型。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "real robot"
+      ],
+      "added_at": "2026-10-14T09:31:10.227553+00:00"
+    },
+    {
+      "id": "2610.18355",
+      "arxiv_id": "2610.18355",
+      "title": "ABot-ER: Unified Embodied Reasoning through Agentic Data-Model Co-Evolution",
+      "authors": [
+        "Qiuyu Ding",
+        "Heng-Da Xu",
+        "Changda Xia",
+        "Jiajun Shen",
+        "Zihao Guan",
+        "Zhengchen Yuan",
+        "Jianfang Zhang",
+        "Di Yang",
+        "Jiayi Tian",
+        "Yuting Xu",
+        "Fei Wang",
+        "Shiao Liu",
+        "Wei Zhang",
+        "Xiaolong Wu",
+        "Wenbin Tang",
+        "Zedong Chu",
+        "Mu Xu"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18355",
+      "pdf_url": "https://arxiv.org/pdf/2610.18355",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ABot-ER是一个统一的具身推理基础模型，以智能体式数据-模型自进化引擎和任务条件化低秩残差训练，在感知、规划、执行三类能力上覆盖12个基准并取得整体SOTA。",
+      "change_zh": "相比分别训练专家模型或牺牲深度换通用的常见路线，该工作用智能体引擎让数据策略随模型能力状态持续进化，并以任务token激活共享骨干上的低秩残差，兼顾异构输出与共享具身知识，实现广度与深度并存。",
+      "why_it_matters": "其统一的空间、场景、时序推理与长时程规划、点级定位能力，正是ObjectNav目标搜索与UAV侦察接近所需的核心感知决策基础；自进化数据引擎也为导航智能体规模化训练提供新范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "具身推理, 具身智能, 统一基础模型, 数据-模型自进化, 任务条件化训练, 低秩残差",
+      "question_zh": "如何在单一统一模型中同时实现具身推理的广度与专家级深度，即让感知、规划与执行三类能力均达到专用模型水平。",
+      "innovation_zh": "区别于在广度与深度间取舍的已有方法，提出智能体数据-模型自进化引擎，随模型能力状态持续调整数据策略；并以任务条件化训练策略，用任务token激活共享骨干上的轻量低秩残差，隔离异构输出更新同时保留共享具身知识。",
+      "dataset_zh": "未提及具体数据集与平台名称，摘要仅说明在覆盖三项核心能力与五个能力维度的十二个基准上评测",
+      "results_zh": "在覆盖感知、规划、执行三项核心能力与五个能力维度的十二个基准上系统评测，ABot-ER在统一参数化框架内取得最先进（SOTA）的整体性能，证明具身推理中广度与深度可以共存。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation"
+      ],
+      "added_at": "2026-10-14T09:32:27.728957+00:00"
+    },
+    {
+      "id": "2610.18135",
+      "arxiv_id": "2610.18135",
+      "title": "SkipWorld: Latent Skip Planning with Distilled World Models for Efficient Visual Navigation",
+      "authors": [
+        "Yifei Yang",
+        "Zehua Fan",
+        "Zike Yan",
+        "Zhongyu Li",
+        "Yan Wang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18135",
+      "pdf_url": "https://arxiv.org/pdf/2610.18135",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SkipWorld针对世界模型导航中长时域推演开销大、训练与闭环推理不匹配的问题，提出潜在空间递归自推训练、蒸馏可直接长跨度预测的跳跃世界模型，并用先粗筛后精排的双模型规划器，在RECON等四个数据集上较NWM降低误差且规划提速2.7倍。",
+      "change_zh": "常见世界模型导航（如NWM）对每条候选逐步推演，且训练用真值历史而部署时闭环自推。本文改为潜在递归自推训练以对齐闭环推理，再蒸馏跳跃模型直接预测远期状态粗筛候选、由强自回归模型精排，把全量逐步精算改为选择性精算，显著压缩推演冗余。",
+      "why_it_matters": "直接推进『用于导航与规划的世界模型』技术线：缓解训练-闭环失配与多候选推演的计算瓶颈，使世界模型规划更接近可部署。其跳跃预测与粗筛-精排两级策略可迁移到UAV主动目标搜索与ObjectNav中候选动作序列的快速评估，降低长时域规划延迟。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "世界模型,视觉导航,跳步预测,知识蒸馏,潜在空间,轨迹规划",
+      "question_zh": "如何解决世界模型长时域逐步滚动预测计算开销大、训练与闭环推理不匹配的问题，实现高效视觉导航？",
+      "innovation_zh": "提出SkipWorld框架：Latent AutoRoll在潜在空间递归滚动训练世界模型，减小训练与闭环推理差异；SkipDistill将自回归模型蒸馏为可直接预测大步长未来潜在状态的跳步模型；规划时先用跳步模型粗筛候选轨迹，再用自回归模型精排，兼顾精度与效率。",
+      "dataset_zh": "RECON、HuRoN、SCAND、TartanDrive数据集",
+      "results_zh": "在四个数据集上，相比NWM，SkipWorld将平均ATE降低4.2%、RPE降低2.7%，规划时间减少62.4%并实现2.7倍加速，在保持轨迹评估精度的同时显著减少冗余滚动计算。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-14T09:35:51.331852+00:00"
+    },
+    {
+      "id": "2610.18861",
+      "arxiv_id": "2610.18861",
+      "title": "Hybrid Reasoning Agents",
+      "authors": [
+        "Jiaru Zou",
+        "Yunzhe Qi",
+        "Sirui Chen",
+        "Federico Bianchi",
+        "Shang Zhu",
+        "Pan Lu",
+        "Jingrui He",
+        "James Zou"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "pdf_url": "https://arxiv.org/pdf/2610.18861",
+      "code_url": "https://github.com/togethercomputer/HybridAgent",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出HybridAgents，使智能体在生成中动态切换潜空间推理与文本交互，经HybridSFT/HybridRL后训练，11个基准上提升10.4%并大幅降低token与推理成本。",
+      "change_zh": "常见智能体纯文本推理与交互，潜空间推理高效但缺工具与透明性；该文在统一生成中让两者动态切换，用HybridSFT/HybridRL学会何时潜思考、何时文本行动，并以连续工作记忆无损保留混合上下文。",
+      "why_it_matters": "其省token、提速降本与何时潜思考/何时文本行动的可学切换，可迁移到机载算力受限的UAV目标搜索决策与长程ObjectNav/VLN规划，透明推理也便于真机部署调试，是智能体底座的重要进展。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "混合推理智能体, 潜空间推理, 大语言模型, 强化学习, 工具调用, 后训练",
+      "question_zh": "如何构建既能超越文本语言在潜空间中高效推理、又能通过文本与外部环境交互和调用工具的智能体？",
+      "innovation_zh": "提出HybridAgent，在统一生成过程中动态切换潜空间推理与文本交互；轻量HybridLink实现两模式无缝转换，连续工作记忆跨轮无损保留混合上下文；并提出HybridSFT与HybridRL后训练算法，学习何时潜思考、何时文本行动。",
+      "dataset_zh": "在3个模型规模上评估，覆盖数学、科学、医学、搜索和智能体推理的11个基准测试（具体数据集名称未提及）",
+      "results_zh": "与前沿LLM智能体及涵盖文本与潜空间方法的各类智能体框架相比，HybridAgent性能一致提升10.4%，同时实现35.5%-54.7%的token减少、1.8x-2.6x的推理加速以及2.7x-3.7x的成本节省。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "llm agent"
+      ],
+      "added_at": "2026-10-14T09:37:42.504553+00:00"
     },
     {
       "id": "2610.13832",
@@ -5397,6 +5748,58 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.18381",
+      "arxiv_id": "2610.18381",
+      "title": "Benchmarking Interaction-Oriented Aerial Mobility across Heterogeneous Environments",
+      "authors": [
+        "Zhibo Duan",
+        "Hanlin Kong",
+        "Tianran Ma",
+        "Yuze Wu",
+        "Yuxuan Xu",
+        "Kenghou Hoi",
+        "Changheng Xie",
+        "Xin Zhou",
+        "Jianzhe Gao",
+        "Fei Gao",
+        "Wenguan Wang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18381",
+      "pdf_url": "https://arxiv.org/pdf/2610.18381",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出CrossFly基准，评测无人机跨室内外异构环境的长程移动与交互就位能力，含15K轨迹、20余个重建场景及IRR指标，五种空载VLA智能体在未见场景最高成功率仅9.7%。",
+      "change_zh": "现有空中基准多局限于单一环境，评估交互时常把智能体初始化在目标近旁，忽略导航到交互的过渡；CrossFly首次统一室内外连续过渡场景，并以不预设操作策略的IRR指标度量终端导航状态是否利于下游交互。",
+      "why_it_matters": "为空域自主提供首个覆盖室内外过渡、并衔接导航与物理交互的统一评测基准；IRR可直接衡量UAV抵达目标的就位质量，对搜救侦察等场景中目标接近与后续作业的衔接有直接参考价值，并揭示空载VLA智能体的跨域短板。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "空中移动操作, 无人机基准测试, 异构环境, 视觉-语言-动作模型, 交互就绪率, 长时程导航",
+      "question_zh": "如何在统一仿真评估框架下评测无人机在室内外异构环境中长时程地从导航过渡到物理交互的空中移动能力？",
+      "innovation_zh": "现有空中基准局限于单一环境且常在目标附近初始化，忽视导航到交互过渡。CrossFly首次覆盖室内、室外及其过渡轨迹，并引入交互就绪率（IRR）指标评估到达状态对下游交互的适配性。",
+      "dataset_zh": "CrossFly基准：含15K条轨迹、20多个重建场景，涵盖室内、室外及室内外过渡轨迹，基于统一仿真与评估框架（具体仿真软件未提及）",
+      "results_zh": "实验采用五个代表性空中VLA智能体及所提CrossFly-Agent，结果显示室内外过渡设置比单一环境更难，未见场景上最高成功率仅9.7%；下游操作案例研究验证了交互导向到达对后续物理交互的重要性。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "uav"
+      ],
+      "added_at": "2026-10-14T09:20:53.722681+00:00"
+    },
+    {
       "id": "2610.12910",
       "arxiv_id": "2610.12910",
       "title": "Sampling-based Kinodynamic Planning with World Models",
@@ -6968,6 +7371,111 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.18342",
+      "arxiv_id": "2610.18342",
+      "title": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
+      "authors": [
+        "Jiahui Sun",
+        "Ran Bi",
+        "Yifei Liu",
+        "Xiaolong Zhou",
+        "Yishuo Xu",
+        "Yuanqi Li",
+        "Congcong Zhu",
+        "Lei Yang",
+        "Yanwen Guo",
+        "Zhihang Zhong",
+        "Hongjie Zhang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18342",
+      "pdf_url": "https://arxiv.org/pdf/2610.18342",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出CityCode代理可操作的代码化3D城市表示，并用Air2Code从每区域单张低空航拍RGB图像恢复米制建筑与道路拓扑、生成实例级参数化城市，支持查询、编辑、规划与历史回滚。",
+      "change_zh": "常见路线靠多视角稠密重建产出一次性城市模型，难以持续更新；本文改为从每区域单张航拍图直接推断米制参数化实体并构建代码化持久状态，借助依赖感知版本管理与生成式补全，实现可验证编辑与历史回滚的城市世界。",
+      "why_it_matters": "为城市尺度空间智能与世界模型提供了轻量可编辑载体：无人机一次低空掠过即可建成可查询、可版本回滚的米制城市状态，可直接作为城市场景中UAV目标搜索的先验地图与ObjectNav智能体的可编辑场景记忆，支撑长时程任务规划。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "3D城市重建,智能体可操作表示,稀疏航拍影像,度量深度估计,城市拓扑,版本化执行",
+      "question_zh": "如何仅凭每个区域单张低空航拍RGB图像，构建智能体可持续测量、修改和维护的大规模实例级参数化3D城市。",
+      "innovation_zh": "提出CityCode统一表示，融合度量几何、城市拓扑、视觉语义与3D资产，以持久实体身份和依赖感知版本化执行支持验证更新与历史恢复；开发Air2Code结合视觉结构提取、度量深度估计与生成式补全，从稀疏航拍构建城市而无需重复稠密重建。",
+      "dataset_zh": "CitySample-Aerial与UrbanScene3D数据集",
+      "results_zh": "在CitySample-Airal与UrbanScene3D上，CityCode的度量结构恢复精度显著优于所评估基线，且对目标城市的视觉保真度更优（摘要未给出具体数值）；在50条各50步的任务链中，支持对演化城市状态的持续查询、编辑、规划与历史恢复。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "geometry",
+        "spatial intelligence"
+      ],
+      "added_at": "2026-10-14T09:25:44.489029+00:00"
+    },
+    {
+      "id": "2610.18694",
+      "arxiv_id": "2610.18694",
+      "title": "GeoReader: Learning Latent Geometry for Spatial Reasoning in Vision-Language Models",
+      "authors": [
+        "Rong Li",
+        "Shijie Li",
+        "Jiangyong Huang",
+        "Lingdong Kong",
+        "Jiaming Zhou",
+        "Dongyue Lu",
+        "Zeying Gong",
+        "Baoxiong Jia",
+        "Junwei Liang",
+        "Siyuan Huang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18694",
+      "pdf_url": "https://arxiv.org/pdf/2610.18694",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GeoReader发现已有几何隐空间对齐方法中几何信息并未被真正利用，转而训练轻量几何读取器生成连续token，以冻结VLM可读的几何描述为监督，再按问题条件化注入并微调VLM，显著提升多基准空间推理能力。",
+      "change_zh": "常见路线是几何特征融合或隐空间对齐，但作者证明对齐模型置零几何隐变量后精度不变，几何形同虚设；本文改为让读取器以目标VLM自身能读懂的几何描述为监督、按问题条件注入几何token，推理时直接读取连续表征而无需几何思维链。",
+      "why_it_matters": "度量与多视角空间关系理解正是UAV主动目标搜索与ObjectNav中大模型决策的短板，直接影响目标定位、接近与指令跟随质量。GeoReader给出了让VLM真正消费几何表征而非仅对齐的通用接口，可为具身导航与搜索智能体提供更强的空间感知底座。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言模型, 空间推理, 几何表征, 几何阅读器, 空间问答",
+      "question_zh": "如何让视觉语言模型真正利用从RGB图像恢复的几何结构进行空间推理，而非仅对齐几何特征却无法使用？",
+      "innovation_zh": "训练轻量Geometric Reader生成连续几何token，以冻结VLM解码的几何描述为监督，使几何以目标模型可读的形式表达；随后冻结Reader、按问题条件注入几何并微调VLM。相对已有特征融合或对齐方法，确保几何真正被模型使用，且推理时无需几何思维链。",
+      "dataset_zh": "MindCube-Tiny及六个额外空间基准（具体名称未提及）；基于Qwen3-VL-4B与Qwen3.5-9B模型，几何从RGB图像预测；几何描述监督由冻结VLM解码提供",
+      "results_zh": "在MindCube-Tiny上达到94.3（Qwen3-VL-4B）；结合多源QA混合训练，在六个额外空间基准上平均达72.5（Qwen3.5-9B）。此外，已有特征对齐模型的潜在特征置零后准确率不变，而GeoReader表明可用的几何表征应是接收模型能使用的表征。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-14T09:26:29.373660+00:00"
     },
     {
       "id": "2610.12957",
@@ -9528,6 +10036,140 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.18826",
+      "arxiv_id": "2610.18826",
+      "title": "WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions",
+      "authors": [
+        "Haoyi Duan",
+        "Liliang Chen",
+        "Nan Wang",
+        "Yang Zhang",
+        "Yuhang Lu",
+        "Xiaotong Chen",
+        "Wei-Cheng Tseng",
+        "Shenyuan Gao",
+        "Zhaoshuo Li",
+        "Jingyi Jin",
+        "Pooya Jannaty",
+        "Dhruv Shah",
+        "Yuke Zhu",
+        "Ming-Yu Liu",
+        "Maoqing Yao",
+        "Guanghui Ren"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18826",
+      "pdf_url": "https://arxiv.org/pdf/2610.18826",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "WorldOracle是一个将动作条件世界模型与配对真实执行对照评测的基准，从物理状态正确性、交互空间对齐、关键交互区保真与多视角动作一致性四个维度系统评测七个代表性模型。",
+      "change_zh": "常见做法是在既有数据集上用离线视频预测指标评世界模型，缺乏与真实执行的对齐验证；该工作以相同初始观测与动作序列的真实执行为参照，检验预测rollout能否复现物理后果与任务状态转移，并纳入成功与失败轨迹及多本体数据。",
+      "why_it_matters": "动作条件世界模型是导航与目标搜索前瞻规划的基础能力，其真实执行对齐的评测范式（含失败轨迹与多视角一致性度量）可迁移至无人机主动目标搜索与ObjectNav的rollout验证，为世界模型能否支撑规划决策提供可信度量。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "leaderboard",
+        "real world",
+        "world model"
+      ],
+      "added_at": "2026-10-14T09:23:47.449574+00:00"
+    },
+    {
+      "id": "2610.16522",
+      "arxiv_id": "2610.16522",
+      "title": "Learning Reachability-Based Safety Representations for Real-Time Robot Navigation in Unknown and Dynamic Environments",
+      "authors": [
+        "Bojan Derajić"
+      ],
+      "published": "2026-10-12",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.16522",
+      "pdf_url": "https://arxiv.org/pdf/2610.16522",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文离线学习HJ可达性值函数的神经隐式表示，只学习约束减去非负动力学修正的修正项，用作MPC终端约束与CBF安全滤波器，实现未知动态环境的实时安全导航，并在地面与空中机器人上验证。",
+      "change_zh": "常见安全导航或仅做几何碰撞检查，或在线求解HJ可达性而过贵。本文改为离线学神经隐式表示，且只学非负动力学修正项，使近似误差不破坏安全集，还用顶点输入并行树搜索生成训练标签，把可处理系统扩展到13维。",
+      "why_it_matters": "对无人机主动目标搜索与接近目标阶段极有价值：高速动态避障是搜救侦察落地的安全底线。该工作提供可实时查询的可达性安全表示，使MPC与安全滤波器在短视界、多动态障碍下仍保安全，且真机实验增强了sim2real可信度。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "model predictive control"
+      ],
+      "added_at": "2026-10-14T09:39:43.159987+00:00"
+    },
+    {
+      "id": "2610.15157",
+      "arxiv_id": "2610.15157",
+      "title": "RootSLAM: Square Root Bundle Adjustment for Visual-Inertial SLAM",
+      "authors": [
+        "Tomás Santucci",
+        "Mateo de Mayo",
+        "Daniel Cremers",
+        "Taihú Pire"
+      ],
+      "published": "2026-10-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15157",
+      "pdf_url": "https://arxiv.org/pdf/2610.15157",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RootSLAM在Basalt基础上构建多相机视觉惯性SLAM，将SfM中的平方根Bundle Adjustment经新重构引入该设定，利用位姿图使全局优化可单精度运行，精度与SOTA相当且提速最高20倍，全套组件将开源。",
+      "change_zh": "常见路线在学方法SLAM拼精度与经典几何方法拼效率之间二选一；本文真正改变的是把平方根BA公式经位姿图重构迁移到多相机视觉惯性SLAM，使全局优化首次可在单精度浮点下稳定高效运行，以纯几何方法实现精度持平下约20倍提速。",
+      "why_it_matters": "视觉惯性状态估计是无人机与地面机器人自主的核心底座，低功耗高精度VIO直接支撑UAV搜救侦察等主动目标搜索及真机导航部署，其显著效率提升与开源实现对sim2real落地价值明确，但与ObjectNav语义决策层面无直接关联。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "drone",
+        "geometry",
+        "localization",
+        "slam"
+      ],
+      "added_at": "2026-10-14T09:23:01.189243+00:00"
+    },
+    {
       "id": "2610.13849",
       "arxiv_id": "2610.13849",
       "title": "HorizonNav: Geometry-Guided Video Diffusion for Anticipatory 3D Robot Navigation",
@@ -11280,6 +11922,46 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.18850",
+      "arxiv_id": "2610.18850",
+      "title": "Collaborative Planning for UAV-UGV Teams under Operational Constraints via Masked Error-bounded Neuro-Symbolic Diffusion",
+      "authors": [
+        "Zihao Deng",
+        "Qianhuang Li",
+        "Maggie Wigness",
+        "John Rogers",
+        "Donghyun Kim",
+        "Hao Zhang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18850",
+      "pdf_url": "https://arxiv.org/pdf/2610.18850",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出MEND，将UAV-UGV协同规划建模为条件掩码扩散生成，以逻辑可采纳指标重加权动作分布强制满足能量、通行等运行约束，并用误差有界的熵调度去掩码，经仿真与实物机器人验证。",
+      "change_zh": "常见扩散规划依赖可微约束损失与假设分布对齐的熵引导去掩码；MEND改用逻辑诱导可采纳性指标在执行时重加权动作分布，硬约束无需可微化即可满足，并以约束感知分布上的误差有界调度替代熵引导。",
+      "why_it_matters": "对UAV主动目标搜索有价值：长时搜救/侦察任务受机载能量限制，UAV-UGV协同与运行时约束保障可提升搜索任务续航与可行性；其神经符号扩散规划也为基础模型规划智能体提供硬约束执行保障范式。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "uav"
+      ],
+      "added_at": "2026-10-14T09:24:32.316950+00:00"
     },
     {
       "id": "2610.12266",
@@ -16094,6 +16776,88 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.15740",
+      "arxiv_id": "2610.15740",
+      "title": "Multimodal Sensor-Gated Mid-Air Launch and Vision-Based Recovery of a Child UAV on a Hovering Mothership Drone",
+      "authors": [
+        "Aashish Sahu",
+        "R. Prasanth Kumar"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15740",
+      "pdf_url": "https://arxiv.org/pdf/2610.15740",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出母机-子机四旋翼空中发射与回收系统：上视单束激光经滞回消抖给出占用状态，RTK与母机推力构成多模态任务门控，视觉引导接近，十次户外任务九次成功，仿真对接误差0.077米。",
+      "change_zh": "常见空中回收多依赖视觉标志定位，但相机在触地前约0.2米会丢失标志；本文改用互补非视觉门控：单束激光加滞回与消抖判定占用，母机推力突变证实载荷转移，RTK约束悬停，提高任务切换可靠性。",
+      "why_it_matters": "母机-子机空中发射回收是延长UAV搜救侦察航时与作业半径的使能技术；其多模态门控思路可服务于目标搜索后期的精准接近与对接确认，且是一项含真机户外验证与仿真对照的飞行控制系统工作。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "drone",
+        "uav"
+      ],
+      "added_at": "2026-10-14T09:18:50.737713+00:00"
+    },
+    {
+      "id": "2610.14647",
+      "arxiv_id": "2610.14647",
+      "title": "Can Synthetic UAV Benchmarks Be Trusted? Real-Synthetic Validation for UAV Model Selection",
+      "authors": [
+        "Yuyi Zhi",
+        "Min Du",
+        "Bill Shi",
+        "Guodong Yuan",
+        "Junheng Liang",
+        "Peifan Liao",
+        "Xin Guan"
+      ],
+      "published": "2026-10-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.14647",
+      "pdf_url": "https://arxiv.org/pdf/2610.14647",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文实证检验合成UAV数据能否替代真实数据做模型选择：道路碎片基准中模型排序保留，闭集检测压力测试中top模型反转、三对偏好改变，且小目标被系统性欠表示，表明合成基准可信度须逐任务实证确立。",
+      "change_zh": "常见合成数据研究聚焦视觉逼真度或用合成数据增强训练，本文转而追问合成评测能否保持真实数据上的模型选择决策，以排序保持、bootstrap成对反转与规模匹配重采样为决策级证据，用双案例与场景审计得出条件性可信结论。",
+      "why_it_matters": "UAV搜救/侦察依赖感知模型且真实标注稀缺，常借合成场景扩充部署前评测；本文警示合成基准的模型排名不可默认迁移到真实空域，小目标欠表示正是搜救痛点；对依赖仿真评测的ObjectNav等基准的可信域界定亦有借鉴。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "drone",
+        "evaluation",
+        "uav"
+      ],
+      "added_at": "2026-10-14T09:19:55.219495+00:00"
+    },
+    {
       "id": "2610.13195",
       "arxiv_id": "2610.13195",
       "title": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
@@ -18297,16 +19061,136 @@
     }
   ],
   "briefing": {
-    "text": "今日入库仅一条，主线是为多模态大模型的空间认知补上可评测的地基。Mind the Spatial Gap提出的GeoSpatialBench以六座城市真实地理数据覆盖28类拓扑、方向、度量与顺序关系，并在GeoJSON与地图图像两种模态上贯通空间理解、几何推理与受约束编辑三层任务；其“编辑显著弱于问答”的发现表明模型能描述却难执行空间操作，对依赖地图级空间决策的具身导航而言是可直接借用的诊断基准，值得精读实验设计与错误分析部分。趋势上，空间评测正从问答转向带约束的生成与编辑，导航社区宜将此类基准纳入智能体的空间能力检验流程。",
-    "added": 1,
-    "at": "2026-10-13T17:22:31.211278+00:00",
+    "text": "今日主线是无人机与具身导航的基准构建、世界模型与智能体自进化。最值得读BGC-Nav：免训练的信念引导框架让高空机以建议性偏置协调低空机，在ESARBench上超越单机与协作SOTA，为多机协作提供了不依赖联合训练的路线；SkipWorld用蒸馏出的跳跃世界模型压缩长时域推演，规划较NWM提速2.7倍，直面世界模型导航的推理开销；I2O2I-Nav补上室内-室外-室内长程导航的评测空白，阶段条件指标便于定位失败环节。趋势上，评测基建密集落地，而CrossFly测得机载VLA智能体最高仅9.7%成功率，泛化仍是核心短板。",
+    "added": 16,
+    "at": "2026-10-14T09:40:29.099946+00:00",
     "new": [
       {
-        "t": "Mind the Spatial Gap: A Benchmark for Geospatial Reasoning and Constrained Spatial Editing",
-        "u": "https://arxiv.org/abs/2610.12881",
+        "t": "Multimodal Sensor-Gated Mid-Air Launch and Vision-Based Recovery of a Child UAV on a Hovering Mothership Drone",
+        "u": "https://arxiv.org/abs/2610.15740",
+        "r": 6,
+        "g": 7,
+        "s": "提出母机-子机四旋翼空中发射与回收系统：上视单束激光经滞回消抖给出占用状态，RTK与母机推力构成多模态任务门控，视觉引导接近，十次户外任务九次成功，仿真对接误差0.077米。",
+        "c": ""
+      },
+      {
+        "t": "Can Synthetic UAV Benchmarks Be Trusted? Real-Synthetic Validation for UAV Model Selection",
+        "u": "https://arxiv.org/abs/2610.14647",
+        "r": 6,
+        "g": 7,
+        "s": "该文实证检验合成UAV数据能否替代真实数据做模型选择：道路碎片基准中模型排序保留，闭集检测压力测试中top模型反转、三对偏好改变，且小目标被系统性欠表示，表明合成基准可信度须逐任务实证确立。",
+        "c": ""
+      },
+      {
+        "t": "Benchmarking Interaction-Oriented Aerial Mobility across Heterogeneous Environments",
+        "u": "https://arxiv.org/abs/2610.18381",
         "r": 8,
         "g": 8,
-        "s": "GeoSpatialBench基于六座城市真实地理数据构建，覆盖28类拓扑、方向、度量与顺序关系，在GeoJSON与地图图像两种模态上评测前沿多模态大模型从空间理解、几何推理到受约束空间编辑的能力，发现编辑显著弱于问答。",
+        "s": "提出CrossFly基准，评测无人机跨室内外异构环境的长程移动与交互就位能力，含15K轨迹、20余个重建场景及IRR指标，五种空载VLA智能体在未见场景最高成功率仅9.7%。",
+        "c": ""
+      },
+      {
+        "t": "BGC-Nav: Cross-Altitude Multi-UAV Collaborative Navigation via Belief-Guided Coupling",
+        "u": "https://arxiv.org/abs/2610.14702",
+        "r": 10,
+        "g": 7,
+        "s": "BGC-Nav提出免训练的跨高度多无人机协作导航框架：高空机维护全局信念记忆，通过局部穷尽记忆、局部吸引增强与方向信念先验，以建议性偏置引导低空机自主决策，在ESARBench上超越SOTA单机与协作方法。",
+        "c": "https://github.com/uestchjw/BGC-Nav"
+      },
+      {
+        "t": "RootSLAM: Square Root Bundle Adjustment for Visual-Inertial SLAM",
+        "u": "https://arxiv.org/abs/2610.15157",
+        "r": 7,
+        "g": 8,
+        "s": "RootSLAM在Basalt基础上构建多相机视觉惯性SLAM，将SfM中的平方根Bundle Adjustment经新重构引入该设定，利用位姿图使全局优化可单精度运行，精度与SOTA相当且提速最高20倍，全套组件将开源。",
+        "c": ""
+      },
+      {
+        "t": "WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions",
+        "u": "https://arxiv.org/abs/2610.18826",
+        "r": 7,
+        "g": 8,
+        "s": "WorldOracle是一个将动作条件世界模型与配对真实执行对照评测的基准，从物理状态正确性、交互空间对齐、关键交互区保真与多视角动作一致性四个维度系统评测七个代表性模型。",
+        "c": ""
+      },
+      {
+        "t": "Collaborative Planning for UAV-UGV Teams under Operational Constraints via Masked Error-bounded Neuro-Symbolic Diffusion",
+        "u": "https://arxiv.org/abs/2610.18850",
+        "r": 7,
+        "g": 7,
+        "s": "提出MEND，将UAV-UGV协同规划建模为条件掩码扩散生成，以逻辑可采纳指标重加权动作分布强制满足能量、通行等运行约束，并用误差有界的熵调度去掩码，经仿真与实物机器人验证。",
+        "c": ""
+      },
+      {
+        "t": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
+        "u": "https://arxiv.org/abs/2610.18342",
+        "r": 8,
+        "g": 7,
+        "s": "提出CityCode代理可操作的代码化3D城市表示，并用Air2Code从每区域单张低空航拍RGB图像恢复米制建筑与道路拓扑、生成实例级参数化城市，支持查询、编辑、规划与历史回滚。",
+        "c": ""
+      },
+      {
+        "t": "GeoReader: Learning Latent Geometry for Spatial Reasoning in Vision-Language Models",
+        "u": "https://arxiv.org/abs/2610.18694",
+        "r": 8,
+        "g": 7,
+        "s": "GeoReader发现已有几何隐空间对齐方法中几何信息并未被真正利用，转而训练轻量几何读取器生成连续token，以冻结VLM可读的几何描述为监督，再按问题条件化注入并微调VLM，显著提升多基准空间推理能力。",
+        "c": ""
+      },
+      {
+        "t": "LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction",
+        "u": "https://arxiv.org/abs/2610.18093",
+        "r": 9,
+        "g": 8,
+        "s": "LynxScenes是基于LYNX M20轮腿机器人采集的大规模真实数据集，含约10万段导航片段与330万标注帧，覆盖指令轨迹预测、BEV感知、未来场景预测与多视图重建四项任务。",
+        "c": ""
+      },
+      {
+        "t": "I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation",
+        "u": "https://arxiv.org/abs/2610.18307",
+        "r": 9,
+        "g": 8,
+        "s": "I2O2I-Nav是室内-室外-室内长程导航的物理仿真基准，覆盖20个真实组合场景、超11.5万平方米，含三级评测与阶段条件指标，并提出以完成验证、阶段交接和受限恢复协调冻结策略的MODULAR-Agent。",
+        "c": ""
+      },
+      {
+        "t": "SEAR: Self-Evolving Agentic Robotics",
+        "u": "https://arxiv.org/abs/2610.18792",
+        "r": 8,
+        "g": 9,
+        "s": "SEAR提出自进化具身智能体框架与基准，让大模型智能体以代码即策略、在线控制、自动微调VLA三种方式自我改进，并用对照实验区分真实学习与重复尝试，覆盖330个仿真与5个真机任务。",
+        "c": ""
+      },
+      {
+        "t": "ABot-ER: Unified Embodied Reasoning through Agentic Data-Model Co-Evolution",
+        "u": "https://arxiv.org/abs/2610.18355",
+        "r": 9,
+        "g": 7,
+        "s": "ABot-ER是一个统一的具身推理基础模型，以智能体式数据-模型自进化引擎和任务条件化低秩残差训练，在感知、规划、执行三类能力上覆盖12个基准并取得整体SOTA。",
+        "c": ""
+      },
+      {
+        "t": "SkipWorld: Latent Skip Planning with Distilled World Models for Efficient Visual Navigation",
+        "u": "https://arxiv.org/abs/2610.18135",
+        "r": 9,
+        "g": 7,
+        "s": "SkipWorld针对世界模型导航中长时域推演开销大、训练与闭环推理不匹配的问题，提出潜在空间递归自推训练、蒸馏可直接长跨度预测的跳跃世界模型，并用先粗筛后精排的双模型规划器，在RECON等四个数据集上较NWM降低误差且规划提速2.7倍。",
+        "c": ""
+      },
+      {
+        "t": "Hybrid Reasoning Agents",
+        "u": "https://arxiv.org/abs/2610.18861",
+        "r": 8,
+        "g": 8,
+        "s": "该文提出HybridAgents，使智能体在生成中动态切换潜空间推理与文本交互，经HybridSFT/HybridRL后训练，11个基准上提升10.4%并大幅降低token与推理成本。",
+        "c": "https://github.com/togethercomputer/HybridAgent"
+      },
+      {
+        "t": "Learning Reachability-Based Safety Representations for Real-Time Robot Navigation in Unknown and Dynamic Environments",
+        "u": "https://arxiv.org/abs/2610.16522",
+        "r": 7,
+        "g": 8,
+        "s": "本文离线学习HJ可达性值函数的神经隐式表示，只学习约束减去非负动力学修正的修正项，用作MPC终端约束与CBF安全滤波器，实现未知动态环境的实时安全导航，并在地面与空中机器人上验证。",
         "c": ""
       }
     ]
