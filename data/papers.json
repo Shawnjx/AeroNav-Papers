@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T09:16:17.101376+00:00",
+  "updated_at": "2026-10-15T14:59:54.840803+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -287,6 +287,156 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2610.15362",
+      "arxiv_id": "2610.15362",
+      "title": "LERR-Nav: Learning to Coordinate Exploration, Recovery, and Reminiscing for Object Navigation",
+      "authors": [
+        "Jingzhi Huang",
+        "Junkai Huang",
+        "Yuhang Peng",
+        "Keyu Mu",
+        "Hailong Huang",
+        "Haoyang Yang",
+        "Renbo Luo",
+        "Lujia Wang",
+        "Yi Wang"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15362",
+      "pdf_url": "https://arxiv.org/pdf/2610.15362",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LERR-Nav针对未知环境目标导航，用学习的高层VLM策略协调价值引导与LLM引导探索、停滞恢复、记忆回忆四类策略，辅以执行记忆与两阶段课程微调，在HM3D与MP3D上取得SOTA。",
+      "change_zh": "常见路线聚焦语义地图与下一个路点选择，本文将导航升为策略级元控制：显式建模停滞恢复与线索回访，以文本摘要加地图滑窗的执行记忆让高层VLM策略学习何时调用哪种底层行为，从“去哪里”变为“用哪种行为”。",
+      "why_it_matters": "直接推进ObjectNav核心问题；其策略协调、停滞识别与记忆回访机制可迁移到UAV主动目标搜索的行为调度与搜索卡死恢复，两阶段课程把VLM训练为策略调度器的做法也为具身高层决策提供可复用范式。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "目标导航, 具身智能, 视觉语言模型, 策略协调, 空间记忆, 大语言模型",
+      "question_zh": "如何在未见环境中让智能体协调探索、恢复与回忆等多种导航策略，以识别停滞进展、摆脱无效行为并重访被忽略的目标线索，从而实现可靠的目标导航。",
+      "innovation_zh": "提出LERR-Nav框架，以学习的高层策略协调价值函数引导探索、LLM引导探索、停滞恢复与记忆引导回忆四种互补策略，超越仅选择下一路径点的已有方法；并维护文本摘要加地图滑窗的混合执行记忆，基于Qwen2.5-VL-7B-Instruct经两阶段课程SFT训练协调策略。",
+      "dataset_zh": "HM3D和MP3D数据集；仿真环境或真机平台未提及",
+      "results_zh": "在HM3D和MP3D基准上取得最先进（SOTA）的导航性能，消融实验验证了各组件的贡献；摘要未提及具体指标数字。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "exploration",
+        "language agent",
+        "object navigation",
+        "spatial memory",
+        "spatial reasoning",
+        "vlm",
+        "waypoint"
+      ],
+      "added_at": "2026-10-15T14:39:37.653837+00:00"
+    },
+    {
+      "id": "2610.15782",
+      "arxiv_id": "2610.15782",
+      "title": "Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping",
+      "authors": [
+        "Songze Li",
+        "Haoming Gu",
+        "Ziyang Gong",
+        "Zhitong Wang",
+        "Gengze Zhou",
+        "Zun Wang",
+        "Yuhan Zhu",
+        "Tianxiang Jiang",
+        "Juanzi Li",
+        "Qi Wu",
+        "Weinan Zhang",
+        "Yu Qiao"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15782",
+      "pdf_url": "https://arxiv.org/pdf/2610.15782",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RSI-Nav以单一模型统一指令跟随与指令生成，分片处理无标注轨迹：生成指令、执行验证、筛样并即时自更新，使监督随策略演进，R2R-CE/RxR-CE成功率分别达68.6%与72.4%。",
+      "change_zh": "相比常见『标注器+导航器分离、一次性标注全量轨迹再训练』的自监督路线，本文用单一模型双向自举（语言↔动作），并以分片递归更新替代离线全量标注，让新监督始终对齐当前策略，还混入空间理解数据。",
+      "why_it_matters": "VLN数据昂贵且监督易滞后。其『生成—执行—筛选—即时自更新』的自举范式可迁移至UAV目标搜索与aerial VLN的指令数据扩增；基于执行验证的样本筛选也适用于ObjectNav目标数据合成。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言导航, 递归自我改进, 指令生成, 语言-动作双自举, 数据合成, 空间理解",
+      "question_zh": "视觉语言导航中，如何以低成本数据合成生成与不断演化的策略保持同步的高质量语言监督，从而提升导航性能？",
+      "innovation_zh": "提出RSI-Nav，将指令跟随与指令生成统一于共享模型，取代已有方法的双模型或任务专用耦合设计；以分片递归方式处理无标注轨迹，边生成指令、边执行评估、边即时自更新，使语言监督始终与演化策略同步，克服固定模型全量标注滞后问题，并融入空间理解数据。",
+      "dataset_zh": "评测使用R2R-CE与RxR-CE数据集；训练利用无标注轨迹并引入空间理解数据（具体来源未提及）",
+      "results_zh": "RSI-Nav在R2R-CE上达到68.6%成功率（SR），在RxR-CE上达到72.4% SR；经过递归演化后，指令生成的实用性更强，空间理解能力也有适度提升。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "instruction",
+        "instruction following",
+        "r2r",
+        "spatial reasoning",
+        "spatial understanding"
+      ],
+      "added_at": "2026-10-15T14:46:44.146666+00:00"
+    },
+    {
+      "id": "2610.15375",
+      "arxiv_id": "2610.15375",
+      "title": "Have You Seen It Clearly? Uncertainty-Guided Belief Refinement for Zero-Shot Object Navigation",
+      "authors": [
+        "Jingzhi Huang",
+        "Junkai Huang",
+        "Yuhang Peng",
+        "Keyu Mu",
+        "Jiaru Zhong",
+        "Yi Wang",
+        "Lujia Wang",
+        "Lap‐Pui Chau",
+        "Siyang Gao"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15375",
+      "pdf_url": "https://arxiv.org/pdf/2610.15375",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对零样本目标导航，提出不确定性引导的信念地图RefBeliefMap，区分目标位置信念与空间语义证据不确定性，并结合目标潜力、信息增益与导航代价统一评估前沿和历史点，协调探索与重访。",
+      "change_zh": "常见ZSON路线用LLM/VLM建图后即选点探索；本文显式建模观测内不确定性与观测间分歧来评估证据可靠性，在证据不足时先主动观测与语义推理精炼信念再做导航决策，并把历史路径点纳入与前沿统一的价值评估，实现探索与重访的动态协同。",
+      "why_it_matters": "直接推进零样本ObjectNav核心问题：其'证据可靠吗、要不要重看'的不确定性驱动主动精炼与重访机制，对UAV主动目标搜索中的证据确认与重复侦察决策高度可迁移；预期信息增益与代价联合评估也契合主动感知路线，且经四足真机验证sim2real可行。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "零样本目标导航, 不确定性估计, 信念地图, 视觉语言模型, 探索与重访策略",
+      "question_zh": "零样本目标导航中，现有证据能否支撑导航决策、新证据如何改变已访地点搜索价值，如何用不确定性引导信念细化与探索-重访？",
+      "innovation_zh": "提出RefBeliefMap区分目标位置信念与空间、语义证据的不确定性，联合建模观测内不确定性与观测间分歧，在导航前引导主动观测与语义推理细化证据；RefBeliefNav统一权衡发现潜力、信息增益与导航成本，协调探索与重访。",
+      "dataset_zh": "HM3D与MP3D仿真数据集进行零样本评估，并在Unitree Go2四足机器人上进行真实世界实验。",
+      "results_zh": "在HM3D和MP3D上于所评估的零样本基线中取得最先进性能（摘要未给出具体数值）；消融实验验证了各模块的贡献；在Unitree Go2四足机器人上的真机实验进一步验证了方法的仿真到现实迁移能力。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "exploration",
+        "object navigation",
+        "waypoint"
+      ],
+      "added_at": "2026-10-15T14:53:11.924788+00:00"
     },
     {
       "id": "2610.14702",
@@ -2176,6 +2326,144 @@
       "added_at": "2026-10-14T09:29:27.246313+00:00"
     },
     {
+      "id": "2610.17640",
+      "arxiv_id": "2610.17640",
+      "title": "MemAct: Streaming Spatial Understanding with Memory and Active Exploration",
+      "authors": [
+        "Yuxi Wei",
+        "Wei Huang",
+        "Qirui Chen",
+        "Lu Hou",
+        "Xiaojuan Qi"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.17640",
+      "pdf_url": "https://arxiv.org/pdf/2610.17640",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MemAct提出流式空间理解框架：共享视觉语言模型增量写入结构化记忆、按需检索历史记录并主动移动补采视角，配套约百万级训练数据与两万余题基准，用SFT加反事实动作优化统一记忆与探索。",
+      "change_zh": "常见流式理解多被动处理增量观测、只重记忆压缩回答；MemAct把任务驱动探索纳入闭环：按需检索历史证据与移动补采新视角融合于同一推理回路，并用反事实动作优化（证据增益、动作代价与终答质量）改进探索与停止决策。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav高度相关：其核心正是记忆与已见观测不足时决定继续移动取证还是停止作答；MemAct的记忆读写、视角补采与停止决策优化正对应该闭环，其数据管线与两万题基准也为空间智能和主动感知提供新评测资源。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "具身智能,流式空间理解,记忆机制,主动探索,视觉语言模型,空间问答",
+      "question_zh": "具身智能体如何在流式观测中结合记忆回溯与主动探索，实现闭环空间理解？",
+      "innovation_zh": "区别于仅处理输入观测的已有流式方法，MemAct以共享视觉语言模型增量写入结构化记忆、按需检索并主动移动获取新证据，并用反事实动作优化改进探索与停止决策。",
+      "dataset_zh": "MemAct套件：覆盖真实与仿真环境的数据生成管线及约100万训练样本；MemAct-bench基准含20000个主问答对及2000道独立Timing问题。",
+      "results_zh": "在含2万主问答对的MemAct-bench上，MemAct优于现有空间理解与流式基线，性能接近前沿多模态模型，同时保持流式推理效率。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "exploration",
+        "spatial reasoning",
+        "spatial understanding"
+      ],
+      "added_at": "2026-10-15T14:43:22.069143+00:00"
+    },
+    {
+      "id": "2610.16558",
+      "arxiv_id": "2610.16558",
+      "title": "G$^2$WAM: World Action Models for Efficient and Geometry Grounded Image-Goal Navigation",
+      "authors": [
+        "Ke Gui",
+        "Chenghao Shi",
+        "Ziyue Wang",
+        "Longwen Chen",
+        "Xieyuanli Chen",
+        "Huimin Lu"
+      ],
+      "published": "2026-10-12",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.16558",
+      "pdf_url": "https://arxiv.org/pdf/2610.16558",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出G²WAM，通过可学习的场景坐标定位模块将当前、目标与历史帧锚定在统一参考系，在世界-动作模型框架下于隐空间联合预测未来状态与动作，免去显式三维重建与CEM规划，实现高效图像目标导航。",
+      "change_zh": "相比微调预训练模型或依赖外部三维重建的常见做法，本文用可学习的场景坐标定位模块把当前、目标与历史帧锚定到统一参考系，轻量注入几何先验；再以状态-动作联合预测取代CEM式规划、以隐空间预测取代像素重建，大幅降低推理成本。",
+      "why_it_matters": "直接推进导航世界模型与目标条件导航两条技术线：几何锚定的隐空间世界-动作模型兼顾精度与效率，成功率和SPL显著提升且推理高效，对算力受限的UAV图像目标搜索等任务具迁移潜力，也为ObjectNav提供免三维重建的空间记忆新思路。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "图像目标导航，世界动作模型，场景坐标定位，几何接地，潜在空间，轨迹预测",
+      "question_zh": "如何在不依赖显式3D重建与昂贵的CEM式规划的前提下，让世界模型为图像目标导航提供持久空间记忆并实现高效导航？",
+      "innovation_zh": "以可学习的场景坐标定位模块将当前、目标及历史帧锚定于统一参考系，无需显式3D重建即获稳定空间上下文；按世界-动作-模型范式联合预测未来状态与动作，免去CEM式规划；全程在潜在空间运行，避免像素级重建的负担。",
+      "dataset_zh": "未提及（摘要仅说明在四个轨迹预测基准及闭环导航实验上进行评估，具体数据集或仿真平台名称未给出）",
+      "results_zh": "在四个轨迹预测基准上，平均ATE降低40.1%、RPE降低35.2%；闭环导航实验中，成功率由54.0%提升至63.0%，SPL由36.4%提升至59.2%，同时保持高推理效率。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "geometry",
+        "localization",
+        "spatial memory",
+        "world model"
+      ],
+      "added_at": "2026-10-15T14:42:14.282382+00:00"
+    },
+    {
+      "id": "2610.14541",
+      "arxiv_id": "2610.14541",
+      "title": "GG-Nav: Goal-oriented Grounding Chain-of-Thought Elicits Reasoning in Navigation Foundation Models",
+      "authors": [
+        "Shaohao Zhu",
+        "Wensi Huang",
+        "Siqi Zhang",
+        "Yuqiang Yang",
+        "Meng Wei",
+        "Chenyang Wan",
+        "Tianle Liu",
+        "Tai Wang",
+        "Jinming Xu"
+      ],
+      "published": "2026-10-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.14541",
+      "pdf_url": "https://arxiv.org/pdf/2610.14541",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GG-Nav 通过监督微调为导航基础模型注入结构化接地思维链，从流式中间观测中累积目标相关证据并显式接地目标以支撑决策，在 HM3D ObjectNav、VL-LN、CoIN 上显著超越 SOTA，并在四足机器人上实现零样本真机部署。",
+      "change_zh": "常见路线让 VLM 仅凭当前观测直接输出动作，中间帧证据被丢弃、目标定位隐式模糊；本文改为显式两阶段推理：先从相邻决策间的全部中间帧提取并累积接地证据，再结合当前观测显式定位目标后才生成动作或澄清提问，使推理过程结构化可循。",
+      "why_it_matters": "对 ObjectNav 目标搜索直接提升成功率并显著减少证据遗漏与停止错误；其从流式观测累积证据、显式接地目标再决策的机制可迁移到 UAV 主动目标搜索中的目标发现与接近环节，真机零样本部署也为导航基础模型的 Sim2Real 落地提供参照。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "目标导向导航, 视觉语言模型, 思维链, 导航基础模型, 目标接地, 零样本泛化",
+      "question_zh": "如何解决视觉语言导航基础模型在目标导向导航中对流式观测利用不足与目标定位不精确的问题？",
+      "innovation_zh": "提出GG-Nav框架，通过监督微调学习结构化思维链，分\"观测到证据\"与\"证据到决策\"两阶段：推理中间帧以累积目标相关证据，并结合当前观测显式接地目标，从而生成更可靠的导航动作或澄清问题。",
+      "dataset_zh": "HM3D ObjectNav、VL-LN、CoIN三个基准数据集；真机部署于Unitree Go2机器人（未见真实环境零样本验证）",
+      "results_zh": "GG-Nav在HM3D ObjectNav、VL-LN和CoIN基准上成功率分别超越现有SOTA方法3.1%、16.6%和5.3%；消融实验显示累积中间观测证据使证据缺失错误降低11.6%，显式接地使停止错误降低49.4%；并在Unitree Go2真机上实现零样本泛化。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "localization",
+        "objectnav",
+        "vlm"
+      ],
+      "added_at": "2026-10-15T14:54:02.462178+00:00"
+    },
+    {
       "id": "2610.12368",
       "arxiv_id": "2610.12368",
       "title": "LiteNWM: Efficient Latent World Models for Onboard Visual Navigation in the Wild",
@@ -4001,6 +4289,101 @@
         "llm agent"
       ],
       "added_at": "2026-10-14T09:37:42.504553+00:00"
+    },
+    {
+      "id": "2610.17089",
+      "arxiv_id": "2610.17089",
+      "title": "Interactive Navigation Beyond Reachability: Benchmark and Agentic Framework",
+      "authors": [
+        "Delun Li",
+        "Xueyao Wei",
+        "Rui Chen",
+        "Yifei Wang",
+        "Junzhi Yu",
+        "Wenjie Song",
+        "Xingyu Chen"
+      ],
+      "published": "2026-10-12",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.17089",
+      "pdf_url": "https://arxiv.org/pdf/2610.17089",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出超越可达性的交互式导航任务，统一通道引起的连通性变化与容器引起的目标可见性变化，发布3K集ObjectGoal基准MultINav-Bench，并提出基于持久交互图的三阶段智能体框架。",
+      "change_zh": "常见ObjectNav假设通行性与物体状态固定，该工作改为显式建模交互引发的环境变化：通道改变连通性、容器改变目标可见性，用持久状态条件交互图驱动VLM选动作并以交互后验证更新图，分开评测导航成功与交互效果。",
+      "why_it_matters": "它将ObjectNav从静态可达性扩展到需主动改变环境的交互设定，并提供交互必要性标注与分解式指标，为搜索隐藏/被遮挡目标提供新评测范式；其状态条件交互图与VLM动作选择思路可迁移到UAV搜索中需移开遮挡才发现目标的场景。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "具身导航, 交互式导航, 基准测试, 智能体框架, 视觉语言模型, 交互图",
+      "question_zh": "如何在到达目标需改变空间连通性（如开门）与目标可见性（如开容器）及其序列依赖的交互式导航任务上构建基准并设计有效的智能体框架？",
+      "innovation_zh": "首次将通道引发的空间连通性变化与容器引发的目标可见性变化及其序列依赖统一为'超越可达性的交互式导航'任务；发布含交互必要性标注的3K情节基准MultINav-Bench及自动化数据生成流程；提出基于持久状态条件交互图的三阶段智能体框架MultINav-Agent，实现感知、VLM动作选择与交互后验证更新的闭环。",
+      "dataset_zh": "MultINav-Bench：基于MolmoSpaces仿真环境的3K情节ObjectGoal基准，涵盖通道、容器及混合三类任务，带有交互必要性标注（覆盖必需与不必要的交互情节）",
+      "results_zh": "在MultINav-Bench上的实验表明，MultINav-Agent在通道、容器与混合三类任务上均持续优于经适配的基线方法；所提评估协议分别度量导航成功率、交互有效性与交互代价。摘要未提及具体性能数字。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "active perception",
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "exploration"
+      ],
+      "added_at": "2026-10-15T14:40:31.549461+00:00"
+    },
+    {
+      "id": "2610.15560",
+      "arxiv_id": "2610.15560",
+      "title": "Stereo-Planner: Learning Stereo-to-Trajectory Planning for Zero-Shot Sim-to-Real Quadrotor Navigation",
+      "authors": [
+        "Hongming Shen",
+        "Junjie Lu",
+        "Xun Chen",
+        "Wei Wang",
+        "Xinhang Xu",
+        "Bailing Tian",
+        "Lihua Xie"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15560",
+      "pdf_url": "https://arxiv.org/pdf/2610.15560",
+      "code_url": "https://github.com/Stereo-Planner/Stereo-Planner",
+      "categories": [],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 5,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/ce06ab7984ccce3f6725aa255c4aa385d24e29d6",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Stereo-Planner将四旋翼轨迹生成表述为状态与尺度条件下的潜在双目几何查询，结合预训练视觉基础模型与轻量轨迹解码器，纯仿真可微代价训练后零样本部署实机，7米每秒自主飞行。",
+      "change_zh": "常见四旋翼规划依赖深度传感器或显式深度重建，本文改为双目RGB端到端直接生成轨迹：用预训练视觉基础模型提取跨域几何线索缓解域差距，把双目基线作为度量尺度条件注入解码器，纯仿真训练即可零样本实机部署。",
+      "why_it_matters": "为无人机空域自主提供免深度传感器的高速感知到动作闭环：纯仿真训练省去真机数据，轻量机载推理适合小型四旋翼，可作为搜救侦察等UAV目标搜索任务的底层高速飞行底盘，其零样本迁移方法亦有借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "四旋翼导航, 立体视觉, 仿真到现实迁移, 端到端轨迹规划, 零样本泛化, 视觉基础模型",
+      "question_zh": "如何让四旋翼仅凭双目RGB图像端到端生成飞行轨迹，跨越仿真到真实的域差距，实现零样本真实环境自主导航？",
+      "innovation_zh": "将轨迹生成建模为状态与尺度条件化的潜在立体几何查询；利用预训练视觉基础模型提取仿真与真实环境共享的几何线索以支持跨域泛化；轻量轨迹解码器以交错注意力分离轨迹状态交互与场景特征检索，并将双目基线作为度量尺度线索，纯仿真训练即可零样本实机部署。",
+      "dataset_zh": "训练完全在仿真环境中进行（具体数据集名称未提及）；实机验证平台为配备NVIDIA Orin NX计算单元的紧凑型四旋翼飞行器",
+      "results_zh": "在仿真基准测试中，指令速度8 m/s下成功率达95%，跨场景泛化能力强，仅用双目RGB感知即可与基于深度的规划器性能相当；实机部署于搭载NVIDIA Orin NX的四旋翼，实现最高7 m/s自主飞行，机载视觉到动作平均推理时间为24.27 ms。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "geometry",
+        "trajectory planning"
+      ],
+      "added_at": "2026-10-15T14:48:08.511037+00:00"
     },
     {
       "id": "2610.13832",
@@ -5949,6 +6332,93 @@
       "added_at": "2026-10-14T09:20:53.722681+00:00"
     },
     {
+      "id": "2610.17630",
+      "arxiv_id": "2610.17630",
+      "title": "From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction",
+      "authors": [
+        "Ruo Chen",
+        "Jiahua Pang",
+        "Yingjie Niu",
+        "Hongyi Lin",
+        "Jun Tian",
+        "Yang Zhu",
+        "Chao Li"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.17630",
+      "pdf_url": "https://arxiv.org/pdf/2610.17630",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DR-WM从单帧RGB重建含摩擦等接触属性的地形几何，用真实动作响应数据校准后经物理仿真预测四足机器人动作后果，并以仿真轨迹训练视频世界模型、迭代更新地形，支撑更可靠的动作与路径选择。",
+      "change_zh": "常见视频世界模型重视觉效果轻动力学，预测过于乐观；DR-WM将真实数据标定的空间变化接触参数嵌入地形重建与物理仿真，用仿真引导视频模型、生成观测反哺重建，实现无需新增真实图像的迭代推演。",
+      "why_it_matters": "直接充实导航世界模型线：物理落地的后果预测可为ObjectNav规避不可行路径提供先验；『8B+世界模型胜过32B』提示UAV主动搜索可用物理推演增强轻量VLM，规划顾及地形动力学的安全接近航迹。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "世界模型，四足机器人，动作后果预测，接触动力学，物理仿真，视觉语言模型",
+      "question_zh": "如何在户外变化地形与接触条件下，预测四足机器人相同动作指令导致的实际运动结果？",
+      "innovation_zh": "提出DR-WM：区别于仅追求视觉真实的视频世界模型，从单张RGB图像重建场景几何并融入经真实动作-响应数据校准的无量纲接触先验，支持空间变化摩擦的物理仿真，以仿真轨迹指导视频世界模型训练并可迭代更新。",
+      "dataset_zh": "未提及具体数据集与真机平台名称；摘要仅提及使用真实动作-响应数据校准接触先验，并在90个挑战性场景中评估",
+      "results_zh": "DR-WM在刻画动作后果的关键物理指标上显著优于纯几何基线及均匀物理参数基线；在90个挑战性场景中，配备DR-WM的8B视觉语言模型在六项评估指标中的五项上超过无辅助的32B视觉语言模型。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-10-15T14:50:27.549219+00:00"
+    },
+    {
+      "id": "2610.14682",
+      "arxiv_id": "2610.14682",
+      "title": "Successful but Unsafe: An Analytical Benchmark for Revealing Collisions in Vision-and-Language Navigation",
+      "authors": [
+        "Hieu D. Pham",
+        "Quoc-An Luong",
+        "Dung D. Le"
+      ],
+      "published": "2026-10-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.14682",
+      "pdf_url": "https://arxiv.org/pdf/2610.14682",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出VLN-Safe基准，在滑动与阻挡两种评测机制下分析R2R-CE中六个VLN智能体的碰撞行为，发现大量成功回合仍含碰撞，并提出免训练碰撞防护层，可大幅降低碰撞并提升成功率。",
+      "change_zh": "常见VLN评测只看到达目标与路径效率，且允许碰撞后沿障碍滑动，掩盖了不安全动作的真实后果。本文改用滑动/阻挡双机制量化碰撞安全，揭示任务成功与安全导航的鸿沟，并提出免训练、即插即用的碰撞否决与逃脱防护层。",
+      "why_it_matters": "该基准暴露了连续环境导航评测中碰撞被滑动机制掩盖的系统性问题，对地面VLN与ObjectNav的安全评测协议设计有直接参考价值；其免训练碰撞防护思路也可迁移到UAV目标搜索中接近目标阶段的避障与安全干预。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言导航, 碰撞安全, VLN-Safe基准, 免训练碰撞防护, R2R-CE",
+      "question_zh": "视觉语言导航（VLN）智能体在任务成功的同时碰撞行为如何被系统评估与揭示，以及如何低成本提升导航碰撞安全性？",
+      "innovation_zh": "提出VLN-Safe基准，用滑动与阻挡两种互补评估机制揭示碰撞行为；并设计免训练碰撞防护器，否决危险前进动作、执行规避机动后交还原策略，突破以往仅看任务成功与路径效率、忽略碰撞安全的评估方式。",
+      "dataset_zh": "R2R-CE（连续环境Room-to-Room数据集），评估六个已发表的VLN智能体（含循环、拓扑和视觉-语言-动作类型）",
+      "results_zh": "滑动机制下六个智能体38.5-56.8%的成功回合含碰撞，改阻挡机制后成功率降11.7-36.1个百分点；防护器在阻挡下减碰撞步62-98%、提成功率6.9-29.3个百分点，滑动下成功率不变而无碰撞成功占比升4.1-12.4个百分点。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "r2r"
+      ],
+      "added_at": "2026-10-15T14:49:05.477256+00:00"
+    },
+    {
       "id": "2610.12910",
       "arxiv_id": "2610.12910",
       "title": "Sampling-based Kinodynamic Planning with World Models",
@@ -7679,6 +8149,190 @@
         "vlm"
       ],
       "added_at": "2026-10-14T09:26:29.373660+00:00"
+    },
+    {
+      "id": "2610.17657",
+      "arxiv_id": "2610.17657",
+      "title": "Towards a Systematic Study of Embodied System 2 over Full Task Execution Cycles",
+      "authors": [
+        "Yuxi Wei",
+        "Ye Fang",
+        "Shuai Yang",
+        "Tong Wu",
+        "Tai Wang",
+        "Xiaojuan Qi"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.17657",
+      "pdf_url": "https://arxiv.org/pdf/2610.17657",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出SCOPER具身评测套件，在BEHAVIOR与ProcTHOR上构建870个任务与约3500个情境问题，系统评测System 2在规划、执行监控与失败恢复中的观测驱动推理，并以免训练harness提升成功率11.1–28.6%。",
+      "change_zh": "相比开环评测或假设技能结果理想的闭环评测，该工作将高层目标、执行中视觉观测、共享规则System 1与受控失败组合成全周期闭环，并以证据记忆加进度验证的免训练harness取代单纯扩模型，使9B加框架超过直接执行的27B。",
+      "why_it_matters": "对具身基准与评测及规划智能体两条线是直接贡献。其证据保持、进度监控与异常恢复机制，恰是ObjectNav与UAV持续目标搜索在长时程决策中易缺失的环节，harness设计可迁移到导航智能体闭环，评测协议也适用于导航任务的系统性诊断。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "具身智能,System 2,任务执行,观察引导规划,失败恢复,基准测试",
+      "question_zh": "如何系统评估并改进具身System 2在完整任务执行周期中的观察引导规划、执行监控与失败恢复能力？",
+      "innovation_zh": "提出SCOPER套件：SCOPER-bench集成高层目标、持续视觉观测、共享规则式System 1与受控执行失败，实现全执行周期闭环评估；SCOPER-harness无需额外模型训练，通过证据记忆、进度验证、动态任务议程与有界探索改进规划、执行与恢复。",
+      "dataset_zh": "SCOPER-bench涵盖BEHAVIOR和ProcTHOR两个仿真器中的870个任务及约3500个与智能体执行相关的情境化问题；离线评估使用200个真实机器人演示的观测数据",
+      "results_zh": "在两个开源模型骨干和两个仿真器上，harness将任务成功率提升11.1-28.6%，且带harness的9B模型在两个仿真器上均优于直接执行的27B模型；在基于200个真机演示的离线下一步动作评估中，全调用准确率分别提升14.7%和15.3%。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "exploration"
+      ],
+      "added_at": "2026-10-15T14:55:00.712910+00:00"
+    },
+    {
+      "id": "2610.15595",
+      "arxiv_id": "2610.15595",
+      "title": "FireNav: Decision-Oriented Reconstruction Evidence Routing for Vision-Language Navigation in Indoor Fire Environments",
+      "authors": [
+        "Hongbo Ding",
+        "Xiang Chen",
+        "Jiangxin Dong",
+        "Jinshan Pan"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15595",
+      "pdf_url": "https://arxiv.org/pdf/2610.15595",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FireNav针对室内火灾视觉退化场景的VLN，提出决策导向的重建证据路由框架，由轻量路由器按导航效用决定恢复证据的采纳强度，并构建FireVLN-Bench配对基准，实验显示优于SOTA基线。",
+      "change_zh": "常见路线先做高保真图像恢复再送入导航模型，恢复目标与决策脱节；FireNav保留原生视觉token，把恢复特征当辅助证据，由轻量路由器按任务上下文与执行状态决定采纳强度，并用动作预测损失差校准证据选择，使恢复直接服务于导航决策。",
+      "why_it_matters": "该工作为地面VLN在烟雾火灾等视觉退化条件下的鲁棒性提供新范式；其决策导向证据路由思想可迁移至UAV搜救中烟雾环境下的目标搜索与感知增强；FireVLN-Bench含模拟动力学的机器人执行设置，也为极端条件具身评测提供基准参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航（VLN）,图像复原,证据路由,决策效用校准,室内火灾环境,FireVLN-Bench",
+      "question_zh": "在室内火灾等视觉退化环境中，如何将图像复原与导航决策效用对齐，以提升视觉语言导航的指令对齐、路点预测与长程探索性能？",
+      "innovation_zh": "不同于只顾重建保真度的已有方法，FireNav保留原生视觉词元，将复原特征作为辅助证据，由轻量路由器依据视觉特征、任务上下文与执行状态决定其取舍与贡献强度，并以决策效用校准（对比有无证据的预测损失）监督证据选择。",
+      "dataset_zh": "自建的FireVLN-Bench：配对室内火灾导航基准，含保留任务语义的干净参考与安全监督，支持连续导航及带仿真动力学的机器人执行匹配评测；未提及其他公开数据集",
+      "results_zh": "实验表明，FireNav在所有评测设置下的导航成功率与路径效率均持续优于最先进基线方法；摘要中未给出具体数值结果。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "instruction",
+        "waypoint"
+      ],
+      "added_at": "2026-10-15T14:45:22.982389+00:00"
+    },
+    {
+      "id": "2610.15956",
+      "arxiv_id": "2610.15956",
+      "title": "ADAPT: Audio-Depth Action Planning with Transition-Aware Rewards for Lights-Out Industrial Navigation",
+      "authors": [
+        "Wenjun Huang",
+        "Shenghao Fu",
+        "Yian Jin",
+        "Yang Ni",
+        "Yifan Li",
+        "Lichi Li",
+        "Xingjian Diao",
+        "Pengfei Zhang",
+        "Yutong Song",
+        "Hanning Chen",
+        "Jiarui Cui",
+        "Tianyu Yang"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15956",
+      "pdf_url": "https://arxiv.org/pdf/2610.15956",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文面向无照明工业环境提出ADAPT音频-深度动作规划导航框架，以空间音频定位目标、深度感知障碍几何，经带过渡感知奖励整形的强化学习优化闭环导航，并构建含24个场景、四种声学条件的DarkNav-Bench基准。",
+      "change_zh": "常见具身导航依赖RGB的视觉语言动作模型；本文改用空间音频+深度彻底摆脱照明依赖，并将RL奖励从传统测地线进度改为位置-朝向图上的姿态感知最短动作势函数，兼顾可行移动与原地旋转，为策略优化提供动作一致的反馈。",
+      "why_it_matters": "为ObjectNav技术线扩展了无可见光条件下的目标定位导航范式及配套基准；对UAV夜间搜救、弱光侦察等主动目标搜索任务，音频+深度可作为RGB失效时的互补模态，其姿态感知奖励整形思想也可迁移到含朝向代价的无人机目标接近策略训练。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "具身导航,空间音频,深度感知,强化学习,奖励塑形,熄灯工业环境",
+      "question_zh": "如何在熄灯（无可见照明）的工业环境中，利用空间音频定位目标与深度感知避障，实现不依赖RGB的可靠自主导航？",
+      "innovation_zh": "提出ADAPT音频-深度动作规划框架，核心创新是转移感知奖励塑形TARS：在位置-朝向图上定义姿态感知最短动作势，不同于传统测地线进展奖励，兼顾可行移动与原地旋转，为策略优化提供动作一致的反馈；并构建DarkNav-Bench基准。",
+      "dataset_zh": "自建的DarkNav-Bench基准：24个工业场景、四种难度递增的声学条件（含Clean、Localized Noise等）；仿真平台或真机细节未提及。",
+      "results_zh": "实验表明，ADAPT在已见和未见场景上均优于训练型导航基线及零样本多模态模型；在未见环境下，Clean条件成功率达90.6%，最具挑战的Localized Noise条件下仍保持60.0%成功率，验证了空间音频与深度作为互补模态在无RGB导航中的可靠性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-10-15T14:57:16.864362+00:00"
+    },
+    {
+      "id": "2610.15038",
+      "arxiv_id": "2610.15038",
+      "title": "Training-Free Multi-Agent Cooperative Embodied Search from Uncertain Vision-Language Priors",
+      "authors": [
+        "Fan Pu",
+        "Keshu Wu",
+        "Jiwan Jiang",
+        "Shiyu Shen",
+        "Zhiwen Fan",
+        "Zhengzhong Tu",
+        "Jiachen Li",
+        "Yang Zhou"
+      ],
+      "published": "2026-10-10",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15038",
+      "pdf_url": "https://arxiv.org/pdf/2610.15038",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免训练的多智能体多目标搜索框架：MLLM仅生成语义假设作为不确定先验，经在线观测与图证据修正，由滚动时域混合整数线性规划协同求解，在Matterport3D上优于代表性基线。",
+      "change_zh": "不同于端到端策略或让MLLM直接决策，该框架把MLLM降级为假设生成器，输出作为不确定先验，由在线观测与图证据校验修正；导航决策交给图优化与滚动时域MILP，免训练即可跨智能体数量与目标数扩展。",
+      "why_it_matters": "多智能体多目标搜索正是搜救侦察类UAV与ObjectNav的核心问题；把MLLM输出当作需校验的不确定先验再显式优化的思路，为免训练多机协同目标搜索提供可迁移范式，对开放词汇目标搜索亦有借鉴。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "免训练, 多智能体协作, 视觉语言导航, 多模态大语言模型, 不确定性先验, 混合整数线性规划",
+      "question_zh": "如何在无地图、部分可观测环境中，利用不确定的视觉-语言先验实现免训练的多智能体多目标协作搜索？",
+      "innovation_zh": "与端到端学习导航策略的已有方法不同，该免训练框架将高层语义推理与底层执行解耦：MLLM仅作为假设生成器，其输出被视为不确定先验并由在线观测与图上下文证据修正；协作导航被建模为滚动时域多智能体MILP，采用字典序目标。",
+      "dataset_zh": "基于100个Matterport3D测试用例构建的实验环境；真机平台未提及",
+      "results_zh": "在100个Matterport3D测试用例的实验中，该框架在目标覆盖率和搜索效率上优于代表性基线方法；信息共享与联合规划使各智能体负载更均衡；框架可随智能体与目标数量扩展，泛化到未见环境，并兼容不同感知模块与底层控制器，无需任务特定再训练。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "mllm",
+        "multimodal large language model",
+        "target search"
+      ],
+      "added_at": "2026-10-15T14:59:51.840269+00:00"
     },
     {
       "id": "2610.12957",
@@ -10383,6 +11037,42 @@
       "added_at": "2026-10-15T09:11:40.828840+00:00"
     },
     {
+      "id": "2610.18522",
+      "arxiv_id": "2610.18522",
+      "title": "Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale",
+      "authors": [
+        "Jinlin Liu",
+        "Wei Chen",
+        "Xiaojin Zhang"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.18522",
+      "pdf_url": "https://arxiv.org/pdf/2610.18522",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文发现LLM智能体技能库规模化后出现隐式路由崩溃：加入1000个无关技能使技能加载召回率从73.6%降至27.4%，零加载率升至51.6%，并剖析语义与指令干扰机制及显式预选缓解方案。",
+      "change_zh": "常见路线不断向智能体堆叠技能并默认隐式路由可用，本文转而固定任务与金技能、仅增无关技能做受控压力测试，分离出描述语义干扰与指令竞争两类失效机制，并以掩盖描述、显式预选等对照实验定位成因。",
+      "why_it_matters": "UAV主动目标搜索与ObjectNav智能体日益依赖LLM调用技能与工具库执行长程任务；本文揭示技能库规模化后隐式路由崩溃的量化规律与成因，为具身导航智能体的技能组织、显式预选协议与评测设计提供直接依据。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "llm agent"
+      ],
+      "added_at": "2026-10-15T14:51:02.715377+00:00"
+    },
+    {
       "id": "2610.16522",
       "arxiv_id": "2610.16522",
       "title": "Learning Reachability-Based Safety Representations for Real-Time Robot Navigation in Unknown and Dynamic Environments",
@@ -12403,6 +13093,46 @@
         "slam"
       ],
       "added_at": "2026-10-15T09:16:14.100807+00:00"
+    },
+    {
+      "id": "2610.15572",
+      "arxiv_id": "2610.15572",
+      "title": "Look Before You Move: Agent-Interface-Aligned Supervision for Open-World Mobile Manipulation",
+      "authors": [
+        "Ronghe Qiu",
+        "Teli Ma",
+        "Jiaming Zhou",
+        "Zeying Gong",
+        "Yiting He",
+        "Qiang Huang",
+        "Junwei Liang"
+      ],
+      "published": "2026-10-11",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.15572",
+      "pdf_url": "https://arxiv.org/pdf/2610.15572",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出AIDA数据管线，让教师直接通过部署智能体的技能接口选择并执行动作，为开放世界移动操作的VLM智能体提供动作选择与主动视觉示范，在170个留出任务上达71.76%成功率，并可零额外训练迁移到真机。",
+      "change_zh": "常见做法把规划轨迹（如最短路径）转成高层动作标签，难以监督“往哪看”。AIDA改为让教师直接经部署智能体的技能接口选动作并执行，实现数据与接口对齐，并加入保持目标可见、找回丢失目标等主动视觉教师行为及模板化空间推理监督。",
+      "why_it_matters": "“往哪看”的主动视觉监督与保持目标可见、找回丢失目标的教师策略，正对应UAV主动目标搜索与ObjectNav中目标发现与接近的核心难题；接口对齐管线可迁移用于训练导航类VLM智能体，真机结果也提供Sim2Real证据。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "instruction",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-15T14:58:05.738434+00:00"
     },
     {
       "id": "2610.12266",
@@ -19050,6 +19780,42 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.16457",
+      "arxiv_id": "2610.16457",
+      "title": "SHOES: Sim-to-real Hardware-adaptation via On-policy Expansion of Skills for Legged Robots",
+      "authors": [
+        "Kota Tsuruhara",
+        "Tsung-Yuan Chen",
+        "Kento Kawaharazuka"
+      ],
+      "published": "2026-10-12",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.16457",
+      "pdf_url": "https://arxiv.org/pdf/2610.16457",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SHOES冻结仿真训练的基础运动策略，仅在真机上微调轻量恒等初始化调制模块，并用SafeBox工作空间采样器约束在线适应，以少量样本让四足机器人适应穿鞋引起的形态变化，仿真与Go2真机实验均验证有效。",
+      "change_zh": "相比对形态变化重新训练或大规模域随机化的常见做法，SHOES把真机适应压缩为冻结基策略、只更新恒等初始化的轻量模块，天然保留原有技能并降低样本需求；SafeBox以工作空间约束替代无约束探索，使在线适应更安全。",
+      "why_it_matters": "对真机Sim2Real与运动控制技术线有直接参考价值：冻结基策略、仅调轻量模块的范式可借鉴于导航系统在负载或形态变化后的低成本重适应；但工作聚焦足式运动控制，与UAV目标搜索和ObjectNav无直接关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "deployment",
+        "geometry",
+        "waypoint"
+      ],
+      "added_at": "2026-10-15T14:56:05.732723+00:00"
+    },
+    {
       "id": "2610.13416",
       "arxiv_id": "2610.13416",
       "title": "Web$hell: A Unified Interface for Agentic Web Access",
@@ -19586,96 +20352,144 @@
     }
   ],
   "briefing": {
-    "text": "本批主线是空间智能走向智能体化导航。首推F2A-ObjectNav：先系统比较探索、检测与目标验证的组合权衡，再以规则Supervisor协调组件与任务记忆，可直接指导模块化设计；HM3D-M3让多机器人按类别、图片或描述协同搜索多目标并附真机部署，回合复杂度超现有基准；GeoThinker-F把3D专家蒸馏为内生预测先验，推理提速3.6倍。趋势：导航正由单任务单机体转向可自诊断、可协作的智能体系统。",
-    "added": 11,
-    "at": "2026-10-15T09:18:07.305038+00:00",
+    "text": "这批工作的主线是导航与基础模型的深度耦合：用VLM/LLM推理、记忆与不确定性估计补足端到端策略的泛化短板，并辅以自举数据和世界模型降低对标注与重建的依赖。首推RSI-Nav，其“生成指令—执行验证—即时自更新”闭环可消化无标注轨迹、让监督随策略演进，R2R-CE成功率达68.6%，直面数据瓶颈；LERR-Nav学习高层策略协调探索、停滞恢复与记忆回忆，刷新HM3D与MP3D的ObjectNav SOTA；Interactive Navigation Beyond Reachability将连通性与目标可见性两类交互变化统一进MultINav-Bench基准，重新划定了导航问题的边界。趋势上，研究重心正从单策略学习转向记忆、信念维护与世界模型叠加的系统化导航。",
+    "added": 17,
+    "at": "2026-10-15T15:01:03.100908+00:00",
     "new": [
       {
-        "t": "GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence",
-        "u": "https://arxiv.org/abs/2610.20592",
-        "r": 9,
-        "g": 7,
-        "s": "GeoThinker-F将因果MLLM隐状态转化为预测性潜在世界表示，两阶段训练先冻结骨干向3D专家学习潜在帧预测头，再移除外部专家并以时空融合模块整合自预测先验，推理提速3.6倍且保持空间推理性能。",
-        "c": ""
-      },
-      {
-        "t": "DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning",
-        "u": "https://arxiv.org/abs/2610.20598",
-        "r": 8,
-        "g": 7,
-        "s": "DynThinker针对静态3D与动态4D能力相互干扰的问题，提出分组指数移动平均D-EMA约束敏感参数漂移，并将动态几何编码器的时空先验融入VLM中间表示，在九个基准的十项指标上取得开源模型最高平均分。",
-        "c": ""
-      },
-      {
-        "t": "Towards Agentic Robots: Model, Data, Environment, and Harness",
-        "u": "https://arxiv.org/abs/2610.20442",
-        "r": 8,
-        "g": 5,
-        "s": "本文将基础模型驱动的机器人新范式概括为'智能体机器人'，从机器人策略到智能体系统梳理VLA、世界模型等脉络，按模型、数据、环境、框架四大功能域将现有研究归为十七类，并讨论开放挑战。",
-        "c": ""
-      },
-      {
-        "t": "ReferFlow: Beyond Final-Target Localization for Complex Referring Expressions",
-        "u": "https://arxiv.org/abs/2610.20352",
-        "r": 7,
-        "g": 7,
-        "s": "该文将复杂指代表达理解扩展为轨迹级定位任务，提出基准刻画精化、转移、重置、混合四类区域轨迹，并设计解耦轨迹生成与并行坐标解码、结合GRPO的方法，显著提升多步定位一致性。",
-        "c": ""
-      },
-      {
-        "t": "HM3D-M3: A Benchmark for Multi-Agent, Multi-Modal, Multi-Object Goal Navigation",
-        "u": "https://arxiv.org/abs/2610.20121",
-        "r": 9,
-        "g": 8,
-        "s": "提出HM3D-M3基准，将多智能体、多模态、多目标导航合并进同一回合：K个机器人从分散起点搜索以类别、图片或描述指定的M个开放词汇目标，附千条验证回合、训练样本、团队级指标与两个基线，并做真机部署。",
-        "c": ""
-      },
-      {
-        "t": "F2A-ObjectNav: An Adaptive Agentic Architecture for Object-Goal Navigation",
-        "u": "https://arxiv.org/abs/2610.19618",
+        "t": "LERR-Nav: Learning to Coordinate Exploration, Recovery, and Reminiscing for Object Navigation",
+        "u": "https://arxiv.org/abs/2610.15362",
         "r": 10,
-        "g": 7,
-        "s": "本文提出F2A-ObjectNav：先用固定模块化框架系统比较探索、检测与目标验证组合并揭示其权衡，再构建由规则Supervisor协调各专用组件与任务记忆的自适应智能体架构，在三个THOR环境中验证。",
+        "g": 8,
+        "s": "LERR-Nav针对未知环境目标导航，用学习的高层VLM策略协调价值引导与LLM引导探索、停滞恢复、记忆回忆四类策略，辅以执行记忆与两阶段课程微调，在HM3D与MP3D上取得SOTA。",
         "c": ""
       },
       {
-        "t": "Reflect After Failure: Brain-Inspired Self-Evolving Agents for Embodied Spatial Intelligence",
-        "u": "https://arxiv.org/abs/2610.20312",
+        "t": "Interactive Navigation Beyond Reachability: Benchmark and Agentic Framework",
+        "u": "https://arxiv.org/abs/2610.17089",
+        "r": 9,
+        "g": 7,
+        "s": "提出超越可达性的交互式导航任务，统一通道引起的连通性变化与容器引起的目标可见性变化，发布3K集ObjectGoal基准MultINav-Bench，并提出基于持久交互图的三阶段智能体框架。",
+        "c": ""
+      },
+      {
+        "t": "G$^2$WAM: World Action Models for Efficient and Geometry Grounded Image-Goal Navigation",
+        "u": "https://arxiv.org/abs/2610.16558",
+        "r": 9,
+        "g": 8,
+        "s": "提出G²WAM，通过可学习的场景坐标定位模块将当前、目标与历史帧锚定在统一参考系，在世界-动作模型框架下于隐空间联合预测未来状态与动作，免去显式三维重建与CEM规划，实现高效图像目标导航。",
+        "c": ""
+      },
+      {
+        "t": "MemAct: Streaming Spatial Understanding with Memory and Active Exploration",
+        "u": "https://arxiv.org/abs/2610.17640",
+        "r": 9,
+        "g": 8,
+        "s": "MemAct提出流式空间理解框架：共享视觉语言模型增量写入结构化记忆、按需检索历史记录并主动移动补采视角，配套约百万级训练数据与两万余题基准，用SFT加反事实动作优化统一记忆与探索。",
+        "c": ""
+      },
+      {
+        "t": "FireNav: Decision-Oriented Reconstruction Evidence Routing for Vision-Language Navigation in Indoor Fire Environments",
+        "u": "https://arxiv.org/abs/2610.15595",
         "r": 8,
-        "g": 6,
-        "s": "HiMeco是脑启发自进化具身智能体，用海马-元认知反思诊断感知、探索、规划三类失败成因，把交互经验提炼为可复用策略与参数化技能，冻结模型参数仅更新记忆，在ESI-Bench上达SOTA。",
-        "c": ""
-      },
-      {
-        "t": "SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving",
-        "u": "https://arxiv.org/abs/2610.20609",
-        "r": 6,
         "g": 7,
-        "s": "SafeDriveVLA面向自动驾驶VLA，以导航条件世界模型做梦预测三级导航遵从模式，解耦冲突推理与动作生成，在Bench2Drive取得88.16 DS，并配套冲突感知与对抗鲁棒基准。",
+        "s": "FireNav针对室内火灾视觉退化场景的VLN，提出决策导向的重建证据路由框架，由轻量路由器按导航效用决定恢复证据的采纳强度，并构建FireVLN-Bench配对基准，实验显示优于SOTA基线。",
         "c": ""
       },
       {
-        "t": "MIND: Instruction-Conditioned Incremental Grounding for Robots",
-        "u": "https://arxiv.org/abs/2610.19262",
+        "t": "Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping",
+        "u": "https://arxiv.org/abs/2610.15782",
+        "r": 10,
+        "g": 8,
+        "s": "RSI-Nav以单一模型统一指令跟随与指令生成，分片处理无标注轨迹：生成指令、执行验证、筛样并即时自更新，使监督随策略演进，R2R-CE/RxR-CE成功率分别达68.6%与72.4%。",
+        "c": ""
+      },
+      {
+        "t": "Stereo-Planner: Learning Stereo-to-Trajectory Planning for Zero-Shot Sim-to-Real Quadrotor Navigation",
+        "u": "https://arxiv.org/abs/2610.15560",
+        "r": 8,
+        "g": 8,
+        "s": "Stereo-Planner将四旋翼轨迹生成表述为状态与尺度条件下的潜在双目几何查询，结合预训练视觉基础模型与轻量轨迹解码器，纯仿真可微代价训练后零样本部署实机，7米每秒自主飞行。",
+        "c": "https://github.com/Stereo-Planner/Stereo-Planner"
+      },
+      {
+        "t": "Successful but Unsafe: An Analytical Benchmark for Revealing Collisions in Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.14682",
+        "r": 8,
+        "g": 8,
+        "s": "本文提出VLN-Safe基准，在滑动与阻挡两种评测机制下分析R2R-CE中六个VLN智能体的碰撞行为，发现大量成功回合仍含碰撞，并提出免训练碰撞防护层，可大幅降低碰撞并提升成功率。",
+        "c": ""
+      },
+      {
+        "t": "From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction",
+        "u": "https://arxiv.org/abs/2610.17630",
+        "r": 8,
+        "g": 8,
+        "s": "DR-WM从单帧RGB重建含摩擦等接触属性的地形几何，用真实动作响应数据校准后经物理仿真预测四足机器人动作后果，并以仿真轨迹训练视频世界模型、迭代更新地形，支撑更可靠的动作与路径选择。",
+        "c": ""
+      },
+      {
+        "t": "Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale",
+        "u": "https://arxiv.org/abs/2610.18522",
         "r": 7,
         "g": 8,
-        "s": "MIND将语言指令编译为语义依赖，与事件足迹求交后仅增量刷新受影响房间判定与可达性，在ProcTHOR、AI2-THOR及真机Unitree G1上以远少于全量重算的语义评估保持决策完全一致。",
+        "s": "本文发现LLM智能体技能库规模化后出现隐式路由崩溃：加入1000个无关技能使技能加载召回率从73.6%降至27.4%，零加载率升至51.6%，并剖析语义与指令干扰机制及显式预选缓解方案。",
         "c": ""
       },
       {
-        "t": "CoWear: Towards Collaborative Wearable Inertial Localization with Multiple Smart Devices",
-        "u": "https://arxiv.org/abs/2610.20596",
-        "r": 6,
+        "t": "Have You Seen It Clearly? Uncertainty-Guided Belief Refinement for Zero-Shot Object Navigation",
+        "u": "https://arxiv.org/abs/2610.15375",
+        "r": 10,
+        "g": 8,
+        "s": "针对零样本目标导航，提出不确定性引导的信念地图RefBeliefMap，区分目标位置信念与空间语义证据不确定性，并结合目标潜力、信息增益与导航代价统一评估前沿和历史点，协调探索与重访。",
+        "c": ""
+      },
+      {
+        "t": "GG-Nav: Goal-oriented Grounding Chain-of-Thought Elicits Reasoning in Navigation Foundation Models",
+        "u": "https://arxiv.org/abs/2610.14541",
+        "r": 9,
+        "g": 8,
+        "s": "GG-Nav 通过监督微调为导航基础模型注入结构化接地思维链，从流式中间观测中累积目标相关证据并显式接地目标以支撑决策，在 HM3D ObjectNav、VL-LN、CoIN 上显著超越 SOTA，并在四足机器人上实现零样本真机部署。",
+        "c": ""
+      },
+      {
+        "t": "Towards a Systematic Study of Embodied System 2 over Full Task Execution Cycles",
+        "u": "https://arxiv.org/abs/2610.17657",
+        "r": 8,
         "g": 7,
-        "s": "CoWear发布手机、手表、眼镜三设备协同惯性定位数据集（30余人、300余次行走、超30小时，逐设备动捕真值），基线以角色专用位移估计器按学习不确定性融合，优于任一单设备。",
+        "s": "提出SCOPER具身评测套件，在BEHAVIOR与ProcTHOR上构建870个任务与约3500个情境问题，系统评测System 2在规划、执行监控与失败恢复中的观测驱动推理，并以免训练harness提升成功率11.1–28.6%。",
         "c": ""
       },
       {
-        "t": "RingNav: Task-Shaped Circular Memory for Visual Heading",
-        "u": "https://arxiv.org/abs/2610.19044",
+        "t": "SHOES: Sim-to-real Hardware-adaptation via On-policy Expansion of Skills for Legged Robots",
+        "u": "https://arxiv.org/abs/2610.16457",
+        "r": 6,
+        "g": 6,
+        "s": "SHOES冻结仿真训练的基础运动策略，仅在真机上微调轻量恒等初始化调制模块，并用SafeBox工作空间采样器约束在线适应，以少量样本让四足机器人适应穿鞋引起的形态变化，仿真与Go2真机实验均验证有效。",
+        "c": ""
+      },
+      {
+        "t": "ADAPT: Audio-Depth Action Planning with Transition-Aware Rewards for Lights-Out Industrial Navigation",
+        "u": "https://arxiv.org/abs/2610.15956",
+        "r": 8,
+        "g": 7,
+        "s": "本文面向无照明工业环境提出ADAPT音频-深度动作规划导航框架，以空间音频定位目标、深度感知障碍几何，经带过渡感知奖励整形的强化学习优化闭环导航，并构建含24个场景、四种声学条件的DarkNav-Bench基准。",
+        "c": ""
+      },
+      {
+        "t": "Look Before You Move: Agent-Interface-Aligned Supervision for Open-World Mobile Manipulation",
+        "u": "https://arxiv.org/abs/2610.15572",
         "r": 7,
         "g": 7,
-        "s": "RingNav是仅10.6k参数的视觉航向估计器，把记忆约束在圆流形S^1上，只学相邻帧转角、在圆上合成航向；TartanAir误差明显降低，零微调迁移真机无人机并实时运行。",
+        "s": "本文提出AIDA数据管线，让教师直接通过部署智能体的技能接口选择并执行动作，为开放世界移动操作的VLM智能体提供动作选择与主动视觉示范，在170个留出任务上达71.76%成功率，并可零额外训练迁移到真机。",
+        "c": ""
+      },
+      {
+        "t": "Training-Free Multi-Agent Cooperative Embodied Search from Uncertain Vision-Language Priors",
+        "u": "https://arxiv.org/abs/2610.15038",
+        "r": 8,
+        "g": 7,
+        "s": "提出免训练的多智能体多目标搜索框架：MLLM仅生成语义假设作为不确定先验，经在线观测与图证据修正，由滚动时域混合整数线性规划协同求解，在Matterport3D上优于代表性基线。",
         "c": ""
       }
     ]

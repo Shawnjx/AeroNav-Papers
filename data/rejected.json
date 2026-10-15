@@ -1,20 +1,4 @@
 {
-  "2608.30506": {
-    "title": "Anomaly Detection on Small Industrial Components via Vision-Based Tactile Sensing",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "该工作为机械臂搭载触觉传感器的工业质检异常检测评测，不含导航决策、目标搜索或主动感知规划成分，属于收录范围外的操作与检测类研究。",
-    "rejected_at": "2026-09-01",
-    "url": "https://arxiv.org/abs/2608.30506"
-  },
-  "2608.30820": {
-    "title": "RealOOB: A Definition-Consistent Real-World Oriented Occlusion Boundary Benchmark",
-    "relevance": 4,
-    "rigor": 7,
-    "reason": "纯像素级遮挡边界/边缘检测类图像基准，属明确排除的低层视觉数据集范畴，无导航、机器人或具身成分，仅以'场景理解、深度排序'等术语擦边。",
-    "rejected_at": "2026-09-01",
-    "url": "https://arxiv.org/abs/2608.30820"
-  },
   "2608.28300": {
     "title": "MaCoPlanner: LLM-Assisted Manual-Compiled Task Planning with Proactive Safety Verification for Robotic Industrial Panel Operation",
     "relevance": 5,
@@ -2398,5 +2382,21 @@
     "reason": "核心贡献是VLA长程移动操作的失败诊断与干预系统，属范围外的机械臂操作与VLA控制；导航与底座定位仅是被诊断的辅助环节，导航决策成分不足以豁免收录。",
     "rejected_at": "2026-10-15",
     "url": "https://arxiv.org/abs/2610.19600"
+  },
+  "2610.17350": {
+    "title": "Can a Frontier VLM Serve as a Robot Policy for Memory-Dependent Manipulation?",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "论文核心是用冻结VLM直接充当机械臂记忆型操作策略并在RoboMME上评测，属明确排除的机械臂操作/VLA控制范畴，且不含任何导航决策成分。",
+    "rejected_at": "2026-10-15",
+    "url": "https://arxiv.org/abs/2610.17350"
+  },
+  "2610.17521": {
+    "title": "YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "研究对象为双臂机械臂VLA操控策略的Real2Sim评测基准，不含任何导航决策成分，属范围明确排除的机械臂操作与VLA控制类工作。",
+    "rejected_at": "2026-10-15",
+    "url": "https://arxiv.org/abs/2610.17521"
   }
 }
