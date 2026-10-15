@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T09:39:46.160779+00:00",
+  "updated_at": "2026-10-15T09:16:17.101376+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1361,6 +1361,50 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.19618",
+      "arxiv_id": "2610.19618",
+      "title": "F2A-ObjectNav: An Adaptive Agentic Architecture for Object-Goal Navigation",
+      "authors": [
+        "Seyed Ali Mirghasemi",
+        "Alireza Taheri"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.19618",
+      "pdf_url": "https://arxiv.org/pdf/2610.19618",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索",
+        "多模态大模型与智能体",
+        "主动感知与重建"
+      ],
+      "relevance_score": 5,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出F2A-ObjectNav：先用固定模块化框架系统比较探索、检测与目标验证组合并揭示其权衡，再构建由规则Supervisor协调各专用组件与任务记忆的自适应智能体架构，在三个THOR环境中验证。",
+      "change_zh": "相比端到端或固定模块化流水线，其改变在于放弃单一最优固定配置，转而由规则Supervisor自适应切换策略、触发事件驱动恢复与候选管理，按需调用现有组件，并用架构级行为指标量化自适应干预程度。",
+      "why_it_matters": "自适应模块化智能体路线与系统性组件组合对比对ObjectNav有直接参考价值；其目标验证、任务记忆与事件驱动恢复设计可迁移至UAV主动目标搜索，架构级行为指标也为具身智能体评测提供新视角。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "目标对象导航, 自适应智能体架构, 具身智能, 模块化框架, 事件驱动恢复, 语义引导",
+      "question_zh": "目标对象导航中固定模块化配置无法在各类条件下保持最优，如何构建能自适应协调探索、检测与验证等组件的智能体架构？",
+      "innovation_zh": "提出F2A-ObjectNav（Fixed-to-Adaptive）自适应架构，以基于规则的Supervisor协调导航探索、目标检测、目标验证、语义引导与任务记忆等专用组件，通过事件驱动恢复、策略修订、候选管理和条件语义引导实现按需干预，弥补固定配置的局限，且正常运行时保持轻量执行。",
+      "dataset_zh": "AI2-THOR、RoboTHOR和ProcTHOR三个仿真环境，各评估25个episode",
+      "results_zh": "在AI2-THOR、RoboTHOR和ProcTHOR上各25个episode，SR/SPL分别为0.84/0.52、0.40/0.22和0.44/0.37；架构级行为指标（语义引导使用、策略切换、恢复激活、记忆支持行为、决策稳定性）显示RoboTHOR和ProcTHOR中的自适应干预频率高于AI2-THOR。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "agentic",
+        "exploration",
+        "objectnav"
+      ],
+      "added_at": "2026-10-15T09:00:29.828049+00:00"
+    },
+    {
       "id": "2610.06958",
       "arxiv_id": "2610.06958",
       "title": "Learning Modular Policy for Multi-Floor Object Navigation:A Factorized Framework for Diagnostic Study",
@@ -1979,6 +2023,54 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.20121",
+      "arxiv_id": "2610.20121",
+      "title": "HM3D-M3: A Benchmark for Multi-Agent, Multi-Modal, Multi-Object Goal Navigation",
+      "authors": [
+        "Hongyu Ding",
+        "Kanyu Xu",
+        "Mingjia Chen",
+        "Zixuan Chen",
+        "Jieqi Shi",
+        "Jing Huo",
+        "Yifan Zhang",
+        "Yang Gao"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20121",
+      "pdf_url": "https://arxiv.org/pdf/2610.20121",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出HM3D-M3基准，将多智能体、多模态、多目标导航合并进同一回合：K个机器人从分散起点搜索以类别、图片或描述指定的M个开放词汇目标，附千条验证回合、训练样本、团队级指标与两个基线，并做真机部署。",
+      "change_zh": "相比单智能体或单模态ObjectNav基准，首次将多智能体协同、多模态目标指定（类别/图像/描述）与多目标搜索并入同一回合，提出团队级指标（目标级SR、makespan归一化SPL）并给出训练式与免训练两类互补基线。",
+      "why_it_matters": "直接扩展ObjectNav与具身评测边界，为开放词汇多目标导航和多智能体协同提供统一测试床；其层级目标分配与共享建图的VLM团队思路可迁移至UAV多机协同搜索，三异构机器人真机部署也具sim2real参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "多智能体导航, 多模态目标, 多目标导航, 基准数据集, 视觉语言模型, 具身智能",
+      "question_zh": "如何在同一episode中同时考察多智能体、多模态与多目标导航，并评估机器人团队在真实感室内场景中寻找多种形式指定目标的能力？",
+      "innovation_zh": "现有基准孤立研究多智能体、多模态与多目标导航，本文首次在同一episode中融合三者，构建HM3D-M3基准与团队级指标，并提出HiGA与LaViRA-M3两个互补基线。",
+      "dataset_zh": "HM3D-M3基准（真实感室内场景）：1,000个验证episode、3,926个目标、379个开放词汇类别、100K观测-分配训练样本；另在异构三机器人真机团队上部署验证。",
+      "results_zh": "适配的多机器人与零样本方法成功率仅16-27%，而所提HiGA与LaViRA-M3基线达38-41% SR，两者各有优势且失败模式不同；LaViRA-M3还被部署于异构三机器人真机团队。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "object goal navigation",
+        "vlm"
+      ],
+      "added_at": "2026-10-15T08:59:44.832923+00:00"
     },
     {
       "id": "2610.18093",
@@ -3651,6 +3743,63 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.20592",
+      "arxiv_id": "2610.20592",
+      "title": "GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence",
+      "authors": [
+        "Haoyuan Li",
+        "Qihang Cao",
+        "Huanyuan Zhou",
+        "Xin Hu",
+        "Sijia Chen",
+        "Zihan Guo",
+        "Kun Xiang",
+        "Yunshuang Nie",
+        "Tao Tang",
+        "Xinlong Zheng",
+        "Jia-Wang Bian",
+        "Xianming Liu",
+        "Xiaodan Liang"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20592",
+      "pdf_url": "https://arxiv.org/pdf/2610.20592",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GeoThinker-F将因果MLLM隐状态转化为预测性潜在世界表示，两阶段训练先冻结骨干向3D专家学习潜在帧预测头，再移除外部专家并以时空融合模块整合自预测先验，推理提速3.6倍且保持空间推理性能。",
+      "change_zh": "常见几何感知MLLM在推理时挂载外部3D编码器提供结构先验，带来明显延迟；本文改为把3D专家知识内化为模型自身的预测性潜在表示，只要求预测有用的当前几何与未来语义而非复现专家特征，从而运行时完全摆脱外部编码器。",
+      "why_it_matters": "该工作直击空间智能核心技术线，将几何先验内化并预测未来语义，接近可用于导航的世界模型；3.6倍推理提速使空间推理更贴近无人机搜救与ObjectNav等实时在线决策需求，但论文未直接验证导航任务，价值主要在基础能力层面。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "多模态大语言模型, 空间智能, 潜在世界表示, 3D几何感知, 潜在帧预测, 推理加速",
+      "question_zh": "如何在移除外部3D编码器的前提下，让几何感知多模态大模型内生化时空感知，实现快速且保持性能的空间推理？",
+      "innovation_zh": "将因果MLLM中间隐藏状态转化为预测性潜在世界表示，采用两阶段解耦训练：先冻结主干用轻量LFP头学习几何与语义预测，再移除3D专家并通过SGT融合模块选择性整合自预测先，无需精确复现专用3D编码器特征，从而摆脱推理时对外部3D几何编码器的依赖。",
+      "dataset_zh": "未提及（摘要仅称在多个空间智能基准上评测，未给出具体数据集、仿真环境或真机平台名称）",
+      "results_zh": "GeoThinker-F消除了推理时对外部3D几何编码器的运行时依赖，在多个空间智能基准上保持有竞争力的空间推理性能，推理加速最高达3.6倍，延迟从1.45秒降至0.40秒。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "mllm",
+        "multimodal large language model",
+        "spatial intelligence",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-10-15T08:54:06.147227+00:00"
     },
     {
       "id": "2610.18792",
@@ -7373,6 +7522,60 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.20598",
+      "arxiv_id": "2610.20598",
+      "title": "DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning",
+      "authors": [
+        "Qihang Cao",
+        "Haoyuan Li",
+        "Zihan Guo",
+        "Sensen Gao",
+        "Zihui Gao",
+        "Huixin Zhang",
+        "Fan He",
+        "Jianhua Han",
+        "Hang Xu",
+        "Xiaodan Liang",
+        "Jia-Wang Bian"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20598",
+      "pdf_url": "https://arxiv.org/pdf/2610.20598",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DynThinker针对静态3D与动态4D能力相互干扰的问题，提出分组指数移动平均D-EMA约束敏感参数漂移，并将动态几何编码器的时空先验融入VLM中间表示，在九个基准的十项指标上取得开源模型最高平均分。",
+      "change_zh": "常见路线是分别训练3D或4D专用模型，导致能力此消彼长；本文发现干扰在参数组间分布不均且后层MLP最敏感，据此用可配置的分组EMA约束与语义引导的时空先验融合，让单一模型同时保有静态与动态空间推理能力。",
+      "why_it_matters": "空间智能是收录范围核心线，统一的3D/4D推理为UAV主动目标搜索与ObjectNav在动态场景中理解移动目标、预测环境演化提供更强多模态底座，也直接提升MLLM智能体的时空推理能力，属基础能力显著进展。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "空间推理, 静态3D理解, 动态4D理解, 视觉语言模型, 指数移动平均, 动态几何编码器",
+      "question_zh": "如何解决现有模型中静态3D推理与动态4D理解相互干扰的问题，在统一模型中同时强化两类空间能力？",
+      "innovation_zh": "提出DynThinker统一框架：D-EMA通过对干扰敏感的预训练参数（尤其后期MLP）施加可配置的分组指数移动平均以约束漂移；SDF在语义引导下将动态几何编码器的时空先验选择性融入VLM中间表示，从而缓解静态与动态能力的相互干扰。",
+      "dataset_zh": "评测覆盖九个静态3D与动态4D基准（共十项指标），包括ReVSI、DSR-Bench、DSI-Bench；训练数据集未提及",
+      "results_zh": "在九个静态3D与动态4D基准的十项指标上取得所有评测模型中的最高平均分；ReVSI达56.0，DSR-Bench达67.2，DSI-Bench样本级与组级评估分别达51.2和40.1，四项评测均在统一模型中刷新开源模型的SOTA。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "spatial intelligence",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-15T08:55:00.690560+00:00"
+    },
+    {
       "id": "2610.18342",
       "arxiv_id": "2610.18342",
       "title": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
@@ -10036,6 +10239,56 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.20312",
+      "arxiv_id": "2610.20312",
+      "title": "Reflect After Failure: Brain-Inspired Self-Evolving Agents for Embodied Spatial Intelligence",
+      "authors": [
+        "Xin Li",
+        "Xiaohuan Gu",
+        "Yifan Wang",
+        "Shaobin Ling",
+        "Tianli Shi",
+        "Jingao Xu",
+        "Zhimeng Yin",
+        "Dapeng Wu",
+        "Yun Wang"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20312",
+      "pdf_url": "https://arxiv.org/pdf/2610.20312",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "HiMeco是脑启发自进化具身智能体，用海马-元认知反思诊断感知、探索、规划三类失败成因，把交互经验提炼为可复用策略与参数化技能，冻结模型参数仅更新记忆，在ESI-Bench上达SOTA。",
+      "change_zh": "不同于直接累积经验或微调模型的自进化路线，HiMeco先把失败归因到感知、探索或规划某环节，再比较多次执行提炼防错策略，并用证据契约与执行验证决定技能去留，在冻结模型参数下仅靠记忆进化提升。",
+      "why_it_matters": "感知-探索-规划失败归因与ObjectNav痛点同构：找不到目标常因误识别、探索不足或规划失误，HiMeco的防错策略与可复用技能记忆可迁移到目标导航和UAV搜索智能体，实现免微调的持续改进。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "keywords_zh": "具身空间智能, 自进化智能体, 元认知监控, 海马体记忆巩固, 失败归因, 视觉语言模型",
+      "question_zh": "具身空间任务中执行失败难以定位根因（误感知、探索不足或规划错误），如何让智能体通过反思失败实现自我进化？",
+      "innovation_zh": "提出脑启发智能体HiMeco，通过海马-元认知反思机制将失败归因诊断到感知-探索-规划（PEP）各环节，相比仅累积交互经验的已有方法能定位失败根因、提炼可复用策略与避错指导，并将交互程序抽象为经证据契约与执行验证决定保留复用的参数化技能。",
+      "dataset_zh": "ESI-Bench与EmbSpatial-Bench两个具身空间智能基准；具体仿真环境或真机平台未提及",
+      "results_zh": "HiMeco在ESI-Bench上取得最优（state-of-the-art）性能；在EmbSpatial-Bench上不启用进化也能将准确率提升3.94个百分点。所学策略与技能指导后续交互，记忆仅在轮间更新且模型参数保持冻结。",
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "spatial intelligence",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-15T09:02:28.992595+00:00"
+    },
+    {
       "id": "2610.18826",
       "arxiv_id": "2610.18826",
       "title": "WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions",
@@ -10088,6 +10341,46 @@
         "world model"
       ],
       "added_at": "2026-10-14T09:23:47.449574+00:00"
+    },
+    {
+      "id": "2610.19262",
+      "arxiv_id": "2610.19262",
+      "title": "MIND: Instruction-Conditioned Incremental Grounding for Robots",
+      "authors": [
+        "Mohamed Abouagour",
+        "Junhyun Nam",
+        "Wonse Jo",
+        "Byung-Cheol Min"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.19262",
+      "pdf_url": "https://arxiv.org/pdf/2610.19262",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MIND将语言指令编译为语义依赖，与事件足迹求交后仅增量刷新受影响房间判定与可达性，在ProcTHOR、AI2-THOR及真机Unitree G1上以远少于全量重算的语义评估保持决策完全一致。",
+      "change_zh": "常见做法在环境每次变化后对全部房间重跑语义判定；MIND改为把指令编译为依赖并与事件足迹求交，只刷新受影响判定，语义资格与可达性、目标选择分开增量维护，类似数据库增量视图维护思想引入具身grounding。",
+      "why_it_matters": "对ObjectNav与指令跟随，环境变化后目标判定需反复调用昂贵语义评估，MIND以决策等价的增量维护把平均评估从30.6降到11.2次；依赖-足迹机制对UAV长时任务中目标资格与可达性的增量更新亦有借鉴价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction"
+      ],
+      "added_at": "2026-10-15T09:11:40.828840+00:00"
     },
     {
       "id": "2610.16522",
@@ -11924,6 +12217,114 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.20442",
+      "arxiv_id": "2610.20442",
+      "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+      "authors": [
+        "Chonghan Qin",
+        "Dongming Wu",
+        "Kaituo Feng",
+        "Jiaxu Wang",
+        "Xinlei Yu",
+        "Peiwen Sun",
+        "Yijia Fan",
+        "Xilin He",
+        "Bingao Chen",
+        "Weitong Lian",
+        "Ryan Ji",
+        "Wenqi Ren",
+        "Xiaobin Hu",
+        "Dahua Lin",
+        "Yu-Gang Jiang",
+        "Xiangyu Yue"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20442",
+      "pdf_url": "https://arxiv.org/pdf/2610.20442",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文将基础模型驱动的机器人新范式概括为'智能体机器人'，从机器人策略到智能体系统梳理VLA、世界模型等脉络，按模型、数据、环境、框架四大功能域将现有研究归为十七类，并讨论开放挑战。",
+      "change_zh": "作为综述，其改变不在方法而在组织方式：把此前互不连通的智能体机器人研究统一进'模型、数据、环境、框架'四域十七类框架，为如何将推理、数据采集、规划与执行等智能体功能组合成完整机器人系统提供一致视图。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav，它提供智能体化路线图：如何把LLM任务规划、世界模型、数据与评测编排进完整导航系统，实现指令理解、自主纠错与策略调整；环境与框架两域分类也可作导航基准选型参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 5,
+      "keywords_zh": "智能体机器人, 基础模型, 视觉-语言-动作模型(VLA), 世界模型, 综述",
+      "question_zh": "如何统一理解并组织分散的智能体机器人研究，将不同智能体功能整合为完整的机器人系统？",
+      "innovation_zh": "提出智能体机器人的统一定义，将分散研究统一组织为模型、数据、环境、操控四大功能域共十七个类别，并梳理从机器人策略到智能体系统（含VLA与世界模型）的演进脉络，指明开放挑战与未来方向。",
+      "results_zh": "本文为综述性工作，摘要未报告实验数据；核心产出是给出智能体机器人研究的统一概览，将现有研究归纳为四大功能域、十七个类别，并讨论开放挑战与未来研究方向，以提升机器人系统的能力、可靠性与适应性。",
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "instruction",
+        "task planning",
+        "world model"
+      ],
+      "added_at": "2026-10-15T08:57:24.294156+00:00"
+    },
+    {
+      "id": "2610.20352",
+      "arxiv_id": "2610.20352",
+      "title": "ReferFlow: Beyond Final-Target Localization for Complex Referring Expressions",
+      "authors": [
+        "Tianyi Gao",
+        "Han Fang",
+        "Xin Wei",
+        "Yaoyao Zhong",
+        "Zhaoyan Pan",
+        "Weijie Zhu",
+        "Hongbo Sun",
+        "Zhiyu Lin",
+        "Kaicheng Yang",
+        "Jinglin Xu",
+        "Ye Yuan",
+        "Hao Li",
+        "Hao Sun",
+        "Jingmin Xin"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20352",
+      "pdf_url": "https://arxiv.org/pdf/2610.20352",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文将复杂指代表达理解扩展为轨迹级定位任务，提出基准刻画精化、转移、重置、混合四类区域轨迹，并设计解耦轨迹生成与并行坐标解码、结合GRPO的方法，显著提升多步定位一致性。",
+      "change_zh": "常规REC只输出最终目标框，本文改为逐步定位查询中的中间指代：将轨迹生成与坐标解码解耦，以对象索引隐状态和显式空间监督保留区域信息，用几何约束并行解码替代跨框自回归，并以GRPO强化跨步一致。",
+      "why_it_matters": "逐步定位中间指代是VLN与ObjectNav开放词汇目标的底层能力，区域精化、转移、重置类似UAV多目标搜索的发现与切换；状态化区域表示与跨步一致性训练对具身智能体指代跟随有参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "localization",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-15T08:58:27.133866+00:00"
+    },
+    {
       "id": "2610.18850",
       "arxiv_id": "2610.18850",
       "title": "Collaborative Planning for UAV-UGV Teams under Operational Constraints via Masked Error-bounded Neuro-Symbolic Diffusion",
@@ -11962,6 +12363,46 @@
         "uav"
       ],
       "added_at": "2026-10-14T09:24:32.316950+00:00"
+    },
+    {
+      "id": "2610.19044",
+      "arxiv_id": "2610.19044",
+      "title": "RingNav: Task-Shaped Circular Memory for Visual Heading",
+      "authors": [
+        "Naitri Rajyaguru",
+        "Aryan Tajne",
+        "Stephen Jardim",
+        "Cornelia Fermuller",
+        "Yiannis Aloimonos"
+      ],
+      "published": "2026-10-13",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.19044",
+      "pdf_url": "https://arxiv.org/pdf/2610.19044",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RingNav是仅10.6k参数的视觉航向估计器，把记忆约束在圆流形S^1上，只学相邻帧转角、在圆上合成航向；TartanAir误差明显降低，零微调迁移真机无人机并实时运行。",
+      "change_zh": "常见做法依赖无结构学习记忆或重型SLAM管线；本文用任务几何塑形记忆：持久状态约束在S^1上，只学相邻帧转角、航向在圆上组合，由此相同帧零转角、序列反转精确抵消，并支撑超低功耗部署。",
+      "why_it_matters": "对UAV目标搜索与低空飞行，可靠航向是控制与探索的基础状态；RingNav以万级参数在圆上估计航向，零微调迁移真机并在视觉退化下持续工作，为微型无人机搜索任务提供可落地的轻量状态估计，缓解极端算力平台的导航瓶颈。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "drone",
+        "slam"
+      ],
+      "added_at": "2026-10-15T09:16:14.100807+00:00"
     },
     {
       "id": "2610.12266",
@@ -16776,6 +17217,90 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.20609",
+      "arxiv_id": "2610.20609",
+      "title": "SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving",
+      "authors": [
+        "Shaoyuan Xie",
+        "Zihan Zhang",
+        "Jingxuan Wang",
+        "Jiashu Qu",
+        "Xiaoqing Liang",
+        "Lingdong Kong",
+        "Junchi Lu",
+        "Henrik I. Christensen",
+        "Qi Alfred Chen"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20609",
+      "pdf_url": "https://arxiv.org/pdf/2610.20609",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SafeDriveVLA面向自动驾驶VLA，以导航条件世界模型做梦预测三级导航遵从模式，解耦冲突推理与动作生成，在Bench2Drive取得88.16 DS，并配套冲突感知与对抗鲁棒基准。",
+      "change_zh": "常见路线让世界模型滚动专家或规划动作，本工作改为让模型严格按导航指令'做梦'，用假想遵从后的未来反推指令是否安全，再以三级遵从模式把冲突判断与动作生成解耦；摘要未提供消融细节。",
+      "why_it_matters": "对'用于导航与规划的世界模型'一线有直接参考：以指令条件rollout预判遵从安全性，可迁移至UAV目标搜索与ObjectNav中判断目标/指令与场景冲突；其指令-场景冲突评测思路亦可启发VLN鲁棒性基准。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-10-15T09:05:51.621918+00:00"
+    },
+    {
+      "id": "2610.20596",
+      "arxiv_id": "2610.20596",
+      "title": "CoWear: Towards Collaborative Wearable Inertial Localization with Multiple Smart Devices",
+      "authors": [
+        "Zhuoyuan She",
+        "Zhanpeng Zhang",
+        "Yapeng Chen",
+        "Jiale Wang",
+        "Xin Xie",
+        "Ming Xia"
+      ],
+      "published": "2026-10-14",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.20596",
+      "pdf_url": "https://arxiv.org/pdf/2610.20596",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CoWear发布手机、手表、眼镜三设备协同惯性定位数据集（30余人、300余次行走、超30小时，逐设备动捕真值），基线以角色专用位移估计器按学习不确定性融合，优于任一单设备。",
+      "change_zh": "常规路线是单设备惯性定位或里程计；本文改为异构多设备协同：角色专用网络各自预测同一参考设备位移，经陀螺积分转到世界系后按学习不确定性融合，并首次提供同步异构可穿戴与逐设备动捕真值的基准数据。",
+      "why_it_matters": "对UAV主动搜索与ObjectNav无直接增益，价值在状态估计线：多IMU学习不确定性融合可为无人机与机器人鲁棒里程计提供思路，逐设备动捕真值的大规模基准也为多传感器融合评测树立范式。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "localization"
+      ],
+      "added_at": "2026-10-15T09:15:25.176380+00:00"
+    },
+    {
       "id": "2610.15740",
       "arxiv_id": "2610.15740",
       "title": "Multimodal Sensor-Gated Mid-Air Launch and Vision-Based Recovery of a Child UAV on a Hovering Mothership Drone",
@@ -19061,136 +19586,96 @@
     }
   ],
   "briefing": {
-    "text": "今日主线是无人机与具身导航的基准构建、世界模型与智能体自进化。最值得读BGC-Nav：免训练的信念引导框架让高空机以建议性偏置协调低空机，在ESARBench上超越单机与协作SOTA，为多机协作提供了不依赖联合训练的路线；SkipWorld用蒸馏出的跳跃世界模型压缩长时域推演，规划较NWM提速2.7倍，直面世界模型导航的推理开销；I2O2I-Nav补上室内-室外-室内长程导航的评测空白，阶段条件指标便于定位失败环节。趋势上，评测基建密集落地，而CrossFly测得机载VLA智能体最高仅9.7%成功率，泛化仍是核心短板。",
-    "added": 16,
-    "at": "2026-10-14T09:40:29.099946+00:00",
+    "text": "本批主线是空间智能走向智能体化导航。首推F2A-ObjectNav：先系统比较探索、检测与目标验证的组合权衡，再以规则Supervisor协调组件与任务记忆，可直接指导模块化设计；HM3D-M3让多机器人按类别、图片或描述协同搜索多目标并附真机部署，回合复杂度超现有基准；GeoThinker-F把3D专家蒸馏为内生预测先验，推理提速3.6倍。趋势：导航正由单任务单机体转向可自诊断、可协作的智能体系统。",
+    "added": 11,
+    "at": "2026-10-15T09:18:07.305038+00:00",
     "new": [
       {
-        "t": "Multimodal Sensor-Gated Mid-Air Launch and Vision-Based Recovery of a Child UAV on a Hovering Mothership Drone",
-        "u": "https://arxiv.org/abs/2610.15740",
-        "r": 6,
+        "t": "GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence",
+        "u": "https://arxiv.org/abs/2610.20592",
+        "r": 9,
         "g": 7,
-        "s": "提出母机-子机四旋翼空中发射与回收系统：上视单束激光经滞回消抖给出占用状态，RTK与母机推力构成多模态任务门控，视觉引导接近，十次户外任务九次成功，仿真对接误差0.077米。",
+        "s": "GeoThinker-F将因果MLLM隐状态转化为预测性潜在世界表示，两阶段训练先冻结骨干向3D专家学习潜在帧预测头，再移除外部专家并以时空融合模块整合自预测先验，推理提速3.6倍且保持空间推理性能。",
         "c": ""
       },
       {
-        "t": "Can Synthetic UAV Benchmarks Be Trusted? Real-Synthetic Validation for UAV Model Selection",
-        "u": "https://arxiv.org/abs/2610.14647",
-        "r": 6,
-        "g": 7,
-        "s": "该文实证检验合成UAV数据能否替代真实数据做模型选择：道路碎片基准中模型排序保留，闭集检测压力测试中top模型反转、三对偏好改变，且小目标被系统性欠表示，表明合成基准可信度须逐任务实证确立。",
-        "c": ""
-      },
-      {
-        "t": "Benchmarking Interaction-Oriented Aerial Mobility across Heterogeneous Environments",
-        "u": "https://arxiv.org/abs/2610.18381",
+        "t": "DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning",
+        "u": "https://arxiv.org/abs/2610.20598",
         "r": 8,
-        "g": 8,
-        "s": "提出CrossFly基准，评测无人机跨室内外异构环境的长程移动与交互就位能力，含15K轨迹、20余个重建场景及IRR指标，五种空载VLA智能体在未见场景最高成功率仅9.7%。",
+        "g": 7,
+        "s": "DynThinker针对静态3D与动态4D能力相互干扰的问题，提出分组指数移动平均D-EMA约束敏感参数漂移，并将动态几何编码器的时空先验融入VLM中间表示，在九个基准的十项指标上取得开源模型最高平均分。",
         "c": ""
       },
       {
-        "t": "BGC-Nav: Cross-Altitude Multi-UAV Collaborative Navigation via Belief-Guided Coupling",
-        "u": "https://arxiv.org/abs/2610.14702",
+        "t": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+        "u": "https://arxiv.org/abs/2610.20442",
+        "r": 8,
+        "g": 5,
+        "s": "本文将基础模型驱动的机器人新范式概括为'智能体机器人'，从机器人策略到智能体系统梳理VLA、世界模型等脉络，按模型、数据、环境、框架四大功能域将现有研究归为十七类，并讨论开放挑战。",
+        "c": ""
+      },
+      {
+        "t": "ReferFlow: Beyond Final-Target Localization for Complex Referring Expressions",
+        "u": "https://arxiv.org/abs/2610.20352",
+        "r": 7,
+        "g": 7,
+        "s": "该文将复杂指代表达理解扩展为轨迹级定位任务，提出基准刻画精化、转移、重置、混合四类区域轨迹，并设计解耦轨迹生成与并行坐标解码、结合GRPO的方法，显著提升多步定位一致性。",
+        "c": ""
+      },
+      {
+        "t": "HM3D-M3: A Benchmark for Multi-Agent, Multi-Modal, Multi-Object Goal Navigation",
+        "u": "https://arxiv.org/abs/2610.20121",
+        "r": 9,
+        "g": 8,
+        "s": "提出HM3D-M3基准，将多智能体、多模态、多目标导航合并进同一回合：K个机器人从分散起点搜索以类别、图片或描述指定的M个开放词汇目标，附千条验证回合、训练样本、团队级指标与两个基线，并做真机部署。",
+        "c": ""
+      },
+      {
+        "t": "F2A-ObjectNav: An Adaptive Agentic Architecture for Object-Goal Navigation",
+        "u": "https://arxiv.org/abs/2610.19618",
         "r": 10,
         "g": 7,
-        "s": "BGC-Nav提出免训练的跨高度多无人机协作导航框架：高空机维护全局信念记忆，通过局部穷尽记忆、局部吸引增强与方向信念先验，以建议性偏置引导低空机自主决策，在ESARBench上超越SOTA单机与协作方法。",
-        "c": "https://github.com/uestchjw/BGC-Nav"
+        "s": "本文提出F2A-ObjectNav：先用固定模块化框架系统比较探索、检测与目标验证组合并揭示其权衡，再构建由规则Supervisor协调各专用组件与任务记忆的自适应智能体架构，在三个THOR环境中验证。",
+        "c": ""
       },
       {
-        "t": "RootSLAM: Square Root Bundle Adjustment for Visual-Inertial SLAM",
-        "u": "https://arxiv.org/abs/2610.15157",
+        "t": "Reflect After Failure: Brain-Inspired Self-Evolving Agents for Embodied Spatial Intelligence",
+        "u": "https://arxiv.org/abs/2610.20312",
+        "r": 8,
+        "g": 6,
+        "s": "HiMeco是脑启发自进化具身智能体，用海马-元认知反思诊断感知、探索、规划三类失败成因，把交互经验提炼为可复用策略与参数化技能，冻结模型参数仅更新记忆，在ESI-Bench上达SOTA。",
+        "c": ""
+      },
+      {
+        "t": "SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving",
+        "u": "https://arxiv.org/abs/2610.20609",
+        "r": 6,
+        "g": 7,
+        "s": "SafeDriveVLA面向自动驾驶VLA，以导航条件世界模型做梦预测三级导航遵从模式，解耦冲突推理与动作生成，在Bench2Drive取得88.16 DS，并配套冲突感知与对抗鲁棒基准。",
+        "c": ""
+      },
+      {
+        "t": "MIND: Instruction-Conditioned Incremental Grounding for Robots",
+        "u": "https://arxiv.org/abs/2610.19262",
         "r": 7,
         "g": 8,
-        "s": "RootSLAM在Basalt基础上构建多相机视觉惯性SLAM，将SfM中的平方根Bundle Adjustment经新重构引入该设定，利用位姿图使全局优化可单精度运行，精度与SOTA相当且提速最高20倍，全套组件将开源。",
+        "s": "MIND将语言指令编译为语义依赖，与事件足迹求交后仅增量刷新受影响房间判定与可达性，在ProcTHOR、AI2-THOR及真机Unitree G1上以远少于全量重算的语义评估保持决策完全一致。",
         "c": ""
       },
       {
-        "t": "WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions",
-        "u": "https://arxiv.org/abs/2610.18826",
+        "t": "CoWear: Towards Collaborative Wearable Inertial Localization with Multiple Smart Devices",
+        "u": "https://arxiv.org/abs/2610.20596",
+        "r": 6,
+        "g": 7,
+        "s": "CoWear发布手机、手表、眼镜三设备协同惯性定位数据集（30余人、300余次行走、超30小时，逐设备动捕真值），基线以角色专用位移估计器按学习不确定性融合，优于任一单设备。",
+        "c": ""
+      },
+      {
+        "t": "RingNav: Task-Shaped Circular Memory for Visual Heading",
+        "u": "https://arxiv.org/abs/2610.19044",
         "r": 7,
-        "g": 8,
-        "s": "WorldOracle是一个将动作条件世界模型与配对真实执行对照评测的基准，从物理状态正确性、交互空间对齐、关键交互区保真与多视角动作一致性四个维度系统评测七个代表性模型。",
-        "c": ""
-      },
-      {
-        "t": "Collaborative Planning for UAV-UGV Teams under Operational Constraints via Masked Error-bounded Neuro-Symbolic Diffusion",
-        "u": "https://arxiv.org/abs/2610.18850",
-        "r": 7,
         "g": 7,
-        "s": "提出MEND，将UAV-UGV协同规划建模为条件掩码扩散生成，以逻辑可采纳指标重加权动作分布强制满足能量、通行等运行约束，并用误差有界的熵调度去掩码，经仿真与实物机器人验证。",
-        "c": ""
-      },
-      {
-        "t": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
-        "u": "https://arxiv.org/abs/2610.18342",
-        "r": 8,
-        "g": 7,
-        "s": "提出CityCode代理可操作的代码化3D城市表示，并用Air2Code从每区域单张低空航拍RGB图像恢复米制建筑与道路拓扑、生成实例级参数化城市，支持查询、编辑、规划与历史回滚。",
-        "c": ""
-      },
-      {
-        "t": "GeoReader: Learning Latent Geometry for Spatial Reasoning in Vision-Language Models",
-        "u": "https://arxiv.org/abs/2610.18694",
-        "r": 8,
-        "g": 7,
-        "s": "GeoReader发现已有几何隐空间对齐方法中几何信息并未被真正利用，转而训练轻量几何读取器生成连续token，以冻结VLM可读的几何描述为监督，再按问题条件化注入并微调VLM，显著提升多基准空间推理能力。",
-        "c": ""
-      },
-      {
-        "t": "LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction",
-        "u": "https://arxiv.org/abs/2610.18093",
-        "r": 9,
-        "g": 8,
-        "s": "LynxScenes是基于LYNX M20轮腿机器人采集的大规模真实数据集，含约10万段导航片段与330万标注帧，覆盖指令轨迹预测、BEV感知、未来场景预测与多视图重建四项任务。",
-        "c": ""
-      },
-      {
-        "t": "I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation",
-        "u": "https://arxiv.org/abs/2610.18307",
-        "r": 9,
-        "g": 8,
-        "s": "I2O2I-Nav是室内-室外-室内长程导航的物理仿真基准，覆盖20个真实组合场景、超11.5万平方米，含三级评测与阶段条件指标，并提出以完成验证、阶段交接和受限恢复协调冻结策略的MODULAR-Agent。",
-        "c": ""
-      },
-      {
-        "t": "SEAR: Self-Evolving Agentic Robotics",
-        "u": "https://arxiv.org/abs/2610.18792",
-        "r": 8,
-        "g": 9,
-        "s": "SEAR提出自进化具身智能体框架与基准，让大模型智能体以代码即策略、在线控制、自动微调VLA三种方式自我改进，并用对照实验区分真实学习与重复尝试，覆盖330个仿真与5个真机任务。",
-        "c": ""
-      },
-      {
-        "t": "ABot-ER: Unified Embodied Reasoning through Agentic Data-Model Co-Evolution",
-        "u": "https://arxiv.org/abs/2610.18355",
-        "r": 9,
-        "g": 7,
-        "s": "ABot-ER是一个统一的具身推理基础模型，以智能体式数据-模型自进化引擎和任务条件化低秩残差训练，在感知、规划、执行三类能力上覆盖12个基准并取得整体SOTA。",
-        "c": ""
-      },
-      {
-        "t": "SkipWorld: Latent Skip Planning with Distilled World Models for Efficient Visual Navigation",
-        "u": "https://arxiv.org/abs/2610.18135",
-        "r": 9,
-        "g": 7,
-        "s": "SkipWorld针对世界模型导航中长时域推演开销大、训练与闭环推理不匹配的问题，提出潜在空间递归自推训练、蒸馏可直接长跨度预测的跳跃世界模型，并用先粗筛后精排的双模型规划器，在RECON等四个数据集上较NWM降低误差且规划提速2.7倍。",
-        "c": ""
-      },
-      {
-        "t": "Hybrid Reasoning Agents",
-        "u": "https://arxiv.org/abs/2610.18861",
-        "r": 8,
-        "g": 8,
-        "s": "该文提出HybridAgents，使智能体在生成中动态切换潜空间推理与文本交互，经HybridSFT/HybridRL后训练，11个基准上提升10.4%并大幅降低token与推理成本。",
-        "c": "https://github.com/togethercomputer/HybridAgent"
-      },
-      {
-        "t": "Learning Reachability-Based Safety Representations for Real-Time Robot Navigation in Unknown and Dynamic Environments",
-        "u": "https://arxiv.org/abs/2610.16522",
-        "r": 7,
-        "g": 8,
-        "s": "本文离线学习HJ可达性值函数的神经隐式表示，只学习约束减去非负动力学修正的修正项，用作MPC终端约束与CBF安全滤波器，实现未知动态环境的实时安全导航，并在地面与空中机器人上验证。",
+        "s": "RingNav是仅10.6k参数的视觉航向估计器，把记忆约束在圆流形S^1上，只学相邻帧转角、在圆上合成航向；TartanAir误差明显降低，零微调迁移真机无人机并实时运行。",
         "c": ""
       }
     ]
