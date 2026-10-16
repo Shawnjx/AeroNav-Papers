@@ -1,28 +1,4 @@
 {
-  "2608.28300": {
-    "title": "MaCoPlanner: LLM-Assisted Manual-Compiled Task Planning with Proactive Safety Verification for Robotic Industrial Panel Operation",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "应用对象为工业控制面板的按钮/开关类操作，属操纵型控制任务且不含导航决策成分，仅规划方法学与规划智能体技术线擦边，按范围应拒收。",
-    "rejected_at": "2026-09-01",
-    "url": "https://arxiv.org/abs/2608.28300"
-  },
-  "2608.21879": {
-    "title": "Vision-Guided Morphing Quadcopter for Multi-Geometry Payload Transport through Narrow Passages",
-    "relevance": 3,
-    "rigor": 6,
-    "reason": "核心贡献为单驱动变形机构与空中抓取/载荷运输的平台设计，接近被排除的机械操作类工作，不含目标搜索或导航决策成分，仅UAV术语与空域自主擦边。",
-    "rejected_at": "2026-09-01",
-    "url": "https://arxiv.org/abs/2608.21879"
-  },
-  "2609.00641": {
-    "title": "AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning",
-    "relevance": 2,
-    "rigor": 8,
-    "reason": "论文核心是无人机搭载机械臂的空中操纵策略学习基准（本体构型、低层控制、扰动与策略接口的系统级评测），不含任何导航决策成分，落入排除范围中的机械臂操作/VLA控制。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00641"
-  },
   "2608.07554": {
     "title": "Impact of Dataset Composition on Embedded Real-Time UAV Wildfire Detection Using Compact YOLO Models",
     "relevance": 4,
@@ -2398,5 +2374,29 @@
     "reason": "研究对象为双臂机械臂VLA操控策略的Real2Sim评测基准，不含任何导航决策成分，属范围明确排除的机械臂操作与VLA控制类工作。",
     "rejected_at": "2026-10-15",
     "url": "https://arxiv.org/abs/2610.17521"
+  },
+  "2610.22225": {
+    "title": "Safe and Fuel-Efficient Motion Planning for Lunar Propulsive Drones",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "属月球跳跃推进无人机的轨迹规划与飞行控制垂直应用，无导航决策、目标搜索或VLN成分，非社区公认高影响力系统工作，且仅高保真仿真验证，属边缘相关。",
+    "rejected_at": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.22225"
+  },
+  "2610.21621": {
+    "title": "SPEAR: Selective Preference Elicitation with Adaptive Rewards for VLM-Guided Robotic Manipulation",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "属于被排除的机械臂操作与VLA控制范畴：VLM仅作为偏好标注工具用于操作技能的奖励学习，无任何导航决策成分，也未显著推进大模型/智能体能力本身。",
+    "rejected_at": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.21621"
+  },
+  "2610.22321": {
+    "title": "AVC-Reward: Event-Centric Audio-Video Consistency Evaluation",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作面向音视频联合生成的一致性评测与奖励建模，属生成式内容评测范畴（近似文生图/文生视频评测），与具身导航、空间智能、机器人自主及通用智能体能力均无实质关联，属范围外。",
+    "rejected_at": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.22321"
   }
 }
