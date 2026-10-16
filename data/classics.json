@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:52:36.319806+00:00",
+  "updated_at": "2026-10-16T08:04:22.322966+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6623,6 +6623,79 @@
       "added_at": "2026-10-14T14:52:36.319806+00:00"
     },
     {
+      "id": "2112.13659",
+      "arxiv_id": "2112.13659",
+      "title": "M2DGR: A Multi-Sensor and Multi-Scenario SLAM Dataset for Ground Robots",
+      "authors": [
+        "Jie Yin",
+        "Ang Li",
+        "Tao Li",
+        "Wenxian Yu",
+        "Danping Zou"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 299,
+      "url": "https://arxiv.org/abs/2112.13659",
+      "pdf_url": "https://arxiv.org/pdf/2112.13659",
+      "code_url": "https://github.com/SJTU-ViSYS/M2DGR",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "M2DGR是面向地面机器人的大型多传感器多场景SLAM数据集，同步采集鱼眼、红外、事件相机、LiDAR、GNSS-RTK等数据共36段序列，提供动捕、激光跟踪仪等多源真值轨迹，并评测主流SLAM算法揭示其不足。",
+      "change_zh": "相比常见仅覆盖相机/激光雷达的数据集，它在真实地面机器人平台上同步集成事件相机、红外相机与天空相机等罕见传感器，并用动捕、激光3D跟踪仪与RTK多源互补真值，统一覆盖室内外多样场景，降低多传感器SLAM评测门槛。",
+      "why_it_matters": "它是状态估计与控制技术线的核心基础资源，为激光、视觉惯性及事件相机SLAM提供带高精度真值的统一评测基准，可直接支撑地面机器人（含ObjectNav式导航任务）的定位、里程计验证与真机部署研究，促进导航系统底层可靠性提升。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 27,
+      "keywords": [
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
+      "id": "https://openalex.org/W2938170127",
+      "arxiv_id": "",
+      "title": "Complex urban dataset with multi-level sensors from highly diverse urban environments",
+      "authors": [
+        "Jinyong Jeong",
+        "Younggun Cho",
+        "Young-Sik Shin",
+        "Hyunchul Roh",
+        "Ayoung Kim"
+      ],
+      "published": "2019",
+      "source": "OpenAlex",
+      "venue": "The International Journal of Robotics Research",
+      "citation_count": 296,
+      "url": "https://doi.org/10.1177/0278364919843996",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（The International Journal of Robotics Research），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "该文发布覆盖高度多样城市场景的多级传感器数据集，含2D/3D激光雷达、前向立体相机与两级精度导航数据，并附SLAM位姿基线、LAS三维地图及ROS播放与查看工具。",
+      "change_zh": "相比常见单城市数据集，其纳入城市间与城市内差异及GPS失效、多车道、复杂建筑、高动态物体等难点；同时提供商用级与高精度两级传感器数据，便于用消费级传感器完整验证算法。",
+      "why_it_matters": "直接支撑状态估计与控制：为GPS失效、高动态城市场景的SLAM与定位验证提供真实多传感器数据和位姿基线；LAS三维地图可辅助3D场景理解与环境构建，对UAV目标搜索与ObjectNav仅是间接数据来源。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": true,
+      "score": 20,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W3185165122",
       "arxiv_id": "2108.04537",
       "title": "Time-optimal planning for quadrotor waypoint flight",
@@ -6695,6 +6768,42 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T06:48:10Z"
+    },
+    {
+      "id": "2102.12400",
+      "arxiv_id": "2102.12400",
+      "title": "R $^2$ LIVE: A Robust, Real-Time, LiDAR-Inertial-Visual Tightly-Coupled State Estimator and Mapping",
+      "authors": [
+        "Jiarong Lin",
+        "Chunran Zheng",
+        "Wei Dong Xu",
+        "Fu Zhang"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 293,
+      "url": "https://arxiv.org/abs/2102.12400",
+      "pdf_url": "https://arxiv.org/pdf/2102.12400",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "R2LIVE提出激光-惯性-视觉紧耦合状态估计框架，以误差状态迭代卡尔曼滤波保证实时性，辅以因子图优化提升精度，室内外多尺度实验证明对视觉失效与LiDAR退化场景鲁棒，并已开源。",
+      "change_zh": "区别于常见的仅融合两类传感器的LiDAR-惯性或视觉-惯性里程计，该工作将三种传感器在同一紧耦合框架内融合，滤波保实时、因子图提精度，并验证了单一传感器退化时整体估计仍鲁棒，实测精度优于当时最优双传感器里程计。",
+      "why_it_matters": "高精度多传感器融合里程计是UAV搜救侦察与目标搜索等自主任务的定位基座：在视觉退化或LiDAR退化的复杂环境中仍能稳定输出位姿与地图，直接支撑无人机及地面具身导航的底层自主；开源实现也便于社区复用与二次开发。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "odometry",
+        "state estimation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
     },
     {
       "id": "2010.13150",
@@ -6921,6 +7030,40 @@
       "added_at": "2026-09-02T06:48:10Z"
     },
     {
+      "id": "2210.13641",
+      "arxiv_id": "2210.13641",
+      "title": "NeRF-SLAM: Real-Time Dense Monocular SLAM with Neural Radiance Fields",
+      "authors": [
+        "Antoni Rosinol",
+        "John J. Leonard",
+        "Luca Carlone"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "citation_count": 281,
+      "url": "https://arxiv.org/abs/2210.13641",
+      "pdf_url": "https://arxiv.org/pdf/2210.13641",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作提出NeRF-SLAM：以稠密单目SLAM估计的位姿与带不确定性的深度图实时拟合层级体积神经辐射场，仅用单目图像实现实时、高精度的几何与光度三维场景重建。",
+      "change_zh": "以往神经隐式SLAM多让NeRF同时承担跟踪与建图，速度慢且常依赖RGB-D；本文将稠密单目SLAM与实时层级体积NeRF解耦级联，由前者提供位姿及带不确定性的深度监督后者，实现纯单目输入的实时高保真重建。",
+      "why_it_matters": "实时单目稠密建图是低成本自主平台的基础能力：对无人机搜救与侦察，单相机即可获得带不确定性的稠密三维地图，支撑视点规划、避障与目标接近；对ObjectNav智能体，可提供几何与光度兼优的场景记忆，辅助开放词汇目标定位。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 28,
+      "keywords": [
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W3197225143",
       "arxiv_id": "2109.01365",
       "title": "A Comparative Study of Nonlinear MPC and Differential-Flatness-Based Control for Quadrotor Agile Flight",
@@ -6992,6 +7135,41 @@
       "added_at": "2026-09-04T19:37:49Z"
     },
     {
+      "id": "2304.14377",
+      "arxiv_id": "2304.14377",
+      "title": "Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM",
+      "authors": [
+        "Hengyi Wang",
+        "Jingwen Wang",
+        "Lourdes Agapito"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 277,
+      "url": "https://arxiv.org/abs/2304.14377",
+      "pdf_url": "https://arxiv.org/pdf/2304.14377",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "Co-SLAM提出融合多分辨率哈希网格与one-blob参数编码的混合表示神经RGB-D SLAM，兼顾快速收敛与未观测区域表面补全，实现10-17Hz实时跟踪与高保真重建。",
+      "change_zh": "相比iMAP、NICE-SLAM等单用MLP或分层网格的路线，联合坐标与稀疏参数编码，同时获得高频细节与空洞填补；并通过光线采样策略免去关键帧挑选，直接对全部关键帧做全局束调整。",
+      "why_it_matters": "作为社区高影响力实时神经SLAM系统，为机器人自主提供跟踪与稠密建图核心能力，可作UAV主动目标搜索与ObjectNav所需在线空间记忆和高质量地图的底座，快速收敛特性利于主动感知与探索规划。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W4404520519",
       "arxiv_id": "2408.14035",
       "title": "FAST-LIVO2: Fast, Direct LiDAR–Inertial–Visual Odometry",
@@ -7039,6 +7217,43 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2303.17760",
+      "arxiv_id": "2303.17760",
+      "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+      "authors": [
+        "Guohao Li",
+        "Hasan Abed Al Kader Hammoud",
+        "Hani Itani",
+        "Dmitrii Khizbullin",
+        "Bernard Ghanem"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 275,
+      "url": "https://arxiv.org/abs/2303.17760",
+      "pdf_url": "https://arxiv.org/pdf/2303.17760",
+      "code_url": "https://github.com/camel-ai/camel",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出CAMEL角色扮演框架，用初始提示引导两个聊天智能体自主分工协作完成任务，替代人工逐步指导，并以此规模化生成对话数据，系统研究多智能体社会的指令跟随与合作行为，同时开源了库。",
+      "change_zh": "相比依赖人工来回引导对话的主流用法，本文用角色扮演加初始提示机制让两个智能体自主分配任务并持续推进至完成，把『人类指导』替换为『智能体间协作』，并提供可扩展的对话数据生成方式以研究多智能体行为规律。",
+      "why_it_matters": "该工作是LLM多智能体协作方向的奠基性框架，其角色扮演与自主任务推进范式及开源库支撑了后续大量智能体系统研究；对收录范围内的多智能体协同、任务分解有直接价值，对UAV协同目标搜索与ObjectNav中指令跟随型智能体设计有间接方法借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 28,
+      "keywords": [
+        "exploration",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W4399574562",
       "arxiv_id": "2302.03594",
       "title": "NICER-SLAM: Neural Implicit Scene Encoding for RGB SLAM",
@@ -7076,6 +7291,43 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-08T06:11:06.415511+00:00"
+    },
+    {
+      "id": "2008.00792",
+      "arxiv_id": "2008.00792",
+      "title": "Nonlinear MPC for Collision Avoidance and Control of UAVs With Dynamic Obstacles",
+      "authors": [
+        "Bjorn Lindqvist",
+        "Sina Sharif Mansouri",
+        "Ali–akbar Agha–mohammadi",
+        "George Nikolakopoulos"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 273,
+      "url": "https://arxiv.org/abs/2008.00792",
+      "pdf_url": "https://arxiv.org/pdf/2008.00792",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出动态障碍环境下的无人机NMPC导航与避障方法：对障碍轨迹分类并预测未来位置作为NMPC额外输入，用PANOC/OpEn求解器加罚函数处理约束，以50ms采样、2秒预测时域实现实时局部规划，多组实验室实验验证有效。",
+      "change_zh": "相比多将障碍视为静态或匀速运动的常规MPC避障，本文将障碍轨迹完全参数化，并用分类器区分轨迹类型以预测未来障碍位置，作为额外输入在线求解；障碍与约束以罚函数并入PANOC，兼顾动态避障与50ms级实时性。摘要未给出与现有方法的定量对比。",
+      "why_it_matters": "为无人机自主飞行提供实时动态避障与局部路径规划能力，是UAV搜救侦察等主动目标搜索任务在动态环境中安全巡航与接近目标的核心底层支撑；其参数化障碍轨迹预测与实时优化求解思路，也可为地面具身导航的局部避障与运动控制层提供借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": true,
+      "score": 22,
+      "keywords": [
+        "aerial",
+        "model predictive control",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
     },
     {
       "id": "https://openalex.org/W3168086592",
@@ -7229,6 +7481,75 @@
       "added_at": "2026-09-03T19:57:56Z"
     },
     {
+      "id": "2003.07574",
+      "arxiv_id": "2003.07574",
+      "title": "Simultaneous Navigation and Radio Mapping for Cellular-Connected UAV With Deep Reinforcement Learning",
+      "authors": [
+        "Yong Zeng",
+        "Xiaoli Xu",
+        "Shi Jin",
+        "Rui Zhang"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Wireless Communications",
+      "citation_count": 264,
+      "url": "https://arxiv.org/abs/2003.07574",
+      "pdf_url": "https://arxiv.org/pdf/2003.07574",
+      "code_url": "",
+      "topics": [
+        "UAV 目标搜索",
+        "空域 VLN"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：Simultaneous Navigation and Radio Mapping for Cellular-Connected UAV With Deep Reinforcement Learning。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Cellular-connected unmanned aerial vehicle (UAV) is a promising technology to unlock the full potential of UAVs in the future by reusing the cellular base stations (BSs) to enable their air-ground communications.",
+      "why_it_matters": "与UAV 目标搜索、空域 VLN直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "aerial",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
+      "id": "1909.05150",
+      "arxiv_id": "1909.05150",
+      "title": "Online Trajectory Generation With Distributed Model Predictive Control for Multi-Robot Motion Planning",
+      "authors": [
+        "Carlos E. Luis",
+        "Marijan Vukosavljev",
+        "Angela P. Schoellig"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 263,
+      "url": "https://arxiv.org/abs/1909.05150",
+      "pdf_url": "https://arxiv.org/pdf/1909.05150",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Robotics and Automation Letters），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出分布式模型预测控制算法为多机器人实时生成轨迹：按需避障加事件触发重规划，仿真较BVC平均缩短约50%通行时间，30机高密度场景成功率超90%，并以20架无人机集群实机验证。",
+      "change_zh": "相比始终维持缓冲Voronoi胞安全域的常规分布式避障，本方法改为按需避障：仅在可能冲突时施加避障约束，降低保守性并缩短约一半通行时间；另以事件触发重规划替代固定周期重规划来应对扰动。",
+      "why_it_matters": "为无人机集群安全高效飞行提供轨迹生成与避障的运动层核心能力，可直接支撑多机搜救侦察与目标接近等上层任务；20机近距离实飞验证也提供sim2real证据，是空域自主技术线的重要底层组件。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "drone",
+        "model predictive control",
+        "motion planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W4312265650",
       "arxiv_id": "2203.00893",
       "title": "FAST-LIVO: Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry",
@@ -7309,6 +7630,42 @@
       "added_at": "2026-09-08T05:39:39.759268+00:00"
     },
     {
+      "id": "2103.05056",
+      "arxiv_id": "2103.05056",
+      "title": "LCDNet: Deep Loop Closure Detection and Point Cloud Registration for LiDAR SLAM",
+      "authors": [
+        "Daniele Cattaneo",
+        "Matteo Vaghi",
+        "Abhinav Valada"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Robotics",
+      "citation_count": 258,
+      "url": "https://arxiv.org/abs/2103.05056",
+      "pdf_url": "https://arxiv.org/pdf/2103.05056",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LCDNet以共享编码器联合地点识别头与相对位姿头，基于不平衡最优传输实现可微端到端训练，在LiDAR点云上同时完成回环检测与配准，多真实数据集大幅超越SOTA。",
+      "change_zh": "相比手工描述子加独立配准的两阶段流程，LCDNet用单一网络同时输出地点识别与六自由度变换，把不平衡最优传输做成可微模块支持端到端训练，缓解了以往深度法在反向回环上的短板。",
+      "why_it_matters": "回环检测是长时程SLAM消漂移的关键，直接支撑大规模建图与导航定位的可靠性；对无人机搜救侦察等GPS受限场景的LiDAR建图与自主导航，以及具身导航的空间记忆构建都是基础能力。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W4319160361",
       "arxiv_id": "",
       "title": "Multi-sensor integrated navigation/positioning systems using data fusion: From analytics-based to learning-based approaches",
@@ -7353,6 +7710,43 @@
       "added_at": "2026-09-03T19:57:56Z"
     },
     {
+      "id": "2002.10638",
+      "arxiv_id": "2002.10638",
+      "title": "Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-Training",
+      "authors": [
+        "Weituo Hao",
+        "Chunyuan Li",
+        "Xiujun Li",
+        "Lawrence Carin",
+        "Jianfeng Gao"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 255,
+      "url": "https://arxiv.org/abs/2002.10638",
+      "pdf_url": "https://arxiv.org/pdf/2002.10638",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "该文提出VLN领域首个预训练-微调范式PREVALENT：自监督学习海量图像-文本-动作三元组获得通用环境与指令表征，可即插接入现有VLN框架，在R2R等三个任务上显著提升并刷新SOTA。",
+      "change_zh": "此前VLN智能体多针对单一任务从头训练、受数据稀缺制约；该文引入大规模图文-动作三元组自监督预训练，将通用表征学习与下游任务微调解耦，预训练模型可即插复用并跨任务迁移，由此开启VLN的预训练范式。",
+      "why_it_matters": "这是地面VLN预训练的奠基性工作：图文-动作通用表征显著缓解具身导航数据稀缺与泛化难题，其范式可迁移至空域VLN与ObjectNav的预训练智能体设计，亦启发UAV搜救目标搜索中的数据增广与表征学习。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 30,
+      "keywords": [
+        "benchmark",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
       "id": "https://openalex.org/W4390872919",
       "arxiv_id": "2309.02436",
       "title": "GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction",
@@ -7388,6 +7782,43 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-08T05:39:39.759268+00:00"
+    },
+    {
+      "id": "https://openalex.org/W3100923070",
+      "arxiv_id": "",
+      "title": "Room-Across-Room: Multilingual Vision-and-Language Navigation with Dense Spatiotemporal Grounding",
+      "authors": [
+        "Alexander Ku",
+        "Peter Anderson",
+        "Roma Patel",
+        "Eugene Ie",
+        "Jason Baldridge"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "citation_count": 253,
+      "url": "https://doi.org/10.18653/v1/2020.emnlp-main.356",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-main.356.pdf",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出Room-Across-Room多语言VLN数据集，覆盖英语、印地语与泰卢固语，路径与指令规模更大，缓解路径偏置，指令逐词与标注者轨迹姿态时间对齐，并提供单语、多语与多任务基线。",
+      "change_zh": "相比R2R的英语单语、指令-路径弱对齐做法，RxR提供三语种、更大规模数据并纠正路径偏置，核心变化是把每个词与标注者位姿在时间上稠密对齐，从稀疏指令-路径对升级为时空对齐监督，支撑模仿人类注意的模型。",
+      "why_it_matters": "作为地面VLN基石数据集，把指令跟随扩展到多语言并抑制路径偏置，成为具身语言智能体的标准评测基准；逐词-位姿稠密对齐的标注范式还可迁移到UAV指令跟随与开放词汇目标导航的语言-观测对齐数据构建。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "instruction",
+        "language agent"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-16T08:04:22.322966+00:00"
     },
     {
       "id": "2010.11061",
@@ -12559,121 +12990,247 @@
       "rigor": 5,
       "reason": "任务本质是UAV作为移动基站的通信覆盖优化，属于通信网络垂直应用，核心指标为覆盖/公平/能耗而非目标搜索或导航自主，且为仿真环境下的常规DRL多机控制增量工作，与收录技术线仅边缘相关。",
       "excluded_at": "2026-10-14"
+    },
+    "https://openalex.org/W2954704436": {
+      "title": "Cohort Profile: The National Health and Aging Trends Study (NHATS)",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "该文为公共卫生/老年医学领域的纵向队列概况研究（NHATS），与具身导航、机器人自主、空间智能、大模型与智能体等全部收录技术线均无任何关联，属范围外论文。",
+      "excluded_at": "2026-10-16"
+    },
+    "1810.09729": {
+      "title": "Design Challenges of Multi-UAV Systems in Cyber-Physical Applications: A Comprehensive Survey and Future Directions",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "多无人机信息物理系统（CPS）设计挑战的宽泛应用综述，重心在CPS整体设计而非UAV主动目标搜索或导航方法本身的进展，仅部分章节与目标覆盖追踪、节能导航擦边，属边缘相关。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3090239699": {
+      "title": "Improving land-use change modeling by integrating ANN with Cellular Automata-Markov Chain model",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该文属地理信息/城市规划领域的土地利用变化遥感模拟（CA-MC+ANN），仅涉及地理空间统计变量，与具身导航、机器人自主、3D空间智能及大模型智能体等收录技术线无实质关联，属范围外垂直应用。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3049258024": {
+      "title": "The Lancet Series call to action to reduce low value care for low back pain: an update",
+      "relevance": 0,
+      "rigor": 2,
+      "reason": "本文是关于腰痛临床治疗与卫生政策的医学综述，与具身导航、UAV搜索、空间智能、机器人自主等全部收录技术线完全无关，仅因枚举无匹配项而选最不贴切的评测线占位。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W2927482818": {
+      "title": "Group formation and cohesion of active particles with visual perception–dependent motility",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "属活性物质/集体运动物理研究：视觉感知仅用于反馈调控胶体粒子的运动速率以观察群聚现象，不含UAV或地面导航决策、空间智能、具身智能体或机器人自主核心技术线内容，仅结论泛提自主系统设计，属术语擦边的范围外工作。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3017343831": {
+      "title": "Spatial Metabolomics and Imaging Mass Spectrometry in the Age of Artificial Intelligence",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "属生物医学质谱成像与代谢组学综述，'spatial'仅为术语擦边，与具身导航、机器人自主及空间智能核心收录线无实质关联。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3019596330": {
+      "title": "Current pharmacological treatments for COVID‐19: What's next?",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文为COVID-19药物治疗的临床药理学综述，与具身导航、机器人自主、空间智能或大模型智能体等全部收录技术线完全无关，属范围外投稿。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3016266335": {
+      "title": "AI-IDS: Application of Deep Learning to Real-Time Web Intrusion Detection",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文为深度学习在Web网络安全入侵检测中的垂直应用，与具身导航、空间智能、机器人自主等全部收录技术线无关，仅“深度学习”术语擦边。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3043921266": {
+      "title": "Patterns of Use and Key Predictors for the Use of Wearable Health Care Devices by US Adults: Insights from a National Survey",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "属于医疗健康领域的全国性问卷调查研究，研究对象为可穿戴健康设备使用行为，与具身导航、空间智能、机器人自主等全部收录技术线均无关联，属明确范围外。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3042901925": {
+      "title": "Effect of Cold Atmospheric Plasma Therapy vs Standard Therapy Placebo on Wound Healing in Patients With Diabetic Foot Ulcers",
+      "relevance": 0,
+      "rigor": 7,
+      "reason": "该文为糖尿病足溃疡低温大气等离子体治疗的医学随机对照试验，与具身导航、机器人自主及大模型智能体等全部收录技术线完全无关，属范围外论文。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3025218110": {
+      "title": "Nowhere to hide: The significant impact of coronavirus disease 2019 (COVID-19) measures on elite and semi-elite South African athletes",
+      "relevance": 0,
+      "rigor": 5,
+      "reason": "属体育医学/公共卫生横断面问卷研究，与具身导航、机器人自主、空间智能及大模型智能体等全部收录技术线完全无关。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3014471496": {
+      "title": "Augmented Reality for Robotics: A Review",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "综述主题为增强现实在医疗机器人、操作与人机交互等领域的应用，与具身导航、UAV目标搜索及各基础能力收录线不符，仅在建图/定位/配准挑战处术语擦边。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W2999815819": {
+      "title": "Dockless bike-sharing systems: what are the implications?",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "本文为城市交通领域无桩共享单车系统的文献综述，聚焦出行行为、用户体验与社会影响，与具身导航、空间智能、智能体等全部收录技术线无关，摘要中提及GPS轨迹数据仅用于出行行为分析而非导航研究。",
+      "excluded_at": "2026-10-16"
+    },
+    "1811.03217": {
+      "title": "RGB-D SLAM in Dynamic Environments Using Point Correlations",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "属动态SLAM这一拥挤方向上的纯几何式常规增量改进，未见社区公认的系统级影响力或广泛采用，按状态估计与控制线的收录标准应拒绝。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3015615481": {
+      "title": "V2VR: Reliable Hybrid-Network-Oriented V2V Data Transmission and Routing Considering RSUs and Connectivity Probability",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "本文属车联网V2V/V2I通信与路由协议研究，落入纯通信与信号处理的排除范围；UAV仅在引言中被提及作为ITS应用背景，与具身导航、UAV目标搜索等收录技术线无实质关联。",
+      "excluded_at": "2026-10-16"
+    },
+    "https://openalex.org/W3007565530": {
+      "title": "Maritime Search and Rescue Based on Group Mobile Computing for Unmanned Aerial Vehicles and Unmanned Surface Vehicles",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "应用场景虽为UAV/USV海上搜救，但技术核心是群组认知移动计算与通信吞吐量优化，搜救路径规划仅是栅格化MDP策略迭代的简化环节，属通信主导的边缘擦边工作，与主动目标搜索的感知与决策技术线相关度不足。",
+      "excluded_at": "2026-10-16"
+    },
+    "2311.13165": {
+      "title": "Multimodal Large Language Models: A Survey",
+      "relevance": 6,
+      "rigor": 3,
+      "reason": "通用MLLM综述，无任何实验、基线或系统性评测，仅汇编算法与数据集，不构成模型或智能体能力本身的显著进展，严谨度未达收录门槛。",
+      "excluded_at": "2026-10-16"
+    },
+    "2311.15826": {
+      "title": "GeoChat:Grounded Large Vision-Language Model for Remote Sensing",
+      "relevance": 5,
+      "rigor": 8,
+      "reason": "遥感垂直域的LLaVA式领域适配VLM，仅做静态卫星/航空图像的多任务对话与检测，无导航、无人机自主或具身闭环，属与'空域/空间'仅术语擦边的边缘工作。",
+      "excluded_at": "2026-10-16"
     }
   },
   "last_citation_refresh": "2026-10-12T08:54:18.981295+00:00",
   "briefing": {
-    "text": "本批经典贯穿两条主线：语言与空间对齐的导航任务及地图表征，和SLAM、规划、多机协同等底层能力。首推 REVERIE，它将导航与远程指代目标定位合为一体，至今是检验指令理解与空间推理的常用基准；VLMaps 把预训练视觉语言特征写入3D重建、用自然语言索引空间，是开放词汇导航的代表路线；A Survey on Active Simultaneous Localization and Mapping 以统一形式化串起三十余年主动SLAM脉络，适合快速建立全局认知。趋势上，语言接口正从任务基准下沉至建图与规划环节，语言、感知与控制的耦合持续加深。",
+    "text": "本批工作贯通多传感器SLAM、神经隐式实时建图与语言驱动的导航智能体三条线。最值得读PREVALENT：它是VLN领域首个预训练-微调范式，图文动作表征即插即用，在R2R等任务刷新基线；NeRF-SLAM用带不确定性的单目深度实时拟合神经辐射场，仅凭单目输入即完成稠密重建；Room-Across-Room以英、印地、泰卢固三语指令附逐词时空对齐标注，把VLN推向多语言grounding。具身导航正从几何建图走向多模态预训练与通用智能体。",
     "added": 12,
-    "at": "2026-10-14T14:52:36.319806+00:00",
+    "at": "2026-10-16T08:04:22.322966+00:00",
     "new": [
       {
-        "t": "Visual Language Maps for Robot Navigation",
-        "u": "https://arxiv.org/abs/2210.05714",
-        "r": 9,
-        "g": 8,
-        "s": "提出VLMaps：把预训练视觉语言特征直接融合进环境的3D重建，形成可用自然语言索引的空间地图；机器人经标准探索自主构建，无需额外标注，结合LLM可将指令分解为地图中可直接定位的开放词汇导航目标。",
-        "c": "",
-        "cit": 347
-      },
-      {
-        "t": "TOUCHDOWN: Natural Language Navigation and Spatial Reasoning in Visual Street Environments",
-        "u": "https://arxiv.org/abs/1811.12354",
-        "r": 9,
-        "g": 7,
-        "s": "提出街景环境中的语言导航与空间推理任务及数据集TOUCHDOWN：智能体先依英文指令导航至目标点，再据自然语言空间描述定位隐藏物体；含9326条指令与示范配对，语言分析显示丰富的空间推理用法，对现有方法仍是开放挑战。",
-        "c": "",
-        "cit": 343
-      },
-      {
-        "t": "Hypersim: A Photorealistic Synthetic Dataset for Holistic Indoor Scene Understanding",
-        "u": "https://arxiv.org/abs/2011.02523",
-        "r": 6,
-        "g": 8,
-        "s": "Hypersim利用艺术家创作的公开3D资产构建了461个室内场景、77400张图像的照片级合成数据集，提供逐像素语义实例分割、完整几何、材质、光照与相机真值，并验证了语义分割与3D形状预测的Sim2Real迁移收益。",
-        "c": "",
-        "cit": 343
-      },
-      {
-        "t": "LSAR: Multi-UAV Collaboration for Search and Rescue Missions",
-        "u": "https://doi.org/10.1109/access.2019.2912306",
+        "t": "M2DGR: A Multi-Sensor and Multi-Scenario SLAM Dataset for Ground Robots",
+        "u": "https://arxiv.org/abs/2112.13659",
         "r": 8,
-        "g": 6,
-        "s": "LSAR将搜救任务分层分配给多架无人机，仿真对比max-sum、拍卖、LIAM与OTA方案，平均营救约74%幸存者、较次优高8%，且覆盖率随无人机数近线性增长。",
-        "c": "",
-        "cit": 337
-      },
-      {
-        "t": "Distributed multi-robot collision avoidance via deep reinforcement learning for navigation in complex scenarios",
-        "u": "https://doi.org/10.1177/0278364920916531",
-        "r": 7,
         "g": 8,
-        "s": "提出去中心化传感器级多机器人避障策略，经多场景多阶段策略梯度强化学习训练，直接将原始传感数据映射为速度指令，并结合混合控制框架提升鲁棒性，在仿真、百机集群与真实人群等场景验证。",
-        "c": "",
-        "cit": 332
+        "s": "M2DGR是面向地面机器人的大型多传感器多场景SLAM数据集，同步采集鱼眼、红外、事件相机、LiDAR、GNSS-RTK等数据共36段序列，提供动捕、激光跟踪仪等多源真值轨迹，并评测主流SLAM算法揭示其不足。",
+        "c": "https://github.com/SJTU-ViSYS/M2DGR",
+        "cit": 299
       },
       {
-        "t": "A Survey on Active Simultaneous Localization and Mapping: State of the Art and New Frontiers",
-        "u": "https://arxiv.org/abs/2207.00254",
-        "r": 9,
+        "t": "Complex urban dataset with multi-level sensors from highly diverse urban environments",
+        "u": "https://doi.org/10.1177/0278364919843996",
+        "r": 6,
         "g": 6,
-        "s": "该综述系统回顾主动SLAM三十余年发展，给出统一问题形式化，梳理模块化三阶段方案、信念空间规划、深度强化学习及多机协同路线，并展望可复现研究与主动空间感知等新方向。",
+        "s": "该文发布覆盖高度多样城市场景的多级传感器数据集，含2D/3D激光雷达、前向立体相机与两级精度导航数据，并附SLAM位姿基线、LAS三维地图及ROS播放与查看工具。",
         "c": "",
-        "cit": 332
+        "cit": 296
       },
       {
-        "t": "AI-IMU Dead-Reckoning",
-        "u": "https://arxiv.org/abs/1904.06064",
+        "t": "R $^2$ LIVE: A Robust, Real-Time, LiDAR-Inertial-Visual Tightly-Coupled State Estimator and Mapping",
+        "u": "https://arxiv.org/abs/2102.12400",
+        "r": 8,
+        "g": 8,
+        "s": "R2LIVE提出激光-惯性-视觉紧耦合状态估计框架，以误差状态迭代卡尔曼滤波保证实时性，辅以因子图优化提升精度，室内外多尺度实验证明对视觉失效与LiDAR退化场景鲁棒，并已开源。",
+        "c": "",
+        "cit": 293
+      },
+      {
+        "t": "NeRF-SLAM: Real-Time Dense Monocular SLAM with Neural Radiance Fields",
+        "u": "https://arxiv.org/abs/2210.13641",
+        "r": 9,
+        "g": 8,
+        "s": "该工作提出NeRF-SLAM：以稠密单目SLAM估计的位姿与带不确定性的深度图实时拟合层级体积神经辐射场，仅用单目图像实现实时、高精度的几何与光度三维场景重建。",
+        "c": "",
+        "cit": 281
+      },
+      {
+        "t": "Co-SLAM: Joint Coordinate and Sparse Parametric Encodings for Neural Real-Time SLAM",
+        "u": "https://arxiv.org/abs/2304.14377",
+        "r": 8,
+        "g": 8,
+        "s": "Co-SLAM提出融合多分辨率哈希网格与one-blob参数编码的混合表示神经RGB-D SLAM，兼顾快速收敛与未观测区域表面补全，实现10-17Hz实时跟踪与高保真重建。",
+        "c": "",
+        "cit": 277
+      },
+      {
+        "t": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+        "u": "https://arxiv.org/abs/2303.17760",
+        "r": 9,
+        "g": 7,
+        "s": "本文提出CAMEL角色扮演框架，用初始提示引导两个聊天智能体自主分工协作完成任务，替代人工逐步指导，并以此规模化生成对话数据，系统研究多智能体社会的指令跟随与合作行为，同时开源了库。",
+        "c": "https://github.com/camel-ai/camel",
+        "cit": 275
+      },
+      {
+        "t": "Nonlinear MPC for Collision Avoidance and Control of UAVs With Dynamic Obstacles",
+        "u": "https://arxiv.org/abs/2008.00792",
+        "r": 7,
+        "g": 6,
+        "s": "提出动态障碍环境下的无人机NMPC导航与避障方法：对障碍轨迹分类并预测未来位置作为NMPC额外输入，用PANOC/OpEn求解器加罚函数处理约束，以50ms采样、2秒预测时域实现实时局部规划，多组实验室实验验证有效。",
+        "c": "",
+        "cit": 273
+      },
+      {
+        "t": "Simultaneous Navigation and Radio Mapping for Cellular-Connected UAV With Deep Reinforcement Learning",
+        "u": "https://arxiv.org/abs/2003.07574",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：Simultaneous Navigation and Radio Mapping for Cellular-Connected UAV With Deep Reinforcement Learning。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 264
+      },
+      {
+        "t": "Online Trajectory Generation With Distributed Model Predictive Control for Multi-Robot Motion Planning",
+        "u": "https://arxiv.org/abs/1909.05150",
         "r": 7,
         "g": 7,
-        "s": "提出仅用IMU的轮式车辆航位推算方法：以卡尔曼滤波为核心，用深度神经网络动态自适应调节滤波噪声参数，在KITTI里程计基准上自标定IMU偏置并估计三维位姿速度，平移误差1.10%，可媲美LiDAR/双目方法。",
+        "s": "提出分布式模型预测控制算法为多机器人实时生成轨迹：按需避障加事件触发重规划，仿真较BVC平均缩短约50%通行时间，30机高密度场景成功率超90%，并以20架无人机集群实机验证。",
         "c": "",
-        "cit": 322
+        "cit": 263
       },
       {
-        "t": "REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments",
-        "u": "https://arxiv.org/abs/1904.10151",
+        "t": "LCDNet: Deep Loop Closure Detection and Point Cloud Registration for LiDAR SLAM",
+        "u": "https://arxiv.org/abs/2103.05056",
+        "r": 7,
+        "g": 7,
+        "s": "LCDNet以共享编码器联合地点识别头与相对位姿头，基于不平衡最优传输实现可微端到端训练，在LiDAR点云上同时完成回环检测与配准，多真实数据集大幅超越SOTA。",
+        "c": "",
+        "cit": 258
+      },
+      {
+        "t": "Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-Training",
+        "u": "https://arxiv.org/abs/2002.10638",
         "r": 10,
-        "g": 9,
-        "s": "提出REVERIE数据集，要求智能体依据自然语言指令在未见过的真实室内环境中导航并定位指定物体，现有VLN与指代表达模型均表现不佳，同时提出交互式Navigator-Pointer强基线。",
-        "c": "https://github.com/YuankaiQi/REVERIE",
-        "cit": 317
-      },
-      {
-        "t": "RAPTOR: Robust and Perception-Aware Trajectory Replanning for Quadrotor Fast Flight",
-        "u": "https://arxiv.org/abs/2007.03465",
-        "r": 9,
-        "g": 9,
-        "s": "RAPTOR面向四旋翼高速飞行提出鲁棒且感知感知的重规划框架：以融合多条拓扑路径的路径引导优化在极短时间内求得可行高质量轨迹，并用风险感知轨迹精修与偏航角规划主动观测和规避未知障碍，经基准对比及室内外激进飞行验证并开源。",
+        "g": 8,
+        "s": "该文提出VLN领域首个预训练-微调范式PREVALENT：自监督学习海量图像-文本-动作三元组获得通用环境与指令表征，可即插接入现有VLN框架，在R2R等三个任务上显著提升并刷新SOTA。",
         "c": "",
-        "cit": 308
+        "cit": 255
       },
       {
-        "t": "Intensity Scan Context: Coding Intensity and Geometry Relations for Loop Closure Detection",
-        "u": "https://arxiv.org/abs/2003.05656",
-        "r": 7,
-        "g": 7,
-        "s": "提出强度扫描上下文ISC全局描述子，将激光几何与反射强度信息联合编码用于SLAM回环检测，并设计二值几何快速检索加强度结构再识别的两级分层流程，在本地与公开数据集上召回率与召回精度优于纯几何方法。",
-        "c": "",
-        "cit": 307
-      },
-      {
-        "t": "An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments",
-        "u": "https://arxiv.org/abs/1909.09548",
+        "t": "Room-Across-Room: Multilingual Vision-and-Language Navigation with Dense Spatiotemporal Grounding",
+        "u": "https://doi.org/10.18653/v1/2020.emnlp-main.356",
         "r": 9,
         "g": 8,
-        "s": "提出一种受RRT*启发的在线信息路径规划方法，持续扩展并重连单棵轨迹树以实现全局覆盖与全局效用最大化，用于MAV室内探索与TSDF三维重建，仿真超越现有方法并完成真机实时验证。",
+        "s": "提出Room-Across-Room多语言VLN数据集，覆盖英语、印地语与泰卢固语，路径与指令规模更大，缓解路径偏置，指令逐词与标注者轨迹姿态时间对齐，并提供单语、多语与多任务基线。",
         "c": "",
-        "cit": 307
-      },
-      {
-        "t": "OpenVSLAM",
-        "u": "https://doi.org/10.1145/3343031.3350539",
-        "r": 7,
-        "g": 6,
-        "s": "OpenVSLAM是一个高可用性与可扩展性的开源视觉SLAM框架，针对传统开源SLAM难以作为库被第三方程序调用的问题，将其设计为易集成、易扩展的软件库，面向AR设备、机器人与无人机自主控制的研发需求，以BSD许可在GitHub开源。",
-        "c": "https://github.com/xdspacelab/openvslam",
-        "cit": 302
+        "cit": 253
       }
     ]
   }
