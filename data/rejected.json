@@ -1,12 +1,4 @@
 {
-  "2608.07554": {
-    "title": "Impact of Dataset Composition on Embedded Real-Time UAV Wildfire Detection Using Compact YOLO Models",
-    "relevance": 4,
-    "rigor": 6,
-    "reason": "该文是嵌入式UAV野火目标检测的数据构成研究，无主动搜索、导航或感知决策成分，属范围外的纯检测类工作。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.07554"
-  },
   "2609.01060": {
     "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
     "relevance": 2,
@@ -2398,5 +2390,13 @@
     "reason": "该工作面向音视频联合生成的一致性评测与奖励建模，属生成式内容评测范畴（近似文生图/文生视频评测），与具身导航、空间智能、机器人自主及通用智能体能力均无实质关联，属范围外。",
     "rejected_at": "2026-10-16",
     "url": "https://arxiv.org/abs/2610.22321"
+  },
+  "2610.21327": {
+    "title": "DocPilot: Interactive Agent Orchestration and Training for Long Visual Document Understanding",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属长视觉文档/图文问答这一垂直智能体应用，与空间、导航、机器人均无关，命中范围外条款（纯图文问答类应用）。",
+    "rejected_at": "2026-10-17",
+    "url": "https://arxiv.org/abs/2610.21327"
   }
 }
