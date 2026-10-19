@@ -1,76 +1,4 @@
 {
-  "2609.01060": {
-    "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "该文是RGB引导高光谱图像超分辨的跨模态配准与融合工作，属底层视觉成像任务，不涉及导航决策、主动感知或智能体能力，超出收录范围。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01060"
-  },
-  "2609.01027": {
-    "title": "Fi-ImageNet-1k: An OOD Benchmark From the Inside of the ImageNet-1k Validation Set",
-    "relevance": 1,
-    "rigor": 7,
-    "reason": "属于2D图像分类的OOD检测基准，仅将MLLM/VLM用作标注辅助工具，与具身导航、空间智能、机器人及智能体能力均无关，属范围外。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01027"
-  },
-  "2609.00948": {
-    "title": "From Terminology to Diagrams: Visual-Instruction Generation for Scientific Diagram Understanding",
-    "relevance": 4,
-    "rigor": 6,
-    "reason": "面向科学图表问答的垂直领域指令数据生成与VLM微调，属图文问答类应用，与空间智能、导航、机器人及通用智能体能力本身无实质关联。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00948"
-  },
-  "2609.00845": {
-    "title": "Towards Generalizable Visually Grounded Exploration of Household Devices",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "该基准以陌生家电的功能操作与可供性交互为核心，摘要未见导航决策、目标搜索或空间推理成分，属操作类交互评测，仅与主动感知、具身基准术语擦边。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00845"
-  },
-  "2609.00906": {
-    "title": "Peg-in-Bench: A Modular Benchmark for High-Precision Robotic Insertion",
-    "relevance": 2,
-    "rigor": 5,
-    "reason": "属机械臂高精度插装（peg-in-hole）操作基准，不含导航决策成分，命中范围中明确排除的机械臂操作类别，仅与'具身基准'术语擦边。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00906"
-  },
-  "2609.01036": {
-    "title": "MultiGait: A Multi-Sensor Multi-Perspective Multi-Session Biometric Inference Benchmark and its Dataset",
-    "relevance": 2,
-    "rigor": 8,
-    "reason": "该论文属于步态生物特征识别与隐私风险评估的数据集/基准工作，虽使用深度相机与激光雷达等传感器，但与目标搜索、视觉语言导航、空间智能等收录技术线无实质关联。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01036"
-  },
-  "2609.01113": {
-    "title": "EDRAC: Benchmarking Arabic Dialect Reading Comprehension",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "纯文本方言阿拉伯语阅读理解基准，与空间智能、导航、机器人或智能体能力无关，属范围外垂直NLP应用。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01113"
-  },
-  "2609.00924": {
-    "title": "Beyond the Image Plane: World-Grounded Queries for Multi-Object Tracking",
-    "relevance": 4,
-    "rigor": 6,
-    "reason": "该工作本质是多目标跟踪（被动视频感知）任务，虽借用3D场景几何接地查询与长时记忆等术语，但不涉及导航决策、主动感知或具身空间推理，超出收录范围。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00924"
-  },
-  "2609.00242": {
-    "title": "CoLT-Drive: Counterfactual Long-Tail Benchmarking and Knowledge-Preserving Adaptation for Driving Affordance Prediction",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "面向自动驾驶决策的可供性预测与VLM域适配属驾驶垂直应用，不落在具身导航（UAV目标搜索/ObjectNav/VLN）与空间智能等收录技术线上，KPA亦为结构化提示、SLERP、LoRA-MoE等已有组件的领域化组合而非模型社区级新进展。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00242"
-  },
   "2609.00384": {
     "title": "RestoreBench: Can AI Agents Restore Power Flow Convergence?",
     "relevance": 3,
@@ -2398,5 +2326,77 @@
     "reason": "属长视觉文档/图文问答这一垂直智能体应用，与空间、导航、机器人均无关，命中范围外条款（纯图文问答类应用）。",
     "rejected_at": "2026-10-17",
     "url": "https://arxiv.org/abs/2610.21327"
+  },
+  "2610.22895": {
+    "title": "HAPACT: A Benchmark For Human-Centric Physical Impact Localization in Movies",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该工作是基于电影片段的被动视频理解基准（时刻检索+人体区域定位），不含智能体、导航决策或机器人自主成分，与收录范围内的空间智能、具身基准等主线仅术语擦边，属范围外。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.22895"
+  },
+  "2610.23416": {
+    "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "遥感推理分割属对地观测垂直任务，与收录的UAV自主搜索、VLN、具身导航及机器人自主各线无导航、主动感知或决策成分，仅与空间智能及MLLM线边缘交叉。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23416"
+  },
+  "2610.23479": {
+    "title": "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心为双臂机械臂操作（RoboDojo推动、紧密插孔、操作记忆任务），落入明确排除的机械臂操作与智能体控制范畴，且不含导航决策成分。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23479"
+  },
+  "2610.23537": {
+    "title": "PanoBench: A Panoptic Occupancy Prediction Benchmark for Autonomous Driving",
+    "relevance": 5,
+    "rigor": 8,
+    "reason": "面向自动驾驶的环视全景占用预测属于驾驶感知基准社区，不涉及导航决策或具身智能体，与UAV目标搜索、ObjectNav、VLN等核心收录线无实质重叠，仅以“3D场景理解”术语边缘擦边，判定为边缘相关。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23537"
+  },
+  "2610.23789": {
+    "title": "The Collection of a Real-World, Large-Scale Dataset for Automated Skill Evaluation in Central Line Dressing Change",
+    "relevance": 1,
+    "rigor": 5,
+    "reason": "医疗临床技能评估视频数据集，属与导航、空间智能、机器人自主无关的垂直领域应用，且是纯动作/技能评估而非具身评测，故不予收录。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23789"
+  },
+  "2610.23845": {
+    "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "LLM智能体被用于医学统计研究（SEER癌症数据库论文）的自动复现与稳健性审查，属于与空间、导航、机器人完全无关的垂直领域应用，落入明确拒绝范围。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23845"
+  },
+  "2610.23709": {
+    "title": "GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "将LLM智能体与记忆演化机制套用于电商商品文案优化这一垂直应用，与空间、导航、机器人均无关，属研究范围明示拒绝的类型。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23709"
+  },
+  "2610.23625": {
+    "title": "PresenceBench: An Exploratory Evaluation of Large Language Model Adaptation to User State",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "评测对象是LLM对用户功能状态（准备度、心流、稳定性）的文本自适应，属人机交互/情感计算向的垂直应用评测，与空间智能、具身导航、机器人自主均无关联。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23625"
+  },
+  "2610.23612": {
+    "title": "SIT-Eval: Situation-Based Interactive Turn-by-Turn Evaluation of Conversational Agents",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "纯对话智能体的情境行为评估基准，不涉及空间、导航、具身或机器人要素，仅'智能体/评测'术语与收录范围擦边，属范围外。",
+    "rejected_at": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.23612"
   }
 }

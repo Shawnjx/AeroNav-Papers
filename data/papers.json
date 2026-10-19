@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T14:32:23.701339+00:00",
+  "updated_at": "2026-10-19T10:06:23.074368+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -287,6 +287,106 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2610.23293",
+      "arxiv_id": "2610.23293",
+      "title": "SkyAgent: Revisable Target Memory for Continuous Aerial Search",
+      "authors": [
+        "Kaibo Yang",
+        "Xingyu Wu",
+        "Enze Zhu",
+        "Yajie Chai",
+        "Xuyang Li",
+        "Jiahui Cui",
+        "Xiaoxuan Liu",
+        "Lei Wang",
+        "Zhan Chen"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.23293",
+      "pdf_url": "https://arxiv.org/pdf/2610.23293",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文针对无人机持续空中搜索中目标候选被后续证据证伪后仍滞留并反复触发接近动作的问题，提出可修正目标记忆RTM，用暂定/确认/拒绝三态管理候选、绑定航点与候选，在多个基准及大疆真机场景中显著提升成功率与行为可靠性。",
+      "change_zh": "常见路线多假设目标证据一旦存入记忆即静态可靠，规划器只管接近；本文把记忆变为可修正对象：显式定义FCP这一轨迹级失败，通过证据关联与相关视角折扣、三态修订使候选作废能自动撤销对应航点，并用保守重激活保护被遮挡目标。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "持续空中搜索, 可修正目标记忆(RTM), 错误候选持续性(FCP), 无人机目标搜索, 目标假设状态修订",
+      "question_zh": "如何解决持续空中搜索中，被后续证据推翻的错误目标假设仍持续存在并引发无效接近与验证行为的轨迹级失败（FCP）问题。",
+      "innovation_zh": "提出可修正目标记忆（RTM）：将证据与持久候选关联、折扣相关视角观测，并以Tentative、Confirmed、Rejected三态修订候选；每个航点绑定来源候选，拒绝时自动失效陈旧目标，同时保守重激活保护被暂时遮挡的目标，从接口层面消除FCP。",
+      "dataset_zh": "CityAVOS、UAV-ON、OpenUAV三个基准的四个数据划分，以及每种方法各35个匹配的真实DJI无人机场景",
+      "results_zh": "在四个基准划分上，配备RTM的SkyAgent优于所有对比方法，SR提升2.90–6.31个百分点，同时显著降低Behavior-FCP与矛盾证据出现后的飞行开销，且保持较低的误拒率；在35个匹配的真实DJI场景中，RTM持续提升任务成功率与行为可靠性，验证了状态到动作修正的物理部署有效性。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "deployment",
+        "uav",
+        "waypoint"
+      ],
+      "added_at": "2026-10-19T09:37:03.593925+00:00"
+    },
+    {
+      "id": "2610.23203",
+      "arxiv_id": "2610.23203",
+      "title": "SimpleVLN: Towards Simple and Frontier Vision-Language Navigation",
+      "authors": [
+        "Lingyi Hong",
+        "Weiren Cai",
+        "Jiayu Chen",
+        "Xinyu Zhou",
+        "Bailin He",
+        "Yunfei Guo",
+        "Qiao Sun",
+        "Boyu Ma",
+        "Jianfei Yang",
+        "Wenqiang Zhang"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.23203",
+      "pdf_url": "https://arxiv.org/pdf/2610.23203",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SimpleVLN不改造MLLM结构，以单轮决策、固定预算记忆与动作分块建模导航，结合示范与DAgger数据及渐进式模仿到强化训练，在R2R-CE与RxR-CE上大幅超越现有方法。",
+      "change_zh": "不同于任务专用架构路线，SimpleVLN保持原生MLLM结构不动，把改进放在导航形式化（固定预算记忆、动作分块）、数据合成与IL-DAgger-RL渐进优化，证明不靠专用结构也能释放导航能力。",
+      "why_it_matters": "不改MLLM结构、以形式化与训练释放能力的思路可迁移至ObjectNav目标条件导航与无人机指令搜索：固定预算记忆与动作分块利于长程搜索高效决策，DAgger合成加RL管线也为稀疏奖励主动搜索提供范式。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言导航, 多模态大语言模型, 具身智能, 动作分块, DAgger, 强化学习",
+      "question_zh": "在不引入任务特定架构的前提下，原生多模态大语言模型的视觉语言导航潜力能否被真正释放？",
+      "innovation_zh": "不同于依赖任务特定架构的已有方法，SimpleVLN保持模型架构不变：采用单轮决策输入、固定预算全局-局部记忆与动作分块输出；结合专家演示、DAgger经验及可扩展任务合成流水线；以渐进式IL-DAgger-RL从动作模仿走向任务级结果优化。",
+      "dataset_zh": "数据集为R2R-CE与RxR-CE两个评测划分；具体仿真环境或真机平台未提及",
+      "results_zh": "SimpleVLN在R2R-CE和RxR-CE上分别取得76.7%和80.1%的成功率，大幅超越现有方法；框架在多个MLLM骨干与模型规模上实例化，验证了其通用性，实验证明了形式化、数据构建与优化三方面的有效性。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "mllm",
+        "multimodal large language model",
+        "r2r"
+      ],
+      "added_at": "2026-10-19T10:00:01.425931+00:00"
     },
     {
       "id": "2610.21450",
@@ -2276,6 +2376,105 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.22812",
+      "arxiv_id": "2610.22812",
+      "title": "PASS-VLN: Passability-Aware Local-Command Vision-and-Language Navigation",
+      "authors": [
+        "Cong Zou",
+        "Xiangsheng Shi",
+        "Xuanhui Wang",
+        "Fubin Wang",
+        "Guangjun Ge",
+        "Chao Wang",
+        "Yu Wang"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.22812",
+      "pdf_url": "https://arxiv.org/pdf/2610.22812",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出通行性感知的局部指令VLN基准与模型：固定场景指令、仅变机体宽度，可行须通过、受阻须停止；模型以深度BEV障碍膨胀编码机体宽度，融合视觉语言预测离散潜动作码闭环执行，并经真机验证。",
+      "change_zh": "常见VLN默认指令可执行、聚焦长程任务；本文改为只评局部指令的物理可执行性：固定场景指令路线、仅变机体宽度，解耦任务规划与空间记忆；模型显式以障碍膨胀编码机体尺寸，学会可达则通过、受阻则停止。",
+      "why_it_matters": "为分层导航提供机体感知的低层执行器：ObjectNav与UAV目标搜索的高层规划同样需低层判定窄缝可通行性并决定通过或停止，其障碍膨胀与可达-停止决策可迁移到无人机穿缝接近目标，真机验证亦增实用价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言导航（VLN）、可通过性感知、机器人身体约束、无碰撞导航、局部指令、鸟瞰图",
+      "question_zh": "如何在环境与机器人身体尺寸约束下，判断局部导航指令是否物理可执行，并实现无碰撞的闭环局部导航执行。",
+      "innovation_zh": "现有VLN基准假设指令均可执行且专注长时程任务，忽视身体相关的局部执行。本文提出可通过性感知的局部指令基准，固定场景、指令与起始位姿、仅改变机器人身体宽度；模型在深度局部鸟瞰图中以障碍物膨胀编码身体宽度，融合几何与视觉语言上下文，预测离散潜行动作码实现连续闭环执行。",
+      "dataset_zh": "作者自建的PASS-VLN局部指令基准（仿真，具体仿真平台未提及），并在真实机器人上部署验证（真机平台型号未提及）",
+      "results_zh": "PASS-VLN的无碰撞成功率较在其基准上微调的强VLN模型提升约12个百分点；能根据身体约束自适应调整到达-停止行为，并泛化到未见过的身体宽度；与高层规划器集成后以更少的局部指令取得更高成功率，真机部署进一步验证了其作为低层执行器的有效性。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "geometry",
+        "instruction",
+        "spatial memory",
+        "task planning"
+      ],
+      "added_at": "2026-10-19T09:38:20.154324+00:00"
+    },
+    {
+      "id": "2610.22905",
+      "arxiv_id": "2610.22905",
+      "title": "SenseSwarm: Swarm Exploration via Neural Structure Estimation with Shared World-Anticipation for Rapid Mapping",
+      "authors": [
+        "Haohua Que",
+        "Haojia Gao",
+        "Mingkai Liu",
+        "Hoiian Au",
+        "Qian Zhang",
+        "Jiayue Xie",
+        "Yule Cai",
+        "Bokui Chen",
+        "Xueqian Wang",
+        "Fei Qiao"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.22905",
+      "pdf_url": "https://arxiv.org/pdf/2610.22905",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SenseSwarm在集群共享占据地图上运行轻量神经结构预测器，将预测结构折回共享引导场；在12个真实楼层、1620次仿真中，非预测基线需1.3-1.9倍时间达到八成已知地图。",
+      "change_zh": "常规探索仅计物理到访的地图；本文改为在共享占据图上一次性预测未探索结构并折回引导场，计算成本不随集群规模增长；并用集群自身多前沿观测微调预测器，单机预测器会崩溃，共享应用比逐机应用碰撞率低6.9倍。",
+      "why_it_matters": "为UAV集群搜救与侦察提供更快的态势掌握：预测补全未到访结构可为目标发现与接近提供先验；预测一次全群共享、成本不随规模增长，契合大规模集群落地；其结构预判也连接世界模型与主动建图两线。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "机器人群探索, 神经结构估计, 地图预测, 共享占据地图, 快速建图, 协同引导场",
+      "question_zh": "如何使分布式机器人群在物理覆盖之前预知未知建筑结构，从而在每个时刻加速建图、提升群体对建筑的已知程度。",
+      "innovation_zh": "在群体共享占据图上部署709K参数的轻量学习地图预测器，并把预测结构折叠回协同引导场引导全群；相比需物理访问才获知结构的已有方法，可提前预知结构，且预测器经群体自身多前沿观测微调（单机器人预测器在此类视野下崩溃），预测每张共享图仅算一次，成本不随群规模（32-512）增长。",
+      "dataset_zh": "基于HouseExpo、HKUST和KTH的12个真实建筑楼层构建基准（最大达24,000平方米），共进行1,620次仿真，覆盖9种协调方法、32至512的群体规模和3个随机种子；摘要未提及真机实验。",
+      "results_zh": "物理覆盖上与贪婪前沿规划器接近持平；地图重建上所有非预测基线需1.3至1.9倍时间达到80%已知地图，SenseSwarm等时间面积领先约670平方米、最高1,359平方米。将预测折叠进共享场很关键：同一预测器按机器人单独应用速度相当，但512机器人时机器人间接触率高6.9倍。预测成本从32到512机器人保持平稳。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "exploration"
+      ],
+      "added_at": "2026-10-19T09:57:15.306491+00:00"
+    },
+    {
       "id": "2610.22356",
       "arxiv_id": "2610.22356",
       "title": "DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models",
@@ -4227,6 +4426,52 @@
         "vlm"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.22736",
+      "arxiv_id": "2610.22736",
+      "title": "Spatial Memory by Agents, for Agents",
+      "authors": [
+        "Qianwei Wang",
+        "Ce Zhang",
+        "Zhanpeng Luo",
+        "Pengpeng Su",
+        "Shuo Yang",
+        "Hao Xu"
+      ],
+      "published": "2026-10-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.22736",
+      "pdf_url": "https://arxiv.org/pdf/2610.22736",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文用编码智能体自动设计机器人空间记忆：设计师智能体在固定预算下依据查询反馈迭代编写记忆构建与检索代码，冻结后在五项任务上评测，较最强基线ReMEmbR相对提升50.9%。",
+      "change_zh": "常见空间记忆研究由人工设计保留与检索机制；本文把设计过程本身交给编码智能体，在固定开发预算内以实现—评测反馈循环自动搜索记忆构建与检索代码，并以冻结代码在留出观测上跨五任务统一评测。",
+      "why_it_matters": "空间记忆直接支撑长时程目标搜索与ObjectNav：无人机搜救需记住已扫区域以避免重复并支持目标重访，目标导航需回忆已见物体位置；该工作还示范了用编码智能体自动迭代空间系统设计的新范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "空间记忆, 代码智能体, 记忆构建与检索, 自动化设计, 机器人定位导航, 具身问答",
+      "question_zh": "能否利用编码智能体通过迭代实现与评估，自动设计机器人的空间记忆（决定保留什么、如何检索）？",
+      "innovation_zh": "提出以编码智能体自动设计空间记忆：在固定开发预算下，设计智能体依据固定查询智能体的反馈，迭代编写并修订记忆构建与检索代码，实现冻结后在留出观测历史构建记忆，并跨五个任务赛道统一评估，区别于人工设计流程。",
+      "dataset_zh": "摘要未提及具体数据集或仿真环境名称；评估基于留出的观测历史，在五个互补任务赛道上由同一Query Agent完成，真机平台未提及。",
+      "results_zh": "三次独立设计搜索中，Codex/GPT-6 Astra在五赛道等权平均分达44.23，较最强基线ReMEmbR的29.32相对提升50.9%；定性分析将性能差异归因于证据保留与检索，并发现接地与证据使用失败及任务依赖的性能与计算成本权衡。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "spatial memory"
+      ],
+      "added_at": "2026-10-19T09:52:37.338270+00:00"
     },
     {
       "id": "2610.20592",
@@ -8241,6 +8486,52 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.23795",
+      "arxiv_id": "2610.23795",
+      "title": "Persistent Planar Memory for Video World Models",
+      "authors": [
+        "Yuze He",
+        "Bin Tan",
+        "Zelin Gao",
+        "Yujun Shen",
+        "Yong-Jin Liu",
+        "Nan Xue",
+        "Yinghao Xu"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.23795",
+      "pdf_url": "https://arxiv.org/pdf/2610.23795",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出PPMem：以平面基元作为视频世界模型的持久三维记忆，扩散变换器联合生成视频与平面几何并合并成记忆，用渲染深度约束后续生成，在两个数据集上优于已有三维 grounded 世界模型。",
+      "change_zh": "常见路线用隐式潜状态或逐像素点云作记忆，长时易漂移且体积大。该文改用每基元仅7参数的平面基元作持久记忆，由共享骨干联合预测保证跨视角一致，并随生成自适应合并，以显式度量几何换来千倍压缩与数百帧一致性。",
+      "why_it_matters": "对世界模型线有直接支撑：能生成视角一致、带度量深度与可导出平面的可探索环境，可为UAV目标搜索与ObjectNav提供定制化训练和评测场景；其持久平面记忆亦是紧凑空间表征，可启发导航智能体的场景先验。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "视频世界模型,平面基元,持久3D记忆,视频扩散Transformer,深度Token融合,跨视角一致性",
+      "question_zh": "如何为视频世界模型构建紧凑、几何显式且跨视角一致的持久3D记忆，以维持长时程生成的一致性？",
+      "innovation_zh": "以仅7参数的平面基元作为世界模型的持久3D记忆：在视频扩散Transformer上增加平面预测头与深度Token融合（DTF）模块，逐块联合生成RGB视频与平面几何并合并入持久平面记忆，经渲染深度条件化后续生成块，比逐像素点云记忆紧凑三个数量级。",
+      "dataset_zh": "DL3DV和RealEstate10K数据集",
+      "results_zh": "在DL3DV和RealEstate10K上，PPMem在视频质量上超越先前3D grounding的世界模型，并联合产出度量深度、表面法线与可导出的平面几何；全场景记忆约10万个基元、仅5MB，比逐像素点云紧凑三个数量级，在大视角变化下可维持数百帧的一致性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "geometry",
+        "world model"
+      ],
+      "added_at": "2026-10-19T10:02:03.474609+00:00"
+    },
+    {
       "id": "2610.22311",
       "arxiv_id": "2610.22311",
       "title": "Velox: Spatial Memory Makes World Models Efficient",
@@ -11235,6 +11526,46 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.23449",
+      "arxiv_id": "2610.23449",
+      "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
+      "authors": [
+        "Yitian Zheng",
+        "Zhaorun Chen",
+        "Haoyu Li",
+        "Bo Li"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.23449",
+      "pdf_url": "https://arxiv.org/pdf/2610.23449",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GatewayBench提出首个MCP网关统一评测基准，划分扁平与分层两类网关范式，用524个任务与251个真实服务器的11118个工具，受控评测七款主流网关的任务完成率、工具效率与攻击韧性。",
+      "change_zh": "常见评测只针对模型或智能体本身，本文首次将评测对象转向MCP网关这一中间件层，并通过系统注入任务无关工具受控扩展工具面以模拟大规模部署，揭示网关架构与底层模型、智能体框架间的强交互效应。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav无直接贡献，但智能体大规模工具调用与治理属于智能体技术线核心议题；其受控扩展工具面的评测范式，可启发未来评测导航智能体在大量外部工具下的能力与安全性。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-10-19T09:41:27.215550+00:00"
+    },
+    {
       "id": "2610.22092",
       "arxiv_id": "2610.22092",
       "title": "Onboard Lightweight LLM Reasoning for Human-Aware Safe UAV Navigation",
@@ -13377,6 +13708,84 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.23598",
+      "arxiv_id": "2610.23598",
+      "title": "RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory",
+      "authors": [
+        "Dabin Sheng",
+        "Zhe Wu",
+        "Jinming Zhao",
+        "Junliang Xing",
+        "Yuanchun Shi"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.23598",
+      "pdf_url": "https://arxiv.org/pdf/2610.23598",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TIDER面向长时程LLM智能体记忆检索，用强化学习训练轻量1.7B时间区间定位器推断证据所在时间窗，与语义通道双通道融合并按时间邻近重排，在LifeBench与LoCoMo上取得SOTA。",
+      "change_zh": "常见做法仅靠语义相似度或在记忆组织、答案生成时注入时间线索；本文把时间约束前移到检索阶段本身，用RL优化不可微的时间窗定位决策，以复合奖励将稀疏答案监督转为细粒度检索反馈，并做双通道融合与时间邻近重排。",
+      "why_it_matters": "属智能体记忆能力线的核心进展：时间感知检索增强长时程智能体的情景记忆，对UAV目标搜索与ObjectNav回溯历史观测、已访区域与目标线索有潜在支撑价值，但论文仅在对话与生活记忆基准上验证，未做具身实验。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "llm agent",
+        "localization"
+      ],
+      "added_at": "2026-10-19T09:39:14.621420+00:00"
+    },
+    {
+      "id": "2610.23496",
+      "arxiv_id": "2610.23496",
+      "title": "FLoTS-SLAM: Optical Flow-Derived Uncertainty for Monocular Dynamic SLAM with Two-Stage Optimization",
+      "authors": [
+        "Haorui Du",
+        "Lipu Zhou"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.23496",
+      "pdf_url": "https://arxiv.org/pdf/2610.23496",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "面向动态场景的单目SLAM：用光流与相机运动诱导光流的残差作为运动不确定性来识别动态区域，并经两阶段优化（高置信像素定姿、动态像素重投影）联合精化位姿与深度，抑制物体运动干扰。",
+      "change_zh": "相比从渲染残差或多视特征不一致估计不确定性、仅在BA中降权的常见路线，本文以光流与相机运动诱导流之差作为直接运动证据生成掩码，并先用高置信像素定姿、再重投影动态像素联合精化，降低不确定性误差的影响。",
+      "why_it_matters": "对状态估计与控制线是动态场景SLAM的实质进展；对UAV目标搜索与ObjectNav，单目动态SLAM可为低成本平台在动态干扰环境中提供可靠位姿与建图，动态掩码亦可作运动目标线索，属导航栈底层支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "slam"
+      ],
+      "added_at": "2026-10-19T09:44:23.148555+00:00"
     },
     {
       "id": "2610.21429",
@@ -17411,6 +17820,61 @@
       "added_at": "2026-10-16T08:56:09.455066+00:00"
     },
     {
+      "id": "2610.22496",
+      "arxiv_id": "2610.22496",
+      "title": "Scaling Online Exploration for Robot Agents",
+      "authors": [
+        "Runhan Huang",
+        "Xiangcheng Zhang",
+        "Haoyu Chen",
+        "Yitong Li",
+        "Yen-Jen Wang",
+        "Bohan Lyu",
+        "Haotian Ye",
+        "Chuye Hong",
+        "Yixuan Wang",
+        "Chloe Su",
+        "Haoyu Xiong",
+        "Yangzhen Wu",
+        "Enze Xie",
+        "Travis Manderson",
+        "Stefano Ermon",
+        "Pieter Abbeel",
+        "Antonio Torralba",
+        "Dawn Song",
+        "Weirui Ye",
+        "Yilun Du"
+      ],
+      "published": "2026-10-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.22496",
+      "pdf_url": "https://arxiv.org/pdf/2610.22496",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出开源机器人智能体框架RAX，由通用编码智能体通过在线探索生成可执行控制代码，无需动作示范、手工基元或价值函数，在单臂、双臂、灵巧手、移动与类人等多种本体的仿真与真机上完成精细和长程操纵任务，并靠组合已验证技能持续自我提升。",
+      "change_zh": "常规路线靠扩展遥操作示范数据与模型容量，策略受模仿分布限制；RAX把扩展对象换成在线探索本身：编码智能体自主生成感知-规划-控制闭环代码，将探索成功经验编译为模块化已验证程序，新本体仅凭API接入即可，无需采集示范或训练策略。",
+      "why_it_matters": "对规划智能体与真机Sim2Real技术线有直接参考价值：其免示范在线探索与已验证技能组合范式可迁移到UAV主动目标搜索与ObjectNav，让智能体自主探索并固化搜索、接近策略，替代昂贵的专家轨迹；但需注意其实验以操纵任务为主，导航决策成分有限。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "active perception",
+        "exploration",
+        "real robot"
+      ],
+      "added_at": "2026-10-19T09:55:54.237489+00:00"
+    },
+    {
       "id": "2610.13706",
       "arxiv_id": "2610.13706",
       "title": "GLIMPSE: Global-Local Indexing with Multi-Precision Spectral Encoding for Explorable Video World Models",
@@ -21017,24 +21481,88 @@
     }
   ],
   "briefing": {
-    "text": "今日两篇入库工作主线一致：都把多模态模型的空间推理能力追溯到数据构造与预训练机制层面。首推《Towards a Data-Centric Understanding of Spatial Reasoning in Multimodal Large Language Models》，该综述系统梳理SFT与RL后训练路径，归纳四类标注途径与评测口径差异，可直接指导导航空间数据集的构建决策。另一篇《More Than Seeing: Vision as Scalable Anchors in Native Multimodal Pre-Training》用无内容填充令牌替换图像嵌入做受控消融，发现视觉如同可扩展锚点、收益随算力按幂律增长，且导航、定位与符号规划能力持续受益，回应了原生多模态是否必要的争论。趋势观察：空间智能研究正从模型架构之争转向数据构造与规模定律的实证刻画。",
-    "added": 2,
-    "at": "2026-10-16T14:32:52.422938+00:00",
+    "text": "本批围绕具身导航与智能体记忆展开：目标记忆走向可修正、空间记忆可自动生成、VLN配方趋简，记忆的构建、修正与检索是共同抓手。首推SimpleVLN：不动MLLM结构，以单轮决策、固定预算记忆与动作分块，从模仿渐进到强化，在R2R-CE与RxR-CE上刷新纪录；SkyAgent用暂定/确认/拒绝三态管理目标候选并绑定航点，消除无人机搜索中证伪后仍反复触发接近的痼疾，并经大疆真机验证；Spatial Memory by Agents, for Agents让编码智能体按查询反馈自动编写记忆构建与检索代码，较ReMEmbR相对提升50.9%。趋势：记忆正由被动存储变为可修正、可生成的主动资产，真机闭环验证渐成标配。",
+    "added": 10,
+    "at": "2026-10-19T10:07:41.695632+00:00",
     "new": [
       {
-        "t": "Towards a Data-Centric Understanding of Spatial Reasoning in Multimodal Large Language Models",
-        "u": "https://arxiv.org/abs/2610.19108",
-        "r": 8,
-        "g": 6,
-        "s": "本文是以数据为中心的综述，系统梳理了通过监督微调与强化学习后训练提升多模态大模型空间推理能力的方法，归纳数据集构建的四类标注途径与评测差异，并展望统一动态标注等未来方向。",
+        "t": "SkyAgent: Revisable Target Memory for Continuous Aerial Search",
+        "u": "https://arxiv.org/abs/2610.23293",
+        "r": 10,
+        "g": 8,
+        "s": "本文针对无人机持续空中搜索中目标候选被后续证据证伪后仍滞留并反复触发接近动作的问题，提出可修正目标记忆RTM，用暂定/确认/拒绝三态管理候选、绑定航点与候选，在多个基准及大疆真机场景中显著提升成功率与行为可靠性。",
         "c": ""
       },
       {
-        "t": "More Than Seeing: Vision as Scalable Anchors in Native Multimodal Pre-Training",
-        "u": "https://arxiv.org/abs/2610.19443",
+        "t": "PASS-VLN: Passability-Aware Local-Command Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.22812",
+        "r": 9,
+        "g": 8,
+        "s": "提出通行性感知的局部指令VLN基准与模型：固定场景指令、仅变机体宽度，可行须通过、受阻须停止；模型以深度BEV障碍膨胀编码机体宽度，融合视觉语言预测离散潜动作码闭环执行，并经真机验证。",
+        "c": ""
+      },
+      {
+        "t": "RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory",
+        "u": "https://arxiv.org/abs/2610.23598",
         "r": 7,
         "g": 7,
-        "s": "该文将图像嵌入替换为无内容填充令牌做受控消融，跨模型规模与算力研究原生多模态预训练中视觉的作用：视觉如可扩展锚点，收益随算力幂律增长，且定位、导航与符号规划类空间推理持续受益。",
+        "s": "TIDER面向长时程LLM智能体记忆检索，用强化学习训练轻量1.7B时间区间定位器推断证据所在时间窗，与语义通道双通道融合并按时间邻近重排，在LifeBench与LoCoMo上取得SOTA。",
+        "c": ""
+      },
+      {
+        "t": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
+        "u": "https://arxiv.org/abs/2610.23449",
+        "r": 7,
+        "g": 8,
+        "s": "GatewayBench提出首个MCP网关统一评测基准，划分扁平与分层两类网关范式，用524个任务与251个真实服务器的11118个工具，受控评测七款主流网关的任务完成率、工具效率与攻击韧性。",
+        "c": ""
+      },
+      {
+        "t": "FLoTS-SLAM: Optical Flow-Derived Uncertainty for Monocular Dynamic SLAM with Two-Stage Optimization",
+        "u": "https://arxiv.org/abs/2610.23496",
+        "r": 7,
+        "g": 7,
+        "s": "面向动态场景的单目SLAM：用光流与相机运动诱导光流的残差作为运动不确定性来识别动态区域，并经两阶段优化（高置信像素定姿、动态像素重投影）联合精化位姿与深度，抑制物体运动干扰。",
+        "c": ""
+      },
+      {
+        "t": "Spatial Memory by Agents, for Agents",
+        "u": "https://arxiv.org/abs/2610.22736",
+        "r": 9,
+        "g": 7,
+        "s": "本文用编码智能体自动设计机器人空间记忆：设计师智能体在固定预算下依据查询反馈迭代编写记忆构建与检索代码，冻结后在五项任务上评测，较最强基线ReMEmbR相对提升50.9%。",
+        "c": ""
+      },
+      {
+        "t": "Scaling Online Exploration for Robot Agents",
+        "u": "https://arxiv.org/abs/2610.22496",
+        "r": 6,
+        "g": 8,
+        "s": "本文提出开源机器人智能体框架RAX，由通用编码智能体通过在线探索生成可执行控制代码，无需动作示范、手工基元或价值函数，在单臂、双臂、灵巧手、移动与类人等多种本体的仿真与真机上完成精细和长程操纵任务，并靠组合已验证技能持续自我提升。",
+        "c": ""
+      },
+      {
+        "t": "SenseSwarm: Swarm Exploration via Neural Structure Estimation with Shared World-Anticipation for Rapid Mapping",
+        "u": "https://arxiv.org/abs/2610.22905",
+        "r": 9,
+        "g": 8,
+        "s": "SenseSwarm在集群共享占据地图上运行轻量神经结构预测器，将预测结构折回共享引导场；在12个真实楼层、1620次仿真中，非预测基线需1.3-1.9倍时间达到八成已知地图。",
+        "c": ""
+      },
+      {
+        "t": "SimpleVLN: Towards Simple and Frontier Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.23203",
+        "r": 10,
+        "g": 8,
+        "s": "SimpleVLN不改造MLLM结构，以单轮决策、固定预算记忆与动作分块建模导航，结合示范与DAgger数据及渐进式模仿到强化训练，在R2R-CE与RxR-CE上大幅超越现有方法。",
+        "c": ""
+      },
+      {
+        "t": "Persistent Planar Memory for Video World Models",
+        "u": "https://arxiv.org/abs/2610.23795",
+        "r": 8,
+        "g": 7,
+        "s": "提出PPMem：以平面基元作为视频世界模型的持久三维记忆，扩散变换器联合生成视频与平面几何并合并成记忆，用渲染深度约束后续生成，在两个数据集上优于已有三维 grounded 世界模型。",
         "c": ""
       }
     ]
