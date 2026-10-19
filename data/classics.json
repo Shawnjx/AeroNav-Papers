@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T13:45:34.455065+00:00",
+  "updated_at": "2026-10-19T16:48:38.353154+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -10464,6 +10464,46 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2304.04370",
+      "arxiv_id": "2304.04370",
+      "title": "OpenAGI: When LLM Meets Domain Experts",
+      "authors": [
+        "Yingqiang Ge",
+        "Wenyue Hua",
+        "Kai Mei",
+        "Zelong Li",
+        "Juntao Tan",
+        "Shuyuan Xu",
+        "Zelong Li",
+        "Yongfeng Zhang"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 162,
+      "url": "https://arxiv.org/abs/2304.04370",
+      "pdf_url": "https://arxiv.org/pdf/2304.04370",
+      "code_url": "https://github.com/agiresearch/OpenAGI",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（neural information processing systems），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "OpenAGI是开源AGI研究平台，以自然语言任务驱动LLM选择并调用领域专家模型、工具与API解决多步骤真实任务，并提出RLTF机制利用任务反馈改进LLM的任务求解能力，形成自我改进闭环。",
+      "change_zh": "相比仅靠提示链或固定工具调用的智能体路线，它把LLM定位为调度器来编排领域专家模型，并用任务结果作为奖励信号通过强化学习训练LLM的模型选择与规划能力，将一次性工具调用升级为任务反馈驱动的自我改进闭环。",
+      "why_it_matters": "作为通用LLM智能体框架与反馈训练范式，属智能体线核心收录。其专家模型编排与任务反馈强化思想可迁移到UAV目标搜索（调度检测跟踪专家）与ObjectNav（组合感知导航技能），但工作本身不涉及空间与导航任务。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
       "id": "https://openalex.org/W4377008028",
       "arxiv_id": "2205.03716",
       "title": "A Review on Viewpoints and Path Planning for UAV-Based 3-D Reconstruction",
@@ -10503,6 +10543,122 @@
       "added_at": "2026-09-06T18:49:29.317136+00:00"
     },
     {
+      "id": "2302.03594",
+      "arxiv_id": "2302.03594",
+      "title": "NICER-SLAM: Neural Implicit Scene Encoding for RGB SLAM",
+      "authors": [
+        "Zihan Zhu",
+        "Songyou Peng",
+        "Viktor Larsson",
+        "Zhaopeng Cui",
+        "Martin R. Oswald",
+        "Andreas Geiger",
+        "Marc Pollefeys"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "International Conference on 3D Vision (3DV)",
+      "citation_count": 157,
+      "url": "https://arxiv.org/abs/2302.03594",
+      "pdf_url": "https://arxiv.org/pdf/2302.03594",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出稠密单目RGB SLAM系统，联合优化相机位姿与分层神经隐式地图，引入单目几何线索、光流与翘曲损失增强几何一致性，实现高保真稠密重建与新视角合成，性能媲美RGB-D SLAM。",
+      "change_zh": "常见神经隐式SLAM依赖RGB-D传感器或外接单目跟踪，且重建保真度不足；本文改为纯RGB输入下联合优化位姿与分层隐式地图，用单目几何先验、光流与翘曲损失替代深度测量，并提出局部自适应SDF-密度转换以适配大尺度复杂场景。",
+      "why_it_matters": "对状态估计与控制线，它把稠密建图从RGB-D推进到纯RGB输入，降低传感器成本与重量，对仅搭载单目相机的轻量无人机自主飞行与搜救侦察有直接意义；高保真隐式地图还可为空间智能与下游导航提供场景表示基础。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2309.02436",
+      "arxiv_id": "2309.02436",
+      "title": "GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction",
+      "authors": [
+        "Youmin Zhang",
+        "Fabio Tosi",
+        "Stefano Mattoccia",
+        "Matteo Poggi"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "citation_count": 154,
+      "url": "https://arxiv.org/abs/2309.02436",
+      "pdf_url": "https://arxiv.org/pdf/2309.02436",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE/CVF International Conference on Computer Vision (ICCV)），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出神经隐式稠密视觉SLAM框架GO-SLAM，以鲁棒位姿估计为核心，通过高效回环与在线全局BA利用全部历史帧的学习几何逐帧优化位姿，并在线更新隐式表面表示，实现全局一致的实时三维重建。",
+      "change_zh": "以往神经隐式SLAM多采用帧间或局部跟踪，隐式地图只做局部更新，易累积漂移与重建畸变；GO-SLAM改为利用完整历史帧的学习全局几何做在线回环与全量BA的全局优化，并即时更新隐式表面表示，从机制上保证位姿与重建的全局一致。",
+      "why_it_matters": "属状态估计与控制线的核心SLAM系统工作：全局一致的实时稠密建图可为UAV主动目标搜索、ObjectNav提供可靠位姿与全局一致地图支撑，减少漂移导致的地图畸变，其回环与在线BA思路对神经隐式SLAM落地有实际影响。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "geometry",
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2204.10704",
+      "arxiv_id": "2204.10704",
+      "title": "SUES-200: A Multi-Height Multi-Scene Cross-View Image Benchmark Across Drone and Satellite",
+      "authors": [
+        "Runzhe Zhu",
+        "Ling Yin",
+        "Mingze Yang",
+        "Fei Wu",
+        "Yuncheng Yang",
+        "Wenbo Hu"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "citation_count": 153,
+      "url": "https://arxiv.org/abs/2204.10704",
+      "pdf_url": "https://arxiv.org/pdf/2204.10704",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SUES-200是首个考虑无人机多高度差异的跨视图匹配数据集，含四个飞行高度共24120张无人机图像与对应卫星图像，覆盖多类场景，并系统评测九种架构、提出鲁棒基线。",
+      "change_zh": "既有跨视图数据集缺乏不同高度的无人机图像且场景类型单一，该工作首次引入四个采集高度与多场景覆盖，使评测能反映飞行高度变化带来的外观差异，推动高度鲁棒的特征学习。",
+      "why_it_matters": "跨视图匹配是无人机无GPS定位的重要途径，该数据集为UAV自主定位提供多高度、多场景公开基准，可检验定位模型的高度适应性；对UAV主动目标搜索与ObjectNav仅为定位层面的间接支撑。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "drone",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
       "id": "https://openalex.org/W4391676180",
       "arxiv_id": "2312.17487",
       "title": "LiDAR odometry survey: recent advancements and remaining challenges",
@@ -10538,6 +10694,45 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "2312.03275",
+      "arxiv_id": "2312.03275",
+      "title": "VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation",
+      "authors": [
+        "Naoki Yokoyama",
+        "Sehoon Ha",
+        "Dhruv Batra",
+        "Jiuguang Wang",
+        "Bernadette Bucher"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings",
+      "citation_count": 151,
+      "url": "https://arxiv.org/abs/2312.03275",
+      "pdf_url": "https://arxiv.org/pdf/2312.03275",
+      "code_url": "",
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（Proceedings - IEEE International Conference on Robotics and Automation/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "零样本语义导航方法：由深度占用图识别边界，用预训练视觉语言模型从RGB生成语言对齐价值图，选取最有望发现目标的边界，在三数据集ObjectNav上SOTA并部署于Spot真机。",
+      "change_zh": "相比强化学习训练策略与需类别标注的语义地图路线，VLFM无需导航训练数据，把预训练VLM的图文相关性实时转为可导航价值图并与边界探索结合，实现零样本泛化至未知环境与类别，且可即插即用迁移真机。",
+      "why_it_matters": "ObjectNav零样本方向的代表性方法，确立VLM价值图+边界探索范式并被广泛对比；免训练的语义引导探索思想可迁移至UAV主动目标搜索的边界选择与目标接近决策，也体现VLM空间语义理解的实用价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 9,
+      "venue_verified": true,
+      "score": 31,
+      "keywords": [
+        "deployment",
+        "object goal navigation",
+        "real world",
+        "semantic navigation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
     },
     {
       "id": "https://openalex.org/W4408841099",
@@ -10583,6 +10778,48 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "2209.13274",
+      "arxiv_id": "2209.13274",
+      "title": "Orbeez-SLAM: A Real-time Monocular Visual SLAM with ORB Features and NeRF-realized Mapping",
+      "authors": [
+        "Chi-Ming Chung",
+        "Yang-Che Tseng",
+        "Ya-Ching Hsu",
+        "Xiang-Qian Shi",
+        "Yun-Hung Hua",
+        "Jia-Fong Yeh",
+        "Wen‐Chin Chen",
+        "Yi‐Ting Chen",
+        "Winston H. Hsu"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings",
+      "citation_count": 149,
+      "url": "https://arxiv.org/abs/2209.13274",
+      "pdf_url": "https://arxiv.org/pdf/2209.13274",
+      "code_url": "https://github.com/MarvinChung/Orbeez-SLAM",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作提出仅用单目RGB输入的实时视觉SLAM，将ORB特征视觉里程计与NeRF隐式表示建图结合，无需预训练即可适配新场景并实时生成稠密地图，速度较强基线最高提升800倍且渲染效果更优。",
+      "change_zh": "以往学习型或传统视觉SLAM难以兼顾免预训练、单目输入与实时稠密建图；该工作用成熟的ORB里程计提供位姿，把加速的神经隐式表示引入建图，使单目RGB、免预训练、实时的稠密NeRF-SLAM成为可能，而非仅做模块级增量改进。",
+      "why_it_matters": "实时稠密建图与定位是具身导航的底层支撑：稠密地图可服务ObjectNav等下游目标搜索任务的目标定位与规划，单目RGB、免预训练的特性对载荷受限的无人机搜救侦察平台友好，为UAV主动目标搜索提供了可部署的空间感知基座。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "odometry",
+        "real world",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
       "id": "2307.06082",
       "arxiv_id": "2307.06082",
       "title": "VELMA: Verbalization Embodiment of LLM Agents for Vision and Language Navigation in Street View",
@@ -10619,6 +10856,267 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-02T02:36:58Z"
+    },
+    {
+      "id": "2404.13501",
+      "arxiv_id": "2404.13501",
+      "title": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
+      "authors": [
+        "Zeyu Zhang",
+        "Quanyu Dai",
+        "Xiaohe Bo",
+        "Chen Ma",
+        "Rui Ling Li",
+        "Xu Chen",
+        "Jieming Zhu",
+        "Zhenhua Dong",
+        "Ji-Rong Wen"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "ACM Transactions on Information Systems",
+      "citation_count": 144,
+      "url": "https://arxiv.org/abs/2404.13501",
+      "pdf_url": "https://arxiv.org/pdf/2404.13501",
+      "code_url": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文系统综述LLM智能体的记忆机制，从记忆的定义与必要性、设计方法、评测方式及应用场景等方面梳理分散的已有工作，抽象共性设计模式，分析局限并展望未来方向，并维护开源论文仓库。",
+      "change_zh": "相比常见单点提出新记忆模块的研究路线，本文以全局视角首次统一梳理散落在各文献中的记忆机制，抽象出通用设计模式并统一比较维度；作为综述本身不提出新方法或实验，其增量在于体系化组织与跨工作视角整合。",
+      "why_it_matters": "记忆是智能体长时程自主交互的核心能力，属范围内智能体技术线明确收录方向；对UAV长航时目标搜索的任务与场景记忆、ObjectNav的空间记忆积累及VLN的经验复用均有直接支撑，可为具身系统引入记忆模块提供设计参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2305.08275",
+      "arxiv_id": "2305.08275",
+      "title": "ULIP-2: Towards Scalable Multimodal Pre-Training for 3D Understanding",
+      "authors": [
+        "Le Xue",
+        "Ning Yu",
+        "Shu Zhang",
+        "Artemis Panagopoulou",
+        "Junnan Li",
+        "Roberto Martín-Martín",
+        "Jiajun Wu",
+        "Caiming Xiong",
+        "Ran Xu",
+        "Juan Carlos Niebles",
+        "Silvio Savarese"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 143,
+      "url": "https://arxiv.org/abs/2305.08275",
+      "pdf_url": "https://arxiv.org/pdf/2305.08275",
+      "code_url": "https://github.com/salesforce/ULIP",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "ULIP-2提出点云-图像-语言三模态预训练框架，用大型多模态模型为3D形状自动生成语言描述，无需人工标注即可扩展到Objaverse等大数据集，在零样本3D分类、微调分类和3D描述生成上取得SOTA。",
+      "change_zh": "相比以往依赖人工收集或有限文本配对的三模态对齐方法，本文用现成大型多模态模型为3D形状自动生成整体描述，仅需3D输入即可规模化构建三模态数据，并放大骨干网络，实现无人工标注的规模化3D表征学习。",
+      "why_it_matters": "其为点云-图像-语言对齐提供了可规模化的表征底座，可支撑ObjectNav开放词汇目标识别与UAV目标搜索中的点云感知模块；但工作聚焦物体级形状理解而非场景导航，对导航决策本身属间接基础价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 9,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2311.06607",
+      "arxiv_id": "2311.06607",
+      "title": "Monkey: Image Resolution and Text Label are Important Things for Large Multi-Modal Models",
+      "authors": [
+        "Zhang Li",
+        "Biao Yang",
+        "Qiang Liu",
+        "Zhiyin Ma",
+        "Shuo Zhang",
+        "Jingxu Yang",
+        "Yabo Sun",
+        "Yuliang Liu",
+        "Xiang Bai"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 142,
+      "url": "https://arxiv.org/abs/2311.06607",
+      "pdf_url": "https://arxiv.org/pdf/2311.06607",
+      "code_url": "https://github.com/Yuliang-Liu/Monkey",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "Monkey将高分辨率图像切分为448×448图块并配独立适配器，结合多级描述生成增强训练数据，使多模态大模型支持1344×896输入，在18个数据集的字幕与多类视觉问答任务上超越现有LMM。",
+      "change_zh": "主流LMM多在低分辨率下编码图像导致细节丢失，Monkey不重训视觉编码器，而是把图像切成与预训练分辨率一致的图块并各配适配器，将分辨率提至1344×896，再用场景-对象多级描述生成细粒度预训练监督。",
+      "why_it_matters": "作为通用多模态大模型的新模型与新训练方法，属核心收录范围；其高分辨率细粒度场景理解能力对无人机航拍场景中的小目标识别与开放词汇目标发现具有潜在支撑，可为UAV目标搜索与ObjectNav的感知前端提供更强的视觉基础模型。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 25,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4320406126",
+      "arxiv_id": "",
+      "title": "Are smart cities green? The role of environmental and digital policies for Eco-innovation in China",
+      "authors": [
+        "Despoina Filiou",
+        "Effie Kesidou",
+        "Lichao Wu"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "World Development",
+      "citation_count": 139,
+      "url": "https://doi.org/10.1016/j.worlddev.2023.106212",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Are smart cities green? The role of environmental and digital policies for Eco-innovation in China。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：In this paper, we employ negative binomial and quasi-natural experimental methods (i.e., Difference-in-Differences and Propensity Score Matching), whereby we examine the joint impact of environmental and digital policies",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2310.07896",
+      "arxiv_id": "2310.07896",
+      "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
+      "authors": [
+        "Ajay Sridhar",
+        "Dhruv Shah",
+        "Catherine Glossop",
+        "Sergey Levine"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings",
+      "citation_count": 136,
+      "url": "https://arxiv.org/abs/2310.07896",
+      "pdf_url": "https://arxiv.org/pdf/2310.07896",
+      "code_url": "",
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（Proceedings - IEEE International Conference on Robotics and Automation/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "NoMaD提出单一Transformer扩散策略，通过目标掩码统一处理目标导向导航与目标无关探索，在真机移动机器人上以更小模型实现更优导航性能和更低碰撞率。",
+      "change_zh": "常见路线用子目标生成、规划器或独立策略分别处理探索与目标导航；本文改用目标掩码机制让单一扩散策略在目标条件与无目标两种模式间切换，一个模型同时负责搜索目标与抵达指定目标，无需生成式子目标模型。",
+      "why_it_matters": "对ObjectNav与开放目标导航直接提供可学习的统一策略范式，探索与抵达共用一套表征，降低系统复杂度；其先搜索后接近的一体化思想可迁移到UAV主动目标搜索的搜救侦察场景，真机验证也增强了落地参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 28,
+      "keywords": [
+        "exploration"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2312.07104",
+      "arxiv_id": "2312.07104",
+      "title": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "authors": [
+        "Lianmin Zheng",
+        "Liangsheng Yin",
+        "Zhiqiang Xie",
+        "Chuyue Sun",
+        "Jeff Huang",
+        "Cody Yu",
+        "Shiyi Cao",
+        "Christos Kozyrakis",
+        "Ion Gabriel Stoica",
+        "Joseph E. Gonzalez",
+        "Clark Barrett",
+        "Ying Sheng"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 135,
+      "url": "https://arxiv.org/abs/2312.07104",
+      "pdf_url": "https://arxiv.org/pdf/2312.07104",
+      "code_url": "https://github.com/sgl-project/sglang",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（neural information processing systems），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "SGLang提出前端编程语言与运行时，用RadixAttention复用KV缓存、压缩有限状态机加速结构化解码，在智能体控制、推理、多轮对话等任务上把大模型程序吞吐最高提升6.4倍。",
+      "change_zh": "常见路线把推理引擎当黑盒，仅在上层编排提示词。SGLang把生成、并行与控制流纳入统一前端，运行时以RadixAttention做前缀KV复用、以压缩FSM加速结构化输出，属执行层的系统级重构而非新模型。",
+      "why_it_matters": "它是LLM智能体生态的关键推理基础设施，可为规划智能体、多模态大模型驱动的VLN/ObjectNav规划器及UAV目标搜索智能体提供低成本、结构化输出部署底座；但对具身导航算法本身无直接贡献。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 23,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "2309.05519",
+      "arxiv_id": "2309.05519",
+      "title": "NExT-GPT: Any-to-Any Multimodal LLM",
+      "authors": [
+        "Shengqiong Wu",
+        "Fei, Hao",
+        "Leigang Qu",
+        "Ji, Wei",
+        "Tat‐Seng Chua"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 132,
+      "url": "https://arxiv.org/abs/2309.05519",
+      "pdf_url": "https://arxiv.org/pdf/2309.05519",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "NExT-GPT是端到端any-to-any多模态大模型系统，连接LLM、多模态适配器与扩散解码器，支持文本、图像、视频、音频任意组合的输入感知与输出生成，仅微调约1%投影层参数，并引入模态切换指令微调MosIT与人工数据集。",
+      "change_zh": "多数MM-LLM仅停留在输入侧多模态理解，该工作把能力扩展到任意模态内容生成：复用现成高性能编码器与扩散解码器、只训练轻量投影层，实现低成本且易扩展的即插即用架构，再以MosIT指令微调赋予复杂跨模态语义理解与生成，而非端到端重训庞大统一模型。",
+      "why_it_matters": "属多模态大模型与智能体线的核心进展：统一的any-to-any理解-生成框架与低成本模态扩展范式，为通用多模态智能体提供了重要底座。对UAV目标搜索与ObjectNav无直接导航决策贡献，但其多模态感知与生成能力可作为具身智能体指令交互、跨模态接口的模型基础。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "instruction",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
     },
     {
       "id": "https://openalex.org/W4385151905",
@@ -10702,6 +11200,46 @@
       "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
+      "id": "2212.00922",
+      "arxiv_id": "2212.00922",
+      "title": "Navigating to objects in the real world",
+      "authors": [
+        "Théophile Gervet",
+        "Soumith Chintala",
+        "Dhruv Batra",
+        "Jitendra Malik",
+        "Devendra Singh Chaplot"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "Science Robotics",
+      "citation_count": 125,
+      "url": "https://arxiv.org/abs/2212.00922",
+      "pdf_url": "https://arxiv.org/pdf/2212.00922",
+      "code_url": "",
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文在六个真实家庭中无先验地图、无仪器条件下，大规模实证比较经典、模块化与端到端三类语义目标导航方法：模块化学习真机成功率达90%，端到端因图像域差距从仿真77%跌至23%。",
+      "change_zh": "不同于常见的'在仿真中提出新方法并评测'路线，该工作把已有代表性方法整体搬到无地图、无仪器辅助的六个真实家庭做系统真机对比，用大规模实测数据揭示模块化与抽象设计利于sim2real迁移，并指明仿真器作为评测基准的两处失真根源。",
+      "why_it_matters": "对ObjectNav与UAV主动目标搜索的真机落地极具参考价值：'模块化设计利于真机迁移'的结论与端到端77%→23%的域差距证据，直接指导搜索导航策略的部署选型，也推动仿真器改进以成为可靠评测基准，服务主动目标搜索从仿真走向实机。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "real world",
+        "semantic navigation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
       "id": "https://openalex.org/W4360584287",
       "arxiv_id": "",
       "title": "Distributed Stochastic Algorithm Based on Enhanced Genetic Algorithm for Path Planning of Multi-UAV Cooperative Area Search",
@@ -10775,6 +11313,51 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "2412.15115",
+      "arxiv_id": "2412.15115",
+      "title": "Qwen2.5 Technical Report",
+      "authors": [
+        "Qwen",
+        ":",
+        "Yang An",
+        "Baosong Yang",
+        "Beichen Zhang",
+        "Binyuan Hui",
+        "B. Zheng",
+        "Bowen Yu",
+        "Chengyuan Li",
+        "Dayiheng Liu",
+        "Fei Huang",
+        "Haoran Wei"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 122,
+      "url": "https://arxiv.org/abs/2412.15115",
+      "pdf_url": "https://arxiv.org/pdf/2412.15115",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "阿里Qwen2.5系列大模型技术报告：预训练数据扩至18万亿token，配合百万级SFT与多阶段强化学习后训练，多尺寸开源，在理解、推理、数学、代码等基准上居开源前列。",
+      "change_zh": "相比常见路线，其改变在于把高质量预训练数据从7万亿扩至18万亿token，并以百万级SFT加多阶段RL后训练明显提升指令遵循与长文本生成；同时开放多尺寸权重、量化版与MoE服务，属规模化与开放生态而非全新算法。",
+      "why_it_matters": "价值重大：Qwen2.5是Qwen2.5-VL等具身常用多模态模型的基础，也为UAV目标搜索、VLN与ObjectNav提供指令解析、任务规划与开放词汇目标理解的骨干能力；开源与量化权重降低了具身智能体的复现和真机部署门槛。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "instruction following"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-19T16:48:38.353154+00:00"
     },
     {
       "id": "https://openalex.org/W4386920567",
@@ -14675,184 +15258,253 @@
       "rigor": 7,
       "reason": "属端到端自动驾驶（CARLA城区闭环驾驶）工作，不在具身导航各技术线内；其轨迹规划与控制预测仅与'状态估计与控制'线在方法学上相近，且纯仿真无真机落地，属边缘相关不予收录。",
       "excluded_at": "2026-10-18"
+    },
+    "2303.11396": {
+      "title": "Text2Tex: Text-driven Texture Synthesis via Diffusion Models",
+      "relevance": 3,
+      "rigor": 6,
+      "reason": "该工作属于文本驱动的3D网格纹理生成（生成式内容创作），与导航、具身智能、机器人自主等收录技术线无实质关联，仅next-best-view与多视角等术语与主动感知擦边。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4407192196": {
+      "title": "Remote Sensing and Geospatial Analysis in the Big Data Era: A Survey",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "属遥感影像与地理空间大数据的AI分析综述，仅以geospatial/spatial术语与空间智能擦边，面向环境监测、城市规划等非具身应用，与收录的十一类技术线无实质关联。",
+      "excluded_at": "2026-10-19"
+    },
+    "2403.17134": {
+      "title": "RepairAgent: An Autonomous, LLM-Based Agent for Program Repair",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "属于将现成LLM智能体套用于软件工程程序修复这一垂直领域的应用，与空间、导航、机器人均无关，按收录规则应拒绝。",
+      "excluded_at": "2026-10-19"
+    },
+    "2306.13394": {
+      "title": "MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "题目标注的多模态大模型基准MME与摘要内容明显不符，摘要实为纯文本LLM在地理空间问答上的小规模垂直评测，与具身空间智能、导航及机器人自主仅边缘相关。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4403655107": {
+      "title": "Progress and challenges in structural, in situ and operando characterization of single-atom catalysts by X-ray based synchrotron radiation techniques",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为材料化学领域X射线同步辐射表征单原子催化剂的综述，仅机器学习辅助光谱分析与AI有术语交集，与具身导航、空间智能及全部收录技术线无实质关联。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4400275440": {
+      "title": "A Comparative Analysis of LIME and SHAP Interpreters With Explainable ML-Based Diabetes Predictions",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "属医疗垂直领域的可解释AI应用，与空间智能、导航、机器人等全部收录技术线无实质关联，仅'空间注意力'模块命名属术语擦边。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4391023403": {
+      "title": "A Critical Review of Climate Change Impacts on Groundwater Resources: A Focus on the Current Status, Future Possibilities, and Role of Simulation Models",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "论文为气候变化对地下水资源影响的水文综述，属水资源管理与水文地质领域，虽涉及水文模拟模型与遥感数据，但与具身导航、UAV目标搜索、空间智能等全部收录技术线无实质关联，仅与'仿真模型/世界模型'术语擦边。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4408503131": {
+      "title": "Early warning of complex climate risk with integrated artificial intelligence",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "属于气候风险预警领域的AI应用观点文章，将基础模型套用于气象灾害垂直场景，与导航、机器人、具身智能及空间推理均无实质关联，且无任何实验、基线或系统实现。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4389639394": {
+      "title": "Space deployable mechanics: A review of structures and smart driving",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为航天器可展开结构机构学与展开驱动控制的综述，不涉及导航决策、空间感知或机器人自主，与全部十一条技术线无实质关联，属范围外。",
+      "excluded_at": "2026-10-19"
+    },
+    "2310.10445": {
+      "title": "MechGPT, a Language-Based Strategy for Mechanics and Materials Modeling That Connects Knowledge Across Scales, Disciplines, and Modalities",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "该工作是将LLM蒸馏与微调套用于材料力学/多尺度材料失效这一垂直领域的知识建模应用，与空间、导航、机器人自主均无关，摘要仅顺带提及未来多智能体可能性，属范围外。",
+      "excluded_at": "2026-10-19"
+    },
+    "2309.01249": {
+      "title": "Large AI Model Empowered Multimodal Semantic Communications",
+      "relevance": 3,
+      "rigor": 4,
+      "reason": "本文属于无线语义通信与信道估计研究，MLM/LLM仅作为工具套用于通信垂直场景，与空间、导航、机器人无关，落入纯通信与信号处理的拒绝范围。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4401857430": {
+      "title": "A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "推荐系统是生成模型/LLM的垂直应用领域，与空间智能、具身导航、机器人自主等全部收录技术线均无关联，且为无实验验证的综述性文章。",
+      "excluded_at": "2026-10-19"
+    },
+    "2312.07850": {
+      "title": "Large Language Model Enhanced Multi-Agent Systems for 6G Communications",
+      "relevance": 3,
+      "rigor": 5,
+      "reason": "论文将现成LLM多智能体能力（检索/规划/评估/反思）直接套用于6G通信网络优化等纯通信垂直任务，与空间、导航、机器人均无关，属范围中明确排除的'纯通信与信号处理'与'大模型垂直应用'情形。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4401042604": {
+      "title": "PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits",
+      "relevance": 2,
+      "rigor": 6,
+      "reason": "该文属于LLM人格表达与心理学评测类垂直应用研究，与空间、导航、机器人无关，也不构成新模型、新训练方法或agentic能力的显著进展，超出收录范围。",
+      "excluded_at": "2026-10-19"
+    },
+    "https://openalex.org/W4400525295": {
+      "title": "On Generative Agents in Recommendation",
+      "relevance": 3,
+      "rigor": 6,
+      "reason": "将LLM生成式智能体套用于推荐系统用户模拟这一垂直领域，与空间、导航、机器人均无关，属明确拒绝范围。",
+      "excluded_at": "2026-10-19"
     }
   },
   "last_citation_refresh": "2026-10-17T13:27:25.580696+00:00",
   "briefing": {
-    "text": "本批入藏主线有二：复杂环境下的实时SLAM与多传感器状态估计，以及CLIP、多模态大模型渗入具身感知、任务规划与语言导航。首推LM-Nav：不微调、无需标注数据，组合GPT-3、CLIP与ViNG让真实户外机器人执行长程语言导航，是模块化大模型导航的代表作；FAST-LIVO2以ESIKF紧耦合激光、惯性与视觉且免特征提取，适合作为导航平台的状态估计底座；Eyes Wide Shut构建MMVP基准定位CLIP表征盲区，对依赖CLIP编码器的VLN方法有直接警示。趋势上，几何鲁棒估计与大模型语义理解正被整合进同一导航栈。",
-    "added": 19,
-    "at": "2026-10-18T13:45:34.455065+00:00",
+    "text": "本批经典沿三条主线推进：神经隐式SLAM实时稠密重建、VLM驱动的零样本语义导航、多模态大模型与智能体基础设施。首推VLFM，以边界探索叠加视觉语言价值图实现零样本目标导航并落地Spot真机，是基础模型进入导航的代表性工作；Navigating to objects in the real world在六个真实家庭实证对比三类方法，端到端从仿真77%跌至真机23%、模块化达90%，为架构选型提供关键证据；NoMaD用目标掩码扩散策略统一导航与探索，模型更小、碰撞更低。总体看，预训练基础模型正取代手工模块成为导航决策核心，而真实世界泛化仍是最大瓶颈。",
+    "added": 15,
+    "at": "2026-10-19T16:48:38.353154+00:00",
     "new": [
       {
-        "t": "ReFusion: 3D Reconstruction in Dynamic Environments for RGB-D Cameras Exploiting Residuals",
-        "u": "https://arxiv.org/abs/1905.02082",
+        "t": "OpenAGI: When LLM Meets Domain Experts",
+        "u": "https://arxiv.org/abs/2304.04370",
         "r": 7,
         "g": 7,
-        "s": "提出动态环境RGB-D稠密SLAM：TSDF体素哈希直接法跟踪位姿，用配准残差与自由空间建模检测动态物体保持静态建图一致，实验优于多数稠密SLAM方法，开源代码与带真值新数据集。",
-        "c": "",
-        "cit": 280
+        "s": "OpenAGI是开源AGI研究平台，以自然语言任务驱动LLM选择并调用领域专家模型、工具与API解决多步骤真实任务，并提出RLTF机制利用任务反馈改进LLM的任务求解能力，形成自我改进闭环。",
+        "c": "https://github.com/agiresearch/OpenAGI",
+        "cit": 162
       },
       {
-        "t": "Photo-SLAM: Real-Time Simultaneous Localization and Photorealistic Mapping for Monocular, Stereo, and RGB-D Cameras",
-        "u": "https://arxiv.org/abs/2311.16728",
-        "r": 7,
-        "g": 8,
-        "s": "Photo-SLAM以超基元地图融合显式几何特征做定位与隐式光度特征表示纹理，配合高斯金字塔渐进训练，在单目、双目和RGB-D数据上实现实时定位与照片级建图，可在Jetson AGX Orin嵌入式平台实时运行。",
-        "c": "",
-        "cit": 224
-      },
-      {
-        "t": "Reinforcement Learning for Robust Parameterized Locomotion Control of Bipedal Robots",
-        "u": "https://arxiv.org/abs/2103.14295",
-        "r": 8,
-        "g": 8,
-        "s": "本文提出无模型强化学习框架，在仿真中训练双足机器人Cassie的运动策略，用域随机化实现仿真到真机迁移，能跟踪目标行走速度、身高与转向，鲁棒性优于传统控制器与残差学习方法。",
-        "c": "",
-        "cit": 218
-      },
-      {
-        "t": "Super Odometry: IMU-centric LiDAR-Visual-Inertial Estimator for Challenging Environments",
-        "u": "https://arxiv.org/abs/2104.14938",
-        "r": 9,
-        "g": 8,
-        "s": "提出以IMU为中心的LiDAR-视觉-惯性融合里程计，粗到精结合松紧耦合优点并用动态八叉树加速，在感知退化环境实现鲁棒实时状态估计，已部署于DARPA地下挑战赛无人机与地面机器人。",
-        "c": "",
-        "cit": 208
-      },
-      {
-        "t": "HyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model",
-        "u": "https://arxiv.org/abs/2406.11519",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：HyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 205
-      },
-      {
-        "t": "How Much Can CLIP Benefit Vision-and-Language Tasks?",
-        "u": "https://arxiv.org/abs/2107.06383",
-        "r": 7,
-        "g": 8,
-        "s": "本文评估CLIP作为视觉编码器对V&L任务的增益：在任务微调与预训练迁移两种设定下均显著优于BottomUp-TopDown等编码器，并在VQA、视觉蕴含与VLN导航上刷新SOTA。",
-        "c": "https://github.com/clip-vil/CLIP-ViL",
-        "cit": 200
-      },
-      {
-        "t": "CogAgent: A Visual Language Model for GUI Agents",
-        "u": "https://arxiv.org/abs/2312.08914",
-        "r": 7,
-        "g": 8,
-        "s": "CogAgent是180亿参数的视觉语言模型，专攻GUI理解与导航；采用高低分辨率双图像编码器，支持1120×1120输入以识别页面细小元素与文字，在九个VQA基准及Mind2Web、AITW等GUI导航任务上达到SOTA，模型与代码开源。",
-        "c": "https://github.com/THUDM/CogVLM",
-        "cit": 199
-      },
-      {
-        "t": "EarthGPT: A Universal Multimodal Large Language Model for Multisensor Image Comprehension in Remote Sensing Domain",
-        "u": "https://arxiv.org/abs/2401.16822",
-        "r": 7,
-        "g": 8,
-        "s": "EarthGPT是遥感领域的通用多模态大模型，提出视觉增强感知与跨模态互理解机制，经多传感器多任务统一指令微调，统一场景分类、描述、VQA、视觉定位与检测等遥感图像理解任务，并构建百万级指令数据集MMRS-1M。",
-        "c": "https://github.com/wivizhang/EarthGPT",
-        "cit": 196
-      },
-      {
-        "t": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
-        "u": "https://arxiv.org/abs/2309.10062",
-        "r": 8,
-        "g": 7,
-        "s": "SMART-LLM以程序化少样本提示驱动LLM，将高层指令经任务分解、联盟组建与任务分配三个阶段生成多机器人任务计划，并构建四类复杂度指令基准，在仿真与真机场景验证。",
-        "c": "",
-        "cit": 195
-      },
-      {
-        "t": "FAST-LIVO2: Fast, Direct LiDAR–Inertial–Visual Odometry",
-        "u": "https://arxiv.org/abs/2408.14035",
-        "r": 9,
-        "g": 9,
-        "s": "FAST-LIVO2提出快速直接法激光-惯性-视觉里程计，用误差状态迭代卡尔曼滤波紧耦合融合IMU、激光与图像，激光配准与视觉对齐均免特征提取并统一到体素地图，实现高精度鲁棒的实时SLAM状态估计。",
-        "c": "",
-        "cit": 195
-      },
-      {
-        "t": "GLaMM: Pixel Grounding Large Multimodal Model",
-        "u": "https://arxiv.org/abs/2311.03356",
+        "t": "NICER-SLAM: Neural Implicit Scene Encoding for RGB SLAM",
+        "u": "https://arxiv.org/abs/2302.03594",
         "r": 7,
         "g": 7,
-        "s": "GLaMM是首个能在对话中生成与文本无缝交织的像素级分割掩码的大型多模态模型，支持文本与可选视觉区域提示的多粒度输入，并提出GCG任务、评测协议及含810M掩码区域的GranD大规模数据集。",
+        "s": "提出稠密单目RGB SLAM系统，联合优化相机位姿与分层神经隐式地图，引入单目几何线索、光流与翘曲损失增强几何一致性，实现高保真稠密重建与新视角合成，性能媲美RGB-D SLAM。",
         "c": "",
-        "cit": 191
+        "cit": 157
       },
       {
-        "t": "TransVPR: Transformer-Based Place Recognition with Multi-Level Attention Aggregation",
-        "u": "https://arxiv.org/abs/2201.02001",
+        "t": "GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction",
+        "u": "https://arxiv.org/abs/2309.02436",
         "r": 7,
-        "g": 6,
-        "s": "TransVPR是基于视觉Transformer的地点识别模型，聚合多层自注意力生成全局描述子，并用关键块描述子做空间匹配重排序候选，在多个真实基准达SOTA且计算存储开销低。",
+        "g": 7,
+        "s": "提出神经隐式稠密视觉SLAM框架GO-SLAM，以鲁棒位姿估计为核心，通过高效回环与在线全局BA利用全部历史帧的学习几何逐帧优化位姿，并在线更新隐式表面表示，实现全局一致的实时三维重建。",
         "c": "",
-        "cit": 189
+        "cit": 154
       },
       {
-        "t": "Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs",
-        "u": "https://arxiv.org/abs/2401.06209",
-        "r": 9,
-        "g": 9,
-        "s": "揭示多模态大模型视觉短板源于CLIP表征缺陷：构建「CLIP盲区图像对」与MMVP基准，暴露GPT-4V等在九类视觉模式上的错误与幻觉；MoF特征混合可增强视觉grounding。",
-        "c": "",
-        "cit": 186
-      },
-      {
-        "t": "LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging Large-Scale Underground Environments",
-        "u": "https://arxiv.org/abs/2205.13135",
-        "r": 8,
-        "g": 9,
-        "s": "LAMP 2.0是CoSTAR团队面向DARPA地下挑战赛的多机器人SLAM系统，含适配多源里程计与激光雷达的前端、支持机间回环检测的可扩展多机前端与基于GNC的抗差后端，在矿井、电厂、洞穴真实数据上验证并发布真值基准。",
-        "c": "",
-        "cit": 185
-      },
-      {
-        "t": "Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction",
-        "u": "https://arxiv.org/abs/2203.03749",
-        "r": 8,
-        "g": 8,
-        "s": "DLIO是轻量级激光-惯性里程计，以由粗到细的连续时间轨迹实现快速可并行的逐点运动去畸变，非线性几何观测器提供可证收敛的状态初始化，直接扫描到地图配准使计算效率提升近20%、精度提升12%。",
-        "c": "",
-        "cit": 179
-      },
-      {
-        "t": "DALL-EVAL: Probing the Reasoning Skills and Social Biases of Text-to-Image Generation Models",
-        "u": "https://arxiv.org/abs/2202.04053",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：DALL-EVAL: Probing the Reasoning Skills and Social Biases of Text-to-Image Generation Models。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 177
-      },
-      {
-        "t": "Align and Prompt: Video-and-Language Pre-training with Entity Prompts",
-        "u": "https://arxiv.org/abs/2112.09583",
+        "t": "SUES-200: A Multi-Height Multi-Scene Cross-View Image Benchmark Across Drone and Satellite",
+        "u": "https://arxiv.org/abs/2204.10704",
         "r": 6,
         "g": 7,
-        "s": "提出AlPro视频-语言预训练框架，在稀疏采样视频帧上用视频文本对比损失做实例级对齐，并以实体提示建模自监督学习细粒度区域-实体对齐，无需目标检测器，在文本-视频检索与视频问答上取得SOTA。",
-        "c": "https://github.com/salesforce/ALPRO",
-        "cit": 177
-      },
-      {
-        "t": "Motion planning around obstacles with convex optimization",
-        "u": "https://arxiv.org/abs/2205.04422",
-        "r": 8,
-        "g": 9,
-        "s": "提出GCS规划框架：利用凸集图最短路径技术将避障轨迹规划构造为凸优化松弛，松弛通常极紧，简单后处理即可得到近似全局最优的无碰轨迹，数值与实物实验显示其比常用采样类规划器更快更优。",
+        "s": "SUES-200是首个考虑无人机多高度差异的跨视图匹配数据集，含四个飞行高度共24120张无人机图像与对应卫星图像，覆盖多类场景，并系统评测九种架构、提出鲁棒基线。",
         "c": "",
-        "cit": 176
+        "cit": 153
       },
       {
-        "t": "LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action",
-        "u": "https://arxiv.org/abs/2207.04429",
+        "t": "VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation",
+        "u": "https://arxiv.org/abs/2312.03275",
+        "r": 10,
+        "g": 9,
+        "s": "零样本语义导航方法：由深度占用图识别边界，用预训练视觉语言模型从RGB生成语言对齐价值图，选取最有望发现目标的边界，在三数据集ObjectNav上SOTA并部署于Spot真机。",
+        "c": "",
+        "cit": 151
+      },
+      {
+        "t": "Orbeez-SLAM: A Real-time Monocular Visual SLAM with ORB Features and NeRF-realized Mapping",
+        "u": "https://arxiv.org/abs/2209.13274",
+        "r": 7,
+        "g": 7,
+        "s": "该工作提出仅用单目RGB输入的实时视觉SLAM，将ORB特征视觉里程计与NeRF隐式表示建图结合，无需预训练即可适配新场景并实时生成稠密地图，速度较强基线最高提升800倍且渲染效果更优。",
+        "c": "https://github.com/MarvinChung/Orbeez-SLAM",
+        "cit": 149
+      },
+      {
+        "t": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
+        "u": "https://arxiv.org/abs/2404.13501",
+        "r": 7,
+        "g": 6,
+        "s": "本文系统综述LLM智能体的记忆机制，从记忆的定义与必要性、设计方法、评测方式及应用场景等方面梳理分散的已有工作，抽象共性设计模式，分析局限并展望未来方向，并维护开源论文仓库。",
+        "c": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
+        "cit": 144
+      },
+      {
+        "t": "ULIP-2: Towards Scalable Multimodal Pre-Training for 3D Understanding",
+        "u": "https://arxiv.org/abs/2305.08275",
+        "r": 7,
+        "g": 9,
+        "s": "ULIP-2提出点云-图像-语言三模态预训练框架，用大型多模态模型为3D形状自动生成语言描述，无需人工标注即可扩展到Objaverse等大数据集，在零样本3D分类、微调分类和3D描述生成上取得SOTA。",
+        "c": "https://github.com/salesforce/ULIP",
+        "cit": 143
+      },
+      {
+        "t": "Monkey: Image Resolution and Text Label are Important Things for Large Multi-Modal Models",
+        "u": "https://arxiv.org/abs/2311.06607",
+        "r": 7,
+        "g": 8,
+        "s": "Monkey将高分辨率图像切分为448×448图块并配独立适配器，结合多级描述生成增强训练数据，使多模态大模型支持1344×896输入，在18个数据集的字幕与多类视觉问答任务上超越现有LMM。",
+        "c": "https://github.com/Yuliang-Liu/Monkey",
+        "cit": 142
+      },
+      {
+        "t": "Are smart cities green? The role of environmental and digital policies for Eco-innovation in China",
+        "u": "https://doi.org/10.1016/j.worlddev.2023.106212",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：Are smart cities green? The role of environmental and digital policies for Eco-innovation in China。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 139
+      },
+      {
+        "t": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
+        "u": "https://arxiv.org/abs/2310.07896",
+        "r": 9,
+        "g": 8,
+        "s": "NoMaD提出单一Transformer扩散策略，通过目标掩码统一处理目标导向导航与目标无关探索，在真机移动机器人上以更小模型实现更优导航性能和更低碰撞率。",
+        "c": "",
+        "cit": 136
+      },
+      {
+        "t": "SGLang: Efficient Execution of Structured Language Model Programs",
+        "u": "https://arxiv.org/abs/2312.07104",
+        "r": 6,
+        "g": 8,
+        "s": "SGLang提出前端编程语言与运行时，用RadixAttention复用KV缓存、压缩有限状态机加速结构化解码，在智能体控制、推理、多轮对话等任务上把大模型程序吞吐最高提升6.4倍。",
+        "c": "https://github.com/sgl-project/sglang",
+        "cit": 135
+      },
+      {
+        "t": "NExT-GPT: Any-to-Any Multimodal LLM",
+        "u": "https://arxiv.org/abs/2309.05519",
         "r": 8,
         "g": 7,
-        "s": "LM-Nav无需微调与语言标注数据，组合预训练导航模型ViNG、图文对齐CLIP与GPT-3三个模块，在真实户外移动机器人上实现自然语言指令驱动的长时程导航。",
+        "s": "NExT-GPT是端到端any-to-any多模态大模型系统，连接LLM、多模态适配器与扩散解码器，支持文本、图像、视频、音频任意组合的输入感知与输出生成，仅微调约1%投影层参数，并引入模态切换指令微调MosIT与人工数据集。",
         "c": "",
-        "cit": 171
+        "cit": 132
+      },
+      {
+        "t": "Navigating to objects in the real world",
+        "u": "https://arxiv.org/abs/2212.00922",
+        "r": 10,
+        "g": 8,
+        "s": "该文在六个真实家庭中无先验地图、无仪器条件下，大规模实证比较经典、模块化与端到端三类语义目标导航方法：模块化学习真机成功率达90%，端到端因图像域差距从仿真77%跌至23%。",
+        "c": "",
+        "cit": 125
+      },
+      {
+        "t": "Qwen2.5 Technical Report",
+        "u": "https://arxiv.org/abs/2412.15115",
+        "r": 9,
+        "g": 9,
+        "s": "阿里Qwen2.5系列大模型技术报告：预训练数据扩至18万亿token，配合百万级SFT与多阶段强化学习后训练，多尺寸开源，在理解、推理、数学、代码等基准上居开源前列。",
+        "c": "",
+        "cit": 122
       }
     ]
   }
