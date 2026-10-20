@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T09:11:52.631672+00:00",
+  "updated_at": "2026-10-20T14:39:02.977565+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -22322,187 +22322,63 @@
         "geometry"
       ],
       "added_at": "2026-10-20T09:11:18.006140+00:00"
+    },
+    {
+      "id": "2610.22471",
+      "arxiv_id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "authors": [
+        "SenseNova",
+        "Joint Research Team",
+        ":",
+        "Zhongang Cai",
+        "Ziang Cao",
+        "Tailai Chen",
+        "Han Chong Chua",
+        "Linjun Dai",
+        "Hanming Deng",
+        "Hokin Deng",
+        "Haiwen Diao",
+        "Chenjing Ding"
+      ],
+      "published": "2026-10-15",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.22471",
+      "pdf_url": "https://arxiv.org/pdf/2610.22471",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测",
+        "多模态大模型与智能体",
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身基准与评测、多模态大模型与智能体，主要研究问题可概括为：Has GPT-6-Astra Achieved Embodied Intelligence?。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments.",
+      "why_it_matters": "与具身基准与评测、多模态大模型与智能体直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-10-20T14:38:59.977047+00:00"
     }
   ],
   "briefing": {
     "text": "",
-    "added": 22,
-    "at": "2026-10-20T09:11:55.697017+00:00",
+    "added": 1,
+    "at": "2026-10-20T14:39:04.886061+00:00",
     "new": [
       {
-        "t": "PlanarCityLoc: Breaking Silhouette Ambiguity in LoD Aerial Localization via 3D Planes",
-        "u": "https://arxiv.org/abs/2610.26729",
+        "t": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+        "u": "https://arxiv.org/abs/2610.22471",
         "r": null,
         "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：PlanarCityLoc: Breaking Silhouette Ambiguity in LoD Aerial Localization via 3D Planes。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
-        "u": "https://arxiv.org/abs/2610.26659",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空间智能、多模态大模型与智能体，主要研究问题可概括为：SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/JesseZZZZZ/SpatialScout"
-      },
-      {
-        "t": "AeroIntent: A Synchronized Multimodal Benchmark for UAV Mission Intent Recognition",
-        "u": "https://arxiv.org/abs/2610.25869",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、UAV 目标搜索，主要研究问题可概括为：AeroIntent: A Synchronized Multimodal Benchmark for UAV Mission Intent Recognition。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
-        "u": "https://arxiv.org/abs/2610.26860",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、真机与 Sim2Real，主要研究问题可概括为：OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "AeroDASH: Asynchronous Vision-Language-Action Control for Continuous UAV Flight",
-        "u": "https://arxiv.org/abs/2610.25407",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：AeroDASH: Asynchronous Vision-Language-Action Control for Continuous UAV Flight。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Learning Geometry-Aware Planning Representations for Monocular Flight with Cross-Modal Supervision",
-        "u": "https://arxiv.org/abs/2610.26508",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空间智能、UAV 目标搜索，主要研究问题可概括为：Learning Geometry-Aware Planning Representations for Monocular Flight with Cross-Modal Supervision。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
-        "u": "https://arxiv.org/abs/2610.26826",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Vector-Quantized World Model: Latent Feedback Motion Planning for Robot Manipulation",
-        "u": "https://arxiv.org/abs/2610.25600",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、状态估计与控制，主要研究问题可概括为：Vector-Quantized World Model: Latent Feedback Motion Planning for Robot Manipulation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "State World Models: Execute the Rules, Generate the Pixels",
-        "u": "https://arxiv.org/abs/2610.26811",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、空域 VLN，主要研究问题可概括为：State World Models: Execute the Rules, Generate the Pixels。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "ReInsVLN: Revisiting Historical Evidence for Training-Free Vision-and-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.26545",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦地面 VLN、空域 VLN，主要研究问题可概括为：ReInsVLN: Revisiting Historical Evidence for Training-Free Vision-and-Language Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Robot Learning with Vision-Language-Action Models for Agricultural Manipulation",
-        "u": "https://arxiv.org/abs/2610.26717",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空域 VLN、空间智能，主要研究问题可概括为：Robot Learning with Vision-Language-Action Models for Agricultural Manipulation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
-        "u": "https://arxiv.org/abs/2610.26844",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、具身基准与评测，主要研究问题可概括为：AnyGoal: On World Model Generalization Beyond Expert Rollouts。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Learning Goal-Conditioned Subgoals through Frozen Hierarchical World Models",
-        "u": "https://arxiv.org/abs/2610.26179",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、地面 VLN，主要研究问题可概括为：Learning Goal-Conditioned Subgoals through Frozen Hierarchical World Models。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "GOFusion: Real-Time Gaussian-Occupancy Submap Fusion for Fisher-Informed Autonomous Robot Navigation",
-        "u": "https://arxiv.org/abs/2610.25261",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：GOFusion: Real-Time Gaussian-Occupancy Submap Fusion for Fisher-Informed Autonomous Robot Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/Bennnoo/GOFusion"
-      },
-      {
-        "t": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
-        "u": "https://arxiv.org/abs/2610.24512",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、空间智能，主要研究问题可概括为：ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "ForagerSim: Evaluating Embodied Map-Based Reasoning in Large-Scale Dynamic Worlds",
-        "u": "https://arxiv.org/abs/2610.26395",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空间智能，主要研究问题可概括为：ForagerSim: Evaluating Embodied Map-Based Reasoning in Large-Scale Dynamic Worlds。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "CAOS-SLAM: Class-Agnostic Object-Aware Real-Time vSLAM for Dynamic Environments",
-        "u": "https://arxiv.org/abs/2610.26633",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦状态估计与控制，主要研究问题可概括为：CAOS-SLAM: Class-Agnostic Object-Aware Real-Time vSLAM for Dynamic Environments。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Revealing and Bridging the Physical Executability Gap in Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.25687",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空域 VLN、地面 VLN，主要研究问题可概括为：Revealing and Bridging the Physical Executability Gap in Vision-Language Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "What Language Adds, and at What Cost: Four Controlled Probes of Pathology Vision-Language Models",
-        "u": "https://arxiv.org/abs/2610.26805",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：What Language Adds, and at What Cost: Four Controlled Probes of Pathology Vision-Language Models。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience",
-        "u": "https://arxiv.org/abs/2610.26625",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空间智能、具身基准与评测，主要研究问题可概括为：EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Vehicle-State-Aware Confidence Estimation for Direct Wind Sensing on a Multirotor",
-        "u": "https://arxiv.org/abs/2610.25688",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：Vehicle-State-Aware Confidence Estimation for Direct Wind Sensing on a Multirotor。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Localization and Neural Splatting on the Edge: An FPGA Scene Memory for Robots",
-        "u": "https://arxiv.org/abs/2610.25068",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦状态估计与控制、真机与 Sim2Real，主要研究问题可概括为：Localization and Neural Splatting on the Edge: An FPGA Scene Memory for Robots。当前自动研判未启用，建议结合英文摘要阅读。",
+        "s": "该工作聚焦具身基准与评测、多模态大模型与智能体，主要研究问题可概括为：Has GPT-6-Astra Achieved Embodied Intelligence?。当前自动研判未启用，建议结合英文摘要阅读。",
         "c": ""
       }
     ]
