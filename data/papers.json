@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T09:19:43.791065+00:00",
+  "updated_at": "2026-10-21T14:53:27.117973+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -4068,6 +4068,56 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.27677",
+      "arxiv_id": "2610.27677",
+      "title": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
+      "authors": [
+        "Pengying Wu",
+        "Zhejia Wen",
+        "Kang Ding",
+        "Kangjie Zhou",
+        "Chunxuan Jiao",
+        "Wei Pan",
+        "Xiangli Nie",
+        "Chang Liu"
+      ],
+      "published": "2026-10-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27677",
+      "pdf_url": "https://arxiv.org/pdf/2610.27677",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "CovNav以保形预测指导ObjectNav的自适应LLM推理：本地模型快速模式判断目标是否邻近所观测对象，token概率转为预测集，仅歧义查询升级到慢速思维链，在HM3D上超越最强零样本基线并经TurtleBot真机验证。",
+      "change_zh": "常见路线要么固定调用云端大模型、要么单模式推理，CovNav把\"何时慢思考\"形式化为保形校准的不确定性决策：以对象对的二元判断替代自由生成，使校准可行并支持开集检测器，按查询逐个自适应切换System 1/System 2。",
+      "why_it_matters": "对ObjectNav直接提供零样本性能与延迟的实用权衡，缓解机载小模型的空间幻觉；对UAV主动目标搜索同样有启发：机载算力受限时何时启用昂贵推理可由校准不确定性触发，兼顾实时性与判断质量。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "目标物体导航, 共形预测, 大语言模型, 自适应推理, 双过程推理, 具身智能",
+      "question_zh": "在目标物体导航中，基于LLM的具身智能体应何时启用慢速思考（推理），以平衡推理质量与效率？",
+      "innovation_zh": "提出免训练框架CovNav，将双过程推理转为不确定性感知决策：本地LLM以快速模式对空间查询作结构化二元判断，共形预测将其token概率转为预测集，仅模糊查询才升级至慢速思维链推理；物体对建模使校准可控，并通过现成检测器支持开放集物体。",
+      "dataset_zh": "Gibson和HM3D（v1、v2）仿真基准数据集，以及TurtleBot 4真机机器人平台",
+      "results_zh": "在HM3D v1和v2上，CovNav成功率分别超过最强零样本基线0.8和1.7个百分点，仅12.4%的查询触发慢速推理，并以远低于全程思考模式的延迟保留其大部分性能增益；TurtleBot 4真机实验进一步验证了该方法的有效性。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "object goal navigation",
+        "objectnav"
+      ],
+      "added_at": "2026-10-21T14:51:25.303259+00:00"
+    },
+    {
       "id": "2610.22736",
       "arxiv_id": "2610.22736",
       "title": "Spatial Memory by Agents, for Agents",
@@ -6359,6 +6409,53 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.27696",
+      "arxiv_id": "2610.27696",
+      "title": "PanoGraphGS: Unifying Panoptic Segmentation and Hierarchical 3D Scene Graphs with Gaussian Splatting",
+      "authors": [
+        "Jinghan Gao",
+        "Siyu Wang",
+        "Dongyu Feng",
+        "Yiyuan Pan",
+        "Rong Xiong"
+      ],
+      "published": "2026-10-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27696",
+      "pdf_url": "https://arxiv.org/pdf/2610.27696",
+      "code_url": "https://github.com/gaojh0333/PanoGraphGS",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/244b2174e344f0bf9a90efce073c60af2a2ef5a8",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PanoGraphGS在共享高斯基座上联合学习语义与实例特征，实现跨视角一致的3D全景分割，并构建含包含与空间关系的楼层-房间-物体层级场景图，同时发布真实数据集NaviGS。",
+      "change_zh": "常见路线将2D分割投影到点云或网格分阶段建场景图，跨视角易不一致；本文统一在共享高斯几何上以原型语义与关联实例学习获得一致全景预测，支持高斯级直接全景解码，并由语义感知模块生成层级场景图，一体打通分割与建图。",
+      "why_it_matters": "层级3D场景图是ObjectNav与语言导航的关键空间记忆，其跨视角一致的实例级语义可支撑开放词汇目标检索与房间级目标推理；对UAV目标搜索，一致的高斯语义地图也可辅助目标重识别与语义建图，NaviGS数据集另具评测价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "全景分割, 3D场景图, 3D高斯泼溅, 层次化场景理解, 新视角分割",
+      "question_zh": "如何构建能在多视角下一致区分语义区域与物体实例的层次化3D场景图，以支持语言引导导航",
+      "innovation_zh": "将全景3D高斯表示学习与层次场景图构建统一到共享高斯几何上：基于原型的语义学习与基于关联的实例学习实现跨视角一致的全景预测，支持高斯级全景解码，语义感知场景图模块进一步恢复楼层-房间-设施-物体的包含与空间关系层级",
+      "dataset_zh": "Replica数据集；自发布的真机数据集NaviGS（提供3DGS、网格、RGB、语义与深度数据）",
+      "results_zh": "在3D场景图识别任务上，PanoGraphGS在Replica和NaviGS数据集上的物体节点准确率平均超过最强基线50个百分点以上；在评估的各方法中，2D全景分割达到SOTA性能，验证了其在层次化3D场景理解与2D全景分割上的有效性",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "3d scene",
+        "geometry"
+      ],
+      "added_at": "2026-10-21T14:53:24.117455+00:00"
     },
     {
       "id": "2610.21619",
@@ -17422,6 +17519,45 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.27315",
+      "arxiv_id": "2610.27315",
+      "title": "Design and Control of a Multimodal Legged-Aerial Robot Through Separate Control Contraction Metrics",
+      "authors": [
+        "Kaushik Venkatesh Krishnamurthy",
+        "Eric Sihite",
+        "Alireza Ramezani",
+        "Morteza Gharib"
+      ],
+      "published": "2026-10-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27315",
+      "pdf_url": "https://arxiv.org/pdf/2610.27315",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出一款多模态足式-飞行四足机器人，离线分别求解行走与飞行的控制收缩度量（CCM），再用在线能量型CLF-QP统一两域，实现跨域最优控制分配与推力辅助小跑，并给出仿真与硬件实验验证。",
+      "change_zh": "相比常见的全域单一控制器或分层切换路线，该文为行走与飞行各自离线求解独立的收缩度量，避免为混合动力学设计单一度量，再以在线能量CLF-QP完成跨域控制分配，使推力辅助行走与飞行可共用一套统一框架。",
+      "why_it_matters": "该工作属于飞行与运动控制线，为地面行走与空中飞行融合的多模态平台提供模块化的稳定控制底层方案，是多模态无人机自主落地的潜在控制基础；但对UAV主动目标搜索与ObjectNav等导航决策问题无直接贡献。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "aerial",
+        "deployment"
+      ],
+      "added_at": "2026-10-21T14:50:41.243768+00:00"
+    },
+    {
       "id": "2610.21978",
       "arxiv_id": "2610.21978",
       "title": "Towards bio-inspired visual navigation: a neuromorphic navigation paradigm for MAVs",
@@ -22775,137 +22911,33 @@
     }
   ],
   "briefing": {
-    "text": "",
-    "added": 16,
-    "at": "2026-10-21T09:19:46.590360+00:00",
+    "text": "本批三篇横跨导航的感知、决策与平台。首推CovNav：用保形预测把token概率转为预测集，仅歧义时升级到慢速思维链LLM，在HM3D上超越最强零样本基线并经TurtleBot真机验证，是LLM导航推理开销控制的一个可复用样板。PanoGraphGS则在共享高斯基座上联合3D全景分割与楼层-房间-物体层级场景图，实例特征跨视角一致，直指导航对持久场景表征的刚需，并附带数据集NaviGS。另一篇Multimodal Legged-Aerial Robot工作以离线CCM加在线CLF-QP打通足式与飞行两域控制，含硬件验证，供跨域平台方向跟进。整体看，以不确定性量化约束LLM推理开销、以场景图衔接感知与决策，正成为具身导航系统的主流设计选择。",
+    "added": 3,
+    "at": "2026-10-21T14:55:38.617358+00:00",
     "new": [
       {
-        "t": "MindView: Benchmarking Generative Multi-View Spatial Intelligence",
-        "u": "https://arxiv.org/abs/2610.28622",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空间智能、具身基准与评测，主要研究问题可概括为：MindView: Benchmarking Generative Multi-View Spatial Intelligence。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Design and Control of a Multimodal Legged-Aerial Robot Through Separate Control Contraction Metrics",
+        "u": "https://arxiv.org/abs/2610.27315",
+        "r": 7,
+        "g": 6,
+        "s": "本文提出一款多模态足式-飞行四足机器人，离线分别求解行走与飞行的控制收缩度量（CCM），再用在线能量型CLF-QP统一两域，实现跨域最优控制分配与推力辅助小跑，并给出仿真与硬件实验验证。",
         "c": ""
       },
       {
-        "t": "Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V",
-        "u": "https://arxiv.org/abs/2610.28416",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、多模态大模型与智能体，主要研究问题可概括为：Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
+        "u": "https://arxiv.org/abs/2610.27677",
+        "r": 9,
+        "g": 7,
+        "s": "CovNav以保形预测指导ObjectNav的自适应LLM推理：本地模型快速模式判断目标是否邻近所观测对象，token概率转为预测集，仅歧义查询升级到慢速思维链，在HM3D上超越最强零样本基线并经TurtleBot真机验证。",
         "c": ""
       },
       {
-        "t": "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images",
-        "u": "https://arxiv.org/abs/2610.28585",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空间智能、多模态大模型与智能体，主要研究问题可概括为：SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "EndoWorld-JEPA: Motion-Guided Global-Local Latent World Modeling for Endoscopic Video Representation Learning",
-        "u": "https://arxiv.org/abs/2610.27890",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、具身基准与评测，主要研究问题可概括为：EndoWorld-JEPA: Motion-Guided Global-Local Latent World Modeling for Endoscopic Video Representation Learning。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "AEON: Unifying Video and 3D World Models",
-        "u": "https://arxiv.org/abs/2610.28631",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、具身基准与评测，主要研究问题可概括为：AEON: Unifying Video and 3D World Models。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "EvaOmni: An Evidence-Grounded Benchmark for Audio-Visual Reasoning",
-        "u": "https://arxiv.org/abs/2610.28444",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、状态估计与控制，主要研究问题可概括为：EvaOmni: An Evidence-Grounded Benchmark for Audio-Visual Reasoning。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Semantic Observability for Autonomous Systems Diagnostics",
-        "u": "https://arxiv.org/abs/2610.28611",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：Semantic Observability for Autonomous Systems Diagnostics。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "MAPLE: Mondrian-Anchored Prior for Learning-free Indoor Exploration",
-        "u": "https://arxiv.org/abs/2610.28566",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦主动感知与重建、状态估计与控制，主要研究问题可概括为：MAPLE: Mondrian-Anchored Prior for Learning-free Indoor Exploration。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "CLOSER: Evidence-Aware Active Visual Verification for Embodied Object-Goal Navigation",
-        "u": "https://arxiv.org/abs/2610.28476",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦ObjectNav 目标搜索、多模态大模型与智能体，主要研究问题可概括为：CLOSER: Evidence-Aware Active Visual Verification for Embodied Object-Goal Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Physical AI for Intralogistics: Benchmarking the NVIDIA Sim-to-Real Ecosystem for Cosmos-Enhanced COMPASS Navigation on Industrial Mobile Robots",
-        "u": "https://arxiv.org/abs/2610.28432",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：Physical AI for Intralogistics: Benchmarking the NVIDIA Sim-to-Real Ecosystem for Cosmos-Enhanced COMPASS Navigation on Industrial Mobile Robots。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Slot-JEPA: Object-Structured Prediction Interfaces for Latent World Models",
-        "u": "https://arxiv.org/abs/2610.28074",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、具身基准与评测，主要研究问题可概括为：Slot-JEPA: Object-Structured Prediction Interfaces for Latent World Models。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
-        "u": "https://arxiv.org/abs/2610.28578",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦主动感知与重建、多模态大模型与智能体，主要研究问题可概括为：Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems",
-        "u": "https://arxiv.org/abs/2610.28522",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Attractive Faces Skew Text-to-Image Reward Models and Leaderboards",
-        "u": "https://arxiv.org/abs/2610.28195",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：Attractive Faces Skew Text-to-Image Reward Models and Leaderboards。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Benchmarking Arabic Dialects for Math Problems",
-        "u": "https://arxiv.org/abs/2610.28607",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、状态估计与控制，主要研究问题可概括为：Benchmarking Arabic Dialects for Math Problems。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "What Do RTL Repair Benchmarks Actually Measure?",
-        "u": "https://arxiv.org/abs/2610.28595",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：What Do RTL Repair Benchmarks Actually Measure?。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/Evaaaz/RTLRepairBench"
+        "t": "PanoGraphGS: Unifying Panoptic Segmentation and Hierarchical 3D Scene Graphs with Gaussian Splatting",
+        "u": "https://arxiv.org/abs/2610.27696",
+        "r": 8,
+        "g": 7,
+        "s": "PanoGraphGS在共享高斯基座上联合学习语义与实例特征，实现跨视角一致的3D全景分割，并构建含包含与空间关系的楼层-房间-物体层级场景图，同时发布真实数据集NaviGS。",
+        "c": "https://github.com/gaojh0333/PanoGraphGS"
       }
     ]
   }

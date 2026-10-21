@@ -1,12 +1,4 @@
 {
-  "2609.00384": {
-    "title": "RestoreBench: Can AI Agents Restore Power Flow Convergence?",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "属于电力系统垂直领域的LLM智能体应用与基准，与空间智能、导航、机器人均无关联，按收录范围属于把智能体套用到无关垂直领域，应拒绝。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00384"
-  },
   "2608.30955": {
     "title": "Learning Action Models with Conditional and Quantified Effects via Uncertainty-Guided Exploration",
     "relevance": 5,
@@ -2398,5 +2390,13 @@
     "reason": "纯对话智能体的情境行为评估基准，不涉及空间、导航、具身或机器人要素，仅'智能体/评测'术语与收录范围擦边，属范围外。",
     "rejected_at": "2026-10-19",
     "url": "https://arxiv.org/abs/2610.23612"
+  },
+  "2610.27836": {
+    "title": "Agentic discovery of interpretable car-following laws from multi-source trajectory data",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "将现成LLM智能体方法套用于交通流跟驰建模这一垂直领域，与空间、导航、机器人自主均无实质关联，属范围外应用。",
+    "rejected_at": "2026-10-21",
+    "url": "https://arxiv.org/abs/2610.27836"
   }
 }
