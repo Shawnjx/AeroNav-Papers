@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T14:53:27.117973+00:00",
+  "updated_at": "2026-10-21T20:33:25.236589+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2376,6 +2376,51 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.25959",
+      "arxiv_id": "2610.25959",
+      "title": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
+      "authors": [
+        "X. Feng",
+        "J. J. Tang",
+        "Z. Lin",
+        "L. Chen",
+        "S. Shao",
+        "Q. Lu",
+        "K. X. Huang"
+      ],
+      "published": "2026-10-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.25959",
+      "pdf_url": "https://arxiv.org/pdf/2610.25959",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "发布20万样本、多级标注（低层相机轨迹至高层语义指令）的具身导航规划数据集EmbodiedWorld-200K与统一评测协议，并以视频世界模型作低成本环境代理，对具身世界智能体EWA进行交互式RL后训练，提升开放世界分布外泛化。",
+      "change_zh": "常见路线或困于单一任务单场景离线训练、跨环境迁移差，或需自建昂贵交互环境。本文以统一多级标注的20万级数据支撑开放世界具身规划预训练，再以视频世界模型作低成本环境代理执行RL后训练，避开真实交互环境构建并提升OOD泛化。",
+      "why_it_matters": "为具身导航规划提供20万级统一数据与世界模型内RL后训练范式，可直接服务ObjectNav等目标条件导航的预训练与评测；UAV主动目标搜索同样面临数据稀缺与真机交互昂贵，其世界模型代理交互、指令-轨迹多级预训练思路可迁移借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "具身世界智能体, 具身导航规划, EmbodiedWorld-200K, 世界模型, 强化学习后训练, 开放世界泛化",
+      "question_zh": "如何构建能在开放世界条件下理解多样视觉环境并执行通用动作的具身世界智能体（EWA），并使其泛化到训练分布之外的未见场景。",
+      "innovation_zh": "提出具身世界智能体（EWA）研究方向，发布超20万样本、含从底层相机运动轨迹到高层语义指令多级标注的EmbodiedWorld-200K数据集及统一评测划分；突破仅靠离线监督训练的局限，创新性地以视频世界模型作为低成本环境代理，对智能体进行交互式强化学习后训练。",
+      "dataset_zh": "自建的EmbodiedWorld-200K大规模数据集（超20万样本，覆盖多样场景，含多级标注与统一评测划分及任务专属指标）；RL后训练阶段使用视频世界模型作为低成本环境代理，未提及具体仿真平台或真机平台名称。",
+      "results_zh": "在EmbodiedWorld-200K上预训练可显著提升EWA的开放世界具身规划能力；进一步在视频世界模型内进行交互式RL后训练，在分布外（OOD）场景上取得明显增益。摘要未给出具体量化指标数值。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-10-21T20:30:38.151766+00:00"
+    },
+    {
       "id": "2610.22812",
       "arxiv_id": "2610.22812",
       "title": "PASS-VLN: Passability-Aware Local-Command Vision-and-Language Navigation",
@@ -2473,6 +2518,51 @@
         "exploration"
       ],
       "added_at": "2026-10-19T09:57:15.306491+00:00"
+    },
+    {
+      "id": "2610.24122",
+      "arxiv_id": "2610.24122",
+      "title": "HAVANA: A Hierarchical Video-Action Model for Vision-Language Navigation",
+      "authors": [
+        "Dongzhihan Wang",
+        "Yi Du",
+        "Chen Wang",
+        "Xiuxian Li",
+        "Liang Xu"
+      ],
+      "published": "2026-10-16",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.24122",
+      "pdf_url": "https://arxiv.org/pdf/2610.24122",
+      "code_url": "https://github.com/Anastasiawd/HAVANA",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/c597823100f8246b954bf0f2130554466b5eb33a",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HAVANA提出分层双系统视频-动作模型：慢系统生成语言条件潜层规划，快系统结合最新观测输出局部轨迹，异步执行无需预测未来视频，在OmniNavBench达SOTA并真机验证。",
+      "change_zh": "现有视频-动作模型把未来预测与局部轨迹生成耦合在一个过程，但二者节奏不同：预测跨多次更新保持稳定，轨迹须响应新观测。HAVANA解耦为慢快双系统异步执行，推理时不生成未来视频，兼顾快速适应与长程规划。",
+      "why_it_matters": "对地面VLN与世界模型线直接供新范式：潜层规划加反应式控制的解耦，正契合UAV目标搜索中长程搜救规划与即时避障并存的节奏冲突，其异步双系统与跨本体真机泛化为无人机主动搜索提供可迁移架构。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航,视频-动作模型,双系统架构,潜在规划,局部轨迹规划,机器人导航",
+      "question_zh": "如何解耦视觉语言导航中的预测推理与反应式局部规划，使视频-动作模型以不同节奏异步执行长程与短程规划？",
+      "innovation_zh": "已有VAM将视觉未来预测与局部轨迹联合预测，HAVANA将其解耦为双系统：慢系统从观测历史生成语言条件化潜在规划，快系统结合最新规划与当前观测输出局部轨迹，二者异步执行实现快速适应，且推理时无需生成未来视频。",
+      "dataset_zh": "仿真基准OmniNavBench；真机部署于不同机器人本体（具体平台型号未提及）",
+      "results_zh": "在OmniNavBench上取得超越先前基线的最先进（SOTA）导航性能；真机部署进一步展示了对未见环境和不同机器人本体的鲁棒泛化能力；摘要未提及具体数值指标。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "deployment",
+        "geometry",
+        "instruction"
+      ],
+      "added_at": "2026-10-21T20:33:22.235942+00:00"
     },
     {
       "id": "2610.22356",
@@ -4116,6 +4206,52 @@
         "objectnav"
       ],
       "added_at": "2026-10-21T14:51:25.303259+00:00"
+    },
+    {
+      "id": "2610.24676",
+      "arxiv_id": "2610.24676",
+      "title": "From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models",
+      "authors": [
+        "Qijian Tian",
+        "Jiayu Ying",
+        "Ke Fan",
+        "Lizhuang Ma",
+        "Xin Tan"
+      ],
+      "published": "2026-10-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.24676",
+      "pdf_url": "https://arxiv.org/pdf/2610.24676",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出V2W框架：从多视角图像重建含几何、相机位姿与语言语义的显式3D世界，经视觉与语言接口供VLM多轮交互获取空间证据，免训练提升空间推理，并可用强化学习优化探索策略达到SOTA。",
+      "change_zh": "常见路线是给VLM被动输入固定视角或推理时补充若干新图；本文改为先重建显式3D世界（几何、位姿、语言语义），以视觉与语言接口开放，供VLM多轮主动查询跨视角空间证据，把被动的视图中心感知转为主动的世界中心推理。",
+      "why_it_matters": "推进空间智能主线：显式3D世界加可交互接口，让VLM主动获取位姿与跨视角证据，是ObjectNav与UAV目标搜索所需跨视角推理与主动取证的雏形；免训练可用、策略可RL优化，对具身导航智能体具借鉴价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言模型, 3D空间推理, 主动探索, 3D世界重建, 强化学习",
+      "question_zh": "如何让视觉语言模型突破被动视角感知的局限，通过主动探索3D世界获取空间证据，实现世界中心的空间推理？",
+      "innovation_zh": "提出V2W主动探索框架，从多视角图像重建含几何、相机位姿和语言对齐语义的显式3D世界，并通过视觉与语言接口供VLM多轮交互、迭代获取空间证据；相比仅被动补充视图或缺乏主动探索的已有方法，可免训练集成于现有VLM，并可用强化学习进一步优化探索策略。",
+      "dataset_zh": "空间心理建模基准（spatial mental modeling benchmarks）；摘要未提及具体数据集名称",
+      "results_zh": "在空间心理建模基准实验中，V2W在免训练设置下显著提升多种VLM基线的空间推理性能，配合强化学习优化的探索策略时达到最先进（SOTA）水平，验证了主动探索对空间智能的重要性；摘要未给出具体数值。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "geometry",
+        "spatial intelligence",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-10-21T20:27:38.810694+00:00"
     },
     {
       "id": "2610.22736",
@@ -6456,6 +6592,50 @@
         "geometry"
       ],
       "added_at": "2026-10-21T14:53:24.117455+00:00"
+    },
+    {
+      "id": "2610.24767",
+      "arxiv_id": "2610.24767",
+      "title": "DialogMem: Evaluating Dialogue-Grounded Embodied Memory in 3D Environments",
+      "authors": [
+        "Seongjun Jeong",
+        "Junghyun Kim",
+        "Gi-Cheon Kang",
+        "Byoung-Tak Zhang"
+      ],
+      "published": "2026-10-17",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.24767",
+      "pdf_url": "https://arxiv.org/pdf/2610.24767",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DialogMem提出两阶段具身记忆基准：智能体从时间对齐的RGB-D观测与人类对话流中构建记忆，随后用于实例级目标导航与问答，覆盖27个真实3D场景、142个片段、1.4万余问答对与1.1万余条导航指令。",
+      "change_zh": "常见具身记忆路线仅由视觉经验构建，该工作将人类对话与RGB-D观测共同纳入记忆形成，并统一框架评测九种记忆表示，通过受控诊断（含完美链接上限实验）分解出对话对象级接地、正确条目检索与空间定位三大瓶颈。",
+      "why_it_matters": "对ObjectNav实例导航与具身基准评测线直接提供真实场景大规模评测与瓶颈分析，指出语言线索存在但未被对象级接地；对UAV搜救中融合人类口头线索引导目标发现与接近的记忆构建同样具有方法论参考价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "具身记忆, 对话接地, 3D环境, 实例级物体导航, 视觉问答, RGB-D",
+      "question_zh": "人类对话信息如何与具身智能体在3D环境中遇到的物体经验相接地，以支持后续的物体导航和问答？",
+      "innovation_zh": "提出两阶段基准DialogMem，让智能体从时间对齐的带位姿RGB-D观测与对话流构建记忆，并在统一的记忆形成、证据检索与推理框架下评估九种记忆表示，弥补现有具身记忆主要基于视觉经验的不足。",
+      "dataset_zh": "DialogMem基准：覆盖27个真实世界3D场景的142个回合，含14,193个问答对和11,890条导航指令，输入为时间对齐的带位姿RGB-D观测流与对话流",
+      "results_zh": "在统一框架下评估九种记忆表示：评估时向视觉记忆追加对话可显著提升QA，但导航几乎无增益；即使完美链接对话，导航仍逊于真值物体级记忆，检索正确物体条目与恢复空间位置是进一步瓶颈。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "object navigation"
+      ],
+      "added_at": "2026-10-21T20:28:47.159904+00:00"
     },
     {
       "id": "2610.21619",
@@ -11263,6 +11443,53 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.25930",
+      "arxiv_id": "2610.25930",
+      "title": "TESS: LLM-guided Translation, Exploration, Simulation, and Search for Embodied Task Planning",
+      "authors": [
+        "Peiran Xu",
+        "Yixiang Yang",
+        "Jinghan Li",
+        "Fei Li",
+        "Cao Sheng",
+        "JiaZhong Yu",
+        "Yadong Mu"
+      ],
+      "published": "2026-10-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.25930",
+      "pdf_url": "https://arxiv.org/pdf/2610.25930",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 5,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/afaafbb8c7748e0fdc8f20f68dd082a7f7d6c9ad",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "TESS提出LLM引导的搜索式具身任务规划方法：用LLM将自然语言指令译为格式化目标条件、辅助部分可观测环境探索、构建规则世界模拟器并剪枝候选动作，在VirtualHome与ALFWorld上性能领先。",
+      "change_zh": "相比纯LLM生成动作序列或经典规划器两条常见路线，TESS将LLM常识嵌入搜索循环：由LLM提供目标条件、引导探索、构造可搜索的世界模拟并剪枝动作空间，使经典搜索在部分可观测、非形式化任务域中可行且高效。",
+      "why_it_matters": "对规划智能体技术线是直接样本：展示LLM常识与经典搜索互补以提升计划的可执行性与正确性；其目标条件化与动作空间剪枝思路可迁移到ObjectNav等目标条件导航及UAV搜索的决策压缩，但摘要未见真机与感知不确定性处理。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "keywords_zh": "具身任务规划, 大语言模型, 搜索算法, 部分可观测环境, 世界模拟器, LLM",
+      "question_zh": "如何结合大语言模型的常识知识与经典搜索算法，解决具身任务规划中生成计划可执行性与正确性不足的问题？",
+      "innovation_zh": "提出LLM引导的搜索算法TESS，将LLM常识知识融入经典搜索，使其在部分可观测环境中可行且高效：LLM负责将自然语言指令翻译为格式化目标条件、辅助高效探索、构建规则式世界模拟器并剪枝候选动作空间，弥补纯LLM方法可执行性与正确性不足、经典搜索依赖全可观测环境的缺陷。",
+      "dataset_zh": "VirtualHome和ALFWorld两个具身任务仿真环境",
+      "results_zh": "在VirtualHome和ALFWorld上的实验结果表明，TESS相较于已有方法表现出更优的性能；摘要中未提及具体的量化指标数字。",
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "exploration",
+        "instruction",
+        "task planning"
+      ],
+      "added_at": "2026-10-21T20:28:15.250670+00:00"
+    },
+    {
       "id": "2610.23449",
       "arxiv_id": "2610.23449",
       "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
@@ -13445,6 +13672,45 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.25223",
+      "arxiv_id": "2610.25223",
+      "title": "Map2Vid: Embodied Navigation Video Generation with Human-Friendly Motion Control",
+      "authors": [
+        "Yulin Dai",
+        "Yuqian Fu",
+        "Tianwen Qian",
+        "Zhen Xing",
+        "Bojia Zi",
+        "Xiaoling Wang"
+      ],
+      "published": "2026-10-18",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.25223",
+      "pdf_url": "https://arxiv.org/pdf/2610.25223",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出Map2Vid新任务：以BEV地图生成自我中心导航视频，构建含10万条序列、61个室内场景的大规模基准，并用课程学习训练统一多条件框架，支持仅地图输入生成。",
+      "change_zh": "常见可控视频生成多用文本或低层相机轨迹控制，本文改用描述全局布局与路线的BEV地图作为人类友好的控制接口，并以课程训练逐步削弱非地图条件直至仅凭地图生成，还配套建立了导航视频专用基准与数据集，填补该交叉点空白。",
+      "why_it_matters": "对ObjectNav与UAV目标搜索而言，BEV地图到视频本质是生成式导航世界模型：给定场景布局与规划路线即可合成自我中心观测，可为策略预训练、数据增广与规划推演提供仿真素材；但摘要仅涉室内场景，未验证对导航策略的实际增益。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction"
+      ],
+      "added_at": "2026-10-21T20:32:20.113776+00:00"
     },
     {
       "id": "2610.23598",
@@ -22911,33 +23177,57 @@
     }
   ],
   "briefing": {
-    "text": "本批三篇横跨导航的感知、决策与平台。首推CovNav：用保形预测把token概率转为预测集，仅歧义时升级到慢速思维链LLM，在HM3D上超越最强零样本基线并经TurtleBot真机验证，是LLM导航推理开销控制的一个可复用样板。PanoGraphGS则在共享高斯基座上联合3D全景分割与楼层-房间-物体层级场景图，实例特征跨视角一致，直指导航对持久场景表征的刚需，并附带数据集NaviGS。另一篇Multimodal Legged-Aerial Robot工作以离线CCM加在线CLF-QP打通足式与飞行两域控制，含硬件验证，供跨域平台方向跟进。整体看，以不确定性量化约束LLM推理开销、以场景图衔接感知与决策，正成为具身导航系统的主流设计选择。",
-    "added": 3,
-    "at": "2026-10-21T14:55:38.617358+00:00",
+    "text": "今日六篇的主线，是用世界模型与3D表征为具身导航提供环境与数据。首推EmbodiedWorld-200K：20万条多级标注数据，用视频世界模型当环境做交互式RL后训练，直接换来分布外泛化提升，是可复用的基础设施；HAVANA以快慢双系统解耦语言规划与局部控制，异步执行免去视频预测开销，在OmniNavBench登顶并通过真机验证；V2W免训练重建含语义3D世界供VLM多轮取证，即插即用。趋势：世界模型正由生成工具转为导航智能体的环境替代与训练场。",
+    "added": 6,
+    "at": "2026-10-21T20:35:02.224906+00:00",
     "new": [
       {
-        "t": "Design and Control of a Multimodal Legged-Aerial Robot Through Separate Control Contraction Metrics",
-        "u": "https://arxiv.org/abs/2610.27315",
-        "r": 7,
-        "g": 6,
-        "s": "本文提出一款多模态足式-飞行四足机器人，离线分别求解行走与飞行的控制收缩度量（CCM），再用在线能量型CLF-QP统一两域，实现跨域最优控制分配与推力辅助小跑，并给出仿真与硬件实验验证。",
-        "c": ""
-      },
-      {
-        "t": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
-        "u": "https://arxiv.org/abs/2610.27677",
+        "t": "From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models",
+        "u": "https://arxiv.org/abs/2610.24676",
         "r": 9,
         "g": 7,
-        "s": "CovNav以保形预测指导ObjectNav的自适应LLM推理：本地模型快速模式判断目标是否邻近所观测对象，token概率转为预测集，仅歧义查询升级到慢速思维链，在HM3D上超越最强零样本基线并经TurtleBot真机验证。",
+        "s": "提出V2W框架：从多视角图像重建含几何、相机位姿与语言语义的显式3D世界，经视觉与语言接口供VLM多轮交互获取空间证据，免训练提升空间推理，并可用强化学习优化探索策略达到SOTA。",
         "c": ""
       },
       {
-        "t": "PanoGraphGS: Unifying Panoptic Segmentation and Hierarchical 3D Scene Graphs with Gaussian Splatting",
-        "u": "https://arxiv.org/abs/2610.27696",
+        "t": "TESS: LLM-guided Translation, Exploration, Simulation, and Search for Embodied Task Planning",
+        "u": "https://arxiv.org/abs/2610.25930",
         "r": 8,
+        "g": 6,
+        "s": "TESS提出LLM引导的搜索式具身任务规划方法：用LLM将自然语言指令译为格式化目标条件、辅助部分可观测环境探索、构建规则世界模拟器并剪枝候选动作，在VirtualHome与ALFWorld上性能领先。",
+        "c": ""
+      },
+      {
+        "t": "DialogMem: Evaluating Dialogue-Grounded Embodied Memory in 3D Environments",
+        "u": "https://arxiv.org/abs/2610.24767",
+        "r": 8,
+        "g": 8,
+        "s": "DialogMem提出两阶段具身记忆基准：智能体从时间对齐的RGB-D观测与人类对话流中构建记忆，随后用于实例级目标导航与问答，覆盖27个真实3D场景、142个片段、1.4万余问答对与1.1万余条导航指令。",
+        "c": ""
+      },
+      {
+        "t": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
+        "u": "https://arxiv.org/abs/2610.25959",
+        "r": 9,
+        "g": 8,
+        "s": "发布20万样本、多级标注（低层相机轨迹至高层语义指令）的具身导航规划数据集EmbodiedWorld-200K与统一评测协议，并以视频世界模型作低成本环境代理，对具身世界智能体EWA进行交互式RL后训练，提升开放世界分布外泛化。",
+        "c": ""
+      },
+      {
+        "t": "Map2Vid: Embodied Navigation Video Generation with Human-Friendly Motion Control",
+        "u": "https://arxiv.org/abs/2610.25223",
+        "r": 7,
         "g": 7,
-        "s": "PanoGraphGS在共享高斯基座上联合学习语义与实例特征，实现跨视角一致的3D全景分割，并构建含包含与空间关系的楼层-房间-物体层级场景图，同时发布真实数据集NaviGS。",
-        "c": "https://github.com/gaojh0333/PanoGraphGS"
+        "s": "本文提出Map2Vid新任务：以BEV地图生成自我中心导航视频，构建含10万条序列、61个室内场景的大规模基准，并用课程学习训练统一多条件框架，支持仅地图输入生成。",
+        "c": ""
+      },
+      {
+        "t": "HAVANA: A Hierarchical Video-Action Model for Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.24122",
+        "r": 9,
+        "g": 7,
+        "s": "HAVANA提出分层双系统视频-动作模型：慢系统生成语言条件潜层规划，快系统结合最新观测输出局部轨迹，异步执行无需预测未来视频，在OmniNavBench达SOTA并真机验证。",
+        "c": "https://github.com/Anastasiawd/HAVANA"
       }
     ]
   }

@@ -1,12 +1,4 @@
 {
-  "2608.30955": {
-    "title": "Learning Action Models with Conditional and Quantified Effects via Uncertainty-Guided Exploration",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "属经典符号规划的动作模型主动学习，不含LLM/基础模型成分，也不涉及导航、空间智能或UAV/ObjectNav任务，仅与'用于规划的世界模型'技术线概念擦边。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.30955"
-  },
   "2608.28437": {
     "title": "LUCID: An Agentic AI Framework on Digital-Twin in the Loop for QoS-Guaranteeing Robotic Control",
     "relevance": 5,
@@ -2398,5 +2390,13 @@
     "reason": "将现成LLM智能体方法套用于交通流跟驰建模这一垂直领域，与空间、导航、机器人自主均无实质关联，属范围外应用。",
     "rejected_at": "2026-10-21",
     "url": "https://arxiv.org/abs/2610.27836"
+  },
+  "2610.25601": {
+    "title": "Step-Aligned Script Generation with Verification and Recovery for Web Automation Testing",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "属于将LLM/VLM智能体套用到Web自动化测试这一垂直应用，与空间、导航、机器人自主均无关，按收录范围应拒绝。",
+    "rejected_at": "2026-10-21",
+    "url": "https://arxiv.org/abs/2610.25601"
   }
 }
