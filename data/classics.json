@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T14:56:14.663933+00:00",
+  "updated_at": "2026-10-22T13:24:57.697937+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -14243,6 +14243,50 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-21T14:56:14.663933+00:00"
+    },
+    {
+      "id": "2508.00288",
+      "arxiv_id": "2508.00288",
+      "title": "UAV-ON: A Benchmark for Open-World Object Goal Navigation with Aerial Agents",
+      "authors": [
+        "Jianqiang Xiao",
+        "Yuexiang Sun",
+        "Yixin Shao",
+        "Boxi Gan",
+        "Rongqiang Liu",
+        "Yanjin Wu",
+        "Weili Guan",
+        "Xiang Deng"
+      ],
+      "published": "2025",
+      "source": "manual",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 51,
+      "url": "https://arxiv.org/abs/2508.00288",
+      "pdf_url": "https://arxiv.org/pdf/2508.00288",
+      "code_url": "",
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "首个面向空中智能体的大规模开放世界 ObjectNav 基准：14 个高保真 Unreal 环境覆盖城市、自然与混合场景，1270 个实例级语义目标，摆脱 VLN 顺序指令依赖，以类别、外观与占地描述驱动目标搜索。",
+      "change_zh": "把空中导航评测从 VLN 指令跟随转向语义目标条件：每个目标配实例级指令（类别、视觉描述、物理占地），在 14 个大尺度场景引入语义歧义与长程探索双重难度；基线含模块化 AOA 在内全部挣扎，坐实该开放问题的难度。",
+      "why_it_matters": "直接补上 UAV 目标搜索这条技术线的评测基座：后续 aerial ObjectNav、开放词汇目标检测与语义目标条件导航方法都有了可对齐的统一考场，也可作为语义目标驱动自主性的长期跟踪锚点。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "instruction",
+        "object goal navigation",
+        "objectnav",
+        "uav"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-22T13:24:57.697937+00:00"
     },
     {
       "id": "2601.14352",
