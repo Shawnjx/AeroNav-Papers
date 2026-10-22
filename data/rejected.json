@@ -1,20 +1,4 @@
 {
-  "2609.01344": {
-    "title": "ExBind: A Controlled Diagnostic Benchmark for Visual-to-Executable Correspondence",
-    "relevance": 4,
-    "rigor": 7,
-    "reason": "该工作是多模态编程/编辑（DOM、SVG、图、树、表格等数字文档）领域的垂直诊断基准，虽测评VLM的指代绑定能力，但与空间智能、导航、机器人无关，也不构成模型与智能体社区层面的显著进展。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01344"
-  },
-  "2609.01306": {
-    "title": "MeshSplatBench: A Unified Benchmark for Triangle-Based Neural Rendering",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "属神经渲染与图形管线方向的基准评测，聚焦渲染保真度与游戏引擎部署就绪度，与具身导航、机器人自主各收录技术线仅存在3D重建术语上的擦边，无实质关联。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01306"
-  },
   "2608.25319": {
     "title": "SonicNudge: Controlled Displacement of Hovering UAVs via Estimator-Controller Coupling",
     "relevance": 4,
@@ -2398,5 +2382,21 @@
     "reason": "属胸片疾病分类与病灶框定位的医学影像垂直应用，将多模态教师蒸馏套用于医学场景，与具身导航、空间智能及机器人自主各技术线均无关。",
     "rejected_at": "2026-10-22",
     "url": "https://arxiv.org/abs/2610.29740"
+  },
+  "2610.27234": {
+    "title": "EGI-BENCH: An Enterprise General Intelligence Benchmark Suite",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "纯企业域（CRM、商业文档、MCP工具调用）LLM智能体评测套件，与空间、导航、机器人完全无关，属研究范围明确排除的垂直领域大模型应用类工作。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.27234"
+  },
+  "2610.26941": {
+    "title": "Industrial Agentic AI: LLM-Driven New-Generation Agents for Smart Manufacturing",
+    "relevance": 5,
+    "rigor": 4,
+    "reason": "面向智能制造垂直应用的LLM智能体综述，属将大模型智能体向工业垂直领域套用与归纳，与空间智能、导航、具身自主等核心收录问题无直接关联，且为综述无任何实验验证。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.26941"
   }
 }

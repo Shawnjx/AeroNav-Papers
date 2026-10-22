@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T09:41:24.910716+00:00",
+  "updated_at": "2026-10-22T13:35:14.014782+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6735,6 +6735,102 @@
         "task planning"
       ],
       "added_at": "2026-10-22T09:41:21.910196+00:00"
+    },
+    {
+      "id": "2610.27865",
+      "arxiv_id": "2610.27865",
+      "title": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
+      "authors": [
+        "Da Huang",
+        "Jichao Wang",
+        "Junhui Wu",
+        "Tong Ran",
+        "Linting Guo",
+        "Siying Zhang",
+        "Chuang Men",
+        "Sukai Wang",
+        "Yue Zhou",
+        "Maoqing Yao",
+        "Mo Wu"
+      ],
+      "published": "2026-10-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27865",
+      "pdf_url": "https://arxiv.org/pdf/2610.27865",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文在RoboColiseum基准上，用统一控制框架Agent2Act接入四款前沿多模态大模型，在相同设置与评分标准下评测指令跟随、空间推理、通用操作与鲁棒性四项具身能力，并辅以真机案例研究。",
+      "change_zh": "相比常见单模型或单任务评测，本文以共享观测、动作执行与反馈接口的统一框架，在相同任务设置与评分标准下横向对比多家前沿模型，并消融控制框架组件对成功率、规划开销与执行时间的影响，把评测从单点扩展为跨模型可比的系统性画像。",
+      "why_it_matters": "直接充实具身基准与评测线：其指令跟随与空间推理赛道对地面VLN和ObjectNav中MLLM智能体的选型有直接参考价值；揭示的理解-执行鸿沟与框架设计影响，对构建UAV主动目标搜索等具身智能体的评测协议与控制框架设计均有借鉴意义。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "多模态大语言模型,机器人控制,具身智能,跨模型评测,基准测试,鲁棒性",
+      "question_zh": "前沿多模态大语言模型在机器人任务中的具身能力，如何在统一基准下跨模型、跨任务、跨执行设置进行系统比较评估？",
+      "innovation_zh": "提出Agent2Act控制框架，通过共享观测、动作执行与反馈接口，将GPT-6 Astra、GPT-6.1 Sol、Claude Opus 5.5和Gemini 4 Argon四个前沿模型统一接入RoboColiseum基准，在相同任务设置与评分标准下实现跨模型、跨任务的具身能力对比评测。",
+      "dataset_zh": "RoboColiseum评测环境（涵盖指令跟随、空间推理、通用操作、鲁棒性四个赛道）；案例研究另涉及多种机器人本体与真机任务，具体平台未提及",
+      "results_zh": "四模型指令跟随得分均高（三个接近满分），空间推理表现强，通用操作得分低于其他三赛道；Astra领先指令跟随与鲁棒性，Opus领先空间推理、通用操作及总体表现，揭示任务理解与可靠物理执行间存在持续差距。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "instruction following",
+        "multimodal large language model",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-10-22T13:28:19.246988+00:00"
+    },
+    {
+      "id": "2610.27387",
+      "arxiv_id": "2610.27387",
+      "title": "Training Controllable World Models via Action Influence Maximization",
+      "authors": [
+        "Samuel M. Bateman",
+        "Tenny Yin",
+        "Chongyi Zheng",
+        "Lei Huang",
+        "Brian Wang",
+        "Benjamin Eysenbach",
+        "Jaime F. Fisac",
+        "Dhruv B. Shah"
+      ],
+      "published": "2026-10-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27387",
+      "pdf_url": "https://arxiv.org/pdf/2610.27387",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "发现动作条件世界模型在专家示范数据上训练后会忽略指令动作，证明可控性受数据动作影响力上界约束，提出主动数据采集算法AIM提升模型可控性，数据需求降低85倍。",
+      "change_zh": "不同于靠扩容或改架构提升世界模型可控性的常见思路，本文证明可控性上限由数据本身的动作影响力决定，模型容量无法突破专家示范设定的低天花板，转而用主动数据采集AIM从数据侧抬升上限。",
+      "why_it_matters": "动作可控的世界模型是基于模型规划与导航策略学习的基础，AIM以极少主动采集数据即可让模型忠实响应指令，对ObjectNav与UAV搜索中的模型化规划、以及探索式数据采集策略设计有直接借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "世界模型,动作影响最大化(AIM),动作条件视频生成,主动数据采集,可控性,内在动机",
+      "question_zh": "为何动作条件世界模型在专家演示上训练后会忽略指令动作，如何主动收集数据以提升模型对动作的可控性？",
+      "innovation_zh": "提出数据集\"动作影响\"指标并证明其构成任何基于该数据训练的模型可表达动作影响的上界，仅靠模型容量无法突破；进而提出AIM算法主动采集高动作影响数据，突破专家演示设定的可控性上限。",
+      "dataset_zh": "仿真导航任务与仿真操作任务（含基于像素输入的操作任务）；摘要未提及具体数据集名称或真机平台",
+      "results_zh": "在像素级操作任务中，AIM是唯一持续提升可控性的方法：500个主动采集回合加上3千条演示数据，在末端执行器可控性上即可匹敌用30万条专家回合训练的世界模型，实现85倍的数据需求降低。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "exploration",
+        "world model"
+      ],
+      "added_at": "2026-10-22T13:32:49.229207+00:00"
     },
     {
       "id": "2610.24767",
@@ -14125,6 +14221,45 @@
         "real robot"
       ],
       "added_at": "2026-10-22T09:16:56.542882+00:00"
+    },
+    {
+      "id": "2610.27690",
+      "arxiv_id": "2610.27690",
+      "title": "NeoWorld-3: From Pixels to Code-Defined Physical Worlds",
+      "authors": [
+        "Eachen Soong",
+        "Zijian Niu",
+        "Haoran Xu",
+        "Yihong Dong",
+        "Yunbo Wang",
+        "Xiaokang Yang"
+      ],
+      "published": "2026-10-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27690",
+      "pdf_url": "https://arxiv.org/pdf/2610.27690",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出编码智能体框架NeoWorld-3，用可执行程序与可微参数将视觉观测重建为可交互3D物理世界：NeoSDK引擎负责几何、部件与物理验证，NeoMCP工具API供视觉语言智能体迭代编辑，物级与场景级基准达SOTA，双臂真机零样本闭环。",
+      "change_zh": "相比黑盒3D生成只重视觉真实，本文将重建产物改为可调、可执行的程序化资产：几何、部件与物理参数显式可微、可物理验证，并以MCP式工具API让视觉语言智能体检视-编辑-迭代代码，用层级协调者-工人架构从单体扩展到复合场景。",
+      "why_it_matters": "为ObjectNav与UAV目标搜索提供物理可交互、参数可调的仿真场景生成能力，可用于构建大规模导航训练与评测环境；代码化重建也推进空间智能与重建线，Real-Sim-Real闭环对sim2real有借鉴。但其真机验证限于机械臂操作，对导航的价值目前是间接的。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "language agent"
+      ],
+      "added_at": "2026-10-22T13:31:48.306894+00:00"
     },
     {
       "id": "2610.25223",
@@ -21934,6 +22069,53 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.27045",
+      "arxiv_id": "2610.27045",
+      "title": "Physical AI: Concepts, Techniques, and Challenges",
+      "authors": [
+        "Weinan Zhang",
+        "Chunhua Shen",
+        "Tianfan Xue",
+        "Bin Zhao",
+        "Bingqi Jiang",
+        "Zihan Guo",
+        "Zicai Cui",
+        "Yang Li",
+        "Ming Zhou",
+        "Xinyuan Chen",
+        "Lihe Ding",
+        "Xiao Chen"
+      ],
+      "published": "2026-10-19",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.27045",
+      "pdf_url": "https://arxiv.org/pdf/2610.27045",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/aaf65e7c9f5565e25c7f4a339ce0024feba97727",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本专著提出Physical AI的统一定义与框架：在真实约束下经持续闭环反馈感知、建模并作用于物理世界；辨析其与具身AI、信息物理系统、数字孪生的边界，并综述多模态感知、世界模型、具身基础模型、sim-to-real等关键技术与挑战。",
+      "change_zh": "作为综述性专著，其改变主要在概念层：把分散的感知、世界模型、运动控制与具身基础模型整合为感知-建模-行动闭环的统一框架，厘清Physical AI与具身AI、CPS、数字孪生的概念边界，并给出从窄域自动化迈向Physical AGI的路线图；摘要未显示新的方法或实验贡献。",
+      "why_it_matters": "为收录范围内的世界模型、具身基础模型与sim2real等线提供系统化全景与术语框架，可帮助UAV主动目标搜索与ObjectNav研究者定位基础模型、仿真迁移、安全评测与长时部署等共性瓶颈；但作为覆盖制造、基础设施等泛物理AI综述，对具体导航任务的直接技术增量有限。",
+      "relevance_rating": 6,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 17,
+      "keywords": [
+        "deployment",
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-22T13:34:20.944254+00:00"
+    },
+    {
       "id": "2609.25741",
       "arxiv_id": "2609.25741",
       "title": "Fysiverse-3D-Vision Technical Report: Generating Executable 3D Worlds from Images through Unified Spatial Reasoning",
@@ -23671,104 +23853,40 @@
     }
   ],
   "briefing": {
-    "text": "本批论文贯穿具身导航全链路：从标定建图、空间表征到策略学习，重心明显落在基准构建与可靠性诊断。最值得读AirPlayground，94个对齐碰撞几何的3DGS环境加9.4万条专家飞行演示，为空中导航补上可复现的训练评测底座；TARSphere以含具身NPC的全栈框架和360集基准评测8个MLLM，指出长程任务更新与人机交互仍是难点；NavBind通过重组岔路指令做诊断，发现导航VLA的成功率与指令忠实度脱钩，对评测设计是直接提醒。趋势上，搭真实场景基准、审模型是否真听话，正取代单纯刷分成为新的主战场。",
-    "added": 12,
-    "at": "2026-10-22T09:42:41.162082+00:00",
+    "text": "本批主线是让具身智能变得可测、可控：一端统一评测前沿模型的机器人能力，一端改造世界模型的训练方式。首推Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum，四款前沿多模态大模型在Agent2Act统一框架下同台比拼指令跟随、空间推理与鲁棒性，横评结果可直接用于模型选型；Training Controllable World Models via Action Influence Maximization证明专家示范数据会让动作条件世界模型忽略指令动作，AIM算法把数据需求降低85倍，纠正了“专家数据越多越好”的直觉；NeoWorld-3: From Pixels to Code-Defined Physical Worlds则用可执行代码把像素重建为可编辑的3D物理世界，双臂真机零样本闭环验证了实用性。趋势上，具身研究的地基正从堆叠任务转向可测、可控、可编辑的世界建模。",
+    "added": 4,
+    "at": "2026-10-22T13:36:21.529027+00:00",
     "new": [
       {
-        "t": "AirPlayground: Benchmarking Aerial Navigation across Diverse Reconstructed Environments",
-        "u": "https://arxiv.org/abs/2610.29699",
-        "r": 9,
-        "g": 8,
-        "s": "构建94个含对齐碰撞几何的3DGS真实感环境，自动化采集9.4万条专家飞行演示与4650万样本，提供统一API训练多种策略范式，并在见/未见环境闭环评测七种基线。",
-        "c": ""
-      },
-      {
-        "t": "VoxProg: 3D Spatial Reasoning through Voxel Programming",
-        "u": "https://arxiv.org/abs/2610.30127",
+        "t": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
+        "u": "https://arxiv.org/abs/2610.27865",
         "r": 8,
-        "g": 7,
-        "s": "VoxProg把3D物体摆放表述为体素编程：语言模型生成在场景表面体素视图上执行的证据程序与位姿程序，结合执行反馈迭代修正代码，计算目标SE(3)位姿，并构建71任务基准。",
+        "g": 8,
+        "s": "本文在RoboColiseum基准上，用统一控制框架Agent2Act接入四款前沿多模态大模型，在相同设置与评分标准下评测指令跟随、空间推理、通用操作与鲁棒性四项具身能力，并辅以真机案例研究。",
         "c": ""
       },
       {
-        "t": "GGraph: A GPU-Accelerated Library for Graph-Based Robot Deployment and Learning",
-        "u": "https://arxiv.org/abs/2610.28953",
+        "t": "NeoWorld-3: From Pixels to Code-Defined Physical Worlds",
+        "u": "https://arxiv.org/abs/2610.27690",
         "r": 7,
         "g": 7,
-        "s": "GGraph是开源GPU加速的机器人图库，支持空间图毫秒级更新与ROS2真机部署，并能以数百个并行环境训练图式导航与探索策略，将训练耗时降低一个数量级。",
+        "s": "提出编码智能体框架NeoWorld-3，用可执行程序与可微参数将视觉观测重建为可交互3D物理世界：NeoSDK引擎负责几何、部件与物理验证，NeoMCP工具API供视觉语言智能体迭代编辑，物级与场景级基准达SOTA，双臂真机零样本闭环。",
         "c": ""
       },
       {
-        "t": "Reading the Room: Scale-ambiguous Semantic Registration of Sparse VSLAM Maps to Floor Plans in Partially Built Environments",
-        "u": "https://arxiv.org/abs/2610.29647",
-        "r": 7,
-        "g": 7,
-        "s": "提出RR方法，把尺度不确定的稀疏语义VSLAM地图配准到部分建成工地的二维平面图，以单一可微的类平衡语义-几何能量函数统管全局初始化与局部精化，在三个工地33条序列上平均轨迹误差较最强基线改善4.5倍。",
+        "t": "Training Controllable World Models via Action Influence Maximization",
+        "u": "https://arxiv.org/abs/2610.27387",
+        "r": 8,
+        "g": 8,
+        "s": "发现动作条件世界模型在专家示范数据上训练后会忽略指令动作，证明可控性受数据动作影响力上界约束，提出主动数据采集算法AIM提升模型可控性，数据需求降低85倍。",
         "c": ""
       },
       {
-        "t": "A2I-Calib++: A Kinematics-Driven Anti-noise Active Calibration Framework for Whole-Body Multi-IMU Systems on Legged Robots",
-        "u": "https://arxiv.org/abs/2610.29438",
+        "t": "Physical AI: Concepts, Techniques, and Challenges",
+        "u": "https://arxiv.org/abs/2610.27045",
         "r": 6,
-        "g": 7,
-        "s": "面向足式机器人多IMU的主动抗噪标定框架：用运动学驱动激励轨迹、接触感知运动先验控制器与虚拟IMU参考，免标定物估计时空参数与偏置，仿真与真实四足平台验证了标定可重复性和里程计提升。",
-        "c": ""
-      },
-      {
-        "t": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
-        "u": "https://arxiv.org/abs/2610.30043",
-        "r": 9,
-        "g": 7,
-        "s": "TARSphere是长程具身智能体全栈框架：仿真基础设施含具身NPC与受限对话，事件驱动FSM更新任务状态并评估结果，冻结MLLM经多层技能、层级记忆与反馈决策；配套30场景360集基准，评测8个MLLM，任务更新与人机交互仍难。",
-        "c": ""
-      },
-      {
-        "t": "ALPS: Visual State Encoders for World Models",
-        "u": "https://arxiv.org/abs/2610.30120",
-        "r": 8,
-        "g": 8,
-        "s": "ALPS提出从头预训练的视觉状态编码器，用语言对齐、像素重建与空间对应目标及跨视角自蒸馏，把物理状态、语言与重建能力统一进单一patch token集，作为世界模型的共享视觉基础。",
-        "c": ""
-      },
-      {
-        "t": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
-        "u": "https://arxiv.org/abs/2610.30105",
-        "r": 7,
-        "g": 8,
-        "s": "提出ASTEROID：学生在部分可观测下采集在策略历史，特权专家据此提供动作标签，经蒸馏学会不确定时搜索、状态揭示后利用，在11个环境中回报约2倍、交互少约百倍并迁移真机。",
-        "c": ""
-      },
-      {
-        "t": "Object- and Task-Aware Active Perception for Safe Navigation of Mobile Manipulators in Semi-Static Environments",
-        "u": "https://arxiv.org/abs/2610.29964",
-        "r": 8,
-        "g": 7,
-        "s": "该文提出对象与任务感知的主动感知框架：高自由度移动机械臂在导航途中用手部相机巡检不确定区域，概率化NBV优先观测路径附近易变物体，并嵌入分层任务MPC，闭环统一导航、地图维护与主动感知。",
-        "c": ""
-      },
-      {
-        "t": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
-        "u": "https://arxiv.org/abs/2610.29702",
-        "r": 7,
-        "g": 7,
-        "s": "提出非参数化框架CausGround，把交互经验蒸馏为可复用的动作前件与效果，组织成因子化世界状态以刻画物体属性与关系，规划时落地到当前观测，支持前向-后向推理的多步具身规划。",
-        "c": ""
-      },
-      {
-        "t": "NavBind: Diagnosing Instruction-Action Binding at Route Forks in Navigation VLAs",
-        "u": "https://arxiv.org/abs/2610.29203",
-        "r": 8,
-        "g": 7,
-        "s": "NavBind针对导航VLA模型提出指令-动作绑定诊断：将R2R-CE与RxR-CE的指令片段重组为3252个岔路场景，在固定智能体状态与历史下更换指令，考察动作序列、似然与注意力的变化，发现更高导航成功率并不代表模型更忠实遵循指令。",
-        "c": ""
-      },
-      {
-        "t": "SLoSa: Small, Low-Power, and Safe Foundation Models for Robotic Task Planning",
-        "u": "https://arxiv.org/abs/2610.28955",
-        "r": 8,
-        "g": 8,
-        "s": "SLoSa提出神经符号压缩与微调框架，先用经典规划器、教师LLM与形式验证器构建安全数据集，再经SFT和验证器引导的RL微调，得到小尺寸、低功耗、安全对齐的机器人任务规划基础模型。",
+        "g": 5,
+        "s": "本专著提出Physical AI的统一定义与框架：在真实约束下经持续闭环反馈感知、建模并作用于物理世界；辨析其与具身AI、信息物理系统、数字孪生的边界，并综述多模态感知、世界模型、具身基础模型、sim-to-real等关键技术与挑战。",
         "c": ""
       }
     ]
