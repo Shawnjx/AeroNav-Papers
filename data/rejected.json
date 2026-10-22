@@ -1,92 +1,4 @@
 {
-  "2608.28437": {
-    "title": "LUCID: An Agentic AI Framework on Digital-Twin in the Loop for QoS-Guaranteeing Robotic Control",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "核心贡献是云机器人上行QoS保障与无线资源管理的问题编排，导航与空间智能仅为约束成分，属通信网络主导的交叉应用，仅边缘擦及具身导航与智能体规划主线。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.28437"
-  },
-  "2608.19004": {
-    "title": "Autonomous Agricultural Tractor: Integrated Weed Detection and LiDAR Navigation for Precision Paddy Farming",
-    "relevance": 3,
-    "rigor": 5,
-    "reason": "该文属水田农业机器人的垂直应用，EKF多传感器循行导航与稻-草杂草检测不落在收录的十一条技术线上，且实验仅限仿真、无基线对比，故拒绝收录。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.19004"
-  },
-  "2609.00106": {
-    "title": "Deploying and Evaluating a Smart-Agriculture Agentic Engine for Full-Season Soybean Farm Operations",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "属智慧农业垂直应用的智能体引擎：无人机与农机仅作数据源与执行端，核心是农艺管理决策，与收录的空域/地面导航、空间智能及通用智能体能力主线无实质技术关联。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00106"
-  },
-  "2608.10542": {
-    "title": "Nonlinear Model Predictive Control via Sequential Convex Programming for Drone-to-Drone Docking",
-    "relevance": 5,
-    "rigor": 5,
-    "reason": "属状态估计与控制线的常规增量：将标准SCP/NMPC应用于无人机空中对接，仅MuJoCo仿真验证且摘要未见基线对比或消融，未达该技术线按落地影响力收录的门槛。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.10542"
-  },
-  "2609.01420": {
-    "title": "Vision-Based Leader-Follower Formation Control for Cooperative UAVs in GPS-Degraded Environments",
-    "relevance": 5,
-    "rigor": 5,
-    "reason": "属状态估计与控制线的常规增量集成：现成YOLO检测+针孔模型深度融合+经典领从控制器，仅XTDrone仿真验证，无真机部署、基线对比或消融，按收录标准应拒。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01420"
-  },
-  "2608.25142": {
-    "title": "SkyDrive: Learning to Drive in a New City from Aerial Traffic Monitoring",
-    "relevance": 3,
-    "rigor": 8,
-    "reason": "论文核心是自动驾驶轨迹规划的跨城市域适应，无人机仅作为被动航拍交通监控的数据采集平台，不涉及UAV自主导航、目标搜索或具身导航决策，属收录范围外。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.25142"
-  },
-  "2609.01390": {
-    "title": "Multimodal RGB-Infrared Combination for UAV-Based Wildfire Segmentation: A Comparative Study on FLAME3",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "该工作为RGB-红外多模态图像分割的对比研究，UAV仅作为数据采集平台，不含目标搜索、导航、主动感知或任何空间决策成分，属范围外的纯分割应用。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01390"
-  },
-  "2609.01383": {
-    "title": "InSight: A Benchmark for Agentic Claim Verification in Interactive Visualizations",
-    "relevance": 4,
-    "rigor": 6,
-    "reason": "该基准面向交互式数据可视化中的声明验证，本质属图表/数据分析问答与GUI智能体评测，与空间智能、具身导航或机器人自主无实质关联，仅在术语上使用了agentic与navigate。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01383"
-  },
-  "2609.01409": {
-    "title": "EdiTikZ: Scientific Figure Editing from Revision Trajectories",
-    "relevance": 2,
-    "rigor": 8,
-    "reason": "属于科学图表（TikZ）编辑这一垂直图文生成应用，虽含新数据集与RL训练方法，但与空间、导航、机器人均无关，落入范围外应用类别。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01409"
-  },
-  "2609.01603": {
-    "title": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
-    "relevance": 2,
-    "rigor": 6,
-    "reason": "面向软件工程（SWE）智能体的基准评测加速方法，与具身导航、空间智能、机器人自主及通用智能体能力本身的进展均无关，属范围外垂直应用。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01603"
-  },
-  "2608.17819": {
-    "title": "Effector-Centric NMPC of Tiltable-Multirotors for Offset-Free Omnidirectional Aerial Manipulation",
-    "relevance": 5,
-    "rigor": 8,
-    "reason": "核心是可倾转无人机的接触式空中操作控制（推板、拧阀），属机械操作任务且无导航决策成分，仅与飞行控制技术线边缘相关。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.17819"
-  },
   "2609.01344": {
     "title": "ExBind: A Controlled Diagnostic Benchmark for Visual-to-Executable Correspondence",
     "relevance": 4,
@@ -2398,5 +2310,93 @@
     "reason": "属于将LLM/VLM智能体套用到Web自动化测试这一垂直应用，与空间、导航、机器人自主均无关，按收录范围应拒绝。",
     "rejected_at": "2026-10-21",
     "url": "https://arxiv.org/abs/2610.25601"
+  },
+  "2610.29866": {
+    "title": "GeoMem-VLA: Internalizing 3D Scene Understanding into Temporal Memory for Vision-Language-Action Models",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属于明确排除的机械臂操作与VLA控制：面向末端执行器操作任务（LIBERO、RoboTwin、真机操作），无任何导航决策成分，仅有'3D场景理解'术语与空间智能线擦边。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29866"
+  },
+  "2610.30113": {
+    "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "LLM智能体量化金融交易基准，属于金融垂直应用且与空间智能、导航、机器人自主无关，按范围条款应拒绝收录。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.30113"
+  },
+  "2610.29560": {
+    "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "属于明确排除的机械臂操作与VLA控制范畴：SERA面向长时序机械臂任务，摘要中无任何导航决策成分，仅agentic planning术语与收录技术线相邻。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29560"
+  },
+  "2610.29828": {
+    "title": "Early versus Late RGB-Infrared Fusion for Counter-UAV Detection: A Comparative Study",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "该文是反无人机RGB-IR检测融合的纯感知对比研究，不含搜索策略、导航决策或主动感知成分，UAV仅为被探测目标而非执行搜索的平台，属范围外术语擦边。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29828"
+  },
+  "2610.30097": {
+    "title": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心内容属明确排除的机械臂操作与VLA控制：研究对象是LIBERO/CALVIN等桌面长程操作基准上的机械臂VLA策略RL后训练，不含任何导航决策成分。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.30097"
+  },
+  "2610.30051": {
+    "title": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "属机械臂操作/VLA控制评测：LIBERO-10为桌面操作任务，模型通过末端位姿与夹爪指令闭环控制机械臂，不含任何导航决策成分，落入明确排除范围。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.30051"
+  },
+  "2610.29377": {
+    "title": "Integrating Flow Matching and Model Predictive Control for Safe Robot Navigation",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "属状态估计与控制线内的常规组合式增量：将流匹配轨迹生成与既有MPC路径跟踪直接拼接，仅移动机器人仿真验证，摘要未见基线对比与消融，缺乏真机部署与高影响力系统工作所需证据。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29377"
+  },
+  "2610.29905": {
+    "title": "ViBMR: A Large-Scale Multi-Sequence Brain MRI Dataset and Comprehensive Evaluation for Vietnamese Radiology Report Generation",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "脑MRI放射报告生成属医学视觉语言模型的垂直应用，与空间、导航、机器人均无关，按收录规则应拒绝。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29905"
+  },
+  "2610.29895": {
+    "title": "Automated Materials Data and Knowledge Extraction using Machine Learning and Large Language Models",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "该综述聚焦LLM/智能体在材料科学文献数据抽取这一垂直领域的应用，与空间智能、具身导航、机器人自主均无关，属范围中明确排除的垂直套用类工作。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29895"
+  },
+  "2610.29811": {
+    "title": "Compositionality with Primitives: A Unified View from Euclidean to Hyperbolic Vision-Language Models",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "组合零样本识别属纯图像分类任务，本质是对CLIP等现成VLM嵌入几何的分析与打分设计，与空间智能、导航、机器人或智能体能力均无实质关联，属范围外仅术语擦边。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29811"
+  },
+  "2610.29740": {
+    "title": "APED-CXR: Adaptive Privileged Evidence Distillation for Chest X-Ray Grounding with Image-Only Inference",
+    "relevance": 1,
+    "rigor": 7,
+    "reason": "属胸片疾病分类与病灶框定位的医学影像垂直应用，将多模态教师蒸馏套用于医学场景，与具身导航、空间智能及机器人自主各技术线均无关。",
+    "rejected_at": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.29740"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:33:25.236589+00:00",
+  "updated_at": "2026-10-22T09:41:24.910716+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2326,54 +2326,53 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
-      "id": "2607.21400",
-      "arxiv_id": "2607.21400",
-      "title": "VoLN: Vision-Only Long-Horizon Navigation---Paradigm, Benchmark, and Method",
+      "id": "2610.29699",
+      "arxiv_id": "2610.29699",
+      "title": "AirPlayground: Benchmarking Aerial Navigation across Diverse Reconstructed Environments",
       "authors": [
-        "Jiabin Lou",
-        "Haopeng Wang",
-        "Yuanshuai Wang",
-        "Xinyu Liu",
-        "Xuxin Lv",
-        "Yuxin Guo",
-        "Lei Huang",
-        "Rongye Shi",
-        "Wenjun Wu"
+        "Rangya Zhang",
+        "Yujing Shang",
+        "Zhuoyuan Yu",
+        "Mingsheng Li",
+        "Qingsong Yan",
+        "Chao Yan",
+        "Yuhang Zhang",
+        "Mir Feroskhan"
       ],
-      "published": "2026-07-23",
+      "published": "2026-10-21",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2607.21400",
-      "pdf_url": "https://arxiv.org/pdf/2607.21400",
+      "url": "https://arxiv.org/abs/2610.29699",
+      "pdf_url": "https://arxiv.org/pdf/2610.29699",
       "code_url": "",
       "categories": [
-        "cs.RO",
-        "cs.AI"
+        "cs.RO"
       ],
       "topics": [
-        "空域 VLN"
+        "具身基准与评测"
       ],
-      "relevance_score": 11,
+      "relevance_score": 8,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "提出仅视觉长时域导航范式VoLN，把路线信息从外部语言指令与全局引导转为场景内局部线索，并构建7210条episode的无人机飞行基准VoLN-UAV，附带MLLM参考基线，未见环境成功率7.4%至1.8%。",
-      "change_zh": "常规aerial VLN靠语言指令注入方位、距离、布局等空间先验，该工作将其剥离：目标以目标视图指定，路线信息只能来自局部场景线索并需在线检测、解释与选择，且配套连续3D运动的无人机长时域新基准与初始基线。",
-      "why_it_matters": "直接服务空域自主板块：仅视觉、目标视图引导的长时域飞行贴近GPS拒止环境下UAV目标搜索与接近任务；极低成功率揭示长时域证据整合、跨视角目标匹配与闭环稳定性是UAV主动搜索与ObjectNav的共同瓶颈。",
-      "relevance_rating": 10,
-      "rigor_rating": 7,
+      "summary_zh": "构建94个含对齐碰撞几何的3DGS真实感环境，自动化采集9.4万条专家飞行演示与4650万样本，提供统一API训练多种策略范式，并在见/未见环境闭环评测七种基线。",
+      "change_zh": "现有飞行导航资源缺乏稠密飞行演示与广覆盖的标准化闭环评测；该工作以3DGS重建真实场景并配碰撞几何，规模化自动采集50Hz专家演示，用同一语料与协议横向评测多种策略范式，并系统关联离线预测误差与闭环表现。",
+      "why_it_matters": "为空域自主提供真实感训练与评测底座：大规模专家演示可直接支撑无人机目标搜索与指令跟随类策略学习，统一闭环协议及见/未见环境划分，为UAV主动目标搜索与ObjectNav式评测提供了可复现的标准化范式与缩放规律参考。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "空中导航, 3D高斯泼溅(3DGS), 基准测试, 无人机演示数据集, 导航策略学习",
+      "question_zh": "如何构建一个提供密集飞行演示与广泛环境覆盖、支持多种策略范式训练与统一闭环评估的大规模空中导航基准？",
+      "innovation_zh": "构建94个带对齐碰撞几何的真实感3DGS重建环境，配以场景自适应流水线自动采集94K专家飞行演示（46.5M同步样本），并通过统一API支持多种策略范式在同一语料上训练、在统一协议下闭环评估，弥补现有资源缺乏密集演示与广覆盖标准化评估的双重不足。",
+      "dataset_zh": "94个真实感3D高斯泼溅（3DGS）重建环境，涵盖室内、城市室外和植被场景并带对齐碰撞几何；自动采集的94K专家飞行演示及46.5M同步观测-状态-动作样本（50Hz）。真机平台未提及。",
+      "results_zh": "在三种导航设置下对覆盖四种策略范式的7个基线进行已见与未见环境基准测试；将ACT训练语料从5个场景扩展至70个场景后，已见与未见环境的中位成功率分别从30.6%和16.8%提升至41.2%和29.4%；分析进一步揭示了预测误差、执行协议与场景交互对闭环性能的作用。",
       "venue_verified": false,
-      "score": 27,
+      "score": 26,
       "keywords": [
         "aerial",
         "benchmark",
-        "deployment",
         "evaluation",
-        "instruction",
-        "mllm",
-        "uav",
-        "waypoint"
+        "geometry"
       ],
-      "added_at": "2026-09-01T21:26:42+08:00"
+      "added_at": "2026-10-22T09:11:20.391424+00:00"
     },
     {
       "id": "2610.25959",
@@ -4156,6 +4155,55 @@
         "multimodal large language model"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.30043",
+      "arxiv_id": "2610.30043",
+      "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
+      "authors": [
+        "Yicheng Xu",
+        "Zhikai Xu",
+        "Ziyuan Chen",
+        "Yuhang Dong",
+        "Tao Zhang",
+        "Zhucun Xue",
+        "Yong Liu",
+        "Jiangning Zhang"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30043",
+      "pdf_url": "https://arxiv.org/pdf/2610.30043",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "TARSphere是长程具身智能体全栈框架：仿真基础设施含具身NPC与受限对话，事件驱动FSM更新任务状态并评估结果，冻结MLLM经多层技能、层级记忆与反馈决策；配套30场景360集基准，评测8个MLLM，任务更新与人机交互仍难。",
+      "change_zh": "与常见静态目标基准不同，该框架让环境与人类需求随交互演化，支持任务中途更新与NPC对话；以事件驱动FSM按实际送达信息判定成败而非仅动作完成，并用五组成对条件分离鲁棒性、适应性、任务更新与人机交互，还将碰撞跌落等执行安全纳入评测。",
+      "why_it_matters": "为长程具身评测提供含导航类任务（navigate-and-report）的演化环境，直接服务ObjectNav式目标导航与具身基准线；其任务更新与人机协作设定、按送达信息判成败及执行安全指标，对UAV主动搜索中应对目标动态变化、人机协同与飞行安全评估亦有借鉴。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "具身智能, 长时程任务, 多模态大语言模型, 机器人仿真, 基准测试, 人机交互",
+      "question_zh": "如何构建面向机器人的全栈框架，评估长时程具身智能体在物理与社会约束不断演化环境中的感知鲁棒性、适应、协作与决策能力。",
+      "innovation_zh": "突破已有具身系统仅关注指定目标或将执行抽象为符号动作的局限，提出物理-社会接地的全栈框架：TARSphere-Infra在含具身NPC与受限对话的物理仿真中运行机器人策略，并以事件驱动FSM更新任务状态、评估结果；TARSphere-Harness让冻结MLLM通过多级可执行技能、分层记忆与执行反馈修正决策；并以智能体在环方式构建基准。",
+      "dataset_zh": "TARSphere-Bench基准：由智能体在环方式对齐任务语义、因果依赖与场景几何构建，涵盖30个室内场景共360个episode，包含感知鲁棒性、干扰适应、任务更新、人类协作、意图理解五组配对条件，任务类型为导航报告与取送交付；基础设施为TARSphere-Infra物理仿真器（含具身NPC与受限对话）。",
+      "results_zh": "对8个MLLM的评测显示，通用模型可以超越具身专用模型，而任务更新与人机交互仍是难点；即使共享动作接口与决策预算，频繁出现的碰撞与跌倒也表明需在任务成功率之外同时评估执行安全性。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-22T09:22:12.173535+00:00"
     },
     {
       "id": "2610.27677",
@@ -6547,6 +6595,54 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.30120",
+      "arxiv_id": "2610.30120",
+      "title": "ALPS: Visual State Encoders for World Models",
+      "authors": [
+        "Yanqing Liu",
+        "Letian Zhang",
+        "Chengzhi Liu",
+        "Zijun Wang",
+        "Jieru Mei",
+        "Hongliang Fei",
+        "Yuyin Zhou",
+        "Cihang Xie"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30120",
+      "pdf_url": "https://arxiv.org/pdf/2610.30120",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "ALPS提出从头预训练的视觉状态编码器，用语言对齐、像素重建与空间对应目标及跨视角自蒸馏，把物理状态、语言与重建能力统一进单一patch token集，作为世界模型的共享视觉基础。",
+      "change_zh": "现有编码器多只擅长语言对齐、重建或状态探测之一两项；ALPS改用静态图文从头预训练，把三者统一进单一冻结token集，未来token还可直接解码为像素供检查，无需为预测、指令或重建各配一套表征。",
+      "why_it_matters": "它为世界模型技术线提供同时支持指令、预测与像素检查的冻结视觉基座：语言对齐可承载开放词汇目标，状态探测与未来帧解码支撑搜索规划的预测与验证，对UAV目标搜索与ObjectNav具潜在迁移价值，但尚缺导航实证。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "世界模型,视觉状态编码器,视觉预训练,ViT,语言对齐,像素重建",
+      "question_zh": "如何让世界模型的单一视觉表征同时具备物理状态、语言对齐与像素重建能力？",
+      "innovation_zh": "现有编码器多仅擅长一两种能力；ALPS仅用静态图像与文本从头预训练ViT-B/16，经语言、重建、空间对应及跨视图自蒸馏，把物理状态、语言对齐与像素重建统一到单一patch token集合。",
+      "dataset_zh": "LIBERO仿真基准（状态探针误差与策略成功评测）、PushT、Wall、Granular仿真任务（世界模型规划评测）；预训练仅使用静态图像与文本，具体数据集名称未提及",
+      "results_zh": "在15个公开编码器统一评测中，ALPS在ViT-B模型中LIBERO状态探针聚合误差最低，媲美3.5倍大的V-JEPA 2-L；冻结tokens在LIBERO策略成功率达最高85.5%，并在PushT、Wall、Granular规划上匹敌或超越领先编码器。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-10-22T09:24:57.861477+00:00"
+    },
+    {
       "id": "2610.27696",
       "arxiv_id": "2610.27696",
       "title": "PanoGraphGS: Unifying Panoptic Segmentation and Hierarchical 3D Scene Graphs with Gaussian Splatting",
@@ -6592,6 +6688,53 @@
         "geometry"
       ],
       "added_at": "2026-10-21T14:53:24.117455+00:00"
+    },
+    {
+      "id": "2610.28955",
+      "arxiv_id": "2610.28955",
+      "title": "SLoSa: Small, Low-Power, and Safe Foundation Models for Robotic Task Planning",
+      "authors": [
+        "Weizhe Xu",
+        "Jialiang Fan",
+        "Essien Taylor",
+        "Zijun Wang",
+        "Russell Joseph",
+        "Fanxin Kong"
+      ],
+      "published": "2026-10-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.28955",
+      "pdf_url": "https://arxiv.org/pdf/2610.28955",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SLoSa提出神经符号压缩与微调框架，先用经典规划器、教师LLM与形式验证器构建安全数据集，再经SFT和验证器引导的RL微调，得到小尺寸、低功耗、安全对齐的机器人任务规划基础模型。",
+      "change_zh": "常见路线或用大LLM直接规划（大、耗电、缺安全知识），或依赖符号规划器刚性接口。SLoSa把形式验证信号转为RL奖励，蒸馏进4B-14B小模型，使安全性与低功耗边缘部署兼得。",
+      "why_it_matters": "对「规划智能体」线是核心进展：验证器引导RL让小模型获得可检验安全性。其INT4低功耗边缘部署范式可迁移到功耗受限的UAV机载任务规划或ObjectNav高层安全决策，减少对云端大模型依赖。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "机器人任务规划, 神经符号框架, 小型语言模型, 安全对齐, 强化学习微调, 边缘部署",
+      "question_zh": "如何训练小尺寸、低功耗且具备安全意识的基础模型，替代高功耗、缺乏机器人安全知识的大语言模型执行安全的机器人任务规划？",
+      "innovation_zh": "提出SLoSa神经符号压缩与微调框架：用经典规划器、教师LLM和形式验证器构建安全感知数据集，经监督微调与验证奖励机引导的强化学习微调实现安全对齐，使小模型兼具安全性与灵活接口，并可低功耗本地部署，弥补经典规划器格式僵促与大LLM难部署的不足。",
+      "dataset_zh": "四个PDDL规划域、两个家庭仿真环境、本地边缘平台（Jetson Orin）及一台桌面机械臂",
+      "results_zh": "在PDDL任务上，验证器引导的后训练将紧凑的4B-14B规划器成功率提升至70.5-76.0%；INT4量化模型在Jetson Orin上部署时平均功耗仅为17.85-26.41 W；家庭仿真环境与桌面机械臂真机实验进一步验证了方法在多样机器人任务场景中的适用性。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "deployment",
+        "task planning"
+      ],
+      "added_at": "2026-10-22T09:41:21.910196+00:00"
     },
     {
       "id": "2610.24767",
@@ -8401,6 +8544,146 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.30127",
+      "arxiv_id": "2610.30127",
+      "title": "VoxProg: 3D Spatial Reasoning through Voxel Programming",
+      "authors": [
+        "Zhichao Zhai",
+        "Menglei Zhao",
+        "Guikun Chen",
+        "Zihao Yan",
+        "Kanzhi Wu",
+        "Wenguan Wang",
+        "Jun Xiao"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30127",
+      "pdf_url": "https://arxiv.org/pdf/2610.30127",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VoxProg把3D物体摆放表述为体素编程：语言模型生成在场景表面体素视图上执行的证据程序与位姿程序，结合执行反馈迭代修正代码，计算目标SE(3)位姿，并构建71任务基准。",
+      "change_zh": "相比关系、关键点或网格基线，VoxProg让LLM生成作用于显式体素网格的程序，直接从场景网格隔离任务相关区域与边界并测量几何以计算SE(3)位姿，再以视觉与数值执行反馈迭代修正代码。",
+      "why_it_matters": "它为空间智能提供把隐式几何指代转为可执行体素程序、借反馈自检修正的范式；对ObjectNav与UAV目标搜索，其基于显式坐标与邻接关系的可编程空间接地，可为开放词汇目标定位与任务区域隔离提供思路。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "体素编程, 3D空间推理, 物体放置, 语言模型, SE(3)位姿, VoxProg-Bench",
+      "question_zh": "如何让语言模型通过生成可执行的体素程序，在3D场景中完成开放式物体放置并实现空间推理？",
+      "innovation_zh": "VoxProg将3D物体放置形式化为体素编程，显式构造语言隐含的几何参照：语言模型生成场景表面局部体素视图上的可执行程序，证据程序定位任务相关区域，位姿程序计算SE(3)位姿，并借助视觉与数值反馈迭代修订代码。",
+      "dataset_zh": "自建的VoxProg-Bench基准（71个开放式放置任务，配套感知意图对齐与3D物理有效性评估套件）及外部基准（具体名称未提及）；摘要未提及具体仿真环境或真机平台。",
+      "results_zh": "在VoxProg-Bench（71个任务）及外部基准上，VoxProg在功能性使用、几何贴合与情境布置等开放式放置任务中，全面优于基于关系、关键点和网格的基线方法；摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "evaluation",
+        "geometry",
+        "instruction",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-10-22T09:13:31.405107+00:00"
+    },
+    {
+      "id": "2610.29964",
+      "arxiv_id": "2610.29964",
+      "title": "Object- and Task-Aware Active Perception for Safe Navigation of Mobile Manipulators in Semi-Static Environments",
+      "authors": [
+        "Jingxing Qian",
+        "Xintong Du",
+        "Jun Yang",
+        "Siqi Zhou",
+        "Steven L. Waslander",
+        "Angela P. Schoellig"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.29964",
+      "pdf_url": "https://arxiv.org/pdf/2610.29964",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出对象与任务感知的主动感知框架：高自由度移动机械臂在导航途中用手部相机巡检不确定区域，概率化NBV优先观测路径附近易变物体，并嵌入分层任务MPC，闭环统一导航、地图维护与主动感知。",
+      "change_zh": "常见NBV多任务无关、以全局地图不确定性为目标，感知与导航控制常解耦；该文把NBV与期望路径及任务相关物体绑定，经分层任务MPC用冗余自由度调视点并保证底盘轨迹优先，将半静态环境下的导航安全感知纳入闭环控制。",
+      "why_it_matters": "主动感知与在线建图属收录核心线。其“任务条件化的不确定性消减”可迁移至UAV主动目标搜索：将观测预算集中于与目标及航线相关的区域；也适用于ObjectNav在半动态场景维护过期地图，具方法论参考价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "主动感知, 移动操作机器人, 下一最优视点（NBV）, 分层任务模型预测控制（HTMPC）, 半静态环境, 安全导航",
+      "question_zh": "高自由度移动操作机器人在半静态环境中导航时，如何主动观测不确定或安全关键区域，以更新过时地图并降低碰撞风险？",
+      "innovation_zh": "提出对象与任务感知的概率化下一最优视点（NBV）规划，优先观测期望路径附近及不确定、可能变化的物体；并将感知目标融入分层任务模型预测控制（HTMPC），利用运动学冗余调整视点，同时保持底盘轨迹跟踪的更高优先级，将导航、地图维护与主动感知统一于闭环。与被动感知或非任务感知方法相比，观测更贴合任务与安全需求。",
+      "dataset_zh": "真实机器人平台实验（配备手部相机的移动操作机器人），以及仿真实验序列；摘要未提及具体数据集或仿真软件名称。",
+      "results_zh": "真实世界实验表明，相比被动感知或非任务感知基线方法，该框架提升了地图一致性，降低了任务相关的地图熵，并降低了导航风险；额外的仿真与真机实验序列进一步展示了系统对受控半静态场景变化的响应能力。摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "active perception",
+        "model predictive control"
+      ],
+      "added_at": "2026-10-22T09:32:13.116117+00:00"
+    },
+    {
+      "id": "2610.29203",
+      "arxiv_id": "2610.29203",
+      "title": "NavBind: Diagnosing Instruction-Action Binding at Route Forks in Navigation VLAs",
+      "authors": [
+        "Josh Qixuan Sun",
+        "Xiaoying Xing",
+        "Yurun Chen",
+        "Huaiyuan Weng",
+        "Wentao Zhu",
+        "Mark Crowley"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.29203",
+      "pdf_url": "https://arxiv.org/pdf/2610.29203",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "NavBind针对导航VLA模型提出指令-动作绑定诊断：将R2R-CE与RxR-CE的指令片段重组为3252个岔路场景，在固定智能体状态与历史下更换指令，考察动作序列、似然与注意力的变化，发现更高导航成功率并不代表模型更忠实遵循指令。",
+      "change_zh": "常见VLN评测只看终点成功率与SPL，无法区分是听懂指令还是靠视觉捷径。该文把评测问题改为因果性检验：在岔路口固定全部上下文、仅替换分支指令，用动作分布、参考动作似然与注意力归因三重证据判断语言是否真正约束动作，属于反事实式的指令绑定诊断。",
+      "why_it_matters": "对地面VLN和具身评测线是直接补位：揭示成功率指标混淆视觉先验与指令理解，为模型选择与训练目标提供新诊断信号。其「语言条件是否真正绑定动作」的检验思想可迁移至UAV指令跟随与ObjectNav开放词汇目标条件导航，同样存在靠视觉习惯而非目标语义到达终点的风险，可据此设计对应诊断协议。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "VLA导航模型, 指令-动作绑定, 指令遵循诊断, 路径岔口, 视觉语言导航, R2R-CE",
+      "question_zh": "导航VLA模型成功到达目标是否源于真正遵循指令，还是依赖视觉线索或导航历史？",
+      "innovation_zh": "现有导航成功率无法判断模型是否真遵循指令；NavBind固定导航上下文仅更换指令，考察动作概率分布是否改变以诊断指令-动作绑定，并重组指令片段构建3252个岔口场景。",
+      "dataset_zh": "基于R2R-CE与RxR-CE重组路线对齐的指令片段，构建3,252个路径岔口上下文；仿真环境或真机平台未提及",
+      "results_zh": "在3,252个路径岔口场景上，比较生成动作序列、参考动作序列在不同指令下的似然及注意力归因变化，发现更高的导航成功率并不意味着模型更忠实地遵循指令。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "instruction",
+        "r2r"
+      ],
+      "added_at": "2026-10-22T09:36:08.463432+00:00"
     },
     {
       "id": "2610.23795",
@@ -11443,6 +11726,50 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.30105",
+      "arxiv_id": "2610.30105",
+      "title": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+      "authors": [
+        "Sriyash Poddar",
+        "Yanda Bao",
+        "Jacob Krantz",
+        "Matthew Chang",
+        "Xavier Puig",
+        "Roozbeh Mottaghi",
+        "Natasha Jaques",
+        "Abhishek Gupta"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30105",
+      "pdf_url": "https://arxiv.org/pdf/2610.30105",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出ASTEROID：学生在部分可观测下采集在策略历史，特权专家据此提供动作标签，经蒸馏学会不确定时搜索、状态揭示后利用，在11个环境中回报约2倍、交互少约百倍并迁移真机。",
+      "change_zh": "相比从零在线RL与离线模仿两条常见路线，本文改为让特权专家以学生自身在策略历史为条件给出动作标签，用监督蒸馏直接学出测试时探索，绕开RL的巨量交互成本，也避免离线模仿对隐状态平均化而丧失探索。",
+      "why_it_matters": "部分可观测下先搜索后利用正是UAV主动目标搜索与ObjectNav的核心难题；该框架提供低成本习得探索策略的训练范式，或可替代样本昂贵的RL，用于搜救侦察与目标导航策略训练，且有真机迁移证据支撑实用价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "exploration"
+      ],
+      "added_at": "2026-10-22T09:28:02.770003+00:00"
+    },
+    {
       "id": "2610.25930",
       "arxiv_id": "2610.25930",
       "title": "TESS: LLM-guided Translation, Exploration, Simulation, and Search for Embodied Task Planning",
@@ -13672,6 +13999,132 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.29647",
+      "arxiv_id": "2610.29647",
+      "title": "Reading the Room: Scale-ambiguous Semantic Registration of Sparse VSLAM Maps to Floor Plans in Partially Built Environments",
+      "authors": [
+        "Bjorn Stragier",
+        "Emilia Szymańska",
+        "J. Micah Prendergast",
+        "Lukas Rosenberger Schmid"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.29647",
+      "pdf_url": "https://arxiv.org/pdf/2610.29647",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出RR方法，把尺度不确定的稀疏语义VSLAM地图配准到部分建成工地的二维平面图，以单一可微的类平衡语义-几何能量函数统管全局初始化与局部精化，在三个工地33条序列上平均轨迹误差较最强基线改善4.5倍。",
+      "change_zh": "常见配准方法至多同时处理尺度模糊、跨模态、半建成环境、场景重复四项挑战中的两项；RR让单一鲁棒可微的类平衡语义-几何能量函数贯穿全流程，两种全局初始化（用户提供锚点或跨模态匹配网络）均直接以该能量为目标生成候选，初始化与精化目标一致，并同时应对四项挑战。",
+      "why_it_matters": "对状态估计与控制线有落地价值：在无GPS、视觉重复的半建成环境中把VSLAM轨迹锚定到先验平面图，是先验地图引导导航与工地等场景机器人自主定位的基础能力，且在三个真实工地验证；但与UAV主动目标搜索、ObjectNav无直接关联。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "geometry",
+        "localization",
+        "slam"
+      ],
+      "added_at": "2026-10-22T09:18:06.024155+00:00"
+    },
+    {
+      "id": "2610.29702",
+      "arxiv_id": "2610.29702",
+      "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
+      "authors": [
+        "Yijun Shen",
+        "Diqi He",
+        "Jinbang Guo",
+        "Wanyue Zhang",
+        "Jiaming Mi",
+        "Huan Yang",
+        "Zhongyuan Wang",
+        "Zhiwei Yu",
+        "Kai Zhang"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.29702",
+      "pdf_url": "https://arxiv.org/pdf/2610.29702",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出非参数化框架CausGround，把交互经验蒸馏为可复用的动作前件与效果，组织成因子化世界状态以刻画物体属性与关系，规划时落地到当前观测，支持前向-后向推理的多步具身规划。",
+      "change_zh": "常见路线需针对特定环境微调，或累积难复用的非结构化经验；本文以动作为中心提炼可复用的前件/效果因果知识，存入因子化世界状态，规划时按任务落地到当前观测，无需参数更新即可跨环境适配。",
+      "why_it_matters": "对规划智能体技术线价值直接：显式因果知识让MLLM规划在VirtualHome成功率近乎翻倍；前件后向推理与因子化世界状态的思路可迁移至ObjectNav目标分解或UAV搜索任务规划，但论文未在导航场景验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-22T09:33:34.874299+00:00"
+    },
+    {
+      "id": "2610.28953",
+      "arxiv_id": "2610.28953",
+      "title": "GGraph: A GPU-Accelerated Library for Graph-Based Robot Deployment and Learning",
+      "authors": [
+        "Yash Rampuria",
+        "Rohan Garg",
+        "Daniele Gammelli",
+        "Marco Pavone"
+      ],
+      "published": "2026-10-20",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.28953",
+      "pdf_url": "https://arxiv.org/pdf/2610.28953",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "真机与 Sim2Real",
+        "空间智能",
+        "主动感知与重建"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GGraph是开源GPU加速的机器人图库，支持空间图毫秒级更新与ROS2真机部署，并能以数百个并行环境训练图式导航与探索策略，将训练耗时降低一个数量级。",
+      "change_zh": "既有图库多面向单机器人或固定图，CPU构建把可训练环境限制在几十个；GGraph把图构建与更新向量化搬上GPU，用同一套图基础设施同时服务ROS2真机部署与百级并行RL训练。",
+      "why_it_matters": "图结构是ObjectNav与UAV目标搜索常用的空间记忆与规划载体，GGraph让此类策略可百环境并行训练并经ROS2直接上真机，显著压缩从仿真训练到实际部署的周期，是导航学习的基础设施工具。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "deployment",
+        "exploration",
+        "geometry",
+        "real robot"
+      ],
+      "added_at": "2026-10-22T09:16:56.542882+00:00"
     },
     {
       "id": "2610.25223",
@@ -19083,6 +19536,47 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.29438",
+      "arxiv_id": "2610.29438",
+      "title": "A2I-Calib++: A Kinematics-Driven Anti-noise Active Calibration Framework for Whole-Body Multi-IMU Systems on Legged Robots",
+      "authors": [
+        "Fangyu Jiang",
+        "Chaoran Xiong",
+        "Kehui Ma",
+        "Zhen Sun",
+        "Zeyu Zhang",
+        "Ling Pei"
+      ],
+      "published": "2026-10-21",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.29438",
+      "pdf_url": "https://arxiv.org/pdf/2610.29438",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "面向足式机器人多IMU的主动抗噪标定框架：用运动学驱动激励轨迹、接触感知运动先验控制器与虚拟IMU参考，免标定物估计时空参数与偏置，仿真与真实四足平台验证了标定可重复性和里程计提升。",
+      "change_zh": "现有多IMU标定多面向空中或手持平台、需人工激励或标定物；本工作将标定转为主动运动生成问题：噪声各向同性激励轨迹配合接触感知运动先验控制器自动产生激励，并以小腿IMU与关节运动学构造虚拟IMU参考，免标定物完成全身标定。",
+      "why_it_matters": "对状态估计与控制线有直接价值：免标定物的全身多IMU标定让四足机器人在打滑、冲击、振动下仍获准确本体里程计，是腿式平台自主导航的底层前提；对四足执行ObjectNav或搜救目标搜索时的定位与建图提供间接支撑。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "odometry"
+      ],
+      "added_at": "2026-10-22T09:19:37.917701+00:00"
+    },
+    {
       "id": "2610.22057",
       "arxiv_id": "2610.22057",
       "title": "CBF-Based Control Allocation for Omnidirectional Tiltrotor Aerial Robots",
@@ -23177,57 +23671,105 @@
     }
   ],
   "briefing": {
-    "text": "今日六篇的主线，是用世界模型与3D表征为具身导航提供环境与数据。首推EmbodiedWorld-200K：20万条多级标注数据，用视频世界模型当环境做交互式RL后训练，直接换来分布外泛化提升，是可复用的基础设施；HAVANA以快慢双系统解耦语言规划与局部控制，异步执行免去视频预测开销，在OmniNavBench登顶并通过真机验证；V2W免训练重建含语义3D世界供VLM多轮取证，即插即用。趋势：世界模型正由生成工具转为导航智能体的环境替代与训练场。",
-    "added": 6,
-    "at": "2026-10-21T20:35:02.224906+00:00",
+    "text": "本批论文贯穿具身导航全链路：从标定建图、空间表征到策略学习，重心明显落在基准构建与可靠性诊断。最值得读AirPlayground，94个对齐碰撞几何的3DGS环境加9.4万条专家飞行演示，为空中导航补上可复现的训练评测底座；TARSphere以含具身NPC的全栈框架和360集基准评测8个MLLM，指出长程任务更新与人机交互仍是难点；NavBind通过重组岔路指令做诊断，发现导航VLA的成功率与指令忠实度脱钩，对评测设计是直接提醒。趋势上，搭真实场景基准、审模型是否真听话，正取代单纯刷分成为新的主战场。",
+    "added": 12,
+    "at": "2026-10-22T09:42:41.162082+00:00",
     "new": [
       {
-        "t": "From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models",
-        "u": "https://arxiv.org/abs/2610.24676",
+        "t": "AirPlayground: Benchmarking Aerial Navigation across Diverse Reconstructed Environments",
+        "u": "https://arxiv.org/abs/2610.29699",
         "r": 9,
+        "g": 8,
+        "s": "构建94个含对齐碰撞几何的3DGS真实感环境，自动化采集9.4万条专家飞行演示与4650万样本，提供统一API训练多种策略范式，并在见/未见环境闭环评测七种基线。",
+        "c": ""
+      },
+      {
+        "t": "VoxProg: 3D Spatial Reasoning through Voxel Programming",
+        "u": "https://arxiv.org/abs/2610.30127",
+        "r": 8,
         "g": 7,
-        "s": "提出V2W框架：从多视角图像重建含几何、相机位姿与语言语义的显式3D世界，经视觉与语言接口供VLM多轮交互获取空间证据，免训练提升空间推理，并可用强化学习优化探索策略达到SOTA。",
+        "s": "VoxProg把3D物体摆放表述为体素编程：语言模型生成在场景表面体素视图上执行的证据程序与位姿程序，结合执行反馈迭代修正代码，计算目标SE(3)位姿，并构建71任务基准。",
         "c": ""
       },
       {
-        "t": "TESS: LLM-guided Translation, Exploration, Simulation, and Search for Embodied Task Planning",
-        "u": "https://arxiv.org/abs/2610.25930",
-        "r": 8,
-        "g": 6,
-        "s": "TESS提出LLM引导的搜索式具身任务规划方法：用LLM将自然语言指令译为格式化目标条件、辅助部分可观测环境探索、构建规则世界模拟器并剪枝候选动作，在VirtualHome与ALFWorld上性能领先。",
-        "c": ""
-      },
-      {
-        "t": "DialogMem: Evaluating Dialogue-Grounded Embodied Memory in 3D Environments",
-        "u": "https://arxiv.org/abs/2610.24767",
-        "r": 8,
-        "g": 8,
-        "s": "DialogMem提出两阶段具身记忆基准：智能体从时间对齐的RGB-D观测与人类对话流中构建记忆，随后用于实例级目标导航与问答，覆盖27个真实3D场景、142个片段、1.4万余问答对与1.1万余条导航指令。",
-        "c": ""
-      },
-      {
-        "t": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
-        "u": "https://arxiv.org/abs/2610.25959",
-        "r": 9,
-        "g": 8,
-        "s": "发布20万样本、多级标注（低层相机轨迹至高层语义指令）的具身导航规划数据集EmbodiedWorld-200K与统一评测协议，并以视频世界模型作低成本环境代理，对具身世界智能体EWA进行交互式RL后训练，提升开放世界分布外泛化。",
-        "c": ""
-      },
-      {
-        "t": "Map2Vid: Embodied Navigation Video Generation with Human-Friendly Motion Control",
-        "u": "https://arxiv.org/abs/2610.25223",
+        "t": "GGraph: A GPU-Accelerated Library for Graph-Based Robot Deployment and Learning",
+        "u": "https://arxiv.org/abs/2610.28953",
         "r": 7,
         "g": 7,
-        "s": "本文提出Map2Vid新任务：以BEV地图生成自我中心导航视频，构建含10万条序列、61个室内场景的大规模基准，并用课程学习训练统一多条件框架，支持仅地图输入生成。",
+        "s": "GGraph是开源GPU加速的机器人图库，支持空间图毫秒级更新与ROS2真机部署，并能以数百个并行环境训练图式导航与探索策略，将训练耗时降低一个数量级。",
         "c": ""
       },
       {
-        "t": "HAVANA: A Hierarchical Video-Action Model for Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.24122",
+        "t": "Reading the Room: Scale-ambiguous Semantic Registration of Sparse VSLAM Maps to Floor Plans in Partially Built Environments",
+        "u": "https://arxiv.org/abs/2610.29647",
+        "r": 7,
+        "g": 7,
+        "s": "提出RR方法，把尺度不确定的稀疏语义VSLAM地图配准到部分建成工地的二维平面图，以单一可微的类平衡语义-几何能量函数统管全局初始化与局部精化，在三个工地33条序列上平均轨迹误差较最强基线改善4.5倍。",
+        "c": ""
+      },
+      {
+        "t": "A2I-Calib++: A Kinematics-Driven Anti-noise Active Calibration Framework for Whole-Body Multi-IMU Systems on Legged Robots",
+        "u": "https://arxiv.org/abs/2610.29438",
+        "r": 6,
+        "g": 7,
+        "s": "面向足式机器人多IMU的主动抗噪标定框架：用运动学驱动激励轨迹、接触感知运动先验控制器与虚拟IMU参考，免标定物估计时空参数与偏置，仿真与真实四足平台验证了标定可重复性和里程计提升。",
+        "c": ""
+      },
+      {
+        "t": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
+        "u": "https://arxiv.org/abs/2610.30043",
         "r": 9,
         "g": 7,
-        "s": "HAVANA提出分层双系统视频-动作模型：慢系统生成语言条件潜层规划，快系统结合最新观测输出局部轨迹，异步执行无需预测未来视频，在OmniNavBench达SOTA并真机验证。",
-        "c": "https://github.com/Anastasiawd/HAVANA"
+        "s": "TARSphere是长程具身智能体全栈框架：仿真基础设施含具身NPC与受限对话，事件驱动FSM更新任务状态并评估结果，冻结MLLM经多层技能、层级记忆与反馈决策；配套30场景360集基准，评测8个MLLM，任务更新与人机交互仍难。",
+        "c": ""
+      },
+      {
+        "t": "ALPS: Visual State Encoders for World Models",
+        "u": "https://arxiv.org/abs/2610.30120",
+        "r": 8,
+        "g": 8,
+        "s": "ALPS提出从头预训练的视觉状态编码器，用语言对齐、像素重建与空间对应目标及跨视角自蒸馏，把物理状态、语言与重建能力统一进单一patch token集，作为世界模型的共享视觉基础。",
+        "c": ""
+      },
+      {
+        "t": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+        "u": "https://arxiv.org/abs/2610.30105",
+        "r": 7,
+        "g": 8,
+        "s": "提出ASTEROID：学生在部分可观测下采集在策略历史，特权专家据此提供动作标签，经蒸馏学会不确定时搜索、状态揭示后利用，在11个环境中回报约2倍、交互少约百倍并迁移真机。",
+        "c": ""
+      },
+      {
+        "t": "Object- and Task-Aware Active Perception for Safe Navigation of Mobile Manipulators in Semi-Static Environments",
+        "u": "https://arxiv.org/abs/2610.29964",
+        "r": 8,
+        "g": 7,
+        "s": "该文提出对象与任务感知的主动感知框架：高自由度移动机械臂在导航途中用手部相机巡检不确定区域，概率化NBV优先观测路径附近易变物体，并嵌入分层任务MPC，闭环统一导航、地图维护与主动感知。",
+        "c": ""
+      },
+      {
+        "t": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
+        "u": "https://arxiv.org/abs/2610.29702",
+        "r": 7,
+        "g": 7,
+        "s": "提出非参数化框架CausGround，把交互经验蒸馏为可复用的动作前件与效果，组织成因子化世界状态以刻画物体属性与关系，规划时落地到当前观测，支持前向-后向推理的多步具身规划。",
+        "c": ""
+      },
+      {
+        "t": "NavBind: Diagnosing Instruction-Action Binding at Route Forks in Navigation VLAs",
+        "u": "https://arxiv.org/abs/2610.29203",
+        "r": 8,
+        "g": 7,
+        "s": "NavBind针对导航VLA模型提出指令-动作绑定诊断：将R2R-CE与RxR-CE的指令片段重组为3252个岔路场景，在固定智能体状态与历史下更换指令，考察动作序列、似然与注意力的变化，发现更高导航成功率并不代表模型更忠实遵循指令。",
+        "c": ""
+      },
+      {
+        "t": "SLoSa: Small, Low-Power, and Safe Foundation Models for Robotic Task Planning",
+        "u": "https://arxiv.org/abs/2610.28955",
+        "r": 8,
+        "g": 8,
+        "s": "SLoSa提出神经符号压缩与微调框架，先用经典规划器、教师LLM与形式验证器构建安全数据集，再经SFT和验证器引导的RL微调，得到小尺寸、低功耗、安全对齐的机器人任务规划基础模型。",
+        "c": ""
       }
     ]
   }
