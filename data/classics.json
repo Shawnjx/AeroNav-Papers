@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T14:51:44.784903+00:00",
+  "updated_at": "2026-10-23T08:26:53.995383+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -13118,6 +13118,45 @@
       "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
+      "id": "2307.12981",
+      "arxiv_id": "2307.12981",
+      "title": "3D-LLM: Injecting the 3D World into Large Language Models",
+      "authors": [
+        "Yining Hong",
+        "Haoyu Zhen",
+        "Peihao Chen",
+        "Shuhong Zheng",
+        "Yilun Du",
+        "Zhenfang Chen",
+        "Chuang Gan"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 121,
+      "url": "https://arxiv.org/abs/2307.12981",
+      "pdf_url": "https://arxiv.org/pdf/2307.12981",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（neural information processing systems），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "提出3D-LLM模型家族，将3D点云经多视角渲染特征注入2D VLM骨干，辅以3D定位机制与30万条3D-语言数据训练，统一完成3D问答、字幕、定位、任务分解与导航等任务，在ScanQA上大幅超越SOTA。",
+      "change_zh": "不同于逐任务定制专用3D模型或仅用2D图像的VLM路线，它通过多视角渲染让现成2D VLM骨干直接处理3D点云，并用LLM自动生成30万条3D-语言数据，配合3D定位机制，把多类3D任务统一进一个对话式模型。",
+      "why_it_matters": "作为3D-MLLM与空间智能方向的奠基工作，它为ObjectNav及开放词汇目标导航提供3D问答、grounding与任务分解等上游能力，也可支撑UAV目标搜索中的空间关系与指令理解；其3D注入与数据构建范式被大量具身导航和智能体研究沿用。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 28,
+      "keywords": [
+        "localization",
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-23T08:26:53.995383+00:00"
+    },
+    {
       "id": "https://openalex.org/W4386920567",
       "arxiv_id": "",
       "title": "Camera, LiDAR, and IMU Based Multi-Sensor Fusion SLAM: A Survey",
@@ -14460,13 +14499,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4386151215": {
-      "title": "2023 Focused Update of the 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
-      "relevance": 1,
-      "rigor": 6,
-      "reason": "该文为欧洲心脏病学会心衰临床诊疗指南的聚焦更新，属医疗领域文献，与具身导航、空间智能、大模型与智能体等全部收录技术线完全无关，属明确范围外内容。",
-      "excluded_at": "2026-09-02"
-    },
     "2107.03374": {
       "title": "Evaluating Large Language Models Trained on Code",
       "relevance": 2,
@@ -17959,103 +17991,29 @@
       "rigor": 5,
       "reason": "综述主体为VLA模型与低层动作控制，属范围明确排除的机械臂操作/VLA控制线，摘要未体现导航决策成分，仅高层任务规划与基准资源章节与收录线弱相关。",
       "excluded_at": "2026-10-21"
+    },
+    "https://openalex.org/W1489032534": {
+      "title": "The Perception of the Environment: Essays on Livelihood, Dwelling and Skill",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "属社会人类学与生态心理学理论文集，讨论人类技能、栖居与环境感知的哲学问题，不含任何具身导航或机器人技术内容，仅与'环境感知'一词术语擦边。",
+      "excluded_at": "2026-10-23"
     }
   },
   "last_citation_refresh": "2026-10-22T14:51:44.784903+00:00",
   "briefing": {
-    "text": "本批主线是大模型统一具身导航的感知与决策。首推Uni-NaVid：以第一人称视频的VLA模型统一目标导航、问答与跟随，代表导航基座化方向；NavCoT把LLM决策解耦为想象下一观测、匹配候选、选动作的思维链，在R2R上超过直接动作预测；EmbodiedScan以百万级语言提示与三维标注充当整体感知评测底座。Mind2Web系网页智能体，入库相关性存疑。趋势是单任务模型向VLM驱动的统一具身智能体收敛。",
-    "added": 10,
-    "at": "2026-10-21T14:56:14.663933+00:00",
+    "text": "本批入库工作的主线是把三维世界接入大语言模型，让具身智能体具备可问答、可定位、可执行的空间认知。最值得优先精读的是3D-LLM: Injecting the 3D World into Large Language Models——它把点云经多视角渲染后的特征注入2D VLM骨干，辅以3D定位机制与30万条3D-语言数据，在单一框架内统一了问答、字幕、定位、任务分解与导航，并在ScanQA上大幅超越SOTA，确立了“3D注入2D骨干”这一技术路线，后续多数3D-语言工作都以其为基线。趋势上看，3D-语言数据的规模化生产正成为具身基座模型竞争的下一个关键。",
+    "added": 1,
+    "at": "2026-10-23T08:26:53.995383+00:00",
     "new": [
       {
-        "t": "Mind2Web: Towards a Generalist Agent for the Web",
-        "u": "https://arxiv.org/abs/2306.06070",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空域 VLN、主动感知与重建，主要研究问题可概括为：Mind2Web: Towards a Generalist Agent for the Web。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 129
-      },
-      {
-        "t": "LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent",
-        "u": "https://arxiv.org/abs/2309.12311",
-        "r": 8,
-        "g": 7,
-        "s": "提出LLM-Grounder：LLM作智能体将复杂语言查询分解为语义成分，调用OpenScene/LERF等工具在3D场景中定位候选目标，再评估空间与常识关系做最终决策，零样本、无需标注训练即在ScanRefer上取得SOTA。",
-        "c": "",
-        "cit": 85
-      },
-      {
-        "t": "EmbodiedScan: A Holistic Multi-Modal 3D Perception Suite Towards Embodied AI",
-        "u": "https://arxiv.org/abs/2312.16170",
-        "r": 8,
-        "g": 7,
-        "s": "EmbodiedScan是多模态、以自我为中心的3D感知数据集与基准，含5k扫描、1M RGB-D视图、1M语言提示、160k三维框及稠密语义占用，并提出基线框架Embodied Perceptron，支撑基础3D感知与语言锚定任务的整体场景理解评测。",
-        "c": "",
-        "cit": 81
-      },
-      {
-        "t": "NavRL: Learning Safe Flight in Dynamic Environments",
-        "u": "https://arxiv.org/abs/2409.15634",
-        "r": 7,
-        "g": 7,
-        "s": "NavRL用PPO强化学习实现动态环境无人机安全飞行，精心设计状态动作表示以应对静动态障碍，外加速度障碍式安全护盾，经Isaac Sim并行训练零样本迁移实机，碰撞数最少。",
-        "c": "",
-        "cit": 71
-      },
-      {
-        "t": "NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning",
-        "u": "https://arxiv.org/abs/2403.07376",
-        "r": 10,
+        "t": "3D-LLM: Injecting the 3D World into Large Language Models",
+        "u": "https://arxiv.org/abs/2307.12981",
+        "r": 9,
         "g": 8,
-        "s": "NavCoT将LLM导航决策解耦为思维链：先以世界模型身份想象下一观测，再选最匹配候选，最后决定动作，并通过参数高效领域内微调学习形式化标签，在R2R/RxR/R4R上优于直接动作预测，并较GPT4方法相对提升约7%。",
+        "s": "提出3D-LLM模型家族，将3D点云经多视角渲染特征注入2D VLM骨干，辅以3D定位机制与30万条3D-语言数据训练，统一完成3D问答、字幕、定位、任务分解与导航等任务，在ScanQA上大幅超越SOTA。",
         "c": "",
-        "cit": 56
-      },
-      {
-        "t": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
-        "u": "https://arxiv.org/abs/2502.01143",
-        "r": 7,
-        "g": 7,
-        "s": "提出两阶段sim-to-real框架ASAP：在仿真中用重定向人体动作预训练全身跟踪策略，再用真机数据训练delta动作残差补偿动力学失配并并入仿真微调，在含真机Unitree G1的三种迁移场景显著降低跟踪误差，实现更敏捷的全身技能。",
-        "c": "",
-        "cit": 56
-      },
-      {
-        "t": "Adaptive Kalman-Informed Transformer",
-        "u": "https://doi.org/10.1016/j.engappai.2025.110221",
-        "r": 6,
-        "g": 6,
-        "s": "A-KIT用集合Transformer在线学习EKF中时变的过程噪声协方差，在地中海实测的自主水下航行器DVL/惯性融合任务中，定位精度较常规EKF提升49.5%、较模型自适应EKF平均提升35.4%。",
-        "c": "",
-        "cit": 54
-      },
-      {
-        "t": "SpatialBot: Precise Spatial Understanding with Vision Language Models",
-        "u": "https://arxiv.org/abs/2406.13642",
-        "r": 8,
-        "g": 7,
-        "s": "提出SpatialBot，将深度图与RGB一同输入VLM以增强空间理解，构建SpatialQA/E多层级深度问答数据集与SpatialBench评测基准，在空间理解、通用VLM基准及具身任务上均取得显著提升。",
-        "c": "https://github.com/BAAI-DCAI/SpatialBot",
-        "cit": 54
-      },
-      {
-        "t": "Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks",
-        "u": "https://doi.org/10.15607/rss.2025.xxi.013",
-        "r": 10,
-        "g": 5,
-        "s": "Uni-NaVid 提出基于第一人称视频的视觉-语言-动作模型，以统一框架同时支持具身导航动作输出、具身问答、人体跟随与目标导航（Object Goal Navigation）等多项具身导航任务。",
-        "c": "",
-        "cit": 43
-      },
-      {
-        "t": "Splat-Nav: Safe Real-Time Robot Navigation in Gaussian Splatting Maps",
-        "u": "https://arxiv.org/abs/2403.02751",
-        "r": 8,
-        "g": 8,
-        "s": "Splat-Nav提出基于高斯泼溅地图的实时机器人导航管线：Splat-Plan以严格碰撞约束构建安全多面体走廊并生成贝塞尔轨迹，Splat-Loc仅凭机载RGB做递归位姿估计，126次真机飞行实现约2Hz重规划与25Hz位姿估计。",
-        "c": "",
-        "cit": 42
+        "cit": 121
       }
     ]
   }
