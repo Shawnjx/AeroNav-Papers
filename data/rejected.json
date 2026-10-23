@@ -1,68 +1,4 @@
 {
-  "2608.25319": {
-    "title": "SonicNudge: Controlled Displacement of Hovering UAVs via Estimator-Controller Coupling",
-    "relevance": 4,
-    "rigor": 7,
-    "reason": "该文属UAV安全攻击研究：利用超声共振扰动陀螺仪并借助估计器-控制器耦合造成悬停位移，核心贡献是攻击原语而非状态估计、飞行控制或导航决策能力本身的进展，超出收录技术线。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.25319"
-  },
-  "2608.15741": {
-    "title": "Some Modifications to Our End-to-End UAV Planner",
-    "relevance": 5,
-    "rigor": 4,
-    "reason": "自述为对自家YOPO规划器的修改报告，属常规增量改进，且摘要未给出实验设置、基线对比、消融等可验证证据。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.15741"
-  },
-  "2609.01511": {
-    "title": "Benchmarking Spatial, Spectral, and Self-Supervised Cues for Face Forgery Detection under Realistic Degradation",
-    "relevance": 1,
-    "rigor": 7,
-    "reason": "人脸伪造/欺骗检测属于与空间、导航、机器人无关的垂直视觉应用，仅在『基准评测』术语上擦边，明确落入拒绝范围。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.01511"
-  },
-  "2609.00854": {
-    "title": "Does Fault Localization Beat a Fresh Attempt? A Placebo-Controlled Study of Test-Guided Code Repair",
-    "relevance": 2,
-    "rigor": 8,
-    "reason": "属软件工程领域的缺陷定位与代码修复评测，将冻结代码模型套用于与空间、导航、机器人无关的垂直任务，按范围规定应拒绝。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2609.00854"
-  },
-  "2608.31002": {
-    "title": "DARP: A Calibrated Dual-Arm RGB-D-IR Dataset for Multi-View Robotic Perception",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "本质是双臂桌面物体采集的数据集工作，虽声称服务多视角重建与主动感知，但无导航或空间自主决策成分，仅10个物体且评估限于采集几何一致性，属范围边缘。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.31002"
-  },
-  "2608.16281": {
-    "title": "Marker-Constrained Pose-Graph Correction for Cross-Platform Georeferencing in GNSS-Denied Environments",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "属状态估计/定位建图线的小规模概念验证：仅两次手持采集、单标记六位置测试，组合现成里程计与RTAB-Map，落地影响力未达该技术线收录门槛。",
-    "rejected_at": "2026-09-02",
-    "url": "https://arxiv.org/abs/2608.16281"
-  },
-  "2609.02502": {
-    "title": "Blending Concepts: Benchmarking Visual Metaphor Generation in Text-to-Image Models",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "本文是文生图模型视觉隐喻生成能力的评测基准，属于研究范围明确排除的文生图方向，与空间智能、具身导航、机器人自主及大模型智能体核心能力进展均无实质关联，仅术语上涉及MLLM评审。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02502"
-  },
-  "2609.02252": {
-    "title": "DiffuSearch: How Hybrid Trajectory Planning Benefits from Aligned Objectives in Diffusion and Action Space",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "该文属自动驾驶轨迹规划，仅在nuPlan/interPlan等驾驶基准上评测，与具身导航、UAV主动目标搜索、ObjectNav/VLN及基础模型智能体各技术线均无实质关联，且并非机器人自主领域公认的高影响力系统工作。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02252"
-  },
   "2609.02512": {
     "title": "Beauty is in the AI of the beholder: MLLMs systematically overrate facial attractiveness",
     "relevance": 2,
@@ -2398,5 +2334,69 @@
     "reason": "面向智能制造垂直应用的LLM智能体综述，属将大模型智能体向工业垂直领域套用与归纳，与空间智能、导航、具身自主等核心收录问题无直接关联，且为综述无任何实验验证。",
     "rejected_at": "2026-10-22",
     "url": "https://arxiv.org/abs/2610.26941"
+  },
+  "2610.31474": {
+    "title": "Skeleton-Grounded Latent Action Model for Robot World Models",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "世界模型本身在收录线内，但本文完全聚焦机械臂操作动态：训练与评测均基于DROID操作数据，指标为末端执行器轨迹误差与操作策略成功率，与导航、规划及UAV/ObjectNav等技术线无直接关联，属机械臂操作范畴的边缘工作。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.31474"
+  },
+  "2610.30988": {
+    "title": "In-Context Learning World Models for Robot Dual-Arm Manipulation of Soft Garment with Partial Observations",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "论文属双臂机械臂操作与可变形衣物操控，虽含世界模型与sim2real成分但无任何导航决策成分，命中研究范围明确排除项'机械臂操作与VLA控制'。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.30988"
+  },
+  "2610.31478": {
+    "title": "MoG-VLM: Efficient Video Anomaly Detection through Motion-Guided Vision-Language Models",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "本文是将现成VLM套用到视频异常检测这一与空间、导航、机器人无关的垂直应用，核心贡献仅为推理算力调度（按需触发采样与推理），按收录规则属套用类应用，应拒绝。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.31478"
+  },
+  "2610.31429": {
+    "title": "PhysTrace: Interpretable Temporal Evaluation of Physical Consistency in Video Generative Models",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "研究对象是视频生成模型的物理一致性评测，属文生视频评测邻域，全文无导航、规划或机器人内容，与'用于导航与规划的世界模型'仅存在动机层面的间接关联。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.31429"
+  },
+  "2610.31495": {
+    "title": "SABLE: Scalable Affine Bayesian Latent-space Exploration",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "该文是面向工程设计与蛋白质优化的高维潜空间贝叶斯优化方法，属黑盒优化/设计优化研究，不涉及导航、空间智能或具身智能体，超出收录范围。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.31495"
+  },
+  "2610.30786": {
+    "title": "EBV-CAN: Vision--Language Grounding for Contact-Aided Endoscope Navigation",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "该工作属医疗内窥镜连续体机器人的垂直应用，平台、任务形态与数据集均不在收录的UAV/地面具身导航及基础能力十一条技术线之内，虽有视觉语言导航成分与大量真机实验，仍仅属边缘相关的医学领域，建议不收录。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.30786"
+  },
+  "2610.31644": {
+    "title": "GigaBench: Benchmarking Learnable Representations for Gigapixel Image Compression and Super-Resolution",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "论文面向十亿像素图像压缩与超分辨率的可学习表示基准，属纯图像表示学习与图像处理评测，与导航、空间推理、机器人自主均无关联，不属于研究范围内任何技术线。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.31644"
+  },
+  "2610.31606": {
+    "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "属于将现成大模型/检索工具套用于医疗（乳腺病灶文献）垂直领域的RAG应用评测，与空间、导航、机器人均无关，且仅18文档小样本、存在检索参与标注的循环性，按范围规定应拒绝。",
+    "rejected_at": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.31606"
   }
 }

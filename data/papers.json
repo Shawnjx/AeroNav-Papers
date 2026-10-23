@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T13:35:14.014782+00:00",
+  "updated_at": "2026-10-23T09:31:16.031718+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1710,6 +1710,52 @@
         "instruction"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.30609",
+      "arxiv_id": "2610.30609",
+      "title": "KinoUAV: A Benchmark for Safe and Stable UAV Vision-Language Navigation with Kinodynamic Modeling",
+      "authors": [
+        "Chenyao Yang",
+        "Peijin Wang",
+        "Yingchao Feng",
+        "Wenhui Diao"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30609",
+      "pdf_url": "https://arxiv.org/pdf/2610.30609",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出KinoUAV基准，在速度、加速度与加加速度约束下分段生成轨迹，并引入方向自由空间距离（DFD）标签解耦感知与动作决策以实现安全避障；新增Cruise-Seek任务先进入目标区域再搜索目标，实验显示成功率最高、偏航率与碰撞率更低。",
+      "change_zh": "多数无人机VLN方法仅做离散动作预测，忽视动力学可行性与安全间距；该工作改为以加速度为动作、在速度/加速度/加加速度约束下分段生成轨迹，显式引入DFD安全距离标签作为监督信号并解耦感知与决策，还以先巡航后搜索的任务分解降低搜索难度。",
+      "why_it_matters": "对空域VLN与无人机主动目标搜索直接有价值：Cruise-Seek先入区后寻标的流程契合搜救侦察场景；动力学约束与DFD安全距离把低层控制可行性与安全纳入语言导航评测，利于迈向真机稳定飞行导航，其感知与决策解耦设计也可为ObjectNav安全避障提供借鉴。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "无人机视觉语言导航, 运动动力学建模, 基准数据集, 轨迹生成, 自主避障, 安全导航",
+      "question_zh": "如何通过显式运动动力学建模与安全距离度量，解决无人机视觉语言导航中偏航率高、碰撞频繁、成功率低的问题？",
+      "innovation_zh": "提出运动动力学基准KinoUAV：分层轨迹生成流水线在速度、加速度、加加速度约束下分段生成轨迹，减少振荡、提升稳定性；引入方向自由空间距离（DFD）标签，Agent预测DFD生成安全动作，解耦感知与决策实现自主避障；并新增先进入目标区域再搜索目标的Cruise-Seek任务。",
+      "dataset_zh": "自建的KinoUAV基准数据集（含方向自由空间距离DFD标签）及Cruise-Seek任务；仿真环境或真机平台未提及",
+      "results_zh": "在KinoUAV基准上的实验表明，KinoUAV-Agent优于现有方法，取得最高的导航成功率，同时保持更低的绝对偏航率和碰撞率，验证了运动动力学建模对安全稳定无人机导航的有效性。摘要中未给出具体数值。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "target search",
+        "uav",
+        "waypoint"
+      ],
+      "added_at": "2026-10-23T09:08:07.893347+00:00"
     },
     {
       "id": "2610.19618",
@@ -4108,53 +4154,51 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
-      "id": "2607.22014",
-      "arxiv_id": "2607.22014",
-      "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+      "id": "2610.31476",
+      "arxiv_id": "2610.31476",
+      "title": "Point-Level Refinable Semantic Mapping for Spatial Understanding",
       "authors": [
-        "Suman Navaratnarajah",
-        "Taehyoung Kim",
-        "Jona Ruthardt",
-        "Ishaan Bhimwal",
-        "Ryousuke Yamada",
-        "Yannik Blei",
-        "Wolfram Burgard",
-        "Yuki M Asano"
+        "Taimeng Fu",
+        "Yi Du",
+        "Zitong Zhan",
+        "Qiwei Du",
+        "Shaoshu Su",
+        "Zhipeng Zhao",
+        "Chen Wang"
       ],
-      "published": "2026-07-24",
+      "published": "2026-10-22",
       "source": "arXiv",
       "venue": "预印本",
-      "url": "https://arxiv.org/abs/2607.22014",
-      "pdf_url": "https://arxiv.org/pdf/2607.22014",
+      "url": "https://arxiv.org/abs/2610.31476",
+      "pdf_url": "https://arxiv.org/pdf/2610.31476",
       "code_url": "",
       "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.CV",
         "cs.RO"
       ],
       "topics": [
-        "具身基准与评测"
+        "空间智能"
       ],
-      "relevance_score": 11,
+      "relevance_score": 4,
       "evidence": "中",
       "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "提出MissionBench，在5个仿真3D空域环境、4类任务族共120个任务上，零样本评测22个开源与闭源MLLM智能体的长程规划、导航与结果汇报能力，最强模型成功率不足35%，远低于人类84.4%。",
-      "change_zh": "相比以单条指令跟随或感知问答为主的评测，该工作把评测粒度提升到任务级：仅凭自我中心观测与动作历史，要求模型自主完成规划、导航与汇报的全闭环，并以人类基线与规模分析揭示通用模型的长程具身短板。",
-      "why_it_matters": "UAV搜救侦察本质是'规划-搜索-汇报'的长程闭环，该基准量化了通用MLLM零样本完成此类空域任务的真实短板与规模效应，对空域目标搜索、长程ObjectNav的模型选型与闭环评测设计均有直接参考价值。",
+      "summary_zh": "提出在线可精炼语义建图框架，以概率化点级置信度结合多视角时序证据持续修正物体点云，抑制噪声与过期点，并用跟踪与重识别保持实例身份，使物体级语义地图可持续精炼。",
+      "change_zh": "常见物体级开放词汇地图只增不减，感知误差与物体移动后的过期点长期残留；动态建图仅更新物体级表示。本文改为点级置信度在线概率更新，用多视角时序证据与可见性线索淘汰伪点与过期点，从单调累积转向持续精炼。",
+      "why_it_matters": "开放词汇语义地图是ObjectNav与具身问答的核心空间记忆；本文解决动态场景下过期点与误差累积问题，直接提升目标导航成功率，对UAV主动目标搜索的持久建图与目标重定位也有借鉴价值。",
       "relevance_rating": 9,
-      "rigor_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "语义地图, 点级置信度更新, 开放词汇3D地图, 动态环境, 物体跟踪与重识别, 空间理解",
+      "question_zh": "如何让物体级开放词汇3D语义地图在动态环境中在线修正噪声与过时点，实现持续精化而非单调追加？",
+      "innovation_zh": "为每个物体点维护概率置信度并在线更新，利用多视角时序证据（分割掩码、深度、可见性）强化可靠点、抑制虚假与过时点，结合物体跟踪与重识别保持实例身份，突破既有方法仅追加不修正的局限，实现地图持续精化。",
+      "dataset_zh": "Replica和ScanNet数据集；物体导航与具身问答任务的具体仿真或真机平台未提及",
+      "results_zh": "在Replica和ScanNet上建图精度较先前方法分别提升3.46%和2.55%，在动态环境与感知噪声下表现鲁棒；作为空间记忆支持物体导航与具身问答，成功率分别达82.4%和76.7%。",
       "venue_verified": false,
-      "score": 26,
+      "score": 25,
       "keywords": [
-        "aerial",
-        "benchmark",
-        "evaluation",
-        "instruction",
-        "mllm",
-        "multimodal large language model"
+        "object navigation",
+        "spatial memory",
+        "spatial understanding"
       ],
-      "added_at": "2026-09-01T21:26:42+08:00"
+      "added_at": "2026-10-23T09:13:52.004132+00:00"
     },
     {
       "id": "2610.30043",
@@ -6593,6 +6637,142 @@
         "llm agent"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.31494",
+      "arxiv_id": "2610.31494",
+      "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+      "authors": [
+        "Advait Gupta",
+        "Sachin Konan",
+        "Tom Yin",
+        "Gabriel Sarch",
+        "Zhuang Liu"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.31494",
+      "pdf_url": "https://arxiv.org/pdf/2610.31494",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AgentVQA从23个源数据集人工精选1000个真实智能体场景，覆盖网页、机器人、第一视角视频、游戏与空间规划五域，离线评测22个VLM，最高仅58.5%，排名与在线评测一致。",
+      "change_zh": "以往智能体评估依赖昂贵的在线仿真或零散的离线VQA基准，本文将其统一为可规模化的离线评测，并验证离线排名能跟踪在线评测结果；跨域错误分析进一步定位VLM短板在视觉状态感知与维护，而非任务误解或逻辑推理。",
+      "why_it_matters": "对ObjectNav与UAV主动目标搜索所依赖的VLM感知底座有直接诊断价值：错误分析指出模型在跟踪状态变化、推断3D空间关系上的系统性短板，正是具身导航与主动感知的核心瓶颈，可作为导航智能体模型选型与改进方向的依据。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "AgentVQA, 视觉语言模型, 智能体评估, 离线基准, 视觉问答, 智能体视觉理解",
+      "question_zh": "如何构建统一的离线基准来评估视觉语言模型在真实智能体场景中的视觉理解能力？",
+      "innovation_zh": "提出覆盖网页智能体、机器人、第一视角视频、游戏、空间规划五大领域的统一离线评测基准，从23个源数据集人工筛选1000个真实挑战样本，且模型排名与在线评估结果一致，弥补现有离线基准零散、难以规模化的不足。",
+      "dataset_zh": "从23个源数据集人工筛选的1000个真实智能体样本（离线基准），覆盖Web智能体、机器人、第一视角视频、游戏、空间规划五个领域",
+      "results_zh": "评测22个模型，最佳模型准确率仅58.5%，且模型排名与在线评估一致；跨领域分析显示错误主要源于对当前及演变视觉状态的感知与表征失败（如UI元素定位、运动理解、状态跟踪、3D空间关系推断），而非任务误解或下游逻辑推理。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "vlm"
+      ],
+      "added_at": "2026-10-23T09:09:30.992246+00:00"
+    },
+    {
+      "id": "2610.30607",
+      "arxiv_id": "2610.30607",
+      "title": "Continuous-Time Motion Planning and Steering with Global Convergence",
+      "authors": [
+        "Mohsen Amiri",
+        "Sima Didari",
+        "Davoud Ataee Tarzanagh",
+        "Hankyu Moon",
+        "Yeongdae Kwon"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30607",
+      "pdf_url": "https://arxiv.org/pdf/2610.30607",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "将运动规划与策略引导统一为连续时间非凸规划，提出GlobMP梯度投影法在分段多项式曲线上交替降本与恢复可行，随分段增多逼近全局最优，并以200机器人、Robotarium真机等实验验证。",
+      "change_zh": "常见轨迹优化仅在采样时刻验证约束且易陷局部最优；该文以整段多项式非负性保证连续时间全程可行，从细网格起点交替降本与修复可行，给出收敛全局最优的理论保证，并统一规划与对学习策略的引导修正。",
+      "why_it_matters": "作为轨迹规划核心进展，其全程可行且可证收敛的方案可作UAV目标搜索与接近的安全轨迹后端；200机规模对多机协同搜索有参考价值，引导修正学习策略的机制可为ObjectNav导航器提供安全校正层。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "运动规划,连续时间约束,全局收敛,梯度投影法,分段多项式曲线,多机器人避障",
+      "question_zh": "如何在连续时间约束（而非仅采样时刻）下进行运动规划与策略转向，并保证算法收敛到全局最优解？",
+      "innovation_zh": "提出GlobMP，将规划与转向统一为单一连续时间优化程序，在分段多项式曲线上用梯度投影法交替进行代价下降与可行性恢复；理论上随多项式段数增加代价逼近全局最优，克服已有方法无法保证全局收敛的局限。",
+      "dataset_zh": "真实与合成实验：Robotarium多机器人测试平台、扩展基准测试、迷宫导航任务、双臂人形机器人真机（触觉反应策略转向），以及最多200台机器人团队的合成场景",
+      "results_zh": "在真实与合成实验中优于强基线：最多支持200台机器人团队的避碰规划，在Robotarium平台完成多机器人规划，并通过迷宫导航与双臂人形机器人触觉反应策略转向实验；约束可满足任意指定容差，稳定实例上精确满足。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "motion planning"
+      ],
+      "added_at": "2026-10-23T09:25:47.765185+00:00"
+    },
+    {
+      "id": "2610.30589",
+      "arxiv_id": "2610.30589",
+      "title": "OASIS: Online Anchor-centric Scene Inference System for Open-Vocabulary Retrieval and Navigation in Dynamic Environments",
+      "authors": [
+        "Kaiyao Liao",
+        "Qingfeng Li",
+        "Chen Chen",
+        "Xiaoze Wu",
+        "Qing Sun",
+        "Jianwei Niu"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30589",
+      "pdf_url": "https://arxiv.org/pdf/2610.30589",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OASIS以稳定语义锚点为节点构建在线稀疏场景记忆，锚点统一融合语义描述、视觉特征与几何状态，支持开放词汇分层检索与导航，并复用瞬态观测重定位被移动的物体，在仿真与真机实验中验证。",
+      "change_zh": "常见路线要么轻量在线建图但语义受限，要么稠密建图算力高且易受干扰物影响，且多假设静态场景；OASIS改用锚点级统一多模态表示与按需证据提取、分层检索来平衡效率与可靠性，并复用导航中的瞬态观测解决物体被移动后的重定位，直面动态场景。",
+      "why_it_matters": "开放词汇目标检索与导航正是ObjectNav的核心问题，其对动态场景变化与物体被移动后重定位的处理直击长期自主部署痛点；锚点式紧凑多模态记忆也为UAV主动目标搜索等资源受限平台提供了高效场景记忆与检索的可借鉴范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "keywords_zh": "开放词汇检索, 动态环境, 在线建图, 语义锚点, 多模态场景表示, 物体重定位",
+      "question_zh": "如何在动态真实环境中实现轻量高效的在线建图、复杂开放词汇检索与导航，并在场景变化后重新定位被移动的物体？",
+      "innovation_zh": "不同于轻量在线建图语义有限、稠密建图开销大且易受干扰物影响的方法，OASIS以稀疏语义锚点节点统一融合语义描述、视觉特征与几何状态，支持按需证据提取与层次化检索，并复用导航中的瞬时观测以在场景变化后重定位被移动物体。",
+      "dataset_zh": "仿真环境与真实世界环境，包括标准检索基准以及静态与动态设置下的导航任务；具体数据集名称与真机平台未提及。",
+      "results_zh": "摘要未提供具体量化数字。实验表明：OASIS能够在仿真和真实环境中执行复杂的开放词汇检索与导航任务，其紧凑的锚点式内存在减少冗余存储的同时提升了检索可靠性，并可在场景发生变化后实现被移动物体的重新定位。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "online mapping",
+        "scene dynamics"
+      ],
+      "added_at": "2026-10-23T09:29:28.515607+00:00"
     },
     {
       "id": "2610.30120",
@@ -11822,6 +12002,47 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.31321",
+      "arxiv_id": "2610.31321",
+      "title": "MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model",
+      "authors": [
+        "Xinyang Lu",
+        "Shengzhe Wei",
+        "Sheng Tang",
+        "Weiqi Zhang",
+        "Juntong Fang",
+        "Zesong Li"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.31321",
+      "pdf_url": "https://arxiv.org/pdf/2610.31321",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "MVLoMa将局部特征匹配由图像对扩展到星形多视角，用冻结几何基础模型注入跨视图上下文，单次前向完成中心图与全部邻居匹配，在四个数据集上取得最优相对位姿AUC，快2.2倍。",
+      "change_zh": "常见做法是中心图与各邻居逐对独立匹配，重复计算且丢掉其他视图的几何证据。MVLoMa改为星形图一次前向联合匹配，将冻结几何模型的跨视图上下文注入描述子，并用深度可见性筛选与极线违反惩罚做监督。",
+      "why_it_matters": "多视图特征匹配是SfM与视觉定位的核心，其精度与速度直接影响无人机自主飞行中的定位建图效率；该工作展示几何基础模型先验可注入匹配过程，对机器人状态估计与空间建图管线有直接借鉴价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-10-23T09:22:09.305241+00:00"
+    },
+    {
       "id": "2610.30105",
       "arxiv_id": "2610.30105",
       "title": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
@@ -14095,6 +14316,177 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.31511",
+      "arxiv_id": "2610.31511",
+      "title": "DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination",
+      "authors": [
+        "Ziyi Jiao",
+        "Heng Zhang",
+        "Drishti Regmi",
+        "Xiaokang Ye",
+        "Lianhui Qin",
+        "Peter Yichen Chen"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.31511",
+      "pdf_url": "https://arxiv.org/pdf/2610.31511",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "在Unreal引擎中构建受Overcooked启发的20张地图基准，由单一VLM自顶向下控制两名角色执行高层烹饪动作，评测四种VLM的规划协调能力及共享笔记本记忆消融。",
+      "change_zh": "不同于单智能体导航基准或强化学习训练的Overcooked协作，本文由单一VLM集中控制双角色高层动作、导航交引擎执行，聚焦设备争用、地形变化与交接依赖的中心化协调，并用自写笔记本做记忆消融。",
+      "why_it_matters": "为多模态大模型智能体的高层规划、双角色协调与空间接地提供系统化评测，其资源争用与交接依赖设定可类比多机协同目标搜索的任务分配，记忆消融对长程ObjectNav/UAV任务的智能体记忆设计有参考价值。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "language agent",
+        "vlm"
+      ],
+      "added_at": "2026-10-23T09:10:41.429173+00:00"
+    },
+    {
+      "id": "2610.30810",
+      "arxiv_id": "2610.30810",
+      "title": "Adaptive Aerial Loco-Manipulation Policy Learning via LLM-Assisted Proactive Task Generation",
+      "authors": [
+        "Jingyu Ru",
+        "Xiangyuan Xie",
+        "Lixuan Jin",
+        "Jian An",
+        "Xingming Zhang",
+        "Binghao Li",
+        "Siyu Wang",
+        "Xiang Zhou",
+        "Lei Yuan",
+        "Hongli Xu",
+        "Yang Yu"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.30810",
+      "pdf_url": "https://arxiv.org/pdf/2610.30810",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ALMA提出带臂无人机自适应飞行控制：上下文策略据近期观测与动作在线适应，用动作条件预测训练上下文，LLM进化生成臂运动任务；仿真RMSE降24.7%，零样本真机悬停RMSE降79.6%。",
+      "change_zh": "不同于显式建模控制器与固定任务采样的学习控制，ALMA以动作条件预测未来观测表征训练上下文，使其保留对飞行控制有用的响应信息，并用LLM分析难点、进化式生成臂运动结构以主动扩充训练经验。",
+      "why_it_matters": "为臂扰动下无人机提供自适应飞行控制并零样本迁移真机，命中状态估计与控制及Sim2Real线；LLM分析失败、主动生成训练任务的思想可迁移至UAV目标搜索等技能学习，对ObjectNav价值有限。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial"
+      ],
+      "added_at": "2026-10-23T09:12:15.511610+00:00"
+    },
+    {
+      "id": "2610.31329",
+      "arxiv_id": "2610.31329",
+      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+      "authors": [
+        "Tianming Liang",
+        "Junyi Pan",
+        "Yuxi Li",
+        "Canmiao Fu",
+        "Zhipeng Huang",
+        "Chong Sun",
+        "Chen Li",
+        "Jing Lyu"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.31329",
+      "pdf_url": "https://arxiv.org/pdf/2610.31329",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "微信团队开源的统一视觉语言模型WeVisOne-VL，以结构化下一词预测统一物体级与像素级感知，经三阶段课程SFT与混合任务RL训练，在30余个基准的检测、定位、分割、抠图等任务上取得领先表现。",
+      "change_zh": "相比把检测、分割交给专用头或级联专家模型的常见做法，该工作经<OBJ> token把轻量像素解码器接入VLM，用统一的结构化下一词预测在一个模型内输出点、框、掩码与抠图，并以混合任务RL兼顾多粒度定位与目标缺失拒答。",
+      "why_it_matters": "该模型提供开放词汇、任意粒度（点/框/掩码）定位与缺失目标可靠拒答，恰是ObjectNav目标发现与UAV目标搜索所需的感知底座：拒答能力可降低误检误接近，统一输出便于目标确认与跟踪，开源权重利于真机部署与二次开发。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "localization",
+        "vlm"
+      ],
+      "added_at": "2026-10-23T09:20:51.370048+00:00"
+    },
+    {
+      "id": "2610.31640",
+      "arxiv_id": "2610.31640",
+      "title": "WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models",
+      "authors": [
+        "Chenxi Song",
+        "Yanming Yang",
+        "Tong Zhao",
+        "Ruibo Li",
+        "Joey Tianyi Zhou",
+        "Chi Zhang"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.31640",
+      "pdf_url": "https://arxiv.org/pdf/2610.31640",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "WorldForge V2让预训练视频扩散模型实现精确相机控制：以扭曲参考帧做无训练迭代引导，用光流定位运动相关隐通道实现选择性引导与双路径伪影校正，辅以Trajectory LoRA两阶段微调，极少数据即获高质量相机受控视频生成。",
+      "change_zh": "相比任务特定微调易生伪影泛化差、后处理扭曲开销高的常见路线，改为以测试时引导为主：用扭曲参考沿目标相机路径迭代细化生成，光流定位运动隐通道以解耦运动与外观，v-cache复用去噪预测省一次前向，Trajectory LoRA再把稀疏监督集中于最响应轨迹引导的网络块。",
+      "why_it_matters": "相机轨迹可控的视频生成是可控世界模型的核心瓶颈能力，可为UAV目标搜索与ObjectNav提供沿任意轨迹的合成观测、场景数据增强与轻量模拟渲染，直接服务具身训练环境构建。但摘要未在导航任务上实测，价值主要体现在数据与环境生成侧而非导航决策本身。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "scene dynamics"
+      ],
+      "added_at": "2026-10-23T09:27:53.597741+00:00"
     },
     {
       "id": "2610.29647",
@@ -21580,6 +21972,43 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.31376",
+      "arxiv_id": "2610.31376",
+      "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+      "authors": [
+        "Chao Gu",
+        "Quanyan Zhu"
+      ],
+      "published": "2026-10-22",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.31376",
+      "pdf_url": "https://arxiv.org/pdf/2610.31376",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "eess.SY"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文把LLM智能体与工具间的执行层形式化为Petri网监督控制，用标识编码能力、批准与预算，未满足前置条件的注入请求即被拒；并在重规划闭环中刻画最大许可且最小侵入的监督器，经自主发布智能体综合验证。",
+      "change_zh": "常见防线靠提示过滤、注入检测或权限白名单等启发式护栏；本文改用Petri网监督控制把能力、批准与预算固化为标识结构，给出安全迁移条件与价值阈值式的最小侵入精炼，并把拒绝后重试计入推理成本的闭环纳入形式化。",
+      "why_it_matters": "提示注入是LLM智能体落地的关键风险，本文为工具执行层给出带形式保证的监督框架，属智能体系统与工具使用安全的实质进展；其能力/预算标识与最小侵入监督思路可迁移到导航与UAV智能体的行动审批和安全执行。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "agentic",
+        "deployment"
+      ],
+      "added_at": "2026-10-23T09:31:13.031114+00:00"
+    },
+    {
       "id": "2610.16457",
       "arxiv_id": "2610.16457",
       "title": "SHOES: Sim-to-real Hardware-adaptation via On-policy Expansion of Skills for Legged Robots",
@@ -23853,40 +24282,96 @@
     }
   ],
   "briefing": {
-    "text": "本批主线是让具身智能变得可测、可控：一端统一评测前沿模型的机器人能力，一端改造世界模型的训练方式。首推Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum，四款前沿多模态大模型在Agent2Act统一框架下同台比拼指令跟随、空间推理与鲁棒性，横评结果可直接用于模型选型；Training Controllable World Models via Action Influence Maximization证明专家示范数据会让动作条件世界模型忽略指令动作，AIM算法把数据需求降低85倍，纠正了“专家数据越多越好”的直觉；NeoWorld-3: From Pixels to Code-Defined Physical Worlds则用可执行代码把像素重建为可编辑的3D物理世界，双臂真机零样本闭环验证了实用性。趋势上，具身研究的地基正从堆叠任务转向可测、可控、可编辑的世界建模。",
-    "added": 4,
-    "at": "2026-10-22T13:36:21.529027+00:00",
+    "text": "本批横跨安全导航与规划、场景记忆与建图、智能体评测与执行监督数条主线。首推KinoUAV：在速度、加速度与加加速度约束下评测无人机VLN，用DFD标签解耦感知与动作决策，碰撞与偏航更少；OASIS以语义锚点构建在线场景记忆，支持开放词汇分层检索并能重定位被移动的物体，直接面向动态环境；Point-Level Refinable Semantic Mapping用点级置信度融合多视角时序证据，让语义地图可持续精炼并保持实例身份。物理约束与持续记忆，正成为导航从仿真走向真实场景的基座。",
+    "added": 11,
+    "at": "2026-10-23T09:33:56.121728+00:00",
     "new": [
       {
-        "t": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
-        "u": "https://arxiv.org/abs/2610.27865",
-        "r": 8,
-        "g": 8,
-        "s": "本文在RoboColiseum基准上，用统一控制框架Agent2Act接入四款前沿多模态大模型，在相同设置与评分标准下评测指令跟随、空间推理、通用操作与鲁棒性四项具身能力，并辅以真机案例研究。",
+        "t": "KinoUAV: A Benchmark for Safe and Stable UAV Vision-Language Navigation with Kinodynamic Modeling",
+        "u": "https://arxiv.org/abs/2610.30609",
+        "r": 10,
+        "g": 7,
+        "s": "提出KinoUAV基准，在速度、加速度与加加速度约束下分段生成轨迹，并引入方向自由空间距离（DFD）标签解耦感知与动作决策以实现安全避障；新增Cruise-Seek任务先进入目标区域再搜索目标，实验显示成功率最高、偏航率与碰撞率更低。",
         "c": ""
       },
       {
-        "t": "NeoWorld-3: From Pixels to Code-Defined Physical Worlds",
-        "u": "https://arxiv.org/abs/2610.27690",
+        "t": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+        "u": "https://arxiv.org/abs/2610.31494",
+        "r": 8,
+        "g": 8,
+        "s": "AgentVQA从23个源数据集人工精选1000个真实智能体场景，覆盖网页、机器人、第一视角视频、游戏与空间规划五域，离线评测22个VLM，最高仅58.5%，排名与在线评测一致。",
+        "c": ""
+      },
+      {
+        "t": "DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination",
+        "u": "https://arxiv.org/abs/2610.31511",
         "r": 7,
         "g": 7,
-        "s": "提出编码智能体框架NeoWorld-3，用可执行程序与可微参数将视觉观测重建为可交互3D物理世界：NeoSDK引擎负责几何、部件与物理验证，NeoMCP工具API供视觉语言智能体迭代编辑，物级与场景级基准达SOTA，双臂真机零样本闭环。",
+        "s": "在Unreal引擎中构建受Overcooked启发的20张地图基准，由单一VLM自顶向下控制两名角色执行高层烹饪动作，评测四种VLM的规划协调能力及共享笔记本记忆消融。",
         "c": ""
       },
       {
-        "t": "Training Controllable World Models via Action Influence Maximization",
-        "u": "https://arxiv.org/abs/2610.27387",
+        "t": "Adaptive Aerial Loco-Manipulation Policy Learning via LLM-Assisted Proactive Task Generation",
+        "u": "https://arxiv.org/abs/2610.30810",
+        "r": 7,
+        "g": 7,
+        "s": "ALMA提出带臂无人机自适应飞行控制：上下文策略据近期观测与动作在线适应，用动作条件预测训练上下文，LLM进化生成臂运动任务；仿真RMSE降24.7%，零样本真机悬停RMSE降79.6%。",
+        "c": ""
+      },
+      {
+        "t": "Point-Level Refinable Semantic Mapping for Spatial Understanding",
+        "u": "https://arxiv.org/abs/2610.31476",
+        "r": 9,
+        "g": 7,
+        "s": "提出在线可精炼语义建图框架，以概率化点级置信度结合多视角时序证据持续修正物体点云，抑制噪声与过期点，并用跟踪与重识别保持实例身份，使物体级语义地图可持续精炼。",
+        "c": ""
+      },
+      {
+        "t": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+        "u": "https://arxiv.org/abs/2610.31329",
+        "r": 7,
+        "g": 7,
+        "s": "微信团队开源的统一视觉语言模型WeVisOne-VL，以结构化下一词预测统一物体级与像素级感知，经三阶段课程SFT与混合任务RL训练，在30余个基准的检测、定位、分割、抠图等任务上取得领先表现。",
+        "c": ""
+      },
+      {
+        "t": "MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model",
+        "u": "https://arxiv.org/abs/2610.31321",
+        "r": 7,
+        "g": 8,
+        "s": "MVLoMa将局部特征匹配由图像对扩展到星形多视角，用冻结几何基础模型注入跨视图上下文，单次前向完成中心图与全部邻居匹配，在四个数据集上取得最优相对位姿AUC，快2.2倍。",
+        "c": ""
+      },
+      {
+        "t": "Continuous-Time Motion Planning and Steering with Global Convergence",
+        "u": "https://arxiv.org/abs/2610.30607",
         "r": 8,
         "g": 8,
-        "s": "发现动作条件世界模型在专家示范数据上训练后会忽略指令动作，证明可控性受数据动作影响力上界约束，提出主动数据采集算法AIM提升模型可控性，数据需求降低85倍。",
+        "s": "将运动规划与策略引导统一为连续时间非凸规划，提出GlobMP梯度投影法在分段多项式曲线上交替降本与恢复可行，随分段增多逼近全局最优，并以200机器人、Robotarium真机等实验验证。",
         "c": ""
       },
       {
-        "t": "Physical AI: Concepts, Techniques, and Challenges",
-        "u": "https://arxiv.org/abs/2610.27045",
+        "t": "WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models",
+        "u": "https://arxiv.org/abs/2610.31640",
+        "r": 7,
+        "g": 7,
+        "s": "WorldForge V2让预训练视频扩散模型实现精确相机控制：以扭曲参考帧做无训练迭代引导，用光流定位运动相关隐通道实现选择性引导与双路径伪影校正，辅以Trajectory LoRA两阶段微调，极少数据即获高质量相机受控视频生成。",
+        "c": ""
+      },
+      {
+        "t": "OASIS: Online Anchor-centric Scene Inference System for Open-Vocabulary Retrieval and Navigation in Dynamic Environments",
+        "u": "https://arxiv.org/abs/2610.30589",
+        "r": 9,
+        "g": 6,
+        "s": "OASIS以稳定语义锚点为节点构建在线稀疏场景记忆，锚点统一融合语义描述、视觉特征与几何状态，支持开放词汇分层检索与导航，并复用瞬态观测重定位被移动的物体，在仿真与真机实验中验证。",
+        "c": ""
+      },
+      {
+        "t": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+        "u": "https://arxiv.org/abs/2610.31376",
         "r": 6,
-        "g": 5,
-        "s": "本专著提出Physical AI的统一定义与框架：在真实约束下经持续闭环反馈感知、建模并作用于物理世界；辨析其与具身AI、信息物理系统、数字孪生的边界，并综述多模态感知、世界模型、具身基础模型、sim-to-real等关键技术与挑战。",
+        "g": 6,
+        "s": "本文把LLM智能体与工具间的执行层形式化为Petri网监督控制，用标识编码能力、批准与预算，未满足前置条件的注入请求即被拒；并在重规划闭环中刻画最大许可且最小侵入的监督器，经自主发布智能体综合验证。",
         "c": ""
       }
     ]
