@@ -14499,13 +14499,6 @@
     }
   ],
   "excluded": {
-    "2107.03374": {
-      "title": "Evaluating Large Language Models Trained on Code",
-      "relevance": 2,
-      "rigor": 2,
-      "reason": "属于LLM代码生成/编译工具链的垂直应用，与空间、导航、机器人无关，也未构成模型或智能体能力本身的显著进展；摘要仅为概念演示与系统描述，无实验设置、基线与消融，且题目与摘要内容明显不符。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4283077289": {
       "title": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
       "relevance": 2,
@@ -17997,6 +17990,13 @@
       "relevance": 1,
       "rigor": 2,
       "reason": "属社会人类学与生态心理学理论文集，讨论人类技能、栖居与环境感知的哲学问题，不含任何具身导航或机器人技术内容，仅与'环境感知'一词术语擦边。",
+      "excluded_at": "2026-10-23"
+    },
+    "https://openalex.org/W4386151215": {
+      "title": "2023 Focused Update of the 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文为欧洲心脏病学会心血管临床指南的重点更新，属纯医学文档，与具身导航、UAV目标搜索、空间智能、机器人自主等全部收录技术线无任何关联，属范围外。",
       "excluded_at": "2026-10-23"
     }
   },
