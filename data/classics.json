@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T08:26:53.995383+00:00",
+  "updated_at": "2026-10-24T13:49:48.359903+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -14496,23 +14496,50 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-21T14:56:14.663933+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4412093083",
+      "arxiv_id": "",
+      "title": "Vision-Based Navigation and Perception for Autonomous Robots: Sensors, SLAM, Control Strategies, and Cross-Domain Applications—A Review",
+      "authors": [
+        "Eder A. Rodríguez-Martínez",
+        "Wendy Flores‐Fuentes",
+        "Farouk Achakir",
+        "Oleg Sergiyenko",
+        "Fabian Natanael Murrieta-Rico"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "Eng—Advances in Engineering",
+      "citation_count": 41,
+      "url": "https://doi.org/10.3390/eng6070153",
+      "pdf_url": "https://www.mdpi.com/2673-4117/6/7/153/pdf?version=1751878427",
+      "code_url": "",
+      "topics": [
+        "状态估计与控制"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "综述视觉机器人导航十余年进展：从单目/双目/事件相机等传感器，到稀疏与稠密SLAM、回环、语义建图及激光-视觉-惯性融合，再到经典规划与学习式导航控制，覆盖自动驾驶、无人机、水下与行星探测等跨域应用。",
+      "change_zh": "本文为综述，非单点技术突破：其增量在于以工程视角打通“传感器—SLAM—导航控制—跨域部署”全流程，横向对比稀疏/稠密SLAM与多传感器融合方案，并把汽车、无人机、水下、人形等领域的定制经验纳入统一分类体系。但摘要未说明文献筛选与分析方法的系统性。",
+      "why_it_matters": "对状态估计与控制及导航各线提供全景背景：传感器选型、VIO/SLAM融合与导航策略对比可直接支撑UAV主动目标搜索与ObjectNav系统的感知定位模块设计；其对视觉语言导航等新兴方向的展望也为空域与地面VLN研究提供工程参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "deployment",
+        "drone",
+        "exploration",
+        "localization",
+        "slam"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-24T13:49:48.359903+00:00"
     }
   ],
   "excluded": {
-    "https://openalex.org/W4283077289": {
-      "title": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
-      "relevance": 2,
-      "rigor": 6,
-      "reason": "本文属地理统计与可解释机器学习交叉的方法学，用SHAP事后解释XGBoost提取地理空间效应，不涉及具身导航、3D场景理解或智能体能力进展，仅与'空间'一词术语擦边，属范围外工作。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4210258765": {
-      "title": "ECCO Guidelines on Therapeutics in Ulcerative Colitis: Medical Treatment",
-      "relevance": 0,
-      "rigor": 3,
-      "reason": "本文为溃疡性结肠炎药物治疗的医学临床指南，与空间智能、具身导航、机器人或大模型智能体等所有收录技术线均无关联，属医疗垂直领域范围外内容。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4282970004": {
       "title": "Towards the Unmanned Aerial Vehicles (UAVs): A Comprehensive Review",
       "relevance": 3,
@@ -17998,22 +18025,36 @@
       "rigor": 3,
       "reason": "该文为欧洲心脏病学会心血管临床指南的重点更新，属纯医学文档，与具身导航、UAV目标搜索、空间智能、机器人自主等全部收录技术线无任何关联，属范围外。",
       "excluded_at": "2026-10-23"
+    },
+    "https://openalex.org/W3212567773": {
+      "title": "Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence, IJCAI 2020",
+      "relevance": 0,
+      "rigor": 0,
+      "reason": "该条目是IJCAI-PRICAI 2020会议论文集的前言与组织统计说明，并非研究论文，无任何方法或实验内容，与全部收录技术线均不相关。",
+      "excluded_at": "2026-10-24"
+    },
+    "https://openalex.org/W4408998341": {
+      "title": "A Comprehensive Review on Autonomous Navigation",
+      "relevance": 6,
+      "rigor": 4,
+      "reason": "纯综述、无方法与实验贡献，覆盖泛化的经典导航栈而非聚焦任一收录技术线，摘要也未体现系统性综述方法或独到分类体系，情报增量有限。",
+      "excluded_at": "2026-10-24"
     }
   },
   "last_citation_refresh": "2026-10-22T14:51:44.784903+00:00",
   "briefing": {
-    "text": "本批入库工作的主线是把三维世界接入大语言模型，让具身智能体具备可问答、可定位、可执行的空间认知。最值得优先精读的是3D-LLM: Injecting the 3D World into Large Language Models——它把点云经多视角渲染后的特征注入2D VLM骨干，辅以3D定位机制与30万条3D-语言数据，在单一框架内统一了问答、字幕、定位、任务分解与导航，并在ScanQA上大幅超越SOTA，确立了“3D注入2D骨干”这一技术路线，后续多数3D-语言工作都以其为基线。趋势上看，3D-语言数据的规模化生产正成为具身基座模型竞争的下一个关键。",
+    "text": "本轮仅入库一篇高被引综述，主线是对视觉导航技术栈的系统性梳理。最值得读的就是这篇 Vision-Based Navigation and Perception for Autonomous Robots: Sensors, SLAM, Control Strategies, and Cross-Domain Applications—A Review：它从单目、双目到事件相机的传感器选型讲起，贯通稀疏与稠密SLAM、回环检测、语义建图及激光-视觉-惯性融合，再衔接经典规划与学习式导航控制，并对照自动驾驶、无人机、水下与行星探测四个域的差异，可直接当作入门框架和文献地图使用。趋势观察：语义建图、多模态融合与学习式控制的组合正成为导航系统的标准配置。",
     "added": 1,
-    "at": "2026-10-23T08:26:53.995383+00:00",
+    "at": "2026-10-24T13:49:48.359903+00:00",
     "new": [
       {
-        "t": "3D-LLM: Injecting the 3D World into Large Language Models",
-        "u": "https://arxiv.org/abs/2307.12981",
-        "r": 9,
-        "g": 8,
-        "s": "提出3D-LLM模型家族，将3D点云经多视角渲染特征注入2D VLM骨干，辅以3D定位机制与30万条3D-语言数据训练，统一完成3D问答、字幕、定位、任务分解与导航等任务，在ScanQA上大幅超越SOTA。",
+        "t": "Vision-Based Navigation and Perception for Autonomous Robots: Sensors, SLAM, Control Strategies, and Cross-Domain Applications—A Review",
+        "u": "https://doi.org/10.3390/eng6070153",
+        "r": 8,
+        "g": 5,
+        "s": "综述视觉机器人导航十余年进展：从单目/双目/事件相机等传感器，到稀疏与稠密SLAM、回环、语义建图及激光-视觉-惯性融合，再到经典规划与学习式导航控制，覆盖自动驾驶、无人机、水下与行星探测等跨域应用。",
         "c": "",
-        "cit": 121
+        "cit": 41
       }
     ]
   }
