@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T13:49:48.359903+00:00",
+  "updated_at": "2026-10-25T14:05:34.320530+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1983,6 +1983,32 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-08T05:39:39.759268+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4283077289",
+      "arxiv_id": "",
+      "title": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
+      "authors": [
+        "Ziqi Li"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "Computers Environment and Urban Systems",
+      "citation_count": 1212,
+      "url": "https://doi.org/10.1016/j.compenvurbsys.2022.101845",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Machine learning and artificial intelligence (ML/AI), previously considered black box approaches, are becoming more interpretable, as a result of the recent advances in eXplainable AI (XAI).",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-25T14:05:34.320530+00:00"
     },
     {
       "id": "https://openalex.org/W3133648073",
@@ -14540,13 +14566,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4282970004": {
-      "title": "Towards the Unmanned Aerial Vehicles (UAVs): A Comprehensive Review",
-      "relevance": 3,
-      "rigor": 4,
-      "reason": "该文是面向无人机系统整体的宽泛综述（分类、集群、充电、标准化、安全等），不涉及UAV主动目标搜索或自主导航的方法与实验，仅因提及搜救应用而术语擦边。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W3174128215": {
       "title": "Nanozymes Inspired by Natural Enzymes",
       "relevance": 0,
@@ -18039,22 +18058,29 @@
       "rigor": 4,
       "reason": "纯综述、无方法与实验贡献，覆盖泛化的经典导航栈而非聚焦任一收录技术线，摘要也未体现系统性综述方法或独到分类体系，情报增量有限。",
       "excluded_at": "2026-10-24"
+    },
+    "https://openalex.org/W4210258765": {
+      "title": "ECCO Guidelines on Therapeutics in Ulcerative Colitis: Medical Treatment",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "该文为溃疡性结肠炎药物治疗的临床医学指南，与具身导航、空域自主、机器人及模型智能体等全部收录技术线完全无关。",
+      "excluded_at": "2026-10-25"
     }
   },
   "last_citation_refresh": "2026-10-22T14:51:44.784903+00:00",
   "briefing": {
-    "text": "本轮仅入库一篇高被引综述，主线是对视觉导航技术栈的系统性梳理。最值得读的就是这篇 Vision-Based Navigation and Perception for Autonomous Robots: Sensors, SLAM, Control Strategies, and Cross-Domain Applications—A Review：它从单目、双目到事件相机的传感器选型讲起，贯通稀疏与稠密SLAM、回环检测、语义建图及激光-视觉-惯性融合，再衔接经典规划与学习式导航控制，并对照自动驾驶、无人机、水下与行星探测四个域的差异，可直接当作入门框架和文献地图使用。趋势观察：语义建图、多模态融合与学习式控制的组合正成为导航系统的标准配置。",
+    "text": "本轮仅一篇入库，无法按惯例精选多篇，故本期为单篇评述。《Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost》（被引1212）并非具身导航原生工作，而是示范以SHAP局部解释从XGBoost中还原空间依赖、异质性等空间效应的方法论文，入库标注的“相关？”也提示其与导航的直接关联需人工复核。对导航研究者的价值在工具迁移：若要解释障碍物分布、目标方位等空间特征对策略或预测模型输出的贡献，其SHAP分析流程可直接借用；但文中不含导航任务与具身设定，不宜当作领域经典精读。趋势观察：可解释方法正加速渗入空间智能研究，导航社区对策略决策归因的需求将持续上升。",
     "added": 1,
-    "at": "2026-10-24T13:49:48.359903+00:00",
+    "at": "2026-10-25T14:05:34.320530+00:00",
     "new": [
       {
-        "t": "Vision-Based Navigation and Perception for Autonomous Robots: Sensors, SLAM, Control Strategies, and Cross-Domain Applications—A Review",
-        "u": "https://doi.org/10.3390/eng6070153",
-        "r": 8,
-        "g": 5,
-        "s": "综述视觉机器人导航十余年进展：从单目/双目/事件相机等传感器，到稀疏与稠密SLAM、回环、语义建图及激光-视觉-惯性融合，再到经典规划与学习式导航控制，覆盖自动驾驶、无人机、水下与行星探测等跨域应用。",
+        "t": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
+        "u": "https://doi.org/10.1016/j.compenvurbsys.2022.101845",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost。当前自动研判未启用，建议结合英文摘要阅读。",
         "c": "",
-        "cit": 41
+        "cit": 1212
       }
     ]
   }
