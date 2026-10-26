@@ -14566,27 +14566,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W3174128215": {
-      "title": "Nanozymes Inspired by Natural Enzymes",
-      "relevance": 0,
-      "rigor": 5,
-      "reason": "该文属于纳米材料与人工酶催化化学领域，与具身导航、空间智能、大模型智能体等全部收录技术线均无关联，纯属范围外。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4396723768": {
-      "title": "Augmenting large language models with chemistry tools",
-      "relevance": 3,
-      "rigor": 6,
-      "reason": "该工作将GPT-4套用到化学垂直领域（有机合成、药物发现、材料设计），与空间、导航、机器人无关，属范围中明确排除的'大模型套用垂直应用'类，仅'LLM智能体/工具使用'术语擦边。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3156526939": {
-      "title": "Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature",
-      "relevance": 0,
-      "rigor": 6,
-      "reason": "该文为护理学继续专业发展的定性文献元综合，'终身学习'指人类护士而非机器持续学习，与具身导航、空间智能、大模型智能体等全部收录技术线均无关，属范围外论文。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4411403346": {
       "title": "A Comprehensive Overview of Large Language Models",
       "relevance": 5,
@@ -18065,6 +18044,27 @@
       "rigor": 6,
       "reason": "该文为溃疡性结肠炎药物治疗的临床医学指南，与具身导航、空域自主、机器人及模型智能体等全部收录技术线完全无关。",
       "excluded_at": "2026-10-25"
+    },
+    "https://openalex.org/W4282970004": {
+      "title": "Towards the Unmanned Aerial Vehicles (UAVs): A Comprehensive Review",
+      "relevance": 3,
+      "rigor": 4,
+      "reason": "这是一篇泛无人机系统工程综述，聚焦机型分类、集群、充电与标准化及安全议题，仅罗列搜救等应用场景，未涉及UAV主动目标搜索、空域VLN或任何导航决策与感知算法的技术内容，属仅术语擦边。",
+      "excluded_at": "2026-10-26"
+    },
+    "https://openalex.org/W4391482140": {
+      "title": "The implementation of the cognitive theory of multimedia learning in the design and evaluation of an AI educational video assistant utilizing large language models",
+      "relevance": 2,
+      "rigor": 4,
+      "reason": "将现成大模型（Whisper、Bard）作为工具套用于教育视频这一垂直应用，与空间、导航、机器人完全无关，属于范围中明确拒绝的垂直套用类；且仅9名专家的初步评估、无基线对比。",
+      "excluded_at": "2026-10-26"
+    },
+    "https://openalex.org/W4412185104": {
+      "title": "The algorithmic self: how AI is reshaping human identity, introspection, and agency",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "属AI伦理与心理学视角的人文评述，探讨算法对人类自我认知的影响，不涉及具身导航、空间智能、机器人自主或智能体技术的任何收录技术线，且为纯观点文章无实验与可复现信息。",
+      "excluded_at": "2026-10-26"
     }
   },
   "last_citation_refresh": "2026-10-22T14:51:44.784903+00:00",
