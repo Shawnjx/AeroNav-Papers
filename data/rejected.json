@@ -1,52 +1,4 @@
 {
-  "2609.02512": {
-    "title": "Beauty is in the AI of the beholder: MLLMs systematically overrate facial attractiveness",
-    "relevance": 2,
-    "rigor": 6,
-    "reason": "该工作是对现成商用MLLM在人脸吸引力评分这一社会感知垂直任务上的行为审计，不涉及模型能力本身的显著进展，也与空间智能、导航、机器人无关，属范围外应用评测。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02512"
-  },
-  "2609.02471": {
-    "title": "Learning to Track from Privileged Target Appearances",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "纯2D视频目标跟踪的感知方法，无UAV搜索、导航决策或机器人自主成分，仅术语与'目标'擦边，属范围外工作。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02471"
-  },
-  "2609.02413": {
-    "title": "WildFab: Multi-Axis 3D Printing from Models in the Wild",
-    "relevance": 2,
-    "rigor": 6,
-    "reason": "属于增材制造/几何处理领域的多轴打印刀具路径与无碰撞运动规划，无导航决策成分，与具身导航收录范围各技术线均不相关。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02413"
-  },
-  "2609.02277": {
-    "title": "Auditory Illusion Benchmark for Large Audio Language Models",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "该工作是对大型音频语言模型听觉错觉感知的认知评测，与空间智能、导航、机器人自主及具身评测均无实质关联，仅在大模型基准术语上擦边，属收录范围外。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02277"
-  },
-  "2609.02255": {
-    "title": "T2LSC-Bench: Benchmarking Localized Semantic Control in Text-to-Image Generation",
-    "relevance": 1,
-    "rigor": 7,
-    "reason": "该工作属于文生图（T2I）生成的诊断评测基准，落入研究范围明确排除的'文生图/文生视频'类目，与UAV目标搜索、VLN、ObjectNav及智能体基础能力均无实质关联。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02255"
-  },
-  "2609.02864": {
-    "title": "Thinking in Pictures: A Systematic Benchmark for Reasoning-driven Image Generation",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "属文生图/文生视频模型的评测范畴，虽强调视觉推理但与导航、空间智能、机器人自主均无实质关联，超出收录范围。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02864"
-  },
   "2609.02717": {
     "title": "MV-dVRK: A Multi-Viewpoint Benchmark for Spatial Surgical Perception",
     "relevance": 3,
@@ -2398,5 +2350,53 @@
     "reason": "属于将现成大模型/检索工具套用于医疗（乳腺病灶文献）垂直领域的RAG应用评测，与空间、导航、机器人均无关，且仅18文档小样本、存在检索参与标注的循环性，按范围规定应拒绝。",
     "rejected_at": "2026-10-23",
     "url": "https://arxiv.org/abs/2610.31606"
+  },
+  "2610.37599": {
+    "title": "MoI-Bench: A Benchmark for Image Generation and Editing on Mobile Devices",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该文是面向移动端的图像生成与编辑模型评测基准，属于文生图方向，与具身导航、UAV目标搜索、空间智能等收录技术线无实质关联，仅因'基准评测'形式术语擦边。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.37599"
+  },
+  "2610.37547": {
+    "title": "When, Where, and What to Correct: Human-Guided Adaptive Residual Correction for Robot Policies",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "核心内容为机械臂精密操作的策略后训练改进（人类引导的残差修正），属明确排除的机械臂操作/VLA控制范畴，不含任何导航决策成分。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.37547"
+  },
+  "2610.36996": {
+    "title": "Structure-Actuation Co-Design of All-Electric Heavy-Duty Robotic Manipulators",
+    "relevance": 1,
+    "rigor": 6,
+    "reason": "该文是机械臂结构与执行器选型的协同设计优化，不含导航决策、空间智能或收录范围内任一技术线成分，属明确排除的机械臂方向。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.36996"
+  },
+  "2610.36433": {
+    "title": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "将现成LLM多智能体框架与RAG套用于建筑安全公告生成这一垂直文本应用，与空间、导航、机器人均无关，属范围明确排除的应用类工作。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.36433"
+  },
+  "2610.37657": {
+    "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "该工作属于LLM提示注入安全防御研究，核心贡献是注意力门控式安全机制，不属于新模型、训练方法、推理/记忆/工具使用等模型与智能体能力进展的收录口径，且与空间智能、导航、机器人完全无关。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.37657"
+  },
+  "2610.36011": {
+    "title": "E0.5: From Reconstructive to Future-Predictive 3D Foundations for Robotic World-Action Modeling",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "属于面向机械臂操控的世界-动作模型与VLA式动作预测，实验与验证均在操作任务上，不含导航决策成分，属范围中明确排除的操控类工作。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.36011"
   }
 }

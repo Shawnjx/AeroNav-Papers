@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T09:38:39.944330+00:00",
+  "updated_at": "2026-10-28T10:39:52.394209+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1712,6 +1712,93 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.37111",
+      "arxiv_id": "2610.37111",
+      "title": "RAVEN: A Unified Active SLAM System for Rapid Autonomous Visual Exploration with Aerial Robots under Localization Uncertainty",
+      "authors": [
+        "Xinyi Chen",
+        "Yichen Zhang",
+        "Chenxing Jiang",
+        "Shaojie Shen"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37111",
+      "pdf_url": "https://arxiv.org/pdf/2610.37111",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 13,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RAVEN是四旋翼统一主动SLAM框架：由前沿与主动回环候选生成全局巡回路径，用效用向量分别量化探索效率与定位精度并按优先级选择，再以Fisher信息场引导轨迹生成，机载实飞验证。",
+      "change_zh": "多数主动SLAM面向地面平台且在探索与回环间隐式取舍；本文为四旋翼给出统一策略：用[0,1]优先级参数连续权衡覆盖扩展与主动回环，并以在线Fisher信息场实时量化视觉定位信息，引导感知友好轨迹生成。",
+      "why_it_matters": "对UAV主动目标搜索价值直接：搜索依赖对未知空间的高效覆盖，而长时定位漂移会破坏目标发现与接近；其探索-回环权衡与机载定位信息场为无GPS无人机自主探索提供可复用方案，亦属主动感知与SLAM核心进展。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "主动SLAM, 四旋翼无人机, 定位不确定性, 自主探索, Fisher信息场, 主动闭环",
+      "question_zh": "四旋翼无人机在定位不确定性下，如何统一规划探索与主动闭环，以兼顾建图覆盖效率与定位精度？",
+      "innovation_zh": "提出统一主动SLAM框架，将前沿点与主动闭环候选整合为全局路径候选，用效用向量分别量化探索效率与定位精度，并经[0,1]优先级参数按任务需求自适应调节侧重；再由基于在线Fisher信息场的感知感知导航规划器生成最小化视觉状态估计误差的平滑轨迹。",
+      "dataset_zh": "基准评测环境（具体仿真平台或数据集名称未提及）；真机实验采用定制的双目视觉-惯性四旋翼无人机平台，进行全机载野外实验",
+      "results_zh": "基准评测表明RAVEN优于现有最先进的主动SLAM方法，并能在不同优先级设定下产生覆盖性能谱系的多样化表现；四旋翼全机载真机野外实验进一步验证其在挑战性环境中的实用可行性。摘要中未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "localization",
+        "slam",
+        "state estimation"
+      ],
+      "added_at": "2026-10-28T10:23:06.152483+00:00"
+    },
+    {
+      "id": "2610.37543",
+      "arxiv_id": "2610.37543",
+      "title": "Rendering-Free Event Frame Simulation for Fast Reinforcement Learning of Autonomous Robot Navigation",
+      "authors": [
+        "Dequan Ou",
+        "Austin Lopez",
+        "Quentin Missinne",
+        "Christophe De Wagter",
+        "Guido C. H. E. de Croon"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37543",
+      "pdf_url": "https://arxiv.org/pdf/2610.37543",
+      "code_url": "https://github.com/tudelft/rendering-free-event-nav",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出免渲染的解析式事件仿真器，直接由场景几何与自运动合成事件流，比渲染管线快逾400倍，使无人机避障强化学习30分钟内收敛，int8策略零样本部署到56克Crazyflie真机，成功率82%。",
+      "change_zh": "常见路线先渲染逼真图像再转换为事件，速度慢。本文绕开渲染，利用事件相机只感知运动对比边缘的原理，直接从场景几何与自运动解析生成事件帧，提速400倍以上，把RL训练从数天级缩至30分钟，并以int8量化实现机载部署。",
+      "why_it_matters": "为微型无人机自主导航提供低成本训练通路：免渲染仿真把避障策略训练从天级缩到半小时，配合零样本迁移与56克平台机载推理，可直接支撑功耗与算力受限的搜救侦察类UAV目标搜索任务，也示范了事件相机的Sim2Real可行范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "drone",
+        "geometry"
+      ],
+      "added_at": "2026-10-28T10:31:32.124345+00:00"
+    },
+    {
       "id": "2610.30609",
       "arxiv_id": "2610.30609",
       "title": "KinoUAV: A Benchmark for Safe and Stable UAV Vision-Language Navigation with Kinodynamic Modeling",
@@ -2370,6 +2457,54 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.36968",
+      "arxiv_id": "2610.36968",
+      "title": "Omni-IGN: Onboard Image-Goal Navigation for Drones with Omnidirectional Vision",
+      "authors": [
+        "Zichen Yan",
+        "Rui Huang",
+        "Shenao Wang",
+        "Yucong Wang",
+        "Nuthasith Gerdpratoom",
+        "Lin Zhao"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.36968",
+      "pdf_url": "https://arxiv.org/pdf/2610.36968",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Omni-IGN是全机载无人机图像目标导航系统：四鱼眼全向RGB兼顾目标匹配与避障，注意力RL策略融合多视角线索并有碰撞安全层，在Habitat连续动作基线中最优，零样本迁移真机。",
+      "change_zh": "现有航拍ImageNav基于单视角观测，需额外旋转探索寻找视野外目标线索；本文改为四鱼眼全向输入，注意力融合各视角目标特征直接给导航方向，且用RGB估计深度替代专用传感器，实现全机载与零样本实机迁移。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav直接相关：全向感知让目标线索同帧可得，省去旋转搜索，提高探索效率；免深度传感器的机载避障与零样本sim-to-real为搜救侦察等真机任务提供可落地的系统范式。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "图像目标导航, 无人机, 全向视觉, 强化学习, 避障, 仿真到现实迁移",
+      "question_zh": "无人机在机载算力受限条件下，如何利用全向视觉感知在未知环境中完成图像目标导航并实现避障？",
+      "innovation_zh": "相比依赖单视角观测、需额外旋转搜索目标线索的已有方法，Omni-IGN采用四鱼眼全向感知，通过注意力强化学习策略自适应融合多视角目标相关特征提供方向指引，并以RGB图像同时支撑导航与避障，无需专用深度传感器，再叠加碰撞感知安全层实现全机载运行。",
+      "dataset_zh": "Habitat基准测试，IsaacSim仿真飞行测试，以及真实世界无人机实验平台（真机）",
+      "results_zh": "在Habitat基准上，Omni-IGN在连续动作基线方法中取得最佳性能；IsaacSim飞行测试验证了学习式深度估计与动作安全层相结合进行避障的有效性；真实世界实验实现零样本仿真到现实迁移，无需任何微调或外部定位。摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "drone",
+        "exploration",
+        "localization"
+      ],
+      "added_at": "2026-10-28T10:24:16.815991+00:00"
     },
     {
       "id": "2610.29699",
@@ -6639,6 +6774,48 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.37567",
+      "arxiv_id": "2610.37567",
+      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37567",
+      "pdf_url": "https://arxiv.org/pdf/2610.37567",
+      "code_url": "",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Gym-Anything-RT 用智能体流水线按六类实时交互能力自动生成100个视觉小游戏，支持实时、暂停、减速的受控对比，发现前沿视觉语言智能体实时通过率仅9%，暂停环境后升至75%。",
+      "change_zh": "相比常见回合式智能体基准，该工作将「推理期间环境仍持续演化」的实时性变为受控变量：同一游戏可实时、暂停或减速运行以剥离时间压力，并以智能体流水线按能力分类法自动批量生成环境，实现规模化实时评测。",
+      "why_it_matters": "实时感知-行动闭环是UAV主动目标搜索与ObjectNav落地的核心约束：目标与平台持续运动，推理期间环境已改变。该基准量化了此瓶颈并揭示智能体用代码绕开实时感知，为具身导航的模型选型与延迟预算设计提供证据。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "实时交互，视觉语言智能体，智能体评估，微型游戏，环境自动生成",
+      "question_zh": "视觉语言智能体在需要实时交互的环境（如游戏或设备操作）中表现如何？如何系统评估其实时感知与行动能力？",
+      "innovation_zh": "提出Gym-Anything-RT，用智能体流水线基于六项实时交互能力分类法自动生成视觉微型游戏；同一小游戏可实时、暂停或减速运行，实现受控对比，分离出已有非实时评测无法测量的实时交互能力。",
+      "dataset_zh": "自建的Gym-Anything-RT环境平台及其自动生成的100个实时微型小游戏（已公开发布）",
+      "results_zh": "在100个实时小游戏上评估发现智能体实时交互能力差距巨大：GPT-6 Astra (xHigh)实时通过率仅9.0%，环境暂停后升至75.0%；最强前沿智能体在可编写代码时会写代码绕过实时感知与行动的需求。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "agentic",
+        "language agent"
+      ],
+      "added_at": "2026-10-28T10:34:52.140321+00:00"
+    },
+    {
       "id": "2610.31494",
       "arxiv_id": "2610.31494",
       "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
@@ -8820,6 +8997,111 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.37203",
+      "arxiv_id": "2610.37203",
+      "title": "Remember Where You Walk: Learning Spatial Memory for End-to-End Legged Robot Exploration",
+      "authors": [
+        "Leon Magnus",
+        "Nico Bohlinger",
+        "Jan Peters",
+        "Oleg Arenz"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37203",
+      "pdf_url": "https://arxiv.org/pdf/2610.37203",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "面向腿式机器人长时记忆难题，提出基于Hadamard记忆的局部空间矩阵记忆LSMM，让RL策略按位置存储任务信息；在迷宫探索中覆盖率持平强基线，且唯一重建迷宫布局，误差降三倍。",
+      "change_zh": "常见路线用LSTM等循环网络与策略端到端训练，但长时程信息易丢失；LSMM改为在按位置索引的矩阵记忆单元中写入通用任务信息，把地图式空间接地与可微分端到端RL训练结合，兼顾显式空间索引与记忆灵活性。",
+      "why_it_matters": "空间记忆是主动搜索与导航的核心瓶颈：UAV搜救需记住已扫区域避免重复飞行，ObjectNav需记住已探索房间与失败目标位置。LSMM的按位置索引、可端到端训练的记忆机制，可为导航策略提供地图式长时记忆，直接支撑探索效率与回访规避。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "足式机器人, 强化学习, 空间记忆, 端到端探索, 迷宫导航, Hadamard记忆",
+      "question_zh": "腿式机器人在端到端强化学习探索中，如何长期记忆离开视野的任务相关信息（如走过的环境布局）？",
+      "innovation_zh": "提出基于Hadamard记忆的局部空间矩阵记忆（LSMM）架构，让强化学习智能体把通用任务相关信息存入基于位置的记忆单元，实现空间锚定的灵活记忆，克服LSTM等循环网络难以长期保持信息的不足。",
+      "dataset_zh": "自主迷宫探索任务；具体数据集、仿真环境或真机平台未提及",
+      "results_zh": "在自主迷宫探索任务上，LSMM达到与强循环网络及有限历史基线相当的迷宫覆盖率，且是唯一能记住迷宫布局的架构，迷宫重建误差降低三倍。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "exploration",
+        "spatial memory"
+      ],
+      "added_at": "2026-10-28T10:26:34.108190+00:00"
+    },
+    {
+      "id": "2610.36077",
+      "arxiv_id": "2610.36077",
+      "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+      "authors": [
+        "Weidong Tang",
+        "Ruiheng Wang",
+        "Jingxuan Zhang",
+        "Hexin Wang",
+        "Haoyuan Chen",
+        "Zhengfeiyang Zhang",
+        "Yixing Ma",
+        "Zichen Jiang",
+        "Ziyu Guo",
+        "Haodong Li",
+        "Zhengbo Jiao",
+        "Zhiqing Cui",
+        "Xinxiang Yin",
+        "Shuo Liang",
+        "Zhenglin Wan",
+        "Hongzhan Lin",
+        "Wangbo Zhao Kaipeng Zhang",
+        "Pengfei Zhou",
+        "Odin Zhang",
+        "Yang You"
+      ],
+      "published": "2026-10-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.36077",
+      "pdf_url": "https://arxiv.org/pdf/2610.36077",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出递归自我改进框架，以创造者、探索者、演化者三角色耦合世界生成与智能体框架演化，按共享能力把任务树重组为能力树，经Real2Sim2Real学习可迁移能力，在28个训练与18个未见基准及真机任务上大幅提升性能。",
+      "change_zh": "相比人工构建环境、固定Agent框架的常规路线，本文把任务组织从表层类别改为共享能力需求，用Real2Sim2Real生成可验证简化世界做能力学习并回评原任务测迁移，再让Harness沿能力树选择性继承演化、按任务路由复用，实现环境与框架协同自动进化。",
+      "why_it_matters": "其能力驱动的环境自动生成与可验证简化世界，可降低UAV主动目标搜索、ObjectNav等具身任务的环境构建与训练成本；能力树加可复用Harness支持多样任务持续自我提升，Real2Sim2Real与两项目真实机任务验证为Sim2Real迁移提供路径参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "多模态智能体, 递归自我改进, 能力树, Real2Sim2Real, Harness演化, 世界生成",
+      "question_zh": "如何突破多模态智能体规模化中异构可验证环境构建成本高、人工Harness迭代滞后于任务多样性的双重瓶颈？",
+      "innovation_zh": "提出Creator、Explorer、Evolver三角色耦合的递归自改进框架，按共享能力需求而非表面类别将任务重组为层级能力树，引入能力驱动的Real2Sim2Real生成可验证仿真世界用于能力学习，并通过选择性继承形成固定拓扑的Harness树及能力感知路由器，区别于以往人工构建环境和人工迭代Harness的方式。",
+      "dataset_zh": "28个训练基准和18个未见基准（含两个真实世界具身任务），以及Creator从异构任务中抽象生成的简化可验证仿真世界；具体基准名称未提及",
+      "results_zh": "演化后的Harness在28个训练基准上平均性能提升34分，在18个未见基准上提升26分，其中包括两个真实世界具身任务，表明所学能力模块具有良好的跨任务泛化与真机迁移能力。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "multimodal agent",
+        "sim2real"
+      ],
+      "added_at": "2026-10-28T10:25:39.502877+00:00"
     },
     {
       "id": "2610.30127",
@@ -18765,6 +19047,131 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.37613",
+      "arxiv_id": "2610.37613",
+      "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
+      "authors": [
+        "Shilong Li",
+        "Xingyuan Bu",
+        "Hao Shi",
+        "Yun Xing",
+        "Weixin Feng",
+        "Qiangpeng Yang",
+        "Shilei Wen"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37613",
+      "pdf_url": "https://arxiv.org/pdf/2610.37613",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对MLLM视频推理中语言思维链造成视觉遗忘的问题，VideoLVR从相关时刻局部区域构造潜在视觉证据，以视觉token预测目标统一视觉重建与文本生成，并把视觉token视作动作纳入强化学习联合优化，多基准实验验证了有效性。",
+      "change_zh": "常见做法用文本坐标引用证据，或把裁剪区域/帧重新插入上下文：前者仅符号定位，后者致上下文膨胀；本文改为在token空间构造潜在视觉证据，以统一token预测同时支撑视觉重建与文本生成，并把视觉token作为动作纳入强化学习联合优化。",
+      "why_it_matters": "它是多模态大模型与智能体线中推理期视觉记忆与证据回访机制的重要进展；对UAV主动目标搜索与ObjectNav，潜在视觉证据与统一token训练有望迁移到长时程观测回访、缓解视觉遗忘，但论文未在导航或机器人场景验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-28T10:32:31.536874+00:00"
+    },
+    {
+      "id": "2610.37649",
+      "arxiv_id": "2610.37649",
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "authors": [
+        "Zhen Yang",
+        "Wen Wang",
+        "Xander Xu",
+        "Ying-Cong Chen"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37649",
+      "pdf_url": "https://arxiv.org/pdf/2610.37649",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出LongChang自动评测框架，构建物理规律被修改的模拟世界，让LLM在不给任务与提示的条件下自由探索并发现隐藏定律，多智能体自动生成与评审场景；12个模型中仅GPT-6-Astra达16.7%发现率，其余为0。",
+      "change_zh": "常见LLM评测均给定明确任务或提示词，该工作改为完全开放式探索：模型须自己察觉'重物落得更慢'等异常、主动提出问题并设计实验求证；同时用多智能体自动生成场景、审查工具与报告，实现无人干预的全自动评测闭环，而非依赖人工出题与判卷。",
+      "why_it_matters": "该工作直指智能体'无提示自主探索与求证'能力，这正是UAV主动目标搜索与ObjectNav的核心环节——需自主决定看什么、验证什么；结果暴露主流LLM该能力几乎为零，为具身导航智能体的自主性设计与世界物理理解敲响警钟。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "exploration",
+        "llm agent"
+      ],
+      "added_at": "2026-10-28T10:33:38.465287+00:00"
+    },
+    {
+      "id": "2610.36312",
+      "arxiv_id": "2610.36312",
+      "title": "SG^2SLAM: Spatial Geometry-Informed 3D Gaussian Splatting SLAM for Monocular Outdoor Navigation",
+      "authors": [
+        "Ziang Guo",
+        "Didar Seyidov",
+        "Yixiao Zhou",
+        "Xuefeng Zhang",
+        "Ali Alridha Abdulkarim",
+        "Chen Min",
+        "Zufeng Zhang",
+        "Dzmitry Tsetserukou"
+      ],
+      "published": "2026-10-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.36312",
+      "pdf_url": "https://arxiv.org/pdf/2610.36312",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SG^2SLAM面向单目室外导航：以流式空间几何的块级度量先验统一监督跟踪与建图，光线条件化高斯核感知视角子空间，联合优化位姿与几何，在KITTI与Waymo上超越逐帧关联基线。",
+      "change_zh": "常见3DGS-SLAM逐帧做2D-3D像素关联，跟踪误差被地图吸收产生级联退化；本文改为块级度量先验统一监督跟踪与建图，并给高斯基元加视角子空间以适配单目观测，联合优化几何与位姿保证全局一致。",
+      "why_it_matters": "单目轻量配置契合无人机等载荷受限平台的室外自主；可靠位姿与稠密可导航地图是UAV目标搜索与户外ObjectNav的底层支撑，缓解模块化SLAM误差级联可为下游导航提供更一致的几何。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "geometry",
+        "slam"
+      ],
+      "added_at": "2026-10-28T10:28:43.413200+00:00"
+    },
+    {
       "id": "2610.27315",
       "arxiv_id": "2610.27315",
       "title": "Design and Control of a Multimodal Legged-Aerial Robot Through Separate Control Contraction Metrics",
@@ -20061,6 +20468,48 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.36454",
+      "arxiv_id": "2610.36454",
+      "title": "SVIn+: Multi-Modal Framework for Robust Underwater State Estimation using 3D Sonar, Visual-Inertial, Water-Pressure, and DVL",
+      "authors": [
+        "Chinmay Burgul",
+        "Xiaoming Zhao",
+        "Yewei Huang",
+        "Michalis Chatzispyrou",
+        "Marios Xanthidis",
+        "Ioannis Rekleitis",
+        "Alberto Quattrini Li"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.36454",
+      "pdf_url": "https://arxiv.org/pdf/2610.36454",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SVIn+为AUV提出多模态紧耦合状态估计：在视觉惯性SLAM上融合水压与DVL，并以KISS-ICP前端将3D声呐作为相对位姿因子并入因子图，实海部署验证漂移抑制与全局一致性。",
+      "change_zh": "相比常见仅靠视觉惯性或滤波式融合的水下方案，该工作把水压与DVL纳入紧耦合非线性优化，并用解耦的KISS-ICP声呐前端生成相对位姿因子而非直接融合原始声呐，兼顾结构信息利用与计算效率。",
+      "why_it_matters": "对状态估计与控制线有直接价值：因子图多源融合与\"解耦里程计作相对位姿因子\"的思路可迁移至GPS拒止、低能见度场景的UAV导航；对UAV主动目标搜索与ObjectNav仅为底层定位支撑，属间接相关。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "deployment",
+        "slam",
+        "state estimation"
+      ],
+      "added_at": "2026-10-28T10:27:36.585090+00:00"
     },
     {
       "id": "2610.29438",
@@ -21970,6 +22419,55 @@
         "drone"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.37341",
+      "arxiv_id": "2610.37341",
+      "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
+      "authors": [
+        "Jiafu Tang",
+        "Yifan Xu",
+        "Eric Tang",
+        "Junjie Zhao",
+        "Shipeng Luo",
+        "Te Sun",
+        "Haoxuan Hu",
+        "Yiyan Ji",
+        "Xinlong Chen",
+        "Zihao Wang",
+        "Yang Shi",
+        "Yuanxing Zhang",
+        "Pengfei Wan",
+        "Jiaheng Liu"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.37341",
+      "pdf_url": "https://arxiv.org/pdf/2610.37341",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出以可执行代码做视频字幕：代码字幕在下游问答与视频重建上优于自然语言；并发布323段结构化2D视频基准CodeCap-Bench，多级评测显示主流MLLM难忠实表达复杂时序。",
+      "change_zh": "常见视频字幕以自然语言为主，本文改用可执行程序表示视频：以图形基元、布局规则与时间函数刻画时空内容，并以可验证的视频重建保真度取代纯文本相似度来检验字幕质量，同时系统评测MLLM的代码字幕生成能力。",
+      "why_it_matters": "为多模态大模型线提供能力评测：代码式表示显式编码空间结构与时序动态，可为空间智能与世界模型提供可执行、可验证的中间表示；但对UAV目标搜索与ObjectNav无直接方法贡献，价值在表示与评测启发。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "evaluation",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-28T10:36:54.894525+00:00"
     },
     {
       "id": "2610.31376",
@@ -25804,200 +26302,96 @@
     }
   ],
   "briefing": {
-    "text": "",
-    "added": 24,
-    "at": "2026-10-27T09:38:42.892326+00:00",
+    "text": "今日主线是具身探索与导航加速走向机载实时化，旁及多模态智能体评测。首推RAVEN，它在定位不确定下以效用向量统一探索与回环的取舍，经机载实飞验证；Omni-IGN用四鱼眼全向视觉实现全机载图像目标导航，在Habitat连续动作基线中最优且零样本迁移真机；Rendering-Free Event Frame Simulation以解析式事件合成替代渲染管线，提速逾400倍，使避障RL半小时收敛并部署到56克Crazyflie。趋势上，研究重心正从离线模型评测转向机载实时闭环与Sim2Real落地。",
+    "added": 11,
+    "at": "2026-10-28T10:41:06.560800+00:00",
     "new": [
       {
-        "t": "Extended LASMP: Language Aided Subset Sampling Based Motion Planner for Drone Navigation",
-        "u": "https://arxiv.org/abs/2610.34054",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空域 VLN、UAV 目标搜索，主要研究问题可概括为：Extended LASMP: Language Aided Subset Sampling Based Motion Planner for Drone Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "RAVEN: A Unified Active SLAM System for Rapid Autonomous Visual Exploration with Aerial Robots under Localization Uncertainty",
+        "u": "https://arxiv.org/abs/2610.37111",
+        "r": 9,
+        "g": 8,
+        "s": "RAVEN是四旋翼统一主动SLAM框架：由前沿与主动回环候选生成全局巡回路径，用效用向量分别量化探索效率与定位精度并按优先级选择，再以Fisher信息场引导轨迹生成，机载实飞验证。",
         "c": ""
       },
       {
-        "t": "HARP: Handoff-Aware Recovery Planning for Active Target Acquisition in Multi-UAV Handoff",
-        "u": "https://arxiv.org/abs/2610.33640",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：HARP: Handoff-Aware Recovery Planning for Active Target Acquisition in Multi-UAV Handoff。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Omni-IGN: Onboard Image-Goal Navigation for Drones with Omnidirectional Vision",
+        "u": "https://arxiv.org/abs/2610.36968",
+        "r": 9,
+        "g": 8,
+        "s": "Omni-IGN是全机载无人机图像目标导航系统：四鱼眼全向RGB兼顾目标匹配与避障，注意力RL策略融合多视角线索并有碰撞安全层，在Habitat连续动作基线中最优，零样本迁移真机。",
         "c": ""
       },
       {
-        "t": "VisGeo-PipeTrack: A Visual Geometric Servo Control Framework with MPC-RCAPID Control for UAV-Based Dynamic Pipes Tracking",
-        "u": "https://arxiv.org/abs/2610.35342",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：VisGeo-PipeTrack: A Visual Geometric Servo Control Framework with MPC-RCAPID Control for UAV-Based Dynamic Pipes Tracking。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+        "u": "https://arxiv.org/abs/2610.36077",
+        "r": 8,
+        "g": 7,
+        "s": "提出递归自我改进框架，以创造者、探索者、演化者三角色耦合世界生成与智能体框架演化，按共享能力把任务树重组为能力树，经Real2Sim2Real学习可迁移能力，在28个训练与18个未见基准及真机任务上大幅提升性能。",
         "c": ""
       },
       {
-        "t": "Behavior Spatial Benchmark: Evaluating Spatial Understanding for Robotics",
-        "u": "https://arxiv.org/abs/2610.34051",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、空间智能，主要研究问题可概括为：Behavior Spatial Benchmark: Evaluating Spatial Understanding for Robotics。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Remember Where You Walk: Learning Spatial Memory for End-to-End Legged Robot Exploration",
+        "u": "https://arxiv.org/abs/2610.37203",
+        "r": 8,
+        "g": 7,
+        "s": "面向腿式机器人长时记忆难题，提出基于Hadamard记忆的局部空间矩阵记忆LSMM，让RL策略按位置存储任务信息；在迷宫探索中覆盖率持平强基线，且唯一重建迷宫布局，误差降三倍。",
         "c": ""
       },
       {
-        "t": "Localization-Uncertainty-Aware UAV Swarm Search for GNSS-Denied Maritime Surveillance",
-        "u": "https://arxiv.org/abs/2610.34873",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：Localization-Uncertainty-Aware UAV Swarm Search for GNSS-Denied Maritime Surveillance。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "SVIn+: Multi-Modal Framework for Robust Underwater State Estimation using 3D Sonar, Visual-Inertial, Water-Pressure, and DVL",
+        "u": "https://arxiv.org/abs/2610.36454",
+        "r": 6,
+        "g": 7,
+        "s": "SVIn+为AUV提出多模态紧耦合状态估计：在视觉惯性SLAM上融合水压与DVL，并以KISS-ICP前端将3D声呐作为相对位姿因子并入因子图，实海部署验证漂移抑制与全局一致性。",
         "c": ""
       },
       {
-        "t": "Preemptive Instruction Following with Resumption",
-        "u": "https://arxiv.org/abs/2610.35576",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空域 VLN、地面 VLN，主要研究问题可概括为：Preemptive Instruction Following with Resumption。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "SG^2SLAM: Spatial Geometry-Informed 3D Gaussian Splatting SLAM for Monocular Outdoor Navigation",
+        "u": "https://arxiv.org/abs/2610.36312",
+        "r": 7,
+        "g": 6,
+        "s": "SG^2SLAM面向单目室外导航：以流式空间几何的块级度量先验统一监督跟踪与建图，光线条件化高斯核感知视角子空间，联合优化位姿与几何，在KITTI与Waymo上超越逐帧关联基线。",
         "c": ""
       },
       {
-        "t": "MemVLN: Streaming Episodic Memory for Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.35066",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、空域 VLN，主要研究问题可概括为：MemVLN: Streaming Episodic Memory for Vision-Language Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Rendering-Free Event Frame Simulation for Fast Reinforcement Learning of Autonomous Robot Navigation",
+        "u": "https://arxiv.org/abs/2610.37543",
+        "r": 9,
+        "g": 8,
+        "s": "提出免渲染的解析式事件仿真器，直接由场景几何与自运动合成事件流，比渲染管线快逾400倍，使无人机避障强化学习30分钟内收敛，int8策略零样本部署到56克Crazyflie真机，成功率82%。",
+        "c": "https://github.com/tudelft/rendering-free-event-nav"
+      },
+      {
+        "t": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
+        "u": "https://arxiv.org/abs/2610.37613",
+        "r": 7,
+        "g": 6,
+        "s": "针对MLLM视频推理中语言思维链造成视觉遗忘的问题，VideoLVR从相关时刻局部区域构造潜在视觉证据，以视觉token预测目标统一视觉重建与文本生成，并把视觉token视作动作纳入强化学习联合优化，多基准实验验证了有效性。",
         "c": ""
       },
       {
-        "t": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy",
-        "u": "https://arxiv.org/abs/2610.35832",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、空域 VLN，主要研究问题可概括为：Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+        "u": "https://arxiv.org/abs/2610.37649",
+        "r": 7,
+        "g": 6,
+        "s": "提出LongChang自动评测框架，构建物理规律被修改的模拟世界，让LLM在不给任务与提示的条件下自由探索并发现隐藏定律，多智能体自动生成与评审场景；12个模型中仅GPT-6-Astra达16.7%发现率，其余为0。",
         "c": ""
       },
       {
-        "t": "FISRF: Flexible Instructional Scaffolding Reflection Framework for Robotics Task Planning with Large Language Model",
-        "u": "https://arxiv.org/abs/2610.35686",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空域 VLN、规划智能体，主要研究问题可概括为：FISRF: Flexible Instructional Scaffolding Reflection Framework for Robotics Task Planning with Large Language Model。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+        "u": "https://arxiv.org/abs/2610.37567",
+        "r": 8,
+        "g": 8,
+        "s": "Gym-Anything-RT 用智能体流水线按六类实时交互能力自动生成100个视觉小游戏，支持实时、暂停、减速的受控对比，发现前沿视觉语言智能体实时通过率仅9%，暂停环境后升至75%。",
         "c": ""
       },
       {
-        "t": "VISTA: Active Exploration for Self-Improvement in Embodied Agents",
-        "u": "https://arxiv.org/abs/2610.35051",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦主动感知与重建、空域 VLN，主要研究问题可概括为：VISTA: Active Exploration for Self-Improvement in Embodied Agents。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
-        "u": "https://arxiv.org/abs/2610.35385",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、状态估计与控制，主要研究问题可概括为：EmbodiedLab: Benchmarking Embodied Agents That Act to Know。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/HexaFuture/EmbodiedLab"
-      },
-      {
-        "t": "Benchmarking Obstacle-Conditioned Safety in Household Robot Navigation",
-        "u": "https://arxiv.org/abs/2610.34674",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、多模态大模型与智能体，主要研究问题可概括为：Benchmarking Obstacle-Conditioned Safety in Household Robot Navigation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Video World Models Need Predictable Latents",
-        "u": "https://arxiv.org/abs/2610.34663",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、空间智能，主要研究问题可概括为：Video World Models Need Predictable Latents。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "VPR-Space: A Benchmark for Visual Place Recognition in Space Analog Domains",
-        "u": "https://arxiv.org/abs/2610.35642",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、状态估计与控制，主要研究问题可概括为：VPR-Space: A Benchmark for Visual Place Recognition in Space Analog Domains。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/rfechner/VPR-Space"
-      },
-      {
-        "t": "Synthetic Deformable Tubular Benchmark: A mechanically annotated dataset for evaluating deformable 3D reconstruction",
-        "u": "https://arxiv.org/abs/2610.35621",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、空间智能，主要研究问题可概括为：Synthetic Deformable Tubular Benchmark: A mechanically annotated dataset for evaluating deformable 3D reconstruction。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "How Humans Learn Unfamiliar Worlds: A Think-Aloud Dataset on ARC-AGI-3",
-        "u": "https://arxiv.org/abs/2610.34523",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、多模态大模型与智能体，主要研究问题可概括为：How Humans Learn Unfamiliar Worlds: A Think-Aloud Dataset on ARC-AGI-3。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Adapt for Planning, Not just Prediction: Optimistic Test-Time World Model Adaptation",
-        "u": "https://arxiv.org/abs/2610.35636",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、真机与 Sim2Real，主要研究问题可概括为：Adapt for Planning, Not just Prediction: Optimistic Test-Time World Model Adaptation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments",
-        "u": "https://arxiv.org/abs/2610.34745",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、真机与 Sim2Real，主要研究问题可概括为：SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI",
-        "u": "https://arxiv.org/abs/2610.35725",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Beyond Federated Learning: Decentralized Agentic Systems for Self-Evolving Clinical Intelligence",
-        "u": "https://arxiv.org/abs/2610.35453",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、真机与 Sim2Real，主要研究问题可概括为：Beyond Federated Learning: Decentralized Agentic Systems for Self-Evolving Clinical Intelligence。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
-        "u": "https://arxiv.org/abs/2610.35293",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Agentic Algorithm Design: LLMs that Propose, Formalise, and Prove Runtime Bounds for Evolutionary Algorithms in Lean",
-        "u": "https://arxiv.org/abs/2610.35595",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：Agentic Algorithm Design: LLMs that Propose, Formalise, and Prove Runtime Bounds for Evolutionary Algorithms in Lean。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Learning High-Quality Pseudo-Labels for Point-Supervised Temporal Action Localization",
-        "u": "https://arxiv.org/abs/2610.35516",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦状态估计与控制、具身基准与评测，主要研究问题可概括为：Learning High-Quality Pseudo-Labels for Point-Supervised Temporal Action Localization。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/zhenyingfang/LHQP"
-      },
-      {
-        "t": "Doppler-aided Position-Velocity Tracking of Hidden Objects using mmWave Radar",
-        "u": "https://arxiv.org/abs/2610.34085",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦空间智能、具身基准与评测，主要研究问题可概括为：Doppler-aided Position-Velocity Tracking of Hidden Objects using mmWave Radar。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
+        "u": "https://arxiv.org/abs/2610.37341",
+        "r": 6,
+        "g": 6,
+        "s": "提出以可执行代码做视频字幕：代码字幕在下游问答与视频重建上优于自然语言；并发布323段结构化2D视频基准CodeCap-Bench，多级评测显示主流MLLM难忠实表达复杂时序。",
         "c": ""
       }
     ]
