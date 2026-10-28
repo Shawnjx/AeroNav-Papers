@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T09:32:53.789517+00:00",
+  "updated_at": "2026-10-28T16:33:46.419758+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -4046,6 +4046,49 @@
       "added_at": "2026-10-16T08:04:22.322966+00:00"
     },
     {
+      "id": "2204.01691",
+      "arxiv_id": "2204.01691",
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "authors": [
+        "Ahn, Michael",
+        "Anthony Brohan",
+        "Noah Brown",
+        "Yevgen Chebotar",
+        "Cortes, Omar",
+        "Byron L. David",
+        "Chelsea Finn",
+        "Fu, Chuyuan",
+        "Keerthana Gopalakrishnan",
+        "Karol Hausman",
+        "Alex Herzog",
+        "Daniel W. C. Ho"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 624,
+      "url": "https://arxiv.org/abs/2204.01691",
+      "pdf_url": "https://arxiv.org/pdf/2204.01691",
+      "code_url": "",
+      "topics": [
+        "规划智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SayCan用预训练技能的价值函数为大语言模型提供真实世界可供性接地：LLM贡献任务语义知识，价值函数保证动作物理可行，两者结合使移动操作机器人在真实厨房环境中完成长时域抽象自然语言指令。",
+      "change_zh": "相比让LLM直接输出文本计划（常不可执行）或仅靠端到端策略跟随窄指令，本文将LLM对动作的语言似然与各技能的价值函数（可供性）相乘，筛选既语义合理又物理可行的技能序列，实现高层语义知识与具体环境的接地结合。",
+      "why_it_matters": "作为LLM与具身技能接地的奠基性规划智能体工作，它确立了语义先验+可行性约束的任务规划范式；该思路可直接迁移到UAV主动目标搜索与ObjectNav：用LLM选择高层目标与动作、用技能价值或可达性约束物理可行性，衔接语义规划与导航执行。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T16:33:46.419758+00:00"
+    },
+    {
       "id": "2104.10831",
       "arxiv_id": "2104.10831",
       "title": "LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping",
@@ -4320,6 +4363,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-12T19:36:34.117420+00:00"
+    },
+    {
+      "id": "2210.03629",
+      "arxiv_id": "2210.03629",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": [
+        "Yao, Shunyu",
+        "Jeffrey W. Zhao",
+        "Dian Yu",
+        "Nan Du",
+        "Izhak Shafran J",
+        "Karthik Narasimhan",
+        "Yuan Cao"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 603,
+      "url": "https://arxiv.org/abs/2210.03629",
+      "pdf_url": "https://arxiv.org/pdf/2210.03629",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出ReAct范式，让LLM交替生成推理轨迹与任务动作：推理用于制定、跟踪行动计划并处理异常，动作用于与环境或知识库交互获取信息，在问答、事实验证与交互决策基准上超越强基线。",
+      "change_zh": "以往将链式推理与动作生成分开研究，ReAct把两者交错融合为统一循环：推理驱动规划与纠错，行动从外部环境获取观测，从而仅凭少量上下文示例即得到可解释的智能体轨迹，无需微调或强化学习。",
+      "why_it_matters": "ReAct是LLM智能体的奠基性框架，其推理-行动交错与工具调用范式是后续具身导航LLM规划器与VLN智能体的通用底座，可迁移至UAV主动目标搜索的任务分解与ObjectNav的语义推理反馈闭环，属基础能力线核心文献。",
+      "relevance_rating": 9,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T16:33:46.419758+00:00"
     },
     {
       "id": "2404.15506",
@@ -13259,6 +13340,42 @@
       "added_at": "2026-10-21T08:28:28.445067+00:00"
     },
     {
+      "id": "https://openalex.org/W4402354022",
+      "arxiv_id": "",
+      "title": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+      "authors": [
+        "Abdelrhman Werby",
+        "Chenguang Huang",
+        "Martin Büchner",
+        "Abhinav Valada",
+        "Wolfram Burgard"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Robotics: Science and Systems",
+      "citation_count": 123,
+      "url": "https://doi.org/10.15607/rss.2024.xx.077",
+      "pdf_url": "https://doi.org/10.15607/rss.2024.xx.077",
+      "code_url": "",
+      "topics": [
+        "空间智能"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HOV-SG构建楼层-房间-物体三层开放词汇3D场景图，融合视觉语言基础模型特征，支持多楼层语言条件导航，在三个数据集上物体/房间/楼层级语义精度超越基线，表示规模较稠密开放词汇地图缩减75%。",
+      "change_zh": "常见开放词汇建图以稠密点级特征逐点响应语言查询，难以扩展到大场景及物体级以上的抽象查询；本文改为分层场景图，将开放词汇特征聚合到楼层/房间/物体节点，并以跨楼层Voronoi图支撑多楼层长程导航，同时大幅压缩表示规模。",
+      "why_it_matters": "为ObjectNav与开放词汇目标导航提供了可扩展的层级空间记忆，使机器人能理解房间级、楼层级抽象指令并完成跨楼层长程导航；其紧凑的开放词汇场景图也可迁移为UAV在多层建筑内语义建图与目标搜索的表征基础，真机多楼层验证增强了实用价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "3d scene"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T16:33:46.419758+00:00"
+    },
+    {
       "id": "https://openalex.org/W4409201921",
       "arxiv_id": "",
       "title": "Gnss-denied unmanned aerial vehicle navigation: analyzing computational complexity, sensor fusion, and localization methodologies",
@@ -13937,6 +14054,52 @@
       "keywords": [],
       "is_classic": true,
       "added_at": "2026-10-20T14:40:02.233414+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4402353981",
+      "arxiv_id": "",
+      "title": "NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation",
+      "authors": [
+        "Jiazhao Zhang",
+        "Kunyu Wang",
+        "Rongtao Xu",
+        "Gengze Zhou",
+        "Yicong Hong",
+        "Xiaomeng Fang",
+        "Qi Wu",
+        "Zhizheng Zhang",
+        "He Wang"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Robotics: Science and Systems",
+      "citation_count": 103,
+      "url": "https://doi.org/10.15607/rss.2024.xx.079",
+      "pdf_url": "https://doi.org/10.15607/rss.2024.xx.079",
+      "code_url": "",
+      "topics": [
+        "地面 VLN"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "NaVid提出仅靠单目RGB视频流的视频大模型导航方法，无需地图、里程计或深度输入即可跟随指令输出下一步动作，用510k导航样本与763k网络数据训练，仿真与真机均达SOTA。",
+      "change_zh": "常见VLN路线依赖地图、深度与里程计等模块化输入且多停留在仿真；NaVid改为纯RGB视频端到端建模，以视频VLM将历史观测编码为时空上下文用于决策，从根本上绕开里程计噪声与地图/深度引入的Sim2Real鸿沟。",
+      "why_it_matters": "为地面VLN提供了免地图免深度、可直接Sim2Real迁移的VLM范式；其视频时空上下文建模与跨数据集泛化思路，对ObjectNav开放目标搜索乃至UAV主动目标搜索的轻量真机部署具有直接借鉴价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "instruction",
+        "instruction following",
+        "real world",
+        "sim to real",
+        "sim2real",
+        "vision language model",
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T16:33:46.419758+00:00"
     },
     {
       "id": "https://openalex.org/W4390691205",
@@ -14795,27 +14958,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4411403346": {
-      "title": "A Comprehensive Overview of Large Language Models",
-      "relevance": 5,
-      "rigor": 3,
-      "reason": "属LLM通识综述而非模型或智能体能力的显著进展，主体偏纯LLM理论与训练技巧且无任何实验，仅泛涉多模态与机器人，不足以支撑收录。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4226400653": {
-      "title": "Active Inference",
-      "relevance": 3,
-      "rigor": 5,
-      "reason": "这是关于自由能原理与主动推理的神经科学/认知科学理论专著，面向脑与行为解释，不涉及具身导航、UAV目标搜索或大模型智能体等收录技术线，也无相关系统实验。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4308386695": {
-      "title": "Job demands-resources theory in times of crises: New propositions",
-      "relevance": 0,
-      "rigor": 3,
-      "reason": "该文为组织心理学的纯理论论文（扩展JD-R工作要求-资源理论以解释疫情等危机下的员工健康与动机），与具身导航、UAV目标搜索、空间智能、世界模型及大模型智能体等全部收录技术线完全无关，属范围外且无实验验证。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4293718192": {
       "title": "Abstract Functional Language Logic: A Competitive Mixture of Experts Architecture for Paradox-Free Reasoning and Adaptive Intelligence",
       "relevance": 5,
@@ -18294,76 +18436,70 @@
       "rigor": 2,
       "reason": "属AI伦理与心理学视角的人文评述，探讨算法对人类自我认知的影响，不涉及具身导航、空间智能、机器人自主或智能体技术的任何收录技术线，且为纯观点文章无实验与可复现信息。",
       "excluded_at": "2026-10-26"
+    },
+    "2110.02642": {
+      "title": "Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "论文属于无监督时间序列异常检测（服务监控、航天探测数据、水处理），与具身导航、空间智能、机器人自主等全部收录技术线均无实质关联，仅因使用Transformer而术语擦边，判定范围外。",
+      "excluded_at": "2026-10-28"
+    },
+    "https://openalex.org/W4405669265": {
+      "title": "A Multimodal Biomedical Foundation Model Trained from Fifteen Million Image–Text Pairs",
+      "relevance": 2,
+      "rigor": 8,
+      "reason": "该工作为生物医学垂直领域的专用多模态基础模型，面向医学影像检索、分类与医学VQA，与空间、导航、机器人各技术线均无关，属范围外的垂直领域应用。",
+      "excluded_at": "2026-10-28"
+    },
+    "https://openalex.org/W4407722851": {
+      "title": "LSTM and GRU type recurrent neural networks in model predictive control: A Review",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "该文是面向化工等过程控制的循环网络MPC综述，验证与应用均不涉及机器人自主、导航或具身场景，仅与收录范围中控制线的通用方法论擦边。",
+      "excluded_at": "2026-10-28"
     }
   },
   "last_citation_refresh": "2026-10-27T15:42:37.933029+00:00",
   "briefing": {
-    "text": "",
-    "added": 7,
-    "at": "2026-10-28T09:32:53.789517+00:00",
+    "text": "本批工作主线是让语言基础模型落地到具身任务：从价值函数为LLM提供物理可供性接地（SayCan），到推理与行动交替的智能体范式，再到面向语言导航的分层场景图与视频大模型方案。三篇优先读：ReAct确立了推理-动作交替生成范式，已成为智能体研究的通用起点；HOV-SG以楼层-房间-物体三层场景图把开放词汇地图压缩75%，代表结构化表示路线；NaVid仅凭单目RGB视频直接输出导航动作，仿真与真机均达SOTA，验证了VLM端到端接管导航栈的可行性。整体看，具身导航正从显式建图与符号规划走向基础模型直接闭环。",
+    "added": 4,
+    "at": "2026-10-28T16:33:46.419758+00:00",
     "new": [
       {
-        "t": "Augmenting large language models with chemistry tools",
-        "u": "https://doi.org/10.1038/s42256-024-00832-8",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：Augmenting large language models with chemistry tools。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+        "u": "https://arxiv.org/abs/2204.01691",
+        "r": 8,
+        "g": 8,
+        "s": "SayCan用预训练技能的价值函数为大语言模型提供真实世界可供性接地：LLM贡献任务语义知识，价值函数保证动作物理可行，两者结合使移动操作机器人在真实厨房环境中完成长时域抽象自然语言指令。",
         "c": "",
-        "cit": 786
+        "cit": 624
       },
       {
-        "t": "Nanozymes Inspired by Natural Enzymes",
-        "u": "https://doi.org/10.1021/accountsmr.1c00074",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：Nanozymes Inspired by Natural Enzymes。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "u": "https://arxiv.org/abs/2210.03629",
+        "r": 9,
+        "g": 9,
+        "s": "提出ReAct范式，让LLM交替生成推理轨迹与任务动作：推理用于制定、跟踪行动计划并处理异常，动作用于与环境或知识库交互获取信息，在问答、事实验证与交互决策基准上超越强基线。",
         "c": "",
-        "cit": 759
+        "cit": 603
       },
       {
-        "t": "Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature",
-        "u": "https://doi.org/10.1186/s12912-021-00579-2",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+        "u": "https://doi.org/10.15607/rss.2024.xx.077",
+        "r": 9,
+        "g": 8,
+        "s": "HOV-SG构建楼层-房间-物体三层开放词汇3D场景图，融合视觉语言基础模型特征，支持多楼层语言条件导航，在三个数据集上物体/房间/楼层级语义精度超越基线，表示规模较稠密开放词汇地图缩减75%。",
         "c": "",
-        "cit": 672
+        "cit": 123
       },
       {
-        "t": "Ultracompact meta-imagers for arbitrary all-optical convolution",
-        "u": "https://doi.org/10.1038/s41377-022-00752-5",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：Ultracompact meta-imagers for arbitrary all-optical convolution。当前自动研判未启用，建议结合英文摘要阅读。",
+        "t": "NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation",
+        "u": "https://doi.org/10.15607/rss.2024.xx.079",
+        "r": 10,
+        "g": 8,
+        "s": "NaVid提出仅靠单目RGB视频流的视频大模型导航方法，无需地图、里程计或深度输入即可跟随指令输出下一步动作，用510k导航样本与763k网络数据训练，仿真与真机均达SOTA。",
         "c": "",
-        "cit": 160
-      },
-      {
-        "t": "AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions",
-        "u": "https://doi.org/10.1007/s10238-025-01965-9",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 137
-      },
-      {
-        "t": "LLM Agents for Education: Advances and Applications",
-        "u": "https://doi.org/10.18653/v1/2025.findings-emnlp.743",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：LLM Agents for Education: Advances and Applications。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 89
-      },
-      {
-        "t": "Better to Ask in English: Cross-Lingual Evaluation of Large Language Models for Healthcare Queries",
-        "u": "https://doi.org/10.1145/3589334.3645643",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：Better to Ask in English: Cross-Lingual Evaluation of Large Language Models for Healthcare Queries。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 81
+        "cit": 103
       }
     ]
   }
