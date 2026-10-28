@@ -1,28 +1,4 @@
 {
-  "2609.02717": {
-    "title": "MV-dVRK: A Multi-Viewpoint Benchmark for Spatial Surgical Perception",
-    "relevance": 3,
-    "rigor": 8,
-    "reason": "该工作为手术内窥镜多视角重建基准，属医疗手术垂直领域，与收录的导航、UAV目标搜索、通用空间智能及具身评测等技术线无实质关联，仅3D重建术语擦边。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02717"
-  },
-  "2609.02640": {
-    "title": "From Detection to Localization: A Unified Forensics Framework for Fully Synthetic and Tampered Images",
-    "relevance": 1,
-    "rigor": 5,
-    "reason": "图像取证与篡改检测定位属多媒体安全应用，与空域/地面具身导航、空间智能及智能体基础能力均无关，属范围外应用。",
-    "rejected_at": "2026-09-03",
-    "url": "https://arxiv.org/abs/2609.02640"
-  },
-  "2609.03630": {
-    "title": "Local Path Planning and Obstacle Avoidance for an Omnicopter Platform",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "将经典DWA扩展到六维属状态估计与控制线的常规增量改进：仅仿真验证、无真机部署与主流基线对比，中心障碍场景成功率仅41.4%，落地影响力不足。",
-    "rejected_at": "2026-09-04",
-    "url": "https://arxiv.org/abs/2609.03630"
-  },
   "2609.03153": {
     "title": "VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement",
     "relevance": 5,
@@ -2398,5 +2374,29 @@
     "reason": "属于面向机械臂操控的世界-动作模型与VLA式动作预测，实验与验证均在操作任务上，不含导航决策成分，属范围中明确排除的操控类工作。",
     "rejected_at": "2026-10-28",
     "url": "https://arxiv.org/abs/2610.36011"
+  },
+  "2610.35075": {
+    "title": "Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "人形locomanipulation属VLA操作控制且不含导航决策成分，为明确排除范围；real-to-sim重建与sim2real仅为实现手段而非主体贡献。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.35075"
+  },
+  "2610.35562": {
+    "title": "Beyond Being Accurate: Implications for Using Natural Language Descriptions for Accessible 3D Modeling with~Blind and Low Vision Makers",
+    "relevance": 3,
+    "rigor": 6,
+    "reason": "面向盲低视力人群3D建模无障碍的HCI用户研究，不涉及导航、机器人或智能体能力，仅与3D场景理解在术语上擦边。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.35562"
+  },
+  "2610.33644": {
+    "title": "AlphaIdeaBench: Benchmarking Automated Research Idea Generation under Feasibility Constraints with Peer Review Alignment",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "该工作是与空间、导航、机器人无关的科研创意自动生成（AI Scientist方向）垂直应用基准，未提出通用模型或智能体能力本身的显著新进展，落入范围拒绝条款。",
+    "rejected_at": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.33644"
   }
 }

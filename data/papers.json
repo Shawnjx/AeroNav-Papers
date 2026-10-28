@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T10:39:52.394209+00:00",
+  "updated_at": "2026-10-28T16:32:42.378981+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2507,6 +2507,54 @@
       "added_at": "2026-10-28T10:24:16.815991+00:00"
     },
     {
+      "id": "2610.34149",
+      "arxiv_id": "2610.34149",
+      "title": "Humans in Space: Can MLLMs Construct Human-Centric Spatial Understanding via Active Exocentric Exploration?",
+      "authors": [
+        "Tianchen Guo",
+        "Tengyue Zhang",
+        "Chen Cecilia Liu",
+        "Chen Ling",
+        "Xin Yu"
+      ],
+      "published": "2026-10-25",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.34149",
+      "pdf_url": "https://arxiv.org/pdf/2610.34149",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 9,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/a5804f70c2e90909827662633a9c08ccc123f8a0",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SATE-Bench用316个真实场景与2525组多轮问答评测MLLM的视觉自我感知与主动外视角探索，发现主流模型过早停止探索且过度自信，GRPO奖励探索反而降低准确率。",
+      "change_zh": "以往MLLM空间评测多为静态被动观察；该工作改为从严重遮挡视角出发、按步惩罚效率奖励的主动视角探索设定，并用匹配视角对照把主动-被动差距归因于证据获取不足，且发现奖励探索的RL会过探索、难融合多轮视图。",
+      "why_it_matters": "「往哪看、如何融合、何时停止」正是UAV主动目标搜索与ObjectNav的核心；基准结论（被动多视角≠主动推理、纯探索奖励有害）对MLLM驱动的主动搜索与导航智能体的停止判据和奖励设计有直接参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "多模态大语言模型, 以人为中心空间理解, 主动外视角探索, 交互式基准测试, 视觉自我感知, GRPO",
+      "question_zh": "多模态大语言模型能否通过主动外视角探索，而非静态被动观测，构建以人为中心场景的空间理解？",
+      "innovation_zh": "提出交互式基准SATE-Bench，突破静态被动观测评估范式：模型从严重遮挡视角出发，需迭代查询相邻视点收集证据，按步数惩罚的效率奖励评分，评估视觉自我感知与主动外视角探索能力。",
+      "dataset_zh": "自建的交互式基准SATE-Bench：包含316个真实世界场景与2,525个多轮问答对，设被动多视角对照与主动探索两种模式；代码与数据已公开（https://gtc-gh.github.io/SATE-Bench/）",
+      "results_zh": "最先进MLLM在报告高置信度的同时过早终止探索，细粒度3D几何任务表现吃力；对照实验表明主动-被动差距主要源于证据获取不足；GRPO微调提升探索度但降低整体准确率，因模型过度探索且难融合多视角上下文。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "mllm",
+        "multimodal large language model",
+        "spatial reasoning",
+        "spatial understanding"
+      ],
+      "added_at": "2026-10-28T16:26:44.624357+00:00"
+    },
+    {
       "id": "2610.29699",
       "arxiv_id": "2610.29699",
       "title": "AirPlayground: Benchmarking Aerial Navigation across Diverse Reconstructed Environments",
@@ -4287,6 +4335,48 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.34286",
+      "arxiv_id": "2610.34286",
+      "title": "ScheNav: Schematic-Guided Object Goal Navigation",
+      "authors": [
+        "Guichen Huang",
+        "Chenchen Jing",
+        "Che Sun",
+        "Yuwei Wu",
+        "Yunde Jia"
+      ],
+      "published": "2026-10-25",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.34286",
+      "pdf_url": "https://arxiv.org/pdf/2610.34286",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出从2D户型图生成3.3万余噪声可控示意图与导航回合数据集，并以SchemaField将示意图与累积观测融合为空间价值场，实现闭环目标导航，未见环境成功率和路径效率均提升。",
+      "change_zh": "相比依赖端到端RL或语义地图的常见做法，本文引入低成本粗糙示意图（草图、椭圆、指向）作先验，用户型图批量合成训练数据，学习将示意图与观测融合为空间价值场的模块，闭环更新以容忍噪声与缺失。",
+      "why_it_matters": "为ObjectNav提供可规模化的数据合成路线与人机先验注入范式；粗糙示意图恰是搜救侦察中人类能给UAV的低成本线索，其价值场与抗噪设计对UAV主动目标搜索中融合草图、指向等先验具有直接借鉴价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "目标物体导航, 具身导航, 示意图引导, 空间价值场, 2D户型图数据生成, 闭环导航",
+      "question_zh": "研究如何利用人类常用的粗略示意图（草图、方向标注等）引导具身智能体进行目标物体导航，以提升导航成功率与路径效率。",
+      "innovation_zh": "提出示意图引导的闭环导航框架ScheNav：其空间模块SchemaField将粗略示意图与累积观测融合，预测随探索动态更新的空间价值场，配合轨迹训练与跨帧一致性目标保证跨视角引导连贯；相比已有方法，首次实现仅从仿真户型图学会利用示意图并迁移至未见具身环境。",
+      "dataset_zh": "Furnished-RPLAN数据集：由轻量级管线将2D户型图转为导航训练环境，含33000余个带家具布局，配对导航回合与噪声可控的示意图；示意图利用能力在仿真户型图上训练，迁移测试于未见具身仿真环境（具体仿真平台未提及），真机平台未提及。",
+      "results_zh": "实验表明，ScheNav在示意图地图、目标椭圆和指向方向三类引导下均提升导航成功率与路径效率，并对所测的示意图扰动与缺失具有容忍性；示意图利用能力完全从仿真户型图学得，并成功迁移到未见具身环境，验证了粗略示意图引导提升具身导航的实用性。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "exploration",
+        "object goal navigation"
+      ],
+      "added_at": "2026-10-28T16:30:25.496579+00:00"
     },
     {
       "id": "2610.31476",
@@ -6814,6 +6904,55 @@
         "language agent"
       ],
       "added_at": "2026-10-28T10:34:52.140321+00:00"
+    },
+    {
+      "id": "2610.33487",
+      "arxiv_id": "2610.33487",
+      "title": "ReSight: Task-Driven Self-Improving Memory for Embodied Agents",
+      "authors": [
+        "L Che",
+        "Yang Chen",
+        "Yimeng Su",
+        "Daqi Liu",
+        "Zhenyu Huang",
+        "Jiong Wang",
+        "Yuzhe Yang",
+        "Xu Cao",
+        "Chuang Wang",
+        "Jian Su",
+        "Xueqian Wang"
+      ],
+      "published": "2026-10-24",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.33487",
+      "pdf_url": "https://arxiv.org/pdf/2610.33487",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ReSight为具身智能体构建任务驱动的自改进记忆：保留关键帧与时空关联，执行与编码智能体共享记忆，EDM从执行记录发现能力缺口，将探索方案沉淀为可复用的查询工具与技能。",
+      "change_zh": "常见路线为时空记忆预设固定表示与查询工具。ReSight将观测证据与派生字段解耦，历史观测可按新任务重处理，并以双智能体加EDM在无参考答案下把探索方案固化为可复用工具与技能，实现记忆能力按需扩展。",
+      "why_it_matters": "该工作把探索经验固化为可复用工具与技能，直接推进智能体记忆与空间智能线。对UAV目标搜索与ObjectNav，重返熟悉环境时能复用既有时空记忆，减少重复探索与在线调用，提高目标发现与时空问答效率。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "具身智能体, 自改进记忆, 时空查询, 能力扩展, 关键帧记忆, Explore-Distill-Mount",
+      "question_zh": "具身智能体如何利用历史观测回答时空查询，并在任务需求出现时自主扩展记忆的处理与访问能力？",
+      "innovation_zh": "ReSight将观测证据与可扩展派生字段分离，使执行智能体与编程智能体经不同接口共享记忆；提出EDM方法，无需任务参考答案即可从执行与探索记录识别能力缺口，将探索方案转化为可复用的记忆构建器、查询工具和技能，实现记忆表示与访问能力的按需扩展。",
+      "dataset_zh": "三个公开基准（摘要中提及OC-NaVQA与FindingDory，第三个基准名称未提及），以及真实机器人巡逻记忆数据",
+      "results_zh": "在固定执行模型与在线预算下，EDM将OC-NaVQA平均位置误差从33.10米降至24.72米，FindingDory高层成功率从38.3%提升至63.8%；冻结工具与技能后，未参与探索蒸馏的FindingDory片段成功率仍提升28.3个百分点；真机巡逻记忆实验表明能力可复用于后续查询与新记忆，平均在线工具调用更少。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "real robot"
+      ],
+      "added_at": "2026-10-28T16:32:39.378316+00:00"
     },
     {
       "id": "2610.31494",
@@ -14598,6 +14737,49 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.34028",
+      "arxiv_id": "2610.34028",
+      "title": "Explaining Navigation Decisions: Stage-Aware Visual Attribution for Vision-Language Navigation",
+      "authors": [
+        "Yiyuan Yao",
+        "Xinpeng Ding",
+        "Minglei Chen",
+        "Fei Gao",
+        "Lihuo He",
+        "Jie Yuan",
+        "Aijun Li",
+        "Nannan Wang",
+        "Xinbo Gao"
+      ],
+      "published": "2026-10-25",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.34028",
+      "pdf_url": "https://arxiv.org/pdf/2610.34028",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对VLN可解释性中的指令阶段不敏感问题，提出阶段感知归因框架，通过动作条件的时序归因估计阶段关联并聚合历史证据，并以指令引导空间滤波，在多个VLN策略、基准与真机上验证归因质量提升。",
+      "change_zh": "与常见单帧、阶段无关的显著性归因不同，本文把证据扩展到历史与当前观测，在指令空间估计阶段关联以聚合相关历史证据，再用指令引导空间滤波抑制孤立响应，从而缓解指令阶段不敏感问题。",
+      "why_it_matters": "可解释性是VLN可靠部署的配套能力：该框架与具体策略解耦，其阶段感知归因与失败诊断思路可迁移到ObjectNav目标条件导航与UAV目标搜索，帮助诊断目标发现与接近等阶段的决策证据来源与失败成因。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "instruction",
+        "vlm"
+      ],
+      "added_at": "2026-10-28T16:28:22.378013+00:00"
     },
     {
       "id": "2610.31511",
@@ -26302,96 +26484,40 @@
     }
   ],
   "briefing": {
-    "text": "今日主线是具身探索与导航加速走向机载实时化，旁及多模态智能体评测。首推RAVEN，它在定位不确定下以效用向量统一探索与回环的取舍，经机载实飞验证；Omni-IGN用四鱼眼全向视觉实现全机载图像目标导航，在Habitat连续动作基线中最优且零样本迁移真机；Rendering-Free Event Frame Simulation以解析式事件合成替代渲染管线，提速逾400倍，使避障RL半小时收敛并部署到56克Crazyflie。趋势上，研究重心正从离线模型评测转向机载实时闭环与Sim2Real落地。",
-    "added": 11,
-    "at": "2026-10-28T10:41:06.560800+00:00",
+    "text": "本批四篇贯穿具身导航的空间理解、决策解释、先验注入与经验记忆四个环节。首推 Humans in Space 的 SATE-Bench：以316个真实场景、2525组多轮问答揭示主流MLLM过早停止探索且过度自信，GRPO奖励探索反而降低准确率，对现有训练范式是直接警示。ScheNav 从2D户型图生成3.3万余条噪声可控的示意图导航数据，经 SchemaField 与累积观测融合成空间价值场，未见环境成功率与路径效率同步提升。ReSight 让执行与编码智能体共享时空记忆，从执行记录挖掘能力缺口并沉淀为可复用技能，勾勒出长周期自改进路径。趋势上，导航研究正从单轮策略学习转向先验注入与经验沉淀并重的记忆化架构。",
+    "added": 4,
+    "at": "2026-10-28T16:33:13.765101+00:00",
     "new": [
       {
-        "t": "RAVEN: A Unified Active SLAM System for Rapid Autonomous Visual Exploration with Aerial Robots under Localization Uncertainty",
-        "u": "https://arxiv.org/abs/2610.37111",
+        "t": "Humans in Space: Can MLLMs Construct Human-Centric Spatial Understanding via Active Exocentric Exploration?",
+        "u": "https://arxiv.org/abs/2610.34149",
         "r": 9,
         "g": 8,
-        "s": "RAVEN是四旋翼统一主动SLAM框架：由前沿与主动回环候选生成全局巡回路径，用效用向量分别量化探索效率与定位精度并按优先级选择，再以Fisher信息场引导轨迹生成，机载实飞验证。",
+        "s": "SATE-Bench用316个真实场景与2525组多轮问答评测MLLM的视觉自我感知与主动外视角探索，发现主流模型过早停止探索且过度自信，GRPO奖励探索反而降低准确率。",
         "c": ""
       },
       {
-        "t": "Omni-IGN: Onboard Image-Goal Navigation for Drones with Omnidirectional Vision",
-        "u": "https://arxiv.org/abs/2610.36968",
+        "t": "Explaining Navigation Decisions: Stage-Aware Visual Attribution for Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.34028",
+        "r": 7,
+        "g": 7,
+        "s": "针对VLN可解释性中的指令阶段不敏感问题，提出阶段感知归因框架，通过动作条件的时序归因估计阶段关联并聚合历史证据，并以指令引导空间滤波，在多个VLN策略、基准与真机上验证归因质量提升。",
+        "c": ""
+      },
+      {
+        "t": "ScheNav: Schematic-Guided Object Goal Navigation",
+        "u": "https://arxiv.org/abs/2610.34286",
         "r": 9,
-        "g": 8,
-        "s": "Omni-IGN是全机载无人机图像目标导航系统：四鱼眼全向RGB兼顾目标匹配与避障，注意力RL策略融合多视角线索并有碰撞安全层，在Habitat连续动作基线中最优，零样本迁移真机。",
-        "c": ""
-      },
-      {
-        "t": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
-        "u": "https://arxiv.org/abs/2610.36077",
-        "r": 8,
         "g": 7,
-        "s": "提出递归自我改进框架，以创造者、探索者、演化者三角色耦合世界生成与智能体框架演化，按共享能力把任务树重组为能力树，经Real2Sim2Real学习可迁移能力，在28个训练与18个未见基准及真机任务上大幅提升性能。",
+        "s": "提出从2D户型图生成3.3万余噪声可控示意图与导航回合数据集，并以SchemaField将示意图与累积观测融合为空间价值场，实现闭环目标导航，未见环境成功率和路径效率均提升。",
         "c": ""
       },
       {
-        "t": "Remember Where You Walk: Learning Spatial Memory for End-to-End Legged Robot Exploration",
-        "u": "https://arxiv.org/abs/2610.37203",
-        "r": 8,
-        "g": 7,
-        "s": "面向腿式机器人长时记忆难题，提出基于Hadamard记忆的局部空间矩阵记忆LSMM，让RL策略按位置存储任务信息；在迷宫探索中覆盖率持平强基线，且唯一重建迷宫布局，误差降三倍。",
-        "c": ""
-      },
-      {
-        "t": "SVIn+: Multi-Modal Framework for Robust Underwater State Estimation using 3D Sonar, Visual-Inertial, Water-Pressure, and DVL",
-        "u": "https://arxiv.org/abs/2610.36454",
-        "r": 6,
-        "g": 7,
-        "s": "SVIn+为AUV提出多模态紧耦合状态估计：在视觉惯性SLAM上融合水压与DVL，并以KISS-ICP前端将3D声呐作为相对位姿因子并入因子图，实海部署验证漂移抑制与全局一致性。",
-        "c": ""
-      },
-      {
-        "t": "SG^2SLAM: Spatial Geometry-Informed 3D Gaussian Splatting SLAM for Monocular Outdoor Navigation",
-        "u": "https://arxiv.org/abs/2610.36312",
-        "r": 7,
-        "g": 6,
-        "s": "SG^2SLAM面向单目室外导航：以流式空间几何的块级度量先验统一监督跟踪与建图，光线条件化高斯核感知视角子空间，联合优化位姿与几何，在KITTI与Waymo上超越逐帧关联基线。",
-        "c": ""
-      },
-      {
-        "t": "Rendering-Free Event Frame Simulation for Fast Reinforcement Learning of Autonomous Robot Navigation",
-        "u": "https://arxiv.org/abs/2610.37543",
-        "r": 9,
-        "g": 8,
-        "s": "提出免渲染的解析式事件仿真器，直接由场景几何与自运动合成事件流，比渲染管线快逾400倍，使无人机避障强化学习30分钟内收敛，int8策略零样本部署到56克Crazyflie真机，成功率82%。",
-        "c": "https://github.com/tudelft/rendering-free-event-nav"
-      },
-      {
-        "t": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
-        "u": "https://arxiv.org/abs/2610.37613",
-        "r": 7,
-        "g": 6,
-        "s": "针对MLLM视频推理中语言思维链造成视觉遗忘的问题，VideoLVR从相关时刻局部区域构造潜在视觉证据，以视觉token预测目标统一视觉重建与文本生成，并把视觉token视作动作纳入强化学习联合优化，多基准实验验证了有效性。",
-        "c": ""
-      },
-      {
-        "t": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-        "u": "https://arxiv.org/abs/2610.37649",
-        "r": 7,
-        "g": 6,
-        "s": "提出LongChang自动评测框架，构建物理规律被修改的模拟世界，让LLM在不给任务与提示的条件下自由探索并发现隐藏定律，多智能体自动生成与评审场景；12个模型中仅GPT-6-Astra达16.7%发现率，其余为0。",
-        "c": ""
-      },
-      {
-        "t": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
-        "u": "https://arxiv.org/abs/2610.37567",
+        "t": "ReSight: Task-Driven Self-Improving Memory for Embodied Agents",
+        "u": "https://arxiv.org/abs/2610.33487",
         "r": 8,
         "g": 8,
-        "s": "Gym-Anything-RT 用智能体流水线按六类实时交互能力自动生成100个视觉小游戏，支持实时、暂停、减速的受控对比，发现前沿视觉语言智能体实时通过率仅9%，暂停环境后升至75%。",
-        "c": ""
-      },
-      {
-        "t": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
-        "u": "https://arxiv.org/abs/2610.37341",
-        "r": 6,
-        "g": 6,
-        "s": "提出以可执行代码做视频字幕：代码字幕在下游问答与视频重建上优于自然语言；并发布323段结构化2D视频基准CodeCap-Bench，多级评测显示主流MLLM难忠实表达复杂时序。",
+        "s": "ReSight为具身智能体构建任务驱动的自改进记忆：保留关键帧与时空关联，执行与编码智能体共享记忆，EDM从执行记录发现能力缺口，将探索方案沉淀为可复用的查询工具与技能。",
         "c": ""
       }
     ]
