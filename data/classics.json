@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T15:42:37.933029+00:00",
+  "updated_at": "2026-10-28T09:32:53.789517+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -3321,6 +3321,39 @@
       "added_at": "2026-10-13T17:23:02.911853+00:00"
     },
     {
+      "id": "https://openalex.org/W4396723768",
+      "arxiv_id": "",
+      "title": "Augmenting large language models with chemistry tools",
+      "authors": [
+        "Andres M Bran",
+        "Sam Cox",
+        "Oliver Tobias Schilter",
+        "Carlo Baldassari",
+        "Andrew Dickson White",
+        "Philippe Schwaller"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "Nature Machine Intelligence",
+      "citation_count": 786,
+      "url": "https://doi.org/10.1038/s42256-024-00832-8",
+      "pdf_url": "https://www.nature.com/articles/s42256-024-00832-8.pdf",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身基准与评测，主要研究问题可概括为：Augmenting large language models with chemistry tools。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Large language models (LLMs) have shown strong performance in tasks across domains but struggle with chemistry-related problems.",
+      "why_it_matters": "与具身基准与评测直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
+    },
+    {
       "id": "2204.00598",
       "arxiv_id": "2204.00598",
       "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
@@ -3513,6 +3546,34 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "https://openalex.org/W3174128215",
+      "arxiv_id": "",
+      "title": "Nanozymes Inspired by Natural Enzymes",
+      "authors": [
+        "Ruofei Zhang",
+        "Xiyun Yan",
+        "Kelong Fan"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "Accounts of Materials Research",
+      "citation_count": 759,
+      "url": "https://doi.org/10.1021/accountsmr.1c00074",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Nanozymes Inspired by Natural Enzymes。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Conspectus Nanozymes, nanomaterials with enzyme-like activities with high structural stability, adjustable catalytic activity, functional diversity, recyclability, and feasibility in large-scale preparation, have become ",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
     },
     {
       "id": "1907.01531",
@@ -3839,6 +3900,34 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "https://openalex.org/W3156526939",
+      "arxiv_id": "",
+      "title": "Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature",
+      "authors": [
+        "Mandlenkosi Mlambo",
+        "Charlotte Silén",
+        "Cormac McGrath"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "BMC Nursing",
+      "citation_count": 672,
+      "url": "https://doi.org/10.1186/s12912-021-00579-2",
+      "pdf_url": "https://bmcnurs.biomedcentral.com/track/pdf/10.1186/s12912-021-00579-2",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：BACKGROUND: Continuing professional development (CPD) is central to nurses' lifelong learning and constitutes a vital aspect for keeping nurses' knowledge and skills up-to-date.",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
     },
     {
       "id": "2004.05155",
@@ -12481,6 +12570,37 @@
       "added_at": "2026-09-06T18:49:29.317136+00:00"
     },
     {
+      "id": "https://openalex.org/W4220980990",
+      "arxiv_id": "",
+      "title": "Ultracompact meta-imagers for arbitrary all-optical convolution",
+      "authors": [
+        "Weiwei Fu",
+        "Dong Yu Zhao",
+        "Ziqin Li",
+        "Songde Liu",
+        "Chao Tian",
+        "Kun Huang"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "Light Science & Applications",
+      "citation_count": 160,
+      "url": "https://doi.org/10.1038/s41377-022-00752-5",
+      "pdf_url": "https://www.nature.com/articles/s41377-022-00752-5.pdf",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Ultracompact meta-imagers for arbitrary all-optical convolution。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Electronic digital convolutions could extract key features of objects for data processing and information identification in artificial intelligence, but they are time-cost and energy consumption due to the low response o",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
+    },
+    {
       "id": "https://openalex.org/W4410431873",
       "arxiv_id": "",
       "title": "The benefits and dangers of anthropomorphic conversational agents",
@@ -12872,6 +12992,41 @@
       "keywords": [],
       "is_classic": true,
       "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4416442660",
+      "arxiv_id": "",
+      "title": "AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions",
+      "authors": [
+        "Chou‐Yi Hsu",
+        "Shavan K. Askar",
+        "Samer Saleem Alshkarchy",
+        "Priya Priyadarshini Nayak",
+        "Kassem Al Attabi",
+        "Mohammad Ahmar Khan",
+        "J. Albert Mayan",
+        "Mukesh Kumar Sharma",
+        "Sarvar Islomov",
+        "Hamed Soleimani Samarkhazan"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "Clinical and Experimental Medicine",
+      "citation_count": 137,
+      "url": "https://doi.org/10.1007/s10238-025-01965-9",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10238-025-01965-9.pdf",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Cancer's staggering molecular heterogeneity demands innovative approaches beyond traditional single-omics methods.",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
     },
     {
       "id": "https://openalex.org/W4385151905",
@@ -14009,6 +14164,46 @@
       "added_at": "2026-09-08T10:03:38.564482+00:00"
     },
     {
+      "id": "https://openalex.org/W4416033994",
+      "arxiv_id": "",
+      "title": "LLM Agents for Education: Advances and Applications",
+      "authors": [
+        "Zhendong Chu",
+        "Shen Wang",
+        "Jian Xie",
+        "Tinghui Zhu",
+        "Yibo Yan",
+        "Jingheng Ye",
+        "Aoxiao Zhong",
+        "Xuming Hu",
+        "Jing Liang",
+        "Philip S. Yu",
+        "Qingsong Wen"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+      "citation_count": 89,
+      "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.743",
+      "pdf_url": "https://aclanthology.org/2025.findings-emnlp.743.pdf",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体",
+        "具身基准与评测"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：LLM Agents for Education: Advances and Applications。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Large Language Model (LLM) agents are transforming education by automating complex pedagogical tasks and enhancing both teaching and learning processes.In this survey, we present a systematic review of recent advances in",
+      "why_it_matters": "与多模态大模型与智能体、具身基准与评测直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "benchmark",
+        "llm agent"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
+    },
+    {
       "id": "https://openalex.org/W4408635878",
       "arxiv_id": "",
       "title": "From virtual to reality: innovative practices of digital twins in tumor therapy",
@@ -14196,6 +14391,40 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-06T08:54:19.521116+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4396736209",
+      "arxiv_id": "",
+      "title": "Better to Ask in English: Cross-Lingual Evaluation of Large Language Models for Healthcare Queries",
+      "authors": [
+        "Yiqiao Jin",
+        "Mohit Chandra",
+        "Gaurav Verma",
+        "Yibo Hu",
+        "Munmun De Choudhury",
+        "Srijan Kumar"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "International World Wide Web Conference (WWW)",
+      "citation_count": 81,
+      "url": "https://doi.org/10.1145/3589334.3645643",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身基准与评测，主要研究问题可概括为：Better to Ask in English: Cross-Lingual Evaluation of Large Language Models for Healthcare Queries。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Large language models (LLMs) are transforming the ways the general public accesses and consumes information.",
+      "why_it_matters": "与具身基准与评测直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-28T09:32:53.789517+00:00"
     },
     {
       "id": "s2:22cb569525194d67e964f61fa102506429cf85f4",
@@ -18069,18 +18298,72 @@
   },
   "last_citation_refresh": "2026-10-27T15:42:37.933029+00:00",
   "briefing": {
-    "text": "本轮仅一篇入库，无法按惯例精选多篇，故本期为单篇评述。《Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost》（被引1212）并非具身导航原生工作，而是示范以SHAP局部解释从XGBoost中还原空间依赖、异质性等空间效应的方法论文，入库标注的“相关？”也提示其与导航的直接关联需人工复核。对导航研究者的价值在工具迁移：若要解释障碍物分布、目标方位等空间特征对策略或预测模型输出的贡献，其SHAP分析流程可直接借用；但文中不含导航任务与具身设定，不宜当作领域经典精读。趋势观察：可解释方法正加速渗入空间智能研究，导航社区对策略决策归因的需求将持续上升。",
-    "added": 1,
-    "at": "2026-10-25T14:05:34.320530+00:00",
+    "text": "",
+    "added": 7,
+    "at": "2026-10-28T09:32:53.789517+00:00",
     "new": [
       {
-        "t": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
-        "u": "https://doi.org/10.1016/j.compenvurbsys.2022.101845",
+        "t": "Augmenting large language models with chemistry tools",
+        "u": "https://doi.org/10.1038/s42256-024-00832-8",
         "r": null,
         "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost。当前自动研判未启用，建议结合英文摘要阅读。",
+        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：Augmenting large language models with chemistry tools。当前自动研判未启用，建议结合英文摘要阅读。",
         "c": "",
-        "cit": 1212
+        "cit": 786
+      },
+      {
+        "t": "Nanozymes Inspired by Natural Enzymes",
+        "u": "https://doi.org/10.1021/accountsmr.1c00074",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：Nanozymes Inspired by Natural Enzymes。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 759
+      },
+      {
+        "t": "Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature",
+        "u": "https://doi.org/10.1186/s12912-021-00579-2",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：Lifelong learning and nurses’ continuing professional development, a metasynthesis of the literature。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 672
+      },
+      {
+        "t": "Ultracompact meta-imagers for arbitrary all-optical convolution",
+        "u": "https://doi.org/10.1038/s41377-022-00752-5",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：Ultracompact meta-imagers for arbitrary all-optical convolution。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 160
+      },
+      {
+        "t": "AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions",
+        "u": "https://doi.org/10.1007/s10238-025-01965-9",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：AI-driven multi-omics integration in precision oncology: bridging the data deluge to clinical decisions。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 137
+      },
+      {
+        "t": "LLM Agents for Education: Advances and Applications",
+        "u": "https://doi.org/10.18653/v1/2025.findings-emnlp.743",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：LLM Agents for Education: Advances and Applications。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 89
+      },
+      {
+        "t": "Better to Ask in English: Cross-Lingual Evaluation of Large Language Models for Healthcare Queries",
+        "u": "https://doi.org/10.1145/3589334.3645643",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身基准与评测，主要研究问题可概括为：Better to Ask in English: Cross-Lingual Evaluation of Large Language Models for Healthcare Queries。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": "",
+        "cit": 81
       }
     ]
   }
