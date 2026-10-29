@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T16:33:46.419758+00:00",
+  "updated_at": "2026-10-29T16:38:54.486578+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -11857,6 +11857,41 @@
       "added_at": "2026-10-20T14:40:02.233414+00:00"
     },
     {
+      "id": "https://openalex.org/W3212580602",
+      "arxiv_id": "",
+      "title": "Crossing the Reality Gap: A Survey on Sim-to-Real Transferability of Robot Controllers in Reinforcement Learning",
+      "authors": [
+        "Erica Salvato",
+        "Gianfranco Fenu",
+        "Eric Medvet",
+        "Felice Andrea Pellegrino"
+      ],
+      "published": "2021",
+      "source": "OpenAlex",
+      "venue": "IEEE Access",
+      "citation_count": 200,
+      "url": "https://doi.org/10.1109/access.2021.3126658",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该综述聚焦强化学习机器人控制器的仿真到真实迁移问题，系统梳理应对现实鸿沟的主流方法与各自不足，并指明若干潜在的新研究方向。",
+      "change_zh": "本文不提出新方法，而是以综述形式组织知识：归纳RL机器人控制跨越现实鸿沟的主要路线、点明各路线缺陷并勾勒研究空白，属于领域地图式贡献；摘要未给出具体分类与覆盖规模的细节。",
+      "why_it_matters": "Sim2Real是收录核心线之一；无人机主动目标搜索与ObjectNav的策略常在仿真中用RL训练后部署真机，该综述为其提供迁移方法分类、风险识别与方向参考，是仿真训练策略落地的重要指南。",
+      "relevance_rating": 9,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "real robot"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-29T16:38:54.486578+00:00"
+    },
+    {
       "id": "https://openalex.org/W4322576645",
       "arxiv_id": "2204.10704",
       "title": "SUES-200: A Multi-Height Multi-Scene Cross-View Image Benchmark Across Drone and Satellite",
@@ -14742,6 +14777,49 @@
       "added_at": "2026-09-06T08:54:19.521116+00:00"
     },
     {
+      "id": "2502.13130",
+      "arxiv_id": "2502.13130",
+      "title": "Magma: A Foundation Model for Multimodal AI Agents",
+      "authors": [
+        "Jianwei Yang",
+        "Reuben Tan",
+        "Qianhui Wu",
+        "Ruijie Zheng",
+        "Baolin Peng",
+        "Yongyuan Liang",
+        "裕二 池谷",
+        "Mu Cai",
+        "Seonghyeon Ye",
+        "Joel Jang",
+        "Yuquan Deng",
+        "Jianfeng Gao"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "citation_count": 53,
+      "url": "https://arxiv.org/abs/2502.13130",
+      "pdf_url": "https://arxiv.org/pdf/2502.13130",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "Magma是面向数字与物理世界智能体任务的多模态基础模型，以SoM标注图像中可操作对象、ToM标注视频中运动轨迹，融合图像、视频与机器人异构数据训练，统一语言理解与时空行动能力，在UI导航和机器人操作任务上达到SOTA。",
+      "change_zh": "常见路线要么训练仅具备语言理解的VL模型，要么为GUI智能体与机器人操作各造专用模型。Magma用单一基础模型统一数字与物理世界的感知和行动，并以SoM/ToM两类标注把空间动作定位与时序动作规划显式注入预训练，弥合语言智能与时空行动智能的鸿沟。",
+      "why_it_matters": "作为通用多模态智能体基础模型，Magma属'多模态大模型与智能体'技术线核心进展；其时空智能与动作定位规划能力可为ObjectNav目标发现与接近、UAV主动目标搜索提供感知-行动统一的模型底座，SoM/ToM标注范式也可迁移到导航与目标搜索数据构建中。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "agentic"
+      ],
+      "is_classic": true,
+      "added_at": "2026-10-29T16:38:54.486578+00:00"
+    },
+    {
       "id": "2508.00288",
       "arxiv_id": "2508.00288",
       "title": "UAV-ON: A Benchmark for Open-World Object Goal Navigation with Aerial Agents",
@@ -14958,41 +15036,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4293718192": {
-      "title": "Abstract Functional Language Logic: A Competitive Mixture of Experts Architecture for Paradox-Free Reasoning and Adaptive Intelligence",
-      "relevance": 5,
-      "rigor": 2,
-      "reason": "该文属纯概念性的神经符号LLM推理架构构想，摘要未报告任何实验、基线、数据集或结果，严谨度不足，且与空间、导航、具身任务无实质关联，仅与LLM推理技术线边缘相关。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3116229068": {
-      "title": "Students’ perception of online learning during the COVID-19 pandemic",
-      "relevance": 0,
-      "rigor": 5,
-      "reason": "医学生对在线学习感知的问卷调查，属医学教育实证研究，与具身导航、空间智能、大模型智能体等全部收录技术线完全无关，范围外。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4280598306": {
-      "title": "Deep Visual Proteomics defines single-cell identity and heterogeneity",
-      "relevance": 1,
-      "rigor": 6,
-      "reason": "该文属单细胞空间蛋白质组学的生物医学工作，仅在'空间'与AI图像分析术语上擦边，与具身导航、空间智能、智能体等所有收录技术线均无实质关联。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3188264307": {
-      "title": "An overview of biodegradable packaging in food industry",
-      "relevance": 0,
-      "rigor": 3,
-      "reason": "该文是食品包装材料领域综述，涉及生物聚合物性能与市场，与具身导航、空间智能、大模型智能体等全部收录技术线无任何关联，属范围外论文。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4389934892": {
-      "title": "Systematic review and meta-analysis of AI-based conversational agents for promoting mental health and well-being",
-      "relevance": 2,
-      "rigor": 7,
-      "reason": "将AI对话智能体套用于心理健康医疗垂直领域，与空间、导航、机器人均无关，属研究范围明确列出的拒收类别。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4396946178": {
       "title": "Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021",
       "relevance": 0,
@@ -18457,49 +18500,66 @@
       "rigor": 5,
       "reason": "该文是面向化工等过程控制的循环网络MPC综述，验证与应用均不涉及机器人自主、导航或具身场景，仅与收录范围中控制线的通用方法论擦边。",
       "excluded_at": "2026-10-28"
+    },
+    "https://openalex.org/W4226400653": {
+      "title": "Active Inference",
+      "relevance": 3,
+      "rigor": 3,
+      "reason": "该书为认知神经科学理论专著，系统阐述Friston自由能原理与主动推断对大脑、认知与行为的统一解释，不涉及具身导航、机器人自主或智能体系统的实验与实现，仅与生成模型、推断式规划存在概念性关联，属收录范围外。",
+      "excluded_at": "2026-10-29"
+    },
+    "https://openalex.org/W4308386695": {
+      "title": "Job demands-resources theory in times of crises: New propositions",
+      "relevance": 0,
+      "rigor": 2,
+      "reason": "属组织心理学JD-R理论扩展研究，研究对象为员工健康与动机，与具身导航、机器人自主、大模型与智能体等全部收录技术线无关，纯属范围外。",
+      "excluded_at": "2026-10-29"
+    },
+    "https://openalex.org/W4391377904": {
+      "title": "A Review on Code Generation with LLMs: Application and Evaluation",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "该文为LLM代码生成及其评测的综述，属软件工程垂直应用调研，与空间智能、导航、机器人及具身智能均无关联，属于范围外工作。",
+      "excluded_at": "2026-10-29"
+    },
+    "2404.15155": {
+      "title": "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "该工作是将LLM多智能体框架套用于医疗决策与诊断这一垂直领域，与空间、导航、机器人无关，属于研究范围中明确列为拒绝的『医疗分诊』类应用。",
+      "excluded_at": "2026-10-29"
+    },
+    "https://openalex.org/W4414340090": {
+      "title": "Emotional AI and the rise of pseudo-intimacy: are we trading authenticity for algorithmic affection?",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文是关于情感AI伴侣与伪亲密的伦理/人文批判性评述，不涉及导航、空间智能或机器人，也非模型与智能体能力本身的显著进展，属于范围中明确排除的情感类垂直应用范畴。",
+      "excluded_at": "2026-10-29"
     }
   },
   "last_citation_refresh": "2026-10-27T15:42:37.933029+00:00",
   "briefing": {
-    "text": "本批工作主线是让语言基础模型落地到具身任务：从价值函数为LLM提供物理可供性接地（SayCan），到推理与行动交替的智能体范式，再到面向语言导航的分层场景图与视频大模型方案。三篇优先读：ReAct确立了推理-动作交替生成范式，已成为智能体研究的通用起点；HOV-SG以楼层-房间-物体三层场景图把开放词汇地图压缩75%，代表结构化表示路线；NaVid仅凭单目RGB视频直接输出导航动作，仿真与真机均达SOTA，验证了VLM端到端接管导航栈的可行性。整体看，具身导航正从显式建图与符号规划走向基础模型直接闭环。",
-    "added": 4,
-    "at": "2026-10-28T16:33:46.419758+00:00",
+    "text": "本批工作主线是能力跨域落地：一条线处理仿真到真实的迁移，另一条线用多模态基础模型统一数字与物理世界的行动。首推《Crossing the Reality Gap》，这篇被引200的综述梳理了强化学习控制器sim-to-real的主流方法、失效场景与开放问题，可当领域地图和选题依据；《Magma》以SoM标注可操作对象、ToM标注运动轨迹，融合图像、视频与机器人异构数据，在UI导航和机器人操作上同时达到SOTA，是感知—行动统一范式的具体实现。趋势上，跨域迁移正从补丁式技巧转向基础模型内建能力，数字智能体与具身智能体的边界在加速融合。",
+    "added": 2,
+    "at": "2026-10-29T16:38:54.486578+00:00",
     "new": [
       {
-        "t": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
-        "u": "https://arxiv.org/abs/2204.01691",
+        "t": "Crossing the Reality Gap: A Survey on Sim-to-Real Transferability of Robot Controllers in Reinforcement Learning",
+        "u": "https://doi.org/10.1109/access.2021.3126658",
+        "r": 9,
+        "g": 6,
+        "s": "该综述聚焦强化学习机器人控制器的仿真到真实迁移问题，系统梳理应对现实鸿沟的主流方法与各自不足，并指明若干潜在的新研究方向。",
+        "c": "",
+        "cit": 200
+      },
+      {
+        "t": "Magma: A Foundation Model for Multimodal AI Agents",
+        "u": "https://arxiv.org/abs/2502.13130",
         "r": 8,
         "g": 8,
-        "s": "SayCan用预训练技能的价值函数为大语言模型提供真实世界可供性接地：LLM贡献任务语义知识，价值函数保证动作物理可行，两者结合使移动操作机器人在真实厨房环境中完成长时域抽象自然语言指令。",
+        "s": "Magma是面向数字与物理世界智能体任务的多模态基础模型，以SoM标注图像中可操作对象、ToM标注视频中运动轨迹，融合图像、视频与机器人异构数据训练，统一语言理解与时空行动能力，在UI导航和机器人操作任务上达到SOTA。",
         "c": "",
-        "cit": 624
-      },
-      {
-        "t": "ReAct: Synergizing Reasoning and Acting in Language Models",
-        "u": "https://arxiv.org/abs/2210.03629",
-        "r": 9,
-        "g": 9,
-        "s": "提出ReAct范式，让LLM交替生成推理轨迹与任务动作：推理用于制定、跟踪行动计划并处理异常，动作用于与环境或知识库交互获取信息，在问答、事实验证与交互决策基准上超越强基线。",
-        "c": "",
-        "cit": 603
-      },
-      {
-        "t": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
-        "u": "https://doi.org/10.15607/rss.2024.xx.077",
-        "r": 9,
-        "g": 8,
-        "s": "HOV-SG构建楼层-房间-物体三层开放词汇3D场景图，融合视觉语言基础模型特征，支持多楼层语言条件导航，在三个数据集上物体/房间/楼层级语义精度超越基线，表示规模较稠密开放词汇地图缩减75%。",
-        "c": "",
-        "cit": 123
-      },
-      {
-        "t": "NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation",
-        "u": "https://doi.org/10.15607/rss.2024.xx.079",
-        "r": 10,
-        "g": 8,
-        "s": "NaVid提出仅靠单目RGB视频流的视频大模型导航方法，无需地图、里程计或深度输入即可跟随指令输出下一步动作，用510k导航样本与763k网络数据训练，仿真与真机均达SOTA。",
-        "c": "",
-        "cit": 103
+        "cit": 53
       }
     ]
   }
