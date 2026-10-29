@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T16:32:42.378981+00:00",
+  "updated_at": "2026-10-29T16:37:15.890118+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -6904,6 +6904,56 @@
         "language agent"
       ],
       "added_at": "2026-10-28T10:34:52.140321+00:00"
+    },
+    {
+      "id": "2610.36013",
+      "arxiv_id": "2610.36013",
+      "title": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
+      "authors": [
+        "Xiaomi Embodied Intelligence Team",
+        "Yuechen Luo",
+        "Chong He",
+        "Fang Li",
+        "Shaoqing Xu",
+        "Jingkai Wang",
+        "Menglun Su",
+        "Jiaxin Liu",
+        "Shengyin Jiang",
+        "Zhiyi Lai",
+        "Long Chen",
+        "Longlong Wang"
+      ],
+      "published": "2026-10-26",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.36013",
+      "pdf_url": "https://arxiv.org/pdf/2610.36013",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OmniBrain-0是轻量统一具身智能体，以共享高层决策模型协调操作与导航，集成理解、规划、进度跟踪与失败恢复，经MOPD多教师在线蒸馏与RSI自改进训练，在多基准与真机上验证高效。",
+      "change_zh": "常见路线是专用策略缺任务级可靠性，或依赖昂贵大模型推理。该工作把统一做进学习的决策模型内部而非工具接口，用MOPD蒸馏多教师交互经验成紧凑模型，RSI飞轮再把执行证据转为准则、提醒与验证轨迹持续自改进。",
+      "why_it_matters": "对地面VLN直接相关（R2R-CE验证），其任务理解、进度跟踪与失败恢复能力正是ObjectNav长时任务所需；把大模型决策能力蒸馏进紧凑模型的范式，对需机载轻量模型与长程任务可靠性的UAV主动目标搜索有直接借鉴价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "具身智能, 统一智能体, 多教师在线策略蒸馏（MOPD）, 递归自我改进（RSI）, 机器人操作与导航",
+      "question_zh": "如何把昂贵多模态教师的具身决策能力蒸馏进轻量统一模型，使其在长时域任务中协调操作与导航、追踪进度并从失败中恢复？",
+      "innovation_zh": "不同于仅在工具接口层拼接专家的多模态智能体，OmniBrain-0在共享决策模型内部统一操作与导航，并以MOPD多教师在线蒸馏与RSI自改进数据飞轮实现能力的高效整合与持续提升。",
+      "dataset_zh": "仿真基准LIBERO-Pro、LIBERO-Plus、RoboCasa365、RoboTwin 2.0、R2R-CE Val-Unseen，以及多个真实世界机器人操作任务（具体真机平台未提及）",
+      "results_zh": "OmniBrain-0在上述多个仿真基准及真实操作任务上取得强跨域任务表现，同时推理与执行开销显著低于其闭源教师模型，证明具身能力可高效迁移并整合到紧凑统一智能体中；摘要未给出具体性能数字。",
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "agentic",
+        "multimodal agent",
+        "r2r"
+      ],
+      "added_at": "2026-10-29T16:37:12.888493+00:00"
     },
     {
       "id": "2610.33487",
@@ -26484,40 +26534,16 @@
     }
   ],
   "briefing": {
-    "text": "本批四篇贯穿具身导航的空间理解、决策解释、先验注入与经验记忆四个环节。首推 Humans in Space 的 SATE-Bench：以316个真实场景、2525组多轮问答揭示主流MLLM过早停止探索且过度自信，GRPO奖励探索反而降低准确率，对现有训练范式是直接警示。ScheNav 从2D户型图生成3.3万余条噪声可控的示意图导航数据，经 SchemaField 与累积观测融合成空间价值场，未见环境成功率与路径效率同步提升。ReSight 让执行与编码智能体共享时空记忆，从执行记录挖掘能力缺口并沉淀为可复用技能，勾勒出长周期自改进路径。趋势上，导航研究正从单轮策略学习转向先验注入与经验沉淀并重的记忆化架构。",
-    "added": 4,
-    "at": "2026-10-28T16:33:13.765101+00:00",
+    "text": "今日入库的主线是统一具身智能体：不再为导航与操作分别训练专家模型，而是让单一模型贯通理解、规划与失败恢复。最值得读的是 OmniBrain-0: A Unified Agentic Model for Embodied Intelligence：它用共享高层决策模型调度双任务，靠MOPD多教师在线蒸馏与RSI自改进补齐规划及失败恢复能力，并在多基准与真机上验证了轻量模型可跑通全流程，适合关注部署成本的研究者精读。趋势上，具身研究正从单任务专家转向“一套大脑管全流程”的一体化框架，蒸馏加自改进正成为轻量化的标准配方。",
+    "added": 1,
+    "at": "2026-10-29T16:38:25.582600+00:00",
     "new": [
       {
-        "t": "Humans in Space: Can MLLMs Construct Human-Centric Spatial Understanding via Active Exocentric Exploration?",
-        "u": "https://arxiv.org/abs/2610.34149",
-        "r": 9,
-        "g": 8,
-        "s": "SATE-Bench用316个真实场景与2525组多轮问答评测MLLM的视觉自我感知与主动外视角探索，发现主流模型过早停止探索且过度自信，GRPO奖励探索反而降低准确率。",
-        "c": ""
-      },
-      {
-        "t": "Explaining Navigation Decisions: Stage-Aware Visual Attribution for Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.34028",
-        "r": 7,
-        "g": 7,
-        "s": "针对VLN可解释性中的指令阶段不敏感问题，提出阶段感知归因框架，通过动作条件的时序归因估计阶段关联并聚合历史证据，并以指令引导空间滤波，在多个VLN策略、基准与真机上验证归因质量提升。",
-        "c": ""
-      },
-      {
-        "t": "ScheNav: Schematic-Guided Object Goal Navigation",
-        "u": "https://arxiv.org/abs/2610.34286",
-        "r": 9,
-        "g": 7,
-        "s": "提出从2D户型图生成3.3万余噪声可控示意图与导航回合数据集，并以SchemaField将示意图与累积观测融合为空间价值场，实现闭环目标导航，未见环境成功率和路径效率均提升。",
-        "c": ""
-      },
-      {
-        "t": "ReSight: Task-Driven Self-Improving Memory for Embodied Agents",
-        "u": "https://arxiv.org/abs/2610.33487",
+        "t": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
+        "u": "https://arxiv.org/abs/2610.36013",
         "r": 8,
         "g": 8,
-        "s": "ReSight为具身智能体构建任务驱动的自改进记忆：保留关键帧与时空关联，执行与编码智能体共享记忆，EDM从执行记录发现能力缺口，将探索方案沉淀为可复用的查询工具与技能。",
+        "s": "OmniBrain-0是轻量统一具身智能体，以共享高层决策模型协调操作与导航，集成理解、规划、进度跟踪与失败恢复，经MOPD多教师在线蒸馏与RSI自改进训练，在多基准与真机上验证高效。",
         "c": ""
       }
     ]

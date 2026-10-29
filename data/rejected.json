@@ -1,12 +1,4 @@
 {
-  "2609.03153": {
-    "title": "VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "属生成视频物理性审计的智能体垂直应用，服务于文生视频质量评测场景，与导航/规划用世界模型、UAV目标搜索及ObjectNav等核心收录线仅术语擦边、无实质关联。",
-    "rejected_at": "2026-09-04",
-    "url": "https://arxiv.org/abs/2609.03153"
-  },
   "2609.03891": {
     "title": "A hybrid pipeline for dynamic ontology-based semantic mapping",
     "relevance": 6,
@@ -2398,5 +2390,13 @@
     "reason": "该工作是与空间、导航、机器人无关的科研创意自动生成（AI Scientist方向）垂直应用基准，未提出通用模型或智能体能力本身的显著新进展，落入范围拒绝条款。",
     "rejected_at": "2026-10-28",
     "url": "https://arxiv.org/abs/2610.33644"
+  },
+  "2610.37283": {
+    "title": "BenchMeUp: Building Software Engineering Benchmarks from Natural-Language Specifications",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属于LLM多智能体套用于软件工程基准自动构建的垂直应用，与空间智能、导航、机器人自主均无关，属范围中明确排除的情形。",
+    "rejected_at": "2026-10-29",
+    "url": "https://arxiv.org/abs/2610.37283"
   }
 }
