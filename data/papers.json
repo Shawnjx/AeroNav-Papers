@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T16:37:15.890118+00:00",
+  "updated_at": "2026-10-30T11:11:42.067894+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -63,6 +63,61 @@
     }
   ],
   "papers": [
+    {
+      "id": "2610.39287",
+      "arxiv_id": "2610.39287",
+      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+      "authors": [
+        "Junli Liu",
+        "Zhongrui You",
+        "Chenhui Li",
+        "Zhen Li",
+        "Yuyang Tian",
+        "Qizhen Chen",
+        "Delin Qu",
+        "Haoming Song",
+        "Dong Wang",
+        "Xuelong Li",
+        "Zhigang Wang",
+        "Bin Zhao"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.39287",
+      "pdf_url": "https://arxiv.org/pdf/2610.39287",
+      "code_url": "https://github.com/Ideal-ljl/AeroBrain",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "空域 VLN",
+        "UAV 目标搜索",
+        "地面 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出统一机载视觉-语言-动作模型OpenFlyV2，以共享视觉语言表征同时支持无人机语义理解、语言指代感知、空间推理与闭环飞行控制，机载10Hz推理并零样本迁移至真实四旋翼，四个真实环境导航成功率48%。",
+      "change_zh": "常见空域系统将感知、语言与控制拆成专用模块并依赖机外算力；该工作以单一共享表征统一各能力，用紧凑动作专家输出12航点动作块，并以运动感知时序记忆和动作先验压低闭环算力，实现机载10Hz持续闭环飞行。",
+      "why_it_matters": "直接推进空域VLN走向可部署的机载闭环指令跟随，也为UAV按语言描述搜索并接近目标提供感知-推理-控制一体的底座；其零样本sim2real与Jetson级实时推理方案，对真机与Sim2Real技术线同样有直接参考价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉-语言-动作模型, 无人机导航, 机载计算, 语言引导感知, 空间推理, 闭环控制",
+      "question_zh": "如何在资源受限的无人机机载平台上，用单一模型统一实现语义理解、语言引导感知、空间推理与持续闭环飞行控制？",
+      "innovation_zh": "针对现有系统功能单一、依赖离板计算、难以在资源受限平台持续闭环运行的问题，提出统一的机载VLA架构：以共享视觉语言表示同时支撑多类能力，紧凑动作专家将多模态上下文转为短时程航点，运动感知时序记忆与动作先验降低闭环执行的计算开销。",
+      "dataset_zh": "自建仿真数据集（名称未提及），含约70,000条导航轨迹和60,000视觉-语言指令-响应对；真机为四旋翼无人机平台，机载计算使用NVIDIA Jetson Orin NX。",
+      "results_zh": "模型在Jetson Orin NX上完全机载运行，以10 Hz频率输出每块含12个航点的动作块；从仿真零样本迁移至真实四旋翼飞行，在四个真实环境中、无任何真实空中训练数据条件下取得48%的导航成功率，证明广泛视觉语言能力与连续闭环飞行可在单一模型中共存。",
+      "venue_verified": false,
+      "score": 29,
+      "keywords": [
+        "aerial",
+        "instruction",
+        "spatial reasoning",
+        "waypoint"
+      ],
+      "added_at": "2026-10-30T10:48:48.961693+00:00"
+    },
     {
       "id": "2610.10787",
       "arxiv_id": "2610.10787",
@@ -1710,6 +1765,54 @@
         "instruction"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.38248",
+      "arxiv_id": "2610.38248",
+      "title": "MATCH: Execution-Aware Hierarchical Reinforcement Learning for Vision-and-Language Navigation in Continuous Environment",
+      "authors": [
+        "Shuhao Ye",
+        "Yufei Wei",
+        "Demao Wang",
+        "Shichao Zhai",
+        "Rong Xiong",
+        "Yue Wang"
+      ],
+      "published": "2026-10-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38248",
+      "pdf_url": "https://arxiv.org/pdf/2610.38248",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MATCH提出执行感知的分层强化学习框架，联合训练语言条件规划器与目标条件动作执行器，通过执行感知拓扑图与过渡感知密集宏奖励协同优化，在R2R-CE和RxR-CE上以0.5B参数取得SOTA，并完成初步真机部署。",
+      "change_zh": "常见分层VLN-CE方法只优化规划器、执行器保持固定；MATCH让二者同步在线联合训练，规划器所用的拓扑图显式融合执行器价值估计与实际执行结果记忆，按执行可行性选择请求，并以有界连续偏移修正目标点。",
+      "why_it_matters": "直接命中地面VLN连续环境指令跟随的核心难题；其规划-执行联合优化与执行可行性感知的请求选择思路，可迁移至UAV主动目标搜索中高层规划与低层飞行执行的协同，初步真机部署也为连续环境导航的sim2real提供参考。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航, 分层强化学习, 执行感知, 联合学习, 连续环境, R2R-CE",
+      "question_zh": "在连续环境视觉语言导航中，如何联合学习语言条件规划器与基础动作执行器，实现指令一致的规划与碰撞约束下的可靠执行？",
+      "innovation_zh": "相比已有分层方法仅优化规划器而执行策略固定，MATCH联合学习语言条件规划器与目标条件执行器：利用执行感知拓扑图（融合执行器价值估计与实际结果记忆）选择并细化执行请求，设计转移感知密集宏奖励，并以分阶段课程实现规划与执行的同步在线策略更新。",
+      "dataset_zh": "R2R-CE和RxR-CE连续环境视觉语言导航基准数据集，另含初步真机部署实验",
+      "results_zh": "MATCH仅用0.5B参数即在R2R-CE和RxR-CE两个基准上取得当前最优（state-of-the-art）性能；初步的真实机器人部署实验进一步验证了该方法的实际应用潜力。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "instruction",
+        "instruction following",
+        "r2r"
+      ],
+      "added_at": "2026-10-30T10:58:15.028106+00:00"
     },
     {
       "id": "2610.37111",
@@ -4335,6 +4438,101 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.39379",
+      "arxiv_id": "2610.39379",
+      "title": "Information-Driven Collaborative Autonomy for Heterogeneous UAV/UGV Teams",
+      "authors": [
+        "Joshua Yuriv Pilipovsky"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.39379",
+      "pdf_url": "https://arxiv.org/pdf/2610.39379",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY",
+        "math.OC"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 9,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出UAV/UGV异构协同框架：无人机以遍历性控制实现信息驱动的空中目标搜索，用PMB滤波估计未知数目目标的后验；地面车结合机会约束避障规划路线，经全分布式优化闭环更新，数值仿真验证协同效果。",
+      "change_zh": "相比解耦的搜索-规划路线，本文把遍历性搜索与多目标PMB后验闭环耦合，感知由信息密度驱动并建模视角相关检测概率，空中搜索与地面避障路线经嵌套凸优化-共识ADMM全分布式联合求解，并随信息闭环更新。",
+      "why_it_matters": "为UAV主动目标搜索提供信息论式的规范框架：遍历控制权衡探索与定位，PMB后验同时表征已检出与未检出目标；其视角相关检测建模、风险感知地面路线规划与全分布式求解，对多机协同侦察及目标发现-接近闭环均有直接参考价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "遍历控制, 异构UAV/UGV协同, Poisson多伯努利（PMB）滤波, 仅角度测量, 机会约束规划, 分散式优化",
+      "question_zh": "如何在未知数量危险目标的环境中，信息驱动地协同异构无人机与无人车团队，实现空中搜索与地面安全路径规划？",
+      "innovation_zh": "以仅角度测量经贝叶斯推断与数据关联边缘化得到的PMB后验为信息密度，构建遍历控制实现探索与定位平衡；地面规划融合机会约束避障与空洞概率目标；并以嵌套SCvx*–C-ADMM实现完全分散的闭环协同优化。",
+      "dataset_zh": "数值仿真案例研究（未提及具体数据集与真机平台）",
+      "results_zh": "数值案例研究考察了感知几何与目标不确定性的影响，对比了分散式与集中式求解器，并演示了多无人机与多无人车间的完整闭环协同；地面车辆在剩余路径风险低于阈值时方可通行。摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "aerial",
+        "exploration",
+        "geometry",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-10-30T10:45:23.744881+00:00"
+    },
+    {
+      "id": "2610.39446",
+      "arxiv_id": "2610.39446",
+      "title": "Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory",
+      "authors": [
+        "Kai Sheng",
+        "Liuyi Wang",
+        "Jinlong Li",
+        "Haojie Dai",
+        "Chengju Liu",
+        "Qijun Chen"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.39446",
+      "pdf_url": "https://arxiv.org/pdf/2610.39446",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "EvoLife是一体化终身导航框架，融合混合动作空间（路标/离散/像素/物体导向）、主动求助交互与持久空间记忆，在VLN、ObjectNav等8个基准上取得强表现，并有真机多日验证。",
+      "change_zh": "常见导航智能体多为单一动作空间、单任务、任务结束即遗忘；该工作把四种动作范式统一进一个框架，并引入按需「开口求助」与跨任务持久空间记忆，使经验可积累并在重访时复用。",
+      "why_it_matters": "混合动作空间与持久空间记忆为ObjectNav实例导航与多任务GOAT提供跨任务经验复用机制，重访SPL提升显示记忆价值；求助与空间记忆框架也可迁移到UAV目标搜索与长时侦察场景。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "具身导航, 终身导航, 混合动作空间, 持久空间记忆, 主动交互, 视觉语言导航",
+      "question_zh": "如何让多模态具身智能体在导航中自主选择移动方式、适时主动求助，并通过持久记忆积累复用经验实现终身导航。",
+      "innovation_zh": "提出EvoLife统一导航框架，整合航点、离散、像素级、物体导向的混合动作空间、主动求助交互及绑定观测和对话到地点的持久空间记忆，实现经验跨任务积累与复用。",
+      "dataset_zh": "四个任务族共八个基准：视觉语言导航、物体导航、交互式实例导航、持续多任务导航，含R2R、LHPR-VLN、GOAT-Bench（其余基准名称未提及）；另有多日真机物理导航实验，具体平台未提及。",
+      "results_zh": "每集平均仅1.87次主动交互；四个100-episode集首访SR达100%；LHPR-VLN、GOAT-Bench各50序列完整SR为98%、94%；R2R重访SPL由82.23%升至93.31%。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "exploration",
+        "instance navigation",
+        "object navigation",
+        "r2r",
+        "spatial memory",
+        "waypoint"
+      ],
+      "added_at": "2026-10-30T10:51:58.254210+00:00"
     },
     {
       "id": "2610.34286",
@@ -9188,6 +9386,103 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.40495",
+      "arxiv_id": "2610.40495",
+      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "authors": [
+        "Oliver Hahn",
+        "Rodrigo Marcuzzi",
+        "Sangeetha Grama Srinivasan",
+        "Alessandro Burzio",
+        "Sherwin Bahmani",
+        "Jiahui Huang",
+        "Stefan Roth",
+        "Shengyu Huang",
+        "Qunjie Zhou",
+        "Laura Leal-Taixé"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.40495",
+      "pdf_url": "https://arxiv.org/pdf/2610.40495",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "LucidLyra以多任务蒸馏统一相机可控视频扩散模型与冻结2D视觉基础模型的知识，前馈地从视频潜变量联合推断含几何、外观、开放词汇语义与实例线索的3D高斯，无需逐场景优化即得可查询的3D场景。",
+      "change_zh": "常见路线或需实拍多视角数据并逐场景优化3D高斯语义，或生成式重建只输出可渲染却无语义的场景；本文改为前馈联合推断几何、外观、开放词汇语义与实例，训练免3D标注与多视角采集，并延伸至单目动态视频。",
+      "why_it_matters": "产出可查询的开放词汇3D场景属空间智能与重建线核心能力，可直接作机器人仿真环境来源；对UAV目标搜索与ObjectNav，其单图/单目视频到结构化语义3D的能力可支撑仿真数据构建与目标级开放词汇场景表征。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "生成式3D重建, 3D高斯, 多任务蒸馏, 开放词汇分割, 视频扩散模型, 前馈推理",
+      "question_zh": "如何让从单张图像生成式重建的3D场景以前馈方式直接查询语义与实例信息，而无需逐场景优化？",
+      "innovation_zh": "将相机控制视频扩散模型与冻结2D视觉基础模型的知识通过多任务蒸馏统一到单一模型中，前馈联合推断同时编码几何、外观、开放词汇语义和类别无关实例线索的3D高斯；相比已有方法无需逐场景优化、人工3D标注和采集的多视角数据，且泛化能力更强。",
+      "dataset_zh": "精选的合成基准与真实图像条件基准（摘要未提及具体数据集名称）",
+      "results_zh": "在精选合成与真实图像条件基准上，该方法优于结合最先进3DGS分割方法与生成式3D重建的基线，同时保持重建质量；支持新视角渲染、开放词汇分割与物体分组，且无需逐场景优化；还可扩展至单目视频，跨时间重建结构化动态3D场景。摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "geometry"
+      ],
+      "added_at": "2026-10-30T11:00:43.876098+00:00"
+    },
+    {
+      "id": "2610.38657",
+      "arxiv_id": "2610.38657",
+      "title": "Explore Where It Matters: Targeted Exploration for Efficient Rover Adaptation",
+      "authors": [
+        "Jacob Levy",
+        "Arthur Bouton",
+        "Tristan D. Hassler",
+        "Hari Nayar",
+        "David Fridovich-Keil"
+      ],
+      "published": "2026-10-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38657",
+      "pdf_url": "https://arxiv.org/pdf/2610.38657",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对行星车在松软坡面的sim2real差距，TERRA以奖励加权预测损失在线修正仿真训练的世界模型，并训练损失预测器估计任务相关误差高发区以引导MPC探索；仿真5次试验爬坡成功率约90%，真车3-5次试验恢复火星模拟坡面运动能力。",
+      "change_zh": "常见真机适应多靠随机试错、不确定性采样或大规模数据微调，不区分数据与任务成败的相关性；TERRA改为训练损失预测器估计未来性能相关误差，仅在影响任务的关键区域定向探索并修正世界模型，把探索价值与控制性能直接挂钩，显著减少所需真实试验次数。",
+      "why_it_matters": "对世界模型与真机sim2real线直接有价值：其『按任务奖励相关性定向探索』思想可迁移到UAV主动目标搜索与ObjectNav，即在有限机动预算下优先前往最能暴露模型失效、最利于达成目标的位置，降低真机与开放环境部署的试错成本。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "行星探测车，定向探索，sim-to-real迁移，世界模型，模型预测控制（MPC），在线自适应",
+      "question_zh": "行星探测车在陡峭可变形地形上部署时，如何在不支持大量试错的前提下，高效探索并修正与任务相关的世界模型误差以实现快速自适应？",
+      "innovation_zh": "提出TERRA在线自适应框架：用奖励加权预测损失更新仿真训练的世界模型，并训练损失预测器估计未来与性能相关的误差可能出现之处，据此在MPC中引导定向探索。区别于无差别试错式探索，其主动搜寻能暴露任务相关模型误差的部署数据。",
+      "dataset_zh": "仿真环境（具体名称未提及）及ERNEST真机探测车平台；真机实验在可变形火星模拟土坡上进行。",
+      "results_zh": "仿真中，在严重分布外预训练条件下，TERRA五次试验内达到约90%爬坡成功率，且在奖励、完成时间及首次成功能耗上均优于探索基线；在ERNEST真机上，三至五次真实试验内即恢复火星模拟土坡上的主动悬架协同运动能力。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "deployment",
+        "exploration",
+        "world model"
+      ],
+      "added_at": "2026-10-30T11:04:24.159959+00:00"
+    },
+    {
       "id": "2610.37203",
       "arxiv_id": "2610.37203",
       "title": "Remember Where You Walk: Learning Spatial Memory for End-to-End Legged Robot Exploration",
@@ -9229,6 +9524,50 @@
         "spatial memory"
       ],
       "added_at": "2026-10-28T10:26:34.108190+00:00"
+    },
+    {
+      "id": "2610.38040",
+      "arxiv_id": "2610.38040",
+      "title": "EARS-Info: Information-Aware Event-Driven Reallocation for Multi-Robot Exploration",
+      "authors": [
+        "Kabeh Mohsenzadegan",
+        "Vahid Tavakkoli",
+        "Kyandoghere Kyamakya"
+      ],
+      "published": "2026-10-27",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38040",
+      "pdf_url": "https://arxiv.org/pdf/2610.38040",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "topics": [
+        "UAV 目标搜索"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "EARS-Info 将事件驱动的蚁群重分配搜索扩展为信息感知版本，融合边际感知增益、可行重定位、返航感知路由、感知预留与缓存最短路，在城市网格多机器人探索模拟中于全部评测面板取得最高分。",
+      "change_zh": "相比常见周期性重规划或纯信息增益探索，它把边际增益、可行重定位、返航约束与感知预留统一进事件驱动重分配框架，由事件而非固定周期触发决策，并给出大规模统计检验；但作者自陈各组件的单独优势仍不确定。",
+      "why_it_matters": "对UAV主动目标搜索直接有价值：多机分配中的边际增益、返航约束、能耗与通信丢包鲁棒性正是搜救侦察与目标发现任务的关键机制，其大规模对照实验方法也可借鉴；对ObjectNav多智能体扩展有参考，但结果限于粗糙网格模拟，真机迁移未验证。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "多机器人探索, 事件驱动重分配, 信息感知, 蚁群搜索, OpenStreetMap, 栅格地图",
+      "question_zh": "如何通过信息感知的事件驱动重分配策略，在城市栅格地图上提升多机器人探索的任务得分与发现率？",
+      "innovation_zh": "在事件驱动蚁群重分配搜索（EARS）基础上提出信息感知扩展EARS-Info，融合边际感知增益、可行重定位、返程感知路由、感知预留与缓存最短路径五种机制，构成完整控制器，弥补原方法缺乏信息感知的不足。",
+      "dataset_zh": "基于OpenStreetMap衍生的八张城市栅格地图的仿真环境，共168,000个episode、对比30种实现；真机平台未提及。",
+      "results_zh": "在八城市地图168,000个episode、30种实现对比中，EARS-Info在所有评估面板取得最高平均得分；八机器人、3%通信丢失下较EARS-Safe得分提升5.43%，加权发现率由88.88%升至98.46%，能耗降2.62%，八城得分差均为正（p=0.0078125），且无模拟事故。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "exploration"
+      ],
+      "added_at": "2026-10-30T11:11:39.067060+00:00"
     },
     {
       "id": "2610.36077",
@@ -14787,6 +15126,90 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.40429",
+      "arxiv_id": "2610.40429",
+      "title": "Optimal Path Planning with Localization constraints",
+      "authors": [
+        "Chinmay Mundane",
+        "Manav Mishra",
+        "PB Sujit"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.40429",
+      "pdf_url": "https://arxiv.org/pdf/2610.40429",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对GPS拒止区域，提出定位约束A*规划器：以EKF传播协方差并把不确定度上界作为硬约束，仅扩展可行路径且启发式仍可采纳；仿真与PyBullet实验表明其比RRT*、PRM更短更可靠。",
+      "change_zh": "常见做法是用RRT*/PRM采样规划并以代价项软惩罚定位误差，或将规划与定位解耦；本文把协方差上界作为A*搜索中的硬约束，并证明该处理不破坏启发式的可采纳性与一致性，从而在可行路径内保持最优性。",
+      "why_it_matters": "GPS拒止是搜救、侦察等无人机目标搜索任务的常见前提，把定位不确定度纳入路径硬约束可保障长航程自主飞行的可靠性；该工作属于状态估计与运动规划交叉方向，为不确定性感知的导航与任务规划提供可复用的最优性理论保障。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "drone",
+        "localization",
+        "uav"
+      ],
+      "added_at": "2026-10-30T10:52:54.619552+00:00"
+    },
+    {
+      "id": "2610.40026",
+      "arxiv_id": "2610.40026",
+      "title": "RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence",
+      "authors": [
+        "Xin Ma",
+        "Furong Chen",
+        "Xinlong Man",
+        "Bo Zhang",
+        "Yalong Guo",
+        "Haolan Lei",
+        "Chaochen Cui",
+        "Hongyuan Zhang",
+        "Mulin Chen",
+        "Yi Wang",
+        "Lap-pui Chau",
+        "Chuang Yang"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.40026",
+      "pdf_url": "https://arxiv.org/pdf/2610.40026",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出RoboSeed多维评测框架，从能力、训练与部署成本、研究价值与复现证据五个维度为VLA与世界-动作模型生成0-100画像，支持不同预算偏好并公开可复现代码。",
+      "change_zh": "不同于只看任务成功率的榜单式评测，该工作把算力预算、部署成本与结论可复现性纳入评分维度，用固定归一化锚点与三种偏好设定生成模型画像，缺失数据显式呈现、证据不足时拒绝给总分。",
+      "why_it_matters": "对具身基准与评测线提供了超越成功率的成本感知评测范式；其WAM评测与世界模型技术线相关，预算相关的骨干选择结论可间接指导ObjectNav与UAV搜救策略的模型选型，可复现证据链有助真机落地决策。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-10-30T11:07:04.595297+00:00"
     },
     {
       "id": "2610.34028",
@@ -20702,6 +21125,90 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.40455",
+      "arxiv_id": "2610.40455",
+      "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+      "authors": [
+        "Daniel Lengerer",
+        "Richard Schwarzkopf",
+        "Jonas Merkert",
+        "Fabian Immel",
+        "Rupert Polley",
+        "Frank Bieder",
+        "Jan-Hendrik Pauls",
+        "J. Marius Zöllner",
+        "Klaus Bogenberger",
+        "Christoph Stiller",
+        "Carsten Markgraf"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.40455",
+      "pdf_url": "https://arxiv.org/pdf/2610.40455",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "在车载多模态数据上叠加空间配准的航拍影像与高分辨率神经表示，构建KITScenes Aerial基准，统一评测航拍辅助在线高精建图与跨视角定位，实验显示航拍上下文显著提升细粒度与远距离建图精度。",
+      "change_zh": "常见做法把航拍地图构建、在线高精建图与跨视角定位分散在各自独立的数据与基准上研究；本工作将其统一到同一时空对齐数据集，并以53类建图、多空间范围与多航拍分辨率的系统评测量化航拍先验带来的增益。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav无直接帮助；但对在线建图与定位两条技术线有价值：航拍图作为空间先验提升地面建图，地理不相交条件下的跨视角定位协议可迁移到无人机对卫星图匹配定位等空地融合场景。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "evaluation",
+        "localization"
+      ],
+      "added_at": "2026-10-30T10:47:25.342367+00:00"
+    },
+    {
+      "id": "2610.40199",
+      "arxiv_id": "2610.40199",
+      "title": "Decision-Level Error Attribution and Depth-Aware Safety Evaluation of Monocular RGB Human Tracking for Autonomous Robot Navigation",
+      "authors": [
+        "Abdulahi Taiwo",
+        "Chijioke Cyriacus Ekechi"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.40199",
+      "pdf_url": "https://arxiv.org/pdf/2610.40199",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "论文将机器人停止/行进决策错误拆解为安全规则与感知两部分，提出双因子Shapley归因并区分漏检与定位误差，在ETH/UCY行人视频上以仿真静止机器人评估单目RGB跟踪的安全性。",
+      "change_zh": "常见做法用几何精度指标评价跟踪器，本文改为决策层面的安全评价：证明横向距离规则是平面距离的下界，用双因子Shapley归因分离安全规则与感知误差，并把感知误差细分为漏检与定位误差。",
+      "why_it_matters": "为评测线提供从几何精度转向决策级安全评价的范式：漏检主导漏报危险、安全裕度加地面定位优于横向规则的结论，对人类附近的地面导航及UAV目标搜索中感知误差如何影响任务决策有直接参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "evaluation",
+        "localization"
+      ],
+      "added_at": "2026-10-30T11:06:05.032457+00:00"
+    },
+    {
       "id": "2610.36454",
       "arxiv_id": "2610.36454",
       "title": "SVIn+: Multi-Modal Framework for Robust Underwater State Estimation using 3D Sonar, Visual-Inertial, Water-Pressure, and DVL",
@@ -22653,6 +23160,52 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.40578",
+      "arxiv_id": "2610.40578",
+      "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+      "authors": [
+        "Qiushi Sun",
+        "Da Yu",
+        "Alexander Knop",
+        "Amer Sinha",
+        "Lingpeng Kong",
+        "Ben Kao",
+        "Ravi Kumar",
+        "Pritish Kamath"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.40578",
+      "pdf_url": "https://arxiv.org/pdf/2610.40578",
+      "code_url": "",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VeriCUA把计算机使用智能体的任务完成验证重构为智能体式取证：先构建任务评分细则，再动态选择GUI或代码检查收集证据并按证据规则综合判定，线上线下跨平台提升与参考标签一致性。",
+      "change_zh": "常见路线要么让VLM只凭给定观测做裁判，要么生成程序读状态，均受局部视图限制且需按平台定制。该文改为验证器主动探索环境取证，统一流程覆盖线上线下与多平台，以显式证据规则支撑判定。",
+      "why_it_matters": "对多模态大模型与智能体线有价值：为CUA验证提供平台无关的主动取证框架，可用于数据筛选、评测与RL奖励；'探索式取证+证据规则'思路可迁移到具身任务成败判定，与UAV目标搜索、ObjectNav无直接关联。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "agentic",
+        "evaluation",
+        "exploration",
+        "vlm"
+      ],
+      "added_at": "2026-10-30T10:55:24.989765+00:00"
+    },
+    {
       "id": "2610.37341",
       "arxiv_id": "2610.37341",
       "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
@@ -23355,6 +23908,63 @@
         "world model"
       ],
       "added_at": "2026-09-18T08:54:45.554191+00:00"
+    },
+    {
+      "id": "2610.39441",
+      "arxiv_id": "2610.39441",
+      "title": "PathCowork: Learning from real-world pathology practice to build AI copilots",
+      "authors": [
+        "Sheng Wang",
+        "Jialu Yao",
+        "Maria V. Rossi",
+        "Shunsuke Koga",
+        "Esther Baranov",
+        "MacLean P. Nasrallah",
+        "Songhao Li",
+        "Jonathan Xu",
+        "Wei Du",
+        "Cindy McGrath",
+        "Timothy Chao",
+        "Anne Wang",
+        "Zhaohai Yang",
+        "Daniel Akuma",
+        "Selemon M. Walle",
+        "Olga Pozdnyakova",
+        "Edward B. Lee",
+        "Zahra Alipour",
+        "Annapurna Saksena",
+        "Rashmi Tondon",
+        "Nikolina Dioufa",
+        "David E. Elder",
+        "George J. Netto",
+        "Xiaowei Xu",
+        "Zhi Huang"
+      ],
+      "published": "2026-10-29",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.39441",
+      "pdf_url": "https://arxiv.org/pdf/2610.39441",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测",
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：PathCowork: Learning from real-world pathology practice to build AI copilots。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Medical AI learns from the answers doctors record, but rarely from how they interpret the evidence to reach them.",
+      "why_it_matters": "与具身基准与评测、真机与 Sim2Real直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "added_at": "2026-10-30T11:10:28.873995+00:00"
     },
     {
       "id": "2610.35342",
@@ -26534,16 +27144,112 @@
     }
   ],
   "briefing": {
-    "text": "今日入库的主线是统一具身智能体：不再为导航与操作分别训练专家模型，而是让单一模型贯通理解、规划与失败恢复。最值得读的是 OmniBrain-0: A Unified Agentic Model for Embodied Intelligence：它用共享高层决策模型调度双任务，靠MOPD多教师在线蒸馏与RSI自改进补齐规划及失败恢复能力，并在多基准与真机上验证了轻量模型可跑通全流程，适合关注部署成本的研究者精读。趋势上，具身研究正从单任务专家转向“一套大脑管全流程”的一体化框架，蒸馏加自改进正成为轻量化的标准配方。",
-    "added": 1,
-    "at": "2026-10-29T16:38:25.582600+00:00",
+    "text": "本批主线是具身导航的模型统一与真机落地，VLA、分层强化学习与多机协同是主要技术路线。首推MATCH：其执行感知分层强化学习以0.5B参数在R2R-CE与RxR-CE取得SOTA并完成真机部署，证明连续环境VLN不必依赖大模型；OpenFlyV2把语义理解与闭环飞控压进10Hz机载VLA并零样本迁移到真实四旋翼，是少见的端侧全闭环实证；Ask to Evolve以混合动作空间与持久记忆支撑终身导航，横跨8个基准且经多日真机验证。趋势上，机载实时化、小参数与真机闭环正从亮点变为标配。",
+    "added": 13,
+    "at": "2026-10-30T11:14:04.660201+00:00",
     "new": [
       {
-        "t": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
-        "u": "https://arxiv.org/abs/2610.36013",
-        "r": 8,
+        "t": "Information-Driven Collaborative Autonomy for Heterogeneous UAV/UGV Teams",
+        "u": "https://arxiv.org/abs/2610.39379",
+        "r": 9,
+        "g": 7,
+        "s": "提出UAV/UGV异构协同框架：无人机以遍历性控制实现信息驱动的空中目标搜索，用PMB滤波估计未知数目目标的后验；地面车结合机会约束避障规划路线，经全分布式优化闭环更新，数值仿真验证协同效果。",
+        "c": ""
+      },
+      {
+        "t": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+        "u": "https://arxiv.org/abs/2610.40455",
+        "r": 6,
+        "g": 7,
+        "s": "在车载多模态数据上叠加空间配准的航拍影像与高分辨率神经表示，构建KITScenes Aerial基准，统一评测航拍辅助在线高精建图与跨视角定位，实验显示航拍上下文显著提升细粒度与远距离建图精度。",
+        "c": ""
+      },
+      {
+        "t": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+        "u": "https://arxiv.org/abs/2610.39287",
+        "r": 10,
         "g": 8,
-        "s": "OmniBrain-0是轻量统一具身智能体，以共享高层决策模型协调操作与导航，集成理解、规划、进度跟踪与失败恢复，经MOPD多教师在线蒸馏与RSI自改进训练，在多基准与真机上验证高效。",
+        "s": "提出统一机载视觉-语言-动作模型OpenFlyV2，以共享视觉语言表征同时支持无人机语义理解、语言指代感知、空间推理与闭环飞行控制，机载10Hz推理并零样本迁移至真实四旋翼，四个真实环境导航成功率48%。",
+        "c": "https://github.com/Ideal-ljl/AeroBrain"
+      },
+      {
+        "t": "Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory",
+        "u": "https://arxiv.org/abs/2610.39446",
+        "r": 9,
+        "g": 7,
+        "s": "EvoLife是一体化终身导航框架，融合混合动作空间（路标/离散/像素/物体导向）、主动求助交互与持久空间记忆，在VLN、ObjectNav等8个基准上取得强表现，并有真机多日验证。",
+        "c": ""
+      },
+      {
+        "t": "Optimal Path Planning with Localization constraints",
+        "u": "https://arxiv.org/abs/2610.40429",
+        "r": 7,
+        "g": 7,
+        "s": "针对GPS拒止区域，提出定位约束A*规划器：以EKF传播协方差并把不确定度上界作为硬约束，仅扩展可行路径且启发式仍可采纳；仿真与PyBullet实验表明其比RRT*、PRM更短更可靠。",
+        "c": ""
+      },
+      {
+        "t": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+        "u": "https://arxiv.org/abs/2610.40578",
+        "r": 6,
+        "g": 6,
+        "s": "VeriCUA把计算机使用智能体的任务完成验证重构为智能体式取证：先构建任务评分细则，再动态选择GUI或代码检查收集证据并按证据规则综合判定，线上线下跨平台提升与参考标签一致性。",
+        "c": ""
+      },
+      {
+        "t": "MATCH: Execution-Aware Hierarchical Reinforcement Learning for Vision-and-Language Navigation in Continuous Environment",
+        "u": "https://arxiv.org/abs/2610.38248",
+        "r": 10,
+        "g": 7,
+        "s": "MATCH提出执行感知的分层强化学习框架，联合训练语言条件规划器与目标条件动作执行器，通过执行感知拓扑图与过渡感知密集宏奖励协同优化，在R2R-CE和RxR-CE上以0.5B参数取得SOTA，并完成初步真机部署。",
+        "c": ""
+      },
+      {
+        "t": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+        "u": "https://arxiv.org/abs/2610.40495",
+        "r": 8,
+        "g": 7,
+        "s": "LucidLyra以多任务蒸馏统一相机可控视频扩散模型与冻结2D视觉基础模型的知识，前馈地从视频潜变量联合推断含几何、外观、开放词汇语义与实例线索的3D高斯，无需逐场景优化即得可查询的3D场景。",
+        "c": ""
+      },
+      {
+        "t": "Explore Where It Matters: Targeted Exploration for Efficient Rover Adaptation",
+        "u": "https://arxiv.org/abs/2610.38657",
+        "r": 8,
+        "g": 7,
+        "s": "针对行星车在松软坡面的sim2real差距，TERRA以奖励加权预测损失在线修正仿真训练的世界模型，并训练损失预测器估计任务相关误差高发区以引导MPC探索；仿真5次试验爬坡成功率约90%，真车3-5次试验恢复火星模拟坡面运动能力。",
+        "c": ""
+      },
+      {
+        "t": "Decision-Level Error Attribution and Depth-Aware Safety Evaluation of Monocular RGB Human Tracking for Autonomous Robot Navigation",
+        "u": "https://arxiv.org/abs/2610.40199",
+        "r": 6,
+        "g": 7,
+        "s": "论文将机器人停止/行进决策错误拆解为安全规则与感知两部分，提出双因子Shapley归因并区分漏检与定位误差，在ETH/UCY行人视频上以仿真静止机器人评估单目RGB跟踪的安全性。",
+        "c": ""
+      },
+      {
+        "t": "RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence",
+        "u": "https://arxiv.org/abs/2610.40026",
+        "r": 7,
+        "g": 7,
+        "s": "提出RoboSeed多维评测框架，从能力、训练与部署成本、研究价值与复现证据五个维度为VLA与世界-动作模型生成0-100画像，支持不同预算偏好并公开可复现代码。",
+        "c": ""
+      },
+      {
+        "t": "PathCowork: Learning from real-world pathology practice to build AI copilots",
+        "u": "https://arxiv.org/abs/2610.39441",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：PathCowork: Learning from real-world pathology practice to build AI copilots。当前自动研判未启用，建议结合英文摘要阅读。",
+        "c": ""
+      },
+      {
+        "t": "EARS-Info: Information-Aware Event-Driven Reallocation for Multi-Robot Exploration",
+        "u": "https://arxiv.org/abs/2610.38040",
+        "r": 8,
+        "g": 7,
+        "s": "EARS-Info 将事件驱动的蚁群重分配搜索扩展为信息感知版本，融合边际感知增益、可行重定位、返航感知路由、感知预留与缓存最短路，在城市网格多机器人探索模拟中于全部评测面板取得最高分。",
         "c": ""
       }
     ]

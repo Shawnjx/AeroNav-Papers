@@ -1,68 +1,4 @@
 {
-  "2609.03891": {
-    "title": "A hybrid pipeline for dynamic ontology-based semantic mapping",
-    "relevance": 6,
-    "rigor": 4,
-    "reason": "摘要仅为系统流程描述，未给出实验设置、基线对比、消融或量化评估信息，方法可信度证据不足。",
-    "rejected_at": "2026-09-04",
-    "url": "https://arxiv.org/abs/2609.03891"
-  },
-  "2609.04193": {
-    "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "该论文属于机械臂操作与VLA控制，不含任何导航决策成分，其世界-动作模型仅服务于操作动作预测，属明确排除范围。",
-    "rejected_at": "2026-09-04",
-    "url": "https://arxiv.org/abs/2609.04193"
-  },
-  "2609.04183": {
-    "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
-    "relevance": 3,
-    "rigor": 6,
-    "reason": "弱监督密集视频描述属于视频时序理解与定位的垂直应用，仅将现成VLM作辅助工具，与空间智能、导航、机器人自主等收录技术线无关。",
-    "rejected_at": "2026-09-04",
-    "url": "https://arxiv.org/abs/2609.04183"
-  },
-  "2609.03681": {
-    "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
-    "relevance": 4,
-    "rigor": 7,
-    "reason": "属机械臂操作的VLA策略后训练，世界模型仅服务于操作精调，无导航决策成分，落入明确拒绝的VLA操作范围。",
-    "rejected_at": "2026-09-04",
-    "url": "https://arxiv.org/abs/2609.03681"
-  },
-  "2609.05314": {
-    "title": "Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness",
-    "relevance": 2,
-    "rigor": 6,
-    "reason": "LLM在楼宇HVAC/建筑能源系统的垂直应用综述，不涉及空间、导航或机器人自主，属范围外的垂直领域套用。",
-    "rejected_at": "2026-09-07",
-    "url": "https://arxiv.org/abs/2609.05314"
-  },
-  "2609.05161": {
-    "title": "APEX-RBD: Mixed-Precision Exploration Framework for Hardware-Efficient Robot Dynamics Accelerator Design",
-    "relevance": 3,
-    "rigor": 6,
-    "reason": "核心贡献是面向机器人刚体动力学的混合精度加速器硬件设计自动化（EDA/芯片设计范畴），不涉及导航决策、空间智能或机器人自主算法本身，仅以机器人动力学计算为应用对象，属术语擦边。",
-    "rejected_at": "2026-09-07",
-    "url": "https://arxiv.org/abs/2609.05161"
-  },
-  "2609.04523": {
-    "title": "MaxKernel: Agentic Kernel Generation for TPUs",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "LLM多智能体用于TPU内核/编译器优化，属系统与硬件加速的垂直应用，与空间智能、导航、机器人自主均无关，属范围外的模型套用类工作。",
-    "rejected_at": "2026-09-07",
-    "url": "https://arxiv.org/abs/2609.04523"
-  },
-  "2609.05397": {
-    "title": "CrossDepth: Geometry-Constrained Attention for Generalizable Multi-View Surround Depth Estimation",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "属自动驾驶环视多相机自监督深度估计的被动3D感知工作，无导航决策、具身智能体或机器人自主核心系统成分，仅与空间智能技术线边缘相关。",
-    "rejected_at": "2026-09-07",
-    "url": "https://arxiv.org/abs/2609.05397"
-  },
   "2609.04913": {
     "title": "ARIA - An Agentic Framework for Autonomous Testing of Infotainment Systems",
     "relevance": 3,
@@ -2398,5 +2334,69 @@
     "reason": "属于LLM多智能体套用于软件工程基准自动构建的垂直应用，与空间智能、导航、机器人自主均无关，属范围中明确排除的情形。",
     "rejected_at": "2026-10-29",
     "url": "https://arxiv.org/abs/2610.37283"
+  },
+  "2610.39119": {
+    "title": "CAPTURER: A Dexterous Aerial Manipulator for Dynamic and Precise Grasping across Diverse Environments",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "属机械臂操作范畴的空中抓取系统：核心贡献为灵巧抓取与抗扰控制，虽含机载状态估计与目标定位模块，但不含导航决策或主动目标搜索成分。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.39119"
+  },
+  "2610.39438": {
+    "title": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
+    "relevance": 3,
+    "rigor": 8,
+    "reason": "该工作属LLM智能体在本地POI搜索/推荐这一垂直领域的工具使用评测，不涉及物理空间理解、具身导航或机器人自主，仅'搜索''地点'等术语与目标搜索、空间智能技术线擦边。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.39438"
+  },
+  "2610.39547": {
+    "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+    "relevance": 4,
+    "rigor": 2,
+    "reason": "立场/议程型文章，无任何实验、基线与验证数据（rigor仅2）；核心内容为神经符号化的测试、验证与运行时保障这一形式方法路线，不属于收录范围十一条技术线，UAV与基础模型仅作术语与应用背景出现。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.39547"
+  },
+  "2610.39608": {
+    "title": "From Intent to Improvement: Agentic Dataset Search for Better Model Training",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "该工作面向百万级ML数据仓库的数据集检索，本质是网络信息检索的垂直智能体应用，仅借LLM智能体框架术语，与空间智能、导航、机器人等收录技术线无实质关联，属范围外应用。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.39608"
+  },
+  "2610.40207": {
+    "title": "RoboAtom: Large-scale Atomic-Action Supervision for Robot Learning",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "属于机械臂操作技能学习与大规模动作标注工作，不含导航决策成分，与收录的空域/地面导航及各基础能力技术线均不对应。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.40207"
+  },
+  "2610.40640": {
+    "title": "SonoWorld4D: From One Video to a 4D Audio-Visual Scene via Diffusion Synchronization",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "核心是扩散式单视频到4D音视频场景的生成与新视角/空间音频渲染，不含导航决策、空间推理评测或机器人自主成分，仅以'3D/4D场景'术语与空间智能线擦边。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.40640"
+  },
+  "2610.40401": {
+    "title": "Continuous-Action World Models: Learning Cross-Embodiment Spatiotemporal Dynamics Priors",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "属于跨本体动作生成/VLA式工作，输出末端执行器动作且摘要未见导航决策成分，与'用于导航与规划的世界模型'等核心收录线仅边缘相关。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.40401"
+  },
+  "2610.40551": {
+    "title": "Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "本文是研究级数论证明的基准结果分析与LLM辅助证明评判流水线，属于与空间智能、具身导航、机器人无关的数学垂直领域应用，不在收录范围。",
+    "rejected_at": "2026-10-30",
+    "url": "https://arxiv.org/abs/2610.40551"
   }
 }
