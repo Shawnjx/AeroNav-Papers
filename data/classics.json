@@ -15036,48 +15036,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4413804012": {
-      "title": "2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias",
-      "relevance": 0,
-      "rigor": 6,
-      "reason": "属心血管医学临床指南（血脂异常管理），与具身导航、空间智能、机器人自主等全部收录技术线完全无关，纯属范围外医学文献。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4226265017": {
-      "title": "RAFT-Stereo: Multilevel Recurrent Field Transforms for Stereo Matching",
-      "relevance": 5,
-      "rigor": 8,
-      "reason": "纯双目立体匹配视觉工作，仅在Middlebury/ETH3D图像基准上评测，未涉及导航决策、主动感知或机器人自主系统，与收录技术线仅边缘相关。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4318919287": {
-      "title": "Using cognitive psychology to understand GPT-3",
-      "relevance": 5,
-      "rigor": 7,
-      "reason": "该文用认知心理学实验测评纯文本GPT-3的决策与因果推理，不涉及空间、导航、机器人或多模态智能体，也不构成大模型能力方法或agentic系统的新进展，落在十一条收录技术线之外。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3143491409": {
-      "title": "Artificial intelligence in drug discovery: recent advances and future perspectives",
-      "relevance": 0,
-      "rigor": 3,
-      "reason": "属于AI药物发现垂直领域综述，与具身导航、空间智能、机器人自主等全部收录技术线均无关。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4285105424": {
-      "title": "A Survey on the Convergence of Edge Computing and AI for UAVs: Opportunities and Challenges",
-      "relevance": 4,
-      "rigor": 3,
-      "reason": "属边缘计算与网络系统方向的综述，UAV自主导航与搜救仅为应用场景擦边，核心关注低时延边缘部署与通信架构，不属于收录的具身导航、空间智能等技术线，且综述无实验验证。",
-      "excluded_at": "2026-09-02"
-    },
-    "2008.05074": {
-      "title": "A Review of Deep Reinforcement Learning for Smart Building Energy Management",
-      "relevance": 1,
-      "rigor": 4,
-      "reason": "该文为深度强化学习在智能建筑能源管理领域的应用综述，与空间智能、具身导航、机器人自主等收录技术线均无实质关联，属范围外垂直应用。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4322627364": {
       "title": "Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence",
       "relevance": 2,
@@ -18534,6 +18492,48 @@
       "relevance": 1,
       "rigor": 5,
       "reason": "该文属生物医学蛋白质组学研究，虽借助AI图像分析与'空间'语境，但研究对象是细胞蛋白定量与肿瘤生物学，与具身导航、机器人自主、空间智能等全部收录技术线无关，仅术语擦边。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W4396946178": {
+      "title": "Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021",
+      "relevance": 1,
+      "rigor": 8,
+      "reason": "属全球健康流行病学的疾病负担预测研究，与具身导航、空间智能、机器人自主等全部收录技术线完全无关，为范围外垂直领域应用。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W3015857697": {
+      "title": "Telemedicine and the COVID-19 Pandemic, Lessons for the Future",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "该文为远程医疗/医疗政策领域的客座社论，与具身导航、UAV搜索、空间智能、机器人自主等全部收录技术线无任何关联，属明确范围外内容。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W3137116938": {
+      "title": "Preparing Workplaces for Digital Transformation: An Integrative Review and Framework of Multi-Level Factors",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "本文为组织行为与管理学领域的数字化转型整合综述，聚焦员工、团队与组织层面的多级因素，仅在背景中提及AI与机器人等术语，与具身导航、空域自主及各收录技术线均无实质关联，属范围外仅术语擦边。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W3116908532": {
+      "title": "The developmental trajectories of executive function from adolescence to old age",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该文为人类认知心理学研究，仅考察人类执行功能随年龄的发展轨迹，不含任何具身导航、机器人自主或大模型智能体成分，仅'planning'一词与范围术语擦边，属范围外。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W4404905824": {
+      "title": "In-depth review of AI-enabled unmanned aerial vehicles: trends, vision, and challenges",
+      "relevance": 5,
+      "rigor": 3,
+      "reason": "泛化的应用趋势综述，混杂绿色计算、伦理法律等大量范围外内容，未描述系统的文献筛选或定量分析方法，也无实验支撑，对UAV目标搜索技术线仅浅层触及。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W4416424397": {
+      "title": "The potential existential threat of large language models to online survey research",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "将LLM智能体套用于在线问卷调查这一社会科学方法学垂直领域，与空间、导航、机器人均无关，属于范围明确排除的应用类工作。",
       "excluded_at": "2026-10-30"
     }
   },
