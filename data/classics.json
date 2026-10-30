@@ -15036,34 +15036,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4396946178": {
-      "title": "Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021",
-      "relevance": 0,
-      "rigor": 8,
-      "reason": "属全球疾病负担（GBD）流行病学预测与卫生政策研究，与具身导航、空域/地面自主、机器人及智能体技术线均无关，属范围外应用。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3137116938": {
-      "title": "Preparing Workplaces for Digital Transformation: An Integrative Review and Framework of Multi-Level Factors",
-      "relevance": 1,
-      "rigor": 3,
-      "reason": "属组织行为学/管理学领域的工作场所数字化转型整合综述，仅以AI、机器人等技术作背景术语，与具身导航、空间智能及模型智能体等全部收录技术线无实质关联。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3116908532": {
-      "title": "The developmental trajectories of executive function from adolescence to old age",
-      "relevance": 1,
-      "rigor": 5,
-      "reason": "纯人类认知心理学的毕生发展研究，考察人类执行功能随年龄变化，与具身导航、机器人自主及智能体技术无实质关联，仅与'规划/认知'等术语擦边。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4388157208": {
-      "title": "Cross-city matters: A multimodal remote sensing benchmark dataset for cross-city semantic segmentation using high-resolution domain adaptation networks",
-      "relevance": 2,
-      "rigor": 7,
-      "reason": "该工作为遥感多模态语义分割数据集与跨城域适应网络，属纯图像分割方向，与具身导航、UAV目标搜索、机器人自主等收录技术线无实质关联。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4413804012": {
       "title": "2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias",
       "relevance": 0,
@@ -18535,6 +18507,34 @@
       "rigor": 2,
       "reason": "该文是关于情感AI伴侣与伪亲密的伦理/人文批判性评述，不涉及导航、空间智能或机器人，也非模型与智能体能力本身的显著进展，属于范围中明确排除的情感类垂直应用范畴。",
       "excluded_at": "2026-10-29"
+    },
+    "https://openalex.org/W3116229068": {
+      "title": "Students’ perception of online learning during the COVID-19 pandemic",
+      "relevance": 0,
+      "rigor": 5,
+      "reason": "纯医学教育领域的问卷调查，与具身导航、机器人自主、空间智能等任何收录技术线完全无关，属范围外。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W4389934892": {
+      "title": "Systematic review and meta-analysis of AI-based conversational agents for promoting mental health and well-being",
+      "relevance": 1,
+      "rigor": 7,
+      "reason": "该文是大模型/对话智能体套用于心理健康医疗垂直领域的系统综述与荟萃分析，不涉及空间、导航或机器人自主，属范围中明确列出的拒绝类别。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W3188264307": {
+      "title": "An overview of biodegradable packaging in food industry",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "属食品包装材料学综述，与具身导航、UAV目标搜索、空间智能等全部收录技术线无任何关联。",
+      "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W4280598306": {
+      "title": "Deep Visual Proteomics defines single-cell identity and heterogeneity",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文属生物医学蛋白质组学研究，虽借助AI图像分析与'空间'语境，但研究对象是细胞蛋白定量与肿瘤生物学，与具身导航、机器人自主、空间智能等全部收录技术线无关，仅术语擦边。",
+      "excluded_at": "2026-10-30"
     }
   },
   "last_citation_refresh": "2026-10-27T15:42:37.933029+00:00",
