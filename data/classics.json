@@ -15036,55 +15036,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4322627364": {
-      "title": "Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence",
-      "relevance": 2,
-      "rigor": 3,
-      "reason": "该文为通用图卷积网络（GCN）综述，应用场景为图像处理、推荐系统、知识图谱与通信网络，与UAV目标搜索、VLN、ObjectNav、空间智能、智能体等收录技术线均无实质关联，属范围外；且摘要宽泛，无系统性评测或定量比较支撑。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4385064636": {
-      "title": "Spotlight on Luminescence Thermometry: Basics, Challenges, and Cutting‐Edge Applications",
-      "relevance": 1,
-      "rigor": 4,
-      "reason": "发光测温属于光学材料与传感领域的综述工作，虽提及AI辅助分析，但与具身导航、空间智能、机器人自主等全部收录技术线无关，属范围外。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4319304408": {
-      "title": "AI for life: Trends in artificial intelligence for biotechnology",
-      "relevance": 1,
-      "rigor": 1,
-      "reason": "本文是AI应用于生物技术的特刊预社论综述，与具身导航、空间智能、机器人自主等收录技术线无实质关联，且无任何实验方法与验证，属范围外应用型综述。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4401726555": {
-      "title": "A Survey on Deep Neural Network Pruning: Taxonomy, Comparison, Analysis, and Recommendations",
-      "relevance": 2,
-      "rigor": 5,
-      "reason": "神经网络剪枝属通用模型压缩综述，与导航、空间智能、具身智能体等收录技术线均无实质关联，仅术语上提及大模型与多模态模型。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4211154833": {
-      "title": "A Comprehensive Survey of Visual SLAM Algorithms",
-      "relevance": 5,
-      "rigor": 4,
-      "reason": "主题虽属状态估计与控制线（视觉SLAM），但这是面向初学者的定性综述：无新算法、无自有实验或量化评测，属常规文献梳理而非该线按落地影响力标准收录的高影响力系统工作。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4399567248": {
-      "title": "A multimodal generative AI copilot for human pathology",
-      "relevance": 2,
-      "rigor": 7,
-      "reason": "该工作是将多模态大模型套用到医疗病理垂直领域的图文问答应用，与空间、导航、机器人均无关，属研究范围明确排除的类型。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4372260310": {
-      "title": "Large-Scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation",
-      "relevance": 3,
-      "rigor": 8,
-      "reason": "音频-语言对比预训练属音频多模态表征学习，既非MLLM/VLM或LLM智能体能力进展，也与空间、导航、机器人无关，超出收录范围。",
-      "excluded_at": "2026-09-02"
-    },
     "2303.04226": {
       "title": "A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT",
       "relevance": 2,
@@ -18535,6 +18486,55 @@
       "rigor": 5,
       "reason": "将LLM智能体套用于在线问卷调查这一社会科学方法学垂直领域，与空间、导航、机器人均无关，属于范围明确排除的应用类工作。",
       "excluded_at": "2026-10-30"
+    },
+    "https://openalex.org/W2306686872": {
+      "title": "The Flipped Classroom: A Survey of the Research",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为教育学领域翻转课堂教学法的综述，与具身导航、无人机自主、空间智能等全部收录技术线无任何关联，属范围外论文。",
+      "excluded_at": "2026-10-31"
+    },
+    "https://openalex.org/W4413804012": {
+      "title": "2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias",
+      "relevance": 0,
+      "rigor": 4,
+      "reason": "该文为欧洲心脏病学会/欧洲动脉粥样硬化学会的血脂异常管理临床指南焦点更新，属心血管医学文献，与具身导航、无人机自主、机器人或大模型智能体等全部收录技术线毫无关联。",
+      "excluded_at": "2026-10-31"
+    },
+    "https://openalex.org/W4318919287": {
+      "title": "Using cognitive psychology to understand GPT-3",
+      "relevance": 5,
+      "rigor": 7,
+      "reason": "该文是用认知心理学实验对GPT-3做的纯LLM行为评测，无空间、导航、具身或机器人关联，也不是新模型、新训练方法或智能体框架类的显著进展，仅与LLM评测术语擦边。",
+      "excluded_at": "2026-10-31"
+    },
+    "2008.05074": {
+      "title": "A Review of Deep Reinforcement Learning for Smart Building Energy Management",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文为智能建筑能源管理（SBEM）中深度强化学习应用的综述，属建筑能源垂直领域，与空间感知、导航、机器人自主等全部收录技术线无关，仅与'控制/优化'术语擦边。",
+      "excluded_at": "2026-10-31"
+    },
+    "https://openalex.org/W4285105424": {
+      "title": "A Survey on the Convergence of Edge Computing and AI for UAVs: Opportunities and Challenges",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "综述核心是边缘计算与通信系统对无人机AI的使能，导航与搜救仅作应用背景罗列，不涉及收录技术线的方法学进展。",
+      "excluded_at": "2026-10-31"
+    },
+    "https://openalex.org/W3143491409": {
+      "title": "Artificial intelligence in drug discovery: recent advances and future perspectives",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "本文是药物发现/化学信息学领域的AI综述，属于将深度学习应用于垂直科学领域的工作，与具身导航、UAV搜索、空间智能、机器人自主等收录技术线完全无关，属范围外。",
+      "excluded_at": "2026-10-31"
+    },
+    "https://openalex.org/W4386200967": {
+      "title": "Personality Traits in Large Language Models",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "该文是对LLM输出人格的心理测量与塑造研究，属对话模型行为分析，并非模型/智能体能力本身的显著进展，与空间智能、导航、机器人等技术线无关，仅LLM术语擦边。",
+      "excluded_at": "2026-10-31"
     }
   },
   "last_citation_refresh": "2026-10-27T15:42:37.933029+00:00",
