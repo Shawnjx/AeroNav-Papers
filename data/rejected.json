@@ -1,12 +1,4 @@
 {
-  "2609.04913": {
-    "title": "ARIA - An Agentic Framework for Autonomous Testing of Infotainment Systems",
-    "relevance": 3,
-    "rigor": 6,
-    "reason": "将多智能体LLM套用于车载信息娱乐GUI自动测试这一垂直应用，与空间、导航、机器人自主无关，属范围外的软件QA应用。",
-    "rejected_at": "2026-09-07",
-    "url": "https://arxiv.org/abs/2609.04913"
-  },
   "2609.04381": {
     "title": "Where Appearance Fails, Geometry Recognizes: A CAD-Free 3D Shape Prior That Complements Vision Foundation Models",
     "relevance": 5,
@@ -2398,5 +2390,13 @@
     "reason": "本文是研究级数论证明的基准结果分析与LLM辅助证明评判流水线，属于与空间智能、具身导航、机器人无关的数学垂直领域应用，不在收录范围。",
     "rejected_at": "2026-10-30",
     "url": "https://arxiv.org/abs/2610.40551"
+  },
+  "2610.38234": {
+    "title": "SimRetract: Zero-Shot Sim-to-Real Robotic Assistance for Retractor Take-Over in Open Surgery",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "核心任务为手术中的机械臂抓取与手递手（牵开器接管）操作，属范围明确排除的机械臂操作类工作，且不含任何导航决策成分，仅sim-to-real方法术语与收录线擦边。",
+    "rejected_at": "2026-10-31",
+    "url": "https://arxiv.org/abs/2610.38234"
   }
 }

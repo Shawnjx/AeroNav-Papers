@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T11:11:42.067894+00:00",
+  "updated_at": "2026-10-31T15:43:33.764662+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1815,6 +1815,55 @@
       "added_at": "2026-10-30T10:58:15.028106+00:00"
     },
     {
+      "id": "2610.38318",
+      "arxiv_id": "2610.38318",
+      "title": "What Should a Navigator Remember? Spatiotemporal Memory for Zero-Shot Vision-Language Navigation",
+      "authors": [
+        "Yuhang Peng",
+        "Zhikai Wang",
+        "Ziyi Wang",
+        "Jiaru Zhong",
+        "Xiaoji Zheng",
+        "Jingzhi Huang",
+        "Yi Wang",
+        "Jiangtao Gong"
+      ],
+      "published": "2026-10-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38318",
+      "pdf_url": "https://arxiv.org/pdf/2610.38318",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "零样本VLN记忆设计：把指令进度、位姿锚定的压缩观测、累积几何组织为任务/时序/空间三类记忆，8B观测与推理模型据此选择路点意图，几何控制器执行，在R2R-CE与Go2真机验证。",
+      "change_zh": "常见零样本VLN多依赖单模型即时推理或简单历史拼接；本文显式拆分任务进度、时序观测、空间几何三类互补记忆，位姿锚定并分层压缩历史，允许推理器主动请求补充视角，并以指令干预式评测考察行为遵循而非仅终点成功。",
+      "why_it_matters": "直接推进地面VLN零样本上限；其记忆组织与主动补采视角的思路可迁移至ObjectNav长程搜索与UAV主动目标发现的证据累积与视角选择，真机Go2结果也为小模型零样本落地提供参照。",
+      "relevance_rating": 10,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉语言导航，零样本导航，时空记忆，结构化记忆，多模态大模型，R2R-CE",
+      "question_zh": "研究8B规模零样本视觉语言导航系统应保留哪些过往观测信息，以及如何组织这些记忆以支撑后续导航决策。",
+      "innovation_zh": "提出任务、时间、空间三重互补的结构化记忆：分别存储指令进度、以位姿为锚的分层压缩观测历史和累积几何，由8B观测器与8B推理器配合几何控制器，无需导航专门训练即可零样本导航。",
+      "dataset_zh": "R2R-CE val-unseen仿真基准；Unitree Go2机器人真机平台（走廊与办公室环境）；另以LAW2成对指令干预作补充行为评测。",
+      "results_zh": "R2R-CE val-unseen上在评估的Qwen3零样本基线中SR最高；去掉时间记忆使平均路径长度从16.9m增至39.1m且SR下降；Unitree Go2真机上成功率高于后训练基线。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "evaluation",
+        "geometry",
+        "instruction",
+        "instruction following",
+        "r2r",
+        "waypoint"
+      ],
+      "added_at": "2026-10-31T15:41:28.184249+00:00"
+    },
+    {
       "id": "2610.37111",
       "arxiv_id": "2610.37111",
       "title": "RAVEN: A Unified Active SLAM System for Rapid Autonomous Visual Exploration with Aerial Robots under Localization Uncertainty",
@@ -2560,6 +2609,53 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.38405",
+      "arxiv_id": "2610.38405",
+      "title": "SpaceAct: Benchmarking 3D Spatial and Temporal Reasoning via Closed-Loop Action and Active Perception",
+      "authors": [
+        "Chenglong Shi",
+        "Zekai Yuan",
+        "Yue Song",
+        "Jon Pu",
+        "Will Wu"
+      ],
+      "published": "2026-10-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38405",
+      "pdf_url": "https://arxiv.org/pdf/2610.38405",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 9,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "SpaceAct是通过闭环物理动作与主动感知评测多模态大模型3D时空推理的交互式基准，含108个任务与多种诊断模式，发现前沿模型即便有有效计划仍受3D视觉定位与动作精化制约。",
+      "change_zh": "常见评测是静态图像被动问答或带特权坐标的符号规划；该基准改为无特权坐标的闭环执行：模型须主动转相机解遮挡、输出经碰撞与静力学校验的6自由度位姿，诊断模式进一步把瓶颈定位到3D视觉定位与动作精化。",
+      "why_it_matters": "对空间智能、具身评测与主动感知三线均有价值：+state补90%差距远超+plan的44%，表明瓶颈在3D视觉定位；UAV搜索与ObjectNav同样依赖主动换视角解遮挡与避碰，闭环评测范式可迁移。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "3D时空推理, 多模态大语言模型, 闭环动作, 主动感知, 基准测试, 6自由度位姿",
+      "question_zh": "多模态大语言模型能否通过闭环物理动作与主动感知进行3D时空推理，从而真正解决三维空间中的问题？",
+      "innovation_zh": "提出交互式基准SpaceAct与SAPA主动探测智能体框架，以闭环物理动作和主动感知评估3D时空推理，且不提供特权坐标；相比以往静态图像被动VQA或符号规划评测，要求模型主动旋转相机解决遮挡、读取场景标尺、输出满足碰撞与静力学约束的6自由度位姿并自我纠错。",
+      "dataset_zh": "自建的SpaceAct交互式基准：基于互锁积木与机械谜题构建，含108个经验证实例、36个任务族、6大类别，无特权坐标，配备+plan、+state、no-camera、blind、L7杠杆等诊断模式",
+      "results_zh": "10个前沿MLLM在44个最难实例上得分介于4.8-79.1，七个模型6自由度任务解决率至多27.3%；前三名模型加参考计划(+plan)缩小44%差距但每回合碰撞仍5.2次，加精确3D状态(+state)缩小90%差距且碰撞降至0.5；另有四个模型均分由10.9经+plan升至35.3、经+state达81.8；46%的失败源于碰撞或观察循环。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "active perception",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "geometry",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-10-31T15:37:44.033975+00:00"
     },
     {
       "id": "2610.36968",
@@ -12812,6 +12908,49 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.38744",
+      "arxiv_id": "2610.38744",
+      "title": "AtomTree: A Hierarchical Framework for State-Aware Embodied Instruction Following with LLMs",
+      "authors": [
+        "Haotian Zhai",
+        "Tianming Sha",
+        "Junnan Li"
+      ],
+      "published": "2026-10-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38744",
+      "pdf_url": "https://arxiv.org/pdf/2610.38744",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "规划智能体"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "AtomTree以LLM分层规划具身指令：逐步构建子目标-动作树，按当前符号状态决定分解或输出底层动作，配记忆与层级回溯重规划，在ALFRED零样本评测中超越既有LLM规划器。",
+      "change_zh": "既有LLM规划器多为一次性串行生成整段计划、失败后才被动修正；AtomTree改为按最新符号状态增量分解子目标-动作树，低层动作停滞时从父节点回溯重生成子树，避免沿错误轨迹持续漂移。",
+      "why_it_matters": "该工作命中规划智能体核心线；其按状态增量分解与层级回溯重规划的机制，可迁移至UAV目标搜索与ObjectNav的长程任务规划，缓解一次性全局规划的状态失配与失败后被动重试问题。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "keywords_zh": "具身指令跟随, 任务规划, 大语言模型, 层次化规划, 状态感知, 回溯重规划",
+      "question_zh": "如何让LLM智能体在交互式环境中状态感知地理解自然语言指令并完成长时程具身任务规划？",
+      "innovation_zh": "区别于一次性串行生成完整计划的已有LLM规划器，AtomTree增量构建子目标-动作树，由LLM按当前符号状态逐步决定继续分解或输出底层动作；动作受阻时层次化回溯至父节点重规划，避免沿错误轨迹漂移，并用轻量记忆复用历史结果。",
+      "dataset_zh": "ALFRED基准（零样本评测）；未提及其他数据集、具体仿真引擎或真机平台",
+      "results_zh": "在ALFRED基准的零样本评测中，AtomTree性能优于先前的基于LLM的规划器，其层次化回溯重规划可防止沿错误轨迹持续漂移；摘要未提供具体成功率等关键数字。",
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction",
+        "instruction following",
+        "task planning"
+      ],
+      "added_at": "2026-10-31T15:39:12.808591+00:00"
+    },
+    {
       "id": "2610.31321",
       "arxiv_id": "2610.31321",
       "title": "MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model",
@@ -15210,6 +15349,49 @@
         "evaluation"
       ],
       "added_at": "2026-10-30T11:07:04.595297+00:00"
+    },
+    {
+      "id": "2610.38266",
+      "arxiv_id": "2610.38266",
+      "title": "Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation",
+      "authors": [
+        "Xiaofeng Han",
+        "Kaize Luo",
+        "Zenghuang Fu",
+        "Zichong Zhu",
+        "Zhe Feng",
+        "Changwei Wang",
+        "Rongtao Xu",
+        "Weiliang Meng",
+        "Xiaopeng Zhang"
+      ],
+      "published": "2026-10-28",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.38266",
+      "pdf_url": "https://arxiv.org/pdf/2610.38266",
+      "code_url": "https://github.com/nkd-lkz/physical-ai-rsi-survey",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文综述物理AI中的递归自我改进：区分学习者更新与改进器，比较策略学习、想象经验、记忆与技能积累、可执行程序四类机制，提出L0-L3能力增益分级及共同数据与交互式评测协议。",
+      "change_zh": "常见综述按方法罗列经验学习；本文转向改进过程本身：明确区分学习者与改进器，强调对数据获取、反馈与学习流程的继承性修订，并给出L0-L3分级与从相同起点分离经验利用与获取的评测设计。",
+      "why_it_matters": "UAV目标搜索与ObjectNav都要在持续部署中积累策略、世界模型与技能；本文的学习者/改进器区分与L0-L3分级为度量这类持续增益提供统一语言，其评测协议可用于导航类自改进系统评测。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-10-31T15:42:47.045914+00:00"
     },
     {
       "id": "2610.34028",
@@ -27144,113 +27326,41 @@
     }
   ],
   "briefing": {
-    "text": "本批主线是具身导航的模型统一与真机落地，VLA、分层强化学习与多机协同是主要技术路线。首推MATCH：其执行感知分层强化学习以0.5B参数在R2R-CE与RxR-CE取得SOTA并完成真机部署，证明连续环境VLN不必依赖大模型；OpenFlyV2把语义理解与闭环飞控压进10Hz机载VLA并零样本迁移到真实四旋翼，是少见的端侧全闭环实证；Ask to Evolve以混合动作空间与持久记忆支撑终身导航，横跨8个基准且经多日真机验证。趋势上，机载实时化、小参数与真机闭环正从亮点变为标配。",
-    "added": 13,
-    "at": "2026-10-30T11:14:04.660201+00:00",
+    "text": "今日四篇围绕具身智能从静态感知转向闭环行动：基准、分层规划、记忆与自我改进各占一环。首推 What Should a Navigator Remember?，它把指令进度、压缩观测与累积几何组织为任务、时序、空间三类记忆，并经Go2真机验证，直指零样本VLN该记什么；SpaceAct 用108个闭环任务诊断出前沿模型卡在3D视觉定位与动作精化而非规划，为模型迭代点名具体短板；AtomTree 以子目标-动作树按符号状态分解并支持层级回溯，在ALFRED零样本超越既有LLM规划器，分层实现可复用。趋势上，评测正从离线问答转向动作闭环，记忆设计则走向显式结构化。",
+    "added": 4,
+    "at": "2026-10-31T15:44:29.547902+00:00",
     "new": [
       {
-        "t": "Information-Driven Collaborative Autonomy for Heterogeneous UAV/UGV Teams",
-        "u": "https://arxiv.org/abs/2610.39379",
+        "t": "SpaceAct: Benchmarking 3D Spatial and Temporal Reasoning via Closed-Loop Action and Active Perception",
+        "u": "https://arxiv.org/abs/2610.38405",
         "r": 9,
-        "g": 7,
-        "s": "提出UAV/UGV异构协同框架：无人机以遍历性控制实现信息驱动的空中目标搜索，用PMB滤波估计未知数目目标的后验；地面车结合机会约束避障规划路线，经全分布式优化闭环更新，数值仿真验证协同效果。",
-        "c": ""
-      },
-      {
-        "t": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
-        "u": "https://arxiv.org/abs/2610.40455",
-        "r": 6,
-        "g": 7,
-        "s": "在车载多模态数据上叠加空间配准的航拍影像与高分辨率神经表示，构建KITScenes Aerial基准，统一评测航拍辅助在线高精建图与跨视角定位，实验显示航拍上下文显著提升细粒度与远距离建图精度。",
-        "c": ""
-      },
-      {
-        "t": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
-        "u": "https://arxiv.org/abs/2610.39287",
-        "r": 10,
         "g": 8,
-        "s": "提出统一机载视觉-语言-动作模型OpenFlyV2，以共享视觉语言表征同时支持无人机语义理解、语言指代感知、空间推理与闭环飞行控制，机载10Hz推理并零样本迁移至真实四旋翼，四个真实环境导航成功率48%。",
-        "c": "https://github.com/Ideal-ljl/AeroBrain"
-      },
-      {
-        "t": "Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory",
-        "u": "https://arxiv.org/abs/2610.39446",
-        "r": 9,
-        "g": 7,
-        "s": "EvoLife是一体化终身导航框架，融合混合动作空间（路标/离散/像素/物体导向）、主动求助交互与持久空间记忆，在VLN、ObjectNav等8个基准上取得强表现，并有真机多日验证。",
+        "s": "SpaceAct是通过闭环物理动作与主动感知评测多模态大模型3D时空推理的交互式基准，含108个任务与多种诊断模式，发现前沿模型即便有有效计划仍受3D视觉定位与动作精化制约。",
         "c": ""
       },
       {
-        "t": "Optimal Path Planning with Localization constraints",
-        "u": "https://arxiv.org/abs/2610.40429",
-        "r": 7,
-        "g": 7,
-        "s": "针对GPS拒止区域，提出定位约束A*规划器：以EKF传播协方差并把不确定度上界作为硬约束，仅扩展可行路径且启发式仍可采纳；仿真与PyBullet实验表明其比RRT*、PRM更短更可靠。",
-        "c": ""
-      },
-      {
-        "t": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
-        "u": "https://arxiv.org/abs/2610.40578",
-        "r": 6,
+        "t": "AtomTree: A Hierarchical Framework for State-Aware Embodied Instruction Following with LLMs",
+        "u": "https://arxiv.org/abs/2610.38744",
+        "r": 8,
         "g": 6,
-        "s": "VeriCUA把计算机使用智能体的任务完成验证重构为智能体式取证：先构建任务评分细则，再动态选择GUI或代码检查收集证据并按证据规则综合判定，线上线下跨平台提升与参考标签一致性。",
+        "s": "AtomTree以LLM分层规划具身指令：逐步构建子目标-动作树，按当前符号状态决定分解或输出底层动作，配记忆与层级回溯重规划，在ALFRED零样本评测中超越既有LLM规划器。",
         "c": ""
       },
       {
-        "t": "MATCH: Execution-Aware Hierarchical Reinforcement Learning for Vision-and-Language Navigation in Continuous Environment",
-        "u": "https://arxiv.org/abs/2610.38248",
+        "t": "What Should a Navigator Remember? Spatiotemporal Memory for Zero-Shot Vision-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.38318",
         "r": 10,
         "g": 7,
-        "s": "MATCH提出执行感知的分层强化学习框架，联合训练语言条件规划器与目标条件动作执行器，通过执行感知拓扑图与过渡感知密集宏奖励协同优化，在R2R-CE和RxR-CE上以0.5B参数取得SOTA，并完成初步真机部署。",
+        "s": "零样本VLN记忆设计：把指令进度、位姿锚定的压缩观测、累积几何组织为任务/时序/空间三类记忆，8B观测与推理模型据此选择路点意图，几何控制器执行，在R2R-CE与Go2真机验证。",
         "c": ""
       },
       {
-        "t": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
-        "u": "https://arxiv.org/abs/2610.40495",
-        "r": 8,
-        "g": 7,
-        "s": "LucidLyra以多任务蒸馏统一相机可控视频扩散模型与冻结2D视觉基础模型的知识，前馈地从视频潜变量联合推断含几何、外观、开放词汇语义与实例线索的3D高斯，无需逐场景优化即得可查询的3D场景。",
-        "c": ""
-      },
-      {
-        "t": "Explore Where It Matters: Targeted Exploration for Efficient Rover Adaptation",
-        "u": "https://arxiv.org/abs/2610.38657",
-        "r": 8,
-        "g": 7,
-        "s": "针对行星车在松软坡面的sim2real差距，TERRA以奖励加权预测损失在线修正仿真训练的世界模型，并训练损失预测器估计任务相关误差高发区以引导MPC探索；仿真5次试验爬坡成功率约90%，真车3-5次试验恢复火星模拟坡面运动能力。",
-        "c": ""
-      },
-      {
-        "t": "Decision-Level Error Attribution and Depth-Aware Safety Evaluation of Monocular RGB Human Tracking for Autonomous Robot Navigation",
-        "u": "https://arxiv.org/abs/2610.40199",
-        "r": 6,
-        "g": 7,
-        "s": "论文将机器人停止/行进决策错误拆解为安全规则与感知两部分，提出双因子Shapley归因并区分漏检与定位误差，在ETH/UCY行人视频上以仿真静止机器人评估单目RGB跟踪的安全性。",
-        "c": ""
-      },
-      {
-        "t": "RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence",
-        "u": "https://arxiv.org/abs/2610.40026",
+        "t": "Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation",
+        "u": "https://arxiv.org/abs/2610.38266",
         "r": 7,
-        "g": 7,
-        "s": "提出RoboSeed多维评测框架，从能力、训练与部署成本、研究价值与复现证据五个维度为VLA与世界-动作模型生成0-100画像，支持不同预算偏好并公开可复现代码。",
-        "c": ""
-      },
-      {
-        "t": "PathCowork: Learning from real-world pathology practice to build AI copilots",
-        "u": "https://arxiv.org/abs/2610.39441",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：PathCowork: Learning from real-world pathology practice to build AI copilots。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "EARS-Info: Information-Aware Event-Driven Reallocation for Multi-Robot Exploration",
-        "u": "https://arxiv.org/abs/2610.38040",
-        "r": 8,
-        "g": 7,
-        "s": "EARS-Info 将事件驱动的蚁群重分配搜索扩展为信息感知版本，融合边际感知增益、可行重定位、返航感知路由、感知预留与缓存最短路，在城市网格多机器人探索模拟中于全部评测面板取得最高分。",
-        "c": ""
+        "g": 6,
+        "s": "本文综述物理AI中的递归自我改进：区分学习者更新与改进器，比较策略学习、想象经验、记忆与技能积累、可执行程序四类机制，提出L0-L3能力增益分级及共同数据与交互式评测协议。",
+        "c": "https://github.com/nkd-lkz/physical-ai-rsi-survey"
       }
     ]
   }
