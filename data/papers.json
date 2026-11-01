@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T15:43:33.764662+00:00",
+  "updated_at": "2026-11-01T11:02:38.622038+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1724,49 +1724,6 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
-      "id": "2608.00970",
-      "arxiv_id": "2608.00970",
-      "title": "FreqNav: Stage-Wise Frequency Routing for Object-Oriented Aerial Vision-Language Navigation",
-      "authors": [
-        "Yin Tang",
-        "Jiawei Ma",
-        "Jiahao Li",
-        "Hao Zhang",
-        "Zhemin Sun",
-        "Jianqiao Sun",
-        "Deyu Zhang"
-      ],
-      "published": "2026-08-02",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.00970",
-      "pdf_url": "https://arxiv.org/pdf/2608.00970",
-      "code_url": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "topics": [
-        "空域 VLN"
-      ],
-      "relevance_score": 7,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "FreqNav将长程目标导向无人机导航建模为从低频空间布局到高频目标细节的频率偏好偏移，通过频率令牌路由器按阶段动态分配视觉token，结合阶段接地监督与扩散Transformer轨迹预测，性能超基线且推理约快3倍，并完成真机部署。",
-      "change_zh": "常见 aerial VLN 方法全程用同质视觉token处理，FreqNav 真正改变的是在固定算力预算下按导航阶段在频率域重分配token：探索期偏重低频空间结构、接近期偏重高频目标细节，并以显式阶段监督完成接地，而非静态感知。",
-      "why_it_matters": "该工作直接命中UAV目标搜索与ObjectNav核心场景：感知优先级随导航阶段漂移是搜救-接近-着陆闭环的普适难题，其轻量频率路由提供了可控的动态感知方案，约3倍推理加速与真机验证对长程无人机自主目标搜索有直接工程与算法价值。",
-      "relevance_rating": 10,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 28,
-      "keywords": [
-        "aerial",
-        "deployment",
-        "exploration",
-        "instruction"
-      ],
-      "added_at": "2026-09-01T21:26:42+08:00"
-    },
-    {
       "id": "2610.38248",
       "arxiv_id": "2610.38248",
       "title": "MATCH: Execution-Aware Hierarchical Reinforcement Learning for Vision-and-Language Navigation in Continuous Environment",
@@ -2566,47 +2523,6 @@
         "aerial",
         "uav",
         "waypoint"
-      ],
-      "added_at": "2026-09-01T21:26:42+08:00"
-    },
-    {
-      "id": "2608.07557",
-      "arxiv_id": "2608.07557",
-      "title": "AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity Perception and Automated Preference Optimization",
-      "authors": [
-        "Peng Xu",
-        "Chengcheng Wang",
-        "Shaohua Wan"
-      ],
-      "published": "2026-08-02",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.07557",
-      "pdf_url": "https://arxiv.org/pdf/2608.07557",
-      "code_url": "",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "topics": [
-        "空域 VLN"
-      ],
-      "relevance_score": 8,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "AeroDPO面向无人机视觉语言导航，发现高保真感知比海量语言参数更关键，2B模型配高质量视觉输入即可比肩7B基线；再以仿真状态回滚自动构造偏好数据做DPO，抑制OOD碰撞并刷新未映射场景成功率。",
-      "change_zh": "相比堆大参数与人工偏好标注的主流路线，本文论证感知保真度才是UAV-VLN的瓶颈，并利用确定性物理仿真回滚自动提取因果错误作拒绝动作、以特权干预合成避撞偏好机动，构建零标注成本的自动化数据飞轮。",
-      "why_it_matters": "直接提升空域VLN在机载边缘设备上的部署可行性；其仿真回滚自动生成偏好对与抑制OOD碰撞的机制，可迁移至UAV主动目标搜索的避撞与目标接近策略学习，也适用于ObjectNav等目标条件导航的轻量化与鲁棒化。",
-      "relevance_rating": 10,
-      "rigor_rating": 7,
-      "venue_verified": false,
-      "score": 27,
-      "keywords": [
-        "aerial",
-        "deployment",
-        "evaluation",
-        "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
     },
