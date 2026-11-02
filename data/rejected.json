@@ -1,36 +1,4 @@
 {
-  "2609.04381": {
-    "title": "Where Appearance Fails, Geometry Recognizes: A CAD-Free 3D Shape Prior That Complements Vision Foundation Models",
-    "relevance": 5,
-    "rigor": 7,
-    "reason": "研究对象是无标注条件下的物体识别（3D形状先验与冻结基础模型特征融合），不涉及导航决策、主动感知规划或空间记忆，仅与3D理解边缘相关。",
-    "rejected_at": "2026-09-07",
-    "url": "https://arxiv.org/abs/2609.04381"
-  },
-  "2609.04544": {
-    "title": "Integrating Agentic Artificial Intelligence with High-Performance Computing for Grid Planning",
-    "relevance": 2,
-    "rigor": 5,
-    "reason": "LLM智能体被套用于电网潮流规划这一垂直领域，与空间智能、导航或机器人自主无关，属范围外的领域应用。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.04544"
-  },
-  "2609.08275": {
-    "title": "Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "该工作属文生音视频生成与专业剪辑执行的评测基准及垂直应用型智能体，不涉及空间、导航或机器人，命中范围外排除项'文生图/文生视频'。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.08275"
-  },
-  "2609.08805": {
-    "title": "Evaluation Principles for MRI-MRA Registration in Trigeminal Neuralgia: An ROI-Centered Neurovascular Benchmark",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "论文属于医学影像配准的临床垂直评测，与具身导航、UAV目标搜索及机器人自主等技术线无关，属范围外。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.08805"
-  },
   "2609.08686": {
     "title": "CausalChapter: Improving Long-Video Chaptering with Interventional Dependency Modeling",
     "relevance": 2,
@@ -2398,5 +2366,37 @@
     "reason": "核心任务为手术中的机械臂抓取与手递手（牵开器接管）操作，属范围明确排除的机械臂操作类工作，且不含任何导航决策成分，仅sim-to-real方法术语与收录线擦边。",
     "rejected_at": "2026-10-31",
     "url": "https://arxiv.org/abs/2610.38234"
+  },
+  "2610.41053": {
+    "title": "Veloxity: Towards Memory-Safe UAV Embedded Firmware using the Rust Programming Language",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "核心贡献是用Rust重写UAV自驾仪固件以实现内存安全并与C++对等，属嵌入式软件工程与编程语言迁移验证，未推进导航决策、感知或估计控制方法本身，也非社区公认的高影响力自主系统工作。",
+    "rejected_at": "2026-11-02",
+    "url": "https://arxiv.org/abs/2610.41053"
+  },
+  "2610.41768": {
+    "title": "Visual-Inertial RGB-D SLAM with Encoders for a Differential Wheeled Robot",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属于状态估计线的常规增量改进：向视觉惯性RGB-D SLAM加入轮式编码器紧耦合融合，仅自建小数据集验证、无公开基准与基线对比，非社区公认高影响力系统工作。",
+    "rejected_at": "2026-11-02",
+    "url": "https://arxiv.org/abs/2610.41768"
+  },
+  "2610.41772": {
+    "title": "WorkIng: A Real-World and Synthetic Highway Work-Zone Benchmark Dataset for Autonomous Navigation",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "该文是面向高速公路自动驾驶的施工区3D检测与驾驶规划双域数据集基准，属自动驾驶感知数据范畴，与具身导航核心线（UAV目标搜索、VLN、ObjectNav、具身智能体）仅边缘相关。",
+    "rejected_at": "2026-11-02",
+    "url": "https://arxiv.org/abs/2610.41772"
+  },
+  "2610.41936": {
+    "title": "Adaptive Coverage Algorithms for Mobile Ad Hoc Networks in Dynamic Worlds",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "本文是多智能体未知空间通信网络覆盖（POCGAGP动态扩展）的组合优化算法研究，非LLM/foundation model规划智能体，也不涉及目标搜索、具身导航或主动感知建图，落在收录技术线之外。",
+    "rejected_at": "2026-11-02",
+    "url": "https://arxiv.org/abs/2610.41936"
   }
 }

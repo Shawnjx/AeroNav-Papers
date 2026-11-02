@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T11:02:38.622038+00:00",
+  "updated_at": "2026-11-02T12:28:00.709121+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -342,6 +342,60 @@
         "r2r"
       ],
       "added_at": "2026-09-03T01:55:39Z"
+    },
+    {
+      "id": "2610.41446",
+      "arxiv_id": "2610.41446",
+      "title": "Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation",
+      "authors": [
+        "Jiawei Ge",
+        "Wenkang Gong",
+        "Jiuxin Cao",
+        "Bo Liu",
+        "Lei Cui",
+        "Haoran Wang",
+        "Xuelin Zhu",
+        "Biwei Cao",
+        "Chang Liu",
+        "Chen Feng",
+        "Ioannis Patras"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41446",
+      "pdf_url": "https://arxiv.org/pdf/2610.41446",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "空域 VLN"
+      ],
+      "relevance_score": 10,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "GeoReasoner将空域VLN从被动试错转为地理空间引导的主动推理，通过预搜索地理先验约束、假设驱动探索与一致性目标验证，在真实CityNav基准上刷新零样本SOTA并媲美监督方法。",
+      "change_zh": "常见空域VLN沿用室内反应式范式，仅靠局部观测更新状态，易被相似干扰物误导。本文利用导航中稳定的地理空间结构做预搜索推理以约束假设空间，主动采集判别性证据并对抗性核验目标，实现从被动试错到主动推理的转变。",
+      "why_it_matters": "直接推进空域VLN核心线：高空目标小且歧义，地理先验约束与假设驱动探索正是UAV主动目标搜索（搜救、侦察）所需能力；其停止前一致性核验也可缓解ObjectNav开放词汇搜索中的目标误确认，具范式参考价值。",
+      "relevance_rating": 10,
+      "rigor_rating": 8,
+      "keywords_zh": "空中视觉语言导航, 无人机, 地理空间推理, 主动推理, 假设驱动探索, 零样本学习",
+      "question_zh": "如何利用导航中稳定的地理空间结构，将空中VLN从被动试错转变为地理空间引导的主动推理，以在大规模城市环境中可靠定位语言指定的目标？",
+      "innovation_zh": "提出GeoReasoner，将空中VLN从被动试错转向地理空间引导的主动推理：以搜索前地理推理获区域先验、约束目标假设空间，再假设驱动探索主动获取判别性证据，最后一致性感知验证对抗评估多源证据，避免过早或错误的目标确认。",
+      "dataset_zh": "真实世界的CityNav基准数据集；仿真环境与真机平台未提及",
+      "results_zh": "在真实世界CityNav基准上的实验表明，GeoReasoner在零样本空中VLN方法中创下新的SOTA，并与有监督方法表现相当、具有竞争力；摘要未给出具体量化数字。",
+      "venue_verified": false,
+      "score": 28,
+      "keywords": [
+        "aerial",
+        "benchmark",
+        "exploration",
+        "localization",
+        "spatial reasoning",
+        "uav"
+      ],
+      "added_at": "2026-11-02T12:02:01.916395+00:00"
     },
     {
       "id": "2610.23293",
@@ -1676,54 +1730,6 @@
       "added_at": "2026-09-01T12:27:58Z"
     },
     {
-      "id": "2608.01802",
-      "arxiv_id": "2608.01802",
-      "title": "CoNav-UAV: Cooperative Dual-Altitude Aerial Navigation via Stackelberg Learning",
-      "authors": [
-        "Junru Song",
-        "Wenhao Zhang",
-        "Yang Yang",
-        "Xuekai Qiu",
-        "Feifei Wang",
-        "Weien Zhou",
-        "Tingsong Jiang",
-        "Ying Wen",
-        "Yang Li",
-        "Wen Yao"
-      ],
-      "published": "2026-08-03",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.01802",
-      "pdf_url": "https://arxiv.org/pdf/2608.01802",
-      "code_url": "",
-      "categories": [
-        "cs.AI",
-        "cs.RO"
-      ],
-      "topics": [
-        "空域 VLN"
-      ],
-      "relevance_score": 11,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该文将双高度无人机VLN建模为Stackelberg博弈，高空领导者用记忆式上下文学习改进推理，低空跟随者用DAgger蒸馏精化控制，交替逼近均衡，在AerialVLN三场景大幅超越单双机基线。",
-      "change_zh": "常见做法把地面VLN范式搬到单架低空无人机并依赖外部辅助或特权信息，双机方案也各自独立训练；本文改为Stackelberg博弈显式建模高低空分工，用迭代学习让两机相互适应，仅凭机载输入，跨场景适配数据减至约三分之一。",
-      "why_it_matters": "对UAV主动目标搜索直接相关：高空广域探索与低空精确抵近的分工正是搜救侦察中'广域搜索-精确抵近'的核心矛盾，免特权信息的博弈式联合训练给出双机协同新范式；其高层推理与低层控制解耦亦可迁移至ObjectNav的目标定位与执行设计。",
-      "relevance_rating": 10,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 28,
-      "keywords": [
-        "aerial",
-        "benchmark",
-        "exploration",
-        "uav",
-        "vlm"
-      ],
-      "added_at": "2026-09-01T21:26:42+08:00"
-    },
-    {
       "id": "2610.38248",
       "arxiv_id": "2610.38248",
       "title": "MATCH: Execution-Aware Hierarchical Reinforcement Learning for Vision-and-Language Navigation in Continuous Environment",
@@ -2525,6 +2531,54 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.41330",
+      "arxiv_id": "2610.41330",
+      "title": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics",
+      "authors": [
+        "Zhidong Wang",
+        "Zirui Li",
+        "Haoran Xu",
+        "Yujie Yan",
+        "Zitong Shan",
+        "Jingsong Liang",
+        "Han Yu",
+        "Chen Lv"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41330",
+      "pdf_url": "https://arxiv.org/pdf/2610.41330",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 5,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出Hourglass架构：本体无关世界模型与各机器人可微分自运动模板仅经相机自运动耦合，学习跨本体通用参数条件策略，在7种仿真机器人上超基线并零样本迁移至真实滑移机器人。",
+      "change_zh": "常见路线输出忽略本体差异的归一化指令，或按机器人逐一训练蒸馏。本文改在相机自运动接口解耦：本体无关世界模型跨本体共享，指令到运动由可微分动力学模板承载，想象训练经模板展开使策略具备本体感知。",
+      "why_it_matters": "为世界模型导航线提供跨本体范式：本体差异压缩进可微分模板，一个策略覆盖多构型平台，3分钟辨识即零样本上真机；对异构无人机目标搜索、多平台ObjectNav与sim2real部署均有借鉴价值。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "跨本体运动规划, 世界模型, 可微自我动力学, 通用策略, 想象训练, 零样本迁移",
+      "question_zh": "杂乱环境中的运动规划依赖各机器人的几何与动力学，如何让单一策略在跨本体间通用并保持本体感知能力？",
+      "innovation_zh": "提出Hourglass架构，在相机自运动这一界面解耦跨本体规划：本体无关世界模型（跨本体与相机安装位置混合训练）与各机器人可微降价自我动力学模板仅通过该界面耦合；通过各机器人模板滚动想象的训练，一次学成具有本体感知的通用参数条件策略，无需逐机训练或蒸馏。",
+      "dataset_zh": "七个仿真机器人（覆盖五种运动模态），世界模型在跨本体、跨相机安装位置的混合数据上训练；真机为训练中未见的滑移转向机器人（经三分钟遥操作驾驶完成参数辨识）；仿真器具体名称未提及。",
+      "results_zh": "通用策略在成功率上比基于同一世界模型的模仿学习和扩散策略基线高出3.8–10.6个百分点，无需专门训练即匹敌逐机专家策略，与参数条件MPPI教师差距仅1.4–2.8个百分点且无需在线地图；纯合成数据训练的模型经短时遥操作辨识后零样本迁移到真实滑移转向机器人，在未见室内场景中实现导航。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "geometry",
+        "motion planning",
+        "world model"
+      ],
+      "added_at": "2026-11-02T12:07:03.202329+00:00"
     },
     {
       "id": "2610.38405",
@@ -4450,6 +4504,52 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2610.41651",
+      "arxiv_id": "2610.41651",
+      "title": "When Depth Lies: Benchmarking Vision-Language Models on Mirror-Induced RGB-D Ambiguity",
+      "authors": [
+        "Hao Yin",
+        "Tianchen Guo",
+        "Heming Du",
+        "Yan Ke",
+        "Yanbin Liu",
+        "Xin Yu"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41651",
+      "pdf_url": "https://arxiv.org/pdf/2610.41651",
+      "code_url": "https://github.com/EvaYin-cloud/MIRA-Bench",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出MIRA-Bench：基于525个真实场景的1011幅RGB-D镜像图像构建14140个QA对，分三层认知评测主流VLM的空间推理，发现其普遍误判反射物体，加入深度反而降低性能。",
+      "change_zh": "现有RGB-D空间推理评测默认深度可信，本文首次以镜面为切入点构造深度与外观相互矛盾的对抗场景，并按感知、空间推理、场景决策三层认知组织任务，揭示深度输入反成负资产的失效模式。",
+      "why_it_matters": "镜面与玻璃是室内导航和无人机近建筑搜索的常见陷阱，深度传感器在反射面系统性失真；该基准揭示VLM无法识别错误深度，为ObjectNav与UAV搜救的感知可靠性及鲁棒空间记忆设计提供评测依据与失败模式清单。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "keywords_zh": "视觉语言模型,镜面反射,RGB-D,空间推理,基准测试,深度歧义",
+      "question_zh": "视觉语言模型在镜面反射导致深度读数失真的RGB-D场景中能否正确进行空间推理与决策？",
+      "innovation_zh": "现有基准鲜少考虑反射场景，本文构建镜面RGB-D数据集与MIRA-Bench基准，含14,140个QA对、八个子任务及三个认知层级，系统揭示VLM在镜面深度歧义下的空间推理缺陷。",
+      "dataset_zh": "自建镜面RGB-D数据集：1,011张来自525个真实场景的RGB-D图像，覆盖室内外环境、六种反射面类型及昼夜条件，标注有反射区域掩码及真实观察与镜像反射物体的掩码；并由此构建MIRA-Bench基准",
+      "results_zh": "最先进VLM在各项任务上持续失败：误判物体是直接观察还是镜像反射、无法将反射实例匹配到真实物体、产生错误空间推断；值得注意的是，提供深度数据反而降低推理性能，表明VLM无法识别镜面场景中的错误深度。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark",
+        "spatial reasoning",
+        "vlm"
+      ],
+      "added_at": "2026-11-02T12:19:15.665465+00:00"
     },
     {
       "id": "2610.39379",
@@ -12824,6 +12924,93 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2610.42082",
+      "arxiv_id": "2610.42082",
+      "title": "Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning",
+      "authors": [
+        "Lidong Lu",
+        "Lidong Zou",
+        "Xinyi Mao",
+        "Jiaxin Lv",
+        "Zhenquan Li",
+        "Liangrui Dong",
+        "Tong Lu",
+        "Guo Chen"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.42082",
+      "pdf_url": "https://arxiv.org/pdf/2610.42082",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 7,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "发布首个全景视频推理基准PanoVideoBench（1000题、含目标搜索诊断标注），评测11个模型发现跨视角追踪与球面时间证据整合最弱，进而以13465条QA-CoT训练PanoVideoReasoner，较骨干提升12.5分、超此前SOTA 2.6分。",
+      "change_zh": "常见视频推理评测与训练多限于透视窄视野片段；本文首次把360°全景纳入评测与训练闭环，用经验证的球面观测与成功智能体探索合成思维链数据，并以证据特权在线自蒸馏让教师借已验证透视视图引导学生生成全景推理轨迹。",
+      "why_it_matters": "跨视角追踪与球面时间证据整合正是UAV环视目标搜索、全景VLN与ObjectNav感知的核心痛点；基准自带目标搜索诊断标注，训练出的全景推理能力与特权蒸馏范式，可为搭载360°相机的无人机与机器人提供感知推理底座。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "mllm",
+        "target search"
+      ],
+      "added_at": "2026-11-02T12:03:42.599979+00:00"
+    },
+    {
+      "id": "2610.41833",
+      "arxiv_id": "2610.41833",
+      "title": "PGGT-Loc: Primitive-Grounded Geometry Transformer for Feed-Forward Camera Localization",
+      "authors": [
+        "Hanqiao Ye",
+        "Yuzhou Liu",
+        "Mengqi Rong",
+        "Jian Liu",
+        "Yangdong Liu",
+        "Shuhan Shen"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41833",
+      "pdf_url": "https://arxiv.org/pdf/2610.41833",
+      "code_url": "https://github.com/3dv-casia/PGGT-Loc",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出PGGT-Loc：以紧凑平面图元为地图，几何Transformer将单张查询图像直接对齐到地图基元，前馈预测多定位目标完成6自由度相机定位，在稠密表面地图与极简布局模型上均刷新SOTA并泛化到未见环境。",
+      "change_zh": "常见视觉定位依赖点云/SfM地图与\"检索-匹配-求解\"多阶段流水线，构建与维护昂贵；本文改用紧凑易得的平面图元作地图，以单一前馈Transformer跨模态对齐图像与基元直接回归位姿，实现免多阶段、可跨场景泛化的定位。",
+      "why_it_matters": "视觉定位属状态估计与控制核心线：轻量可解释的平面基元地图加前馈位姿回归大幅降低建图存储与维护成本，可为无人机目标搜索、地面目标导航在结构化场景提供低开销重定位组件；摘要未涉真机与导航决策，价值主要在定位能力层。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "geometry",
+        "localization"
+      ],
+      "added_at": "2026-11-02T12:13:54.341660+00:00"
+    },
+    {
       "id": "2610.38744",
       "arxiv_id": "2610.38744",
       "title": "AtomTree: A Hierarchical Framework for State-Aware Embodied Instruction Following with LLMs",
@@ -15181,6 +15368,168 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.41235",
+      "arxiv_id": "2610.41235",
+      "title": "CONSORT: Uncertainty-Constrained Multi-Robot Planning for Cooperative Localization in GPS-Denied Environments",
+      "authors": [
+        "Tony Zhang",
+        "Ryan Bartholomew",
+        "Kalliyan Velasco",
+        "Joshua Mangelson",
+        "Brady Moon"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41235",
+      "pdf_url": "https://arxiv.org/pdf/2610.41235",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对GPS拒止下多机协同定位规划在信念空间不可解的问题，提出仅优化均值轨迹、协方差只用于终端不确定约束评估的可处理代理，以六边形网格联合搜索加样条细化求解；50个场景解出80%（最强基线54%），海上仿真验证终端误差在6%内。",
+      "change_zh": "既有工作多靠近似信念动力学或限制机间耦合来回避全信念空间规划的计算不可解性；本文改为只优化各机均值轨迹、协方差仅用于终端约束评估，并以网格搜索加样条细化的离散到连续管线联合规划全部智能体，兼得可解性与终端不确定度保证。",
+      "why_it_matters": "GPS拒止导航是UAV搜索与侦察落地的关键瓶颈；本文将协同定位不确定度作为显式约束纳入多机轨迹规划，并经独立因子图估计闭环验证（海上仿真），对多机搜救侦察路径生成与状态估计控制线有直接参考价值；与语义目标驱动的ObjectNav关联较弱。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agent planning",
+        "evaluation",
+        "localization"
+      ],
+      "added_at": "2026-11-02T12:09:39.146898+00:00"
+    },
+    {
+      "id": "2610.41548",
+      "arxiv_id": "2610.41548",
+      "title": "Contact-based optimization for collision-free motion planning for a million robots",
+      "authors": [
+        "Jan Kamm",
+        "Antonio Terpin",
+        "Raffaello D'Andrea"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41548",
+      "pdf_url": "https://arxiv.org/pdf/2610.41548",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出基于接触的多机器人无碰撞轨迹优化方法SCI：以机器人达到最小间距的接触事件为变量构建代数系统，接触间解析重构轨迹，可数分钟规划百万机器人，较SCP基线加速数个数量级。",
+      "change_zh": "常见做法将整条轨迹离散化后整体数值优化，约束耦合致非凸、大机群代价高；本文改以接触（达到最小间距）为核心变量，接触间解析重构最优轨迹，从无约束解出发插入接触并联合调整其时刻与状态，化为稀疏代数系统求解。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav的决策层无直接贡献，但对状态估计与控制线价值高：为无人机编队表演、大规模空地水集群作业提供可扩展的避碰轨迹规划底座，若经实物验证可支撑搜救侦察等集群任务的运动底层。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "drone",
+        "motion planning"
+      ],
+      "added_at": "2026-11-02T12:12:51.974285+00:00"
+    },
+    {
+      "id": "2610.41667",
+      "arxiv_id": "2610.41667",
+      "title": "GPU-accelerated Incremental Euclidean Distance Transform for Online Motion Planning of Mobile Robots",
+      "authors": [
+        "Yizhou Chen",
+        "Shupeng Lai",
+        "Jinqiang Cui",
+        "Biao Wang",
+        "Ben M. Chen"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41667",
+      "pdf_url": "https://arxiv.org/pdf/2610.41667",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出GPU加速的增量式体积建图系统，融合多传感器数据并行构建占据栅格图与欧氏距离变换，用并行波前算法把新观测增量融入全局EDT，为在线运动规划输出高频局部距离场，并在无人机与地面车辆上实现机载实时运行。",
+      "change_zh": "常见体积建图追求高精度结构重建，或需重算全局距离场；本文转向面向规划的在线EDT：GPU并行局部计算叠加波前增量更新，在保持历史观测与全局距离一致的同时输出高频局部距离，直指机载算力受限下的实时规划需求。",
+      "why_it_matters": "距离场是无人机局部轨迹规划与避障的核心底层输入；该系统在机载受限算力下提供高频局部距离并维护全局EDT，可直接支撑UAV在未知区域探索与目标搜索中的实时避障规划，也为地面具身导航的碰撞检测与路径代价计算提供在线建图基础。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "aerial",
+        "motion planning"
+      ],
+      "added_at": "2026-11-02T12:17:35.783513+00:00"
+    },
+    {
+      "id": "2610.41275",
+      "arxiv_id": "2610.41275",
+      "title": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking",
+      "authors": [
+        "Mingyang Lyu",
+        "Gongce Cao",
+        "Yiyang Jia",
+        "Lu Jia",
+        "Erliang Lin",
+        "Yuhao Zhang",
+        "Yinqian Sun",
+        "Pin Lyu",
+        "Feifei Zhao",
+        "Bo Wang"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41275",
+      "pdf_url": "https://arxiv.org/pdf/2610.41275",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "地面 VLN"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "TRACE在VLA具身跟踪策略上加执行期目标状态风险门：风险超阈值时仅缩放下一航点平移分量，98%以上步骤不改动作；配对评测中分心跟踪碰撞率降3.96个百分点，成功率与跟随率仍提升。",
+      "change_zh": "常见做法是在训练期用安全奖励或约束重训策略；TRACE不改训练，保留已学VLA策略，在执行期以校准风险门做选择性微干预：仅缩放平移分量、不动偏航，并用配对评测、匹配减速对照与零干预对照分离真实效应。",
+      "why_it_matters": "目标接近阶段普遍存在成功率与碰撞的权衡：UAV或ObjectNav智能体冲向目标时常因持续追踪而碰撞。TRACE的免重训、低干预执行期安全门及严格配对评测可迁移到目标接近与具身导航安全控制。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "waypoint"
+      ],
+      "added_at": "2026-11-02T12:21:57.394518+00:00"
     },
     {
       "id": "2610.40429",
@@ -19800,6 +20149,85 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2610.41676",
+      "arxiv_id": "2610.41676",
+      "title": "Interaction-Aware Sampling-Based Motion Planning for Autonomous Surface Vessels in Urban Waterways",
+      "authors": [
+        "Elia Trevisan",
+        "Alejandro Gonzalez-Garcia",
+        "Jan Swevers",
+        "Javier Alonso-Mora"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41676",
+      "pdf_url": "https://arxiv.org/pdf/2610.41676",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "提出基于MPPI的交互感知采样式规划器，为城市运河自主船舶联合规划自身轨迹并预测他船轨迹，交通规则编码为非连续代价；780次随机仿真无碰撞死锁，两艘缩尺样机10Hz机载真机验证。",
+      "change_zh": "常规做法是预测与他船轨迹规划解耦、优化法需将避碰规则平滑化近似；该方法在采样式MPC内联合求解自船轨迹与他船预测，交互内生建模，并以非连续代价直接编码交通规则，面向城市运河受限水域而非开阔海域。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav无直接贡献，但交互感知局部规划与非连续规则代价编码可迁移至多机近距避碰及无人机受限空域的目标接近机动；缩尺真机10Hz机载闭环验证为规划器Sim2Real提供参考。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "localization",
+        "model predictive control",
+        "motion planning"
+      ],
+      "added_at": "2026-11-02T12:11:13.487861+00:00"
+    },
+    {
+      "id": "2610.41951",
+      "arxiv_id": "2610.41951",
+      "title": "Aligning MLLMs with the Latent Structure of Human Cognition via Behavior-Derived Semantic Dimensions",
+      "authors": [
+        "Ning E",
+        "Changde Du",
+        "Yizhuo Lu",
+        "Huiguang He"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41951",
+      "pdf_url": "https://arxiv.org/pdf/2610.41951",
+      "code_url": "https://github.com/ening-open/cogalign",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "基于470万人类Odd-One-Out判断的66维可解释语义空间，将三元组最显著决策维度转为语言依据微调MLLM，提升与人类相似性判断及脑表征的对齐，并保持标准基准性能。",
+      "change_zh": "常见对齐以人类偏好或指令数据为准；本文改用海量O1O行为判断提炼的66维可解释语义结构作对齐目标，让模型同时学习选择与维度依据的理由，并以fMRI RSA验证表征对齐，将认知结构显式注入MLLM训练。",
+      "why_it_matters": "直接价值在MLLM对齐方法本身。对具身线较间接：66维可解释物体语义或有助于ObjectNav开放词汇目标理解与目标相关性先验，也可为UAV目标搜索提供更贴近人类判断的显著性，但论文未在导航任务验证。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-11-02T12:16:49.816543+00:00"
+    },
+    {
       "id": "2610.37613",
       "arxiv_id": "2610.37613",
       "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
@@ -21221,6 +21649,97 @@
         "uav"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.41172",
+      "arxiv_id": "2610.41172",
+      "title": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+      "authors": [
+        "Zhichang Yu",
+        "Baining Cao",
+        "Sbaaoui Idriss",
+        "Qi Wang",
+        "Gangqiang Xu",
+        "Ling Qin",
+        "Xiaoling Jin",
+        "An Liu",
+        "Shaohao Cai",
+        "Xiaoyang Bao",
+        "Shengle Chen",
+        "Changchang Ding",
+        "Pengfei Zhu",
+        "Jingxiang Xu",
+        "Yifeng Mao",
+        "Lu Liu",
+        "Hai Jin",
+        "Yingfeng Zhang"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41172",
+      "pdf_url": "https://arxiv.org/pdf/2610.41172",
+      "code_url": "https://github.com/infiniflow/ragflow",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "论文针对智能体检索循环中的上下文膨胀问题提出知识编译层，离线生成导航树、实体图等结构；实测导航树使查询令牌平均降38%，决策门让延迟从140秒降至30秒，但结构对准确率无增益。",
+      "change_zh": "常规路线或改进检索器、向量索引，或让智能体循环追求准确率；本文把重心转向上下文供给基础设施：用离线LLM编译导航树、本体等结构充当智能体原生存储，并坦承结构对准确率无增益，转而量化令牌与延迟收益。",
+      "why_it_matters": "其上下文最小充分集与编译式记忆供给思路，可为长程任务智能体的记忆与上下文管理提供借鉴；但评测均为文本检索基准，与UAV目标搜索、ObjectNav等具身导航任务缺乏直接实验关联，价值偏方法论层面。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "deployment"
+      ],
+      "added_at": "2026-11-02T12:15:21.160361+00:00"
+    },
+    {
+      "id": "2610.41671",
+      "arxiv_id": "2610.41671",
+      "title": "OpenVIO: A Versatile Open-Source Visual-Inertial Odometry System",
+      "authors": [
+        "Seungwon Choi"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41671",
+      "pdf_url": "https://arxiv.org/pdf/2610.41671",
+      "code_url": "https://github.com/93won/openvio",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文发布开源视觉惯性里程计系统OpenVIO（MIT协议），支持针孔、鱼眼相机并扩展至拼接360°全景图像，逐一阐述各模块设计考量，并在公开数据集上与其他开源VIO系统进行基准对比。",
+      "change_zh": "多数开源VIO通常仅针对针孔或鱼眼相机单独实现；OpenVIO在统一开源框架内兼容多类相机模型，并扩展到拼接360°全景图像的里程计估计，以MIT协议降低研究与工程复用门槛；但摘要未披露算法层面的核心创新点。",
+      "why_it_matters": "VIO是机器人自主定位的核心底座，直接支撑UAV搜救侦察等主动目标搜索任务的位姿估计，也为地面ObjectNav真机部署提供里程计支撑；其对360°全景图像的支持对需全向感知的无人机平台具有落地参考价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "benchmark",
+        "odometry"
+      ],
+      "added_at": "2026-11-02T12:24:41.639300+00:00"
     },
     {
       "id": "2610.40455",
@@ -23256,6 +23775,45 @@
         "drone"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2610.41558",
+      "arxiv_id": "2610.41558",
+      "title": "A complete analytical characterization of optimal collision-free motion for two robots",
+      "authors": [
+        "Jan Kamm",
+        "Antonio Terpin",
+        "Raffaello D'Andrea"
+      ],
+      "published": "2026-10-30",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2610.41558",
+      "pdf_url": "https://arxiv.org/pdf/2610.41558",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY",
+        "math.OC"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该文对双积分器动力学、加速度平方代价下两机器人起止均静止的无碰撞运动规划问题给出完整解析刻画，证明最优轨迹分属八种接触构型族，并给出逐情形判定、几何性质与数值求解算法。",
+      "change_zh": "以往多机器人无碰撞轨迹规划因避障约束非凸而几乎只依赖数值优化方法；该文转而给出两机器人情形的完整闭式最优解与接触族分类定理，把问题从数值求解推向解析刻画，可为现有数值轨迹优化器提供结构先验与理论基准。",
+      "why_it_matters": "属于轨迹规划技术线：其解析结构与八族分类可为无人机集群、编队飞行等无碰撞轨迹优化提供热启动、结构约束与最优性基准，揭示非凸避障约束的几何本质；但对UAV主动目标搜索与ObjectNav等高层导航决策问题无直接贡献。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "drone",
+        "motion planning"
+      ],
+      "added_at": "2026-11-02T12:20:23.918582+00:00"
     },
     {
       "id": "2610.40578",
@@ -27242,41 +27800,121 @@
     }
   ],
   "briefing": {
-    "text": "今日四篇围绕具身智能从静态感知转向闭环行动：基准、分层规划、记忆与自我改进各占一环。首推 What Should a Navigator Remember?，它把指令进度、压缩观测与累积几何组织为任务、时序、空间三类记忆，并经Go2真机验证，直指零样本VLN该记什么；SpaceAct 用108个闭环任务诊断出前沿模型卡在3D视觉定位与动作精化而非规划，为模型迭代点名具体短板；AtomTree 以子目标-动作树按符号状态分解并支持层级回溯，在ALFRED零样本超越既有LLM规划器，分层实现可复用。趋势上，评测正从离线问答转向动作闭环，记忆设计则走向显式结构化。",
-    "added": 4,
-    "at": "2026-10-31T15:44:29.547902+00:00",
+    "text": "今日入库14篇的主线，是给具身导航补上先验、约束与评测地基：推理端引入地理先验与风险门，规划端追求跨本体与可解性，另有新基准和开源系统打底。首推GeoReasoner，它把空域VLN从被动试错改为地理空间引导的主动推理，在真实CityNav上刷新零样本SOTA并逼近监督方法，属范式层面的推进；Hourglass仅以相机自运动耦合本体无关世界模型与各机器人可微分自运动模板，单套策略跨七种本体并零样本迁移至真实滑移机器人，对通用具身策略有直接参考价值；MIRA-Bench用1011幅镜像RGB-D图像揭示主流VLM普遍误判反射物体、加入深度反而降分，直指深度与语言融合的盲区。整体看，先验引导的主动推理加可验证执行，正取代端到端试错，成为导航智能体的新配方。",
+    "added": 14,
+    "at": "2026-11-02T12:29:16.181403+00:00",
     "new": [
       {
-        "t": "SpaceAct: Benchmarking 3D Spatial and Temporal Reasoning via Closed-Loop Action and Active Perception",
-        "u": "https://arxiv.org/abs/2610.38405",
+        "t": "Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation",
+        "u": "https://arxiv.org/abs/2610.41446",
+        "r": 10,
+        "g": 8,
+        "s": "GeoReasoner将空域VLN从被动试错转为地理空间引导的主动推理，通过预搜索地理先验约束、假设驱动探索与一致性目标验证，在真实CityNav基准上刷新零样本SOTA并媲美监督方法。",
+        "c": ""
+      },
+      {
+        "t": "Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning",
+        "u": "https://arxiv.org/abs/2610.42082",
+        "r": 7,
+        "g": 8,
+        "s": "发布首个全景视频推理基准PanoVideoBench（1000题、含目标搜索诊断标注），评测11个模型发现跨视角追踪与球面时间证据整合最弱，进而以13465条QA-CoT训练PanoVideoReasoner，较骨干提升12.5分、超此前SOTA 2.6分。",
+        "c": ""
+      },
+      {
+        "t": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics",
+        "u": "https://arxiv.org/abs/2610.41330",
         "r": 9,
         "g": 8,
-        "s": "SpaceAct是通过闭环物理动作与主动感知评测多模态大模型3D时空推理的交互式基准，含108个任务与多种诊断模式，发现前沿模型即便有有效计划仍受3D视觉定位与动作精化制约。",
+        "s": "提出Hourglass架构：本体无关世界模型与各机器人可微分自运动模板仅经相机自运动耦合，学习跨本体通用参数条件策略，在7种仿真机器人上超基线并零样本迁移至真实滑移机器人。",
         "c": ""
       },
       {
-        "t": "AtomTree: A Hierarchical Framework for State-Aware Embodied Instruction Following with LLMs",
-        "u": "https://arxiv.org/abs/2610.38744",
-        "r": 8,
-        "g": 6,
-        "s": "AtomTree以LLM分层规划具身指令：逐步构建子目标-动作树，按当前符号状态决定分解或输出底层动作，配记忆与层级回溯重规划，在ALFRED零样本评测中超越既有LLM规划器。",
-        "c": ""
-      },
-      {
-        "t": "What Should a Navigator Remember? Spatiotemporal Memory for Zero-Shot Vision-Language Navigation",
-        "u": "https://arxiv.org/abs/2610.38318",
-        "r": 10,
-        "g": 7,
-        "s": "零样本VLN记忆设计：把指令进度、位姿锚定的压缩观测、累积几何组织为任务/时序/空间三类记忆，8B观测与推理模型据此选择路点意图，几何控制器执行，在R2R-CE与Go2真机验证。",
-        "c": ""
-      },
-      {
-        "t": "Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation",
-        "u": "https://arxiv.org/abs/2610.38266",
+        "t": "CONSORT: Uncertainty-Constrained Multi-Robot Planning for Cooperative Localization in GPS-Denied Environments",
+        "u": "https://arxiv.org/abs/2610.41235",
         "r": 7,
+        "g": 7,
+        "s": "针对GPS拒止下多机协同定位规划在信念空间不可解的问题，提出仅优化均值轨迹、协方差只用于终端不确定约束评估的可处理代理，以六边形网格联合搜索加样条细化求解；50个场景解出80%（最强基线54%），海上仿真验证终端误差在6%内。",
+        "c": ""
+      },
+      {
+        "t": "Interaction-Aware Sampling-Based Motion Planning for Autonomous Surface Vessels in Urban Waterways",
+        "u": "https://arxiv.org/abs/2610.41676",
+        "r": 6,
+        "g": 8,
+        "s": "提出基于MPPI的交互感知采样式规划器，为城市运河自主船舶联合规划自身轨迹并预测他船轨迹，交通规则编码为非连续代价；780次随机仿真无碰撞死锁，两艘缩尺样机10Hz机载真机验证。",
+        "c": ""
+      },
+      {
+        "t": "Contact-based optimization for collision-free motion planning for a million robots",
+        "u": "https://arxiv.org/abs/2610.41548",
+        "r": 7,
+        "g": 7,
+        "s": "提出基于接触的多机器人无碰撞轨迹优化方法SCI：以机器人达到最小间距的接触事件为变量构建代数系统，接触间解析重构轨迹，可数分钟规划百万机器人，较SCP基线加速数个数量级。",
+        "c": ""
+      },
+      {
+        "t": "PGGT-Loc: Primitive-Grounded Geometry Transformer for Feed-Forward Camera Localization",
+        "u": "https://arxiv.org/abs/2610.41833",
+        "r": 7,
+        "g": 7,
+        "s": "提出PGGT-Loc：以紧凑平面图元为地图，几何Transformer将单张查询图像直接对齐到地图基元，前馈预测多定位目标完成6自由度相机定位，在稠密表面地图与极简布局模型上均刷新SOTA并泛化到未见环境。",
+        "c": "https://github.com/3dv-casia/PGGT-Loc"
+      },
+      {
+        "t": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+        "u": "https://arxiv.org/abs/2610.41172",
+        "r": 6,
         "g": 6,
-        "s": "本文综述物理AI中的递归自我改进：区分学习者更新与改进器，比较策略学习、想象经验、记忆与技能积累、可执行程序四类机制，提出L0-L3能力增益分级及共同数据与交互式评测协议。",
-        "c": "https://github.com/nkd-lkz/physical-ai-rsi-survey"
+        "s": "论文针对智能体检索循环中的上下文膨胀问题提出知识编译层，离线生成导航树、实体图等结构；实测导航树使查询令牌平均降38%，决策门让延迟从140秒降至30秒，但结构对准确率无增益。",
+        "c": "https://github.com/infiniflow/ragflow"
+      },
+      {
+        "t": "Aligning MLLMs with the Latent Structure of Human Cognition via Behavior-Derived Semantic Dimensions",
+        "u": "https://arxiv.org/abs/2610.41951",
+        "r": 6,
+        "g": 7,
+        "s": "基于470万人类Odd-One-Out判断的66维可解释语义空间，将三元组最显著决策维度转为语言依据微调MLLM，提升与人类相似性判断及脑表征的对齐，并保持标准基准性能。",
+        "c": "https://github.com/ening-open/cogalign"
+      },
+      {
+        "t": "GPU-accelerated Incremental Euclidean Distance Transform for Online Motion Planning of Mobile Robots",
+        "u": "https://arxiv.org/abs/2610.41667",
+        "r": 7,
+        "g": 7,
+        "s": "提出GPU加速的增量式体积建图系统，融合多传感器数据并行构建占据栅格图与欧氏距离变换，用并行波前算法把新观测增量融入全局EDT，为在线运动规划输出高频局部距离场，并在无人机与地面车辆上实现机载实时运行。",
+        "c": ""
+      },
+      {
+        "t": "When Depth Lies: Benchmarking Vision-Language Models on Mirror-Induced RGB-D Ambiguity",
+        "u": "https://arxiv.org/abs/2610.41651",
+        "r": 8,
+        "g": 8,
+        "s": "本文提出MIRA-Bench：基于525个真实场景的1011幅RGB-D镜像图像构建14140个QA对，分三层认知评测主流VLM的空间推理，发现其普遍误判反射物体，加入深度反而降低性能。",
+        "c": "https://github.com/EvaYin-cloud/MIRA-Bench"
+      },
+      {
+        "t": "A complete analytical characterization of optimal collision-free motion for two robots",
+        "u": "https://arxiv.org/abs/2610.41558",
+        "r": 6,
+        "g": 6,
+        "s": "该文对双积分器动力学、加速度平方代价下两机器人起止均静止的无碰撞运动规划问题给出完整解析刻画，证明最优轨迹分属八种接触构型族，并给出逐情形判定、几何性质与数值求解算法。",
+        "c": ""
+      },
+      {
+        "t": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking",
+        "u": "https://arxiv.org/abs/2610.41275",
+        "r": 7,
+        "g": 7,
+        "s": "TRACE在VLA具身跟踪策略上加执行期目标状态风险门：风险超阈值时仅缩放下一航点平移分量，98%以上步骤不改动作；配对评测中分心跟踪碰撞率降3.96个百分点，成功率与跟随率仍提升。",
+        "c": ""
+      },
+      {
+        "t": "OpenVIO: A Versatile Open-Source Visual-Inertial Odometry System",
+        "u": "https://arxiv.org/abs/2610.41671",
+        "r": 6,
+        "g": 6,
+        "s": "本文发布开源视觉惯性里程计系统OpenVIO（MIT协议），支持针孔、鱼眼相机并扩展至拼接360°全景图像，逐一阐述各模块设计考量，并在公开数据集上与其他开源VIO系统进行基准对比。",
+        "c": "https://github.com/93won/openvio"
       }
     ]
   }
