@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T16:34:58.171234+00:00",
+  "updated_at": "2026-11-02T19:58:42.335554+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -5680,6 +5680,36 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-19T16:48:38.353154+00:00"
+    },
+    {
+      "id": "https://openalex.org/W4322627364",
+      "arxiv_id": "",
+      "title": "Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence",
+      "authors": [
+        "Uzair Aslam Bhatti",
+        "Hao Tang",
+        "Guilu Wu",
+        "Shah Marjan",
+        "Aamir Hussain"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "International Journal of Intelligent Systems",
+      "citation_count": 471,
+      "url": "https://doi.org/10.1155/2023/8342104",
+      "pdf_url": "https://downloads.hindawi.com/journals/ijis/2023/8342104.pdf",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Convolutional neural networks (CNNs) have received widespread attention due to their powerful modeling capabilities and have been successfully applied in natural language processing, image recognition, and other fields.",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-11-02T19:58:42.335554+00:00"
     },
     {
       "id": "https://openalex.org/W4401417061",
@@ -15036,55 +15066,6 @@
     }
   ],
   "excluded": {
-    "2303.04226": {
-      "title": "A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "该综述聚焦AIGC内容生成（文生图、文本生成等生成任务），属于文生图与纯生成内容范畴，与具身导航、空间智能或智能体能力无实质关联，超出收录范围。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3187511524": {
-      "title": "A Survey of Path Planning Algorithms for Mobile Robots",
-      "relevance": 5,
-      "rigor": 3,
-      "reason": "主题虽属运动/轨迹规划线，但这是面向初学者的宽泛科普式综述，无新方法、无系统性评测或基准对比，深度与落地影响力不足",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4318831792": {
-      "title": "Single-cell spatial landscapes of the lung tumour immune microenvironment",
-      "relevance": 1,
-      "rigor": 6,
-      "reason": "属肿瘤免疫微环境的生物医学与医学影像研究，仅'空间/深度学习'术语与收录范围擦边，不涉及任何具身导航、机器人自主或空间智能技术线。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4395052272": {
-      "title": "The application of large language models in medicine: A scoping review",
-      "relevance": 1,
-      "rigor": 5,
-      "reason": "该文是将LLM套用于医疗垂直领域的文献综述，与空间、导航、机器人无关，明确属于范围外拒绝类别。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3170143789": {
-      "title": "Rapid and accurate alignment of nucleotide conversion sequencing reads with HISAT-3N",
-      "relevance": 0,
-      "rigor": 7,
-      "reason": "该论文是生物信息学领域的核苷酸转换测序读段比对软件（HISAT-3N），与具身导航、空间智能、大模型智能体等全部收录技术线完全无关。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4220851938": {
-      "title": "From concept drift to model degradation: An overview on performance-aware drift detectors",
-      "relevance": 1,
-      "rigor": 4,
-      "reason": "该文为数据流机器学习中概念漂移检测的综述，与具身导航、空间智能、机器人自主等收录技术线无实质关联，仅泛泛触及预测模型性能话题。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4224220357": {
-      "title": "A Review of Remote Sensing for Water Quality Retrieval: Progress and Challenges",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "水质参数遥感反演属环境监测垂直应用综述，与导航、空间智能、机器人自主等收录技术线无关，无人机仅作被动数据采集平台，属范围外。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4401386758": {
       "title": "Large Language Models in Healthcare and Medical Domain: A Review",
       "relevance": 2,
@@ -18535,31 +18516,71 @@
       "rigor": 7,
       "reason": "该文是对LLM输出人格的心理测量与塑造研究，属对话模型行为分析，并非模型/智能体能力本身的显著进展，与空间智能、导航、机器人等技术线无关，仅LLM术语擦边。",
       "excluded_at": "2026-10-31"
+    },
+    "https://openalex.org/W4385064636": {
+      "title": "Spotlight on Luminescence Thermometry: Basics, Challenges, and Cutting‐Edge Applications",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "该文属于发光测温（材料光子学与纳米温度传感）领域综述，与具身导航、UAV目标搜索、空间智能、机器人自主等收录技术线完全无关，'remote sensing'与'AI算法'仅为术语擦边。",
+      "excluded_at": "2026-11-02"
+    },
+    "https://openalex.org/W4399567248": {
+      "title": "A multimodal generative AI copilot for human pathology",
+      "relevance": 2,
+      "rigor": 7,
+      "reason": "属于将视觉-语言大模型适配并微调于病理诊断这一垂直医疗领域的工作，与空间智能、导航或机器人自主均无关，属范围外应用。",
+      "excluded_at": "2026-11-02"
+    },
+    "https://openalex.org/W4319304408": {
+      "title": "AI for life: Trends in artificial intelligence for biotechnology",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "属于AI应用于生物技术与生命科学的特刊导言式综述，与具身导航、UAV目标搜索、空间智能、机器人自主等收录技术线无关，且无任何实验方法与结果。",
+      "excluded_at": "2026-11-02"
+    },
+    "https://openalex.org/W4211154833": {
+      "title": "A Comprehensive Survey of Visual SLAM Algorithms",
+      "relevance": 6,
+      "rigor": 3,
+      "reason": "纯文献综述，无实验设置、基线对比或可复现细节，且是面向初学者的通用视觉SLAM梳理，无新方法或系统性量化评测贡献，未达严谨度门槛。",
+      "excluded_at": "2026-11-02"
+    },
+    "https://openalex.org/W4399310716": {
+      "title": "On Transforming Reinforcement Learning With Transformers: The Development Trajectory",
+      "relevance": 5,
+      "rigor": 5,
+      "reason": "通用Transformer强化学习方法综述，导航与自动驾驶仅为四类应用举例之一，核心是RL方法演进，未落在收录的十一条技术线上。",
+      "excluded_at": "2026-11-02"
+    },
+    "https://openalex.org/W4396910085": {
+      "title": "Dynamic Adaptive Dynamic Window Approach",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "属DWA的常规增量式改进（网络自适应预测权重+RL训练，仅仿真评测），不具备该技术线要求的高影响力系统地位，按落地影响力标准不予收录。",
+      "excluded_at": "2026-11-02"
+    },
+    "https://openalex.org/W4411037856": {
+      "title": "Research Status and Development Trends of Deep Reinforcement Learning in the Intelligent Transformation of Agricultural Machinery",
+      "relevance": 3,
+      "rigor": 4,
+      "reason": "属农业机械垂直领域的DRL应用文献综述，其UAV路径规划与地面平台导航均为农机作业场景套用，未命中UAV目标搜索、aerial/地面VLN、ObjectNav等收录技术线，且综述本身无自有实验与可复现细节。",
+      "excluded_at": "2026-11-02"
     }
   },
   "last_citation_refresh": "2026-11-01T16:34:58.171234+00:00",
   "briefing": {
-    "text": "本批工作主线是能力跨域落地：一条线处理仿真到真实的迁移，另一条线用多模态基础模型统一数字与物理世界的行动。首推《Crossing the Reality Gap》，这篇被引200的综述梳理了强化学习控制器sim-to-real的主流方法、失效场景与开放问题，可当领域地图和选题依据；《Magma》以SoM标注可操作对象、ToM标注运动轨迹，融合图像、视频与机器人异构数据，在UI导航和机器人操作上同时达到SOTA，是感知—行动统一范式的具体实现。趋势上，跨域迁移正从补丁式技巧转向基础模型内建能力，数字智能体与具身智能体的边界在加速融合。",
-    "added": 2,
-    "at": "2026-10-29T16:38:54.486578+00:00",
+    "text": "本轮入库仅一条高被引条目，主线可归为图卷积网络（GCN）方法综述及其与具身导航的接口。最值得读的是 Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence（被引471）：它以综述形式梳理GCN方法脉络并盘点计算智能中的最新应用，适合作为在导航里引入场景图、拓扑地图与关系推理时的方法选型索引；因该条目自动研判未启用，具体结论请以原文为准。趋势上，显式图结构正从感知表征渗入导航的记忆与规划模块，建议持续跟踪后续入库。",
+    "added": 1,
+    "at": "2026-11-02T19:58:42.335554+00:00",
     "new": [
       {
-        "t": "Crossing the Reality Gap: A Survey on Sim-to-Real Transferability of Robot Controllers in Reinforcement Learning",
-        "u": "https://doi.org/10.1109/access.2021.3126658",
-        "r": 9,
-        "g": 6,
-        "s": "该综述聚焦强化学习机器人控制器的仿真到真实迁移问题，系统梳理应对现实鸿沟的主流方法与各自不足，并指明若干潜在的新研究方向。",
+        "t": "Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence",
+        "u": "https://doi.org/10.1155/2023/8342104",
+        "r": null,
+        "g": null,
+        "s": "该工作聚焦具身导航，主要研究问题可概括为：Deep Learning with Graph Convolutional Networks: An Overview and Latest Applications in Computational Intelligence。当前自动研判未启用，建议结合英文摘要阅读。",
         "c": "",
-        "cit": 200
-      },
-      {
-        "t": "Magma: A Foundation Model for Multimodal AI Agents",
-        "u": "https://arxiv.org/abs/2502.13130",
-        "r": 8,
-        "g": 8,
-        "s": "Magma是面向数字与物理世界智能体任务的多模态基础模型，以SoM标注图像中可操作对象、ToM标注视频中运动轨迹，融合图像、视频与机器人异构数据训练，统一语言理解与时空行动能力，在UI导航和机器人操作任务上达到SOTA。",
-        "c": "",
-        "cit": 53
+        "cit": 471
       }
     ]
   }
