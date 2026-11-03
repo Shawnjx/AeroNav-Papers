@@ -15066,62 +15066,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4401386758": {
-      "title": "Large Language Models in Healthcare and Medical Domain: A Review",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "医疗垂直领域的LLM应用综述，与空间、导航、机器人自主均无关，属于研究范围中明确排除的垂直领域套用类工作。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3204030525": {
-      "title": "Radiomics in Oncology: A Practical Guide",
-      "relevance": 1,
-      "rigor": 3,
-      "reason": "本文为肿瘤学医学影像组学（radiomics）实践指南，属于医疗垂直应用综述，与具身导航、UAV目标搜索、机器人自主等全部收录技术线无关。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4281642191": {
-      "title": "A survey of state-of-the-art on visual SLAM",
-      "relevance": 5,
-      "rigor": 4,
-      "reason": "主题虽属SLAM技术线，但仅为覆盖基础定义的入门级综述，无系统性评测、基线对比与消融，落地影响力与前沿情报价值有限。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4280524942": {
-      "title": "Cohort Profile Update: The HUNT Study, Norway",
-      "relevance": 1,
-      "rigor": 6,
-      "reason": "该文为挪威人群健康队列（HUNT）的流行病学描述，属医学数据资源介绍，与具身导航、无人机目标搜索、空间智能、大模型智能体等全部收录技术线均无关联。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4318066364": {
-      "title": "Ground-level gaseous pollutants (NO 2 , SO 2 , and CO) in China: daily seamless mapping and spatiotemporal variations",
-      "relevance": 2,
-      "rigor": 6,
-      "reason": "属环境遥感与大气污染制图的垂直AI应用，不涉及具身导航、机器人自主、3D空间理解或智能体能力本身，按范围规则应拒绝。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4396778990": {
-      "title": "Hydrogen Embrittlement as a Conspicuous Material Challenge─Comprehensive Review and Future Directions",
-      "relevance": 1,
-      "rigor": 3,
-      "reason": "纯材料科学综述，主题为金属氢脆机理与储运氢材料，与具身导航、空间智能、机器人自主等全部收录技术线无关，仅术语层面擦边（spatial scales、AI视角）。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3171261489": {
-      "title": "COVID-19 Vaccine–Related Discussion on Twitter: Topic Modeling and Sentiment Analysis",
-      "relevance": 1,
-      "rigor": 6,
-      "reason": "纯社交媒体文本的情感分析与LDA主题建模应用，与空间智能、具身导航或机器人自主完全无关，属于研究范围明确排除的垂直领域应用。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4390497073": {
-      "title": "Plant disease detection and classification techniques: a comparative study of the performances",
-      "relevance": 1,
-      "rigor": 3,
-      "reason": "属农业病害图像检测/分类的垂直应用综述，与空间、导航、机器人及大模型智能体能力均无关，且无原创实验设置与可复现信息。",
-      "excluded_at": "2026-09-02"
-    },
     "https://openalex.org/W4391316368": {
       "title": "Decision aids for people facing health treatment or screening decisions",
       "relevance": 0,
@@ -18565,6 +18509,62 @@
       "rigor": 4,
       "reason": "属农业机械垂直领域的DRL应用文献综述，其UAV路径规划与地面平台导航均为农机作业场景套用，未命中UAV目标搜索、aerial/地面VLN、ObjectNav等收录技术线，且综述本身无自有实验与可复现细节。",
       "excluded_at": "2026-11-02"
+    },
+    "2303.04226": {
+      "title": "A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "范围外：AIGC综述主线是文本/图像内容生成与生成模型发展史（含文生图），不涉及导航、空间、机器人或智能体能力本身的实质进展，属明确排除的生成式内容方向。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W4220851938": {
+      "title": "From concept drift to model degradation: An overview on performance-aware drift detectors",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文是数据流机器学习中概念漂移检测与模型性能退化监控的综述，不涉及具身导航、空间智能或机器人自主的任何收录技术线，属范围外。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W4395052272": {
+      "title": "The application of large language models in medicine: A scoping review",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "这是大语言模型在医疗垂直领域的应用综述，不涉及空间推理、导航、机器人或智能体能力本身的进展，属于范围中明确排除的'把现成模型套用到垂直应用'类别。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W3187511524": {
+      "title": "A Survey of Path Planning Algorithms for Mobile Robots",
+      "relevance": 5,
+      "rigor": 3,
+      "reason": "主题虽落在运动/轨迹规划技术线内，但这是面向新手的宽泛入门综述，无新方法、无实验对比与量化评测，属常规教科书式知识整理，非高影响力系统性工作。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W4224220357": {
+      "title": "A Review of Remote Sensing for Water Quality Retrieval: Progress and Challenges",
+      "relevance": 2,
+      "rigor": 3,
+      "reason": "遥感水质参数反演属于环境监测垂直应用综述，与导航决策、空间智能、机器人自主无关，UAV仅作为被动数据采集平台提及，属术语擦边，超出收录范围。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W4318831792": {
+      "title": "Single-cell spatial landscapes of the lung tumour immune microenvironment",
+      "relevance": 1,
+      "rigor": 6,
+      "reason": "该论文属于肿瘤免疫微环境的单细胞空间生物学与临床预后研究，其'空间'指组织内细胞分布而非机器人空间智能，与具身导航、UAV搜索、世界模型等全部收录技术线无关，属范围外论文。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W3170143789": {
+      "title": "Rapid and accurate alignment of nucleotide conversion sequencing reads with HISAT-3N",
+      "relevance": 0,
+      "rigor": 7,
+      "reason": "该文是生物信息学领域的核苷酸转换测序读段比对工具（HISAT-3N）研究，与具身导航、UAV目标搜索、空间智能、机器人自主等全部收录技术线均无任何关联，仅在“比对/索引”一词上与SLAM领域术语表面相近。",
+      "excluded_at": "2026-11-03"
+    },
+    "https://openalex.org/W4411095267": {
+      "title": "Vision-language foundation models for medical imaging: a review of current practices and innovations",
+      "relevance": 2,
+      "rigor": 4,
+      "reason": "医学影像垂直领域的VLM应用综述，与空间感知、导航、机器人及通用智能体核心能力进展无关，属于研究范围明确排除的「大模型套用到无关垂直领域」情形。",
+      "excluded_at": "2026-11-03"
     }
   },
   "last_citation_refresh": "2026-11-01T16:34:58.171234+00:00",
