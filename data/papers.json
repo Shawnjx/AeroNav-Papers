@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T12:28:00.709121+00:00",
+  "updated_at": "2026-11-03T01:25:56.001027+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -24388,53 +24388,6 @@
         "exploration"
       ],
       "added_at": "2026-09-03T19:39:47Z"
-    },
-    {
-      "id": "2608.04121",
-      "arxiv_id": "2608.04121",
-      "title": "Interpretable Fuzzy Inference for UAV Target Tracking Using Bounding-Box Geometry",
-      "authors": [
-        "Reza Ahmari",
-        "Ahmad Mohammadi",
-        "Vahid Hemmati",
-        "Nicholas Edmond",
-        "Hossein Z. Saghazadeh",
-        "Olusola Odeyomi",
-        "Parham Kebria",
-        "Abdollah Homaifar"
-      ],
-      "published": "2026-08-04",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.04121",
-      "pdf_url": "https://arxiv.org/pdf/2608.04121",
-      "code_url": "",
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "topics": [
-        "UAV 目标搜索"
-      ],
-      "relevance_score": 10,
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "提出可解释模糊推理框架，仅用YOLO检测框的质心、面积与长宽比等低维几何特征回归无人机跟踪地面目标的连续偏航指令，无需显式几何建模，在VICON动捕的6169个样本上MAE约0.14°。",
-      "change_zh": "常见路线是黑箱深度回归或需标定与外部定位的几何重建；本文改用由训练集分位数自动导出的紧凑27条Takagi-Sugeno模糊规则，仅凭检测框几何透明地输出偏航角，数据与算力需求极低，但仅做离线回归验证、未见实机飞行。",
-      "why_it_matters": "对无人机主动目标搜索的'发现后接近'环节有直接参考价值：轻量可解释的机载偏航估计可在算力受限平台实时闭合视觉伺服回路，降低Sim2Real部署门槛；但仅覆盖偏航单自由度，不涉及搜索决策与ObjectNav级导航。",
-      "relevance_rating": 6,
-      "rigor_rating": 6,
-      "venue_verified": false,
-      "score": 18,
-      "keywords": [
-        "aerial",
-        "deployment",
-        "evaluation",
-        "geometry",
-        "uav"
-      ],
-      "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
       "id": "2610.27045",
