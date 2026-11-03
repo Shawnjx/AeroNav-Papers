@@ -1,100 +1,4 @@
 {
-  "2609.08686": {
-    "title": "CausalChapter: Improving Long-Video Chaptering with Interventional Dependency Modeling",
-    "relevance": 2,
-    "rigor": 6,
-    "reason": "该工作是将长上下文语言模型套用于长视频章节切分这一垂直视频理解应用，与空间智能、具身导航、机器人自主均无关（摘要中navigation仅指视频浏览），属范围外应用类拒绝。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.08686"
-  },
-  "2609.08155": {
-    "title": "SciFigure2Code: An AI-Reconstructed Benchmark for Scientific Figure-to-Code",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "科学图表转代码属图表理解与代码生成的垂直图文应用基准，与空间、导航、机器人及具身智能技术线均无关。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.08155"
-  },
-  "2609.08796": {
-    "title": "Hi-FLoop: Hierarchical State-Feedback Loops for Multi-Timescale World Modeling",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "面向Waymo式多智能体交通仿真任务的世界模型，属自动驾驶场景生成方向，不含导航决策或具身机器人成分，与UAV搜索/ObjectNav/VLN等核心线仅在世界模型方法论上间接相关。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.08796"
-  },
-  "2609.07002": {
-    "title": "WM-Craftnet: World Synesthesia Model for Generalizable and Robust Dexterous In-Hand Manipulation",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "核心任务为灵巧手内操作，属明确排除的机械臂操作范畴且不含任何导航决策成分，世界模型与sim2real仅为术语层面的擦边关联。",
-    "rejected_at": "2026-09-09",
-    "url": "https://arxiv.org/abs/2609.07002"
-  },
-  "2609.09885": {
-    "title": "Decision Transformer for UAV-Mounted RIS-Assisted Dynamic D2D Communications",
-    "relevance": 2,
-    "rigor": 6,
-    "reason": "核心是无人机载RIS辅助D2D通信的和速率优化，属纯通信与信号处理范畴；无人机仅作为通信平台的轨迹与姿态控制，不涉及目标搜索、导航决策或机器人自主能力，属范围外。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.09885"
-  },
-  "2609.09418": {
-    "title": "Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration",
-    "relevance": 5,
-    "rigor": 5,
-    "reason": "应用定位为游戏地图内容生成，虽借用动作条件世界模型与SLAM重建，但不涉及真实具身导航决策或机器人任务，仅与收录范围的技术方法边缘相关。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.09418"
-  },
-  "2609.10243": {
-    "title": "FolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects",
-    "relevance": 3,
-    "rigor": 7,
-    "reason": "属机械臂可变形物体操作（衣物折叠）的真机评测基准，不含导航决策成分，落入范围中明确排除的机械臂操作与VLA控制类别。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.10243"
-  },
-  "2609.10498": {
-    "title": "Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "该工作属于体育广播视频的3D人体姿态估计与运动分析，不涉及具身导航、机器人自主或收录范围内的任何技术线，仅因涉及几何世界坐标定位而术语擦边。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.10498"
-  },
-  "2609.10366": {
-    "title": "AVSRBench: A Multi-Condition AVSR Benchmark",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "属视听语音识别（AVSR）领域的评测基准，与空间智能、导航、机器人自主及通用智能体能力均无关联，仅为多模态/LLM术语擦边，判定范围外。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.10366"
-  },
-  "2609.10333": {
-    "title": "Learning to Adapt and Calibrate: Score Distribution Alignment for Few-Shot Uncertainty Prediction in Medical VLMs",
-    "relevance": 2,
-    "rigor": 4,
-    "reason": "属于医学VLM不确定性校准的垂直应用，与空间、导航、机器人无关（研究范围明确排除医疗类应用），且摘要未提及任何实验与结果。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.10333"
-  },
-  "2609.10283": {
-    "title": "SwingBot: Learning Whole-Body Brachiation for Humanoid Robots",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "人形机器人摆荡属专项全身运动控制演示，不含导航决策、目标搜索或空间推理成分，也非社区公认高影响力的状态估计与控制系统工作，仅边缘相关。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.10283"
-  },
-  "2609.10539": {
-    "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
-    "relevance": 3,
-    "rigor": 8,
-    "reason": "该文是面向研究想法规范可编码性的LLM评测基准，属AI科研自动化与可复现性范畴，与具身导航、空间智能、UAV目标搜索等收录技术线无实质关联，仅'基准/评测'术语擦边。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.10539"
-  },
   "2609.09503": {
     "title": "Agentic AI-enabled Semantic Commissioning of a Cognitive Digital Twin for Reconfigurable Manufacturing",
     "relevance": 3,
@@ -2398,5 +2302,101 @@
     "reason": "本文是多智能体未知空间通信网络覆盖（POCGAGP动态扩展）的组合优化算法研究，非LLM/foundation model规划智能体，也不涉及目标搜索、具身导航或主动感知建图，落在收录技术线之外。",
     "rejected_at": "2026-11-02",
     "url": "https://arxiv.org/abs/2610.41936"
+  },
+  "2611.03106": {
+    "title": "A Tightly Coupled Magnetic-Inertial SLAM System for Field Robots",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "虽属状态估计线，但磁-惯性SLAM为小众增量路线，仅三组室内手持小数据集以闭环误差验证，无真实野外/机载部署与消融信息，且垂直漂移未解决，按落地影响力标准不足以收录。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03106"
+  },
+  "2611.02537": {
+    "title": "Interactive 3D Cutaway Visualization for Subsurface Target Localization in Robot-Assisted Surgery",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "属于手术机器人遥操作与医疗AR可视化人因研究，聚焦da Vinci器械定位精度而非自主导航决策，与空域/地面具身导航及各基础能力技术线均不相关，仅与'目标定位'术语擦边。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.02537"
+  },
+  "2611.03601": {
+    "title": "DiabAgent: Toward Agentic Physiological Control",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "属于LLM智能体在医疗生理控制（糖尿病胰岛素给药）垂直领域的应用，与空间、导航、机器人自主均无关，按收录范围排除。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03601"
+  },
+  "2611.03534": {
+    "title": "An Agentic Framework for Automated Power System Studies and Grid Connection Assessment",
+    "relevance": 2,
+    "rigor": 7,
+    "reason": "该工作是将智能体与RAG技术套用于电力系统并网评估的垂直领域应用，与空间、导航、机器人自主等全部收录技术线无关。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03534"
+  },
+  "2611.03339": {
+    "title": "ArabGeoText: Tool-Augmented Vision-Language Models for Arabic Geospatial Text Spotting",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "地理文本spotting本质是栅格地图与遥感影像上的OCR式检测识别，仅将现成YOLO与VLM（LoRA微调）组合套用于垂直任务，不涉及导航决策、空间推理或机器人自主，属范围外应用与近乎纯检测识别数据集。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03339"
+  },
+  "2611.01600": {
+    "title": "SCOUT: Planning under Occlusion via Object-Centric World Model Rollouts",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "研究对象为杂乱环境中的机械臂操作规划（Reveal/Placement任务与真机货架实验），不含导航决策成分，属于范围中明确排除的机械臂操作与VLA控制类工作。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.01600"
+  },
+  "2611.02871": {
+    "title": "ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "该工作为人形全身操作控制，核心是物体抓取-搬运-释放的接触与全身运动控制，不含目标搜索或导航决策成分，落入机械臂操作/操作控制的排除范围。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.02871"
+  },
+  "2611.03646": {
+    "title": "EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "任务为第一人称视频密集动作字幕生成与评测，属视频语言理解范畴，不涉及导航、空间推理或机器人自主决策，与收录范围核心问题仅边缘相关。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03646"
+  },
+  "2611.03494": {
+    "title": "Harder Than the Task: From Technical to Organizational Difficulty in AI Benchmarking",
+    "relevance": 5,
+    "rigor": 5,
+    "reason": "聚焦组织理论视角的通用智能体基准立场性讨论，与具身导航、空间智能、UAV目标搜索等收录技术线仅概念擦边，且未提出新基准或可复现实验。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03494"
+  },
+  "2611.02807": {
+    "title": "Creating Hybrid Interactive Narrative Systems with LLM: From Formal Description to Evaluation",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "本文将LLM应用于交互叙事/故事体验管理这一垂直领域，虽借用'世界模型''计划'等术语，但面向的是剧情连贯性与玩家体验，与空间、导航、目标搜索或具身智能体无实质关联，属于范围外的垂直应用。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.02807"
+  },
+  "2611.03428": {
+    "title": "Toward Uncertainty-Aware, Physics-Grounded Human World Models",
+    "relevance": 5,
+    "rigor": 2,
+    "reason": "仅为耦合两项已发表工作的立场性提案，明确声明无新实验结果；内容聚焦人体姿态估计与人体运动预测，与导航/规划用世界模型仅边缘相关。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03428"
+  },
+  "2611.03576": {
+    "title": "NitiBench+: A Temporal Thai Legal Question Answering Benchmark Across 17 Domains",
+    "relevance": 2,
+    "rigor": 8,
+    "reason": "泰语法律垂直问答基准，属于范围中明确排除的大模型套用于法律领域类别，与空间智能、导航、机器人自主均无关联。",
+    "rejected_at": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.03576"
   }
 }
