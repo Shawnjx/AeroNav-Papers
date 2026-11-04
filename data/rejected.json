@@ -1,12 +1,4 @@
 {
-  "2609.09503": {
-    "title": "Agentic AI-enabled Semantic Commissioning of a Cognitive Digital Twin for Reconfigurable Manufacturing",
-    "relevance": 3,
-    "rigor": 5,
-    "reason": "该工作将LangGraph/RAG/MCP等现成智能体工具套用于可重构制造的数字孪生调试这一垂直应用，与空间智能、导航或机器人自主决策无关，且机器人加工单元属操作类场景、无导航决策成分，按范围规则应拒绝。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.09503"
-  },
   "2609.05818": {
     "title": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools",
     "relevance": 2,
@@ -2398,5 +2390,13 @@
     "reason": "泰语法律垂直问答基准，属于范围中明确排除的大模型套用于法律领域类别，与空间智能、导航、机器人自主均无关联。",
     "rejected_at": "2026-11-03",
     "url": "https://arxiv.org/abs/2611.03576"
+  },
+  "2611.04470": {
+    "title": "Using GeoAI and machine learning tools for consistent high-resolution land cover mapping based on time-series NAIP imagery",
+    "relevance": 2,
+    "rigor": 5,
+    "reason": "属遥感土地覆盖制图类地理空间应用，航空影像仅作数据源，不含导航、机器人或具身智能成分，超出收录范围。",
+    "rejected_at": "2026-11-04",
+    "url": "https://arxiv.org/abs/2611.04470"
   }
 }
