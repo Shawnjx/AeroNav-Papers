@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T11:58:44.696776+00:00",
+  "updated_at": "2026-11-04T17:49:14.035342+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2539,6 +2539,58 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2611.02026",
+      "arxiv_id": "2611.02026",
+      "title": "Reconstruction as Spatial Evaluation: Diagnosing Cross-View Spatial Intelligence in Large Vision-Language Models",
+      "authors": [
+        "Junfei Wu",
+        "Qiuyue Wang",
+        "Xuhong Huang",
+        "Qihang Peng",
+        "Mingsheng Li",
+        "Jian Guan",
+        "Qiang Liu",
+        "Shu Wu",
+        "Liang Wang",
+        "Shuai Bai",
+        "Tieniu Tan"
+      ],
+      "published": "2026-11-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.02026",
+      "pdf_url": "https://arxiv.org/pdf/2611.02026",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "RECONSPATIAL基准以多视角3D重建为评测形式，要求LVLM在相机锚定度量坐标系联合预测定向3D框，从结构与度量两轴诊断18个前沿模型的跨视角空间智能，并延伸至离线导航。",
+      "change_zh": "不同于静态单题空间问答或混杂探索与控制的具身评测，该工作以多视角重建为载体，把空间能力拆解为结构与度量两轴及九项原子任务，并用3D地图注入实验把场景构建与路径规划解耦，从而定位度量误差如何限制导航。",
+      "why_it_matters": "对UAV/ObjectNav目标搜索直接相关：智能体需从多视角感知构建度量一致场景表示以定位目标，本文揭示LVLM相对结构远优于度量精度，且该误差拖累路径规划，为VLM导航建图与评测提供诊断依据。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "空间智能,大型视觉语言模型,多视图3D场景重建,基准测试,空间评估,路径规划",
+      "question_zh": "大型视觉语言模型能否将多视图局部观测整合为几何一致的度量级3D场景表示，其相对结构与度量重建能力的差距源自何处？",
+      "innovation_zh": "提出RECONSPATIAL基准，以多视图3D场景重建本身作为评估任务，让LVLM在共享相机锚定度量坐标系中联合预测物体定向3D框，并从结构/度量双轴、九项原子空间QA与离线导航诊断空间智能，弥合静态单项判断与具身交互评估之间的空白。",
+      "dataset_zh": "RECONSPATIAL基准：覆盖室内、桌面与户外环境的真实多视图图像；另含离线导航评估（具体数据来源、仿真环境或真机平台未提及）",
+      "results_zh": "评估18个前沿LVLM发现相对结构与度量重建存在一致差距，GPT-6-Astra在Structure上得81.4%而Metric仅58.7%；诊断表明关系一致性并不保证度量精度，几何误差会限制导航成功率；空间微调可广泛迁移至空间及通用视觉语言基准。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "3d scene",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "spatial intelligence",
+        "vlm"
+      ],
+      "added_at": "2026-11-04T17:45:02.489461+00:00"
     },
     {
       "id": "2610.41330",
@@ -9544,6 +9596,49 @@
         "waypoint"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2611.01958",
+      "arxiv_id": "2611.01958",
+      "title": "Answering Without Arriving: An Evidence Audit for Embodied Question Answering",
+      "authors": [
+        "Shubh Garg",
+        "Divyansh Pandey",
+        "Niyati Rawal",
+        "Vedant Khandelwal",
+        "Amit Sheth"
+      ],
+      "published": "2026-11-01",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.01958",
+      "pdf_url": "https://arxiv.org/pdf/2611.01958",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "构建多房间具身问答证据审计基准：固定问题、仅改变证据供给的评估阶梯，发现闭环智能体200集零到达仍答对45.5%，与无图像几乎持平，揭示答案可绕过真实观察。",
+      "change_zh": "常见EQA评测只看答案准确率，该工作改为证据可溯源审计：问题由符号记录生成、答案可追溯至支撑观察，并以固定问题、仅变证据供给的阶梯设计，把取得证据与使用证据分离量化。",
+      "why_it_matters": "对ObjectNav与UAV目标搜索同样重要：这类任务的得分也可能源于捷径而非真实观察，其固定问题、仅变证据供给的阶梯式审计可迁移为检验目标发现是否依赖实际感知的评测协议，提升具身评测可信度。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "具身问答, 证据审计, 多房间基准, 评价阶梯, 视觉语言智能体, 捷径敏感性",
+      "question_zh": "具身问答智能体给出的答案是否真正来自导航与观察？如何审计其证据获取与使用情况？",
+      "innovation_zh": "提出多房间证据审计基准，固定问题仅改变所供证据，构建从纯文本探针、闭环智能体到参考轨迹回放的评价阶梯；问题由房间、可见物体与帧的符号记录生成，使每个答案可追溯至支持性观察。",
+      "dataset_zh": "自建多房间基准（200个测试episode、800个问题，按路线范围分层，问题由房间、可见物体与帧的符号记录生成）；具体仿真环境或真机平台未提及",
+      "results_zh": "闭环视觉语言智能体在200个episode中未到达任何目标却答对45.5%的问题，与无图像版仅差0.1分；回放参考轨迹使同一模型升至57.4%；八类问题中四类主要可由文本答出；Oracle条件在Rooms-visited上达59.5%。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "language agent"
+      ],
+      "added_at": "2026-11-04T17:49:11.034692+00:00"
     },
     {
       "id": "2610.40495",
@@ -20447,6 +20542,45 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2611.03424",
+      "arxiv_id": "2611.03424",
+      "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+      "authors": [
+        "Shanshan Zhong",
+        "Chen Xu",
+        "Jingjie Ning",
+        "Zhengzhong Liu",
+        "Aviral Kumar",
+        "Chenyan Xiong"
+      ],
+      "published": "2026-11-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.03424",
+      "pdf_url": "https://arxiv.org/pdf/2611.03424",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出IdeaTaste基准：让LLM基于2025年冻结文献快照撰写研究提案，与同社区2026年真实发表论文比对引用与想法匹配度，共9万余提案、6个模型；AI仅达人类引用匹配26%、想法匹配18%，瓶颈在形成具体方法与研究计划。",
+      "change_zh": "相比依赖专家或LLM主观打分评价AI生成研究的常见做法，该工作改用『未来真实发表』作为客观参照：以2026年实际论文为答案衡量基于2025快照的提案，规避主观评审与事后数据污染，并做成可持续更新、对照未来发表周期的开放榜单。",
+      "why_it_matters": "对多模态大模型与智能体线价值直接：客观量化LLM智能体科研构思的真实水平与瓶颈——能识别社区方向却难以转化为具体方案，为AI科学家与智能体自主规划的评测提供新范式；对UAV目标搜索与ObjectNav等具身导航技术线无直接价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "benchmark",
+        "leaderboard",
+        "llm agent"
+      ],
+      "added_at": "2026-11-04T17:47:50.715759+00:00"
+    },
+    {
       "id": "2610.41676",
       "arxiv_id": "2610.41676",
       "title": "Interaction-Aware Sampling-Based Motion Planning for Autonomous Surface Vessels in Urban Waterways",
@@ -22002,6 +22136,43 @@
         "llm agent"
       ],
       "added_at": "2026-11-03T12:04:55.984934+00:00"
+    },
+    {
+      "id": "2611.02988",
+      "arxiv_id": "2611.02988",
+      "title": "Can You Predict the Next Mind? Toward Multi-Turn Multi-Party Mental World Modeling",
+      "authors": [
+        "Jiahao Huang",
+        "Zheng Lian"
+      ],
+      "published": "2026-11-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.02988",
+      "pdf_url": "https://arxiv.org/pdf/2611.02988",
+      "code_url": "",
+      "categories": [],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该论文提出M3WME-Bench基准，评估多轮多方交互中的动态心理世界建模，要求模型前瞻预测目标对象未来的心理状态与行为；配套构建M3WME-23K训练集与MindNext-7B基线，跨四类范式评测发现现有模型普遍难以预测前瞻心理状态。",
+      "change_zh": "常见心理状态研究多为静态识别或单轮短程判断；该工作将任务重构为多方多轮交互中随行动演化的前瞻预测（未来心理轨迹与行为），并提供专用训练集、7B基线与机理分析，指出现有架构缺乏前向心理状态转移机制；但数据来源与任务定义细节摘要未述。",
+      "why_it_matters": "对UAV主动目标搜索与ObjectNav等空间导航任务无直接价值；其价值落在多模态大模型与世界模型两条线：系统诊断了基础模型从物理世界建模迈向心理世界建模的能力缺口，对需推断他人意图与行为的人机交互、多智能体协同型具身智能体有参考意义。",
+      "relevance_rating": 6,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "mllm",
+        "world model"
+      ],
+      "added_at": "2026-11-04T17:46:14.729123+00:00"
     },
     {
       "id": "2610.41172",
@@ -28555,112 +28726,40 @@
     }
   ],
   "briefing": {
-    "text": "今日入库的主线是具身评测基础设施与世界模型的持续化，兼有UAV感知与多模态智能体若干工作。最值得读的三篇：Physical Experience Builds Continual Spatial World Models 以跨回合空间记忆让预测与行为在物理动态迷宫中随经验改进、可迁移至未见空间转变，直指导航智能体难以积累经验的痛点；RoboScope Kit 用统一接口封装policy与各基准官方评测器，在LIBERO/RoboTwin上把评测提速4.45–25倍且成功率不变，是规模化评测的实用底座；CRONOS 把机器人操作强化学习基准推向非回合制设定，质疑回合重置的默认假设。趋势观察：基准设计正从任务多样性转向运行真实性，持续学习与非回合评测或成标配考察维度。",
-    "added": 13,
-    "at": "2026-11-04T11:59:39.568639+00:00",
+    "text": "本批四篇均为基准类工作，主线是审计式评测：不只看任务能否做对，更追问做对是否依赖真实能力。首推Reconstruction as Spatial Evaluation：以多视角3D重建要求LVLM在相机锚定度量系联合预测定向3D框，从结构与度量两轴量化诊断跨视角空间智能，并延伸至离线导航，直击导航的核心前提；Answering Without Arriving同样必读：固定问题、只变证据供给的阶梯审计显示，闭环EQA智能体零到达仍答对45.5%、与无图像几乎持平，说明答案可绕过真实观察，对评测设计与智能体训练都是警讯。趋势观察：具身评测正从刷分转向证据归因，追问每个答案背后的观察链路从何而来。",
+    "added": 4,
+    "at": "2026-11-04T17:50:29.167667+00:00",
     "new": [
       {
-        "t": "Robust Reconstruction of Power Lines from Incomplete Mobile and Aerial LiDAR Data",
-        "u": "https://arxiv.org/abs/2611.05197",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：Robust Reconstruction of Power Lines from Incomplete Mobile and Aerial LiDAR Data。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/varen-project"
-      },
-      {
-        "t": "ProAlign: Progressive Positional and Prototype-Guided Alignment for Aerial-Ground Person Re-Identification",
-        "u": "https://arxiv.org/abs/2611.04980",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦UAV 目标搜索、空域 VLN，主要研究问题可概括为：ProAlign: Progressive Positional and Prototype-Guided Alignment for Aerial-Ground Person Re-Identification。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Aero-VPA: Few-Step Flow-Matching Control over Non-Reconstructive JEPA Latents for Agile Flight on Edge Hardware",
-        "u": "https://arxiv.org/abs/2611.04392",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、UAV 目标搜索，主要研究问题可概括为：Aero-VPA: Few-Step Flow-Matching Control over Non-Reconstructive JEPA Latents for Agile Flight on Edge Hardware。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "https://github.com/ylee-sling/Aero-VPA"
-      },
-      {
-        "t": "Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments",
-        "u": "https://arxiv.org/abs/2611.05361",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、空间智能，主要研究问题可概括为：Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "LLMs as MDP Designers: A Dependency-Aware Agentic Framework for Automated Robot Policy Generation",
-        "u": "https://arxiv.org/abs/2611.04974",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：LLMs as MDP Designers: A Dependency-Aware Agentic Framework for Automated Robot Policy Generation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "Trajectory Evaluation via Rollout-Free World Model for End-to-end Autonomous Driving",
-        "u": "https://arxiv.org/abs/2611.05072",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦世界模型、具身基准与评测，主要研究问题可概括为：Trajectory Evaluation via Rollout-Free World Model for End-to-end Autonomous Driving。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "CRONOS: Benchmarking Non-Episodic Reinforcement Learning for Robotic Manipulation",
-        "u": "https://arxiv.org/abs/2611.05080",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身基准与评测、真机与 Sim2Real，主要研究问题可概括为：CRONOS: Benchmarking Non-Episodic Reinforcement Learning for Robotic Manipulation。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "ActOR: Ambient AI-Based Agentic Orchestration for Humanoid Autonomy in Operating Rooms",
-        "u": "https://arxiv.org/abs/2611.04255",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、主动感知与重建，主要研究问题可概括为：ActOR: Ambient AI-Based Agentic Orchestration for Humanoid Autonomy in Operating Rooms。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "What Does the Model See? Representation Validity in Multimodal LLM-Based Video Analysis",
-        "u": "https://arxiv.org/abs/2611.05181",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：What Does the Model See? Representation Validity in Multimodal LLM-Based Video Analysis。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "PadLoc: Training-Free Floor-Plan Localization by Sparse Geometric Matching",
-        "u": "https://arxiv.org/abs/2611.05172",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦状态估计与控制，主要研究问题可概括为：PadLoc: Training-Free Floor-Plan Localization by Sparse Geometric Matching。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "An Agentic Framework for Quality-Aware and Scenario-Adaptive Image Compression",
-        "u": "https://arxiv.org/abs/2611.04960",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦多模态大模型与智能体、具身基准与评测，主要研究问题可概括为：An Agentic Framework for Quality-Aware and Scenario-Adaptive Image Compression。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": ""
-      },
-      {
-        "t": "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
-        "u": "https://arxiv.org/abs/2611.03850",
-        "r": 7,
-        "g": 7,
-        "s": "该工作以Policy类统一封装模型、以适配器包裹各基准官方评测器，配合双资源池调度、确定性分片与按需渲染，在LIBERO/RoboTwin上提速评测4.45–25倍且成功率不变。",
-        "c": ""
-      },
-      {
-        "t": "Physical Experience Builds Continual Spatial World Models",
-        "u": "https://arxiv.org/abs/2611.04016",
+        "t": "Reconstruction as Spatial Evaluation: Diagnosing Cross-View Spatial Intelligence in Large Vision-Language Models",
+        "u": "https://arxiv.org/abs/2611.02026",
         "r": 9,
+        "g": 8,
+        "s": "RECONSPATIAL基准以多视角3D重建为评测形式，要求LVLM在相机锚定度量坐标系联合预测定向3D框，从结构与度量两轴诊断18个前沿模型的跨视角空间智能，并延伸至离线导航。",
+        "c": ""
+      },
+      {
+        "t": "Can You Predict the Next Mind? Toward Multi-Turn Multi-Party Mental World Modeling",
+        "u": "https://arxiv.org/abs/2611.02988",
+        "r": 6,
         "g": 7,
-        "s": "研究持续运行的空间世界模型：用跨回合空间变化记忆与状态-动作-结果经验，在物理动态迷宫中使预测与行为随经验改进，可迁移到未见空间转变，且旧预期能被物理证据修正。",
+        "s": "该论文提出M3WME-Bench基准，评估多轮多方交互中的动态心理世界建模，要求模型前瞻预测目标对象未来的心理状态与行为；配套构建M3WME-23K训练集与MindNext-7B基线，跨四类范式评测发现现有模型普遍难以预测前瞻心理状态。",
+        "c": ""
+      },
+      {
+        "t": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+        "u": "https://arxiv.org/abs/2611.03424",
+        "r": 6,
+        "g": 8,
+        "s": "提出IdeaTaste基准：让LLM基于2025年冻结文献快照撰写研究提案，与同社区2026年真实发表论文比对引用与想法匹配度，共9万余提案、6个模型；AI仅达人类引用匹配26%、想法匹配18%，瓶颈在形成具体方法与研究计划。",
+        "c": ""
+      },
+      {
+        "t": "Answering Without Arriving: An Evidence Audit for Embodied Question Answering",
+        "u": "https://arxiv.org/abs/2611.01958",
+        "r": 8,
+        "g": 7,
+        "s": "构建多房间具身问答证据审计基准：固定问题、仅改变证据供给的评估阶梯，发现闭环智能体200集零到达仍答对45.5%，与无图像几乎持平，揭示答案可绕过真实观察。",
         "c": ""
       }
     ]

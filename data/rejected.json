@@ -1,12 +1,4 @@
 {
-  "2609.05818": {
-    "title": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "LLM智能体工具使用评测垂直套用于蛋白质设计领域，与空间、导航、机器人无关，属于研究范围中明确拒绝的大模型垂直应用类工作。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.05818"
-  },
   "2609.07398": {
     "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
     "relevance": 5,
@@ -2398,5 +2390,13 @@
     "reason": "属遥感土地覆盖制图类地理空间应用，航空影像仅作数据源，不含导航、机器人或具身智能成分，超出收录范围。",
     "rejected_at": "2026-11-04",
     "url": "https://arxiv.org/abs/2611.04470"
+  },
+  "2611.00288": {
+    "title": "Seeing Less in a Sparse World: Cross-View Geolocalization from Limited Field-of-View Observations",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属纯跨视角图像检索式地理定位研究，虽以GNSS拒止环境定位为动机且基准设定更贴近真实相机，但不含导航决策、机器人或真机成分，也非定位与建图线上公认高影响力系统工作，仅边缘相关。",
+    "rejected_at": "2026-11-04",
+    "url": "https://arxiv.org/abs/2611.00288"
   }
 }
