@@ -1,76 +1,4 @@
 {
-  "2609.07398": {
-    "title": "OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining",
-    "relevance": 5,
-    "rigor": 8,
-    "reason": "评测本体全部为机械臂/双手/灵巧手操作控制，属范围明确排除的机械臂操作与VLA控制；世界模型线限定'用于导航与规划'，本文不含任何导航决策成分。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.07398"
-  },
-  "2609.06229": {
-    "title": "SWE-Test: Benchmarking LLM Vulnerability Discovery via Input Prediction",
-    "relevance": 2,
-    "rigor": 7,
-    "reason": "属于LLM智能体在软件漏洞发现这一垂直领域的基准评测，与空间、导航、机器人均无关，超出收录范围。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.06229"
-  },
-  "2609.05783": {
-    "title": "Closed-Loop Evaluation of Bird's-Eye-View Maps from Cross-View Transformers as Inputs to Behavior-Cloning Policies",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "属于自动驾驶BEV感知与行为克隆策略的闭环评测研究，不在空域/地面具身导航及各基础能力技术线收录范围内，仅评测理念有间接参考价值。",
-    "rejected_at": "2026-09-10",
-    "url": "https://arxiv.org/abs/2609.05783"
-  },
-  "2609.11766": {
-    "title": "Visual-SLAM for the detection of hidden tomatoes in greenhouses by Hierarchical Localization and GLOMAPfor robotized harvesting",
-    "relevance": 5,
-    "rigor": 5,
-    "reason": "将GLOMAP与HLoc等现成开源工具组合应用于温室番茄建图的垂直农业场景，无导航或自主决策成分，实验仅单株果串且离线处理，属应用集成而非SLAM与建图技术本身的显著进展。",
-    "rejected_at": "2026-09-11",
-    "url": "https://arxiv.org/abs/2609.11766"
-  },
-  "2609.11548": {
-    "title": "World in World: Explore the World with World Models",
-    "relevance": 5,
-    "rigor": 6,
-    "reason": "属于自回归视频世界模型的免训练视角控制与重渲染研究，评测仅限视频感知质量、时序一致性与相机跟随精度，未涉及导航、规划或任何具身任务，接近文生视频/视频编辑方向，与'用于导航与规划的世界模型'技术线仅术语擦边。",
-    "rejected_at": "2026-09-11",
-    "url": "https://arxiv.org/abs/2609.11548"
-  },
-  "2609.11886": {
-    "title": "Guided Super-Resolution of Digital Elevation Models with Diffusion-Based Image Generators",
-    "relevance": 4,
-    "rigor": 6,
-    "reason": "属于遥感影像引导的DSM超分与图像生成应用，仅与3D表面数据在术语上相近，与具身导航、UAV目标搜索及智能体基础能力均无实质关联。",
-    "rejected_at": "2026-09-11",
-    "url": "https://arxiv.org/abs/2609.11886"
-  },
-  "2609.11786": {
-    "title": "Beyond Word Error Rate: A Switch Aware Evaluation of ASR and Audio Language Models on English Yoruba Code-Switched Speech",
-    "relevance": 2,
-    "rigor": 8,
-    "reason": "该论文是对英语-约鲁巴语码切换语音的ASR与音频大模型评测，属于语音处理垂直领域基准，与具身导航、空间智能、智能体能力本身均无实质关联，按范围规则应拒绝。",
-    "rejected_at": "2026-09-11",
-    "url": "https://arxiv.org/abs/2609.11786"
-  },
-  "2609.11838": {
-    "title": "Target leakage, not model class, explains reported accuracy in survey-based cardiovascular screening: a leakage-tiered audit of glass-box and tabular foundation models",
-    "relevance": 1,
-    "rigor": 8,
-    "reason": "纯医疗健康垂直应用（心血管筛查）的表格模型泄漏审计，不涉及空间、导航、机器人或具身智能，属收录范围明确排除项。",
-    "rejected_at": "2026-09-11",
-    "url": "https://arxiv.org/abs/2609.11838"
-  },
-  "2609.10855": {
-    "title": "Evaluation of Vision-Language Models Across Diverse Coastal Environments",
-    "relevance": 4,
-    "rigor": 7,
-    "reason": "本质是海岸环境的纯图像分割/VLM对齐评测数据集与基准，无导航决策、空间推理或具身交互成分，属范围外明确排除的纯分割检测类工作。",
-    "rejected_at": "2026-09-11",
-    "url": "https://arxiv.org/abs/2609.10855"
-  },
   "2609.13013": {
     "title": "TileNet: Tile-Based CNN-SVM Architecture for Autonomous Unmanned Aerial Systems Inspection of Flat Roofs",
     "relevance": 4,
@@ -2398,5 +2326,77 @@
     "reason": "属纯跨视角图像检索式地理定位研究，虽以GNSS拒止环境定位为动机且基准设定更贴近真实相机，但不含导航决策、机器人或真机成分，也非定位与建图线上公认高影响力系统工作，仅边缘相关。",
     "rejected_at": "2026-11-04",
     "url": "https://arxiv.org/abs/2611.00288"
+  },
+  "2611.06770": {
+    "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
+    "relevance": 4,
+    "rigor": 6,
+    "reason": "属城市管理遥感的垂直图文问答评测基准，UAV仅作为图像来源，不含导航决策、主动感知或具身智能体成分，按范围外拒绝。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06770"
+  },
+  "2611.06635": {
+    "title": "Uncertainty-Driven Efficient Communication for UAV-Based Collaborative Perception",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "属于多智能体协同感知的通信效率研究，评测任务为3D检测与轨迹预测，不含搜索策略、导航决策或主动视角控制成分，仅与空域目标发现外围相关。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06635"
+  },
+  "2611.05801": {
+    "title": "WayPOP: A Panoramic Open-Set Panoptic Tracking Benchmark",
+    "relevance": 4,
+    "rigor": 7,
+    "reason": "本质是面向自动驾驶多相机的开放集全景分割/跟踪数据集与评测，属范围明确排除的纯分割/检测类基准，与导航决策、空间记忆、主动感知或智能体能力无直接关联。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.05801"
+  },
+  "2611.06911": {
+    "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+    "relevance": 5,
+    "rigor": 7,
+    "reason": "场景为垂直的自驾化学实验室，任务以实验操作理解、器材与安全识别为主，评测方式为离线单轮问答，不含导航决策成分，与本收录范围核心的导航、空间智能与无人机技术线仅边缘相关。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06911"
+  },
+  "2611.06653": {
+    "title": "Detecting Silent Action-Interface Mismatch with Calibrated Relational World Models",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "研究对象为机械臂操作（LIBERO/xArm）的动作接口失配离线诊断，'关系世界模型'仅用于故障检测而非导航或规划，无导航决策成分，属范围明确排除的机械臂方向，仅术语擦边。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06653"
+  },
+  "2611.06687": {
+    "title": "LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks",
+    "relevance": 5,
+    "rigor": 6,
+    "reason": "评测对象为理财、求职、找托育等消费级生活事务的数字助理能力，属与空间、导航、机器人无关的垂直应用评测，并非模型或智能体能力本身的通用性进展。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06687"
+  },
+  "2611.06674": {
+    "title": "AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents",
+    "relevance": 3,
+    "rigor": 5,
+    "reason": "该文是面向企业Java流水线的LLM智能体行为CI测试框架，与空间智能、导航、机器人自主均无实质关联，仅'agent/trajectory'术语与具身领域擦边。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06674"
+  },
+  "2611.06913": {
+    "title": "cuRoboV2-Fast: Fast Torque-Limited Collision-Free Motion Planning",
+    "relevance": 4,
+    "rigor": 8,
+    "reason": "该工作属机械臂操作运动规划：面向抓放任务的力矩受限碰撞-free轨迹优化，不含任何导航决策成分，按范围规则拒收（工作本身严谨、开源且影响力高，但技术线不匹配）。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.06913"
+  },
+  "2611.05741": {
+    "title": "OUCH: Objective, Uniform, Controlled Haptic Stimulation for Automated Neurological Assessment",
+    "relevance": 1,
+    "rigor": 6,
+    "reason": "该工作为面向临床神经评估的腕戴式触觉/伤害性刺激执行器硬件，与导航、空间智能、具身智能体、状态估计与控制等全部收录技术线无关。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.05741"
   }
 }

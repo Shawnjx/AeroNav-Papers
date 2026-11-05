@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T17:49:14.035342+00:00",
+  "updated_at": "2026-11-05T12:16:53.280564+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2539,6 +2539,50 @@
         "waypoint"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2611.06453",
+      "arxiv_id": "2611.06453",
+      "title": "Beyond Infraction Scores: Failure-Boundary Profiles for Closed-Loop Evaluation of Driving and Robot Navigation Agents",
+      "authors": [
+        "Milan Bulat",
+        "Gino Ardelean",
+        "Ellington Kirby"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06453",
+      "pdf_url": "https://arxiv.org/pdf/2611.06453",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.SE"
+      ],
+      "topics": [
+        "具身基准与评测"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对CARLA驾驶分混淆保守停车与强行通过的问题，提出失败边界画像：沿单一因子构造场景变体并认证应行/应停，估计承诺与胜任曲线及决策准确率，评测七个驾驶智能体并迁移到仓储机器人。",
+      "change_zh": "传统闭环评测以路线完成度乘违规惩罚的单一分数排名，混淆保守与冒进失败。本文改为沿单一因子扫描场景、用测量认证每个变体应行/应停，估计承诺与胜任曲线及决策准确率并量化仿真随机性，把排名变为失败边界画像。",
+      "why_it_matters": "属具身评测线的直接贡献：承诺-胜任曲线与应行/应停认证可迁移到UAV目标搜索的穿越/接近决策和ObjectNav的接近-放弃权衡，补足仅看成功率的不足；微调后能过却不再停的现象对安全评测与sim2real亦有警示。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "闭环评估, 失效边界剖面, 决策准确率, 自动驾驶智能体, CARLA, 机器人导航",
+      "question_zh": "如何设计超越违规分数的闭环评估方法，以区分驾驶与导航智能体在应通过与应停止场景中的不同失效方式？",
+      "innovation_zh": "提出失效边界剖面评估：每个场景族沿单一实测因子（如通道宽度、对向车流时距）生成变体，并经测量认证其应通过或应停止；据此估计承诺与能力两条曲线及过半交叉点（含仿真随机性区间），并定义决策准确率汇总指标，弥补传统驾驶分数无法区分停车等待与强行通过的缺陷。",
+      "dataset_zh": "CARLA仿真器的七个驾驶场景族（每族沿单一实测因子变化，如封堵通道宽度、对向来车时距），评估七个驾驶智能体；另将方法原样应用于Isaac Sim中的仓储机器人导航策略（三个场景族）。",
+      "results_zh": "在CARLA七个场景族上评估七个智能体：规则专家决策准确率达0.74，学习型中得分最高的TFv6为0.60；驾驶分数相近者失效方式各异，能可靠停在封堵通道的智能体仍很少等待对向车流空隙。Isaac Sim中被测导航策略仅在三个场景族之一正确停车，两个微调版本通过更多空隙却完全不再停车。",
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "added_at": "2026-11-05T12:09:36.155669+00:00"
     },
     {
       "id": "2611.02026",
@@ -9598,6 +9642,95 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2611.06702",
+      "arxiv_id": "2611.06702",
+      "title": "When to Ask for Help: Uncertainty-Triggered Aerial Refinement for Off-Road Navigation",
+      "authors": [
+        "Pranay Samineni",
+        "Adam Thorpe",
+        "John Chubick",
+        "Anand Balakrishnan",
+        "Christian Ellis",
+        "Swarat Chaudhuri",
+        "Ufuk Topcu"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06702",
+      "pdf_url": "https://arxiv.org/pdf/2611.06702",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出规划器条件化的空地协同方法：当地图不确定性使UGV的MPPI rollout导航性能退化时，在消解不确定性的假设地图上重评rollout，选取收益最大的地图层请求UAV定向航拍测量，融合后重规划。",
+      "change_zh": "常见空地协同要么让UAV持续建图，要么按固定角色、任务结构或仅凭不确定性阈值触发支援；本文改为以「消解不确定性能否改善地面规划器预测表现」为准则，先在假设地图上重打分选出最值得采集的地图层，再按需调用UAV，大幅降低飞行成本。",
+      "why_it_matters": "对主动感知与空域自主线价值直接：把「何时调用UAV、测什么」形式化为对地面规划器的期望增益评估，与搜救侦察中按需出动无人机的决策同构；该规划器条件化触发思路也可迁移到ObjectNav中昂贵观测与子目标选择的取舍，且有约2公里真机验证。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "空地协同, 越野导航, 不确定性消解, MPPI, 无人机辅助感知, 异构机器人团队",
+      "question_zh": "研究UGV在越野导航中何时需要UAV协助、以及UAV应采集哪些地图信息来消解影响导航的不确定性。",
+      "innovation_zh": "提出规划器条件化的空地辅助方法：不同于固定支援角色、任务结构或仅凭不确定性的已有方法，该方法以消解地图不确定性能否改善UGV的MPPI预测导航表现为条件触发辅助，评估rollouts选取收益最大的地图层，请求对应航测并融合重规划。",
+      "dataset_zh": "三条越野路线上的180次仿真试验；以及约2公里UGV运行的外场真机实验（具体仿真平台与机型未提及）。",
+      "results_zh": "在三条越野路线共180次仿真试验中实现98.9%的目标到达率，平均UAV飞行时间较连续贪婪航空测绘减少87.7%；综合各路线，每秒预估UAV飞行时间可节省2.94秒UGV导航时间；约2公里的外场实验验证了不确定性消解与导航恢复的成功。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "uav"
+      ],
+      "added_at": "2026-11-05T11:57:40.541706+00:00"
+    },
+    {
+      "id": "2611.05847",
+      "arxiv_id": "2611.05847",
+      "title": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+      "authors": [
+        "Ruilong Yu",
+        "Fei Ye"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.05847",
+      "pdf_url": "https://arxiv.org/pdf/2611.05847",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "发现JEPA世界模型的欧氏目标代价缺乏时间排序性，提出Time-to-Goal度量，用离线轨迹三元组的排序损失学习时间接近度并替换规划代价，扁平模型规划成功率由32.7%升至63.0%，媲美层次化H-JEPA。",
+      "change_zh": "常见路线用层次化世界模型（如H-JEPA）处理长时程规划；本文证明瓶颈在目标代价缺乏时间排序而非模型层次，仅在冻结的扁平JEPA上外挂轻量时距度量，无需奖励或策略标签即逼近甚至超越层次基线，成本更低。",
+      "why_it_matters": "世界模型用于导航规划是收录核心线，目标条件潜空间规划与ObjectNav/UAV目标搜索中按目标代价引导逐步接近的机制同构；T2G的时序度量思路可迁移到目标驱动的长时程搜索与接近任务，减少对层次结构和奖励标注的依赖。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "JEPA世界模型, Time-to-Goal (T2G), 时间度量学习, 长时程规划, 潜在空间规划, 边际排序损失",
+      "question_zh": "JEPA世界模型中，如何学习显式的时间排序度量作为目标代价，使距目标时间更近的潜在状态代价更低，从而提升长时程规划性能？",
+      "innovation_zh": "提出T2G轻量度量，用边际排序损失在离线轨迹的潜在三元组上显式学习时间排序，无需奖励或策略标签；它直接替换欧氏规划代价且冻结JEPA编码器与预测器，使扁平世界模型无需层级结构即具时间感知。",
+      "dataset_zh": "训练使用离线轨迹的潜在三元组；诊断实验在AntMaze和FourRoom环境进行；另在四个导航与操作基准上评估（摘要未给出全部基准的具体名称）",
+      "results_zh": "在AntMaze和FourRoom诊断中，T2G保持更强的时序对比并改善长偏移下的远近排序；在四个导航与操作基准上，平均规划成功率从扁平LeWM的32.7%提升至63.0%，接近甚至超越层级H-JEPA基线。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "world model"
+      ],
+      "added_at": "2026-11-05T12:11:01.793733+00:00"
+    },
+    {
       "id": "2611.01958",
       "arxiv_id": "2611.01958",
       "title": "Answering Without Arriving: An Evidence Audit for Embodied Question Answering",
@@ -13067,6 +13200,91 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2611.06844",
+      "arxiv_id": "2611.06844",
+      "title": "Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers",
+      "authors": [
+        "Yingying Yan",
+        "Jiaqi Tang",
+        "Wei Wei",
+        "Qianzhou Wang",
+        "Lei Zhang",
+        "Jianmin Chen",
+        "Yuyang Xia",
+        "Botong Geng",
+        "Jinjian Wu",
+        "Qifeng Chen"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06844",
+      "pdf_url": "https://arxiv.org/pdf/2611.06844",
+      "code_url": "https://github.com/YingyingYan1/DGP",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文提出动态门控通路DGP，在ViT与LLM各层间建立全对全连接，由每个LLM层依自身语义状态门控选择所需视觉粒度；基于LLaVA-1.5-7B/13B，在SQA、MM-Vet、VizWiz等基准上稳定超越基线与既有分层融合方法。",
+      "change_zh": "主流MLLM将固定单层视觉特征注入LLM，多层融合方法或压缩编码器侧特征、或依赖预定义稀疏/层级连接；DGP改为全对全动态路由，让每个LLM层按语义状态自适应选择视觉层，实现跨层级交互，并以逐层路由分析佐证其有效性。",
+      "why_it_matters": "该工作属于多模态大模型架构本身的显著改进，直接充实模型与智能体基础能力线；自适应多粒度视觉注入有望增强LLM对场景与目标的层次化理解，未来可迁移至无人机目标搜索与ObjectNav中的视觉语义接口，但论文未在具身任务上验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "added_at": "2026-11-05T12:04:50.326131+00:00"
+    },
+    {
+      "id": "2611.06901",
+      "arxiv_id": "2611.06901",
+      "title": "Motion-guided Contrastive Regularization For Latent World Models",
+      "authors": [
+        "Yiwen Chen",
+        "Qiqi Hou",
+        "Jisoo Jeong",
+        "Yinhao Zhu",
+        "Huaizu Jiang",
+        "Amir Said"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06901",
+      "pdf_url": "https://arxiv.org/pdf/2611.06901",
+      "code_url": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对JEPA式潜世界模型的静态坍塌问题，提出以光流相似度为软目标的运动引导对比正则，抑制静态背景、保留操作相关状态变化，随机背景与LIBERO-Object上规划成功率大幅提升。",
+      "change_zh": "常见JEPA世界模型仅靠分布正则防坍塌；本文识别并实证「静态坍塌」这一失败模式（随机背景即可破坏规划），进而以光流相似度为软对比目标，把监督锚定在同回合成对转移上，聚焦动作相关的状态变化而非背景。",
+      "why_it_matters": "对导航世界模型有直接警示：UAV搜索与ObjectNav中背景同样多样且占画面主导、目标相关变化微弱，静态坍塌风险类似；其光流软对比正则可迁移，让潜状态对运动引起的变化更敏感，提升跨场景规划稳健性。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "world model"
+      ],
+      "added_at": "2026-11-05T12:12:44.898451+00:00"
+    },
+    {
       "id": "2611.02698",
       "arxiv_id": "2611.02698",
       "title": "GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation",
@@ -15556,6 +15774,99 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2611.06768",
+      "arxiv_id": "2611.06768",
+      "title": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
+      "authors": [
+        "Qiang Wang",
+        "Jianxin Bi",
+        "Shulong Jiang",
+        "Ruiyang Si",
+        "Wenbo Huang",
+        "Kaiqi Chen",
+        "Jiaxin Li",
+        "Liyun Li",
+        "Xuanyi Li",
+        "Daquan Zhou"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06768",
+      "pdf_url": "https://arxiv.org/pdf/2611.06768",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "PyRUA-REAL提出具身递归自我改进框架：编码智能体在真实世界探索并精炼代码，把交互经验存为持久记忆与可复用技能以反哺后续改进，支持无在线智能体的高效部署，8个真机任务成功率91.1%。",
+      "change_zh": "相比一次性代码生成或离线训练固定策略的常见路线，该框架将真实执行反馈纳入闭环递归自我改进：经验固化为持久记忆与可复用技能并反哺后续探索，并系统考察智能体协作、反馈类型与既有技能对稳健性和任务迁移的影响。",
+      "why_it_matters": "为智能体从物理交互中获得持续、可迁移能力提供了实证范式，直接推进具身智能体的记忆、技能复用与自我改进框架研究；其经验固化与离线部署思路可启发UAV目标搜索与ObjectNav的技能积累，但本文以真机操作任务为主，不含导航决策。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation",
+        "exploration",
+        "real world",
+        "spatial reasoning"
+      ],
+      "added_at": "2026-11-05T11:54:36.180827+00:00"
+    },
+    {
+      "id": "2611.06254",
+      "arxiv_id": "2611.06254",
+      "title": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
+      "authors": [
+        "Zhi Hong",
+        "Qianlong Wang",
+        "Hongchen Wei",
+        "Aidan Wu",
+        "Daohong Ying",
+        "Mingze Kong",
+        "Bei Liu",
+        "Chong Luo"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06254",
+      "pdf_url": "https://arxiv.org/pdf/2611.06254",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 6,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "HarnessFlow在固定模型与环境的前提下，以MCTS在精炼树上平衡探索利用，驱动编码智能体用执行反馈迭代改写可执行框架，在六项基准上以有限评估预算取得最高平均分。",
+      "change_zh": "常见做法或手工设计智能体框架，或微调模型、优化提示；本文固定模型与环境，把完整可执行框架的自动设计建模为预算受限的树搜索，用MCTS选点、编码智能体改写并复用机制库，实现框架级系统优化。",
+      "why_it_matters": "对多模态大模型与智能体线属核心收录：自动化智能体框架设计有望迁移到ObjectNav或UAV目标搜索等具身任务的智能体流水线优化，降低人工设计成本；其预算受限MCTS搜索思路也为规划智能体提供借鉴。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "benchmark",
+        "evaluation",
+        "exploration",
+        "llm agent"
+      ],
+      "added_at": "2026-11-05T11:58:23.122838+00:00"
     },
     {
       "id": "2611.03584",
@@ -20540,6 +20851,90 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2611.06868",
+      "arxiv_id": "2611.06868",
+      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+      "authors": [
+        "Jalaj Bhandari",
+        "Dhawal Gupta",
+        "Hongli Zhan",
+        "Zhenting Wang",
+        "Varad Pimpalkhute",
+        "Zhengzhong Liu",
+        "Eric Xing",
+        "Rupesh Srivastava"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06868",
+      "pdf_url": "https://arxiv.org/pdf/2611.06868",
+      "code_url": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该文评估回合级Best-of-N采样：每回合由生成器LLM产生N个候选动作，选择器LLM直接比较选出一执行，实现LLM智能体的推理时扩展；在长时程终端任务上准确率提升5-10%。",
+      "change_zh": "与常见用训练好的critic/奖励模型引导搜索不同，本文改用现成开源权重LLM直接比较候选动作，无需额外训练选择器，并将Best-of-N从单轮问答扩展到智能体逐回合的闭环决策。",
+      "why_it_matters": "该方法为LLM智能体推理时扩展提供简单通用框架，可迁移至ObjectNav与UAV目标搜索中LLM规划器的逐回合动作优选，提升长时程决策稳定性；但实验仅覆盖终端任务，具身场景效果待验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "instruction",
+        "instruction following",
+        "llm agent"
+      ],
+      "added_at": "2026-11-05T12:05:37.692429+00:00"
+    },
+    {
+      "id": "2611.06061",
+      "arxiv_id": "2611.06061",
+      "title": "TouchéWorld tech report : Towards Online Unified Camera--Hand Exploration in Generative Worlds",
+      "authors": [
+        "Jiaao Yu",
+        "Yanjian Zhang",
+        "Haoyang Jiang",
+        "Guillaume Wisniewski",
+        "Nadi Tomeh",
+        "Shijie Jia"
+      ],
+      "published": "2026-11-04",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.06061",
+      "pdf_url": "https://arxiv.org/pdf/2611.06061",
+      "code_url": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "TouchéWorld将连续手部动作作为细粒度交互通道融入相机可控的视频世界模型，由首帧图像与场景提示生成相机与手部控制时间对齐的视频，经因果适配与少步蒸馏实现分块在线生成，并发布TouchéBench评测集。",
+      "change_zh": "既有相机可控世界模型只能移动视角、无法与人或对象交互，手部生成分支又多为单帧编辑或离线生成；本文将相机与手部控制时间对齐地统一进一个世界模型，并用因果适配与少步蒸馏实现分块在线生成与控制更新。",
+      "why_it_matters": "相机可控的生成式世界可作为低成本、可扩展的仿真环境，为ObjectNav与UAV主动目标搜索提供多样化训练和评测场景；加入手部交互使环境从纯导航迈向可交互世界模型，TouchéBench也为可控性与具身评测提供新基准。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "exploration",
+        "world model"
+      ],
+      "added_at": "2026-11-05T12:13:51.203481+00:00"
     },
     {
       "id": "2611.03424",
@@ -28726,40 +29121,80 @@
     }
   ],
   "briefing": {
-    "text": "本批四篇均为基准类工作，主线是审计式评测：不只看任务能否做对，更追问做对是否依赖真实能力。首推Reconstruction as Spatial Evaluation：以多视角3D重建要求LVLM在相机锚定度量系联合预测定向3D框，从结构与度量两轴量化诊断跨视角空间智能，并延伸至离线导航，直击导航的核心前提；Answering Without Arriving同样必读：固定问题、只变证据供给的阶梯审计显示，闭环EQA智能体零到达仍答对45.5%、与无图像几乎持平，说明答案可绕过真实观察，对评测设计与智能体训练都是警讯。趋势观察：具身评测正从刷分转向证据归因，追问每个答案背后的观察链路从何而来。",
-    "added": 4,
-    "at": "2026-11-04T17:50:29.167667+00:00",
+    "text": "今日九篇主线清晰：世界模型侧在补课——时间度量、运动正则与生成式交互环境；智能体侧在扩展——自我改进与推理时采样。首推Beyond Infraction Scores（相关9）：以失败边界画像替代CARLA违规分，用认证的应行/应停场景变体区分保守与鲁莽，并迁移至仓储机器人，直击闭环评测盲区。Time-to-Goal发现JEPA欧氏目标代价缺乏时间排序性，改用排序学习的时间度量后，扁平模型成功率由32.7%升至63.0%，免去层次化设计。When to Ask for Help按地图不确定性量化UAV定向航拍收益，择优请求并重规划UGV路径。趋势上，评测与世界模型内部度量的精修正与能力扩展并行，成为新的发力点。",
+    "added": 9,
+    "at": "2026-11-05T12:18:30.140083+00:00",
     "new": [
       {
-        "t": "Reconstruction as Spatial Evaluation: Diagnosing Cross-View Spatial Intelligence in Large Vision-Language Models",
-        "u": "https://arxiv.org/abs/2611.02026",
-        "r": 9,
-        "g": 8,
-        "s": "RECONSPATIAL基准以多视角3D重建为评测形式，要求LVLM在相机锚定度量坐标系联合预测定向3D框，从结构与度量两轴诊断18个前沿模型的跨视角空间智能，并延伸至离线导航。",
-        "c": ""
-      },
-      {
-        "t": "Can You Predict the Next Mind? Toward Multi-Turn Multi-Party Mental World Modeling",
-        "u": "https://arxiv.org/abs/2611.02988",
-        "r": 6,
+        "t": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
+        "u": "https://arxiv.org/abs/2611.06768",
+        "r": 7,
         "g": 7,
-        "s": "该论文提出M3WME-Bench基准，评估多轮多方交互中的动态心理世界建模，要求模型前瞻预测目标对象未来的心理状态与行为；配套构建M3WME-23K训练集与MindNext-7B基线，跨四类范式评测发现现有模型普遍难以预测前瞻心理状态。",
+        "s": "PyRUA-REAL提出具身递归自我改进框架：编码智能体在真实世界探索并精炼代码，把交互经验存为持久记忆与可复用技能以反哺后续改进，支持无在线智能体的高效部署，8个真机任务成功率91.1%。",
         "c": ""
       },
       {
-        "t": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
-        "u": "https://arxiv.org/abs/2611.03424",
-        "r": 6,
-        "g": 8,
-        "s": "提出IdeaTaste基准：让LLM基于2025年冻结文献快照撰写研究提案，与同社区2026年真实发表论文比对引用与想法匹配度，共9万余提案、6个模型；AI仅达人类引用匹配26%、想法匹配18%，瓶颈在形成具体方法与研究计划。",
-        "c": ""
-      },
-      {
-        "t": "Answering Without Arriving: An Evidence Audit for Embodied Question Answering",
-        "u": "https://arxiv.org/abs/2611.01958",
+        "t": "When to Ask for Help: Uncertainty-Triggered Aerial Refinement for Off-Road Navigation",
+        "u": "https://arxiv.org/abs/2611.06702",
         "r": 8,
         "g": 7,
-        "s": "构建多房间具身问答证据审计基准：固定问题、仅改变证据供给的评估阶梯，发现闭环智能体200集零到达仍答对45.5%，与无图像几乎持平，揭示答案可绕过真实观察。",
+        "s": "提出规划器条件化的空地协同方法：当地图不确定性使UGV的MPPI rollout导航性能退化时，在消解不确定性的假设地图上重评rollout，选取收益最大的地图层请求UAV定向航拍测量，融合后重规划。",
+        "c": ""
+      },
+      {
+        "t": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
+        "u": "https://arxiv.org/abs/2611.06254",
+        "r": 7,
+        "g": 7,
+        "s": "HarnessFlow在固定模型与环境的前提下，以MCTS在精炼树上平衡探索利用，驱动编码智能体用执行反馈迭代改写可执行框架，在六项基准上以有限评估预算取得最高平均分。",
+        "c": ""
+      },
+      {
+        "t": "Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers",
+        "u": "https://arxiv.org/abs/2611.06844",
+        "r": 7,
+        "g": 7,
+        "s": "该文提出动态门控通路DGP，在ViT与LLM各层间建立全对全连接，由每个LLM层依自身语义状态门控选择所需视觉粒度；基于LLaVA-1.5-7B/13B，在SQA、MM-Vet、VizWiz等基准上稳定超越基线与既有分层融合方法。",
+        "c": "https://github.com/YingyingYan1/DGP"
+      },
+      {
+        "t": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+        "u": "https://arxiv.org/abs/2611.06868",
+        "r": 7,
+        "g": 6,
+        "s": "该文评估回合级Best-of-N采样：每回合由生成器LLM产生N个候选动作，选择器LLM直接比较选出一执行，实现LLM智能体的推理时扩展；在长时程终端任务上准确率提升5-10%。",
+        "c": ""
+      },
+      {
+        "t": "Beyond Infraction Scores: Failure-Boundary Profiles for Closed-Loop Evaluation of Driving and Robot Navigation Agents",
+        "u": "https://arxiv.org/abs/2611.06453",
+        "r": 9,
+        "g": 8,
+        "s": "针对CARLA驾驶分混淆保守停车与强行通过的问题，提出失败边界画像：沿单一因子构造场景变体并认证应行/应停，估计承诺与胜任曲线及决策准确率，评测七个驾驶智能体并迁移到仓储机器人。",
+        "c": ""
+      },
+      {
+        "t": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+        "u": "https://arxiv.org/abs/2611.05847",
+        "r": 8,
+        "g": 7,
+        "s": "发现JEPA世界模型的欧氏目标代价缺乏时间排序性，提出Time-to-Goal度量，用离线轨迹三元组的排序损失学习时间接近度并替换规划代价，扁平模型规划成功率由32.7%升至63.0%，媲美层次化H-JEPA。",
+        "c": ""
+      },
+      {
+        "t": "Motion-guided Contrastive Regularization For Latent World Models",
+        "u": "https://arxiv.org/abs/2611.06901",
+        "r": 7,
+        "g": 8,
+        "s": "针对JEPA式潜世界模型的静态坍塌问题，提出以光流相似度为软目标的运动引导对比正则，抑制静态背景、保留操作相关状态变化，随机背景与LIBERO-Object上规划成功率大幅提升。",
+        "c": ""
+      },
+      {
+        "t": "TouchéWorld tech report : Towards Online Unified Camera--Hand Exploration in Generative Worlds",
+        "u": "https://arxiv.org/abs/2611.06061",
+        "r": 7,
+        "g": 6,
+        "s": "TouchéWorld将连续手部动作作为细粒度交互通道融入相机可控的视频世界模型，由首帧图像与场景提示生成相机与手部控制时间对齐的视频，经因果适配与少步蒸馏实现分块在线生成，并发布TouchéBench评测集。",
         "c": ""
       }
     ]
