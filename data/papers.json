@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T12:16:53.280564+00:00",
+  "updated_at": "2026-11-05T17:53:05.998094+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1728,6 +1728,53 @@
         "vlm"
       ],
       "added_at": "2026-09-01T12:27:58Z"
+    },
+    {
+      "id": "2611.03937",
+      "arxiv_id": "2611.03937",
+      "title": "FlowBench: Counterfactual Imagination Training for Spatial Intelligence",
+      "authors": [
+        "Yifan Liu",
+        "Baihan Zhang",
+        "Khai Loong Aw",
+        "Klemen Kotar",
+        "Daniel L. K. Yamins"
+      ],
+      "published": "2026-11-02",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.03937",
+      "pdf_url": "https://arxiv.org/pdf/2611.03937",
+      "code_url": "https://github.com/liuyifan22/FlowBench",
+      "categories": [],
+      "topics": [
+        "空间智能"
+      ],
+      "relevance_score": 6,
+      "citation_count": 0,
+      "semantic_scholar_url": "https://www.semanticscholar.org/paper/12ff8f2dc58e9c2633e388f34aacbac4ea587e37",
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "FlowBench将“反事实空间想象”形式化，用全自动管线构建42.8万条覆盖仿真与真实场景的训练评测数据，为每个假设运动配对空间问题及光流真值，同步提升VLM空间问答与世界模型文本到光流预测。",
+      "change_zh": "相比静态空间关系问答或基于已执行动作的帧预测路线，该工作把“未发生运动的假想后果”确立为新任务，以运动-问题-光流配对的自动数据管线统一训练评测VLM与世界模型两类载体，并报告了跨模态一致的sim-to-real增益。",
+      "why_it_matters": "反事实空间想象让模型预演“若这样动、场景会怎样”，正是ObjectNav推断目标可移性与可达性、UAV搜索预判遮挡目标移动所需的空间基础；对世界模型文本到光流的改进也强化其作为导航与规划内部模拟器的潜力。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "keywords_zh": "反事实空间想象,视觉语言模型,世界模型,光流预测,空间智能,基准数据集",
+      "question_zh": "如何形式化并提升视觉语言模型与世界模型对假设运动下场景变化的反事实空间想象能力？",
+      "innovation_zh": "首次将想象假设运动下场景变化的能力形式化为CSI，构建42.8万样本的FlowBench与全自动流水线，为每个假设运动配对空间问题、精确结果帧和光流，同时训练评测VLM与世界模型。",
+      "dataset_zh": "FlowBench数据集：42.8万训练样本，涵盖仿真与真实场景、家庭环境与桌面操作及多样问题类型；仿真部分含精确结果帧与光流（FlowBench-Sim），另含真实图像用于评测",
+      "results_zh": "专有VLM存在想象差距（推断运动结果时表现更差），开源模型接近随机；微调Qwen3-VL-8B使仿真准确率提升29.5个百分点、真实图像提升16.9个百分点；四类世界模型text-to-flow预测均提升，Psi-0.6从52.1%升至61.7%。",
+      "venue_verified": false,
+      "score": 27,
+      "keywords": [
+        "evaluation",
+        "spatial intelligence",
+        "spatial reasoning",
+        "vlm",
+        "world model"
+      ],
+      "added_at": "2026-11-05T17:51:51.541705+00:00"
     },
     {
       "id": "2611.01844",
@@ -29121,81 +29168,17 @@
     }
   ],
   "briefing": {
-    "text": "今日九篇主线清晰：世界模型侧在补课——时间度量、运动正则与生成式交互环境；智能体侧在扩展——自我改进与推理时采样。首推Beyond Infraction Scores（相关9）：以失败边界画像替代CARLA违规分，用认证的应行/应停场景变体区分保守与鲁莽，并迁移至仓储机器人，直击闭环评测盲区。Time-to-Goal发现JEPA欧氏目标代价缺乏时间排序性，改用排序学习的时间度量后，扁平模型成功率由32.7%升至63.0%，免去层次化设计。When to Ask for Help按地图不确定性量化UAV定向航拍收益，择优请求并重规划UGV路径。趋势上，评测与世界模型内部度量的精修正与能力扩展并行，成为新的发力点。",
-    "added": 9,
-    "at": "2026-11-05T12:18:30.140083+00:00",
+    "text": "今日仅入库一篇，主线是空间智能：以反事实方式训练并评测模型的空间能力。FlowBench值得优先读——它将反事实空间想象形式化，用全自动管线产出42.8万条覆盖仿真与真实场景的样本，为每个假设运动配对空间问题与光流真值，一份数据既能压测VLM空间问答，也能校准世界模型的文本到光流预测，对依赖世界模型做规划的导航研究直接可用。趋势上，空间评测正从静态问答转向与动态预测耦合的反事实范式。",
+    "added": 1,
+    "at": "2026-11-05T17:53:33.338229+00:00",
     "new": [
       {
-        "t": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
-        "u": "https://arxiv.org/abs/2611.06768",
-        "r": 7,
-        "g": 7,
-        "s": "PyRUA-REAL提出具身递归自我改进框架：编码智能体在真实世界探索并精炼代码，把交互经验存为持久记忆与可复用技能以反哺后续改进，支持无在线智能体的高效部署，8个真机任务成功率91.1%。",
-        "c": ""
-      },
-      {
-        "t": "When to Ask for Help: Uncertainty-Triggered Aerial Refinement for Off-Road Navigation",
-        "u": "https://arxiv.org/abs/2611.06702",
-        "r": 8,
-        "g": 7,
-        "s": "提出规划器条件化的空地协同方法：当地图不确定性使UGV的MPPI rollout导航性能退化时，在消解不确定性的假设地图上重评rollout，选取收益最大的地图层请求UAV定向航拍测量，融合后重规划。",
-        "c": ""
-      },
-      {
-        "t": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
-        "u": "https://arxiv.org/abs/2611.06254",
-        "r": 7,
-        "g": 7,
-        "s": "HarnessFlow在固定模型与环境的前提下，以MCTS在精炼树上平衡探索利用，驱动编码智能体用执行反馈迭代改写可执行框架，在六项基准上以有限评估预算取得最高平均分。",
-        "c": ""
-      },
-      {
-        "t": "Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers",
-        "u": "https://arxiv.org/abs/2611.06844",
-        "r": 7,
-        "g": 7,
-        "s": "该文提出动态门控通路DGP，在ViT与LLM各层间建立全对全连接，由每个LLM层依自身语义状态门控选择所需视觉粒度；基于LLaVA-1.5-7B/13B，在SQA、MM-Vet、VizWiz等基准上稳定超越基线与既有分层融合方法。",
-        "c": "https://github.com/YingyingYan1/DGP"
-      },
-      {
-        "t": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
-        "u": "https://arxiv.org/abs/2611.06868",
-        "r": 7,
-        "g": 6,
-        "s": "该文评估回合级Best-of-N采样：每回合由生成器LLM产生N个候选动作，选择器LLM直接比较选出一执行，实现LLM智能体的推理时扩展；在长时程终端任务上准确率提升5-10%。",
-        "c": ""
-      },
-      {
-        "t": "Beyond Infraction Scores: Failure-Boundary Profiles for Closed-Loop Evaluation of Driving and Robot Navigation Agents",
-        "u": "https://arxiv.org/abs/2611.06453",
+        "t": "FlowBench: Counterfactual Imagination Training for Spatial Intelligence",
+        "u": "https://arxiv.org/abs/2611.03937",
         "r": 9,
         "g": 8,
-        "s": "针对CARLA驾驶分混淆保守停车与强行通过的问题，提出失败边界画像：沿单一因子构造场景变体并认证应行/应停，估计承诺与胜任曲线及决策准确率，评测七个驾驶智能体并迁移到仓储机器人。",
-        "c": ""
-      },
-      {
-        "t": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
-        "u": "https://arxiv.org/abs/2611.05847",
-        "r": 8,
-        "g": 7,
-        "s": "发现JEPA世界模型的欧氏目标代价缺乏时间排序性，提出Time-to-Goal度量，用离线轨迹三元组的排序损失学习时间接近度并替换规划代价，扁平模型规划成功率由32.7%升至63.0%，媲美层次化H-JEPA。",
-        "c": ""
-      },
-      {
-        "t": "Motion-guided Contrastive Regularization For Latent World Models",
-        "u": "https://arxiv.org/abs/2611.06901",
-        "r": 7,
-        "g": 8,
-        "s": "针对JEPA式潜世界模型的静态坍塌问题，提出以光流相似度为软目标的运动引导对比正则，抑制静态背景、保留操作相关状态变化，随机背景与LIBERO-Object上规划成功率大幅提升。",
-        "c": ""
-      },
-      {
-        "t": "TouchéWorld tech report : Towards Online Unified Camera--Hand Exploration in Generative Worlds",
-        "u": "https://arxiv.org/abs/2611.06061",
-        "r": 7,
-        "g": 6,
-        "s": "TouchéWorld将连续手部动作作为细粒度交互通道融入相机可控的视频世界模型，由首帧图像与场景提示生成相机与手部控制时间对齐的视频，经因果适配与少步蒸馏实现分块在线生成，并发布TouchéBench评测集。",
-        "c": ""
+        "s": "FlowBench将“反事实空间想象”形式化，用全自动管线构建42.8万条覆盖仿真与真实场景的训练评测数据，为每个假设运动配对空间问题及光流真值，同步提升VLM空间问答与世界模型文本到光流预测。",
+        "c": "https://github.com/liuyifan22/FlowBench"
       }
     ]
   }

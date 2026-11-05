@@ -1,12 +1,4 @@
 {
-  "2609.13013": {
-    "title": "TileNet: Tile-Based CNN-SVM Architecture for Autonomous Unmanned Aerial Systems Inspection of Flat Roofs",
-    "relevance": 4,
-    "rigor": 5,
-    "reason": "本质是无人机航拍平屋顶缺陷的图像分类垂直应用，仅借UAV平台与目标检测术语擦边，无搜索策略、导航决策或空间智能等核心技术贡献，且基线（AlexNet/GoogLeNet）陈旧。",
-    "rejected_at": "2026-09-14",
-    "url": "https://arxiv.org/abs/2609.13013"
-  },
   "2609.13072": {
     "title": "MAxBench: A Multinomial Concept Recovery Benchmark",
     "relevance": 3,
@@ -2398,5 +2390,13 @@
     "reason": "该工作为面向临床神经评估的腕戴式触觉/伤害性刺激执行器硬件，与导航、空间智能、具身智能体、状态估计与控制等全部收录技术线无关。",
     "rejected_at": "2026-11-05",
     "url": "https://arxiv.org/abs/2611.05741"
+  },
+  "2611.04196": {
+    "title": "DoGNAVY-Exploit: Harnessing Parallel Open-Weight Agents for Stage-Aware Vulnerability Exploitation",
+    "relevance": 3,
+    "rigor": 7,
+    "reason": "多智能体编排设计虽完整，但整体是把LLM智能体套用于网络安全漏洞利用这一垂直领域，与空间、导航、机器人无关，属范围外应用。",
+    "rejected_at": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.04196"
   }
 }
