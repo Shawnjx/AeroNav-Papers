@@ -1,12 +1,4 @@
 {
-  "2609.13072": {
-    "title": "MAxBench: A Multinomial Concept Recovery Benchmark",
-    "relevance": 3,
-    "rigor": 6,
-    "reason": "该文属LLM内部可解释性研究（激活空间概念几何与转向的元评测），不涉及新模型、训练方法或智能体能力进展，也与空间、导航、机器人无关，落入\"纯LLM理论\"的拒绝范畴。",
-    "rejected_at": "2026-09-14",
-    "url": "https://arxiv.org/abs/2609.13072"
-  },
   "2609.12691": {
     "title": "Semantically Aligned Gradient-Driven Context-Preserving Image Editing",
     "relevance": 3,
@@ -2398,5 +2390,13 @@
     "reason": "多智能体编排设计虽完整，但整体是把LLM智能体套用于网络安全漏洞利用这一垂直领域，与空间、导航、机器人无关，属范围外应用。",
     "rejected_at": "2026-11-05",
     "url": "https://arxiv.org/abs/2611.04196"
+  },
+  "2611.07293": {
+    "title": "An Ordering Optimization for Fruit-Vegetable in High-Density Environment based on Genetic Algorithm",
+    "relevance": 2,
+    "rigor": 6,
+    "reason": "该工作属于果蔬采摘的机械臂操作范畴，遗传算法采摘排序与航点运动均为机械臂作业规划，不含移动机器人导航决策成分，且与收录的三条板块十一条技术线均无实质关联。",
+    "rejected_at": "2026-11-06",
+    "url": "https://arxiv.org/abs/2611.07293"
   }
 }

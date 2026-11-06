@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T17:53:05.998094+00:00",
+  "updated_at": "2026-11-06T12:03:58.400684+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -4655,6 +4655,54 @@
         "uav"
       ],
       "added_at": "2026-09-01T21:26:42+08:00"
+    },
+    {
+      "id": "2611.07730",
+      "arxiv_id": "2611.07730",
+      "title": "Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in Multi-Agent Scenes",
+      "authors": [
+        "Seong-Eun Hong",
+        "JuYeong Hwang",
+        "Jinhyun Kim",
+        "Hanyoung Jang",
+        "HyeongYeop Kang"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07730",
+      "pdf_url": "https://arxiv.org/pdf/2611.07730",
+      "code_url": "",
+      "categories": [
+        "cs.GR",
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 3,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "将世界模型置于训练期作偏好教师：用社交动态与场景语义两个任务对齐世界模型按预测后果为候选动作打分，经组相对偏好蒸馏出快速策略，部署时移除世界模型、单次前向执行，在留出场景中更安全且更像人类。",
+      "change_zh": "常见路线要么牺牲前瞻换取反应式速度，要么加速世界模型在线推演；该工作改为训练期用两个任务对齐世界模型作偏好裁判，按预测后果给候选动作打分并蒸馏进策略，把前瞻成本完全摊销到训练阶段，部署时零额外开销。",
+      "why_it_matters": "「训练期摊销世界模型前瞻」为导航世界模型线提供了清晰新范式：UAV目标搜索与ObjectNav同样可借后果打分加偏好蒸馏，把长程前瞻压进单次前向策略，在机载算力受限下兼顾决策质量与实时性，避免昂贵在线推演。",
+      "relevance_rating": 9,
+      "rigor_rating": 7,
+      "keywords_zh": "世界模型，类人导航，多智能体场景，偏好蒸馏，社交感知导航，前瞻推理",
+      "question_zh": "如何在多智能体拥挤场景中，以可部署的方式将世界模型的前瞻推理能力融入导航策略，使动作决策兼顾安全、社会一致性与类人性。",
+      "innovation_zh": "将世界模型从推理时在线规划改为训练时的偏好预言机：两个任务对齐的世界模型（邻近社会动态与未来场景语义）按预测后果为候选动作打分，经组相对偏好蒸馏将前瞻能力固化进快速策略，部署时移除世界模型，策略单次前向传播即可决策。",
+      "dataset_zh": "未提及（摘要仅说明在五个留出评估场景上验证，未指明具体数据集、仿真环境或真机平台）",
+      "results_zh": "在五个留出评估场景中，该方法同时比强反应式与学习基线更安全、更具社会与群体一致性且更目标导向；未经训练的观察者评价其生成的运动更类人。部署时世界模型被完全移除，策略单次前向传播即决策，前瞻成本仅保留在训练阶段。摘要未给出具体量化指标数字。",
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "deployment",
+        "evaluation",
+        "world model"
+      ],
+      "added_at": "2026-11-06T12:00:35.530320+00:00"
     },
     {
       "id": "2611.04016",
@@ -9689,6 +9737,102 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2611.07687",
+      "arxiv_id": "2611.07687",
+      "title": "Not Losing Your Way: Mitigating Visual-Inertial Odometry Drift through On-Demand Visual Feature Creation",
+      "authors": [
+        "Simone D'Angelo",
+        "Gianmarco Corrado",
+        "Federico Esposito",
+        "Vincenzo Scognamiglio",
+        "Fabio Ruggiero"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07687",
+      "pdf_url": "https://arxiv.org/pdf/2611.07687",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 8,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "针对弱纹理重复环境下无人机VIO漂移，提出主动改造环境框架：按需投放地面标记或触墙画标在线创建视觉特征，信息指标加迟滞触发干预；仿真析因与真实实验显示位置RMSE较基线降约35%。",
+      "change_zh": "常见路线靠改进特征、多传感器融合或回环来抗漂移；本文反其道，让无人机物理改造环境——投放地面标记或触墙画标主动制造可观测特征，全程仅用相机与IMU、无需先验图，把“适应环境”翻转为“改造环境”。",
+      "why_it_matters": "搜救巡检常在隧道走廊等无GPS弱纹理场景，VIO漂移破坏航线保持与搜索覆盖；该框架仅凭相机与IMU即可缓解漂移，是主动感知与状态估计交叉的新思路，对长航时UAV目标搜索与巡检有实用价值。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "视觉惯性里程计（VIO）,漂移抑制,无人机（UAV）,主动环境改造,视觉特征创建,地面标记",
+      "question_zh": "在无人机仅配备相机与IMU、无先验地图的条件下，如何缓解重复或弱纹理环境中视觉惯性里程计的漂移？",
+      "innovation_zh": "受拇指汤姆童话启发，提出主动环境修改框架：无人机按需投放地面标记或经物理接触在墙面做标记以主动创建视觉特征，并用结合时间确认与滞回机制的基于信息指标触发干预，无需先验地图或额外定位传感器，区别于传统被动VIO方法。",
+      "dataset_zh": "三个仿真环境（开展900次运行的因子实验）；真实走廊实验平台（每配置运行5次，采用OptiTrack进行飞行控制，VIO标记决策在线保持激活）",
+      "results_zh": "900次仿真因子实验表明，较低巡航速度与主动标记可降低发散率，非发散运行的精度取决于速度与策略的交互；真实走廊实验中，综合框架使位置均方根误差较基线VIO降低约35%，验证了主动特征创建对漂移抑制的有效性。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "aerial",
+        "evaluation",
+        "localization",
+        "odometry",
+        "uav"
+      ],
+      "added_at": "2026-11-06T11:51:09.851334+00:00"
+    },
+    {
+      "id": "2611.07417",
+      "arxiv_id": "2611.07417",
+      "title": "MessyNav: Zero-Shot Navigation via Manipulation in Messy Environments",
+      "authors": [
+        "Kenneth Llontop",
+        "Cherie Ho",
+        "Dylan Zhou",
+        "Anuva Banwasi",
+        "Priya Sundaresan",
+        "Carlota Parés-Morlans",
+        "Jeannette Bohg"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07417",
+      "pdf_url": "https://arxiv.org/pdf/2611.07417",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "ObjectNav 目标搜索"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MessyNav提出零样本交互式导航框架：在路径被杂物阻挡的杂乱环境中，先用VLM对障碍物做可供性与上下文推理（扫开、拿起或避让），再生成高层规划；真机移动操作平台成功率较最强基线提升27个百分点。",
+      "change_zh": "相比依赖大量仿真训练或逐场景指定避让/操作对象的常见路线，该工作改为零样本范式，将VLM的可供性推理前置于任务规划，按上下文（如易碎推车应避让、空车可推）决定处置方式，从而泛化到新物体、新环境与新情境。",
+      "why_it_matters": "该工作把目标条件导航从被动绕障推进到主动清理路径的开放世界交互导航，其零样本VLM可供性推理可作为ObjectNav与真机部署的关键模块，也为UAV在杂乱场景接近目标时如何决策处置障碍提供思路。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "keywords_zh": "交互式导航, 零样本学习, 视觉语言模型（VLM）, 可供性推理, 移动操作机器人",
+      "question_zh": "机器人如何在杂乱环境中零样本地操纵障碍物清出路径，并自主决定避让或操作哪些物体，实现开放世界交互式导航。",
+      "innovation_zh": "区别于依赖大量仿真训练或逐场景指令的已有方法，提出零样本VLM框架MessyNav，将问题形式化为开放世界交互式导航，核心是在任务规划前进行显式的VLM可供性推理，决定对物体扫开、拾起还是避开，从而泛化到新物体、新环境与不同情境（如避开装易碎玻璃器皿的推车）。",
+      "dataset_zh": "未提及具体数据集名称；评估在移动操作机器人（真机）上进行，涵盖真实室内和室外环境，另开展了更大规模的离线评估。",
+      "results_zh": "在真实机器人实验中，MessyNav的成功率比最强基线提高27个百分点；在更大规模的离线评估中取得统计显著的性能提升；且全部效果无需任何任务特定训练即可实现。",
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "task planning",
+        "vlm"
+      ],
+      "added_at": "2026-11-06T11:56:34.402935+00:00"
+    },
+    {
       "id": "2611.06702",
       "arxiv_id": "2611.06702",
       "title": "When to Ask for Help: Uncertainty-Triggered Aerial Refinement for Off-Road Navigation",
@@ -13247,6 +13391,58 @@
       "added_at": "2026-09-02T03:44:09Z"
     },
     {
+      "id": "2611.07461",
+      "arxiv_id": "2611.07461",
+      "title": "The Last Mile to the Real World: Agent-Native Primitives as Reusable Building Blocks for Solving Real-World Tasks",
+      "authors": [
+        "Haibo Jin",
+        "Peng Kuang",
+        "Xiaopeng Yuan",
+        "Lucheng Fu",
+        "Jerry Wang",
+        "Xucheng Yu",
+        "Yaoning Yu",
+        "Dehao Wu",
+        "Runguo Li",
+        "Colin Su",
+        "Jingxuan Sun",
+        "Xuyang Liu",
+        "Haojing Luo",
+        "Haohan Wang"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07461",
+      "pdf_url": "https://arxiv.org/pdf/2611.07461",
+      "code_url": "",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出“智能体原生原语”（为资源配备驻留LLM的可复用单元）与HEELO框架，按任务组合原语成图、依环境证据验证修订并持续进化原语库，在20余个基准与46个真实任务上大幅超越前沿模型自带框架。",
+      "change_zh": "常见路线只把资源递到智能体可及范围，“用好资源”的能力留在调用方、每个执行框架重复自建；本文将该能力下沉到资源本身，封装为带驻留LLM、可通信、经验证可沉淀复用的原语库，实现能力跨任务迁移并随失败持续进化。",
+      "why_it_matters": "对多模态大模型与智能体线属核心收录：将“用好资源”从调用方解耦下沉为可复用原语，为智能体工具使用、验证与记忆提供新范式；其按任务组图、依证据修订与原语库进化机制可迁移到UAV目标搜索与ObjectNav的智能体框架设计，但摘要未涉具身实验验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "real world"
+      ],
+      "added_at": "2026-11-06T12:03:55.399947+00:00"
+    },
+    {
       "id": "2611.06844",
       "arxiv_id": "2611.06844",
       "title": "Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers",
@@ -15821,6 +16017,81 @@
         "odometry"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2611.08139",
+      "arxiv_id": "2611.08139",
+      "title": "H-TRIP: Exact Many-to-Many Distance Index for Multi-Robot Exploration",
+      "authors": [
+        "Elif A. Özaslan",
+        "Tolga Özaslan"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.08139",
+      "pdf_url": "https://arxiv.org/pdf/2611.08139",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "主动感知与重建"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出H-TRIP，基于min-plus半环Kleene代数的层次增量距离索引，在单调增长的占据栅格上精确维护多对多最短距离，服务多机器人前沿探索的视点评估与巡游规划。",
+      "change_zh": "常见路线需按源逐一重跑图搜索，或仅局部刷新缓存而残留陈旧代价。H-TRIP把新增自由空间分解为叶节点秩一min-plus边插入，仅沿祖先链上传变小的端口间概要，实现增量且始终精确的多对多距离更新。",
+      "why_it_matters": "UAV多机搜救侦察与主动目标搜索依赖前沿探索与视点代价评估，ObjectNav巡游式探索同样需稠密距离矩阵。H-TRIP使稠密查询最高快约两个数量级、在线查询2.2-8.6倍，支撑大地图多机实时探索闭环。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "exploration"
+      ],
+      "added_at": "2026-11-06T11:58:32.488086+00:00"
+    },
+    {
+      "id": "2611.07516",
+      "arxiv_id": "2611.07516",
+      "title": "Training-Independent Validation of a Learning-Based Controller for Stunt Maneuvers",
+      "authors": [
+        "Kiruthiga Chandra Shekar",
+        "Aliasghar Arab",
+        "Jingang Yi"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07516",
+      "pdf_url": "https://arxiv.org/pdf/2611.07516",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "topics": [
+        "真机与 Sim2Real"
+      ],
+      "relevance_score": 3,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出与训练无关的验证思路：用Sim2Real2Sim闭环和汽车安全覆盖测试检验特技机动学习控制器G-Maneuver，实车试验表明运动学指标与仿真一致，力与侧倾指标不一致。",
+      "change_zh": "常规验证在与训练相同的条件和目标下进行，易偏乐观。本文令验证独立于训练：改变训练时固定的物理参数、采用训练目标外的接受准则，并用Sim2Real2Sim闭环筛选实车安全区、以覆盖测试选参数。",
+      "why_it_matters": "为学习控制的真机安全验证给出范式：训练无关验证、Sim2Real2Sim选安全试验域、按指标判定仿真可信度，可迁移至UAV敏捷机动策略的实机部署前验证，也可用于导航学习策略的Sim2Real评估。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "deployment",
+        "real world",
+        "sim2real"
+      ],
+      "added_at": "2026-11-06T12:02:09.267517+00:00"
     },
     {
       "id": "2611.06768",
@@ -20900,6 +21171,52 @@
       "added_at": "2026-09-01T21:26:42+08:00"
     },
     {
+      "id": "2611.07850",
+      "arxiv_id": "2611.07850",
+      "title": "Learning Robotic World Models with Semantic and Visual Feedback",
+      "authors": [
+        "Hao Wu",
+        "Yuqi Li",
+        "Yizhou Zhao",
+        "Kun Wang",
+        "Xiao Luo",
+        "Yu Cheng",
+        "Bo An",
+        "Yingli Tian",
+        "Laszlo A. Jeni",
+        "Ming-Hsuan Yang"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07850",
+      "pdf_url": "https://arxiv.org/pdf/2611.07850",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "topics": [
+        "世界模型"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出RoboImagine：对候选未来做多样搜索，用冻结多模态评估器的语义偏好加像素与感知级视觉反馈，以组相对优势后训练自回归机器人世界模型，提升保真度、任务相关性与长时程预测。",
+      "change_zh": "常见路线以监督重建或单一奖励微调世界模型；本文改为候选未来比较式后训练：多样搜索生成候选，冻结MLLM双向成对比较给出语义偏好，与像素/感知一致性约束互补，经组相对优势优化，滚动历史支持长序列。",
+      "why_it_matters": "对UAV目标搜索与ObjectNav的直接价值有限（实验均为操作任务），但其MLLM语义偏好+视觉一致性的比较式后训练配方可迁移到导航世界模型与策略训练，缓解目标导向任务的奖励稀疏与长时程预测难题。",
+      "relevance_rating": 6,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "evaluation",
+        "instruction",
+        "world model"
+      ],
+      "added_at": "2026-11-06T11:53:25.636517+00:00"
+    },
+    {
       "id": "2611.06868",
       "arxiv_id": "2611.06868",
       "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
@@ -22482,47 +22799,6 @@
         "real robot"
       ],
       "added_at": "2026-09-01T13:35:05Z"
-    },
-    {
-      "id": "2608.06885",
-      "arxiv_id": "2608.06885",
-      "title": "Rigid-Covert GNSS Spoofing of UAV Swarms: A Structural Blind Spot, Its Detection Limit, and Absolute-Anchor Defenses",
-      "authors": [
-        "Minseok Park",
-        "Joon Soo Yoo"
-      ],
-      "published": "2026-08-07",
-      "source": "arXiv",
-      "venue": "预印本",
-      "url": "https://arxiv.org/abs/2608.06885",
-      "pdf_url": "https://arxiv.org/pdf/2608.06885",
-      "code_url": "",
-      "categories": [
-        "cs.CR",
-        "cs.RO"
-      ],
-      "topics": [
-        "状态估计与控制"
-      ],
-      "relevance_score": 8,
-      "citation_count": 0,
-      "semantic_scholar_url": "https://www.semanticscholar.org/paper/ef670b5791fe12d2c65e067b449a4ee8176330fe",
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "指出无人机集群以相对几何交叉验证GNSS存在结构盲区：整体缓慢刚性平移不改变机间距离，对任何纯相对检测不可观测；推导锚点残差检测下界，并提出拜占庭鲁棒的绝对位置恢复管线，全部在仿真中验证。",
-      "change_zh": "相比常见仅靠机间几何交叉校验或单机惯性监控的路线，本文以规范自由度论证证明整体刚性平移对纯相对检测器根本不可观测，量化绝对锚点下的检测漂移下界，并把防御从仅能告警推进到恢复全群绝对位置。",
-      "why_it_matters": "绝对定位完整性是户外无人机自主飞行与搜救任务的前提；其锚定重建与拜占庭鲁棒拟合属多机鲁棒状态估计，可增强空域自主的抗欺骗定位能力，但对UAV主动目标搜索与ObjectNav的决策感知层无直接关联，属定位安全层面的边缘支撑。",
-      "relevance_rating": 6,
-      "rigor_rating": 8,
-      "venue_verified": false,
-      "score": 20,
-      "keywords": [
-        "drone",
-        "evaluation",
-        "geometry",
-        "uav"
-      ],
-      "added_at": "2026-09-02T03:44:09Z"
     },
     {
       "id": "2611.03412",
@@ -24741,6 +25017,133 @@
         "drone"
       ],
       "added_at": "2026-09-02T03:44:09Z"
+    },
+    {
+      "id": "2611.07630",
+      "arxiv_id": "2611.07630",
+      "title": "Real-Time Event-Based LED Tracking and Pose Estimation with PWM-Encoded Markers",
+      "authors": [
+        "Junkai Niu",
+        "Sheng Zhong",
+        "Delei Kong",
+        "Xin Wang",
+        "Kaizhen Sun",
+        "Yusen Zhang",
+        "Mingzhen Gan",
+        "Yi Zhou"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.07630",
+      "pdf_url": "https://arxiv.org/pdf/2611.07630",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 5,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出基于事件相机的PWM编码LED标记实时跟踪与6自由度相对位姿估计框架，采用双速率异步跟踪在大运动与HDR光照下实现机载闭环无人机引导。",
+      "change_zh": "核心变化是让多个LED共用同一闪烁频率、以不同PWM占空比编码身份，从而降低频率资源与计算开销；并用低速率检测+高速率事件更新的双速率异步跟踪，在大运动与LED瞬时重叠下保持稳定关联。",
+      "why_it_matters": "对状态估计与控制和UAV目标接近有直接支撑：事件相机在高速与HDR光照下输出鲁棒相对位姿，机载实时闭环实现无人机悬停与目标跟随，可为搜救侦察接近阶段提供位姿基础，但依赖主动LED标记限制了无标记目标发现。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "deployment",
+        "drone",
+        "evaluation",
+        "state estimation"
+      ],
+      "added_at": "2026-11-06T11:52:03.984724+00:00"
+    },
+    {
+      "id": "2611.08100",
+      "arxiv_id": "2611.08100",
+      "title": "An Integrated Open-Source Stack for Vision-Based Autonomous Navigation of Wheeled Rovers",
+      "authors": [
+        "Iaroslav Kolomiets",
+        "Iaroslav Sheipak",
+        "Mikhail Reppo",
+        "Vsevolod Egorov",
+        "Viktor Chertopolokhov",
+        "Isaac Chairez"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.08100",
+      "pdf_url": "https://arxiv.org/pdf/2611.08100",
+      "code_url": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "topics": [
+        "状态估计与控制",
+        "具身基准与评测"
+      ],
+      "relevance_score": 4,
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "开源ROS 2轮式 rover 视觉自主导航软件栈，整合视觉检测、SLAM与状态估计、规划及行为树管理，完成箭头引导的锥桶到达与自主返回任务。",
+      "change_zh": "相对常见单模块改进工作，本文改变在于全栈集成与接口解耦，把可复用自主层与硬件层分离，并开源软件、数据集与权重、如实记录集成失败案例；算法层面无明显新意。",
+      "why_it_matters": "对地面目标导向导航与真机部署技术线提供了完整可复现的开源参考实现及公开数据与权重；但其任务为标志引导锥桶到达，对UAV主动目标搜索与开放词汇ObjectNav方法无直接贡献。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "evaluation",
+        "localization",
+        "slam",
+        "state estimation"
+      ],
+      "added_at": "2026-11-06T11:55:23.015086+00:00"
+    },
+    {
+      "id": "2611.08361",
+      "arxiv_id": "2611.08361",
+      "title": "Radio-to-Pose Information for Gauge-Drift Correction in Cooperative Localization",
+      "authors": [
+        "Aditya Iyer",
+        "Andy Ye",
+        "Akshay Narayan",
+        "Nora Ayanian"
+      ],
+      "published": "2026-11-05",
+      "source": "arXiv",
+      "venue": "预印本",
+      "url": "https://arxiv.org/abs/2611.08361",
+      "pdf_url": "https://arxiv.org/pdf/2611.08361",
+      "code_url": "",
+      "categories": [
+        "cs.RO",
+        "cs.MA"
+      ],
+      "topics": [
+        "状态估计与控制"
+      ],
+      "relevance_score": 4,
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "针对多机器人协同定位因里程计与机器人间测量仅含相对几何导致的整队规范漂移，提出RPI接口，把射频功率残差及其位姿导数转为高斯信息矩阵/向量，借助世界坐标系下的衰减图修正漂移。",
+      "change_zh": "常见协同定位只用里程计与机器人间测量，仅约束相对几何，整队漂移不可观；现有用无线电的工作多仅以之加权相对测量。本文改用与世界系配准的衰减图提供绝对信息，并以信息矩阵/向量接口无缝接入高斯位姿估计器。",
+      "why_it_matters": "对状态估计与控制线，它为GPS受限环境下的多机器人协同定位提供了廉价绝对参考与可即插的标准高斯融合接口，支撑机群搜救侦察等任务的整队一致性定位；对UAV目标搜索编队与长时SLAM漂移抑制亦有借鉴价值。",
+      "relevance_rating": 6,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 18,
+      "keywords": [
+        "geometry",
+        "localization",
+        "odometry"
+      ],
+      "added_at": "2026-11-06T11:57:30.488956+00:00"
     },
     {
       "id": "2610.41558",
@@ -29168,17 +29571,89 @@
     }
   ],
   "briefing": {
-    "text": "今日仅入库一篇，主线是空间智能：以反事实方式训练并评测模型的空间能力。FlowBench值得优先读——它将反事实空间想象形式化，用全自动管线产出42.8万条覆盖仿真与真实场景的样本，为每个假设运动配对空间问题与光流真值，一份数据既能压测VLM空间问答，也能校准世界模型的文本到光流预测，对依赖世界模型做规划的导航研究直接可用。趋势上，空间评测正从静态问答转向与动态预测耦合的反事实范式。",
-    "added": 1,
-    "at": "2026-11-05T17:53:33.338229+00:00",
+    "text": "今日十篇的主线是具身导航从被动感知转向主动干预，从VIO漂移抑制、协同定位到世界模型与真实任务原语。最值得读的 Seeing Beyond the Next Step 让世界模型只在训练期担任偏好教师，蒸馏出部署时无需世界模型的单步前向策略，兼得拟人行为与实时性；MessyNav 用VLM推理杂物的可供性，以扫开、拿起或避让的零样本操作打通受阻路径，真机成功率高出基线27个百分点；Not Losing Your Way 则反向解题，按需投放或涂画标记在线制造视觉特征抑制弱纹理环境下的VIO漂移，RMSE降约35%。趋势：世界模型正从部署期推理退为训练期教师，导航与操作的边界也在主动改变环境的过程中逐渐消融。",
+    "added": 10,
+    "at": "2026-11-06T12:05:20.914356+00:00",
     "new": [
       {
-        "t": "FlowBench: Counterfactual Imagination Training for Spatial Intelligence",
-        "u": "https://arxiv.org/abs/2611.03937",
-        "r": 9,
+        "t": "Not Losing Your Way: Mitigating Visual-Inertial Odometry Drift through On-Demand Visual Feature Creation",
+        "u": "https://arxiv.org/abs/2611.07687",
+        "r": 8,
+        "g": 7,
+        "s": "针对弱纹理重复环境下无人机VIO漂移，提出主动改造环境框架：按需投放地面标记或触墙画标在线创建视觉特征，信息指标加迟滞触发干预；仿真析因与真实实验显示位置RMSE较基线降约35%。",
+        "c": ""
+      },
+      {
+        "t": "Real-Time Event-Based LED Tracking and Pose Estimation with PWM-Encoded Markers",
+        "u": "https://arxiv.org/abs/2611.07630",
+        "r": 6,
+        "g": 6,
+        "s": "本文提出基于事件相机的PWM编码LED标记实时跟踪与6自由度相对位姿估计框架，采用双速率异步跟踪在大运动与HDR光照下实现机载闭环无人机引导。",
+        "c": ""
+      },
+      {
+        "t": "Learning Robotic World Models with Semantic and Visual Feedback",
+        "u": "https://arxiv.org/abs/2611.07850",
+        "r": 6,
         "g": 8,
-        "s": "FlowBench将“反事实空间想象”形式化，用全自动管线构建42.8万条覆盖仿真与真实场景的训练评测数据，为每个假设运动配对空间问题及光流真值，同步提升VLM空间问答与世界模型文本到光流预测。",
-        "c": "https://github.com/liuyifan22/FlowBench"
+        "s": "提出RoboImagine：对候选未来做多样搜索，用冻结多模态评估器的语义偏好加像素与感知级视觉反馈，以组相对优势后训练自回归机器人世界模型，提升保真度、任务相关性与长时程预测。",
+        "c": ""
+      },
+      {
+        "t": "An Integrated Open-Source Stack for Vision-Based Autonomous Navigation of Wheeled Rovers",
+        "u": "https://arxiv.org/abs/2611.08100",
+        "r": 6,
+        "g": 6,
+        "s": "开源ROS 2轮式 rover 视觉自主导航软件栈，整合视觉检测、SLAM与状态估计、规划及行为树管理，完成箭头引导的锥桶到达与自主返回任务。",
+        "c": ""
+      },
+      {
+        "t": "MessyNav: Zero-Shot Navigation via Manipulation in Messy Environments",
+        "u": "https://arxiv.org/abs/2611.07417",
+        "r": 8,
+        "g": 7,
+        "s": "MessyNav提出零样本交互式导航框架：在路径被杂物阻挡的杂乱环境中，先用VLM对障碍物做可供性与上下文推理（扫开、拿起或避让），再生成高层规划；真机移动操作平台成功率较最强基线提升27个百分点。",
+        "c": ""
+      },
+      {
+        "t": "Radio-to-Pose Information for Gauge-Drift Correction in Cooperative Localization",
+        "u": "https://arxiv.org/abs/2611.08361",
+        "r": 6,
+        "g": 6,
+        "s": "针对多机器人协同定位因里程计与机器人间测量仅含相对几何导致的整队规范漂移，提出RPI接口，把射频功率残差及其位姿导数转为高斯信息矩阵/向量，借助世界坐标系下的衰减图修正漂移。",
+        "c": ""
+      },
+      {
+        "t": "H-TRIP: Exact Many-to-Many Distance Index for Multi-Robot Exploration",
+        "u": "https://arxiv.org/abs/2611.08139",
+        "r": 7,
+        "g": 7,
+        "s": "提出H-TRIP，基于min-plus半环Kleene代数的层次增量距离索引，在单调增长的占据栅格上精确维护多对多最短距离，服务多机器人前沿探索的视点评估与巡游规划。",
+        "c": ""
+      },
+      {
+        "t": "Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in Multi-Agent Scenes",
+        "u": "https://arxiv.org/abs/2611.07730",
+        "r": 9,
+        "g": 7,
+        "s": "将世界模型置于训练期作偏好教师：用社交动态与场景语义两个任务对齐世界模型按预测后果为候选动作打分，经组相对偏好蒸馏出快速策略，部署时移除世界模型、单次前向执行，在留出场景中更安全且更像人类。",
+        "c": ""
+      },
+      {
+        "t": "Training-Independent Validation of a Learning-Based Controller for Stunt Maneuvers",
+        "u": "https://arxiv.org/abs/2611.07516",
+        "r": 7,
+        "g": 7,
+        "s": "提出与训练无关的验证思路：用Sim2Real2Sim闭环和汽车安全覆盖测试检验特技机动学习控制器G-Maneuver，实车试验表明运动学指标与仿真一致，力与侧倾指标不一致。",
+        "c": ""
+      },
+      {
+        "t": "The Last Mile to the Real World: Agent-Native Primitives as Reusable Building Blocks for Solving Real-World Tasks",
+        "u": "https://arxiv.org/abs/2611.07461",
+        "r": 7,
+        "g": 8,
+        "s": "提出“智能体原生原语”（为资源配备驻留LLM的可复用单元）与HEELO框架，按任务组合原语成图、依环境证据验证修订并持续进化原语库，在20余个基准与46个真实任务上大幅超越前沿模型自带框架。",
+        "c": ""
       }
     ]
   }
