@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T10:42:41.601373+00:00",
+  "updated_at": "2026-11-06T17:15:13.145735+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -1047,7 +1047,7 @@
       "published": "2020",
       "source": "OpenAlex",
       "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-      "citation_count": 2317,
+      "citation_count": 2324,
       "url": "https://arxiv.org/abs/2007.00258",
       "pdf_url": "https://arxiv.org/pdf/2007.00258",
       "code_url": "",
@@ -1085,7 +1085,7 @@
       "published": "2020",
       "source": "OpenAlex",
       "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-      "citation_count": 2317,
+      "citation_count": 2324,
       "url": "https://doi.org/10.1109/iros45743.2020.9341176",
       "pdf_url": "",
       "code_url": "",
@@ -1523,7 +1523,7 @@
       "published": "2022",
       "source": "OpenAlex",
       "venue": "IEEE Transactions on Robotics",
-      "citation_count": 1816,
+      "citation_count": 1821,
       "url": "https://arxiv.org/abs/2107.06829",
       "pdf_url": "https://arxiv.org/pdf/2107.06829",
       "code_url": "",
@@ -1768,7 +1768,7 @@
       "published": "2024",
       "source": "OpenAlex",
       "venue": "arXiv (Cornell University)",
-      "citation_count": 1539,
+      "citation_count": 1544,
       "url": "https://arxiv.org/abs/2407.10671",
       "pdf_url": "https://arxiv.org/pdf/2407.10671",
       "code_url": "",
@@ -2185,6 +2185,32 @@
       "added_at": "2026-10-13T17:23:02.911853+00:00"
     },
     {
+      "id": "https://openalex.org/W4283077289",
+      "arxiv_id": "",
+      "title": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
+      "authors": [
+        "Ziqi Li"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "Computers Environment and Urban Systems",
+      "citation_count": 1244,
+      "url": "https://doi.org/10.1016/j.compenvurbsys.2022.101845",
+      "pdf_url": "",
+      "code_url": "",
+      "topics": [
+        "具身导航"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost。当前自动研判未启用，建议结合英文摘要阅读。",
+      "change_zh": "摘要首句：Machine learning and artificial intelligence (ML/AI), previously considered black box approaches, are becoming more interpretable, as a result of the recent advances in eXplainable AI (XAI).",
+      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-10-25T14:05:34.320530+00:00"
+    },
+    {
       "id": "https://openalex.org/W4389520747",
       "arxiv_id": "2305.14992",
       "title": "Reasoning with Language Model is Planning with World Model",
@@ -2259,32 +2285,6 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-08T10:03:38.564482+00:00"
-    },
-    {
-      "id": "https://openalex.org/W4283077289",
-      "arxiv_id": "",
-      "title": "Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost",
-      "authors": [
-        "Ziqi Li"
-      ],
-      "published": "2022",
-      "source": "OpenAlex",
-      "venue": "Computers Environment and Urban Systems",
-      "citation_count": 1223,
-      "url": "https://doi.org/10.1016/j.compenvurbsys.2022.101845",
-      "pdf_url": "",
-      "code_url": "",
-      "topics": [
-        "具身导航"
-      ],
-      "evidence": "中",
-      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
-      "summary_zh": "该工作聚焦具身导航，主要研究问题可概括为：Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost。当前自动研判未启用，建议结合英文摘要阅读。",
-      "change_zh": "摘要首句：Machine learning and artificial intelligence (ML/AI), previously considered black box approaches, are becoming more interpretable, as a result of the recent advances in eXplainable AI (XAI).",
-      "why_it_matters": "与具身导航直接相关，可重点检查其空间表征、决策闭环和相对现有基线的增益。",
-      "keywords": [],
-      "is_classic": true,
-      "added_at": "2026-10-25T14:05:34.320530+00:00"
     },
     {
       "id": "https://openalex.org/W3133648073",
@@ -2445,7 +2445,7 @@
       "published": "2021",
       "source": "OpenAlex",
       "venue": "IEEE Robotics and Automation Letters",
-      "citation_count": 1158,
+      "citation_count": 1161,
       "url": "https://arxiv.org/abs/2010.08196",
       "pdf_url": "https://arxiv.org/pdf/2010.08196",
       "code_url": "",
@@ -19939,7 +19939,7 @@
       "excluded_at": "2026-11-06"
     }
   },
-  "last_citation_refresh": "2026-11-01T16:34:58.171234+00:00",
+  "last_citation_refresh": "2026-11-06T17:15:13.145735+00:00",
   "briefing": {
     "text": "本批工作横跨多模态基础模型与LLM智能体两条主线。首推Qwen2.5-Omni，流式接收音视频并同步生成语音，架构可直接借给机器人低延迟交互；A Generalist Agent用同一套权重打游戏、对话并操控机械臂，是通才策略范式的起点；A-Mem以卡片盒笔记与记忆演化机制，为长时程导航记忆提供可复用方案。感知、记忆与行动正被压入同一模型栈，具身智能的上游底座渐趋成型。",
     "added": 7,
