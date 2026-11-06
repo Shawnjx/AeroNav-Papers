@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T17:54:04.128850+00:00",
+  "updated_at": "2026-11-06T10:42:41.601373+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -11918,6 +11918,51 @@
       "added_at": "2026-10-29T16:38:54.486578+00:00"
     },
     {
+      "id": "2503.20215",
+      "arxiv_id": "2503.20215",
+      "title": "Qwen2.5-Omni Technical Report",
+      "authors": [
+        "Jin Hong Xu",
+        "Zihan Guo",
+        "He, Jinzheng",
+        "Hu, Hangrui",
+        "Tingchao He",
+        "Shuai Bai",
+        "Keqin Chen",
+        "Jialin Wang",
+        "Fan, Yang",
+        "Kai Dang",
+        "Bin Zhang",
+        "Xiong Wang"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 243,
+      "url": "https://arxiv.org/abs/2503.20215",
+      "pdf_url": "https://arxiv.org/pdf/2503.20215",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Qwen2.5-Omni是端到端全模态模型，流式感知文本、图像、音视频并同步生成文本与自然语音，提出TMRoPE时序位置编码与Thinker-Talker架构，性能比肩Qwen2.5-VL并在Omni-Bench等基准领先。",
+      "change_zh": "相比级联式ASR+LLM+TTS或仅输出文本的多模态模型，它以单一端到端架构实现多模态流式输入与文本语音同步流式输出：TMRoPE对齐音视频时序，Thinker-Talker解耦思考与发声，滑窗DiT降低首包延迟。",
+      "why_it_matters": "作为开源全模态基座，其流式视听理解与语音指令跟随能力可为UAV主动目标搜索、aerial VLN与ObjectNav提供低延迟感知决策与语音交互底座；其语音指令效果逼近文本输入，利于真机实时人机协同。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "instruction",
+        "instruction following"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
+    },
+    {
       "id": "https://openalex.org/W3207826836",
       "arxiv_id": "2102.03771",
       "title": "MULLS: Versatile LiDAR SLAM via Multi-metric Linear Least Square",
@@ -12165,6 +12210,43 @@
       "added_at": "2026-10-16T14:33:43.113440+00:00"
     },
     {
+      "id": "2501.09136",
+      "arxiv_id": "2501.09136",
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "authors": [
+        "Aditi Singh",
+        "Abul Ehtesham",
+        "Saket Kumar",
+        "Tala Talaei Khoei",
+        "Vasilakos, Athanasios V."
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 238,
+      "url": "https://arxiv.org/abs/2501.09136",
+      "pdf_url": "https://arxiv.org/pdf/2501.09136",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "该综述系统梳理Agentic RAG：把反思、规划、工具使用与多智能体协作等智能体模式嵌入检索增强生成流程，按智能体数量、控制结构、自治性与知识表示提出分类法，并比较各框架设计取舍与开放挑战。",
+      "change_zh": "传统RAG是固定静态流水线，Agentic RAG改为由具备反思、规划与工具使用能力的自主智能体动态管理检索、迭代精炼上下文并自适应调整流程；作为综述，其真正贡献是系统化这一设计空间并给出维度化分类与权衡分析，而非提出新方法或实证结果。",
+      "why_it_matters": "对多模态大模型与智能体技术线有直接价值：其工具使用、记忆与多智能体协同范式可为长时程具身智能体提供架构参考，如开放词汇ObjectNav的外部知识检索、无人机搜救的多机协同决策；但论文本身不涉及空间与导航任务，对UAV目标搜索/ObjectNav的价值偏间接。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "agentic",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
+    },
+    {
       "id": "https://openalex.org/W3159400523",
       "arxiv_id": "2104.14938",
       "title": "Super Odometry: IMU-centric LiDAR-Visual-Inertial Estimator for Challenging Environments",
@@ -12239,6 +12321,45 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-18T13:45:34.455065+00:00"
+    },
+    {
+      "id": "2303.11381",
+      "arxiv_id": "2303.11381",
+      "title": "MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action",
+      "authors": [
+        "Zhengyuan Yang",
+        "Linjie Li",
+        "Jianfeng Wang",
+        "Kevin Lin",
+        "Ehsan Azarnasab",
+        "Ahmed, Faisal",
+        "Zicheng Liu",
+        "Ce Liu",
+        "Michael Zeng",
+        "Lijuan Wang"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 237,
+      "url": "https://arxiv.org/abs/2303.11381",
+      "pdf_url": "https://arxiv.org/pdf/2303.11381",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "MM-REACT将ChatGPT与一组视觉专家结合，通过文本提示设计表示图像描述、文本化空间坐标与文件名，使语言模型能关联并处理多模态信息、调度工具完成推理与行动，零样本实验验证了有效性。",
+      "change_zh": "相比把视觉与语言联合微调成单一多模态模型的主流路线，该工作改用提示工程让ChatGPT像调度员般调用现成视觉专家，以文本化坐标与文件名桥接模态，免训练即获多模态能力，并与微调范式做了对比讨论。",
+      "why_it_matters": "它是LLM工具使用与多模态智能体框架的早期代表性工作，属多模态大模型与智能体线核心收录；其将空间坐标文本化供LLM消费的接口设计，对UAV目标搜索与ObjectNav的开放词汇感知模块构建有借鉴意义。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
     },
     {
       "id": "https://openalex.org/W4385482704",
@@ -12428,6 +12549,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-20T14:40:02.233414+00:00"
+    },
+    {
+      "id": "2502.12110",
+      "arxiv_id": "2502.12110",
+      "title": "A-Mem: Agentic Memory for LLM Agents",
+      "authors": [
+        "Wujiang Xu",
+        "Zujie Liang",
+        "Kai Mei",
+        "Hang Gao",
+        "Juntao Tan",
+        "Yongfeng Zhang"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 230,
+      "url": "https://arxiv.org/abs/2502.12110",
+      "pdf_url": "https://arxiv.org/pdf/2502.12110",
+      "code_url": "https://github.com/WujiangXu/A-mem",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（neural information processing systems），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "本文提出面向LLM智能体的A-Mem记忆系统，借鉴卡片盒笔记法为每条记忆生成结构化笔记，动态索引与链接相似记忆，并通过记忆演化持续更新历史记忆，在六种基座模型上优于现有基线。",
+      "change_zh": "相比向量检索或固定图结构的记忆系统，A-Mem让智能体自主组织记忆：新记忆生成结构化笔记并动态建立链接，新知识还能反向演化更新旧记忆的上下文表示，实现自适应增长的记忆网络，而非静态存取。",
+      "why_it_matters": "作为LLM智能体记忆线的代表进展，其动态链接与记忆演化范式可为长时程具身任务积累经验：UAV搜索与ObjectNav智能体可借此组织历史观测与目标线索，跨任务复用知识并持续改进，是具身导航的重要基础组件。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "agentic",
+        "llm agent"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
     },
     {
       "id": "https://openalex.org/W4382362889",
@@ -12830,6 +12989,134 @@
       "keywords": [],
       "is_classic": true,
       "added_at": "2026-10-21T08:28:28.445067+00:00"
+    },
+    {
+      "id": "2401.05459",
+      "arxiv_id": "2401.05459",
+      "title": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
+      "authors": [
+        "Yuanchun Li",
+        "Hao Wen",
+        "Weijun Wang",
+        "Xiangyu Li",
+        "Yuan, Yizhen",
+        "Guohong Liu",
+        "Jiacheng Liu",
+        "Wenxing Xu",
+        "Xiang Wang",
+        "Yi Sun",
+        "Kong, Rui",
+        "Yile Wang"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 220,
+      "url": "https://arxiv.org/abs/2401.05459",
+      "pdf_url": "https://arxiv.org/pdf/2401.05459",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文提出“个人LLM智能体”概念，即深度整合个人数据与设备的LLM智能助理，系统梳理其架构组成与设计选择，结合领域专家意见调研，并综述其在能力、效率与安全三方面的关键挑战及代表性解决方案。",
+      "change_zh": "相比聚焦单点能力改进的智能体研究，该文首次将“个人LLM智能体”作为统一研究对象，从架构、能力、效率与安全的系统视角界定问题空间，并以专家意见调研补充文献综述，属愿景与综述型梳理，未提出新技术或实验验证。",
+      "why_it_matters": "对具身导航无直接贡献，但作为LLM智能体系统性综述，其对智能体架构、任务规划、工具使用、记忆与安全效率挑战的梳理，可为UAV目标搜索与ObjectNav中构建LLM驱动的导航智能体提供架构与安全设计参考。",
+      "relevance_rating": 7,
+      "rigor_rating": 5,
+      "venue_verified": false,
+      "score": 19,
+      "keywords": [
+        "llm agent",
+        "task planning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
+    },
+    {
+      "id": "2205.06175",
+      "arxiv_id": "2205.06175",
+      "title": "A Generalist Agent",
+      "authors": [
+        "Scott Reed",
+        "Konrad Żołna",
+        "Emilio Parisotto",
+        "Sergio Gómez Colmenarejo",
+        "Novikov, Alexander",
+        "Gabriel Barth-Maron",
+        "Mai Giménez",
+        "Yury Sulsky",
+        "Kay, Jackie",
+        "Jost Tobias Springenberg",
+        "Tom Eccles",
+        "Jake Bruce"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 219,
+      "url": "https://arxiv.org/abs/2205.06175",
+      "pdf_url": "https://arxiv.org/pdf/2205.06175",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Gato是单一网络的多模态、多任务、多具身通用策略，同一套权重可玩Atari、图像描述、对话，并用真实机械臂堆叠积木，按上下文决定输出文本、关节力矩或按键等token。",
+      "change_zh": "常见路线是为单一任务或具身训练专用模型，Gato将所有输入输出统一为token序列，用同一权重覆盖游戏、对话、图像描述与真机控制，把语言模型的规模化范式引入多模态与具身控制。",
+      "why_it_matters": "作为通用智能体范式的标志性工作，直接支撑多模态大模型与智能体技术线；其以统一策略承载感知、决策与控制的思路，对UAV目标搜索与ObjectNav追求通用基础策略有启发，但摘要未展示导航任务表现。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 20,
+      "keywords": [
+        "real robot"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
+    },
+    {
+      "id": "2412.10302",
+      "arxiv_id": "2412.10302",
+      "title": "DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding",
+      "authors": [
+        "Zhiyu Wu",
+        "Chen, Xiaokang",
+        "Zizheng Pan",
+        "Xingchao Liu",
+        "Wen Liu",
+        "Damai Dai",
+        "Huazuo Gao",
+        "Yiyang Ma",
+        "Chengyue Wu",
+        "Bingxuan Wang",
+        "Zhenda Xie",
+        "Yu Wu"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 215,
+      "url": "https://arxiv.org/abs/2412.10302",
+      "pdf_url": "https://arxiv.org/pdf/2412.10302",
+      "code_url": "https://github.com/deepseek-ai/DeepSeek-VL2",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "DeepSeek-VL2是MoE视觉语言模型系列，采用动态分块视觉编码与多头潜在注意力实现高效推理，以更少激活参数在视觉问答、OCR、图表理解与视觉定位等任务上达到先进水平。",
+      "change_zh": "相比稠密VLM固定分辨率编码的常见做法，该工作以动态分块编码适配任意长宽比的高分辨率图像，并以DeepSeekMoE加MLA压缩KV缓存，用更低激活参数换取高吞吐推理，改变了开源VLM的效率与性能权衡。",
+      "why_it_matters": "作为高质量开源VLM，其视觉定位与图表理解能力可作为UAV目标搜索与ObjectNav的感知骨干，MoE低激活参数设计降低机载部署成本，为开放词汇目标识别与指令理解提供基础模型支撑。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-11-06T10:42:41.601373+00:00"
     },
     {
       "id": "2107.07243",
@@ -16151,167 +16438,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4220803499": {
-      "title": "Artificial Intelligence–Powered Spatial Analysis of Tumor-Infiltrating Lymphocytes as Complementary Biomarker for Immune Checkpoint Inhibition in Non–Small-Cell Lung Cancer",
-      "relevance": 2,
-      "rigor": 6,
-      "reason": "属医疗影像AI垂直应用（计算病理学生物标志物），与具身导航、空间智能、机器人自主等收录技术线无关，仅为病理切片层面的'spatial'术语擦边。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4363624465": {
-      "title": "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?",
-      "relevance": 2,
-      "rigor": 5,
-      "reason": "将现成LLM套用于经济学与社会科学仿真这一垂直应用，与空间、导航、机器人均无关，属明确排除范围。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3174464510": {
-      "title": "(Comet-) Atomic 2020: On Symbolic and Neural Commonsense Knowledge Graphs",
-      "relevance": 5,
-      "rigor": 8,
-      "reason": "属纯NLP常识知识图谱资源与评测工作，不涉及空间、导航或机器人，也非大模型/智能体能力本身的显著进展，仅与LLM常识知识话题边缘相关。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4410129808": {
-      "title": "RETRACTED ARTICLE: The effect of ChatGPT on students’ learning performance, learning perception, and higher-order thinking: insights from a meta-analysis",
-      "relevance": 2,
-      "rigor": 1,
-      "reason": "该文已被撤稿且属于ChatGPT在教育垂直领域的应用元分析，与空间、导航、机器人及具身智能均无关，属明确范围外工作。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4287848462": {
-      "title": "Intelligent robots for fruit harvesting: recent developments and future challenges",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "该综述以果园采摘机器人的机械臂操作、果实脱离与视觉感知为主，属农业机器人操控领域，不含导航决策成分，超出收录范围。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4224858457": {
-      "title": "Enhancing Mental Health, Well-Being and Active Lifestyles of University Students by Means of Physical Activity and Exercise Research Programs",
-      "relevance": 0,
-      "rigor": 4,
-      "reason": "该文属于运动干预与心理健康领域的叙事性研究项目介绍，与具身导航、空间智能、机器人自主等所有收录技术线完全无关，仅属术语层面的偶然擦边都谈不上。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3217016897": {
-      "title": "A survey on deep learning for human mobility",
-      "relevance": 2,
-      "rigor": 3,
-      "reason": "该综述面向城市人群移动的数据挖掘任务（下一位置预测、人群流量预测、轨迹/流量生成），基于手机记录与GPS等数据，不涉及具身智能体导航、机器人自主或UAV/ObjectNav问题，属研究范围外。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W3157619275": {
-      "title": "Behavioral and Neural Signatures of Visual Imagery Vividness Extremes: Aphantasia versus Hyperphantasia",
-      "relevance": 1,
-      "rigor": 7,
-      "reason": "纯人类认知神经科学研究（心象生动度极端人群的行为学与fMRI研究），与具身导航、空间智能、世界模型、智能体等收录技术线无实质关联，仅'视觉心象'术语与想象类概念擦边。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4403925918": {
-      "title": "Empowering biomedical discovery with AI agents",
-      "relevance": 2,
-      "rigor": 2,
-      "reason": "将LLM/多智能体范式套用于生物医学发现这一垂直领域，与空间智能、导航、机器人均无关，且为纯愿景立场文章、无任何实验验证。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4393308843": {
-      "title": "Adoption and impacts of generative artificial intelligence: Theoretical underpinnings and research agenda",
-      "relevance": 1,
-      "rigor": 2,
-      "reason": "该文研究ChatGPT/生成式AI在营销领域的采纳理论与研究议程，属大模型垂直应用且与空间、导航、机器人完全无关，同时为无实验的概念性论述，超出收录范围。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4387587706": {
-      "title": "Toward Autonomous Multi-UAV Wireless Network: A Survey of Reinforcement Learning-Based Approaches",
-      "relevance": 3,
-      "rigor": 4,
-      "reason": "综述核心为多无人机无线网络的通信资源分配与组网，属纯通信/信号处理方向，与UAV目标搜索、导航、空间智能等收录技术线仅术语擦边。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4404524569": {
-      "title": "Drones in Precision Agriculture: A Comprehensive Review of Applications, Technologies, and Challenges",
-      "relevance": 3,
-      "rigor": 5,
-      "reason": "属精准农业无人机应用领域综述，聚焦作物监测、精准喷洒等农业任务，未涉及UAV主动目标搜索、aerial VLN或收录各技术线的核心问题，仅借无人机载体产生术语关联。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4285108207": {
-      "title": "Deep Learning-Based Trajectory Planning and Control for Autonomous Ground Vehicle Parking Maneuver",
-      "relevance": 5,
-      "rigor": 6,
-      "reason": "面向地面车辆自动泊车的专用轨迹规划与跟踪控制，属车辆控制垂直应用且为DNN近似加自适应控制的常规增量改进，非高影响力系统工作，未涉及导航决策、感知或空间理解。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4387956898": {
-      "title": "Using artificial intelligence to improve public health: a narrative review",
-      "relevance": 1,
-      "rigor": 3,
-      "reason": "这是AI在公共卫生领域的垂直应用叙事综述，属于医疗健康类应用，与空间智能、导航、机器人等全部收录技术线无关，且无任何实验方法与结果。",
-      "excluded_at": "2026-09-02"
-    },
-    "https://openalex.org/W4379390652": {
-      "title": "Liquid Crystal Assembly for Ultra-dissymmetric Circularly Polarized Luminescence and Beyond",
-      "relevance": 1,
-      "rigor": 3,
-      "reason": "本文是材料化学领域的圆偏振发光（CPL）展望文章，研究手性液晶组装放大分子手性，与具身导航、空间智能、机器人自主等全部收录技术线均无关联，仅因提及三维显示等词汇与范围擦边。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4390872423": {
-      "title": "VAD: Vectorized Scene Representation for Efficient Autonomous Driving",
-      "relevance": 5,
-      "rigor": 8,
-      "reason": "属自动驾驶端到端规划与驾驶场景表示工作，与具身导航各技术线（UAV搜索、VLN、ObjectNav等）及机器人自主核心能力仅轨迹规划术语擦边，不在收录范围。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W3096834012": {
-      "title": "A 6-year-long (2013–2018) high-resolution air quality reanalysis dataset in China based on the assimilation of surface observations from CNEMC",
-      "relevance": 1,
-      "rigor": 7,
-      "reason": "属大气环境科学的数据同化再分析数据集，与具身导航、无人机/机器人自主或大模型智能体等收录技术线无实质关联，仅为集合卡尔曼滤波术语擦边。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4280489560": {
-      "title": "Navigating financial toxicity in patients with cancer: A multidisciplinary management approach",
-      "relevance": 1,
-      "rigor": 2,
-      "reason": "该文为肿瘤临床经济负担（financial toxicity）管理综述，文中'navigating/financial navigation'指医疗财务导航服务而非空间导航或指令跟随，与全部收录技术线无关，属仅术语擦边的范围外论文。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W3132105662": {
-      "title": "Simultaneous Navigation and Radio Mapping for Cellular-Connected UAV With Deep Reinforcement Learning",
-      "relevance": 4,
-      "rigor": 6,
-      "reason": "核心问题是蜂窝联网无人机的通信覆盖与中断优化，导航只是改善通信指标的手段，不构成UAV目标搜索或空域VLN，且偏向被明确排除的通信方向。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4372055459": {
-      "title": "Accelerating Innovation With Generative AI: AI-Augmented Digital Prototyping and Innovation Methods",
-      "relevance": 2,
-      "rigor": 2,
-      "reason": "属于将GPT等大模型套用到创新管理等垂直领域且与空间、导航、机器人无关的应用，且全文为六个月实践经验分享，无实验设置、基线或可复现信息。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4312179373": {
-      "title": "ISPAD Clinical Practice Consensus Guidelines 2022: Glycemic targets and glucose monitoring for children, adolescents, and young people with diabetes",
-      "relevance": 1,
-      "rigor": 6,
-      "reason": "该文为儿科糖尿病血糖目标与葡萄糖监测的临床共识指南，与具身导航、空间智能、机器人自主等全部收录技术线完全无关，属范围外医疗文献。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W3175663678": {
-      "title": "Privacy-Preserved Federated Learning for Autonomous Driving",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "论文属于车联网联邦学习的隐私保护与安全机制研究（同态加密、区块链信誉、零知识证明），不含导航决策、空间推理或机器人自主成分，属收录范围外，且实验与基线描述简略。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4402192457": {
-      "title": "Graph Attention Networks: A Comprehensive Review of Methods and Applications",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "通用图注意力网络方法与应用综述，应用涉及情感分析、推荐系统、医疗等，与具身导航、空间智能和机器人自主无关，属范围外的一般图学习综述。",
-      "excluded_at": "2026-09-03"
-    },
     "https://openalex.org/W4206103951": {
       "title": "Human Activity Recognition via Hybrid Deep Learning Based Model",
       "relevance": 2,
@@ -19650,94 +19776,237 @@
       "rigor": 4,
       "reason": "属表面触觉与人机触觉交互领域的综述，仅与active、perception等术语擦边（且为人类触觉感知而非机器人感知），与具身导航、机器人自主等收录技术线无实质关联，综述本身也无实验验证。",
       "excluded_at": "2026-11-05"
+    },
+    "https://openalex.org/W4391215636": {
+      "title": "Talking about Large Language Models",
+      "relevance": 3,
+      "rigor": 2,
+      "reason": "该文是关于LLM的哲学/立场性评论文章，无新模型、新训练方法、新智能体系统或任何实验，仅术语与LLM擦边，不属于模型与智能体能力的技术进展收录范围。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4400098474": {
+      "title": "Exploring the Impact of Artificial Intelligence in Teaching and Learning of Science: A Systematic Review of Empirical Research",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该文为人工智能在科学教育中的应用类系统性综述，与具身导航、机器人自主、空间智能等全部收录技术线均无关，仅'人工智能'一词术语擦边，属范围外垂直应用。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4381987793": {
+      "title": "Supporting students’ self-regulated learning in online learning using artificial intelligence applications",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "教育技术与HCI领域的定性用户感知研究，AI仅作为在线学习支持的设想工具，与具身导航、空间智能、机器人自主等全部收录技术线无关。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4200361158": {
+      "title": "Examining Teachers’ Perspectives on School Principals’ Digital Leadership Roles and Technology Capabilities during the COVID-19 Pandemic",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "本文为教育管理领域的质性个案研究，考察教师对校长数字化领导力的认知，与具身导航、UAV/ObjectNav、空间智能等全部十一条收录技术线均无实质关联，仅“数字技术”一词表面擦边。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W3118541629": {
+      "title": "The Resource-Based View of the Firm, Human Resources, and Human Capital: Progress and Prospects",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文属战略管理与人力资源管理领域的理论综述，与具身导航、机器人自主、空间智能、大模型与智能体等全部收录技术线完全无关。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4402155831": {
+      "title": "Multimodal Large Language Models in Health Care: Applications, Challenges, and Future Outlook",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "医疗领域多模态大模型的应用综述，属于范围明确排除的垂直领域套用（医疗），与空间智能、导航、机器人自主均无关，且为无实验的观点性文章。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4391697032": {
+      "title": "State-of-the-Art and Future Research Challenges in UAV Swarms",
+      "relevance": 5,
+      "rigor": 3,
+      "reason": "该文是覆盖编队控制、通信、路径规划、安全与伦理的宽泛UAV集群综述，未聚焦UAV目标搜索、空域VLN或导航决策等核心收录线，且作为无实验的一般性综述，摘要未给出系统性调研方法学或量化对比信息。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4393316741": {
+      "title": "Artificial intelligence in neuro-oncology: advances and challenges in brain tumor diagnosis, prognosis, and precision treatment",
+      "relevance": 1,
+      "rigor": 2,
+      "reason": "属于医疗垂直领域AI应用综述（脑肿瘤诊断、预后与治疗），与具身导航、空间智能、机器人自主等收录技术线完全无关，且摘要未描述系统检索与评估方法。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4396732497": {
+      "title": "Full-colour 3D holographic augmented-reality displays with metasurface waveguides",
+      "relevance": 2,
+      "rigor": 8,
+      "reason": "该论文是超构表面波导与AI全息算法的AR显示硬件研究，属光子学/显示方向，仅借'空间计算''3D'等术语与收录范围擦边，与具身导航、UAV目标搜索、空间智能、机器人自主等技术线无实质关联。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W3200805546": {
+      "title": "High-sensitivity high-resolution X-ray imaging with soft-sintered metal halide perovskites",
+      "relevance": 1,
+      "rigor": 8,
+      "reason": "本文是X射线探测器材料与器件制备研究（钙钛矿平板探测器），与具身导航、UAV搜索、空间智能、机器人自主等十一条技术线均无实质关联，仅摘要提及AI医疗成像一词擦边。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4390919701": {
+      "title": "Chatbots and Large Language Models in Radiology: A Practical Primer for Clinical and Research Applications",
+      "relevance": 2,
+      "rigor": 2,
+      "reason": "属于LLM在放射学这一医疗垂直领域的应用综述，与空间智能、导航、机器人均无关，且为教学性综述、无实验方法与验证，属收录范围外。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4291465494": {
+      "title": "Alginate as a Promising Biopolymer in Drug Delivery and Wound Healing: A Review of the State-of-the-Art",
+      "relevance": 0,
+      "rigor": 3,
+      "reason": "该文是生物材料与药物递送领域的综述，与具身导航、机器人自主及模型/智能体研究的十一条技术线均无任何关联，属明显范围外。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4304480790": {
+      "title": "Design and Experimental Validation of Deep Reinforcement Learning-Based Fast Trajectory Planning and Control for Mobile Robot in Unknown Environment",
+      "relevance": 5,
+      "rigor": 6,
+      "reason": "属状态估计与控制线中的常规增量改进：以RNN替代DNN近似最优轨迹、人类示范学习与噪声优先经验回放均为既有技术的组合改良，未见高影响力系统或方法级突破的证据，按该线收录规则拒绝。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W3137746274": {
+      "title": "Altimetry for the future: Building on 25 years of progress",
+      "relevance": 1,
+      "rigor": 4,
+      "reason": "该文是星载雷达测高25年进展的社区综述与未来任务建议，属卫星海洋学与对地观测领域，与具身导航、UAV目标搜索、空间智能等收录技术线无关。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4286586245": {
+      "title": "Multifunctional Flexible Humidity Sensor Systems Towards Noncontact Wearable Electronics",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "该文为柔性湿度传感器/可穿戴电子器件综述，与UAV目标搜索、VLN、ObjectNav及具身智能各技术线均无实质关联，仅背景提及软体机器人等术语擦边。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W4205905582": {
+      "title": "UAV in the advent of the twenties: Where we stand and what is next",
+      "relevance": 4,
+      "rigor": 4,
+      "reason": "本文是面向遥感与摄影测量应用的UAV最佳实践综述，与收录范围内的UAV主动目标搜索、空域VLN、主动感知等核心技术线仅术语层面擦边，且为无实验、按作者自选问题组织的观点式综述。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W3168819126": {
+      "title": "Roadmap of Terahertz Imaging 2021",
+      "relevance": 1,
+      "rigor": 3,
+      "reason": "太赫兹成像硬件与技术的领域路线图综述，与具身导航、UAV搜索、空间智能、机器人自主等收录技术线均无实质关联。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W3203306871": {
+      "title": "Ca2+ sensor-mediated ROS scavenging suppresses rice immunity and is exploited by a fungal effector",
+      "relevance": 0,
+      "rigor": 6,
+      "reason": "该论文是植物免疫分子生物学研究（水稻Ca2+传感器ROD1介导ROS清除与真菌效应子AvrPiz-t），与具身导航、机器人自主及AI智能体的全部十一条技术线均无关联，纯属范围外。",
+      "excluded_at": "2026-11-06"
+    },
+    "2306.12925": {
+      "title": "AudioPaLM: A Large Language Model That Can Speak and Listen",
+      "relevance": 4,
+      "rigor": 7,
+      "reason": "纯语音-文本大模型，核心任务是语音识别与语音翻译，既无视觉、空间、导航成分，也无智能体规划与具身关联，超出多模态大模型收录线（MLLM/VLM与智能体能力）的界定，仅属语音处理领域显著成果。",
+      "excluded_at": "2026-11-06"
+    },
+    "2401.03568": {
+      "title": "Agent AI: Surveying the Horizons of Multimodal Interaction",
+      "relevance": 6,
+      "rigor": 3,
+      "reason": "属立场性/概念性综述，无实验设置、基线对比与消融，方法可信度无法按收录标准验证。",
+      "excluded_at": "2026-11-06"
+    },
+    "2310.02255": {
+      "title": "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+      "relevance": 3,
+      "rigor": 8,
+      "reason": "该工作是面向视觉数学推理的基础模型评测基准，不涉及空间智能、导航、机器人或具身任务，非具身基准与评测，属范围外仅术语擦边。",
+      "excluded_at": "2026-11-06"
+    },
+    "https://openalex.org/W7160284155": {
+      "title": "Customer Retention Forecasting in Mobile Wallet Services Using Neural Networks: A Comparative Quantitative Study",
+      "relevance": 1,
+      "rigor": 5,
+      "reason": "该论文属于移动钱包客户留存预测的商业垂直应用，将成熟回归与浅层神经网络用于问卷数据，与具身导航、空间智能、机器人自主等全部收录技术线无任何关联。",
+      "excluded_at": "2026-11-06"
+    },
+    "2309.02427": {
+      "title": "Cognitive Architectures for Language Agents",
+      "relevance": 8,
+      "rigor": 3,
+      "reason": "虽属核心收录的智能体架构工作且影响力大，但本文为纯概念框架与回顾性综述，无任何实验设置、基线对比或消融验证，按实验可信度标准不足以收录。",
+      "excluded_at": "2026-11-06"
     }
   },
   "last_citation_refresh": "2026-11-01T16:34:58.171234+00:00",
   "briefing": {
-    "text": "本批高被引经典覆盖具身导航全栈：多模态表征、SLAM建图定位、轨迹规划与视觉语言决策（一篇NO₂遥感论文疑为误收）。首推VLN↻BERT，以循环函数维护跨模态智能体状态，把V&L BERT适配到部分可观测的VLN，在R2R与REVERIE上以更简结构取得最优，是导航预训练的必读基线；Present and Future of SLAM in Extreme Environments复盘SubT六支队伍的实机架构、开放问题与开源资源，想看鲁棒性与多机协同的实机经验就读它；Convex Optimization for Trajectory Generation讲透无损凸化LCvx与序列凸规划SCvx的理论保证并附开源工具箱，可直接用于规划模块。多模态大模型正沿Shikra、MM-Vet一路渗入导航决策层，而实机落地仍倚重SLAM与规划的底座。",
-    "added": 9,
-    "at": "2026-11-05T17:54:04.128850+00:00",
+    "text": "本批工作横跨多模态基础模型与LLM智能体两条主线。首推Qwen2.5-Omni，流式接收音视频并同步生成语音，架构可直接借给机器人低延迟交互；A Generalist Agent用同一套权重打游戏、对话并操控机械臂，是通才策略范式的起点；A-Mem以卡片盒笔记与记忆演化机制，为长时程导航记忆提供可复用方案。感知、记忆与行动正被压入同一模型栈，具身智能的上游底座渐趋成型。",
+    "added": 7,
+    "at": "2026-11-06T10:42:41.601373+00:00",
     "new": [
       {
-        "t": "Ground-Level NO 2 Surveillance from Space Across China for High Resolution Using Interpretable Spatiotemporally Weighted Artificial Intelligence",
-        "u": "https://doi.org/10.1021/acs.est.2c03834",
-        "r": null,
-        "g": null,
-        "s": "该工作聚焦具身导航，主要研究问题可概括为：Ground-Level NO 2 Surveillance from Space Across China for High Resolution Using Interpretable Spatiotemporally Weighted Artificial Intelligence。当前自动研判未启用，建议结合英文摘要阅读。",
-        "c": "",
-        "cit": 380
-      },
-      {
-        "t": "VLN↻BERT: A Recurrent Vision-and-Language BERT for Navigation",
-        "u": "https://arxiv.org/abs/2011.13922",
-        "r": 10,
-        "g": 8,
-        "s": "提出时间感知的循环BERT，用循环函数维护跨模态智能体状态，将V&L BERT架构适配到部分可观测的VLN决策过程，在R2R与REVERIE上以更简结构取得最优结果。",
-        "c": "",
-        "cit": 313
-      },
-      {
-        "t": "Convex Optimization for Trajectory Generation: A Tutorial on Generating Dynamically Feasible Trajectories Reliably and Efficiently",
-        "u": "https://arxiv.org/abs/2106.09125",
-        "r": 7,
-        "g": 8,
-        "s": "本文是凸优化轨迹生成的系统教程，讲解无损凸化LCvx与序列凸规划SCvx、GuSTO三种算法的理论保证与工程实现，配套开源SCP工具箱，支撑火箭着陆、航天器交会与无人机运动规划等应用。",
-        "c": "",
-        "cit": 308
-      },
-      {
-        "t": "MM-Vet: Evaluating Large Multimodal Models for Integrated Capabilities",
-        "u": "https://arxiv.org/abs/2308.02490",
+        "t": "Qwen2.5-Omni Technical Report",
+        "u": "https://arxiv.org/abs/2503.20215",
         "r": 8,
         "g": 8,
-        "s": "MM-Vet是一个评估大型多模态模型的基准：将复杂多模态任务结构化为六种核心视觉语言能力及其16种组合，并提出基于LLM的评估器统一评分开放性回答，据此评测LMM并给出能力洞察。",
+        "s": "Qwen2.5-Omni是端到端全模态模型，流式感知文本、图像、音视频并同步生成文本与自然语音，提出TMRoPE时序位置编码与Thinker-Talker架构，性能比肩Qwen2.5-VL并在Omni-Bench等基准领先。",
         "c": "",
-        "cit": 290
+        "cit": 243
       },
       {
-        "t": "Shikra: Unleashing Multimodal LLM's Referential Dialogue Magic",
-        "u": "https://arxiv.org/abs/2306.15195",
+        "t": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+        "u": "https://arxiv.org/abs/2501.09136",
+        "r": 7,
+        "g": 5,
+        "s": "该综述系统梳理Agentic RAG：把反思、规划、工具使用与多智能体协作等智能体模式嵌入检索增强生成流程，按智能体数量、控制结构、自治性与知识表示提出分类法，并比较各框架设计取舍与开放挑战。",
+        "c": "",
+        "cit": 238
+      },
+      {
+        "t": "MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action",
+        "u": "https://arxiv.org/abs/2303.11381",
+        "r": 7,
+        "g": 6,
+        "s": "MM-REACT将ChatGPT与一组视觉专家结合，通过文本提示设计表示图像描述、文本化空间坐标与文件名，使语言模型能关联并处理多模态信息、调度工具完成推理与行动，零样本实验验证了有效性。",
+        "c": "",
+        "cit": 237
+      },
+      {
+        "t": "A-Mem: Agentic Memory for LLM Agents",
+        "u": "https://arxiv.org/abs/2502.12110",
         "r": 7,
         "g": 7,
-        "s": "Shikra是一个多模态大语言模型，直接以自然语言形式输入输出空间坐标，无需额外词表、位置编码器或检测插件，支持指涉对话，统一处理REC、PointQA、图像描述与VQA等任务，并开源代码、模型与数据集。",
-        "c": "https://github.com/shikras/shikra",
-        "cit": 290
+        "s": "本文提出面向LLM智能体的A-Mem记忆系统，借鉴卡片盒笔记法为每条记忆生成结构化笔记，动态索引与链接相似记忆，并通过记忆演化持续更新历史记忆，在六种基座模型上优于现有基线。",
+        "c": "https://github.com/WujiangXu/A-mem",
+        "cit": 230
       },
       {
-        "t": "Present and Future of SLAM in Extreme Environments: The DARPA SubT Challenge",
-        "u": "https://arxiv.org/abs/2208.01787",
-        "r": 9,
-        "g": 8,
-        "s": "综述DARPA SubT挑战中的极端地下环境SLAM进展，分析六支参赛队伍的算法与架构，聚焦激光SLAM、异构多机器人（含无人机与地面机器人）实机运行，并总结成熟度、开放问题与开源资源。",
+        "t": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
+        "u": "https://arxiv.org/abs/2401.05459",
+        "r": 7,
+        "g": 5,
+        "s": "本文提出“个人LLM智能体”概念，即深度整合个人数据与设备的LLM智能助理，系统梳理其架构组成与设计选择，结合领域专家意见调研，并综述其在能力、效率与安全三方面的关键挑战及代表性解决方案。",
         "c": "",
-        "cit": 271
+        "cit": 220
       },
       {
-        "t": "MULLS: Versatile LiDAR SLAM via Multi-metric Linear Least Square",
-        "u": "https://arxiv.org/abs/2102.03771",
+        "t": "A Generalist Agent",
+        "u": "https://arxiv.org/abs/2205.06175",
+        "r": 7,
+        "g": 6,
+        "s": "Gato是单一网络的多模态、多任务、多具身通用策略，同一套权重可玩Atari、图像描述、对话，并用真实机械臂堆叠积木，按上下文决定输出文本、关节力矩或按键等token。",
+        "c": "",
+        "cit": 219
+      },
+      {
+        "t": "DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding",
+        "u": "https://arxiv.org/abs/2412.10302",
         "r": 8,
-        "g": 7,
-        "s": "MULLS是高效低漂移的通用3D激光SLAM：前端用双阈值地面滤波与PCA提取地面、立面、柱、梁等多类特征点，以多度量线性最小二乘ICP配准当前帧与局部子图，后端分层位姿图优化，十万帧级多数据集验证并居KITTI纯激光前列。",
-        "c": "",
-        "cit": 262
-      },
-      {
-        "t": "The Newer College Dataset: Handheld LiDAR, Inertial and Vision with Ground Truth",
-        "u": "https://arxiv.org/abs/2003.05691",
-        "r": 8,
         "g": 8,
-        "s": "发布牛津新学院手持多传感器数据集：约2.2公里步行采集双目惯性相机与多线LiDAR/IMU数据及高动态补充序列，提供毫米级三维真值地图和约3厘米精度6自由度位姿真值，用于激光/视觉SLAM、定位与重建的系统性评测。",
-        "c": "",
-        "cit": 248
-      },
-      {
-        "t": "Self-Supervised MultiModal Versatile Networks",
-        "u": "https://arxiv.org/abs/2006.16228",
-        "r": 6,
-        "g": 8,
-        "s": "提出多模态多功能网络，利用视频中天然并存的视觉、音频、语言流做自监督预训练，并以“压缩”设计统一静态图像与视频输入，所得表征可迁移到视频、图文、图像与音频任务，在UCF101等多个基准上刷新当时自监督最优。",
-        "c": "",
-        "cit": 247
+        "s": "DeepSeek-VL2是MoE视觉语言模型系列，采用动态分块视觉编码与多头潜在注意力实现高效推理，以更少激活参数在视觉问答、OCR、图表理解与视觉定位等任务上达到先进水平。",
+        "c": "https://github.com/deepseek-ai/DeepSeek-VL2",
+        "cit": 215
       }
     ]
   }
