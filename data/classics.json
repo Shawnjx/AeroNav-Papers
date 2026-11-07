@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T17:15:13.145735+00:00",
+  "updated_at": "2026-11-07T16:04:43.246831+00:00",
   "catalog": [
     {
       "id": "uav-target-search",
@@ -2320,6 +2320,44 @@
       "added_at": "2026-09-02T04:03:14Z"
     },
     {
+      "id": "2504.19413",
+      "arxiv_id": "2504.19413",
+      "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "authors": [
+        "Prateek Chhikara",
+        "Dev Khant",
+        "Saket Aryan",
+        "Taranjeet Singh",
+        "Yadav, Deshraj"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 1182,
+      "url": "https://arxiv.org/abs/2504.19413",
+      "pdf_url": "https://arxiv.org/pdf/2504.19413",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Mem0提出面向LLM智能体的可扩展长期记忆架构，动态抽取、整合与检索对话中的关键信息，并引入图结构记忆变体；在LOCOMO基准上超越六类基线，同时大幅降低延迟与token成本。",
+      "change_zh": "常见做法是全量上下文或朴素RAG拼接历史对话，Mem0改为动态抽取-整合-检索的记忆管理流程，用图结构刻画对话元素间关系，并以低延迟、省token的生产级权衡取代单纯追求精度。",
+      "why_it_matters": "为LLM智能体提供可复用的长期记忆底座：UAV目标搜索与ObjectNav智能体可借其持久化记忆已探索区域、目标线索与历史经验，支撑多会话任务的一致性与经验积累，是具身智能体记忆模块的候选基础设施。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 23,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "2009.13303",
       "arxiv_id": "2009.13303",
       "title": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
@@ -2548,6 +2586,49 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2506.09985",
+      "arxiv_id": "2506.09985",
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+      "authors": [
+        "Assran, Mido",
+        "Adrien Bardes",
+        "Fan, David",
+        "Quentin Garrido",
+        "Russell Howes",
+        "Mojtaba",
+        "Komeili",
+        "Matthew J. Muckley",
+        "Ammar Rizvi",
+        "Roberts, Claire",
+        "Koustuv Sinha",
+        "Artem Zholus"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 1072,
+      "url": "https://arxiv.org/abs/2506.09985",
+      "pdf_url": "https://arxiv.org/pdf/2506.09985",
+      "code_url": "",
+      "topics": [
+        "世界模型"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "V-JEPA 2以百万小时级互联网视频自监督预训练动作无关联合嵌入预测架构，再结合62小时无标注机器人视频后训练动作条件世界模型V-JEPA 2-AC，零样本在Franka机械臂上实现图像目标抓放规划，视频理解与问答亦达SOTA。",
+      "change_zh": "不同于依赖动作标注或大量真机示范的主流世界模型/VLA路线，该工作先以无动作互联网视频做大规模自监督预训练，仅用62小时无标注机器人轨迹后训练动作条件模型，即可零奖励、零环境数据实现跨实验室零样本规划。",
+      "why_it_matters": "海量观察加少量交互的配方为导航规划世界模型提供可扩展路径：其图像目标条件规划与ObjectNav目标导航任务同构，可迁移为UAV主动目标搜索与目标导航的零样本规划器，缓解真机导航数据稀缺问题。",
+      "relevance_rating": 8,
+      "rigor_rating": 9,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "world model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "2209.06794",
@@ -3239,6 +3320,47 @@
       "added_at": "2026-10-20T14:40:02.233414+00:00"
     },
     {
+      "id": "2307.16125",
+      "arxiv_id": "2307.16125",
+      "title": "SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension",
+      "authors": [
+        "Bohao Li",
+        "Wang, Rui",
+        "Guangzhi Wang",
+        "Yuying Ge",
+        "Yixiao Ge",
+        "Ying Shan"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 882,
+      "url": "https://arxiv.org/abs/2307.16125",
+      "pdf_url": "https://arxiv.org/pdf/2307.16125",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出SEED-Bench，一个含1.9万道人工标注多选题的多模态大模型评测基准，覆盖图像与视频共12个维度（含空间与时序理解），并评测18个模型以揭示现有MLLM的能力局限。",
+      "change_zh": "相比依赖开放式生成、需人工或GPT打分的主观评测方式，该基准改用人工标注正确选项的多选题，配合自动过滤加人工校验的出题管线，实现客观高效的自动评测，且规模约为已有基准的6倍，统一覆盖图像与视频模态。",
+      "why_it_matters": "对ObjectNav与UAV目标搜索常用的MLLM感知与指令理解骨干，该基准系统量化其空间与时序理解短板，可为具身导航与无人机指令跟随的模型选型和改进提供依据；其客观化评测范式也直接充实多模态大模型与系统性评测技术线。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "leaderboard",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "1905.02693",
       "arxiv_id": "1905.02693",
       "title": "3D Packing for Self-Supervised Monocular Depth Estimation",
@@ -3277,6 +3399,50 @@
       "added_at": "2026-10-12T10:38:37.630471+00:00"
     },
     {
+      "id": "2407.16741",
+      "arxiv_id": "2407.16741",
+      "title": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "authors": [
+        "Xingyao Wang",
+        "Boxuan Li",
+        "Yufan Song",
+        "Frank F. Xu",
+        "Xiangru Tang",
+        "Mingchen Zhuge",
+        "Jiayi Pan",
+        "Yueqi Song",
+        "Bowen Li",
+        "Jaskirat Singh",
+        "Tran, Hoang H.",
+        "Fuqiang Li"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 837,
+      "url": "https://arxiv.org/abs/2407.16741",
+      "pdf_url": "https://arxiv.org/pdf/2407.16741",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "OpenHands（原OpenDevin）是开源通用AI智能体平台，让智能体像开发者一样写代码、用命令行、浏览网页，提供沙箱执行、多智能体协作与内置基准，并在15项任务上评测。",
+      "change_zh": "相比各自为政的单任务智能体原型，它把通用智能体开发变成可复用的开源基础设施：统一沙箱环境接口、可扩展的智能体抽象、多智能体协同与集成化评测，使智能体迭代从一次性演示走向社区共建。",
+      "why_it_matters": "属智能体系统与框架方向的高影响力开源工作：其工具使用、安全沙箱执行、多智能体协作与统一评测设施，可为UAV主动目标搜索与ObjectNav中LLM驱动的规划/执行智能体提供可复用底座，但本身不直接解决导航问题。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "2207.04429",
       "arxiv_id": "2207.04429",
       "title": "LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action",
@@ -3312,6 +3478,49 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-18T13:45:34.455065+00:00"
+    },
+    {
+      "id": "2406.07476",
+      "arxiv_id": "2406.07476",
+      "title": "VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Video-LLMs",
+      "authors": [
+        "Zesen Cheng",
+        "Sicong Leng",
+        "Hang Zhang",
+        "Yifei Xin",
+        "Li, Xin",
+        "Guanzheng Chen",
+        "Yongxin Zhu",
+        "Wenqi Zhang",
+        "Ziyang Luo",
+        "Deli Zhao",
+        "Lidong Bing"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 832,
+      "url": "https://arxiv.org/abs/2406.07476",
+      "pdf_url": "https://arxiv.org/pdf/2406.07476",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "VideoLLaMA 2提出面向视频与音频的开源大模型系列，定制时空卷积连接器以捕捉视频时空动态，并以联合训练引入音频分支，在视频问答、字幕生成及音视频问答等基准上取得与开源模型相当甚至接近闭源模型的结果。",
+      "change_zh": "不同于直接沿用通用连接器的常见做法，该工作为视频LLM定制时空卷积连接器以显式建模时空动态，并通过联合训练把音频分支融入统一模型，实现视频-音频-文本多模态理解；摘要层面未见更细的架构细节。",
+      "why_it_matters": "作为开源视频-音频多模态大模型，可为UAV目标搜索与ObjectNav等具身任务提供更强的视频时空感知与音频指令理解底座，例如处理航拍视频流和语音指令；但摘要未涉及任何导航或机器人实验，其具身价值需后续验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "2302.14045",
@@ -3550,6 +3759,82 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2504.13837",
+      "arxiv_id": "2504.13837",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+      "authors": [
+        "Zhiqi Chen",
+        "Rui Lu",
+        "Andrew Zhao",
+        "Zhaokai Wang",
+        "Yang Yue",
+        "Shiji Song",
+        "Gao Huang"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 802,
+      "url": "https://arxiv.org/abs/2504.13837",
+      "pdf_url": "https://arxiv.org/pdf/2504.13837",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（neural information processing systems），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "该文系统评测RLVR训练的LLM在数学、代码与视觉推理上的pass@k表现，发现大k时基础模型反超RLVR模型，表明RLVR未激发超越基础模型的全新推理能力，而蒸馏可引入新模式。",
+      "change_zh": "与「RLVR持续自我提升并涌现新推理」的主流叙事不同，该文以大k pass@k与覆盖率、困惑度分析为探针，把结论反转为：RLVR主要放大基础模型已有的推理模式，六种主流算法差距有限且远未榨干基础模型潜力，蒸馏才真正扩展能力。",
+      "why_it_matters": "对MLLM与智能体技术线是核心警示：社区需重估RLVR的真实增益来源；对UAV主动目标搜索与ObjectNav中用可验证奖励做RL微调的路线，提示性能上限可能受基础策略覆盖范围约束，蒸馏与多轮智能体-环境交互范式或是更优路径。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": true,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
+      "id": "2010.03768",
+      "arxiv_id": "2010.03768",
+      "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+      "authors": [
+        "Mohit Shridhar",
+        "Xingdi Yuan",
+        "Marc-Alexandre Côté",
+        "Yonatan Bisk",
+        "Adam Trischler",
+        "Matthew Hausknecht"
+      ],
+      "published": "2020",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 793,
+      "url": "https://arxiv.org/abs/2010.03768",
+      "pdf_url": "https://arxiv.org/pdf/2010.03768",
+      "code_url": "",
+      "topics": [
+        "具身基准与评测"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "ALFWorld对齐TextWorld文本环境与ALFRED视觉具身环境，让智能体先在文本学抽象策略再迁移到视觉执行，并以模块化BUTLER智能体验证该方式泛化更优。",
+      "change_zh": "常见路线直接在视觉仿真器中端到端训练具身智能体；本文构建文本与具身环境一一对应的对齐基础设施，使文本推理所学抽象策略可直接映射为视觉动作，并将任务分解为语言理解、规划、导航与场景理解模块。",
+      "why_it_matters": "它为具身基准与评测线提供了文本-视觉对齐的交互式评测环境，其模块化分解便于研究语言理解、规划与导航各环节；先文本学策略再视觉迁移的思路可启发ObjectNav与VLN的低成本训练。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "2204.00598",
@@ -3915,6 +4200,49 @@
       "added_at": "2026-09-05T18:45:24.442900+00:00"
     },
     {
+      "id": "2607.02770",
+      "arxiv_id": "2607.02770",
+      "title": "Gemma 4 Technical Report",
+      "authors": [
+        "Gemma Team",
+        "Sherif El Abd",
+        "Vaibhav Aggarwal",
+        "Robin Algayres",
+        "Alek Andreev",
+        "Olivier Bachem",
+        "Ian Ballantyne",
+        "Cormac Brick",
+        "Victor Cărbune",
+        "Michelle Casbon",
+        "Mayank Chaturvedi",
+        "Aditya Chawla"
+      ],
+      "published": "2026",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 743,
+      "url": "https://arxiv.org/abs/2607.02770",
+      "pdf_url": "https://arxiv.org/pdf/2607.02770",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "谷歌推出Gemma 4开源原生多模态模型家族，涵盖2.3B–31B的稠密与MoE架构，升级视觉与音频编码器，为12B模型提出无编码器统一架构，并集成思考模式，在STEM、多模态与长上下文基准上大幅跃升。",
+      "change_zh": "相比常见的'专用编码器+LLM'级联路线，Gemma 4为12B模型提出统一无编码器架构，直接消费原始音频与图像块；同时引入思考模式生成推理轨迹，并借MoE与关键设计取舍提升推理速度、内存与长上下文效率。",
+      "why_it_matters": "开源多模态大模型是UAV目标搜索、aerial VLN与ObjectNav智能体的关键骨干。Gemma 4的思考模式、长上下文与高效率推理为指令跟随、空间推理及低成本机载/边缘部署提供更强且可复用的模型底座。",
+      "relevance_rating": 9,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 26,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "https://openalex.org/W4403203873",
       "arxiv_id": "",
       "title": "A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges",
@@ -4109,6 +4437,49 @@
       "added_at": "2026-10-14T14:52:36.319806+00:00"
     },
     {
+      "id": "2503.06749",
+      "arxiv_id": "2503.06749",
+      "title": "Vision-R1: Incentivizing Reasoning Capability in Multimodal Large Language Models",
+      "authors": [
+        "Wenxuan Huang",
+        "Bohan Jia",
+        "Zijie Zhai",
+        "Shaosheng Cao",
+        "Zheyu Ye",
+        "Fei Zhao",
+        "Zhe Xu",
+        "Tang, Xu",
+        "Yao Hu",
+        "Shaohui Lin"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 711,
+      "url": "https://arxiv.org/abs/2503.06749",
+      "pdf_url": "https://arxiv.org/pdf/2503.06749",
+      "code_url": "https://github.com/Osilly/Vision-R1",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Vision-R1用200K自动构建的多模态思维链数据冷启动，配合PTST渐进抑制与带硬格式奖励的GRPO强化学习，逐步获得复杂多模态推理能力，MathVista达73.5%。",
+      "change_zh": "常见路线是直接RL或大规模SFT；本文改为先用现成模型桥接模态自动造200K无人工CoT冷启动数据，再以PTST抑制冷启动后的过度思考，用仅10K数据加硬格式结果奖励的GRPO渐进精炼推理。",
+      "why_it_matters": "推理增强MLLM可作为空域VLN指令理解、UAV目标搜索与ObjectNav目标推理的候选基座；其无标注CoT冷启动加GRPO精炼的训练配方对导航智能体稀疏奖励训练亦有借鉴意义（验证仅限数学基准）。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "1910.02490",
       "arxiv_id": "1910.02490",
       "title": "Kimera: an Open-Source Library for Real-Time Metric-Semantic Localization and Mapping",
@@ -4293,6 +4664,50 @@
       "added_at": "2026-10-13T17:23:02.911853+00:00"
     },
     {
+      "id": "2508.06471",
+      "arxiv_id": "2508.06471",
+      "title": "GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models",
+      "authors": [
+        "Team",
+        "Aohan Zeng",
+        "Lv, Xin",
+        "Qinkai Zheng",
+        "Zhenyu Hou",
+        "Chen, Bin",
+        "Chengxing Xie",
+        "Cunxiang Wang",
+        "Yin, Da",
+        "Zeng, Hao",
+        "Jiajie Zhang",
+        "Kedong Wang"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 669,
+      "url": "https://arxiv.org/abs/2508.06471",
+      "pdf_url": "https://arxiv.org/pdf/2508.06471",
+      "code_url": "https://github.com/zai-org/GLM-4.5",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "智谱开源MoE大模型GLM-4.5，总参355B、激活32B，支持思考/直答混合推理，经多阶段训练与RL后训练，在智能体、推理与编码基准名列前茅，并开源106B轻量版。",
+      "change_zh": "相比单纯扩参的旗舰模型路线，GLM-4.5以更少激活参数（32B）即跻身榜单前三、智能体评测第二，靠混合推理与专家模型迭代+RL的后训练组合提效，并全量开源权重；摘要未含消融，各组件贡献暂难从摘要核实。",
+      "why_it_matters": "对多模态大模型与智能体线属核心收录：开源强agentic底座直接惠及LLM规划智能体与具身高层决策；UAV目标搜索与ObjectNav可借其推理和工具使用做任务规划，论文未涉空间与导航验证。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "agentic",
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "https://openalex.org/W3100923070",
       "arxiv_id": "2010.07954",
       "title": "Room-Across-Room: Multilingual Vision-and-Language Navigation with Dense Spatiotemporal Grounding",
@@ -4328,6 +4743,130 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-16T08:04:22.322966+00:00"
+    },
+    {
+      "id": "2503.01743",
+      "arxiv_id": "2503.01743",
+      "title": "Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs",
+      "authors": [
+        "Microsoft",
+        ":",
+        "Abdelrahman Abouelenin",
+        "Atabak Ashfaq",
+        "Adam Atkinson",
+        "Hany Hassan Awadalla",
+        "Nguyễn Bách",
+        "Jianmin Bao",
+        "Alon Benhaim",
+        "Martin Cai",
+        "Vishrav Chaudhary",
+        "Congcong Chen"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 666,
+      "url": "https://arxiv.org/abs/2503.01743",
+      "pdf_url": "https://arxiv.org/pdf/2503.01743",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "微软发布Phi-4-Mini与Phi-4-Multimodal：3.8B语言模型靠高质量合成数据在数学与编程上媲美两倍规模模型，多模态版经LoRA适配器与模态路由无干扰融合文本、视觉和语音。",
+      "change_zh": "常见路线是为各模态训大模型或全参数融合；本文在紧凑3.8B模型上以模态专属LoRA加路由器做模态扩展，各模态互不干扰且可组合推理，并以精调的数学/编程合成数据配方让小模型获得强推理能力。",
+      "why_it_matters": "作为开源高性能紧凑多模态基座，可为VLN/ObjectNav指令理解与UAV目标搜索的语义感知提供可端侧部署的模型底座，其免干扰的LoRA模态扩展范式也利于导航智能体低成本增配视觉、语音等感知模态。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "leaderboard"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
+      "id": "2408.12528",
+      "arxiv_id": "2408.12528",
+      "title": "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+      "authors": [
+        "Jinheng Xie",
+        "Weijia Mao",
+        "Zechen Bai",
+        "David Junhao Zhang",
+        "Weihao Wang",
+        "Kevin Qinghong Lin",
+        "Gu, Yuchao",
+        "Zhijie Chen",
+        "Zhenheng Yang",
+        "Mike Zheng Shou"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 641,
+      "url": "https://arxiv.org/abs/2408.12528",
+      "pdf_url": "https://arxiv.org/pdf/2408.12528",
+      "code_url": "https://github.com/showlab/Show-o",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Show-o用单一Transformer统一多模态理解与生成，结合自回归与离散扩散建模，支持视觉问答、文生图、修补与混合模态生成，多基准上媲美或超越同规模专门模型。",
+      "change_zh": "常见路线要么为理解与生成各训专门模型，要么全自回归统一建模；Show-o在单一Transformer内混合自回归与离散扩散，按输入输出模态自适应切换建模方式，实现理解与生成的统一而非简单拼接。",
+      "why_it_matters": "对多模态大模型技术线有直接价值：理解生成一体的基座为未来具身智能体提供统一感知与预测骨干，其离散扩散生成能力或可用于世界模型构建；但论文本身未涉及UAV目标搜索或ObjectNav，迁移价值需后续工作验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
+      "id": "2504.08066",
+      "arxiv_id": "2504.08066",
+      "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+      "authors": [
+        "Yutaro Yamada",
+        "Robert Tjarko Lange",
+        "Cong Lu",
+        "Shengran Hu",
+        "Chris J. J. Lu",
+        "Jakob Foerster",
+        "Jeff Clune",
+        "David Ha"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 629,
+      "url": "https://arxiv.org/abs/2504.08066",
+      "pdf_url": "https://arxiv.org/pdf/2504.08066",
+      "code_url": "https://github.com/SakanaAI/AI-Scientist-v2",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "端到端科研智能体系统，以实验管理智能体统筹的渐进式智能体树搜索驱动假设提出、实验执行、数据分析与论文撰写，首次产出通过ICLR研讨会同行评审的全AI生成论文。",
+      "change_zh": "相比v1依赖人工代码模板的固定流水线，v2以专用实验管理智能体统筹渐进式树搜索，开放式探索与迭代实验，摆脱模板并跨ML领域泛化，另引入VLM评审反馈闭环改进图表质量。",
+      "why_it_matters": "其渐进式智能体树搜索、多智能体编排与VLM反馈自迭代属通用智能体能力进展，可为UAV主动目标搜索与ObjectNav中LLM规划器的任务分解、策略探索及具身评测自动化智能体提供方法借鉴，属间接支撑。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "agentic",
+        "vlm"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "https://openalex.org/W4402727018",
@@ -4606,6 +5145,39 @@
       "added_at": "2026-09-02T02:58:22Z"
     },
     {
+      "id": "2205.09991",
+      "arxiv_id": "2205.09991",
+      "title": "Planning with Diffusion for Flexible Behavior Synthesis",
+      "authors": [
+        "Janner, Michael",
+        "Yilun Du",
+        "Joshua B. Tenenbaum",
+        "Sergey Levine"
+      ],
+      "published": "2022",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 606,
+      "url": "https://arxiv.org/abs/2205.09991",
+      "pdf_url": "https://arxiv.org/pdf/2205.09991",
+      "code_url": "",
+      "topics": [
+        "规划智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "Diffuser提出将轨迹优化折叠进建模问题：用扩散概率模型迭代去噪直接生成整段轨迹，使规划与采样几乎等价，并以分类器引导、图像修复式补全作为规划策略，实现长时域灵活控制。",
+      "change_zh": "常规路线是学动力学模型再交给经典轨迹优化器求解；本文把整套轨迹优化折叠进生成建模，使采样即规划：扩散去噪生成整段轨迹，分类器引导对应奖励最大化，图像修复式补全对应目标与约束条件，从而获得测试时的组合灵活性。",
+      "why_it_matters": "生成式规划的奠基工作，启发扩散策略与大量扩散轨迹规划器；其\"规划即采样\"与测试时灵活施加约束的思路，对UAV目标搜索与ObjectNav的长时域策略合成有直接借鉴价值，但原实验限于控制基准，导航价值属间接迁移。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "2404.15506",
       "arxiv_id": "2404.15506",
       "title": "Metric3D v2: A Versatile Monocular Geometric Foundation Model for Zero-Shot Metric Depth and Surface Normal Estimation",
@@ -4685,6 +5257,49 @@
       "added_at": "2026-09-05T04:46:08Z"
     },
     {
+      "id": "2501.13106",
+      "arxiv_id": "2501.13106",
+      "title": "VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding",
+      "authors": [
+        "Boqiang Zhang",
+        "Li, Kehan",
+        "Zesen Cheng",
+        "Zhiqiang Hu",
+        "Yuqian Yuan",
+        "Guanzheng Chen",
+        "Sicong Leng",
+        "Yuming Jiang",
+        "Hang Zhang",
+        "Xin Li",
+        "Jin, Peng",
+        "Wenqi Zhang"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 587,
+      "url": "https://arxiv.org/abs/2501.13106",
+      "pdf_url": "https://arxiv.org/pdf/2501.13106",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文提出以视觉为中心的多模态基础模型VideoLLaMA3，采用四阶段训练范式与按图像尺寸可变、按相似度压缩的视觉token设计，全面提升图像与视频理解性能。",
+      "change_zh": "相比依赖海量视频文本数据的常见路线，该工作以大规模高质量图文数据为视频理解奠基；框架上抛弃固定数量视觉token，按分辨率动态生成token并以相似度去冗余，使视频表示更精细紧凑。",
+      "why_it_matters": "更强的通用图像视频理解模型可为具身导航提供感知与语义底座：其开放词汇理解可支撑ObjectNav目标识别与定位，视频时序能力可辅助无人机搜索中的动态场景理解，属上游基础能力进展。",
+      "relevance_rating": 7,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "2105.11320",
       "arxiv_id": "2105.11320",
       "title": "SuMa++: Efficient LiDAR-based Semantic SLAM",
@@ -4722,6 +5337,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-13T17:23:02.911853+00:00"
+    },
+    {
+      "id": "2501.17161",
+      "arxiv_id": "2501.17161",
+      "title": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+      "authors": [
+        "Chu, Tianzhe",
+        "Yuexiang Zhai",
+        "Jihan Yang",
+        "Shengbang Tong",
+        "Saining Xie",
+        "Dale Schuurmans",
+        "Quoc Viet Le",
+        "Sergey Levine",
+        "Yi Ma"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 584,
+      "url": "https://arxiv.org/abs/2501.17161",
+      "pdf_url": "https://arxiv.org/pdf/2501.17161",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "本文系统对比SFT与RL两种基础模型后训练范式，在自建算术卡牌基准GeneralPoints与真实世界导航环境V-IRL上发现：基于结果的奖励训练的RL可跨文本与视觉规则变体泛化，而SFT倾向记忆训练数据、域外表现差。",
+      "change_zh": "常见路线聚焦新模型或新微调技巧，该工作将SFT与RL作为受控变量做系统对照实验，用统一的规则/视觉变体刻画二者在记忆与泛化上的分野，并揭示SFT稳定输出格式后RL才能获益、RL还能反哺底层视觉识别的互补机制。",
+      "why_it_matters": "对UAV目标搜索、aerial/地面VLN与ObjectNav中日益依赖基础模型的导航策略而言，后训练方式直接决定域外泛化能力；其结论（RL泛化、SFT定格式、二者互补）为具身导航模型的后训练流程设计提供直接依据，且V-IRL评测连接了真实导航场景。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "https://openalex.org/W4402698358",
@@ -4802,6 +5455,47 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-14T08:36:12.938032+00:00"
+    },
+    {
+      "id": "2402.02716",
+      "arxiv_id": "2402.02716",
+      "title": "Understanding the planning of LLM agents: A survey",
+      "authors": [
+        "Xu Huang",
+        "Weiwen Liu",
+        "Xiaolong Chen",
+        "Xingmei Wang",
+        "Wang, Hao",
+        "Defu Lian",
+        "Yasheng Wang",
+        "Ruiming Tang",
+        "Enhong Chen"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 581,
+      "url": "https://arxiv.org/abs/2402.02716",
+      "pdf_url": "https://arxiv.org/pdf/2402.02716",
+      "code_url": "",
+      "topics": [
+        "规划智能体"
+      ],
+      "evidence": "初步",
+      "evidence_note": "主要依据预印本摘要，实验规模、消融与复现性需要阅读全文确认。",
+      "summary_zh": "本文是首篇系统梳理LLM智能体规划的综述，将现有工作归纳为任务分解、计划选择、外部模块、反思与记忆五大类，逐类深入分析并展望未来挑战。",
+      "change_zh": "作为综述而非新方法，其真正改变在于首次为LLM智能体规划给出统一坐标系：以任务分解、计划选择、外部模块、反思、记忆五维框架整合零散工作；但摘要未给出文献筛选标准与覆盖规模，系统完整性无法从摘要确认。",
+      "why_it_matters": "规划智能体属核心收录线，其五维分类可为UAV目标搜索与ObjectNav中LLM规划模块的选型（任务分解、反思、记忆）提供地图，助具身导航借鉴通用规划智能体进展；本身无机器人实验，价值在知识整合。",
+      "relevance_rating": 8,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 22,
+      "keywords": [
+        "agent planning",
+        "llm agent"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "https://openalex.org/W3105232955",
@@ -5151,6 +5845,47 @@
       "added_at": "2026-10-16T14:33:43.113440+00:00"
     },
     {
+      "id": "2308.10848",
+      "arxiv_id": "2308.10848",
+      "title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+      "authors": [
+        "Chen, Weize",
+        "Su, Yusheng",
+        "Jingwei Zuo",
+        "Cheng I. Yang",
+        "Chenfei Yuan",
+        "Chi-Min Chan",
+        "Yu, Heyang",
+        "Yaxi Lu",
+        "Hung, Yi-Hsin",
+        "Qian, Chen",
+        "Yujia Qin",
+        "Cong, Xin"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 532,
+      "url": "https://arxiv.org/abs/2308.10848",
+      "pdf_url": "https://arxiv.org/pdf/2308.10848",
+      "code_url": "https://github.com/OpenBMB/AgentVerse",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "提出受人类群体动态启发的LLM多智能体框架AgentVerse，可动态调整智能体组合协同完成任务，实验表明多智能体群体优于单个智能体，并分析协作中涌现的社会行为及正负行为的调控策略。",
+      "change_zh": "相比常见固定单智能体或静态提示流水线，核心变化在于让智能体群体如人类团队般随任务进展动态调整成员构成、协作决策，并把群体内涌现的社会行为本身作为研究对象，讨论放大正向、抑制负向行为的策略。",
+      "why_it_matters": "属于范围内LLM/多模态智能体线的agentic框架与多智能体协同进展，可为规划智能体的任务分解与组织机制提供参考，也能作为无人机搜救、ObjectNav等分层决策的上层多智能体编排思路；但摘要未涉及空间与导航成分，需二次结合验证。",
+      "relevance_rating": 7,
+      "rigor_rating": 6,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
       "id": "2107.06383",
       "arxiv_id": "2107.06383",
       "title": "How Much Can CLIP Benefit Vision-and-Language Tasks?",
@@ -5293,6 +6028,44 @@
       ],
       "is_classic": true,
       "added_at": "2026-09-03T19:57:56Z"
+    },
+    {
+      "id": "2501.13956",
+      "arxiv_id": "2501.13956",
+      "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+      "authors": [
+        "Preston Rasmussen",
+        "Pavlo Paliychuk",
+        "Travis Beauvais",
+        "Jack Ryan",
+        "Daniel Chalef"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 515,
+      "url": "https://arxiv.org/abs/2501.13956",
+      "pdf_url": "https://arxiv.org/pdf/2501.13956",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "Zep是面向AI智能体的记忆层服务，核心引擎Graphiti以时间感知知识图谱动态融合非结构化对话与结构化业务数据并保留历史关系，在DMR基准上超过MemGPT（94.8%对93.4%），并在LongMemEval上取得最高18.5%的准确率提升与90%的延迟降低。",
+      "change_zh": "相比静态文档检索式RAG及MemGPT的记忆管理，Zep将智能体记忆建模为带时间感知的知识图谱，增量式融合非结构化对话与结构化业务数据并保留实体关系的时序演变，支持跨会话信息综合与长期上下文维护，且以可部署的服务层形式提供。",
+      "why_it_matters": "长期记忆与时间推理是智能体核心能力，本工作属多模态大模型与智能体线核心收录，在LLM智能体社区影响力较大。对具身导航亦有借鉴价值：ObjectNav的目标语义记忆、UAV搜索任务的历史经验积累均可参考其时序知识图谱记忆架构，但论文本身不涉具身场景。",
+      "relevance_rating": 7,
+      "rigor_rating": 7,
+      "venue_verified": false,
+      "score": 21,
+      "keywords": [
+        "benchmark",
+        "deployment",
+        "evaluation"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "https://openalex.org/W4393154152",
@@ -5813,6 +6586,136 @@
       ],
       "is_classic": true,
       "added_at": "2026-10-14T08:36:12.938032+00:00"
+    },
+    {
+      "id": "2503.21776",
+      "arxiv_id": "2503.21776",
+      "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+      "authors": [
+        "Kaituo Feng",
+        "Kaixiong Gong",
+        "Bohao Li",
+        "Zonghao Guo",
+        "Yibing Wang",
+        "Tianshuo Peng",
+        "Junfei Wu",
+        "Xiaoying Zhang",
+        "Benyou Wang",
+        "Xiangyu Yue"
+      ],
+      "published": "2025",
+      "source": "OpenAlex",
+      "venue": "neural information processing systems",
+      "citation_count": 479,
+      "url": "https://arxiv.org/abs/2503.21776",
+      "pdf_url": "https://arxiv.org/pdf/2503.21776",
+      "code_url": "https://github.com/tulerfeng/Video-R1",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "强",
+      "evidence_note": "发表来源命中白名单（neural information processing systems），摘要包含实验或基准证据；仍建议阅读全文核对设置。",
+      "summary_zh": "Video-R1首次将R1式规则强化学习用于MLLM视频推理：提出T-GRPO利用时序线索，并混入高质量图像推理数据构建SFT与RL两个数据集，在VSI-Bench等基准上显著提升并超越GPT-4o。",
+      "change_zh": "以往视频理解多靠SFT或指令微调，该工作把DeepSeek-R1式规则奖励强化学习首次系统迁移到视频推理，用T-GRPO显式建模时序信息，并以图像推理数据弥补视频推理数据稀缺，开辟了视频思维链RL训练路线。",
+      "why_it_matters": "属多模态大模型与智能体核心线：给出MLLM视频推理的R1式RL训练范式与开源数据；其在VSI-Bench视频空间推理上的提升关联空间智能线，也为UAV目标搜索、aerial VLN等以视频流为输入的导航智能体提供更强时空感知推理底座。",
+      "relevance_rating": 8,
+      "rigor_rating": 7,
+      "venue_verified": true,
+      "score": 26,
+      "keywords": [
+        "benchmark",
+        "mllm",
+        "multimodal large language model",
+        "spatial reasoning"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
+      "id": "2406.16852",
+      "arxiv_id": "2406.16852",
+      "title": "Long Context Transfer from Language to Vision",
+      "authors": [
+        "Zhang, Peiyuan",
+        "Kaichen Zhang",
+        "Bo Li",
+        "Guangtao Zeng",
+        "Jingkang Yang",
+        "Yuanhan Zhang",
+        "Ziyue Wang",
+        "Haoran Tan",
+        "Chunyuan Li",
+        "Ziwei Liu"
+      ],
+      "published": "2024",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 478,
+      "url": "https://arxiv.org/abs/2406.16852",
+      "pdf_url": "https://arxiv.org/pdf/2406.16852",
+      "code_url": "https://github.com/EvolvingLMMs-Lab/LongVA",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "发现语言骨干的上下文外推能力可迁移至视觉模态：无需视频训练，LongVA即可处理2000帧/超20万视觉token，并以合成基准V-NIAH验证长视频理解能力。",
+      "change_zh": "相比主流用视觉重采样器压缩token数量的路线，本文改从语言骨干入手，直接外推其上下文长度，使模型免视频训练即可密集采样大量帧，提出并系统消融'长上下文迁移'现象。",
+      "why_it_matters": "长上下文视觉理解是多模态大模型的核心基础能力：UAV长航时搜救侦察需从海量视频流中检索目标线索，ObjectNav等具身智能体也需处理长观测历史，LongVA的免训练扩容思路与V-NIAH评测范式为此类模型和基准提供了直接参考。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 25,
+      "keywords": [
+        "benchmark"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
+    },
+    {
+      "id": "2309.14525",
+      "arxiv_id": "2309.14525",
+      "title": "Aligning Large Multimodal Models with Factually Augmented RLHF",
+      "authors": [
+        "Zhiqing Sun",
+        "Sheng Shen",
+        "Shengcao Cao",
+        "Haotian Liu",
+        "Chunyuan Li",
+        "Yikang Shen",
+        "Chuang Gan",
+        "Liang-Yan Gui",
+        "Yu-Xiong Wang",
+        "Yiming Yang",
+        "Kurt Keutzer",
+        "Trevor Darrell"
+      ],
+      "published": "2023",
+      "source": "OpenAlex",
+      "venue": "arXiv (Cornell University)",
+      "citation_count": 477,
+      "url": "https://arxiv.org/abs/2309.14525",
+      "pdf_url": "https://arxiv.org/pdf/2309.14525",
+      "code_url": "",
+      "topics": [
+        "多模态大模型与智能体"
+      ],
+      "evidence": "中",
+      "evidence_note": "预印本或发表状态尚未确认，但摘要报告了实验/基准验证。",
+      "summary_zh": "首个将RLHF引入大型多模态模型训练的工作：让标注者比较哪条回答更幻觉，并用图像描述等事实信息增强奖励模型以缓解奖励破解，同时发布幻觉评测基准MMHAL-BENCH，LLaVA性能达GPT-4文本94%水平。",
+      "change_zh": "此前多模态大模型对齐主要靠指令微调，幻觉缺乏直接优化信号。本文将RLHF从纯文本扩展到视觉语言对齐，人类标注直接比较哪条回答更幻觉，并以图像描述、正确选项等事实信息增强奖励模型，抑制奖励破解，改变了对齐训练范式。",
+      "why_it_matters": "MLLM是UAV目标搜索与ObjectNav的重要骨干，幻觉会引发对场景与指令的错误理解。本文的RLHF对齐方法与MMHAL-BENCH可提升VLM视觉grounding可靠性，为下游导航与目标发现任务提供更可信的多模态基座模型。",
+      "relevance_rating": 8,
+      "rigor_rating": 8,
+      "venue_verified": false,
+      "score": 24,
+      "keywords": [
+        "benchmark",
+        "evaluation",
+        "instruction"
+      ],
+      "is_classic": true,
+      "added_at": "2026-11-07T16:04:43.246831+00:00"
     },
     {
       "id": "https://openalex.org/W4401417422",
@@ -16438,62 +17341,6 @@
     }
   ],
   "excluded": {
-    "https://openalex.org/W4206103951": {
-      "title": "Human Activity Recognition via Hybrid Deep Learning Based Model",
-      "relevance": 2,
-      "rigor": 6,
-      "reason": "属传感器人体活动识别分类应用，与具身导航、UAV搜索、空间智能、大模型智能体等收录技术线无实质关联，仅术语上提及空间/时序特征。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4402901320": {
-      "title": "Large language models empowered agent-based modeling and simulation: a survey and perspectives",
-      "relevance": 5,
-      "rigor": 5,
-      "reason": "综述对象为LLM赋能的多智能体建模仿真（ABMS），核心是社会、经济等复杂系统垂直仿真应用，与空间智能、导航、机器人各主线无实质关联，仅在LLM智能体术语层面擦边。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W3204369957": {
-      "title": "Edge AI‐Based Automated Detection and Classification of Road Anomalies in VANET Using Deep Learning",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "该文是路面病害图像分类叠加VANET信息共享的垂直应用，所用模型为现成ResNet-18/VGG-11，与具身导航、空间智能、状态估计等收录技术线无实质关联，且实验仅基于网络公开数据集、描述简略。",
-      "excluded_at": "2026-09-03"
-    },
-    "2101.07907": {
-      "title": "IntentNet: Learning to Predict Intention from Raw Sensor Data",
-      "relevance": 4,
-      "rigor": 6,
-      "reason": "面向自动驾驶的他车意图与轨迹预测（检测+预测）属感知预测类工作，与收录的UAV/地面具身导航、世界模型、状态估计等技术线仅术语擦边，无实质关联。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4283322638": {
-      "title": "UAV Computing-Assisted Search and Rescue Mission Framework for Disaster and Harsh Environment Mitigation",
-      "relevance": 2,
-      "rigor": 4,
-      "reason": "本文实质是无人机应急通信网络与边缘计算的性能评估（时延、吞吐、路损等），不涉及目标搜索、导航或具身决策，属纯通信与信号处理范围外，仅借SAR场景擦边。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4387425757": {
-      "title": "A comprehensive survey of ChatGPT: Advancements, applications, prospects, and challenges",
-      "relevance": 3,
-      "rigor": 3,
-      "reason": "纯文本对话LLM的综述，未涉及空间、导航、机器人或agentic能力新进展，属纯LLM范畴，范围外。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4390820213": {
-      "title": "Reinforcing green business strategies with Industry 4.0 and governance towards sustainability: Natural‐resource‐based view and dynamic capability",
-      "relevance": 1,
-      "rigor": 5,
-      "reason": "该文为管理学实证研究（绿色商业战略、生产计划投资决策与公司治理），与具身导航、无人机、空间智能、机器人自主等全部收录技术线无关，仅'规划/Industry 4.0'属术语擦边。",
-      "excluded_at": "2026-09-03"
-    },
-    "https://openalex.org/W4387805855": {
-      "title": "Vision-Motion Codesign for Low-Level Trajectory Generation in Visual Servoing Systems",
-      "relevance": 3,
-      "rigor": 5,
-      "reason": "面向SCARA机械臂工业视觉伺服的底层轨迹插值与视觉-运动控制器工程集成，属机械臂操作与纯运动控制范畴，不含任何导航决策成分，与收录范围不相关。",
-      "excluded_at": "2026-09-03"
-    },
     "https://openalex.org/W4281289204": {
       "title": "A survey of cyber security threats and solutions for UAV communications and flying ad-hoc networks",
       "relevance": 2,
@@ -19937,76 +20784,267 @@
       "rigor": 3,
       "reason": "虽属核心收录的智能体架构工作且影响力大，但本文为纯概念框架与回顾性综述，无任何实验设置、基线对比或消融验证，按实验可信度标准不足以收录。",
       "excluded_at": "2026-11-06"
+    },
+    "2401.05566": {
+      "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+      "relevance": 3,
+      "rigor": 8,
+      "reason": "纯LLM欺骗行为与安全对齐研究，不涉及空间、导航、具身或机器人内容，也不属于MLLM/智能体能力本身的显著进展（新模型/新能力/agentic框架），按范围属纯LLM训练研究，判定范围外。",
+      "excluded_at": "2026-11-07"
+    },
+    "2406.06525": {
+      "title": "Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation",
+      "relevance": 2,
+      "rigor": 8,
+      "reason": "本文是自回归文生图/图像生成工作，属于研究范围中明确排除的文生图类目，虽借用LLM与tokenizer等术语，但与具身导航、空间智能等收录技术线无实质关联。",
+      "excluded_at": "2026-11-07"
+    },
+    "2506.01844": {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+      "relevance": 3,
+      "rigor": 8,
+      "reason": "属于机械臂操作类VLA控制工作，摘要未涉及导航决策、目标搜索或空间推理成分，命中收录范围中'机械臂操作与VLA控制'的明确排除项。",
+      "excluded_at": "2026-11-07"
+    },
+    "2307.05973": {
+      "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+      "relevance": 4,
+      "rigor": 7,
+      "reason": "论文核心是机械臂操作轨迹合成（6-DoF末端执行器航点），属于研究范围明确排除的机械臂操作/VLA线，且不含任何导航决策成分，仅LLM规划与3D价值地图在术语上擦边。",
+      "excluded_at": "2026-11-07"
+    },
+    "2412.20404": {
+      "title": "Open-Sora: Democratizing Efficient Video Production for All",
+      "relevance": 2,
+      "rigor": 5,
+      "reason": "该工作属于文生图/文生视频生成，是研究范围明确排除的类别；论文定位为内容创作工具，未涉及导航、空间理解或具身智能应用。",
+      "excluded_at": "2026-11-07"
+    },
+    "2503.20020": {
+      "title": "Gemini Robotics: Bringing AI into the Physical World",
+      "relevance": 5,
+      "rigor": 7,
+      "reason": "核心贡献为可直接控制机械臂的VLA通才模型，摘要未体现任何导航决策成分，属研究范围明确排除的机械臂操作与VLA控制类工作。",
+      "excluded_at": "2026-11-07"
+    },
+    "https://openalex.org/W4410129808": {
+      "title": "RETRACTED ARTICLE: The effect of ChatGPT on students’ learning performance, learning perception, and higher-order thinking: insights from a meta-analysis",
+      "relevance": 1,
+      "rigor": 1,
+      "reason": "论文已被出版方撤稿，可信度失效；且内容为ChatGPT在教育学习效果上的元分析，属大模型套用到与空间、导航、机器人无关的垂直应用，完全在收录范围外。",
+      "excluded_at": "2026-11-07"
+    },
+    "2603.16666": {
+      "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+      "relevance": 3,
+      "rigor": 7,
+      "reason": "研究对象是面向机械臂操作与VLA类控制的World Action Model，评测基准LIBERO/RoboTwin均为操作任务，不含导航决策成分，属明确排除范围（仅'世界模型'术语擦边）。",
+      "excluded_at": "2026-11-07"
     }
   },
   "last_citation_refresh": "2026-11-06T17:15:13.145735+00:00",
   "briefing": {
-    "text": "本批工作横跨多模态基础模型与LLM智能体两条主线。首推Qwen2.5-Omni，流式接收音视频并同步生成语音，架构可直接借给机器人低延迟交互；A Generalist Agent用同一套权重打游戏、对话并操控机械臂，是通才策略范式的起点；A-Mem以卡片盒笔记与记忆演化机制，为长时程导航记忆提供可复用方案。感知、记忆与行动正被压入同一模型栈，具身智能的上游底座渐趋成型。",
-    "added": 7,
-    "at": "2026-11-06T10:42:41.601373+00:00",
+    "text": "本轮入库的主线是大模型智能体基础能力的全面夯实：记忆架构、视频世界模型、规划方法与RL后训练的泛化机制各占一席。最值得优先细读的是V-JEPA 2，它以互联网视频自监督预训练世界模型，零样本完成Franka机械臂抓放规划，是视频预训练通向具身执行的标志性工作；Diffuser把轨迹优化折叠进扩散去噪生成，确立了“生成即规划”范式，仍是长时域灵活控制的重要参照；SFT Memorizes, RL Generalizes则在V-IRL真实导航环境中实证RL相对SFT的跨域泛化优势，对具身策略的训练选型有直接指导意义。整体看，社区正从刷榜分数转向对记忆、世界模型与RL泛化机制的基础性追问，具身场景日益成为检验智能体能力的试金石。",
+    "added": 22,
+    "at": "2026-11-07T16:04:43.246831+00:00",
     "new": [
       {
-        "t": "Qwen2.5-Omni Technical Report",
-        "u": "https://arxiv.org/abs/2503.20215",
+        "t": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+        "u": "https://arxiv.org/abs/2504.19413",
         "r": 8,
+        "g": 7,
+        "s": "Mem0提出面向LLM智能体的可扩展长期记忆架构，动态抽取、整合与检索对话中的关键信息，并引入图结构记忆变体；在LOCOMO基准上超越六类基线，同时大幅降低延迟与token成本。",
+        "c": "",
+        "cit": 1182
+      },
+      {
+        "t": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+        "u": "https://arxiv.org/abs/2506.09985",
+        "r": 8,
+        "g": 9,
+        "s": "V-JEPA 2以百万小时级互联网视频自监督预训练动作无关联合嵌入预测架构，再结合62小时无标注机器人视频后训练动作条件世界模型V-JEPA 2-AC，零样本在Franka机械臂上实现图像目标抓放规划，视频理解与问答亦达SOTA。",
+        "c": "",
+        "cit": 1072
+      },
+      {
+        "t": "SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension",
+        "u": "https://arxiv.org/abs/2307.16125",
+        "r": 7,
         "g": 8,
-        "s": "Qwen2.5-Omni是端到端全模态模型，流式感知文本、图像、音视频并同步生成文本与自然语音，提出TMRoPE时序位置编码与Thinker-Talker架构，性能比肩Qwen2.5-VL并在Omni-Bench等基准领先。",
+        "s": "本文提出SEED-Bench，一个含1.9万道人工标注多选题的多模态大模型评测基准，覆盖图像与视频共12个维度（含空间与时序理解），并评测18个模型以揭示现有MLLM的能力局限。",
         "c": "",
-        "cit": 243
+        "cit": 882
       },
       {
-        "t": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
-        "u": "https://arxiv.org/abs/2501.09136",
-        "r": 7,
-        "g": 5,
-        "s": "该综述系统梳理Agentic RAG：把反思、规划、工具使用与多智能体协作等智能体模式嵌入检索增强生成流程，按智能体数量、控制结构、自治性与知识表示提出分类法，并比较各框架设计取舍与开放挑战。",
-        "c": "",
-        "cit": 238
-      },
-      {
-        "t": "MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action",
-        "u": "https://arxiv.org/abs/2303.11381",
-        "r": 7,
-        "g": 6,
-        "s": "MM-REACT将ChatGPT与一组视觉专家结合，通过文本提示设计表示图像描述、文本化空间坐标与文件名，使语言模型能关联并处理多模态信息、调度工具完成推理与行动，零样本实验验证了有效性。",
-        "c": "",
-        "cit": 237
-      },
-      {
-        "t": "A-Mem: Agentic Memory for LLM Agents",
-        "u": "https://arxiv.org/abs/2502.12110",
+        "t": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+        "u": "https://arxiv.org/abs/2407.16741",
         "r": 7,
         "g": 7,
-        "s": "本文提出面向LLM智能体的A-Mem记忆系统，借鉴卡片盒笔记法为每条记忆生成结构化笔记，动态索引与链接相似记忆，并通过记忆演化持续更新历史记忆，在六种基座模型上优于现有基线。",
-        "c": "https://github.com/WujiangXu/A-mem",
-        "cit": 230
-      },
-      {
-        "t": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
-        "u": "https://arxiv.org/abs/2401.05459",
-        "r": 7,
-        "g": 5,
-        "s": "本文提出“个人LLM智能体”概念，即深度整合个人数据与设备的LLM智能助理，系统梳理其架构组成与设计选择，结合领域专家意见调研，并综述其在能力、效率与安全三方面的关键挑战及代表性解决方案。",
+        "s": "OpenHands（原OpenDevin）是开源通用AI智能体平台，让智能体像开发者一样写代码、用命令行、浏览网页，提供沙箱执行、多智能体协作与内置基准，并在15项任务上评测。",
         "c": "",
-        "cit": 220
+        "cit": 837
       },
       {
-        "t": "A Generalist Agent",
-        "u": "https://arxiv.org/abs/2205.06175",
+        "t": "VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Video-LLMs",
+        "u": "https://arxiv.org/abs/2406.07476",
         "r": 7,
-        "g": 6,
-        "s": "Gato是单一网络的多模态、多任务、多具身通用策略，同一套权重可玩Atari、图像描述、对话，并用真实机械臂堆叠积木，按上下文决定输出文本、关节力矩或按键等token。",
+        "g": 7,
+        "s": "VideoLLaMA 2提出面向视频与音频的开源大模型系列，定制时空卷积连接器以捕捉视频时空动态，并以联合训练引入音频分支，在视频问答、字幕生成及音视频问答等基准上取得与开源模型相当甚至接近闭源模型的结果。",
         "c": "",
-        "cit": 219
+        "cit": 832
       },
       {
-        "t": "DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding",
-        "u": "https://arxiv.org/abs/2412.10302",
+        "t": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+        "u": "https://arxiv.org/abs/2504.13837",
+        "r": 7,
+        "g": 8,
+        "s": "该文系统评测RLVR训练的LLM在数学、代码与视觉推理上的pass@k表现，发现大k时基础模型反超RLVR模型，表明RLVR未激发超越基础模型的全新推理能力，而蒸馏可引入新模式。",
+        "c": "",
+        "cit": 802
+      },
+      {
+        "t": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+        "u": "https://arxiv.org/abs/2010.03768",
+        "r": 7,
+        "g": 7,
+        "s": "ALFWorld对齐TextWorld文本环境与ALFRED视觉具身环境，让智能体先在文本学抽象策略再迁移到视觉执行，并以模块化BUTLER智能体验证该方式泛化更优。",
+        "c": "",
+        "cit": 793
+      },
+      {
+        "t": "Gemma 4 Technical Report",
+        "u": "https://arxiv.org/abs/2607.02770",
+        "r": 9,
+        "g": 8,
+        "s": "谷歌推出Gemma 4开源原生多模态模型家族，涵盖2.3B–31B的稠密与MoE架构，升级视觉与音频编码器，为12B模型提出无编码器统一架构，并集成思考模式，在STEM、多模态与长上下文基准上大幅跃升。",
+        "c": "",
+        "cit": 743
+      },
+      {
+        "t": "Vision-R1: Incentivizing Reasoning Capability in Multimodal Large Language Models",
+        "u": "https://arxiv.org/abs/2503.06749",
+        "r": 7,
+        "g": 7,
+        "s": "Vision-R1用200K自动构建的多模态思维链数据冷启动，配合PTST渐进抑制与带硬格式奖励的GRPO强化学习，逐步获得复杂多模态推理能力，MathVista达73.5%。",
+        "c": "https://github.com/Osilly/Vision-R1",
+        "cit": 711
+      },
+      {
+        "t": "GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models",
+        "u": "https://arxiv.org/abs/2508.06471",
         "r": 8,
         "g": 8,
-        "s": "DeepSeek-VL2是MoE视觉语言模型系列，采用动态分块视觉编码与多头潜在注意力实现高效推理，以更少激活参数在视觉问答、OCR、图表理解与视觉定位等任务上达到先进水平。",
-        "c": "https://github.com/deepseek-ai/DeepSeek-VL2",
-        "cit": 215
+        "s": "智谱开源MoE大模型GLM-4.5，总参355B、激活32B，支持思考/直答混合推理，经多阶段训练与RL后训练，在智能体、推理与编码基准名列前茅，并开源106B轻量版。",
+        "c": "https://github.com/zai-org/GLM-4.5",
+        "cit": 669
+      },
+      {
+        "t": "Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs",
+        "u": "https://arxiv.org/abs/2503.01743",
+        "r": 8,
+        "g": 8,
+        "s": "微软发布Phi-4-Mini与Phi-4-Multimodal：3.8B语言模型靠高质量合成数据在数学与编程上媲美两倍规模模型，多模态版经LoRA适配器与模态路由无干扰融合文本、视觉和语音。",
+        "c": "",
+        "cit": 666
+      },
+      {
+        "t": "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+        "u": "https://arxiv.org/abs/2408.12528",
+        "r": 7,
+        "g": 7,
+        "s": "Show-o用单一Transformer统一多模态理解与生成，结合自回归与离散扩散建模，支持视觉问答、文生图、修补与混合模态生成，多基准上媲美或超越同规模专门模型。",
+        "c": "https://github.com/showlab/Show-o",
+        "cit": 641
+      },
+      {
+        "t": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+        "u": "https://arxiv.org/abs/2504.08066",
+        "r": 7,
+        "g": 6,
+        "s": "端到端科研智能体系统，以实验管理智能体统筹的渐进式智能体树搜索驱动假设提出、实验执行、数据分析与论文撰写，首次产出通过ICLR研讨会同行评审的全AI生成论文。",
+        "c": "https://github.com/SakanaAI/AI-Scientist-v2",
+        "cit": 629
+      },
+      {
+        "t": "Planning with Diffusion for Flexible Behavior Synthesis",
+        "u": "https://arxiv.org/abs/2205.09991",
+        "r": 7,
+        "g": 8,
+        "s": "Diffuser提出将轨迹优化折叠进建模问题：用扩散概率模型迭代去噪直接生成整段轨迹，使规划与采样几乎等价，并以分类器引导、图像修复式补全作为规划策略，实现长时域灵活控制。",
+        "c": "",
+        "cit": 606
+      },
+      {
+        "t": "VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding",
+        "u": "https://arxiv.org/abs/2501.13106",
+        "r": 7,
+        "g": 8,
+        "s": "本文提出以视觉为中心的多模态基础模型VideoLLaMA3，采用四阶段训练范式与按图像尺寸可变、按相似度压缩的视觉token设计，全面提升图像与视频理解性能。",
+        "c": "",
+        "cit": 587
+      },
+      {
+        "t": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+        "u": "https://arxiv.org/abs/2501.17161",
+        "r": 7,
+        "g": 7,
+        "s": "本文系统对比SFT与RL两种基础模型后训练范式，在自建算术卡牌基准GeneralPoints与真实世界导航环境V-IRL上发现：基于结果的奖励训练的RL可跨文本与视觉规则变体泛化，而SFT倾向记忆训练数据、域外表现差。",
+        "c": "",
+        "cit": 584
+      },
+      {
+        "t": "Understanding the planning of LLM agents: A survey",
+        "u": "https://arxiv.org/abs/2402.02716",
+        "r": 8,
+        "g": 6,
+        "s": "本文是首篇系统梳理LLM智能体规划的综述，将现有工作归纳为任务分解、计划选择、外部模块、反思与记忆五大类，逐类深入分析并展望未来挑战。",
+        "c": "",
+        "cit": 581
+      },
+      {
+        "t": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+        "u": "https://arxiv.org/abs/2308.10848",
+        "r": 7,
+        "g": 6,
+        "s": "提出受人类群体动态启发的LLM多智能体框架AgentVerse，可动态调整智能体组合协同完成任务，实验表明多智能体群体优于单个智能体，并分析协作中涌现的社会行为及正负行为的调控策略。",
+        "c": "https://github.com/OpenBMB/AgentVerse",
+        "cit": 532
+      },
+      {
+        "t": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+        "u": "https://arxiv.org/abs/2501.13956",
+        "r": 7,
+        "g": 7,
+        "s": "Zep是面向AI智能体的记忆层服务，核心引擎Graphiti以时间感知知识图谱动态融合非结构化对话与结构化业务数据并保留历史关系，在DMR基准上超过MemGPT（94.8%对93.4%），并在LongMemEval上取得最高18.5%的准确率提升与90%的延迟降低。",
+        "c": "",
+        "cit": 515
+      },
+      {
+        "t": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+        "u": "https://arxiv.org/abs/2503.21776",
+        "r": 8,
+        "g": 7,
+        "s": "Video-R1首次将R1式规则强化学习用于MLLM视频推理：提出T-GRPO利用时序线索，并混入高质量图像推理数据构建SFT与RL两个数据集，在VSI-Bench等基准上显著提升并超越GPT-4o。",
+        "c": "https://github.com/tulerfeng/Video-R1",
+        "cit": 479
+      },
+      {
+        "t": "Long Context Transfer from Language to Vision",
+        "u": "https://arxiv.org/abs/2406.16852",
+        "r": 8,
+        "g": 8,
+        "s": "发现语言骨干的上下文外推能力可迁移至视觉模态：无需视频训练，LongVA即可处理2000帧/超20万视觉token，并以合成基准V-NIAH验证长视频理解能力。",
+        "c": "https://github.com/EvolvingLMMs-Lab/LongVA",
+        "cit": 478
+      },
+      {
+        "t": "Aligning Large Multimodal Models with Factually Augmented RLHF",
+        "u": "https://arxiv.org/abs/2309.14525",
+        "r": 8,
+        "g": 8,
+        "s": "首个将RLHF引入大型多模态模型训练的工作：让标注者比较哪条回答更幻觉，并用图像描述等事实信息增强奖励模型以缓解奖励破解，同时发布幻觉评测基准MMHAL-BENCH，LLaVA性能达GPT-4文本94%水平。",
+        "c": "",
+        "cit": 477
       }
     ]
   }
